@@ -1,0 +1,133 @@
+{
+  "paket": "n1-site-wix-test-v1",
+  "referans": "v6.47",
+  "not": "Adresler bilerek boş: assets-base Custom Element özniteliği yayın sonrası girilir. Bu listedeki 12 dosyanın tamamı aynı klasörde olmalı.",
+  "assets_base": null,
+  "gerekli_dosyalar": [
+    {
+      "dosya": "ronin-Bd-v67-a.bin",
+      "bayt": 4144204,
+      "sha256": "ac7058ac4a98d74a3dd47e52c5fb16470ca2787c3d766d3409f85bc5b8f6aef1",
+      "kullanim": "Masaüstü 1600 px — 2. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-Bd-v67-a0.bin",
+      "bayt": 1228291,
+      "sha256": "c3f7359f301dd31ce15915aa196b82b3f118f984b7cdfc485041e034efc41e89",
+      "kullanim": "Masaüstü 1600 px (B tonu) — 1. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-Bd-v67-b.bin",
+      "bayt": 7105210,
+      "sha256": "b4dfa152656d3c789bb7a9074cbf507cd2db5066cbe85a4c41206a261aa94d4a",
+      "kullanim": "Masaüstü 1600 px — 3. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-Bx-v67-a.bin",
+      "bayt": 5204692,
+      "sha256": "af281c1ffd063c3c092ca0efa5bf63dccfdd212d89ff226e9121d8bd601b47b3",
+      "kullanim": "Masaüstü 1920 px — 2. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-Bx-v67-a0.bin",
+      "bayt": 1547255,
+      "sha256": "e527182e2c2082727397034248b32055da35f5ba61ec2f7a9772f4566392ec42",
+      "kullanim": "Masaüstü 1920 px (B tonu) — 1. paket: ilk sahne + seyrek iskelet",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-Bx-v67-b.bin",
+      "bayt": 8999052,
+      "sha256": "b79756935d3d53f9cacf10fc58c06fe1bedfdf063f6de498f63345d39b3a6bec",
+      "kullanim": "Masaüstü 1920 px — 3. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-m-v63-a.bin",
+      "bayt": 1985711,
+      "sha256": "70aa887e5b6bb1bb502a116a3a08fb0221cf4b4210777b9c22019914d05f1d76",
+      "kullanim": "Mobil — 2. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-m-v63-a0.bin",
+      "bayt": 574966,
+      "sha256": "a8cc233b542365989bf3c5fa7303065b7744f2b45dbb48408f880d15a857adcd",
+      "kullanim": "Mobil (≤900 px, v6.3, değişmedi) — 1. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-m-v63-b.bin",
+      "bayt": 3285092,
+      "sha256": "0fb95bc7628c1fe3c4f48e94b13e90a55d1f07b14c3f1e07d4d853ae6f55ad06",
+      "kullanim": "Mobil — 3. paket",
+      "kaynak": "v6.47 ile bayt bayt aynı kareler (.json paketlerinin base64'süz .bin karşılığı)",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-v6-poster-m.webp",
+      "bayt": 13548,
+      "sha256": "f4bf21f53678785263fb424070a4ddf5a52de401f684bc1add117d8ec6972376",
+      "kullanim": "Mobil poster",
+      "kaynak": "v6.47 cdn/ ile aynı dosya",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-v67-poster-Bd.webp",
+      "bayt": 26766,
+      "sha256": "6c608458f8a9c46f56b340814ace66bf75538c65aa5b9f85c74b81ecbedaa51d",
+      "kullanim": "Masaüstü 1600 px poster",
+      "kaynak": "v6.47 cdn/ ile aynı dosya",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    },
+    {
+      "dosya": "ronin-v67-poster-Bx.webp",
+      "bayt": 34930,
+      "sha256": "f61a7e8ba2d26d6f3e2a15d9506b658a977e72504cd1edddde7fdc93839a846f",
+      "kullanim": "Masaüstü 1920 px poster (ilk görüntü)",
+      "kaynak": "v6.47 cdn/ ile aynı dosya",
+      "yayin_durumu": "YAYINLANMADI",
+      "hedef": "assets-base klasörü (önerilen: mevcut jsDelivr deposu 1ndigitalmedia-design/1n-ronin-assets içinde yeni bir klasör/etiket; onay bekliyor)"
+    }
+  ],
+  "pakette_olmayan_ama_sayfada_kullanilan": [
+    {
+      "kaynak": "https://fonts.googleapis.com (Barlow 400/500/600, Barlow Condensed 500/600/700)",
+      "not": "giriş dosyası ekler; sayfada zaten varsa eklemez"
+    },
+    {
+      "kaynak": "1N logo",
+      "not": "giriş dosyasının içinde data-URI SVG olarak gömülü; ayrıca yüklenmez"
+    }
+  ],
+  "toplam_bayt": 34149717,
+  "giris_dosyasi": {
+    "dosya": "n1-site-wix-test-v1.js",
+    "bayt": 82077,
+    "sha256": "49a02c1004d73a85d89ae04f98e2472d813fe12c06e0ef173f1c35cf5d815fc0",
+    "custom_element_etiketi": "n1-site-test"
+  }
+}
