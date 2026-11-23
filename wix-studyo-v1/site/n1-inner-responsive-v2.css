@@ -1,0 +1,89 @@
+/* 1N | Inner Pages responsive v2. Main homepage unaffected. */
+@media (max-width:1024px){
+n1-studyo-v1 .st-wrap{width:90%}
+n1-studyo-v1 .st-hero{padding-top:128px}
+n1-studyo-v1 .st-hero__grid{display:block;position:relative}
+n1-studyo-v1 .st-hero__copy{position:relative;z-index:2;padding-bottom:32px}
+n1-studyo-v1 .st-hero__title{font-size:clamp(86px,13vw,150px)}
+n1-studyo-v1 .st-mark{position:absolute;z-index:0;top:-30px;right:0;width:43%;opacity:.7;pointer-events:none}
+n1-studyo-v1 .st-hero__lede{max-width:32ch}
+n1-studyo-v1 .st-story,n1-studyo-v1 .st-way{padding-top:80px;padding-bottom:80px}
+n1-studyo-v1 .st-statement{font-size:clamp(40px,5vw,58px)}
+n1-studyo-v1 .st-h2{font-size:clamp(60px,7vw,85px)}
+n1-studyo-v1 .st-cta__title{font-size:clamp(68px,8vw,100px)}
+n1-studyo-v1 .st-cta__actions{order:0}
+}
+@media(max-width:900px){
+n1-studyo-v1 n1-header{display:block!important}
+n1-studyo-v1 n1-header .n1h-bar{height:70px;width:90%;display:grid;grid-template-columns:1fr auto}
+n1-studyo-v1 n1-header .n1h-tag{display:none}
+n1-studyo-v1 n1-header .n1h-right{justify-self:end}
+n1-studyo-v1 n1-header .n1h-menu{height:39px;min-width:104px;padding:0 12px}
+n1-studyo-v1 n1-header .n1h-cta{display:none}
+.n1h-panel.n1-inner-panel{display:grid!important;left:5%!important;right:5%!important;top:74px!important;width:90%!important;max-height:calc(100dvh - 90px);overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain;gap:7px}
+.n1h-panel.n1-inner-panel .n1h-nav{padding:8px}
+.n1h-panel.n1-inner-panel .n1h-item{min-height:45px;font-size:25px}
+.n1h-panel.n1-inner-panel .n1h-main{overflow:visible!important;order:1}
+.n1h-panel.n1-inner-panel .n1h-sub{display:none;position:static;width:100%;right:auto;top:auto;padding:9px;margin:0;transform:none;order:2}
+.n1h-panel.n1-inner-panel .n1h-sub[data-open]{display:block;opacity:1;visibility:visible;pointer-events:auto}
+.n1h-panel.n1-inner-panel .n1h-sub a,.n1h-panel.n1-inner-panel .n1h-sub span.n1h-soon{min-height:40px;font-size:15px}
+.n1h-panel.n1-inner-panel .n1h-brandcard{order:3}
+}
+@media(max-width:767px){
+n1-studyo-v1{font-size:16px}
+n1-studyo-v1 .st-wrap{width:calc(100% - 40px)}
+n1-studyo-v1 .st-hero{padding-top:108px}
+n1-studyo-v1 .st-hero__copy{padding-bottom:20px}
+n1-studyo-v1 .st-hero__title{font-size:clamp(69px,15.6vw,112px);margin-top:28px!important}
+n1-studyo-v1 .st-ln>span{white-space:normal}
+n1-studyo-v1 .st-mark{top:10px;right:-4px;width:52%;opacity:.38}
+n1-studyo-v1 .st-tag{font-size:10px;gap:10px}
+n1-studyo-v1 .st-tag i{width:22px}
+n1-studyo-v1 .st-hero__lede{font-size:17px;line-height:1.45;margin-top:27px!important}
+n1-studyo-v1 .st-index{display:block;margin-top:38px}
+n1-studyo-v1 .st-index a{min-height:52px;padding:15px 0!important;border-left:0!important;font-size:14px}
+n1-studyo-v1 .st-index a+a{border-top:1px solid var(--line)}
+n1-studyo-v1 .st-index a::after{margin-right:6px}
+n1-studyo-v1 .st-story,n1-studyo-v1 .st-way{padding-top:65px;padding-bottom:66px}
+n1-studyo-v1 .st-grid{display:flex;flex-direction:column;gap:27px}
+n1-studyo-v1 .st-label{font-size:13px;padding:0}
+n1-studyo-v1 .st-statement{font-size:clamp(35px,8.5vw,57px);line-height:1.08;text-wrap:pretty}
+n1-studyo-v1 .st-story__cols{grid-template-columns:1fr;gap:17px;margin-top:30px}
+n1-studyo-v1 .st-story__cols p{font-size:16px}
+n1-studyo-v1 .st-h2{font-size:clamp(53px,11vw,77px)}
+n1-studyo-v1 .st .st-habits{grid-template-columns:1fr;gap:26px;margin-top:38px}
+n1-studyo-v1 .st-habit{padding-top:20px}
+n1-studyo-v1 .st-habit h3{font-size:38px}
+n1-studyo-v1 .st-habit p{margin-top:11px!important;font-size:15px}
+n1-studyo-v1 .st-disc{grid-template-columns:1fr;gap:15px;margin-top:43px}
+n1-studyo-v1 .st-disc__k,n1-studyo-v1 .st-disc ul{grid-column:1}
+n1-studyo-v1 .st-disc li{font-size:19px}
+n1-studyo-v1 .st-cta{padding:79px 0 92px}
+n1-studyo-v1 .st-cta__title{font-size:clamp(53px,11.4vw,84px);line-height:.97}
+n1-studyo-v1 .st-cta__mark{width:90%;right:-43%;bottom:-10%}
+n1-studyo-v1 .st-cta__row{flex-direction:column;align-items:stretch;gap:24px;margin-top:28px}
+n1-studyo-v1 .st-cta__row p{max-width:36ch;font-size:16px}
+n1-studyo-v1 .st-cta__actions{flex-direction:column;gap:11px;width:100%}
+n1-studyo-v1 .st-btn{height:54px;width:100%;padding:0 18px;justify-content:space-between;font-size:12px}
+n1-studyo-v1 .st-btn--primary{padding-right:7px}
+n1-studyo-v1 .st-btn__ico{width:40px;height:40px}
+n1-studyo-v1 .n1ft{padding-top:57px;padding-bottom:26px}
+n1-studyo-v1 .n1ft-inner{width:calc(100% - 40px)}
+n1-studyo-v1 .n1ft-top{grid-template-columns:1fr!important;gap:32px;padding:39px 0 36px}
+n1-studyo-v1 .n1ft-col--brand{grid-column:auto}
+n1-studyo-v1 .n1ft-brand{font-size:45px}
+n1-studyo-v1 .n1ft-socials{margin-top:22px}
+n1-studyo-v1 .n1ft-label{margin-bottom:14px}
+n1-studyo-v1 .n1ft-contact{margin-top:14px}
+n1-studyo-v1 .n1ft-partners{flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:20px 18px;padding:28px 64px 27px 0}
+n1-studyo-v1 .n1ft-partner{flex:0 1 calc(50% - 9px);max-width:calc(50% - 9px)}
+n1-studyo-v1 .n1ft-logo{max-height:37px}
+n1-studyo-v1 .n1ft-logo--badge{max-height:48px}
+n1-studyo-v1 .n1ft-bottom{font-size:12px}
+}
+@media(max-width:360px){
+n1-studyo-v1 .st-wrap,n1-studyo-v1 .n1ft-inner{width:calc(100% - 32px)}
+n1-studyo-v1 .st-hero__title{font-size:15.3vw}
+n1-studyo-v1 .st-cta__title{font-size:11vw}
+n1-studyo-v1 .n1ft-partners{padding-right:54px}
+}
