@@ -110,7 +110,7 @@ ${TAG} .n1h-btn:focus-visible,${TAG} .n1h-logo:focus-visible{outline:2px solid #
     items: [
       { title: 'Kısaca Biz', note: 'Stüdyo', sub: [{ text: 'Stüdyo Hikâyesi' }, { text: 'Yaratıcı Bakışımız' }, { text: 'Çalışma Ritmimiz' }] },
       { title: 'Hizmetler', note: '6 disiplin', sub: [{ text: 'Creative Studio' }, { text: 'Brand Experience' }, { text: 'Digital Performance' }, { text: 'Social & Content' }, { text: 'Web & Commerce' }, { text: 'AI & Innovation' }] },
-      { title: 'Projeler', note: 'Seçili işler', sub: [{ text: 'Seçili İşler' }, { text: 'Marka Hikâyeleri' }, { text: 'Creative Showcase' }] },
+      { title: 'Markalar', note: 'Seçili işler', sub: [{ text: 'Seçili İşler' }, { text: 'Marka Hikâyeleri' }, { text: 'Creative Showcase' }] },
       { title: 'Akademi', note: 'Workshops', sub: [{ text: '1N Academy' }, { text: 'Workshops' }, { text: 'İçgörüler' }] },
       { title: 'İletişim', note: 'Birlikte üretelim', sub: [{ text: 'Birlikte Üretelim' }, { text: 'Teklif Al' }] },
       { title: 'İnsan Kaynakları', note: 'Ekibe katıl', sub: [{ text: 'Ekibimize Katıl' }, { text: 'Açık Pozisyonlar' }] },
