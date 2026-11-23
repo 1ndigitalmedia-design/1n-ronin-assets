@@ -1,0 +1,100 @@
+/* n1-site-wix-v1 — v6.47 index.html genel stili, <n1-site-v1> kapsamına alınmış hali (css_scope.py ile üretildi).
+ * Özgüllük v6.47 ile aynı (:where). html/body'ye kural yazılmaz. [data-n1-owner] = body'ye taşınan site öğeleri. */
+:where(n1-site-v1, [data-n1-owner]){--bg:#080A09;--bg-2:transparent;--ink:#eeede8;--mute:#8e8f89;--line:#232325;--accent:#A1FF00;--pad:clamp(20px,4.5vw,72px)}
+n1-site-v1, n1-site-v1 *, [data-n1-owner], [data-n1-owner] *{box-sizing:border-box;min-width:0}
+:where(n1-site-v1, [data-n1-owner]){color-scheme:dark;background:var(--bg)}
+:where(n1-site-v1, [data-n1-owner]){margin:0;background:transparent;color:var(--ink);font:400 17px/1.6 Barlow,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
+:where(n1-site-v1, [data-n1-owner]) a{color:inherit}
+:where(n1-site-v1, [data-n1-owner]) :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+:where(n1-site-v1, [data-n1-owner]) img{display:block;max-width:100%}
+:where(n1-site-v1, [data-n1-owner]) .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:2px;font:600 16px/1 Barlow,Arial,sans-serif;text-decoration:none;border:1px solid transparent;transition:background-color .2s,color .2s,border-color .2s;white-space:nowrap}
+:where(n1-site-v1, [data-n1-owner]) .btn-primary{background:var(--accent);color:#0b0b0c}
+:where(n1-site-v1, [data-n1-owner]) .btn-primary:hover{background:#fff}
+:where(n1-site-v1, [data-n1-owner]) .reveal-lines .ln{display:block;overflow:hidden;padding-bottom:.06em}
+:where(n1-site-v1, [data-n1-owner]) .reveal-lines .ln > span{display:block}
+:where(n1-site-v1, [data-n1-owner]) .intro{padding:clamp(56px,9vh,120px) var(--pad) clamp(88px,14vh,180px)}
+:where(n1-site-v1, [data-n1-owner]) .scroll-highlight{--sh-ink:#D9D8D1;--accent:var(--n1-accent,#A8CF62);--highlight-edge:#F1F0EA;margin:0;color:#D9D8D1;font-family:"Barlow Condensed",Barlow,Arial,sans-serif;font-weight:500;font-size:clamp(46px,6.1vw,132px);line-height:.98;letter-spacing:-.012em}
+:where(n1-site-v1, [data-n1-owner]) .intro-acc{color:var(--n1-accent,#A8CF62)}
+@media (max-width:900px){:where(n1-site-v1, [data-n1-owner]) .intro-text br.ib{display:none}
+:where(n1-site-v1, [data-n1-owner]) .scroll-highlight{font-size:clamp(34px,8.6vw,56px);line-height:1.04}}
+:where(n1-site-v1, [data-n1-owner]) .sh-word{position:relative;display:inline-block;will-change:transform}
+.has-scroll-highlight :where(n1-site-v1, [data-n1-owner]) .sh-word[data-mark]::before{content:attr(data-mark);position:absolute;top:0;left:0;color:var(--sh-ink);opacity:var(--sh-ghost,var(--sh-dim,.16));white-space:pre;pointer-events:none}
+.has-scroll-highlight :where(n1-site-v1, [data-n1-owner]) .sh-word__text{visibility:hidden;will-change:opacity,color}
+:where(n1-site-v1, [data-n1-owner]) .scroll-highlight[data-highlight-a11y="inline"] .sh-word__text{visibility:visible}
+.has-scroll-highlight :where(n1-site-v1, [data-n1-owner]) .scroll-highlight[data-highlight-a11y="inline"] .sh-word[data-mark]::before{content:attr(data-mark);content:attr(data-mark) / ""}
+:where(n1-site-v1, [data-n1-owner]) .scroll-highlight .sh-word{transition:opacity .45s cubic-bezier(.22,1,.36,1),filter .45s cubic-bezier(.22,1,.36,1)}
+:where(n1-site-v1, [data-n1-owner]) .sh-nb{white-space:nowrap}
+:where(n1-site-v1, [data-n1-owner]) .sh-link{position:relative;z-index:1;display:inline;color:inherit;text-decoration:none;white-space:nowrap;cursor:pointer;outline:none;-webkit-tap-highlight-color:transparent;border-radius:2px}
+:where(n1-site-v1, [data-n1-owner]) .sh-link::after{content:"";position:absolute;left:0;right:0;bottom:-.015em;height:max(2px,.028em);background:var(--accent);opacity:.9;transform:scaleX(0);transform-origin:100% 50%;transition:transform .55s cubic-bezier(.65,0,.35,1);pointer-events:none}
+:where(n1-site-v1, [data-n1-owner]) .sh-link:hover::after,
+:where(n1-site-v1, [data-n1-owner]) .sh-link:focus-visible::after{transform:scaleX(1);transform-origin:0 50%}
+:where(n1-site-v1, [data-n1-owner]) .scroll-highlight:has(.sh-link:hover,.sh-link:focus-visible) .sh-word{opacity:.4}
+:where(n1-site-v1, [data-n1-owner]) .scroll-highlight .sh-link:is(:hover,:focus-visible) .sh-word{opacity:1;filter:brightness(1.14)}
+:where(n1-site-v1, [data-n1-owner]) .sh-link:focus-visible{outline:1px solid rgba(168,207,98,.55);outline-offset:.1em}
+:where(n1-site-v1, [data-n1-owner]) .n1-svc-note{position:fixed;left:max(5vw,24px);bottom:32px;z-index:9000;display:grid;gap:4px;padding:14px 18px 15px;background:rgba(18,20,19,.94);border:1px solid rgba(228,227,221,.12);border-left:2px solid #A8CF62;color:#E4E3DD;font:500 14px/1.3 Barlow,"Barlow Condensed",Arial,sans-serif;opacity:0;transform:translateY(10px);transition:opacity .35s ease,transform .35s cubic-bezier(.22,1,.36,1);pointer-events:none}
+:where(n1-site-v1, [data-n1-owner]) .n1-svc-note.is-on{opacity:1;transform:none}
+:where(n1-site-v1, [data-n1-owner]) .n1-svc-note__k{font-size:12px;letter-spacing:.04em;color:#A8CF62}
+:where(n1-site-v1, [data-n1-owner]) .n1-svc-note__p{font-size:13px;color:rgba(228,227,221,.6)}
+@media (prefers-reduced-motion:reduce){:where(n1-site-v1, [data-n1-owner]) .sh-link::after,
+:where(n1-site-v1, [data-n1-owner]) .scroll-highlight .sh-word,
+:where(n1-site-v1, [data-n1-owner]) .n1-svc-note{transition:none}}
+:where(n1-site-v1, [data-n1-owner]) .work{padding:clamp(80px,12vh,160px) var(--pad) clamp(96px,14vh,180px);background:var(--bg-2)}
+:where(n1-site-v1, [data-n1-owner]) .work-head{max-width:1240px;margin:0 auto 48px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px}
+:where(n1-site-v1, [data-n1-owner]) .work-head h2{margin:0;font-family:"Barlow Condensed",Barlow,Arial,sans-serif;font-weight:700;font-size:clamp(48px,6vw,96px);line-height:.92;text-transform:none}
+:where(n1-site-v1, [data-n1-owner]) .work-head p{margin:0;color:var(--mute);font-size:14px;max-width:38ch}
+:where(n1-site-v1, [data-n1-owner]) .work-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);align-items:start}
+:where(n1-site-v1, [data-n1-owner]) .work-grid figure{margin:0}
+:where(n1-site-v1, [data-n1-owner]) .w-wide{grid-column:1 / -1}
+:where(n1-site-v1, [data-n1-owner]) .w-a{grid-column:1 / span 7}
+:where(n1-site-v1, [data-n1-owner]) .w-b{grid-column:8 / span 5;margin-top:clamp(40px,10vw,140px)!important}
+:where(n1-site-v1, [data-n1-owner]) [data-clip-reveal]{position:relative;overflow:hidden;background:#000}
+:where(n1-site-v1, [data-n1-owner]) [data-clip-reveal] img{width:100%;height:100%;object-fit:cover}
+:where(n1-site-v1, [data-n1-owner]) .w-wide [data-clip-reveal]{aspect-ratio:16/8}
+:where(n1-site-v1, [data-n1-owner]) .w-a [data-clip-reveal]{aspect-ratio:1/1}
+:where(n1-site-v1, [data-n1-owner]) .w-b [data-clip-reveal]{aspect-ratio:3/4}
+:where(n1-site-v1, [data-n1-owner]) figcaption{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;align-items:center;margin-top:16px}
+:where(n1-site-v1, [data-n1-owner]) .cap-rule{grid-row:1 / span 2;width:28px;height:2px;background:var(--accent)}
+:where(n1-site-v1, [data-n1-owner]) .caption-mask{display:block;overflow:hidden}
+:where(n1-site-v1, [data-n1-owner]) .caption-mask > span{display:block}
+:where(n1-site-v1, [data-n1-owner]) .cap-title{font-weight:600;font-size:19px}
+:where(n1-site-v1, [data-n1-owner]) .cap-meta{color:var(--mute);font-size:14px}
+:where(n1-site-v1).has-js [data-clip-reveal][data-reveal-direction="up"]{clip-path:polygon(0% 100%,42% 100%,50% 94%,58% 100%,100% 100%,0% 100%)}
+:where(n1-site-v1).has-js [data-clip-reveal][data-reveal-direction="right"]{clip-path:polygon(0% 0%,0% 42%,6% 50%,0% 58%,0% 100%,0% 0%)}
+:where(n1-site-v1).has-js [data-clip-reveal][data-reveal-direction="left"]{clip-path:polygon(100% 0%,100% 42%,94% 50%,100% 58%,100% 100%,100% 0%)}
+:where(n1-site-v1).has-js [data-clip-reveal] img{transform:scale(1.14)}
+:where(n1-site-v1).has-js [data-reveal-copy]{opacity:0;transform:translateY(115%)}
+:where(n1-site-v1).has-js [data-reveal-rule]{transform:scaleX(0)}
+:where(n1-site-v1, [data-n1-owner]) .close{padding:clamp(96px,14vh,180px) var(--pad)}
+:where(n1-site-v1, [data-n1-owner]) .close-inner{max-width:1240px;margin:0 auto;display:grid;gap:22px}
+:where(n1-site-v1, [data-n1-owner]) .close .slogan{margin:0;color:var(--accent);font:700 16px/1.3 Montserrat,Arial,sans-serif}
+:where(n1-site-v1, [data-n1-owner]) .close h2{margin:0;font-family:"Barlow Condensed",Barlow,Arial,sans-serif;font-weight:700;font-size:clamp(48px,6.4vw,104px);line-height:.92;max-width:14ch}
+:where(n1-site-v1, [data-n1-owner]) footer{padding:56px var(--pad) 40px;color:var(--mute);font-size:14px}
+:where(n1-site-v1, [data-n1-owner]) .foot{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+:where(n1-site-v1, [data-n1-owner]) details.note{max-width:1240px;margin:20px auto 0;color:var(--mute);font-size:15px}
+:where(n1-site-v1, [data-n1-owner]) details.note summary{cursor:pointer;color:var(--ink);font-weight:600;min-height:44px;display:flex;align-items:center}
+:where(n1-site-v1, [data-n1-owner]) details.note p{max-width:70ch;margin:8px 0}
+@media (max-width:899.98px){:where(n1-site-v1, [data-n1-owner]) .w-a,
+:where(n1-site-v1, [data-n1-owner]) .w-b{grid-column:1 / -1}
+:where(n1-site-v1, [data-n1-owner]) .w-b{margin-top:0!important}
+:where(n1-site-v1, [data-n1-owner]) .w-wide [data-clip-reveal]{aspect-ratio:4/3}}
+@media (prefers-reduced-motion:reduce){:where(n1-site-v1).has-js [data-clip-reveal]{clip-path:none!important}
+:where(n1-site-v1).has-js [data-clip-reveal] img{transform:none!important}
+:where(n1-site-v1).has-js [data-reveal-copy],
+:where(n1-site-v1).has-js [data-reveal-rule]{opacity:1!important;transform:none!important}}
+:where(n1-site-v1, [data-n1-owner]){--site-w:90%}
+@media (min-width:901px){:where(n1-site-v1, [data-n1-owner]) .site-container{width:var(--site-w);margin-left:auto;margin-right:auto}
+:where(n1-site-v1, [data-n1-owner]) .site-section{padding-left:0!important;padding-right:0!important}
+:where(n1-site-v1, [data-n1-owner]) .site-section .site-container{max-width:none}}
+:where(n1-site-v1, [data-n1-owner]){--n1-accent:#A8CF62}
+@media (min-width:901px){:where(n1-site-v1, [data-n1-owner]) ronin-hero-v67 .rh6-copy{display:none!important}}
+@media (min-width:901px){:where(n1-site-v1, [data-n1-owner]) .intro{padding-bottom:clamp(64px,9vh,112px)}}
+/* v6.47: zemin html'den geliyordu, body şeffaftı → kökün kendi zemini */
+:where(n1-site-v1){display:block;position:relative;width:100%;background:var(--bg)}
+/* body'ye taşınan öğeler v6.47'de font/renk/boyutu body'den alıyordu */
+:where([data-n1-owner]){font-family:Barlow,Arial,sans-serif;color:var(--ink,#eeede8);-webkit-font-smoothing:antialiased}
+:where(.n1h-panel[data-n1-owner],n1-header[data-n1-owner]){font-size:17px;line-height:1.6}
+:where(n1-site-v1,[data-n1-owner]){--site-w:90%;--n1-accent:#A8CF62}
+/* Wix sıfırlama koruması: v6.47 görsellerinde tarayıcı varsayılanı (kenarlık yok) açıkça yazılır; görünüm değişmez */
+:where(n1-site-v1,[data-n1-owner]) img{border:0}
+.n1s-note{margin:0;padding:28px 5%;font:400 14px/1.5 Barlow,Arial,sans-serif;color:#8e8f89;border-bottom:1px solid #232325}
+.n1s-diag{position:fixed;z-index:2147483001;left:8px;bottom:8px;max-width:min(620px,calc(100vw - 16px));max-height:60vh;overflow:auto;font:11px/1.45 ui-monospace,Menlo,Consolas,monospace;color:#cfe;background:rgba(0,0,0,.88);padding:8px 10px;white-space:pre-wrap}

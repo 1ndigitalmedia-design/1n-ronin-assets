@@ -1,0 +1,151 @@
+/* ==========================================================================
+   1N — Interactive Cinematic Showreel (v6.28 — "Kesik" kapak + imleç düzeltmesi)
+   Bağımsız modül: yalnızca .n1sr- önekli sınıflar.
+   Durumlar (root data-state): preview → opening → watch → closing → preview
+   - PREVIEW: tam genişlik sahne (16:9, en fazla 100vh), sessiz döngü önizleme,
+     büyük glitch SHOWREEL başlığı, fareyi izleyen SHOWREEL İZLE dairesi.
+   - WATCH: sahne sabit konumda ekranı kaplar (GSAP ile genişler), özel oynatıcı.
+   Renkler: derin siyah, koyu grafit, kırık beyaz, soft gri, kontrollü soft yeşil.
+   ========================================================================== */
+.n1sr{
+  --n1sr-ink:#E4E3DD;
+  --n1sr-mute:#9A9B95;
+  --n1sr-accent:var(--n1-accent,#A8CF62);
+  --n1sr-ease:cubic-bezier(.22,1,.36,1);
+  position:relative;
+  display:block;
+  width:100%;
+  height:min(56.25vw,100vh);           /* video oranı 16:9; çok geniş ekranda en fazla 100vh */
+  margin:0;padding:0;border:0;
+  background:#000;
+}
+.n1sr-stage{position:absolute;inset:0;overflow:hidden;background:#000;color:var(--n1sr-ink)}
+.n1sr-video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;background:#000;
+  opacity:0;transition:opacity .6s var(--n1sr-ease)}
+.n1sr:not([data-state="preview"]) .n1sr-video{opacity:1}
+.n1sr[data-state="watch"] .n1sr-video,
+.n1sr[data-state="opening"] .n1sr-video,
+.n1sr[data-state="closing"] .n1sr-video{object-fit:contain}
+
+/* --- v6.28 KAPAK: "KESİK" ------------------------------------------------------
+   Sanat yönetimi: Ronin'in kılıcı ile kurgunun "kesme"si aynı jest. Karanlık grafit
+   sahnede dev SHOWREEL, ince eğik bir kesikle ikiye ayrılmış; kesik çizgisi logo
+   yeşilinde (#A2FF00) bir bıçak ağzı ışığı. Arkada kelimenin silik kontur yankısı
+   (katmanlı tipografi, derinlik), yukarıdan düşen hafif ışık hüzmesi, sabit gren.
+   Fare: karanlıkta dolaşan yumuşak ışık + yarıların çok hafif paralaksı.
+   Glitch yeniden yorum: kısa "kesme" anı — yarılar kesik boyunca kayar, ince bir
+   dilim sinyal gibi sıçrar, bıçak ağzı parlar, her şey keskin biçimde yerine oturur. */
+.n1sr-cover{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;
+  background:
+    radial-gradient(46% 70% at 50% -8%,rgba(150,158,152,.13) 0%,rgba(10,11,11,0) 70%),
+    radial-gradient(80% 90% at 50% 55%,#101312 0%,#0B0D0C 50%,#090A0A 100%)}
+.n1sr-cover::before{content:"";position:absolute;inset:0;opacity:.06;mix-blend-mode:screen;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  background-size:200px 200px}
+/* kenar karartması: kompozisyonu ortada toplar */
+.n1sr-cover::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 100% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+/* imlecin altındaki ışık (yalnızca fare varken; transform ile, ucuz) */
+.n1sr-spot{position:absolute;left:0;top:0;width:820px;height:820px;margin:-410px 0 0 -410px;border-radius:50%;opacity:0;
+  background:radial-gradient(circle,rgba(200,214,190,.085) 0%,rgba(168,207,98,.035) 32%,rgba(0,0,0,0) 66%);will-change:transform,opacity}
+/* köşe işaretleri: kadraj/registration — metin değil, ince çizgi */
+.n1sr-mark{position:absolute;width:22px;height:22px;border-color:rgba(228,227,221,.28);border-style:solid;border-width:0}
+.n1sr-mark--tl{left:5vw;top:min(5vw,9vh);border-left-width:1px;border-top-width:1px}
+.n1sr-mark--tr{right:5vw;top:min(5vw,9vh);border-right-width:1px;border-top-width:1px}
+.n1sr-mark--bl{left:5vw;bottom:min(5vw,9vh);border-left-width:1px;border-bottom-width:1px}
+.n1sr-mark--br{right:5vw;bottom:min(5vw,9vh);border-right-width:1px;border-bottom-width:1px}
+
+/* --- Başlık: kesik tipografi --------------------------------------------------- */
+.n1sr-title{position:absolute;inset:0;z-index:1;display:grid;place-items:center;margin:0;pointer-events:none;
+  font-family:"Barlow Condensed","Roboto Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:700;
+  font-size:clamp(110px,min(19vw,38vh),640px);line-height:.8;letter-spacing:-.015em;white-space:nowrap}
+.n1sr-word{position:relative;display:block;padding-top:.06em;--cut-a:56%;--cut-b:44%}
+.n1sr-echo{position:absolute;left:0;top:.06em;color:transparent;-webkit-text-stroke:1px rgba(228,227,221,.065);
+  transform:scale(1.07);transform-origin:50% 50%;will-change:transform}
+.n1sr-half{display:block;will-change:transform}
+.n1sr-half--t{position:relative;clip-path:polygon(0 0,100% 0,100% var(--cut-b),0 var(--cut-a))}
+.n1sr-half--b{position:absolute;left:0;top:.06em;clip-path:polygon(0 var(--cut-a),100% var(--cut-b),100% 100%,0 100%)}
+.n1sr-hp{display:block;color:#E4E3DD;will-change:transform}
+.n1sr-half--b .n1sr-hp{color:#CFCEC8}           /* alt yarı bir ton koyu: kesik okunur, kelime okunur */
+.n1sr-shard{position:absolute;left:0;top:.06em;color:#E4E3DD;opacity:0;clip-path:inset(40% 0 52% 0);will-change:transform,clip-path}
+.n1sr-blade{position:absolute;left:-9%;width:118%;top:calc(50% + .03em);height:1px;margin-top:-.5px;transform-origin:50% 50%;
+  opacity:.55;
+  background:linear-gradient(90deg,rgba(162,255,0,0) 0%,rgba(162,255,0,.9) 14%,#A2FF00 50%,rgba(162,255,0,.9) 86%,rgba(162,255,0,0) 100%)}
+
+/* --- Açma kontrolü (erişilebilir gerçek düğme; görsel daire ayrı katman) ---------- */
+.n1sr-open{position:absolute;inset:0;z-index:3;width:100%;height:100%;margin:0;padding:0;border:0;background:transparent;cursor:pointer;
+  -webkit-tap-highlight-color:transparent}
+.n1sr.has-cursor[data-state="preview"] .n1sr-open{cursor:none}
+.n1sr-open:focus{outline:none}
+.n1sr-open-pill{position:absolute;left:50%;top:50%;width:112px;height:112px;margin:-56px 0 0 -56px;border-radius:50%;
+  display:none;place-items:center;text-align:center;
+  background:rgba(168,207,98,.94);color:#0B0D0C;font:600 11px/1.35 Barlow,Arial,sans-serif;letter-spacing:.16em;text-indent:.16em}
+/* fare takibi olmayan cihazlarda veya klavye odağında daire ortada sabit görünür */
+.n1sr:not(.has-cursor) .n1sr-open-pill,
+.n1sr-open:focus-visible .n1sr-open-pill{display:grid}
+.n1sr-open:focus-visible .n1sr-open-pill{outline:2px solid var(--n1sr-ink);outline-offset:6px}
+.n1sr.is-cursor-in .n1sr-open-pill{display:none}
+.n1sr[data-state="opening"] .n1sr-open,.n1sr[data-state="watch"] .n1sr-open{display:none}
+
+/* Fareyi izleyen SHOWREEL İZLE dairesi (Markalar'daki SÜRÜKLEYİN ile aynı aile, bağımsız) */
+.n1sr-cursor{position:fixed;left:0;top:0;z-index:960;width:112px;height:112px;margin:-56px 0 0 -56px;border-radius:50%;
+  display:grid;place-items:center;text-align:center;pointer-events:none;
+  background:rgba(168,207,98,.94);color:#0B0D0C;
+  font:600 11px/1.35 Barlow,Arial,sans-serif;letter-spacing:.16em;text-indent:.16em;
+  opacity:0;transform:scale(.4);will-change:transform,opacity}
+.n1sr-cursor-ring{position:absolute;inset:-8px;border-radius:50%;border:1px solid rgba(168,207,98,.35)}
+
+/* --- İzleme modu: tıklama alanı (videoya tıklayınca kapanır) ---------------------- */
+.n1sr-hit{position:absolute;inset:0;z-index:2;display:none;cursor:pointer}
+.n1sr[data-state="watch"] .n1sr-hit,.n1sr[data-state="opening"] .n1sr-hit{display:block}
+
+/* --- Özel oynatıcı --------------------------------------------------------------- */
+.n1sr-ui{position:absolute;inset:0;z-index:3;pointer-events:none;visibility:hidden}
+.n1sr[data-state="watch"] .n1sr-ui,.n1sr[data-state="opening"] .n1sr-ui,.n1sr[data-state="closing"] .n1sr-ui{visibility:visible}
+.n1sr-ui-shade{position:absolute;left:0;right:0;bottom:0;height:min(260px,32vh);pointer-events:none;
+  background:linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,0))}
+.n1sr-ui-top{position:absolute;top:clamp(18px,3vh,32px);right:5%;pointer-events:auto}
+.n1sr-close{display:inline-flex;align-items:center;gap:12px;height:44px;padding:0 18px;border-radius:10px;cursor:pointer;
+  font:500 13px/1 Barlow,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--n1sr-ink);
+  background:rgba(12,14,13,.55);border:1px solid rgba(228,227,221,.16);transition:border-color .4s,background-color .4s}
+.n1sr-close:hover{border-color:rgba(168,207,98,.55);background:rgba(20,23,21,.75)}
+.n1sr-close svg{width:12px;height:12px}
+
+.n1sr-bar{position:absolute;left:5%;right:5%;bottom:clamp(22px,4vh,44px);display:grid;grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;column-gap:clamp(16px,1.6vw,28px);pointer-events:auto}
+.n1sr-btn{display:grid;place-items:center;width:44px;height:44px;padding:0;border-radius:50%;cursor:pointer;color:var(--n1sr-ink);
+  background:rgba(12,14,13,.5);border:1px solid rgba(228,227,221,.16);transition:border-color .4s,background-color .4s,color .4s}
+.n1sr-btn:hover{border-color:rgba(168,207,98,.6);color:#F1F0EA}
+.n1sr-btn svg{width:16px;height:16px}
+.n1sr-close:focus-visible,.n1sr-btn:focus-visible,.n1sr-track:focus-visible{outline:2px solid var(--n1sr-accent);outline-offset:3px}
+
+/* zaman çizgisi + hareketli zaman göstergesi */
+.n1sr-track{position:relative;height:44px;cursor:pointer;touch-action:none;outline:none}
+.n1sr-rail{position:absolute;left:0;right:0;top:50%;height:2px;margin-top:-1px;background:rgba(228,227,221,.2);transition:height .3s,margin-top .3s}
+.n1sr-track:hover .n1sr-rail,.n1sr.is-seeking .n1sr-rail{height:4px;margin-top:-2px}
+.n1sr-buf{position:absolute;left:0;top:0;bottom:0;width:100%;background:rgba(228,227,221,.16);transform-origin:0 50%;transform:scaleX(0)}
+.n1sr-fill{position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--n1sr-accent);transform-origin:0 50%;transform:scaleX(0)}
+.n1sr-head{position:absolute;top:50%;left:0;width:0;height:0;pointer-events:none}
+.n1sr-head::before{content:"";position:absolute;left:-1px;top:-9px;width:2px;height:18px;background:#F1F0EA}
+.n1sr-time{position:absolute;bottom:16px;left:0;transform:translateX(var(--tx,-50%));white-space:nowrap;
+  font:500 13px/1 Barlow,Arial,sans-serif;letter-spacing:.08em;font-variant-numeric:tabular-nums;color:#F1F0EA}
+.n1sr-time span{color:var(--n1sr-mute)}
+/* üzerine gelince: zaman + küçük kare önizlemesi */
+.n1sr-peek{position:absolute;bottom:34px;left:0;display:grid;gap:6px;justify-items:center;pointer-events:none;opacity:0;
+  transform:translateX(-50%) translateY(6px);transition:opacity .25s,transform .25s var(--n1sr-ease)}
+.n1sr-track:hover .n1sr-peek,.n1sr.is-seeking .n1sr-peek{opacity:1;transform:translateX(-50%) translateY(0)}
+.n1sr-thumb{width:160px;height:90px;border-radius:4px;background-color:#111;background-repeat:no-repeat;border:1px solid rgba(228,227,221,.18)}
+.n1sr-thumb:empty{display:block}
+.n1sr-peek-time{font:500 12px/1 Barlow,Arial,sans-serif;letter-spacing:.08em;font-variant-numeric:tabular-nums;color:#F1F0EA;
+  padding:5px 8px;border-radius:6px;background:rgba(8,10,9,.7)}
+.n1sr.has-peek-time .n1sr-time{opacity:0}
+.n1sr-time{transition:opacity .2s}
+
+.n1sr-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@media (prefers-reduced-motion:reduce){.n1sr *{transition:none!important}}
+@media (max-width:900px){
+  .n1sr{height:56.25vw}
+  .n1sr-title{font-size:clamp(52px,18vw,120px)}
+  .n1sr-mark{display:none}
+  .n1sr-open-pill{width:88px;height:88px;margin:-44px 0 0 -44px;font-size:10px}
+}
