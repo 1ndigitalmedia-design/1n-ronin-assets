@@ -1,0 +1,18 @@
+/* 1N Digital Media — Sektörler altı tam genişlik siyah-beyaz video bandı (v6.33)
+   Oynatma: mevcut n1-samurai-video-v621.js (birden fazla bölümü destekler; değiştirilmedi).
+   Temel kurallar n1-samurai-video-v632.css'teki .n1sv sınıflarından gelir; burada yalnızca
+   bu videonun ölçüsü ve kırpma odağı tanımlanır.
+   - Kaynak 1920×600 (3.2:1): yükseklik min(600px, 31.25vw) → 1920 px'e kadar kırpma yok,
+     daha geniş ekranlarda 600 px'te sabit kalır, cover ile üst/alt orantılı kırpılır.
+   - Yükseklik önceden ayrılır: layout shift yok. Zemin siyah: ilk karede beyaz flaş yok. */
+.n1sv.n1sv--band{
+  --n1sv-h:min(600px,31.25vw);
+  height:var(--n1sv-h);
+  max-height:600px;
+}
+/* Kırpma odağı gerçek karelere göre: gözler üstten ~%27, kılıç %45–75, ağız ~%75.
+   1920 px ve altında kırpma yok. 2560'ta (üst/alt %25 kırpılır) gözler, kılıç ve ağız kadrajda;
+   3840'ta (%50 kırpılır) gözler ve kılıç korunur. */
+.n1sv--band .n1sv-video{object-position:var(--n1sv-focus,50% 42%)}
+/* Mobil bu sürümde tasarlanmadı: videonun kendi oranı, kırpma yok */
+@media (max-width:900px){.n1sv.n1sv--band{height:auto;aspect-ratio:1920 / 600}}

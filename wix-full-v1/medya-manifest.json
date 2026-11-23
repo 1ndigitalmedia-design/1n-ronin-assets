@@ -1,0 +1,227 @@
+{
+  "paket": "n1-site-wix-v1",
+  "custom_element": "n1-site-v1",
+  "referans": "v6.47 (değiştirilmedi)",
+  "not": "Adres uydurulmadı. Wix Media URL'si olan dosyalar mevcut adreslerinden çağrılır; olmayanlar aktarim-medya/ klasöründe.",
+  "wix_media_mevcut": [
+    {
+      "dosya": "Samuray video 1",
+      "adres": "https://video.wixstatic.com/video/6dbf5e_adf38ad771024db38e421a5a06f7e431/1080p/mp4/file.mp4",
+      "bolum": "05 İlk Samurai Video Banner (#samuray-video)",
+      "durum": "Wix'te mevcut"
+    },
+    {
+      "dosya": "Showreel (ileride değişecek)",
+      "adres": "https://video.wixstatic.com/video/6dbf5e_5a010704bcc145c58b64ca6a10a08bef/1080p/mp4/file.mp4",
+      "bolum": "08 Showreel (#showreel)",
+      "durum": "Wix'te mevcut",
+      "degistirme": "site/n1-site-markup-v1.js içinde #showreel data-sources değeri + aktarim-medya/media/showreel-thumbs.jpg (yeni videonun karelerinden yeniden üretilmeli). Başka kod değişikliği gerekmez."
+    },
+    {
+      "dosya": "Samuray video 2 (002)",
+      "adres": "https://video.wixstatic.com/video/6dbf5e_b462b5d736dc445c95fd65fbf22ad494/720p/mp4/file.mp4",
+      "bolum": "10 İkinci Samurai Video Banner (#video-bandi)",
+      "durum": "Wix'te mevcut"
+    }
+  ],
+  "aktarim_medya": [
+    {
+      "dosya": "img/eco/a7.png",
+      "bayt": 16611,
+      "sha256": "e478e992e1b1dfe55007c238a500b7d7ba8edacd3e07a6141221e0633ba9e0b5",
+      "kullanim": "Interactive Ecosystem — A7 ikonu (gri maske)",
+      "adres": "assets-base + \"img/eco/a7.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/eco/hementik.png",
+      "bayt": 16978,
+      "sha256": "0905bc251f9640e77d590372fdf005404024472ad1b73a345149e1d45daa00ca",
+      "kullanim": "Interactive Ecosystem — HEMENTIK.LA ikonu",
+      "adres": "assets-base + \"img/eco/hementik.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/eco/live.png",
+      "bayt": 19449,
+      "sha256": "a1d6da492d5226f999369ba7bee8153b3e05f35e8609f7aea015459961bdec15",
+      "kullanim": "Interactive Ecosystem — LIVE MARKETS ikonu",
+      "adres": "assets-base + \"img/eco/live.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/eco/zeyp.png",
+      "bayt": 31761,
+      "sha256": "4524095c290230c9585cc3f5ec76955bdf4cc903e1d512ac3de3b19052a7479c",
+      "kullanim": "Interactive Ecosystem — ZEYP ikonu",
+      "adres": "assets-base + \"img/eco/zeyp.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/partners/google-partner.png",
+      "bayt": 11462,
+      "sha256": "69daa041ea2eaeff13d000b17322ffb2a501fd446180fad934273081dde1040f",
+      "kullanim": "Footer — Google Partner",
+      "adres": "assets-base + \"img/partners/google-partner.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/partners/meta-business-partner.png",
+      "bayt": 18424,
+      "sha256": "0083170566af24cc0d8d4930907b8f6f5319f056864dd7493a2cafd916e9a271",
+      "kullanim": "Footer — Meta Business Partner",
+      "adres": "assets-base + \"img/partners/meta-business-partner.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/partners/tiktok-marketing-partner.webp",
+      "bayt": 47256,
+      "sha256": "d07f1a977349777b3a7bc0a683ed6dc801a0f32e77e6c634d1cfefff11b9b052",
+      "kullanim": "Footer — TikTok Marketing Partner",
+      "adres": "assets-base + \"img/partners/tiktok-marketing-partner.webp\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/partners/wix-partners.png",
+      "bayt": 15015,
+      "sha256": "35b319b90f828fe411fb443c6dc28ed4d8cf17ea1ae7c57ccbedc0731d20de75",
+      "kullanim": "Footer — Wix Partners",
+      "adres": "assets-base + \"img/partners/wix-partners.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/partners/wix-velo-certified.png",
+      "bayt": 35133,
+      "sha256": "de7e5c041689795794b91e59b5a3c2dc695acbfcf16871c754c65ce2e2e34518",
+      "kullanim": "Footer — Wix Velo Certified",
+      "adres": "assets-base + \"img/partners/wix-velo-certified.png\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "img/ronin-cta-v634.webp",
+      "bayt": 48064,
+      "sha256": "cd84e08c939c65f56a685827d4677a343fe50f839d3b336955618ec6ecde51e2",
+      "kullanim": "THE NEXT MOVE / 1N — samuray görseli",
+      "adres": "assets-base + \"img/ronin-cta-v634.webp\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    },
+    {
+      "dosya": "media/showreel-thumbs.jpg",
+      "bayt": 121391,
+      "sha256": "3a948a1658735968243d4a75c134af587f79940721e26821c5a71e45aae26c98",
+      "kullanim": "Showreel — zaman çizelgesi kare önizlemeleri",
+      "adres": "assets-base + \"media/showreel-thumbs.jpg\"",
+      "durum": "YÜKLENMELİ (Wix Media URL'si yok)"
+    }
+  ],
+  "ronin_aşama03": {
+    "adres": "ronin-base (Aşama 03 testinde kullanılan klasör; aynı 12 dosya, yeniden yüklenmez)",
+    "dosyalar": [
+      {
+        "dosya": "ronin-Bd-v67-a.bin",
+        "bayt": 4144204,
+        "sha256": "ac7058ac4a98d74a3dd47e52c5fb16470ca2787c3d766d3409f85bc5b8f6aef1",
+        "kullanim": "Masaüstü 1600 px — 2. paket"
+      },
+      {
+        "dosya": "ronin-Bd-v67-a0.bin",
+        "bayt": 1228291,
+        "sha256": "c3f7359f301dd31ce15915aa196b82b3f118f984b7cdfc485041e034efc41e89",
+        "kullanim": "Masaüstü 1600 px (B tonu) — 1. paket"
+      },
+      {
+        "dosya": "ronin-Bd-v67-b.bin",
+        "bayt": 7105210,
+        "sha256": "b4dfa152656d3c789bb7a9074cbf507cd2db5066cbe85a4c41206a261aa94d4a",
+        "kullanim": "Masaüstü 1600 px — 3. paket"
+      },
+      {
+        "dosya": "ronin-Bx-v67-a.bin",
+        "bayt": 5204692,
+        "sha256": "af281c1ffd063c3c092ca0efa5bf63dccfdd212d89ff226e9121d8bd601b47b3",
+        "kullanim": "Masaüstü 1920 px — 2. paket"
+      },
+      {
+        "dosya": "ronin-Bx-v67-a0.bin",
+        "bayt": 1547255,
+        "sha256": "e527182e2c2082727397034248b32055da35f5ba61ec2f7a9772f4566392ec42",
+        "kullanim": "Masaüstü 1920 px (B tonu) — 1. paket: ilk sahne + seyrek iskelet"
+      },
+      {
+        "dosya": "ronin-Bx-v67-b.bin",
+        "bayt": 8999052,
+        "sha256": "b79756935d3d53f9cacf10fc58c06fe1bedfdf063f6de498f63345d39b3a6bec",
+        "kullanim": "Masaüstü 1920 px — 3. paket"
+      },
+      {
+        "dosya": "ronin-m-v63-a.bin",
+        "bayt": 1985711,
+        "sha256": "70aa887e5b6bb1bb502a116a3a08fb0221cf4b4210777b9c22019914d05f1d76",
+        "kullanim": "Mobil — 2. paket"
+      },
+      {
+        "dosya": "ronin-m-v63-a0.bin",
+        "bayt": 574966,
+        "sha256": "a8cc233b542365989bf3c5fa7303065b7744f2b45dbb48408f880d15a857adcd",
+        "kullanim": "Mobil (≤900 px, v6.3, değişmedi) — 1. paket"
+      },
+      {
+        "dosya": "ronin-m-v63-b.bin",
+        "bayt": 3285092,
+        "sha256": "0fb95bc7628c1fe3c4f48e94b13e90a55d1f07b14c3f1e07d4d853ae6f55ad06",
+        "kullanim": "Mobil — 3. paket"
+      },
+      {
+        "dosya": "ronin-v6-poster-m.webp",
+        "bayt": 13548,
+        "sha256": "f4bf21f53678785263fb424070a4ddf5a52de401f684bc1add117d8ec6972376",
+        "kullanim": "Mobil poster"
+      },
+      {
+        "dosya": "ronin-v67-poster-Bd.webp",
+        "bayt": 26766,
+        "sha256": "6c608458f8a9c46f56b340814ace66bf75538c65aa5b9f85c74b81ecbedaa51d",
+        "kullanim": "Masaüstü 1600 px poster"
+      },
+      {
+        "dosya": "ronin-v67-poster-Bx.webp",
+        "bayt": 34930,
+        "sha256": "f61a7e8ba2d26d6f3e2a15d9506b658a977e72504cd1edddde7fdc93839a846f",
+        "kullanim": "Masaüstü 1920 px poster (ilk görüntü)"
+      }
+    ]
+  },
+  "gomulu": [
+    {
+      "kaynak": "1N logo",
+      "yer": "Header logo özniteliğinde data-URI SVG (yüklenmez)"
+    },
+    {
+      "kaynak": "İkonlar (menü, ok, sosyal, WhatsApp, yukarı)",
+      "yer": "satır içi SVG (yüklenmez)"
+    }
+  ],
+  "harici": [
+    {
+      "kaynak": "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=Montserrat:wght@700&display=swap",
+      "not": "Google Fonts; sayfada eklenmişse tekrar eklenmez"
+    },
+    {
+      "kaynak": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js",
+      "not": "GSAP 3.13.0 (cdnjs); sayfada varsa tekrar yüklenmez"
+    },
+    {
+      "kaynak": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js",
+      "not": "GSAP 3.13.0 (cdnjs); sayfada varsa tekrar yüklenmez"
+    },
+    {
+      "kaynak": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js",
+      "not": "GSAP 3.13.0 (cdnjs); sayfada varsa tekrar yüklenmez"
+    }
+  ],
+  "kullanilmayan_wix_url": [
+    {
+      "not": "Ecosystem için verilen 4 static.wixstatic.com logo adresi renkli/zeminli orijinallerdir; sitede gri sistem için aktarim-medya/img/eco/*.png kullanılır."
+    }
+  ]
+}

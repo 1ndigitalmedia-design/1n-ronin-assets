@@ -1,0 +1,22 @@
+/* 1N Digital Media — Google Ads API / Data Transparency (v6.43 · 01 Footer Integration)
+   Footer'ın ilk bilgilendirme satırı gibi durur: aynı #0A0B0B zemin, aynı %90 genişlik, footer ile aynı 3 sütunlu ızgara.
+   Kendi çizgisi yoktur — tek ayırıcı, footer'ın mevcut ince çizgisidir (footer kodu değiştirilmedi).
+   Metin gerçek, seçilebilir HTML; JS/GSAP olmasa da tamamen görünür. */
+.n1gads{
+  --ga-ink:#ECEBE5; --ga-soft:#C4C3BC; --ga-mute:#8E8F89; --ga-dim:#6E706A; --ga-accent:#A8CF62;
+  position:relative;background:#0A0B0B;color:var(--ga-soft);
+  padding:clamp(40px,6vh,64px) 0 0;
+}
+.n1gads-inner{width:90%;margin:0 auto;display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,.8fr);column-gap:clamp(32px,5vw,112px);align-items:start}
+.n1gads-head{margin:0;padding-top:.3em;display:grid;gap:10px}
+.n1gads-title{margin:0;display:flex;align-items:center;gap:12px;font:500 12px/1 Barlow,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ga-mute)}
+.n1gads-title i{flex:none;display:block;width:6px;height:6px;border-radius:50%;background:var(--ga-accent);opacity:.85}
+.n1gads-label{margin:0;padding-left:18px;font:500 10.5px/1 Barlow,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--ga-dim)}
+.n1gads-text{grid-column:2 / -1;margin:0;max-width:74ch;font:400 clamp(15px,1.1vw,16px)/1.6 Barlow,Arial,sans-serif;color:var(--ga-soft);text-wrap:pretty}
+
+/* Açıklama ile footer içeriği arasındaki boşluğu kontrollü tut (yalnızca açıklama varken; footer dosyası değişmedi) */
+main:has(> .n1gads:last-child) + .n1ft{padding-top:clamp(36px,5vh,56px)}
+
+@media (max-width:1180px){.n1gads-inner{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.n1gads-text{grid-column:2 / -1}}
+@media (max-width:760px){.n1gads-inner{grid-template-columns:1fr;row-gap:14px}.n1gads-text{grid-column:1}}

@@ -1,0 +1,49 @@
+/* 1N Digital Media — İletişim / proje başlatma bölümü (v6.34)
+   002.mp4 video bandının hemen altında. İçerik %90 genişlikte; solda tipografi, sağda Ronin figürü.
+   Renk: #0A0B0B zemin, kırık beyaz, soft gri, kontrollü marka yeşili (#A8CF62). */
+.n1ct{
+  --ct-bg:#0A0B0B; --ct-ink:#ECEBE5; --ct-soft:#B9B8B1; --ct-mute:#8E8F89; --ct-line:rgba(228,227,221,.14); --ct-accent:#A8CF62;
+  position:relative; isolation:isolate; overflow:hidden;
+  background:var(--ct-bg); color:var(--ct-ink);
+}
+.n1ct-inner{position:relative;width:90%;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);align-items:center;column-gap:clamp(24px,4vw,96px);
+  min-height:calc(var(--ct-fig-h) + clamp(48px,7vh,96px))}
+.n1ct{--ct-fig-h:clamp(500px,min(80vh,46vw),820px)}
+
+/* Metin */
+.n1ct-copy{position:relative;z-index:2;padding:clamp(72px,10vh,128px) 0}
+.n1ct-tag{display:flex;align-items:center;gap:14px;margin:0 0 clamp(22px,3vh,36px);font:500 12px/1 Barlow,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ct-mute)}
+.n1ct-tag i{display:block;width:34px;height:1px;background:var(--ct-accent);opacity:.8;transform-origin:0 50%}
+.n1ct-title{margin:0;font-family:"Barlow Condensed","Roboto Condensed","Arial Narrow",Arial,sans-serif;font-weight:600;
+  font-size:clamp(58px,6.1vw,128px);line-height:.92;letter-spacing:-.012em;color:var(--ct-ink)}
+.n1ct-line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.n1ct-line > span{display:block;white-space:nowrap}
+.n1ct-line--accent{color:var(--ct-accent)}
+.n1ct-desc{max-width:44ch;margin:clamp(26px,3.6vh,44px) 0 0;font:400 clamp(16px,1.15vw,20px)/1.55 Barlow,Arial,sans-serif;color:var(--ct-soft)}
+
+/* CTA: header'daki TEKLİF AL ailesi — daha güçlü: büyük, ince yeşil çerçeve, hover'da yeşil dolgu soldan akar */
+.n1ct-cta-wrap{margin-top:clamp(34px,4.6vh,56px)}
+.n1ct-cta{position:relative;display:inline-flex;align-items:center;gap:22px;height:64px;padding:0 10px 0 28px;border-radius:12px;overflow:hidden;
+  font:500 13.5px/1 Barlow,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ct-ink);
+  background:rgba(16,19,17,.72);border:1px solid rgba(168,207,98,.42);outline:none;will-change:transform;
+  transition:color .45s cubic-bezier(.22,1,.36,1),border-color .45s ease}
+.n1ct-cta::before{content:"";position:absolute;inset:0;z-index:0;background:var(--ct-accent);transform:scaleX(0);transform-origin:0 50%;transition:transform .6s cubic-bezier(.65,0,.35,1)}
+.n1ct-cta > *{position:relative;z-index:1}
+.n1ct-cta-ico{display:grid;place-items:center;width:44px;height:44px;border-radius:8px;background:rgba(168,207,98,.12);overflow:hidden;transition:background-color .45s ease}
+.n1ct-cta-ico svg{display:block;width:16px;height:16px}
+.n1ct-cta:hover,.n1ct-cta:focus-visible{color:#0A0B0B;border-color:var(--ct-accent)}
+.n1ct-cta:hover::before,.n1ct-cta:focus-visible::before{transform:scaleX(1)}
+.n1ct-cta:hover .n1ct-cta-ico,.n1ct-cta:focus-visible .n1ct-cta-ico{background:rgba(10,11,11,.12)}
+.n1ct-cta:focus-visible{box-shadow:0 0 0 2px var(--ct-bg),0 0 0 3px rgba(168,207,98,.8)}
+
+/* Figür: görselin siyah zemini bölüm zeminine karışır (lighten), kenarlar yumuşak söner — sert kesim yok */
+.n1ct-fig{position:relative;align-self:end;justify-self:end;height:var(--ct-fig-h);margin:0;pointer-events:none}
+.n1ct-fig img{display:block;height:100%;width:auto;max-width:none;mix-blend-mode:lighten;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 9%,#000 80%,transparent 100%),linear-gradient(to right,transparent 0,#000 10%,#000 90%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,transparent 0,#000 9%,#000 80%,transparent 100%),linear-gradient(to right,transparent 0,#000 10%,#000 90%,transparent 100%);mask-composite:intersect}
+
+/* Daha dar masaüstü: figür küçülür, metin önde kalır */
+@media (max-width:1180px){.n1ct-inner{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}}
+/* Mobil bu sürümde tasarlanmadı: tek sütun, figür metnin altında */
+@media (max-width:760px){.n1ct-inner{grid-template-columns:1fr;min-height:0}.n1ct-copy{padding:64px 0 24px}.n1ct-fig{justify-self:center;height:auto;width:min(80vw,420px)}.n1ct-fig img{width:100%;height:auto}.n1ct-title{font-size:clamp(40px,11vw,60px)}.n1ct-line > span{white-space:normal}}
+@media (prefers-reduced-motion:reduce){.n1ct-cta,.n1ct-cta::before,.n1ct-cta-ico{transition:none}}
