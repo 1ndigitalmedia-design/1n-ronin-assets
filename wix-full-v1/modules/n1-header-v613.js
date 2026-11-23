@@ -52,6 +52,8 @@ ${TAG} .n1h-btn:focus-visible,${TAG} .n1h-logo:focus-visible{outline:2px solid #
 .n1h-panel{position:fixed;z-index:901;top:96px;right:calc((100% - var(--site-w,90%)) / 2);width:min(380px,var(--site-w,90%));display:grid;gap:8px;
   font-family:Barlow,"Helvetica Neue",Arial,sans-serif;visibility:hidden;pointer-events:none;transition:visibility 0s linear .42s}
 .n1h-panel[data-open]{visibility:visible;pointer-events:auto;transition-delay:0s}
+.n1h-panel{overflow:visible}
+.n1h-panel .n1h-main{overflow:visible}
 .n1h-card{background:#111312;color:#ecebe6;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45);
   opacity:0;transform:translate3d(0,-10px,0) scale(.985);transform-origin:top right;
   transition:opacity .22s ease,transform .32s ${EASE};transition-delay:calc(var(--i,0) * 30ms)}
@@ -85,6 +87,7 @@ ${TAG} .n1h-btn:focus-visible,${TAG} .n1h-logo:focus-visible{outline:2px solid #
 .n1h-sub{position:absolute;right:calc(100% + 8px);top:0;width:300px;padding:10px;background:#111312;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45);
   opacity:0;transform:translate3d(8px,0,0);visibility:hidden;pointer-events:none;transition:opacity .22s ease,transform .3s ${EASE},visibility 0s linear .3s}
 .n1h-sub[data-open]{opacity:1;transform:none;visibility:visible;pointer-events:auto;transition:opacity .3s ease,transform .45s ${EASE},visibility 0s}
+.n1h-panel[data-open] > .n1h-sub[data-open]{z-index:5;visibility:visible;opacity:1;pointer-events:auto;transform:none}
 .n1h-sub h3{margin:6px 14px 8px;font:500 11px/1 Barlow,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(236,235,230,.45)}
 .n1h-sub ul{list-style:none;margin:0;padding:0}
 .n1h-sub a,.n1h-sub span.n1h-soon{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:42px;padding:0 14px;border-radius:8px;font:400 17px/1.15 Barlow,Arial,sans-serif;text-decoration:none}
@@ -146,10 +149,10 @@ ${TAG} .n1h-btn:focus-visible,${TAG} .n1h-logo:focus-visible{outline:2px solid #
       const items = menu.items || [];
       p.innerHTML = `<nav class="n1h-card n1h-main" style="--i:0;position:relative" aria-label="Ana menü">
   <ul class="n1h-nav">${items.map((it, i) => `<li${i === items.length - 1 ? ' class="n1h-last"' : ''}><button class="n1h-item" type="button" aria-expanded="false" aria-controls="${id}-s${i}" data-i="${i}"><span class="n1h-mark" aria-hidden="true"></span><span class="n1h-txt">${esc(it.title)}</span><span class="n1h-more" aria-hidden="true">${esc(it.note || '')}</span></button></li>`).join('')}</ul>
+</nav>
   ${items.map((it, i) => `<div class="n1h-sub" id="${id}-s${i}" role="group" aria-label="${esc(it.title)}"><h3>${esc(it.title)}</h3><ul>${(it.sub || []).map((s) => s.href
         ? `<li><a href="${esc(s.href)}"><span class="n1h-st">${esc(s.text)}</span></a></li>`
         : `<li><span class="n1h-soon" aria-disabled="true">${esc(s.text)}</span></li>`).join('')}</ul></div>`).join('')}
-</nav>
 <div class="n1h-card n1h-brandcard" style="--i:1"><a class="n1h-brand" href="${esc(menu.brand.href)}"><span><b>${esc(menu.brand.text)}</b><small>${esc(menu.brand.note || 'Başlangıca dön')}</small></span><span class="n1h-bline" aria-hidden="true"></span></a></div>`;
       document.body.appendChild(p);
       this.btn = this.querySelector('.n1h-menu'); this.sr = this.querySelector('.n1h-sr');
