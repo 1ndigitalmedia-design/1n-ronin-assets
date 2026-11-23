@@ -142,12 +142,28 @@
         } catch (e) {}
         return orig.call(this, type, fn, opts);
       };
-      t.addEventListener = patched; saved.push([t, orig]);
+      // Wix Studio may expose addEventListener as read-only on Window or other host objects.
+      // Tracking is best-effort: never abort the entire site when an API cannot be patched.
+      var originalOwnDescriptor = Object.getOwnPropertyDescriptor(t, 'addEventListener');
+      try {
+        t.addEventListener = patched;
+        if (t.addEventListener === patched) saved.push([t, originalOwnDescriptor]);
+        else diagNote('Olay dinleyicisi takip edilemedi (salt okunur API): ' + (t === window ? 'window' : t === document ? 'document' : t.tagName || 'element'));
+      } catch (e) {
+        diagNote('Olay dinleyicisi takip edilemedi (Wix izin vermiyor): ' + (t === window ? 'window' : t === document ? 'document' : t.tagName || 'element'));
+      }
     });
     tracker = {
       recs: recs,
       stop: function (removeAll) {
-        saved.forEach(function (s) { if (Object.prototype.hasOwnProperty.call(s[0], 'addEventListener')) delete s[0].addEventListener; });
+        // Restore the exact previous own-property descriptor; deleting an original
+        // own method would otherwise alter Wix's event handling after unmount.
+        saved.forEach(function (s) {
+          try {
+            if (s[1]) Object.defineProperty(s[0], 'addEventListener', s[1]);
+            else delete s[0].addEventListener;
+          } catch (e) { diagNote('Olay dinleyicisi API geri yüklenemedi.'); }
+        });
         if (removeAll) recs.forEach(function (r) { try { r[0].removeEventListener(r[1], r[2], r[3]); } catch (e) {} });
         tracker = null;
       }
