@@ -1,0 +1,50 @@
+/* 1N Digital Media — Uzmanlaştığımız Sektörler (v6.30)
+   Koyu editoryal dizin: büyük başlık + kısa açıklama + akan sektör tipografisi.
+   Renk: #0A0B0B zemin, grafit/antrasit çizgiler, kırık beyaz, soft gri, kontrollü marka yeşili. */
+.n1sec{
+  --sec-bg:#0A0B0B; --sec-ink:#ECEBE5; --sec-soft:#B9B8B1; --sec-mute:#7E7F7A;
+  --sec-line:rgba(228,227,221,.14); --sec-accent:#A8CF62;
+  position:relative; isolation:isolate;
+  padding:clamp(88px,12vh,168px) 0 clamp(96px,13vh,176px);
+  background:linear-gradient(180deg,#101211 0%,#0F1110 14%,#0C0D0D 30%,var(--sec-bg) 48%,var(--sec-bg) 100%);
+  color:var(--sec-ink);
+}
+/* Showreel'den yumuşak geçiş: üstte çok hafif ışık, çizgi yok */
+.n1sec::before{content:"";position:absolute;inset:0 0 auto 0;height:min(60vh,520px);z-index:-1;pointer-events:none;
+  background:radial-gradient(55% 100% at 50% 0%,rgba(150,158,152,.035) 0%,rgba(10,11,11,0) 70%)}
+.n1sec-inner{width:90%;margin:0 auto}
+
+.n1sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,32ch);align-items:end;column-gap:clamp(32px,5vw,120px);row-gap:28px}
+.n1sec-title{margin:0;font-family:"Barlow Condensed","Roboto Condensed","Arial Narrow",Arial,sans-serif;font-weight:700;
+  font-size:clamp(60px,7.2vw,152px);line-height:.86;letter-spacing:-.01em;text-transform:uppercase;color:var(--sec-ink)}
+.n1sec-tl{display:block;overflow:hidden;padding-bottom:.04em;margin-bottom:-.04em}
+.n1sec-tl > span{display:block}
+.n1sec-tl--2{color:var(--sec-soft)}
+.n1sec-desc{margin:0 0 .5em;max-width:32ch;font:400 clamp(16px,1.15vw,21px)/1.5 Barlow,Arial,sans-serif;color:var(--sec-soft)}
+.n1sec-desc strong{display:block;margin-bottom:.35em;font-weight:500;color:var(--sec-ink)}
+
+.n1sec-rule{position:relative;height:1px;margin:clamp(44px,6vh,80px) 0 clamp(28px,4vh,52px);background:var(--sec-line);transform-origin:0 50%}
+.n1sec-rule::after{content:"";position:absolute;left:0;top:0;height:1px;width:clamp(48px,6vw,110px);background:var(--sec-accent);opacity:.8}
+
+/* Sektör dizini */
+.n1sec-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:baseline;
+  column-gap:clamp(22px,2.3vw,52px);row-gap:clamp(4px,.7vw,14px);
+  font-family:"Barlow Condensed","Roboto Condensed","Arial Narrow",Arial,sans-serif;font-weight:500;
+  font-size:clamp(34px,3.85vw,100px);line-height:1.08;letter-spacing:-.008em}
+.n1sec-item{position:relative;display:block;overflow:hidden;padding:.02em .04em .12em;margin:0 -.04em -.1em;white-space:nowrap}
+.n1sec-rise{display:block}
+.n1sec-name{position:relative;display:inline-block;color:var(--sec-soft);text-decoration:none;outline:none;
+  transition:color .45s cubic-bezier(.22,1,.36,1),opacity .45s cubic-bezier(.22,1,.36,1);will-change:transform}
+.n1sec-name::after{content:"";position:absolute;left:0;right:0;bottom:-.02em;height:max(2px,.03em);background:var(--sec-accent);
+  transform:scaleX(0);transform-origin:100% 50%;transition:transform .55s cubic-bezier(.65,0,.35,1);pointer-events:none}
+/* hover / odak: ilgili sektör aydınlanır, yeşil ince çizgi soldan çizilir, diğerleri geri çekilir */
+.n1sec-list:has(.n1sec-name:hover,.n1sec-name:focus-visible) .n1sec-name{opacity:.38}
+.n1sec-list:has(.n1sec-name:hover,.n1sec-name:focus-visible) .n1sec-name:is(:hover,:focus-visible){opacity:1;color:#F3F2EC}
+.n1sec-name:is(:hover,:focus-visible)::after{transform:scaleX(1);transform-origin:0 50%}
+a.n1sec-name{cursor:pointer}
+a.n1sec-name:focus-visible{outline:1px solid rgba(168,207,98,.55);outline-offset:.08em;border-radius:2px}
+
+@media (max-width:1100px){.n1sec-head{grid-template-columns:1fr}.n1sec-desc{max-width:46ch}}
+/* Mobil bu sürümde tasarlanmadı: yalnızca taşmayan, okunur bir düzen */
+@media (max-width:700px){.n1sec-title{font-size:clamp(40px,11vw,60px)}.n1sec-list{font-size:clamp(28px,8vw,40px);column-gap:18px}}
+@media (prefers-reduced-motion:reduce){.n1sec-name,.n1sec-name::after{transition:none}}

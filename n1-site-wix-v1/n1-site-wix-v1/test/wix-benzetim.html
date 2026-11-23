@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>n1-site-v1 — Wix benzetim test sayfası (yerel)</title>
+<!-- YALNIZCA YEREL TEST; Wix'e yüklenmez. Wix Studio sayfa yapısının kaba benzetimi: site kabı > main > bölüm > kutu > Custom Element.
+     Parametreler: ?ronin=<Ronin .bin klasörü> (varsayılan: Aşama 03 paketinin media/ klasörü), ?hostile=1 (Wix benzeri genel etiket kuralları),
+     ?ovf=1 (kapsayıcıda overflow:hidden), ?fix=1 (sticky-fix), ?debug=1 -->
+<style>
+  html,body{margin:0;background:#080A09}
+  #SITE_CONTAINER{position:relative}
+  .wix-section{position:relative}
+  .wix-box{position:relative;width:100%}
+  .ovf .wix-box{overflow:hidden}
+  .next{height:400px;background:#14161a;color:#bbb;font:16px Arial;display:grid;place-items:center}
+</style>
+</head>
+<body>
+<div id="SITE_CONTAINER"><main id="PAGES_CONTAINER">
+  <section class="wix-section" id="comp-site"><div class="wix-box" id="comp-ce">
+    <n1-site-v1 id="ce"></n1-site-v1>
+  </div></section>
+  <section class="wix-section next" id="comp-next"><div class="site-container" id="wix-foreign">Wix'in sonraki bölümü · boşluk kontrolü · Wix'e ait .site-container (etkilenmemeli)</div></section>
+</main></div>
+<script>
+  const q = new URLSearchParams(location.search), H = document.documentElement, ce = document.getElementById('ce');
+  ['ovf'].forEach(k => { if (q.has(k)) H.classList.add(k); });
+  // ?hostile=1: Wix benzeri GENEL sıfırlama kuralları (etiket seçicileri, sayfa CSS'inde sitenin stillerinden önce)
+  if (q.has('hostile')) { const st = document.createElement('style'); st.id = 'wix-like-reset';
+    st.textContent = 'body{font:12px/1.2 "Times New Roman",serif;color:#c00}*{box-sizing:content-box}a{color:#00f;text-decoration:underline}' +
+      'img{display:inline;max-width:none;border:2px solid red}section{padding:0}h1,h2,h3,h4,p,ul,ol{margin:0;padding:0;font-weight:400}ul,ol{list-style:none}' +
+      'button{font:13px Arial;background:#eee;border:2px outset #999;color:#000}';
+    document.head.prepend(st); }
+  ce.setAttribute('assets-base', '../aktarim-medya/');
+  ce.setAttribute('ronin-base', q.get('ronin') || '../../../wix-test-v1/media/');
+  if (q.has('fix')) ce.setAttribute('sticky-fix', '');
+  if (q.has('debug')) ce.setAttribute('debug', '');
+</script>
+<script src="../n1-site-wix-v1.js"></script>
+</body>
+</html>

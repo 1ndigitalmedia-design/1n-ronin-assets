@@ -1,0 +1,110 @@
+/* 1N Digital Media — Interactive Ecosystem (v6.41, bağımsız tasarım denemesi)
+   Sol: kavisli yörüngede dönen proje isimleri · Orta: aktif projenin kimlik plakası · Sağ: açıklama + bağlantı.
+   Renk: #0A0B0B zemin, grafit çizgiler, kırık beyaz, soft gri, kontrollü marka yeşili (#A8CF62). */
+.n1eco{
+  --eco-bg:#0A0B0B; --eco-ink:#ECEBE5; --eco-soft:#B9B8B1; --eco-mute:#8E8F89; --eco-dim:#5E605B;
+  --eco-line:rgba(228,227,221,.12); --eco-accent:#A8CF62;
+  position:relative;overflow:hidden;background:var(--eco-bg);color:var(--eco-ink);
+  padding:clamp(80px,11vh,136px) 0 clamp(64px,9vh,112px);
+}
+.n1eco-inner{position:relative;width:90%;margin:0 auto}
+
+/* Başlık bandı */
+.n1eco-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:end;column-gap:clamp(32px,5vw,120px);row-gap:24px}
+.n1eco-tag{display:flex;align-items:center;gap:14px;margin:0 0 clamp(20px,2.8vh,32px);font:500 12px/1 Barlow,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--eco-mute)}
+.n1eco-tag i{display:block;width:34px;height:1px;background:var(--eco-accent);opacity:.8}
+.n1eco-title{margin:0;font-family:"Barlow Condensed","Roboto Condensed","Arial Narrow",Arial,sans-serif;font-weight:700;
+  font-size:clamp(64px,7vw,148px);line-height:.88;letter-spacing:-.005em;text-transform:uppercase}
+.n1eco-title span{display:block}
+.n1eco-title .is-accent{color:var(--eco-accent)}
+.n1eco-lead{max-width:38ch;margin:0 0 .4em;font:400 clamp(16px,1.15vw,20px)/1.55 Barlow,Arial,sans-serif;color:var(--eco-soft)}
+
+/* Sahne */
+.n1eco-stage{position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.9fr) minmax(0,.78fr);align-items:center;
+  height:clamp(480px,66vh,720px);margin-top:clamp(48px,7vh,88px);border-top:1px solid var(--eco-line)}
+
+/* SOL — kavisli yörünge */
+.n1eco-wheel{position:relative;height:100%;outline:none;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 16%,#000 84%,transparent 100%);cursor:grab;user-select:none;-webkit-user-select:none;touch-action:pan-y}
+.n1eco-wheel.is-dragging{cursor:grabbing}
+.n1eco-orbit{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.n1eco-orbit circle{fill:none;stroke:rgba(228,227,221,.07);stroke-width:1}
+.n1eco-orbit .n1eco-tick{stroke:var(--eco-accent);stroke-width:1.5;opacity:.9}
+.n1eco-item{position:absolute;left:0;top:0;margin:0;padding:0;border:0;background:none;white-space:nowrap;cursor:pointer;
+  font-family:"Barlow Condensed","Roboto Condensed","Arial Narrow",Arial,sans-serif;font-weight:600;font-size:clamp(46px,4.5vw,92px);line-height:1;
+  letter-spacing:-.005em;text-transform:uppercase;color:var(--eco-soft);transform-origin:0 50%;will-change:transform,opacity;
+  transition:color .35s ease}
+.n1eco-item.is-active{color:var(--eco-ink)}
+.n1eco-item.is-active .n1eco-dot{opacity:1;transform:scale(1)}
+.n1eco-item:not(.is-active):hover{color:var(--eco-ink)}
+.n1eco-dot{display:inline-block;width:.14em;height:.14em;margin-left:.16em;border-radius:50%;background:var(--eco-accent);vertical-align:.12em;opacity:0;transform:scale(.4);transition:opacity .4s ease,transform .4s cubic-bezier(.22,1,.36,1)}
+.n1eco-wheel:focus-visible{outline:1px solid rgba(168,207,98,.55);outline-offset:-8px;border-radius:12px}
+
+/* ORTA — kimlik plakası (gerçek logo geldiğinde <img> ile değişir) */
+.n1eco-plate{position:relative;justify-self:center;display:grid;place-items:center;width:min(100%,380px);aspect-ratio:1/1;pointer-events:none}
+.n1eco-plate::before,.n1eco-plate::after{content:"";position:absolute;width:22px;height:22px;border-color:rgba(228,227,221,.22);border-style:solid}
+.n1eco-plate::before{left:0;top:0;border-width:1px 0 0 1px}
+.n1eco-plate::after{right:0;bottom:0;border-width:0 1px 1px 0}
+.n1eco-mark{display:grid;justify-items:center;gap:14px;text-align:center;will-change:opacity,clip-path}
+.n1eco-mark-name{max-width:15ch;text-wrap:balance;font:500 clamp(22px,1.9vw,34px)/1.25 Barlow,Arial,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--eco-ink);padding-left:.32em}
+.n1eco-mark-sub{font:500 11px/1 Barlow,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--eco-dim)}
+.n1eco-mark img{display:block;max-width:220px;max-height:120px;width:auto;height:auto}
+
+/* SAĞ — açıklama + bağlantı */
+.n1eco-detail{align-self:center;max-width:34ch}
+.n1eco-meta{display:flex;justify-content:space-between;align-items:center;margin:0 0 22px;padding-bottom:14px;border-bottom:1px solid var(--eco-line);
+  font:500 12px/1 Barlow,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--eco-mute)}
+.n1eco-count b{font-weight:500;color:var(--eco-ink)}
+.n1eco-count{flex:none;white-space:nowrap}
+.n1eco-domain{letter-spacing:.06em;text-transform:none;min-width:0;margin-left:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.n1eco-mask{overflow:hidden}
+.n1eco-desc{margin:0;font:400 clamp(16px,1.12vw,19px)/1.55 Barlow,Arial,sans-serif;color:var(--eco-soft);min-height:4.65em}
+.n1eco-cta{position:relative;display:inline-flex;align-items:center;gap:18px;height:54px;margin-top:30px;padding:0 8px 0 22px;border-radius:12px;overflow:hidden;
+  font:500 12.5px/1 Barlow,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--eco-ink);
+  background:rgba(16,19,17,.6);border:1px solid rgba(168,207,98,.38);outline:none;transition:color .45s cubic-bezier(.22,1,.36,1),border-color .45s ease}
+.n1eco-cta::before{content:"";position:absolute;inset:0;background:var(--eco-accent);transform:scaleX(0);transform-origin:0 50%;transition:transform .6s cubic-bezier(.65,0,.35,1)}
+.n1eco-cta > *{position:relative}
+.n1eco-cta-ico{display:grid;place-items:center;width:38px;height:38px;border-radius:8px;background:rgba(168,207,98,.12);overflow:hidden}
+.n1eco-cta-ico svg{width:14px;height:14px;display:block}
+.n1eco-cta:hover,.n1eco-cta:focus-visible{color:#0A0B0B;border-color:var(--eco-accent)}
+.n1eco-cta:hover::before,.n1eco-cta:focus-visible::before{transform:scaleX(1)}
+.n1eco-cta:focus-visible{box-shadow:0 0 0 2px var(--eco-bg),0 0 0 3px rgba(168,207,98,.8)}
+
+/* Erişilebilir seçici: 4 gerçek düğme (klavye ve ekran okuyucu) */
+.n1eco-nav{display:flex;gap:6px;margin:34px 0 0;padding:0;list-style:none}
+.n1eco-nav button{position:relative;width:38px;height:28px;padding:0;border:0;background:none;cursor:pointer;color:var(--eco-dim);
+  font:500 12px/1 Barlow,Arial,sans-serif;letter-spacing:.08em;outline:none;transition:color .3s ease}
+.n1eco-nav button::after{content:"";position:absolute;left:8px;right:8px;bottom:2px;height:1px;background:var(--eco-accent);transform:scaleX(0);transform-origin:0 50%;transition:transform .45s cubic-bezier(.65,0,.35,1)}
+.n1eco-nav button:hover{color:var(--eco-soft)}
+.n1eco-nav button[aria-pressed="true"]{color:var(--eco-ink)}
+.n1eco-nav button[aria-pressed="true"]::after{transform:scaleX(1)}
+.n1eco-nav button:focus-visible{outline:1px solid rgba(168,207,98,.6);outline-offset:2px;border-radius:3px}
+.n1eco-hint{margin:14px 0 0;font:400 12.5px/1.4 Barlow,Arial,sans-serif;color:var(--eco-dim)}
+.n1eco-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@media (prefers-reduced-motion:reduce){.n1eco-item,.n1eco-cta,.n1eco-cta::before,.n1eco-nav button::after,.n1eco-dot{transition:none}}
+
+/* v6.41 — ipucu metni moda göre */
+.n1eco .h-pin{display:none}
+.n1eco.is-pinned-mode .h-pin{display:inline}
+.n1eco.is-pinned-mode .h-click{display:none}
+
+/* v6.41 — gerçek logolar: tek renk maske, sabit kare kutu (geçişte boyut sıçramaz), object-fit: contain karşılığı */
+.n1eco{--eco-logo:#8A8E89;--logo-box:clamp(56px,5vw,80px)}
+.n1eco-logo{display:block;width:var(--logo-box);height:var(--logo-box);background-color:var(--eco-logo);
+  -webkit-mask:var(--logo-src) center/contain no-repeat;mask:var(--logo-src) center/contain no-repeat;
+  transform:scale(var(--logo-scale,1))}
+
+/* v6.41 — ad + logo birlikte: ad üstte, logo altta */
+.n1eco-mark{gap:clamp(22px,2vw,32px)}
+
+/* v6.47 — orta alan: tek tip kare ikon kutusu (uygulama ikonu). Yazı yok, ikon tek renk. */
+.n1eco{--eco-tile:clamp(76px,5.8vw,88px);--eco-tile-bg:#242625;--eco-tile-ico:#A3A6A1;--eco-tile-r:22%}
+.n1eco-mark{gap:0}
+.n1eco-tile{position:relative;display:grid;place-items:center;width:var(--eco-tile);height:var(--eco-tile);
+  border-radius:var(--eco-tile-r);background:var(--eco-tile-bg);
+  box-shadow:inset 0 0 0 1px rgba(236,235,229,.07),0 10px 28px rgba(0,0,0,.35);
+  transition:box-shadow .45s cubic-bezier(.22,1,.36,1),transform .45s cubic-bezier(.22,1,.36,1);pointer-events:auto}
+.n1eco-tile .n1eco-logo{--logo-box:58%;width:58%;height:58%;background-color:var(--eco-tile-ico)}
+.n1eco-tile:hover{box-shadow:inset 0 0 0 1px rgba(236,235,229,.14),0 14px 32px rgba(0,0,0,.4);transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.n1eco-tile{transition:none}.n1eco-tile:hover{transform:none}}

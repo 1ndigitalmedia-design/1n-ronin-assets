@@ -1,0 +1,44 @@
+/* 1N Digital Media — Biz Kimiz / tipografik anlatım (v6.35)
+   Video bandının (#video-bandi) hemen ardından gelen ayrı bölüm. Videoya dokunmaz: negatif üst boşlukla
+   videonun alt kısmının üzerine çıkar, ilk satırlar videoda başlar ve #0A0B0B zemine kesintisiz devam eder.
+   Okunabilirlik: yalnızca bu bölüme ait, videonun alt kısmını yumuşakça koyulaştıran geçiş katmanı. */
+.n1ab{
+  --ab-video-h:min(600px,31.25vw);              /* video bandının yüksekliğiyle aynı formül */
+  --ab-over:calc(var(--ab-video-h) * .36);       /* metnin videoya bindiği kısım: alt ~%36 (gözler ve kılıcın üst bölümü açıkta) */
+  --ab-ink:#ECEBE5; --ab-accent:#A8CF62;
+  position:relative; z-index:2;
+  margin-top:calc(-1 * var(--ab-over));
+  padding:calc(var(--ab-over) * .32) 0 clamp(8px,2vh,24px);
+  color:var(--ab-ink);
+}
+/* Video üzerindeki geçiş: üstte şeffaf → videonun alt kenarında neredeyse zemin tonu → zemin */
+.n1ab::before{content:"";position:absolute;left:0;right:0;top:0;height:calc(var(--ab-over) + 1px);z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(10,11,11,0) 0%,rgba(10,11,11,.5) 38%,rgba(10,11,11,.84) 78%,#0A0B0B 100%)}
+.n1ab::after{content:"";position:absolute;left:0;right:0;top:var(--ab-over);bottom:0;z-index:-1;background:#0A0B0B;pointer-events:none}
+.n1ab-inner{width:90%;margin:0 auto}
+.n1ab-text{margin:0;font-family:"Barlow Condensed","Roboto Condensed","Arial Narrow",Arial,sans-serif;font-weight:700;
+  font-size:clamp(50px,5.7vw,124px);line-height:.95;letter-spacing:.006em;text-transform:uppercase;color:var(--ab-ink);
+  font-kerning:normal;text-wrap:pretty}
+.n1ab-s{display:block;text-wrap:balance}  /* uzun cümleler dengeli bölünür: tek kelimelik satır kalmaz */
+.n1ab-hi{color:var(--ab-accent)}
+/* SplitText satır maskesi: harf alt/üst uzantıları (Ü, İ, Ç, Ş) kesilmesin */
+.n1ab-text .n1ab-line-mask{padding:.08em 0 .02em;margin:-.08em 0 -.02em}
+
+/* Buton: header ve iletişim CTA'sı ailesi; burada ikincil — ince yeşil çerçeve, hover'da dolgu soldan akar */
+.n1ab-cta-wrap{margin-top:clamp(36px,5vh,60px)}
+.n1ab-cta{position:relative;display:inline-flex;align-items:center;gap:20px;height:58px;padding:0 9px 0 26px;border-radius:12px;overflow:hidden;
+  font:500 13px/1 Barlow,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ab-ink);
+  background:rgba(16,19,17,.6);border:1px solid rgba(168,207,98,.38);outline:none;will-change:transform;
+  transition:color .45s cubic-bezier(.22,1,.36,1),border-color .45s ease}
+.n1ab-cta::before{content:"";position:absolute;inset:0;z-index:0;background:var(--ab-accent);transform:scaleX(0);transform-origin:0 50%;transition:transform .6s cubic-bezier(.65,0,.35,1)}
+.n1ab-cta > *{position:relative;z-index:1}
+.n1ab-cta-ico{display:grid;place-items:center;width:40px;height:40px;border-radius:8px;background:rgba(168,207,98,.12);overflow:hidden;transition:background-color .45s ease}
+.n1ab-cta-ico svg{display:block;width:15px;height:15px}
+.n1ab-cta:hover,.n1ab-cta:focus-visible{color:#0A0B0B;border-color:var(--ab-accent)}
+.n1ab-cta:hover::before,.n1ab-cta:focus-visible::before{transform:scaleX(1)}
+.n1ab-cta:hover .n1ab-cta-ico,.n1ab-cta:focus-visible .n1ab-cta-ico{background:rgba(10,11,11,.12)}
+.n1ab-cta:focus-visible{box-shadow:0 0 0 2px #0A0B0B,0 0 0 3px rgba(168,207,98,.8)}
+
+/* Mobil bu sürümde tasarlanmadı: videoya binme yok, taşmayan düz akış */
+@media (max-width:900px){.n1ab{margin-top:0;padding:56px 0 40px;background:#0A0B0B}.n1ab::before,.n1ab::after{display:none}.n1ab-text{font-size:clamp(30px,8.4vw,48px)}}
+@media (prefers-reduced-motion:reduce){.n1ab-cta,.n1ab-cta::before,.n1ab-cta-ico{transition:none}}
