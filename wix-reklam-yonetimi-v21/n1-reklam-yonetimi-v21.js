@@ -28,7 +28,7 @@
 (function () {
   'use strict';
   var TAG = 'n1-reklam-yonetimi-v21';
-  var STYLE_ID = 'n1-ry2-style';
+  var STYLE_ID = 'n1-ry21-style';
   if (customElements.get(TAG)) return;
 
   /* ---------- Onaylı kaynaklar (commit'e sabit) ---------- */
