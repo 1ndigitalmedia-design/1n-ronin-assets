@@ -1,3 +1,5 @@
+> **25 Kasım 2026 — Güncel dağıtım durumu:** Orijinal `n1-yapay-zeka-v1.js` dosyası, preview, tasarım/medya/etkileşim/QA belgeleri GitHub `main` dalındaki `wix-yapay-zeka-v1/` klasörüne yüklendi. Kaynak commit: `e6a88e04fad47aa8c3891e4e41a6a207eb89ac7d`. Wix Studio Custom Element URL/Tag Name alanları bu oturumda değiştirilemedi; **AI V1 canlı yayında doğrulanmadı**. Yayın adımları için `RELEASE.md` dosyasını esas alın.
+
 # 1N AI / Yapay Zekâ — V1 "Beyond the Prompt / Fikrin Ötesindeki Zekâ"
 
 | | |
