@@ -1,3 +1,5 @@
+> **25 Kasım 2026 — Sonradan yapılan doğrulama:** Claude teslimi hazırlandıktan sonra orijinal JS GitHub'a yüklendi ve `e6a88e04fad47aa8c3891e4e41a6a207eb89ac7d` commit'inden geri okunarak karakter bazında aynı dosya olduğu doğrulandı. JavaScript sözdizimi ayrıca kontrol edildi. Bu kontrol Wix Studio yayını, gerçek cihaz, ekran okuyucu veya canlı CDN oynatma testi anlamına gelmez. Aşağıdaki raporun testleri Claude tarafından paket hazırlama sırasında yapılmıştır.
+
 # QA_REPORT — AI / Yapay Zekâ V1
 
 ## Önce: yapılamayanlar
