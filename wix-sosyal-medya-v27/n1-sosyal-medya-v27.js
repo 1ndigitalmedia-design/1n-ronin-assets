@@ -925,6 +925,7 @@ T + ' .sm *,' + T + ' .sm *::before,' + T + ' .sm *::after{transition-duration:.
       var self = this, media = this.querySelector('.sm-stg__media'), v = media.querySelector('.sm-stg__video'),
           btn = media.querySelector('.sm-stg__vbtn'), err = media.querySelector('.sm-stg__video-error');
       var conn = navigator.connection || {}, reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      v.defaultMuted = true; v.muted = true; v.playsInline = true; v.setAttribute('webkit-playsinline', '');
       var state = { selected: true, visible: false, auto: !conn.saveData && !reduced, pausedByUser: false, loaded: false, failed: false };
       function load() { if (state.loaded) return; state.loaded = true; v.src = V_STRATEGY; v.preload = 'metadata'; v.load(); }
       function sync() {
@@ -933,11 +934,12 @@ T + ' .sm *,' + T + ' .sm *::before,' + T + ' .sm *::after{transition-duration:.
         btn.setAttribute('aria-pressed', String(playing));
         btn.setAttribute('aria-label', playing ? 'Strateji videosunu duraklat' : 'Strateji videosunu oynat');
       }
-      function pause() { if (!v.paused) v.pause(); sync(); }
+      function pause() { v.autoplay = false; if (!v.paused) v.pause(); sync(); }
       function play(userAction) {
         if (state.failed || !state.selected || (!userAction && (!state.visible || document.hidden))) return;
         load();
         (self._vids || []).forEach(function (p) { if (!p.v.paused) p.v.pause(); });
+        v.autoplay = true; v.preload = 'auto';
         var promise = v.play();
         if (promise && promise.catch) promise.catch(sync);
       }
@@ -959,11 +961,12 @@ T + ' .sm *,' + T + ' .sm *::before,' + T + ' .sm *::after{transition-duration:.
         state.failed = true; v.classList.remove('is-started'); pause(); btn.disabled = true;
         err.textContent = 'Video şu anda oynatılamıyor.';
       });
+      this._ev(v, 'canplay', function () { if (state.visible && state.selected && state.auto && !state.pausedByUser && v.paused && !document.hidden) play(false); });
       var io = new IntersectionObserver(function (entries) {
-        state.visible = entries[0].intersectionRatio >= .25;
+        state.visible = entries[0].isIntersecting && entries[0].intersectionRatio >= .08;
         if (!state.visible) pause();
         else if (state.selected && state.auto && !state.pausedByUser) play(false);
-      }, { threshold: [0, .25, .6] });
+      }, { threshold: [0, .08, .25, .6] });
       io.observe(media);
       var onVisibility = function () {
         if (document.hidden) pause();
