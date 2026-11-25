@@ -1,0 +1,209 @@
+/* =====================================================================
+   1N INTELLIGENCE V2.1 — Tasarım tokenları (2.1.0)
+   Light First · Dual Theme · Premium Glass
+   - Varsayılan tema AÇIK'tır. İşletim sistemi tercihi (prefers-color-scheme) KULLANILMAZ.
+   - Tema yalnızca <html data-theme="dark"> ile değişir; bu öznitelik merkezi tema
+     protokolüyle (Velo → bütün embed'ler) ayarlanır. Bileşenler kendi temasını seçmez.
+   - Bütün bileşenler aynı token adlarını kullanır; iki tema iki ayrı uygulama değildir.
+   ===================================================================== */
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  /* Zemin ve yüzeyler */
+  --n1i-bg: #F3F5F7;                         /* ana arka plan */
+  --n1i-bg-2: #F8F9FA;                       /* ikincil arka plan */
+  --n1i-surface: #FFFFFF;                    /* ana kart */
+  --n1i-surface-2: #F8F9FA;                  /* kart içi alan, tablo başlığı */
+  --n1i-surface-3: #EEF1EF;                  /* gömük alan, segment izi */
+  --n1i-glass: rgba(255, 255, 255, 0.58);    /* cam yüzey (arkası görünür) */
+  --n1i-glass-strong: rgba(255, 255, 255, 0.80); /* açılır menü, tooltip: okunurluk önce */
+  --n1i-glass-fallback: #FFFFFF;
+  --n1i-glass-border: rgba(255, 255, 255, 0.85); /* camın iç kenar ışığı */
+  --n1i-glass-edge: rgba(22, 26, 25, 0.08);  /* camın dış ince çizgisi */
+  --n1i-glass-highlight: rgba(255, 255, 255, 0.95);
+  --n1i-glass-sheen: linear-gradient(180deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0) 46%);
+  --n1i-glass-tint: rgba(243, 245, 247, 0.35); /* açık zeminde camı hafifçe soğutur */
+  --n1i-wash-1: rgba(162, 255, 0, 0.16);     /* özet ve navigasyon arkasındaki yumuşak ışık */
+  --n1i-wash-2: rgba(120, 180, 230, 0.14);
+  --n1i-overlay: rgba(22, 26, 25, 0.28);
+
+  /* Metin */
+  --n1i-text: #161A19;                       /* 17.6:1 beyaz üzerinde */
+  --n1i-text-2: #3A423E;                     /* 10.4:1 */
+  --n1i-muted: #606A65;                      /* 5.6:1 (AA) */
+  --n1i-faint: #8A938E;                      /* yalnızca metin dışı (3.2:1) */
+  --n1i-on-ink: #FFFFFF;                     /* koyu dolgu üzerindeki metin */
+
+  /* Çizgi */
+  --n1i-line: #E1E6E3;
+  --n1i-line-soft: #EDF0EE;
+  --n1i-line-strong: #C9D1CC;
+  --n1i-grid: rgba(22, 26, 25, 0.06);
+
+  /* Kurumsal vurgu: #A2FF00 yalnızca dolgu/yüzey olarak; açık zeminde metin rengi DEĞİL */
+  --n1i-accent: #A2FF00;
+  --n1i-accent-ink: #161A19;                 /* lime üzerindeki metin (14.1:1) */
+  --n1i-accent-text: #4B7A14;                /* açık zeminde okunur yeşil (5.1:1) */
+  --n1i-accent-soft: rgba(162, 255, 0, 0.18);
+  --n1i-accent-ring: #4B7A14;
+  --n1i-ink: #161A19;                        /* seçili pill, birincil düğme */
+  --n1i-ink-hover: #2A302E;
+  /* V2.1 rafine vurgu kartı: tam lime dolgu yerine lime ışıklı yüzey + lime işaret */
+  --n1i-accent-surface: linear-gradient(150deg, rgba(162, 255, 0, 0.30) 0%, rgba(162, 255, 0, 0.12) 55%, rgba(255, 255, 255, 0.9) 100%), #FFFFFF;
+  --n1i-accent-edge: rgba(87, 141, 25, 0.28);
+  --n1i-accent-value: #161A19;
+  --n1i-bubble-user: #161A19;  --n1i-bubble-user-text: #FFFFFF;
+
+  /* Durumlar (her zaman ikon + metin ile) */
+  --n1i-pos: #2F7D32;  --n1i-pos-bg: #E7F5E8;
+  --n1i-neg: #B3261E;  --n1i-neg-bg: #FCEAE8;
+  --n1i-warn: #8A5A00; --n1i-warn-bg: #FFF3D6;
+  --n1i-info: #1F5F99; --n1i-info-bg: #E4F0FB;
+  --n1i-neutral-bg: #EEF1EF;
+
+  /* İkon yüzeyleri (pastel, modül kimliği) — metin rengi ile birlikte 5:1 üzeri */
+  --n1i-tile-lime: #E6F7D4;  --n1i-tile-lime-ink: #3F6E0F;
+  --n1i-tile-sky: #E3EEFA;   --n1i-tile-sky-ink: #2D5F92;
+  --n1i-tile-sand: #FBF0DC;  --n1i-tile-sand-ink: #8A5A12;
+  --n1i-tile-lilac: #EEE9FA; --n1i-tile-lilac-ink: #5B47A0;
+  --n1i-tile-rose: #FBE7EC;  --n1i-tile-rose-ink: #A23A55;
+  --n1i-tile-teal: #DFF3EF;  --n1i-tile-teal-ink: #1F6E64;
+
+  /* Grafik (beyaz zeminde çizgi ≥ 3:1) */
+  --n1i-c1: #578D19;        /* birincil seri çizgisi */
+  --n1i-c1-fill: rgba(162, 255, 0, 0.22);
+  --n1i-c2: #3E6C9E;
+  --n1i-c3: #9A6A12;
+  --n1i-c4: #8A6FC7;
+  --n1i-c5: #1F7F74;
+  --n1i-c6: #C2533F;
+  --n1i-bar: #D3DCD6;       /* sakin çubuk dolgusu */
+  --n1i-bar-edge: #7E8A83;  /* çubuk üst kenarı (3:1) */
+  --n1i-bar-hi: #A2FF00;    /* öne çıkan çubuk */
+  --n1i-bar-hi-edge: #4B7A14;
+  --n1i-bar-partial: rgba(162, 255, 0, 0.35);
+  --n1i-tooltip-bg: rgba(255, 255, 255, 0.86);   /* cam tooltip; arkası bulanık */
+  --n1i-tooltip-solid: #FFFFFF;                  /* backdrop-filter yoksa */
+  --n1i-tooltip-text: #161A19;
+  --n1i-tooltip-muted: #3A423E;                  /* 10.4:1 */
+
+  /* Gölge */
+  --n1i-shadow-1: 0 1px 2px rgba(22, 26, 25, 0.04), 0 8px 24px -6px rgba(22, 26, 25, 0.06);
+  --n1i-shadow-2: 0 2px 6px rgba(22, 26, 25, 0.05), 0 22px 48px -12px rgba(22, 26, 25, 0.16);
+  --n1i-shadow-glass: inset 0 1px 0 var(--n1i-glass-highlight), inset 0 0 0 1px rgba(255, 255, 255, 0.35), 0 1px 2px rgba(22, 26, 25, 0.05), 0 14px 36px -10px rgba(22, 26, 25, 0.14);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --n1i-bg: #080A09;
+  --n1i-bg-2: #0D100E;
+  --n1i-surface: #141716;
+  --n1i-surface-2: #1B211D;
+  --n1i-surface-3: #222923;
+  --n1i-glass: rgba(27, 33, 29, 0.62);
+  --n1i-glass-strong: rgba(24, 29, 26, 0.88);
+  --n1i-glass-fallback: #171B18;
+  --n1i-glass-border: rgba(238, 237, 232, 0.10);
+  --n1i-glass-edge: rgba(0, 0, 0, 0.45);
+  --n1i-glass-highlight: rgba(238, 237, 232, 0.08);
+  --n1i-glass-sheen: linear-gradient(180deg, rgba(238, 237, 232, 0.06) 0%, rgba(238, 237, 232, 0) 40%);
+  --n1i-glass-tint: rgba(8, 10, 9, 0.20);
+  --n1i-wash-1: rgba(162, 255, 0, 0.07);
+  --n1i-wash-2: rgba(120, 180, 230, 0.06);
+  --n1i-overlay: rgba(0, 0, 0, 0.5);
+
+  --n1i-text: #EEEDE8;
+  --n1i-text-2: #CFD2CD;
+  --n1i-muted: #9EA39E;
+  --n1i-faint: #5E6660;
+  --n1i-on-ink: #0B1000;
+
+  --n1i-line: #303830;
+  --n1i-line-soft: #232A24;
+  --n1i-line-strong: #3E473F;
+  --n1i-grid: rgba(238, 237, 232, 0.07);
+
+  --n1i-accent: #A2FF00;
+  --n1i-accent-ink: #0B1000;
+  --n1i-accent-text: #A2FF00;
+  --n1i-accent-soft: rgba(162, 255, 0, 0.12);
+  --n1i-accent-ring: #A2FF00;
+  --n1i-ink: #A2FF00;
+  --n1i-ink-hover: #B4FF33;
+  --n1i-accent-surface: linear-gradient(150deg, rgba(162, 255, 0, 0.16) 0%, rgba(162, 255, 0, 0.05) 60%, rgba(20, 23, 22, 0.9) 100%), #141716;
+  --n1i-accent-edge: rgba(162, 255, 0, 0.26);
+  --n1i-accent-value: #A2FF00;
+  --n1i-bubble-user: #2A322C;  --n1i-bubble-user-text: #EEEDE8;   /* koyu temada neon dolgu yerine sakin yüzey */
+
+  --n1i-pos: #6FD08C;  --n1i-pos-bg: rgba(111, 208, 140, 0.13);
+  --n1i-neg: #FF8A7A;  --n1i-neg-bg: rgba(255, 138, 122, 0.13);
+  --n1i-warn: #F2B84B; --n1i-warn-bg: rgba(242, 184, 75, 0.13);
+  --n1i-info: #8EC3EA; --n1i-info-bg: rgba(142, 195, 234, 0.13);
+  --n1i-neutral-bg: rgba(238, 237, 232, 0.07);
+
+  --n1i-tile-lime: rgba(162, 255, 0, 0.12);   --n1i-tile-lime-ink: #C8F27A;
+  --n1i-tile-sky: rgba(142, 195, 234, 0.14);  --n1i-tile-sky-ink: #A9D2F0;
+  --n1i-tile-sand: rgba(217, 195, 138, 0.14); --n1i-tile-sand-ink: #E3CF9C;
+  --n1i-tile-lilac: rgba(183, 166, 224, 0.15); --n1i-tile-lilac-ink: #C9BCEB;
+  --n1i-tile-rose: rgba(227, 166, 160, 0.15); --n1i-tile-rose-ink: #EDBDB8;
+  --n1i-tile-teal: rgba(127, 211, 196, 0.14); --n1i-tile-teal-ink: #9FE0D4;
+
+  --n1i-c1: #A2FF00;
+  --n1i-c1-fill: rgba(162, 255, 0, 0.10);
+  --n1i-c2: #8EC3EA;
+  --n1i-c3: #D9C38A;
+  --n1i-c4: #B7A6E0;
+  --n1i-c5: #7FD3C4;
+  --n1i-c6: #E3A6A0;
+  --n1i-bar: #3A443D;
+  --n1i-bar-edge: #6B766E;
+  --n1i-bar-hi: #A2FF00;
+  --n1i-bar-hi-edge: #A2FF00;
+  --n1i-bar-partial: rgba(162, 255, 0, 0.30);
+  --n1i-tooltip-bg: rgba(27, 33, 29, 0.86);
+  --n1i-tooltip-solid: #1B211D;
+  --n1i-tooltip-text: #EEEDE8;
+  --n1i-tooltip-muted: #CFD2CD;
+
+  --n1i-shadow-1: 0 1px 0 rgba(238, 237, 232, 0.03) inset, 0 10px 28px rgba(0, 0, 0, 0.35);
+  --n1i-shadow-2: 0 1px 0 rgba(238, 237, 232, 0.05) inset, 0 20px 48px rgba(0, 0, 0, 0.5);
+  --n1i-shadow-glass: inset 0 1px 0 var(--n1i-glass-highlight), 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 40px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* Temadan bağımsız tokenlar */
+:root {
+  --n1i-font: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+  --n1i-font-display: 'Barlow Condensed', 'Barlow', 'Arial Narrow', Arial, sans-serif;
+  /* V2.1: küçük metinler büyütüldü (eksen, kaynak, tarih, tablo başlığı ≥ 12.5 px) */
+  --n1i-fs-xs: 12.5px; --n1i-fs-sm: 13.5px; --n1i-fs-base: 15px; --n1i-fs-md: 16.5px;
+  --n1i-fs-lg: 20px; --n1i-fs-title: 25px;
+  --n1i-fs-kpi: 32px; --n1i-fs-kpi-lg: 44px; --n1i-fs-hero: 60px;
+  --n1i-fs-axis: 12.5px;
+  --n1i-lh-tight: 1.08; --n1i-lh: 1.5;
+  --n1i-fw-regular: 400; --n1i-fw-medium: 500; --n1i-fw-semibold: 600;
+
+  --n1i-s1: 4px; --n1i-s2: 8px; --n1i-s3: 12px; --n1i-s4: 16px; --n1i-s5: 20px;
+  --n1i-s6: 24px; --n1i-s7: 28px; --n1i-s8: 32px; --n1i-s10: 40px; --n1i-s12: 48px; --n1i-s16: 64px;
+
+  --n1i-r-xs: 6px; --n1i-r-sm: 10px; --n1i-r-md: 14px; --n1i-r-lg: 20px; --n1i-r-xl: 26px; --n1i-r-pill: 999px;
+  --n1i-blur: 20px; --n1i-blur-strong: 28px;
+
+  --n1i-dur-fast: 140ms; --n1i-dur: 220ms; --n1i-dur-theme: 280ms; --n1i-dur-slow: 360ms;
+  --n1i-ease: cubic-bezier(0.22, 0.8, 0.24, 1);
+
+  --n1i-bp-sm: 480px; --n1i-bp-md: 720px; --n1i-bp-lg: 1024px; --n1i-bp-xl: 1440px;
+  --n1i-max: 1360px;
+
+  --n1i-z-base: 0; --n1i-z-sticky: 10; --n1i-z-dropdown: 30; --n1i-z-tooltip: 40; --n1i-z-overlay: 50;
+}
+
+/* V1 uyumluluk adları (modüllerde kalan eski adlar için; yeni kodda kullanmayın) */
+:root {
+  --n1i-border: 1px solid var(--n1i-line);
+  --n1i-border-soft: 1px solid var(--n1i-line-soft);
+  --n1i-panel: var(--n1i-surface);
+  --n1i-panel-raised: var(--n1i-surface-2);
+  --n1i-panel-sunken: var(--n1i-surface-2);
+  --n1i-fs-2xl: var(--n1i-fs-kpi-lg);
+}
