@@ -1,6 +1,6 @@
 # WIX_SETUP — Markalar sayfası (/markalar)
 
-> GitHub kaynakları `84d81e4f6753ba61c1e829a74ad23ce5417cc8b2` commit'inde doğrulandı. Wix Studio Custom Element kurulumu ve canlı yayın henüz yapılmadı.
+> GitHub kaynakları `52887065746fb9eaaecb470a2ff199335d3790f8` commit'inde doğrulandı. Wix Studio Custom Element kurulumu ve canlı yayın henüz yapılmadı.
 
 ## 1. GitHub
 
@@ -18,7 +18,7 @@ Bileşen, veri dosyasını kendi dosyasının yanından otomatik olarak yükler.
 **Server URL**
 
 ```
-https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@84d81e4f6753ba61c1e829a74ad23ce5417cc8b2/wix-markalar-v1/n1-markalar-v1.js
+https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@52887065746fb9eaaecb470a2ff199335d3790f8/wix-markalar-v1/n1-markalar-v1.js
 ```
 
 **Tag Name**
@@ -30,7 +30,7 @@ n1-markalar-v1
 **Veri dosyası** (yalnızca bilgi için; ayrıca girilmez)
 
 ```
-https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@84d81e4f6753ba61c1e829a74ad23ce5417cc8b2/wix-markalar-v1/n1-markalar-data-v1.js
+https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@52887065746fb9eaaecb470a2ff199335d3790f8/wix-markalar-v1/n1-markalar-data-v1.js
 ```
 
 **Velo kodu:** Gerekmiyor.
