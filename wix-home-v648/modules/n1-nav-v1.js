@@ -5,7 +5,7 @@
  *  - Çapa hedefi bu sayfadaysa (ana sayfa): bağlantıya tıklanınca sayfa yeniden yüklenmez, mevcut GSAP ile
  *    akıcı kaydırılır; hedef, sabit Header'ın o anki yüksekliğinin altında durur.
  *  - Çapa hedefi bu sayfada değilse (iç sayfalar): kullanıcı yapılandırılmış ana sayfa adresine gönderilir.
- *  - Sayfaya çapa adresiyle gelindiğinde (başka sayfadan, doğrudan URL, yenileme): Custom Element içeriğinin
+ *  - Sayfaya çapa adresiyle gelindiğinde (başka sayfadan, doğrudan URL): Custom Element içeriğinin
  *    oluşması beklenir, hedef doğrulanır, yerleşim oturana kadar sınırlı sayıda düzeltme yapılır.
  *  - prefers-reduced-motion: animasyonsuz, anında konumlama.
  *
@@ -215,10 +215,34 @@
   window.addEventListener('pageshow', function (e) { if (e.persisted) arrive(); });
 
   window.__n1Nav = {
-    version: '1.0.0',
+    version: '1.0.1',
     config: cfg,
     offset: headerOffset,
     go: function (id, smooth) { var el = document.getElementById(id || ANCHORS[0]); if (el) go(el, smooth !== false); return !!el; }
   };
-  arrive();
+  /* Yenileme yeni bir çapa navigasyonu değildir: eski fragment'i kaldır ve Ronin girişine dön. */
+  function resetReloadAnchor() {
+    var here = norm(location.pathname);
+    if (!managed(hashId(location.hash)) || KNOWN_HOMES.indexOf(here) < 0) return false;
+    var entry = window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+    var reload = entry ? entry.type === 'reload' : !!(window.performance && performance.navigation && performance.navigation.type === 1);
+    if (!reload) return false;
+    try { history.replaceState(history.state, '', location.pathname + location.search); } catch (e) { return false; }
+    var previous, offInput, timer, done = false;
+    try { previous = history.scrollRestoration; history.scrollRestoration = 'manual'; } catch (e) {}
+    function finish() {
+      if (done) return; done = true;
+      clearTimeout(timer); window.removeEventListener('pageshow', onShow);
+      if (offInput) offInput();
+      try { if (previous) history.scrollRestoration = previous; } catch (e) {}
+    }
+    function onShow() { requestAnimationFrame(function () { if (!done) { jump(0); finish(); } }); }
+    offInput = untilInput(finish);
+    jump(0);
+    timer = setTimeout(finish, 12000);
+    if (document.readyState === 'complete') onShow();
+    else window.addEventListener('pageshow', onShow, { once: true });
+    return true;
+  }
+  if (!resetReloadAnchor()) arrive();
 })();
