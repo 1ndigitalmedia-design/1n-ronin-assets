@@ -79,6 +79,8 @@
   };
 
   function dirOf(u) { return u ? u.replace(/[?#].*$/, '').replace(/[^/]*$/, '') : ''; }
+  /* Merkezi çapa navigasyonu: bu dosyayla AYNI commit'ten yüklenir (modules/n1-nav-v1.js); ayrı sürüm sabitlemesi gerekmez. */
+  var NAV_SRC = SELF_SRC ? dirOf(SELF_SRC) + 'modules/n1-nav-v1.js' : '';
   function slash(u) { u = (u || '').trim(); return u && !/\/$/.test(u) ? u + '/' : u; }
 
   /* ---------- tek seferlik yükleyiciler ---------- */
@@ -231,6 +233,9 @@
       this._mo.observe(document.body, { childList: true });
 
       ensureFonts(ORDER.fonts);
+      // Çapa navigasyonu (Hizmetler → #hizmetler-ozet): bölüm modüllerinden bağımsız, bir kez yüklenir; yüklenemezse sayfa etkilenmez.
+      if (NAV_SRC) loadScript(NAV_SRC).catch(function (e) { diagNote(String(e && e.message || e)); });
+      else diagNote('Çapa navigasyonu yüklenemedi (dosya adresi bulunamadı); tarayıcının varsayılan çapa davranışı geçerli.');
       var cssDone = Promise.all([loadCss(B.code + 'site/n1-site-base-v1.css')].concat(ORDER.css.map(function (f) { return loadCss(B.code + 'modules/' + f); })));
       var markupDone = loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d24fa373d6d76c0218b3f3b77897a8c2ace04e5e/wix-home-v648/site/n1-site-markup-v648.js");
 
