@@ -589,6 +589,7 @@
       var media = fig.querySelector('.ry-dec__media'), v = fig.querySelector('video'),
           btn = fig.querySelector('.ry-dec__play'), err = fig.querySelector('.ry-dec__error'),
           conn = navigator.connection || {}, reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      v.defaultMuted = true; v.muted = true; v.playsInline = true; v.setAttribute('webkit-playsinline', '');
       var state = { visible: false, promoted: false, failed: false, userPaused: false, auto: !reduced && !conn.saveData };
       function sync() {
         var playing = !v.paused && !v.ended;
@@ -601,10 +602,11 @@
         state.promoted = true; v.preload = 'auto';
         if (v.readyState < 2) v.load();
       }
-      function pause() { if (!v.paused) v.pause(); sync(); }
+      function pause() { v.autoplay = false; if (!v.paused) v.pause(); sync(); }
       function play() {
         if (!state.visible || document.hidden || state.failed) return;
         load();
+        v.autoplay = true;
         var attempt = v.play();
         if (attempt && attempt.catch) attempt.catch(sync);
       }
@@ -620,11 +622,12 @@
         state.failed = true; fig.classList.add('is-failed'); fig.classList.remove('is-started');
         btn.disabled = true; pause(); err.textContent = 'Video şu anda yüklenemiyor.';
       });
+      this._ev(v, 'canplay', function () { if (state.visible && state.auto && !state.userPaused && v.paused && !document.hidden) play(); });
       var io = new IntersectionObserver(function (entries) {
-        state.visible = entries[0].intersectionRatio >= .25;
+        state.visible = entries[0].isIntersecting && entries[0].intersectionRatio >= .08;
         if (!state.visible) pause();
         else if (state.auto && !state.userPaused) play();
-      }, { threshold: [0, .25, .6] });
+      }, { threshold: [0, .08, .25, .6] });
       io.observe(fig);
       // Bölüm ekrana yaklaşırken videonun ilk karesini hazırlamaya başla.
       var near = new IntersectionObserver(function (entries) {
