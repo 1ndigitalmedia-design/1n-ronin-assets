@@ -25,6 +25,7 @@
   if (customElements.get(TAG)) return;
   var SELF_SRC = (document.currentScript && document.currentScript.src) || '';
   var DATA_FILE = 'n1-markalar-data-v1.js';
+  var DATA_FALLBACK_URL = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@84d81e4f6753ba61c1e829a74ad23ce5417cc8b2/wix-markalar-v1/n1-markalar-data-v1.js';
   /* ---------- Onaylı kaynaklar (commit'e sabit) ---------- */
   var CDN = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@';
   var C648 = 'd24fa373d6d76c0218b3f3b77897a8c2ace04e5e';
@@ -204,7 +205,7 @@
     /* Veri dosyası: sayfada zaten varsa kullanılır; yoksa data-src veya bu dosyanın yanındaki n1-markalar-data-v1.js yüklenir */
     _data() {
       if (window.N1_MARKALAR_DATA) return Promise.resolve();
-      var src = this.getAttribute('data-src') || (SELF_SRC ? SELF_SRC.replace(/[^/?#]*([?#].*)?$/, DATA_FILE) : DATA_FILE);
+      var src = this.getAttribute('data-src') || (SELF_SRC ? SELF_SRC.replace(/[^/?#]*([?#].*)?$/, DATA_FILE) : DATA_FALLBACK_URL);
       return loadJs(src, function () { return !!window.N1_MARKALAR_DATA; });
     }
 
