@@ -3,7 +3,7 @@
 Markalar sayfası, tek bir Wix Studio Custom Element (`n1-markalar-v1`) olarak hazırlandı. Marka verisi ayrı bir dosyada tutulur.
 
 **Durum**
-- Ana JS ve veri dosyası GitHub main'e yüklendi; kaynaklar birlikte `84d81e4f6753ba61c1e829a74ad23ce5417cc8b2` commit'inde doğrulandı.
+- Ana JS ve veri dosyası GitHub main'e yüklendi; kaynaklar birlikte `52887065746fb9eaaecb470a2ff199335d3790f8` commit'inde doğrulandı.
 - Wix Studio içinde test yapılmadı.
 - Kurulum adımları: WIX_SETUP.md.
 
