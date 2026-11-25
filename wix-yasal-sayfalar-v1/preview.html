@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yasal Sayfalar V1 | 1N Digital Media — önizleme</title>
+<meta name="robots" content="noindex">
+<style>
+  html,body{margin:0;background:#080A09;color:#ECEBE5;font:17px/1.6 Barlow,Arial,sans-serif}
+  .pv{width:min(90%,880px);margin:0 auto;padding:72px 0}
+  .pv h1{margin:0;font:700 44px/1 "Barlow Condensed","Arial Narrow",Arial,sans-serif}
+  .pv p{color:#C9C8C1;max-width:70ch}
+  .pv ol{margin:28px 0 0;padding:0;list-style:none;border-top:1px solid rgba(228,227,221,.13)}
+  .pv li{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(228,227,221,.13)}
+  .pv li b{flex:1 1 260px;font-weight:600}
+  .pv a{color:#ECEBE5;text-decoration-color:#A8CF62;text-underline-offset:.2em;min-height:44px;display:inline-flex;align-items:center}
+  .pv code{color:#A8CF62}
+</style>
+</head>
+<body>
+<!-- Önizleme: ?sayfa=gizlilik|kvkk|cerez|kullanim|basvuru  ·  &inceleme=1 inceleme işaretlerini gösterir  ·  &tarih=YYYY-AA-GG son güncelleme tarihini dener.
+     Sayfa seçimi yalnızca bu önizleme dosyasında yapılır; Custom Element'ler URL'ye bakmaz, Tag Name ile açılır.
+     Header/Footer, fontlar onaylı HTTPS adreslerinden yüklenir; dosyayı bir sunucu üzerinden açın (ör. python3 -m http.server). -->
+<div id="pv"></div>
+<script>
+(function () {
+  var TAGS = { gizlilik: 'n1-gizlilik-politikasi-v1', kvkk: 'n1-kvkk-aydinlatma-v1', cerez: 'n1-cerez-politikasi-v1', kullanim: 'n1-kullanim-kosullari-v1', basvuru: 'n1-veri-sahibi-basvuru-v1' };
+  var NAMES = { gizlilik: 'Gizlilik Politikası', kvkk: 'KVKK Aydınlatma Metni', cerez: 'Çerez Politikası', kullanim: 'Kullanım Koşulları', basvuru: 'Veri Sahibi Başvuru Formu' };
+  var q = new URLSearchParams(location.search), k = q.get('sayfa'), box = document.getElementById('pv');
+  if (k && TAGS[k]) {
+    document.title = NAMES[k] + ' | 1N Digital Media — önizleme';
+    var el = document.createElement(TAGS[k]);
+    if (q.get('inceleme') === '1') el.setAttribute('review', '');
+    if (q.get('tarih')) el.setAttribute('updated', q.get('tarih'));
+    box.replaceWith(el);
+  } else {
+    box.className = 'pv';
+    box.innerHTML = '<h1>Yasal Sayfalar V1 — önizleme</h1><p>Her sayfa ayrı bir Custom Element ile açılır. "İnceleme" bağlantısı, yayından önce doğrulanması gereken noktaları sarı işaretlerle gösterir; bu işaretler ziyaretçi görünümünde yer almaz.</p><ol>' +
+      Object.keys(TAGS).map(function (x) { return '<li><b>' + NAMES[x] + '</b><code>&lt;' + TAGS[x] + '&gt;</code><a href="?sayfa=' + x + '">Ziyaretçi görünümü</a><a href="?sayfa=' + x + '&inceleme=1">İnceleme</a></li>'; }).join('') + '</ol>';
+  }
+})();
+</script>
+<script src="n1-yasal-sayfalar-v1.js"></script>
+</body>
+</html>
