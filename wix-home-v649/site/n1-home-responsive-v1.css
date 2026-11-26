@@ -1,0 +1,77 @@
+/* 1N Digital Media — Ana sayfa mobil / tablet katmanı (n1-home-responsive-v1)
+ * Yalnızca <n1-site-v1> bileşeni ve onun body'ye taşıdığı öğeler ([data-n1-owner="n1-site-v1"]) kapsamındadır.
+ * Bütün kurallar (max-width:900px) içindedir → 901 px ve üzerinde HİÇBİR kural eşleşmez; masaüstü aynen kalır.
+ * Bu dosya yalnızca mobil/tablet profilinde yüklenir (masaüstünde ağ isteği bile yapılmaz).
+ * html/body'ye kural yazılmaz. Modüllerin kendi ≤900 px kuralları korunur; burada yalnızca eksikler tamamlanır.
+ *
+ * Profiller:  telefon ≤ 767 px  ·  tablet 768–900 px  ·  masaüstü ≥ 901 px (mevcut modüllerin 900 px sınırı korunur)
+ */
+
+@media (max-width:900px){
+
+  /* ── Genel: dokunmatik hedefler, kenar payı, taşma ─────────────────────────────────────────────── */
+  n1-site-v1{--n1m-pad:clamp(18px,5vw,40px);overflow-x:clip;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  n1-site-v1 a,n1-site-v1 button{-webkit-tap-highlight-color:transparent}
+  n1-site-v1 :where(a.n1b-all,a.n1ab-cta,a.n1eco-cta,.n1sr-open,.n1eco-nav button){touch-action:manipulation}
+
+  /* ── Ronin hero (ronin-hero-mv1): sayfa zemini ile aynı ton, yazı katmanı görünür ────────────────── */
+  n1-site-v1 ronin-hero-mv1{background:#080A09;--rh6-fade-c:#080A09}
+  n1-site-v1 ronin-hero-mv1 .rh6-slogan{color:#eeede8}
+  n1-site-v1 ronin-hero-mv1 .rh6-cta{background:#A2FF00;color:#0b0d0c}
+
+  /* ── Hizmetler özeti (Scroll Text Highlight): Header payı; metin ve animasyon değişmez ──────────── */
+  n1-site-v1 .intro{padding-top:clamp(40px,7vh,72px)}
+  n1-site-v1 #hizmetler-ozet{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 76px)}
+  n1-site-v1 .intro-text .sh-link{padding-block:.08em}
+
+  /* ── Sinematik videolar: mobil/tablet kaynakları 768×450; oran korunur, kırpma ve esnetme yok ────── */
+  n1-site-v1 .n1sv[data-n1m-video]{height:auto;max-height:none;aspect-ratio:768 / 450;background-color:#000;background-size:cover;background-position:50% 50%;background-repeat:no-repeat}
+  n1-site-v1 .n1sv.n1sv--band[data-n1m-video]{height:auto;max-height:none;aspect-ratio:768 / 450}
+  n1-site-v1 .n1sv[data-n1m-video] .n1sv-video{max-height:none;object-fit:cover;object-position:50% 50%}
+  n1-site-v1 .n1sv[data-n1m-video].is-poster .n1sv-video,n1-site-v1 .n1sv[data-n1m-video].is-error .n1sv-video{visibility:hidden}
+
+  /* ── Ekosistem: masaüstündeki üç sütun dar ekranda tek sütun ───────────────────────────────────── */
+  n1-site-v1 .n1eco{padding:clamp(64px,9vh,96px) 0 clamp(56px,8vh,88px)}
+  n1-site-v1 .n1eco-inner{width:auto;margin:0 var(--n1m-pad)}
+  n1-site-v1 .n1eco-head{grid-template-columns:minmax(0,1fr);row-gap:18px}
+  n1-site-v1 .n1eco-title{font-size:clamp(52px,15vw,96px)}
+  n1-site-v1 .n1eco-lead{max-width:44ch;margin:0;font-size:16px}
+  n1-site-v1 .n1eco-stage{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;height:auto;margin-top:clamp(32px,5vh,48px);align-items:start;row-gap:8px}
+  n1-site-v1 .n1eco-wheel{height:clamp(250px,64vw,340px)}
+  n1-site-v1 .n1eco-item{font-size:clamp(40px,11.5vw,64px)}
+  n1-site-v1 .n1eco-plate{display:none}
+  n1-site-v1 .n1eco-detail{max-width:none;align-self:start;padding-top:20px;border-top:1px solid var(--eco-line)}
+  n1-site-v1 .n1eco-desc{min-height:0;font-size:16px}
+  n1-site-v1 .n1eco-cta{height:56px;margin-top:22px}
+  n1-site-v1 .n1eco-nav{gap:4px;margin-top:22px}
+  n1-site-v1 .n1eco-nav button{width:48px;height:44px}
+  n1-site-v1 .n1eco-domain{max-width:60%}
+
+  /* ── Markalar: yatay liste parmakla kayar; "Tüm markaları gör" dokunma hedefi ───────────────────── */
+  n1-site-v1 .n1b-viewport{-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+  n1-site-v1 a.n1b-all{min-height:48px}
+
+  /* ── Yüzen kontroller (WhatsApp / Yukarı Çık): mobilde de erişilebilir, safe-area içinde ────────── */
+  .n1fc[data-n1-owner="n1-site-v1"],n1-floating-controls[data-n1-owner="n1-site-v1"] .n1fc{display:flex;--n1fc-s:48px;--n1fc-x:16px;--n1fc-y:calc(env(safe-area-inset-bottom,0px) + 16px)}
+
+  /* ── Footer / CTA: dokunma hedefleri ─────────────────────────────────────────────────────────────── */
+  n1-site-v1 footer a{min-height:32px;display:inline-flex;align-items:center}
+}
+
+/* Tablet (768–900): daha geniş kenar payı ve iki sütuna dönen ekosistem ayrıntısı */
+@media (min-width:768px) and (max-width:900px){
+  n1-site-v1 .n1eco-stage{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);grid-template-rows:auto;align-items:center;column-gap:32px}
+  n1-site-v1 .n1eco-wheel{height:clamp(360px,48vw,440px)}
+  n1-site-v1 .n1eco-item{font-size:clamp(44px,6.4vw,58px)}
+  n1-site-v1 .n1eco-detail{border-top:0;padding-top:0}
+  .n1fc[data-n1-owner="n1-site-v1"],n1-floating-controls[data-n1-owner="n1-site-v1"] .n1fc{--n1fc-s:52px;--n1fc-x:28px}
+}
+
+/* Alçak yatay telefon: videolar ekranı aşmasın (oran korunur, içerik ortalanır) */
+@media (max-width:900px) and (orientation:landscape) and (max-height:520px){
+  n1-site-v1 .n1sv[data-n1m-video]{max-height:92vh;max-height:92svh}
+}
+
+@media (max-width:900px) and (prefers-reduced-motion:reduce){
+  n1-site-v1 .n1eco-cta,n1-site-v1 .n1eco-item{transition:none}
+}
