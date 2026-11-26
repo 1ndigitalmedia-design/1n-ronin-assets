@@ -1,3 +1,4 @@
+/* 1N Intelligence V2.3.2 — Loading & Feedback Experience; UI-only. */
 /* 1N Intelligence V2.3.1 | Wix Custom Element | public presentation only
    V2.3.1: giriş ekranı ve marka kilidi, 1N footer, responsive düzeltmeler, İş Takibi özet metrikleri.
    Köprü sözleşmesi (n1i-dashboard-v3) değişmedi. Bu dosyada sır, müşteri verisi veya erişim kodu yoktur. */
@@ -193,7 +194,7 @@ try{(function(document){
     allowedOrigins: Array.isArray(userCfg.allowedOrigins) ? userCfg.allowedOrigins : [],
     heightMessages: userCfg.heightMessages !== false,
     motion: userCfg.motion !== false,
-    responseTimeoutMs: userCfg.responseTimeoutMs || 30000,
+    responseTimeoutMs: userCfg.responseTimeoutMs || 120000,
     demo: qs.get('demo') === '1',
     noGlass: qs.get('noglass') === '1',
     options: userCfg.options || {}
@@ -662,17 +663,20 @@ try{(function(document){
   function rangeController(o) {
     /* V2.2: reklam platformlarında uzun dönem "1 yıl" (365 gün); GA4'te "Tüm zamanlar". Anahtar 'all' aynı kalır. */
     var RANGES = o.allLabel ? [RANGES_BASE[0], RANGES_BASE[1], { key: 'all', label: o.allLabel }] : RANGES_BASE;
-    var st = { current: o.initial || '7', pending: null, timer: 0, hasData: false };
+    var st = { current: o.initial || '7', pending: null, timer: 0, slow: 0, hasData: false };
+    function clearWait() { clearTimeout(st.timer); clearTimeout(st.slow); }
+    function slowWait() { st.slow = setTimeout(function () { if (o.root.isConnected) markSlow(o.root); }, 15000); }
     function setPressed(key) { o.root.querySelectorAll('[data-range]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-range') === key)); }); }
     function request(key) {
       st.pending = key; setPressed(key);
       if (o.onPending) o.onPending(key);
-      clearTimeout(st.timer);
-      st.timer = setTimeout(function () { if (st.pending === key && o.onTimeout) o.onTimeout(key); }, cfg.responseTimeoutMs);
+      clearWait(); slowWait();
+      st.timer = setTimeout(function () { if (o.root.isConnected && st.pending === key && o.onTimeout) o.onTimeout(key); }, cfg.responseTimeoutMs);
       (o.send || bridge.send)({ action: 'changeRange', range: key });
     }
     /* İlk yanıt hiç gelmezse (Velo hata yakalayıp mesaj göndermediğinde) sonsuz yükleme yerine durum göster. */
-    st.timer = setTimeout(function () { if (!st.hasData && !st.pending && o.onInitialTimeout) o.onInitialTimeout(st.current); }, cfg.responseTimeoutMs);
+    slowWait();
+    st.timer = setTimeout(function () { if (o.root.isConnected && !st.hasData && !st.pending && o.onInitialTimeout) o.onInitialTimeout(st.current); }, cfg.responseTimeoutMs);
     o.root.addEventListener('click', function (e) {
       var b = e.target.closest('[data-range]'); if (!b) return;
       var key = b.getAttribute('data-range');
@@ -690,11 +694,16 @@ try{(function(document){
         return k === st.current || !st.hasData;
       },
       isPending: function () { return !!st.pending; },
-      done: function (d) { clearTimeout(st.timer); st.current = d.rangeKey || '7'; st.pending = null; st.hasData = true; setPressed(st.current); },
+      dispose: clearWait,
+      done: function (d) { clearWait(); st.current = d.rangeKey || '7'; st.pending = null; st.hasData = true; setPressed(st.current); },
       segHtml: function () { return ui.seg('range', RANGES, st.pending || st.current, 'Tarih aralığı'); }
     };
   }
 
+  function markSlow(root) {
+    var el = root.querySelector('.n1i-loading-line');
+    if (el && el.querySelector('.n1i-spin')) { el.setAttribute('role','status'); el.innerHTML = '<span class="n1i-spin" aria-hidden="true"></span>Verileriniz hazırlanmaya devam ediyor…'; }
+  }
   /* Aralık seçimi olmayan modüller için ilk veri bekçisi */
   function watchdog(onTimeout) {
     var done = false, t = setTimeout(function () { if (!done) onTimeout(); }, cfg.responseTimeoutMs);
@@ -803,7 +812,7 @@ try{(function(document){
 
   runtime.N1I = {
     version: VERSION, cdn: CDN, cfg: cfg, fmt: fmt, esc: esc, icon: icon, bridge: bridge, height: height,
-    motion: motion, charts: charts, ui: ui, header: header, fitNumbers: fitNumbers, alignDays: alignDays, loadScript: loadScript, DASH: DASH, rangeController: rangeController, RANGES: RANGES_BASE, watchdog: watchdog, theme: theme, seg: seg
+    motion: motion, charts: charts, ui: ui, header: header, fitNumbers: fitNumbers, alignDays: alignDays, loadScript: loadScript, DASH: DASH, rangeController: rangeController, markSlow: markSlow, RANGES: RANGES_BASE, watchdog: watchdog, theme: theme, seg: seg
   };
 })();
 
@@ -857,18 +866,18 @@ runtime.N1I_MODULES['ads'] = function(moduleN, document) {
   var ctrl = N.rangeController({
     root: root,
     allLabel: '1 yıl',
-    onPending: function () { var b = root.querySelector('[data-body]'); if (b) b.classList.add('is-stale'); setLoading(true); },
-    onInitialTimeout: function () { setLoading(false); root.querySelector('[data-body]').innerHTML = ui.state('warn', P.title + ' verisi gelmedi', 'Sayfa kodu bu bölüme veri göndermedi. Wix sayfa kodu hata yakaladığında bölüme mesaj göndermiyor; bağlantı da yavaş olabilir.', '<button type="button" class="n1i-btn n1i-btn--sm" data-retry>' + N.icon('refresh') + 'Tekrar iste</button>'); N.height.schedule(); },
-    onTimeout: function () { setLoading(false); banner('error', 'Yeni aralığın verisi gelmedi', 'Ekrandaki sayılar önceki seçime aittir.', true); }
+    onPending: function () { var b = root.querySelector('[data-body]'); root.querySelector('[data-banner]').innerHTML = ''; if (b) { if (!last) b.innerHTML = ui.skelKpis(4) + ui.skelPanel(220); else b.classList.add('is-stale'); } setLoading(true); },
+    onInitialTimeout: function () { setLoading(false); root.querySelector('[data-body]').innerHTML = ui.state('error', 'Veri kaynağına ulaşılamıyor', 'Bekleme süresi doldu. Lütfen tekrar deneyiniz.', '<button type="button" class="n1i-btn n1i-btn--sm" data-retry>' + N.icon('refresh') + 'Tekrar iste</button>'); N.height.schedule(); },
+    onTimeout: function () { setLoading(false); banner('error', 'Veri kaynağına ulaşılamıyor', last ? 'Bekleme süresi doldu. Ekrandaki sayılar önceki seçime aittir.' : 'Bekleme süresi doldu. Lütfen tekrar deneyiniz.', true); }
   });
 
   function shell() {
     root.innerHTML = '<section class="n1i-module" aria-labelledby="ads-title">' +
-      N.header({ icon: P.icon, tone: isMeta ? 'sky' : 'sand', title: P.title, meta: ['<span id="ads-range">Son 7 gün</span>', '<span>Kaynak: ' + esc(P.source) + '</span>', '<span id="ads-status"></span>', '<span id="ads-recv" class="n1i-loading-line"><span class="n1i-spin"></span>Yükleniyor…</span>', ui.demoChip()], tools: ctrl.segHtml() }) +
+      N.header({ icon: P.icon, tone: isMeta ? 'sky' : 'sand', title: P.title, meta: ['<span id="ads-range">Son 7 gün</span>', '<span>Kaynak: ' + esc(P.source) + '</span>', '<span id="ads-status"></span>', '<span id="ads-recv" class="n1i-loading-line" role="status" aria-live="polite"><span class="n1i-spin" aria-hidden="true"></span>Verileriniz yükleniyor…</span>', ui.demoChip()], tools: ctrl.segHtml() }) +
       '<div data-banner></div><div data-body>' + ui.skelKpis(4) + '<div class="n1i-grid"><div class="n1i-col-12">' + ui.skelPanel(220) + '</div></div></div></section>';
     root.querySelector('h2').id = 'ads-title';
   }
-  function setLoading(on) { var el = document.getElementById('ads-recv'); if (el) el.innerHTML = on ? '<span class="n1i-spin"></span>Yükleniyor…' : (last ? esc(last.recv) : ''); }
+  function setLoading(on) { var el = document.getElementById('ads-recv'); if (el) el.innerHTML = on ? '<span class="n1i-spin" aria-hidden="true"></span>Verileriniz yükleniyor…' : (last ? esc(last.recv) : ''); }
   function banner(kind, title, text, retry) {
     root.querySelector('[data-banner]').innerHTML = '<div class="n1i-banner">' + ui.state(kind, title, text, retry ? '<button type="button" class="n1i-btn n1i-btn--sm" data-retry>' + N.icon('refresh') + 'Tekrar dene</button>' : '') + '</div>';
     N.height.schedule();
@@ -1079,8 +1088,8 @@ runtime.N1I_MODULES['ai'] = function(moduleN, document) {
   'use strict';
   var N = moduleN, esc = N.esc, ui = N.ui;
   var root = document.getElementById('n1i-root');
-  var MAX = 500, TIMEOUT = (N.cfg.demo && /[?&]timeout=\d/.test(location.search)) ? N.cfg.responseTimeoutMs : ((N.cfg.options && N.cfg.options.aiTimeoutMs) || 60000);
-  var waiting = null, timer = 0, lastQuestion = '', busy = false;
+  var MAX = 500, TIMEOUT = (N.cfg.demo && /[?&]timeout=\d/.test(location.search)) ? N.cfg.responseTimeoutMs : ((N.cfg.options && N.cfg.options.aiTimeoutMs) || 120000);
+  var waiting = null, timer = 0, slowTimer = 0, timedOut = false, lastQuestion = '', busy = false;
   var ERRORS = ['Bir hata oluştu, lütfen tekrar deneyin.', 'Şu anda cevap veremiyorum, lütfen daha sonra tekrar deneyin.', 'Bağlantı hatası oluştu, lütfen tekrar deneyin.', 'Bir cevap alınamadı.'];
   var SUGGEST = (N.cfg.options && N.cfg.options.suggestions) || [
     'Son 7 günlük reklam performansımı analiz et.',
@@ -1191,25 +1200,27 @@ runtime.N1I_MODULES['ai'] = function(moduleN, document) {
   }
   function ask(q) {
     q = String(q || '').trim().slice(0, MAX);
-    if (!q || waiting) return;
+    if (!q || waiting || timedOut) return;
     lastQuestion = q;
     add('user', '<p>' + esc(q) + '</p>');
     ta.value = ''; resize(); updateCount();
     setBusy(true);
-    waiting = add('ai', '<span class="n1i-ai__typing" role="status"><span class="n1i-ai__dots" aria-hidden="true"><i></i><i></i><i></i></span>Veriler inceleniyor, yanıt hazırlanıyor…</span>');
-    clearTimeout(timer);
-    timer = setTimeout(function () { fail('Yanıt ' + Math.round(TIMEOUT / 1000) + ' saniye içinde gelmedi.'); }, TIMEOUT);
+    waiting = add('ai', '<span class="n1i-ai__typing" role="status"><span class="n1i-ai__dots" aria-hidden="true"><i></i><i></i><i></i></span><span data-ai-wait>Intelligence verilerinizi analiz ediyor…</span></span>');
+    clearTimeout(timer); clearTimeout(slowTimer);
+    slowTimer = setTimeout(function () { if (waiting && root.isConnected) { var el = waiting.querySelector('[data-ai-wait]'); if (el) el.textContent = 'Analiz devam ediyor, yanıtınız hazırlanıyor…'; N.height.schedule(); } }, 15000);
+    timer = setTimeout(function () { if (root.isConnected) { timedOut = true; fail('Bekleme süresi doldu. Yeniden soru göndermeden önce sayfayı yenileyiniz.'); } }, TIMEOUT);
     if (!N.bridge.send({ action: 'askAI', question: q })) fail('Bu bileşen bir Wix sayfasına yerleştirilmediği için soru gönderilemedi.');
   }
   function fail(reason) {
-    clearTimeout(timer);
+    clearTimeout(timer); clearTimeout(slowTimer);
     if (waiting) { waiting.remove(); waiting = null; }
     add('ai', '<div class="n1i-ai__err" role="alert">' + N.icon('error') + '<div><p><b>Yanıt alınamadı.</b> ' + esc(reason) + '</p><button type="button" class="n1i-btn n1i-btn--sm" data-retry>' + N.icon('refresh') + 'Tekrar dene</button></div></div>', 'n1i-ai__row--err');
-    setBusy(false);
+    setBusy(timedOut);
+    if (timedOut) { var b = log.querySelector('.n1i-ai__row:last-child [data-retry]'); if (b) b.textContent = 'Sayfayı yenile'; }
   }
   function answer(text) {
     if (!waiting) return; // beklenmeyen veya tekrar eden yanıt
-    clearTimeout(timer);
+    clearTimeout(timer); clearTimeout(slowTimer);
     waiting.remove(); waiting = null;
     var s = String(text || '').trim();
     if (!s || ERRORS.indexOf(s) > -1) { fail(s || 'Boş yanıt geldi.'); return; }
@@ -1226,11 +1237,12 @@ runtime.N1I_MODULES['ai'] = function(moduleN, document) {
   ta.addEventListener('input', function () { resize(); updateCount(); });
   root.addEventListener('click', function (e) {
     var c = e.target.closest('[data-q]'); if (c) { ask(c.getAttribute('data-q')); return; }
-    var r = e.target.closest('[data-retry]'); if (r) { var m = r.closest('.n1i-ai__row'); if (m) m.remove(); var u = log.querySelectorAll('.n1i-ai__row--user'); if (u.length) u[u.length - 1].remove(); ask(lastQuestion); }
+    var r = e.target.closest('[data-retry]'); if (r) { if (timedOut) { location.reload(); return; } var m = r.closest('.n1i-ai__row'); if (m) m.remove(); var u = log.querySelectorAll('.n1i-ai__row--user'); if (u.length) u[u.length - 1].remove(); ask(lastQuestion); }
   });
 
   N.height.start(root);
-  N.bridge.listen(function (d) { answer(d.answer); }, {
+  N.onDispose(function () { clearTimeout(timer); clearTimeout(slowTimer); waiting = null; });
+  N.bridge.listen(function (d) { if (!waiting) return; if (d.error === true) fail('Yanıt hazırlanamadı. Lütfen tekrar deneyiniz.'); else answer(d.answer); }, {
     accept: function (d) { return d.action === 'aiAnswer' && (typeof d.answer === 'string' || d.answer === undefined || d.answer === null); },
     dedupe: function () { return false; }
   });
@@ -1329,14 +1341,14 @@ runtime.N1I_MODULES['ga4'] = function(moduleN, document) {
 
   var ctrl = N.rangeController({
     root: root,
-    onPending: function () { var b = root.querySelector('[data-body]'); if (b) b.classList.add('is-stale'); setLoadingLine(true); },
-    onInitialTimeout: function () { setLoadingLine(false); root.querySelector('[data-body]').innerHTML = ui.state('warn', 'Google Analytics verisi gelmedi', 'Sayfa kodu bu bölüme veri göndermedi. Wix sayfa kodu hata yakaladığında bölüme mesaj göndermiyor; bağlantı da yavaş olabilir.', '<button type="button" class="n1i-btn n1i-btn--sm" data-retry>' + N.icon('refresh') + 'Tekrar iste</button>'); N.height.schedule(); },
-    onTimeout: function () { setLoadingLine(false); showBanner('error', 'Yeni aralığın verisi gelmedi', 'Ekrandaki sayılar önceki seçime aittir. Bağlantı yavaş olabilir veya Google Analytics yanıt vermemiş olabilir.', true); }
+    onPending: function () { var b = root.querySelector('[data-body]'); root.querySelector('[data-banner]').innerHTML = ''; if (b) { if (!last) b.innerHTML = ui.skelKpis(5) + ui.skelPanel(220); else b.classList.add('is-stale'); } setLoadingLine(true); },
+    onInitialTimeout: function () { setLoadingLine(false); root.querySelector('[data-body]').innerHTML = ui.state('error', 'Veri kaynağına ulaşılamıyor', 'Bekleme süresi doldu. Lütfen tekrar deneyiniz.', '<button type="button" class="n1i-btn n1i-btn--sm" data-retry>' + N.icon('refresh') + 'Tekrar iste</button>'); N.height.schedule(); },
+    onTimeout: function () { setLoadingLine(false); showBanner('error', 'Veri kaynağına ulaşılamıyor', last ? 'Bekleme süresi doldu. Ekrandaki sayılar önceki seçime aittir.' : 'Bekleme süresi doldu. Lütfen tekrar deneyiniz.', true); }
   });
 
   function shell() {
     root.innerHTML = '<section class="n1i-module" aria-labelledby="ga4-title">' +
-      N.header({ icon: 'ga4', tone: 'teal', title: 'Google Analytics 4', meta: ['<span id="ga4-range">Son 7 gün</span>', '<span>Kaynak: GA4 Data API</span>', '<span id="ga4-recv" class="n1i-loading-line"><span class="n1i-spin"></span>Yükleniyor…</span>', ui.demoChip()], tools: ctrl.segHtml() }) +
+      N.header({ icon: 'ga4', tone: 'teal', title: 'Google Analytics 4', meta: ['<span id="ga4-range">Son 7 gün</span>', '<span>Kaynak: GA4 Data API</span>', '<span id="ga4-recv" class="n1i-loading-line" role="status" aria-live="polite"><span class="n1i-spin" aria-hidden="true"></span>Verileriniz yükleniyor…</span>', ui.demoChip()], tools: ctrl.segHtml() }) +
       '<div data-banner></div><div data-body>' + ui.skelKpis(5) + '<div class="n1i-grid"><div class="n1i-col-8">' + ui.skelPanel(220) + '</div><div class="n1i-col-4">' + ui.skelPanel(220) + '</div></div></div>' +
       '</section>';
     root.querySelector('.n1i-module').querySelector('h2').id = 'ga4-title';
@@ -1344,7 +1356,7 @@ runtime.N1I_MODULES['ga4'] = function(moduleN, document) {
   }
   function setLoadingLine(on) {
     var el = document.getElementById('ga4-recv'); if (!el) return;
-    el.innerHTML = on ? '<span class="n1i-spin"></span>Yükleniyor…' : (last ? esc(last.recv) : '');
+    el.innerHTML = on ? '<span class="n1i-spin" aria-hidden="true"></span>Verileriniz yükleniyor…' : (last ? esc(last.recv) : '');
   }
   function showBanner(kind, title, text, retry) {
     var b = root.querySelector('[data-banner]');
@@ -1642,7 +1654,7 @@ runtime.N1I_MODULES['instagram'] = function(moduleN, document) {
 
   function shell() {
     root.innerHTML = '<section class="n1i-module" aria-labelledby="ig-title">' +
-      N.header({ icon: 'instagram', tone: 'rose', title: 'Instagram', meta: ['<span id="ig-user">Hesap</span>', '<span>Kaynak: Instagram Graph API</span>', '<span id="ig-recv" class="n1i-loading-line"><span class="n1i-spin"></span>Yükleniyor…</span>', ui.demoChip()] }) +
+      N.header({ icon: 'instagram', tone: 'rose', title: 'Instagram', meta: ['<span id="ig-user">Hesap</span>', '<span>Kaynak: Instagram Graph API</span>', '<span id="ig-recv" class="n1i-loading-line" role="status" aria-live="polite"><span class="n1i-spin" aria-hidden="true"></span>Verileriniz yükleniyor…</span>', ui.demoChip()] }) +
       '<div data-body>' + ui.skelKpis(4) + '<div class="n1i-grid"><div class="n1i-col-12">' + ui.skelPanel(160) + '</div></div></div></section>';
     root.querySelector('h2').id = 'ig-title';
   }
@@ -1661,7 +1673,7 @@ runtime.N1I_MODULES['instagram'] = function(moduleN, document) {
     document.getElementById('ig-user').textContent = p && p.username ? '@' + p.username : 'Hesap';
 
     if (pErr && !seriesOk) {
-      body.innerHTML = ui.state('error', 'Instagram verisi alınamadı', 'Meta hata döndürdü (' + esc(pErr) + '). Bu bir sıfır değer değildir; erişim izni veya token süresi kontrol edilmelidir.');
+      body.innerHTML = ui.state('error', 'Instagram verisi alınamadı', 'Meta veri döndürmedi. Bu bir sıfır değer değildir. Lütfen tekrar deneyiniz.', '<button type="button" class="n1i-btn n1i-btn--sm" data-n1-retry-load>' + N.icon('refresh') + 'Tekrar dene</button>');
       N.height.schedule(); return;
     }
     var html = '';
@@ -1720,7 +1732,7 @@ runtime.N1I_MODULES['instagram'] = function(moduleN, document) {
 
   shell();
   N.height.start(root);
-  var stop = N.watchdog(function () { if (received) return; root.querySelector('[data-body]').innerHTML = ui.state('warn', 'Instagram verisi gelmedi', 'Sayfa kodu bu bölüme veri göndermedi. Wix sayfa kodu hata yakaladığında bölüme mesaj göndermiyor. Sorun sürerse sayfayı yenileyin.'); document.getElementById('ig-recv').textContent = ''; N.height.schedule(); });
+  var stop = N.watchdog(function () { if (received) return; root.querySelector('[data-body]').innerHTML = ui.state('error', 'Veri kaynağına ulaşılamıyor', 'Bekleme süresi doldu. Lütfen tekrar deneyiniz.', '<button type="button" class="n1i-btn n1i-btn--sm" data-n1-retry-load>' + N.icon('refresh') + 'Tekrar dene</button>'); document.getElementById('ig-recv').textContent = ''; N.height.schedule(); });
   N.bridge.listen(function (d) { stop(); render(d); }, {
     accept: function (d) { return ('profile' in d) || ('insights' in d) || ('followerGrowthLast30Days' in d); },
     onError: function () { root.querySelector('[data-body]').innerHTML = ui.state('error', 'Görüntüleme hatası', 'Gelen veri beklenen biçimde değil.'); }
@@ -1772,7 +1784,7 @@ runtime.N1I_MODULES['sheets'] = function(moduleN, document) {
 
   function shell() {
     root.innerHTML = '<section class="n1i-module" aria-labelledby="sh-title">' +
-      N.header({ icon: 'sheets', tone: 'lilac', title: 'İş takip', meta: [CLIENT ? '<span>' + esc(CLIENT) + '</span>' : '', '<span>Kaynak: Google Sheets · salt okunur</span>', '<span id="sh-recv" class="n1i-loading-line"><span class="n1i-spin"></span>Yükleniyor…</span>', ui.demoChip()] }) +
+      N.header({ icon: 'sheets', tone: 'lilac', title: 'İş takip', meta: [CLIENT ? '<span>' + esc(CLIENT) + '</span>' : '', '<span>Kaynak: Google Sheets · salt okunur</span>', '<span id="sh-recv" class="n1i-loading-line" role="status" aria-live="polite"><span class="n1i-spin" aria-hidden="true"></span>Verileriniz yükleniyor…</span>', ui.demoChip()] }) +
       '<div data-body>' + ui.skelPanel(120) + '<div class="n1i-grid"><div class="n1i-col-12">' + ui.skelPanel(220) + '</div></div></div></section>';
     root.querySelector('h2').id = 'sh-title';
   }
@@ -1802,7 +1814,7 @@ runtime.N1I_MODULES['sheets'] = function(moduleN, document) {
     received = true;
     document.getElementById('sh-recv').textContent = ui.received();
     var body = root.querySelector('[data-body]');
-    if (!Array.isArray(values)) { body.innerHTML = ui.state('error', 'İş takip verisi alınamadı', 'Google Sheets bu sekme için veri döndürmedi (erişim izni, sekme adı veya bağlantı sorunu olabilir). Bu boş bir liste değildir.'); N.height.schedule(); return; }
+    if (!Array.isArray(values)) { body.innerHTML = ui.state('error', 'İş takip verisi alınamadı', 'Google Sheets bu sekme için veri döndürmedi. Bu boş bir liste değildir.', '<button type="button" class="n1i-btn n1i-btn--sm" data-n1-retry-load>' + N.icon('refresh') + 'Tekrar dene</button>'); N.height.schedule(); return; }
     if (!values.length) { body.innerHTML = ui.state('empty', 'İş takip tablosu boş', 'Sekmede henüz kayıt yok.'); N.height.schedule(); return; }
     var first = !model;
     model = build(values);
@@ -1936,7 +1948,7 @@ runtime.N1I_MODULES['sheets'] = function(moduleN, document) {
 
   shell();
   N.height.start(root);
-  var stop = N.watchdog(function () { if (received) return; root.querySelector('[data-body]').innerHTML = ui.state('warn', 'İş takip verisi gelmedi', 'Sayfa kodu bu bölüme veri göndermedi. Sorun sürerse sayfayı yenileyin.'); document.getElementById('sh-recv').textContent = ''; N.height.schedule(); });
+  var stop = N.watchdog(function () { if (received) return; root.querySelector('[data-body]').innerHTML = ui.state('error', 'Veri kaynağına ulaşılamıyor', 'Bekleme süresi doldu. Lütfen tekrar deneyiniz.', '<button type="button" class="n1i-btn n1i-btn--sm" data-n1-retry-load>' + N.icon('refresh') + 'Tekrar dene</button>'); document.getElementById('sh-recv').textContent = ''; N.height.schedule(); });
   N.bridge.listen(function (d) { stop(); render(d.values); }, {
     accept: function (d) { return 'values' in d || !('action' in d); },
     onError: function () { root.querySelector('[data-body]').innerHTML = ui.state('error', 'Görüntüleme hatası', 'Gelen veri beklenen biçimde değil.'); }
@@ -1962,7 +1974,7 @@ runtime.N1I_MODULES['summary'] = function(moduleN, document) {
 
   function shell() {
     root.innerHTML = '<section class="n1i-module" aria-labelledby="sum-title">' +
-      N.header({ icon: 'summary', tone: 'lime', title: 'Genel özet', meta: ['<span>Her kart kendi döneminde</span>', '<span id="sum-recv" class="n1i-loading-line"><span class="n1i-spin"></span>Yükleniyor…</span>', ui.demoChip()] }) +
+      N.header({ icon: 'summary', tone: 'lime', title: 'Genel özet', meta: ['<span>Her kart kendi döneminde</span>', '<span id="sum-recv" class="n1i-loading-line" role="status" aria-live="polite"><span class="n1i-spin" aria-hidden="true"></span>Verileriniz yükleniyor…</span>', ui.demoChip()] }) +
       '<div data-body class="n1i-wash"><div class="n1i-hero"><div>' + ui.skelPanel(300) + '</div><div class="n1i-hero__side">' + [0, 1, 2, 3].map(function (i) { return '<div class="n1i-kpi' + (i > 1 ? ' n1i-span2' : '') + '" aria-hidden="true"><div class="n1i-skel n1i-skel--text" style="width:55%"></div><div class="n1i-skel n1i-skel--value"></div><div class="n1i-skel n1i-skel--text" style="width:40%"></div></div>'; }).join('') + '</div></div></div></section>';
     root.querySelector('h2').id = 'sum-title';
   }
@@ -1974,6 +1986,7 @@ runtime.N1I_MODULES['summary'] = function(moduleN, document) {
     var first = !root.querySelector('[data-rendered]');
     document.getElementById('sum-recv').textContent = ui.received();
     var hasStatus = !!d.sourceStatus;
+    if (hasStatus && ['ga','meta7','google7','metaMtd','googleMtd','instagram'].every(function(k){return ['error','missing'].includes(d.sourceStatus[k]);})) { root.querySelector('[data-body]').innerHTML = ui.state('error', 'Veri kaynağına ulaşılamıyor', 'Özet verileri alınamadı. Lütfen tekrar deneyiniz.', '<button type="button" class="n1i-btn n1i-btn--sm" data-n1-retry-load>' + N.icon('refresh') + 'Tekrar dene</button>'); N.height.schedule(); return; }
 
     // ---- Oturum (GA4, son 7 gün). Ek satır: ziyaretçi başına oturum (aynı karttaki iki gerçek değerden) ----
     var gaSt = status(d, 'ga');
@@ -2108,7 +2121,7 @@ runtime.N1I_MODULES['summary'] = function(moduleN, document) {
   N.height.start(root);
   var stopWatch = N.watchdog(function () {
     if (received) return;
-    root.querySelector('[data-body]').innerHTML = ui.state('warn', 'Özet verisi gelmedi', 'Sayfa kodu bu bölüme veri göndermedi. Özet, diğer kaynakların ilk yüklemesi bittikten sonra bir kez gönderilir; bağlantı yavaşsa birkaç saniye sürebilir. Sorun sürerse sayfayı yenileyin.');
+    root.querySelector('[data-body]').innerHTML = ui.state('error', 'Veri kaynağına ulaşılamıyor', 'Bekleme süresi doldu. Lütfen tekrar deneyiniz.', '<button type="button" class="n1i-btn n1i-btn--sm" data-n1-retry-load>' + N.icon('refresh') + 'Tekrar dene</button>');
     document.getElementById('sum-recv').textContent = '';
     N.height.schedule();
   });
@@ -2458,19 +2471,19 @@ const ids=defs.map(x=>x[0]), mods=new Map(); let connected=false, unlocked=false
 function up(action,fields={}){if(!host.isConnected)return false;host.dispatchEvent(new CustomEvent('n1-request',{detail:JSON.stringify({protocol:P,action,...fields}),bubbles:true,composed:true}));return true;}
 function statusText(t){status.textContent=t;status.hidden=!t;if(login)login.note(t);}
 function emit(id,d){const m=mods.get(id);if(!m)return;for(const item of m.listeners){if(item.opts.accept&&!item.opts.accept(d))continue;try{item.fn(d)}catch(e){console.error('N1I render',id,e);if(item.opts.onError)item.opts.onError(e);}}}
-function mount(id,root){const listeners=[], styles=[];let alive=true;const cfg={...base.cfg,module:id,client:{...config.client,modules:defs.map(([id,label])=>({id,label,icon:id,enabled:true}))},demo:false};
+function mount(id,root){const listeners=[], styles=[], cleanups=[];let alive=true;const cfg={...base.cfg,module:id,client:{...config.client,modules:defs.map(([id,label])=>({id,label,icon:id,enabled:true}))},demo:false};
 const scopedDoc={getElementById:key=>key==='n1i-root'?root:root.querySelector('#'+CSS.escape(key)),querySelector:s=>root.querySelector(s),querySelectorAll:s=>root.querySelectorAll(s),createElement:document.createElement.bind(document),head:{appendChild:e=>{styles.push(e);if(e.tagName==='STYLE')e.textContent=e.textContent.replaceAll('#n1i-root','#n1-'+id).replace(/^\.n1i-root\{/,'#n1-'+id+'{');document.head.appendChild(e);shadow.appendChild(revisionStyle);shadow.appendChild(n1Style);return e;}},addEventListener:document.addEventListener.bind(document),fonts:document.fonts,get activeElement(){return document.activeElement;}};
 const send=m=>{if(!alive)return false;return route(id,m);}; const bridge={listen:(fn,opts={})=>listeners.push({fn,opts}),send,forget:()=>{}};
 const height={start:()=>{},now:()=>measure(),schedule:()=>measure()};
-const N={...base,cfg,bridge,height,theme:{...base.theme,request:t=>route(id,{action:'n1iSetTheme',theme:t})},rangeController:o=>base.rangeController({...o,send}),watchdog:fn=>{let t=setTimeout(()=>{if(alive)fn()},30000);return ()=>clearTimeout(t);}};
-const rec={root,listeners,styles,dispose:()=>{alive=false;for(const s of styles)s.remove();if(window.Chart)root.querySelectorAll('canvas').forEach(c=>{try{window.Chart.getChart(c)?.destroy()}catch{}});root.remove();}};mods.set(id,rec);try{runtime.N1I_MODULES[id==='meta'||id==='gads'?'ads':id==='nav'?'workspace':id](N,scopedDoc);}catch(e){console.error('N1I mount',id,e);root.textContent='Bu bölüm yüklenemedi. Sayfayı yenileyin.';}return rec;}
+const N={...base,cfg,bridge,height,theme:{...base.theme,request:t=>route(id,{action:'n1iSetTheme',theme:t})},rangeController:o=>{const c=base.rangeController({...o,send});cleanups.push(c.dispose);return c;},onDispose:fn=>cleanups.push(fn),watchdog:fn=>{const slow=setTimeout(()=>{if(alive)base.markSlow(root)},15000),t=setTimeout(()=>{if(alive)fn()},base.cfg.responseTimeoutMs);const stop=()=>{clearTimeout(t);clearTimeout(slow);};cleanups.push(stop);return stop;}};
+const rec={root,listeners,styles,dispose:()=>{alive=false;for(const fn of cleanups)fn();for(const s of styles)s.remove();if(window.Chart)root.querySelectorAll('canvas').forEach(c=>{try{window.Chart.getChart(c)?.destroy()}catch{}});root.remove();}};mods.set(id,rec);root.addEventListener('click',e=>{if(!alive||!unlocked||!e.target.closest('[data-n1-retry-load]')||!['summary','instagram','sheets'].includes(id))return;rec.dispose();mods.delete(id);navigate(id);});try{runtime.N1I_MODULES[id==='meta'||id==='gads'?'ads':id==='nav'?'workspace':id](N,scopedDoc);}catch(e){console.error('N1I mount',id,e);root.textContent='Bu bölüm yüklenemedi. Sayfayı yenileyin.';}return rec;}
 let mt=0;function measure(){cancelAnimationFrame(mt);mt=requestAnimationFrame(()=>{base.seg.sync(document,false);base.fitNumbers(document,false);});}
 function applyTheme(t){theme=t==='dark'?'dark':'light';base.theme._apply(theme);host.setAttribute('data-n1-theme',theme);if(login)login.theme(theme);measure();}
 let adSignals=null,adTimer=0,adDeadline=0,adPending=false;
 const adLabels={active:'Reklamlar aktif',inactive:'Aktif reklam yok',payment:'Ödeme hatası',restricted:'Hesap sorunu',limited:'Yayın sınırlı',unknown:'Durum doğrulanamadı',not_connected:'Hesap bağlı değil',loading:'Durum kontrol ediliyor…'};
 function signalValue(k){const x=adSignals&&adSignals[k];const t=Date.parse(x?.checkedAt);if(!adSignals&&adPending)return {state:'loading'};return x&&Object.prototype.hasOwnProperty.call(adLabels,x.state)&&Number.isFinite(t)&&Date.now()-t<=180000&&t<=Date.now()+60000?x:{state:'unknown'};}
 function paintSignals(){if(!unlocked)return;for(const id of ['summary','meta','gads']){const rec=mods.get(id);if(!rec)continue;const content=rec.root.querySelector('[data-body]');if(!content)continue;let row=rec.root.querySelector('.n1-ad-signals');if(!row){row=realDocument.createElement('div');row.className='n1-ad-signals'+(id==='summary'?'':' is-single');row.setAttribute('aria-live','polite');content.before(row);}row.replaceChildren();for(const k of id==='summary'?['meta','gads']:[id]){const x=signalValue(k);const item=realDocument.createElement('div');item.className='n1-ad-signal';item.dataset.state=x.state;item.title=x.state==='active'?(k==='gads'?'Kampanya yayına uygun/öğrenmede; anlık gösterim garantisi değildir.':'Hesap ve reklam etkin; anlık gösterim garantisi değildir.'):x.state==='payment'?'API ödeme sorunu bildiriyor.':x.state==='restricted'?'Hesap durumu yayını kısıtlıyor; ödeme nedeni doğrulanmış değil.':'';item.innerHTML=base.icon(k)+'<div class="n1-ad-signal__info"><div class="n1-ad-signal__name"></div><div class="n1-ad-signal__state"><span class="n1-ad-signal__dot" aria-hidden="true"></span><span></span></div></div><div class="n1-ad-signal__time"></div>';item.querySelector('.n1-ad-signal__name').textContent=k==='meta'?'Meta Ads':'Google Ads';item.querySelector('.n1-ad-signal__state span:last-child').textContent=adLabels[x.state];if(x.checkedAt){const tm=realDocument.createElement('span');tm.textContent=new Date(x.checkedAt).toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Istanbul'});const label=realDocument.createElement('small');label.textContent='Son kontrol · TSİ';item.querySelector('.n1-ad-signal__time').append(tm,label);}row.appendChild(item);}}}
-function requestSignals(){if(!unlocked||!host.isConnected||adPending)return;adPending=true;paintSignals();if(!up('load',{target:'adStatus',range:'-'})){adPending=false;adSignals={};paintSignals();return;}clearTimeout(adDeadline);adDeadline=setTimeout(()=>{adPending=false;adSignals={};paintSignals();},27000);}
+function requestSignals(){if(!unlocked||!host.isConnected||adPending)return;adPending=true;paintSignals();if(!up('load',{target:'adStatus',range:'-'})){adPending=false;adSignals={};paintSignals();return;}clearTimeout(adDeadline);adDeadline=setTimeout(()=>{adPending=false;adSignals={};paintSignals();},120000);}
 function stopSignals(){clearInterval(adTimer);clearTimeout(adDeadline);adPending=false;adSignals=null;}
 function authRequired(reason){stopSignals();clearTimeout(authTimer);unlocked=false;shell.classList.remove('is-booting');shell.classList.add('is-gated');delete config.client.driveUrl;delete config.client.renewals;authId++;for(const [id,m] of mods){if(id!=='nav'){m.dispose();mods.delete(id);}}base.charts.registry=base.charts.registry.filter(x=>x.chart.canvas?.isConnected);area.hidden=true;selected='summary';emit('nav',{action:'n1iAuthRequired',reason,remember:false});login.show(reason);measure();}
 function authError(m){clearTimeout(authTimer);const r={action:'n1iAuthResult',ok:false,code:m.code,message:m.message||'Erişim doğrulanamadı.',retryAfterSec:m.retryAfterSec};emit('nav',r);login.result(r);}
