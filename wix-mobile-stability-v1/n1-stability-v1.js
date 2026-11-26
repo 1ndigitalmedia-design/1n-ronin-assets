@@ -52,6 +52,32 @@
   var WARM_INNER = [
     J + '09612df97e85978976d13edbd79dad0adcc1d1f1/wix-studyo-v1/site/n1-inner-responsive-v6.css'
   ];
+  /* Sayfaya özgü dosyalar: Wix'te o sayfanın Custom Element'ine yazılı, canlıda doğrulanan adresler
+     (DEPENDENCY_MAP.md). Wix kaynağı değişince bu liste de güncellenmelidir; eski kalırsa yalnızca boşa indirme olur. */
+  var F97 = J + 'f97db8edb37f1e1388f276d840e262fc8452b80a/';
+  var SW = F97 + 'wix-sitewide-mobile-fix-2026-11-26/';
+  var C648M = C648 + 'wix-full-v1/';
+  var WARM_PAGE = {
+    '/': [
+      F97 + 'wix-home-v656/n1-site-wix-v656.js',
+      F97 + 'wix-home-v656/modules/n1-m5-build.js',
+      F97 + 'wix-home-v656/site/n1-home-m5.css',
+      F97 + 'wix-home-v656/modules/n1-video-m5.js',
+      F97 + 'wix-home-v656/modules/n1-home-m5.js',
+      F97 + 'wix-home-v656/media/ronin-m5-poster.webp',
+      C648M + 'site/n1-site-base-v1.css'
+    ].concat(['partners-v617', 'samurai-video-v632', 'stats-v632', 'video-band-v633', 'contact-cta-v634', 'about-v635',
+      'ecosystem-v647', 'gads-v643', 'brands-v625', 'showreel-v628', 'sectors-v630'].map(function (m) { return C648M + 'modules/n1-' + m + '.css'; })),
+    '/kreatif-produksiyon': [SW + 'wix-kreatif-produksiyon-v23/n1-kreatif-produksiyon-v23.js'],
+    '/e-ticaret-yonetimi': [SW + 'wix-e-ticaret-yonetimi-v23/n1-e-ticaret-yonetimi-v23.js'],
+    '/sosyal-medya': [SW + 'wix-sosyal-medya-v27/n1-sosyal-medya-v27.js'],
+    '/reklam-yonetimi': [SW + 'wix-reklam-yonetimi-v23/n1-reklam-yonetimi-v23.js'],
+    '/ui-ux-tasarim': [SW + 'wix-uiux-tasarim-v28/n1-uiux-tasarim-v28.js'],
+    '/yapay-zeka': [SW + 'wix-yapay-zeka-v2/n1-yapay-zeka-v2.js'],
+    '/uygulama-gelistirme': [SW + 'wix-uygulama-gelistirme-v2/n1-uygulama-gelistirme-v2.js'],
+    '/markalar': [SW + 'wix-markalar-v1/n1-markalar-v11.js'],
+    '/kisaca-biz': [SW + 'wix-kisaca-biz-v1/n1-kisaca-biz-v1.js']
+  };
 
   function mobile() { try { return matchMedia(MOBILE_MQ).matches; } catch (e) { return false; } }
   function now() { return Math.round((window.performance && performance.now) ? performance.now() : Date.now()); }
@@ -172,7 +198,8 @@
   /* ---------- 4 · ortak dosyaları önbelleğe ısıtma ---------- */
   function warm() {
     if (!window.fetch || (navigator.connection && navigator.connection.saveData)) return;
-    var list = WARM.concat(path() === '/' ? [] : WARM_INNER);
+    var p = path();
+    var list = (WARM_PAGE[p] || []).concat(WARM, p === '/' ? [] : WARM_INNER);   // sayfanın kendi betiği önce
     list.forEach(function (u) {
       try {
         var o = { mode: 'no-cors', credentials: 'include' };
