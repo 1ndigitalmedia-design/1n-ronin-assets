@@ -1,0 +1,240 @@
+/*!
+ * n1-video-m5 — 1N Digital Media · mobil/tablet video denetleyicisi (v6.53 / V1.5)
+ * Kapsam: Ronin hero filmi [data-m4-film], M2/M1 bantları [data-n1-samurai-video], Hizmetler mini filmi [data-m5-mini].
+ * Yalnızca mobil/tablet profilinde yüklenir. Tek örnek: window.__n1v5.
+ *
+ * V1.4 → V1.5 (gerçek iPhone Safari bulgularına göre; V1.4 kodundaki kök nedenler):
+ *  1  "Videoyu oynat" büyük düğmesi kaldırıldı. Ret (NotAllowedError — iOS Düşük Güç Modu vb.) ve akış durması artık
+ *     yalnızca posteri bırakır; küçük oynat/duraklat düğmesi "oynat" simgesine döner. Oynatma tek bir GERÇEK dokunuşta
+ *     (touchend/click; kaydırma sayılmaz) senkron play() ile yeniden denenir. Sonsuz deneme yok.
+ *  2  V1.4'te sistemin (iOS) başlattığı duraklama "blocked" sayılıyor ve görünürlük geri gelince bir daha denenmiyordu →
+ *     donmuş kare. Artık "sistem duraklaması": poster öne alınır, video görünür/sekme açıkken sınırlı sayıda yeniden denenir.
+ *  3  V1.4'te ilerleme durunca video katmanı gizlenip DÜĞME gösteriliyor, simge ise video.paused'a bakıyordu → donmuş karede
+ *     "duraklat" simgesi. Artık simge yalnızca kareler gerçekten ilerlerken "duraklat"tır.
+ *  4  M2 döngüsü oynarken currentTime atlatılarak yapılıyordu (iOS'ta oynatma sırasında atlama donmaya yol açabilir).
+ *     Artık TÜM filmler denetimli döngüyle döner (yerel loop kapalı): duraklat → atla → 'seeked' → oynat; bitişe 0,1 sn kala ya da
+ *     'ended' olayında. M2'nin ilk siyah karesi (0 s) atlanır (data-loop-start). WebKit (GStreamer) testinde yerel loop'un dosya
+ *     sonunda 'waiting'de takıldığı görüldü; aynı risk iOS için de denetimli döngüyle kapatıldı.
+ *  4b Takılma kurtarma: oynuyor görünüp 3 sn kare gelmezse (veri hazırken) tek bir denetimli yeniden başlatma (10 sn'de en fazla 1).
+ *  5  Aynı anda en fazla bir büyük film oynar (hero, M2, M1): yenisi başlarken diğerleri duraklatılır (çözücü/bellek).
+ *  6  Hero 2× dosyası 9 sn içinde tek kare veremezse doğal dosyaya bir kez geçilir.
+ */
+(function () {
+  'use strict';
+  var host = document.querySelector('n1-site-v1[data-n1-profile]');
+  if (!host || host.getAttribute('data-n1-profile') === 'd') return;
+  if (window.__n1v5 && window.__n1v5.destroy) { try { window.__n1v5.destroy(); } catch (e) {} }
+  var roots = [].slice.call(host.querySelectorAll('[data-m4-film], [data-n1-samurai-video], [data-m5-mini]'));
+  if (!roots.length) return;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var saveData = !!(navigator.connection && navigator.connection.saveData);
+  var hasRVFC = 'requestVideoFrameCallback' in HTMLVideoElement.prototype;
+  var offs = [], players = [];
+  function on(t, ev, fn, o) { t.addEventListener(ev, fn, o); offs.push(function () { t.removeEventListener(ev, fn, o); }); }
+
+  /* ortak kullanıcı hareketi: engellenen oynatıcılar tek dokunuşta (senkron) denenir */
+  var gestureArmed = false;
+  function onGesture(e) {
+    if (e && e.target && e.target.closest && e.target.closest('.m4-film-tg')) return;   // düğmenin kendi işleyicisi var
+    var waiting = players.filter(function (p) { return p.wantsGesture(); });
+    if (!waiting.length) return disarm();
+    waiting.forEach(function (p) { p.tryNow('gesture'); });
+  }
+  function arm() { if (gestureArmed) return; gestureArmed = true; document.addEventListener('touchend', onGesture, true); document.addEventListener('click', onGesture, true); }
+  function disarm() { if (!gestureArmed) return; gestureArmed = false; document.removeEventListener('touchend', onGesture, true); document.removeEventListener('click', onGesture, true); }
+  offs.push(disarm);
+
+  /* tek büyük film kuralı */
+  function claim(me) { players.forEach(function (p) { if (p !== me && p.big && p.isPlaying()) p.yield(); }); }
+
+  roots.forEach(function (root) {
+    var video = root.querySelector('video'); if (!video || root.__n1v5) return;
+    var isHero = root.hasAttribute('data-m4-film'), isMini = root.hasAttribute('data-m5-mini');
+    var sources = (video.getAttribute('data-sources') || video.getAttribute('data-src') || '').split('|').map(function (s) { return s.trim(); }).filter(Boolean);
+    var loopStart = parseFloat(video.getAttribute('data-loop-start')) || 0, loopEnd = parseFloat(video.getAttribute('data-loop-end')) || 0, loopAuto = !loopEnd;
+    var maxPlay = parseFloat(video.getAttribute('data-max-play')) || 0;            // mini: toplam oynatma sınırı (sn)
+    var S = { state: '', idx: -1, visible: false, near: false, pending: false, frames: 0, lastT: -1, lastAdv: 0, everFrames: false,
+      attempts: 0, result: '—', error: '', events: [], ourPause: false, user: false, sysRetries: 0, loopSeek: false, played: 0, loadT: 0, dead: false };
+    function log(ev) { S.events.push(ev + '@' + Math.round(performance.now())); if (S.events.length > 40) S.events.shift(); }
+    function setState(st) { if (S.state === st) return; S.state = st; root.setAttribute('data-n1v-state', st); log('state:' + st); tgSync(); }
+    function ready(v) { root.classList.toggle('is-ready', !!v); }
+
+    // 1 · kaynak atanmadan ÖNCE iOS satır içi sessiz oynatma koşulları (özellik + öznitelik)
+    video.muted = true; video.defaultMuted = true; video.setAttribute('muted', '');
+    video.playsInline = true; video.setAttribute('playsinline', ''); video.setAttribute('webkit-playsinline', '');
+    video.loop = false; video.controls = false; video.removeAttribute('controls');
+    video.autoplay = false; video.removeAttribute('autoplay');
+    video.preload = 'none';
+    try { video.disableRemotePlayback = true; } catch (e) {}
+    on(video, 'volumechange', function () { if (!video.muted) video.muted = true; });
+    // V1.4'ten kalmış olabilecek büyük düğme (eski önbellek) kaldırılır
+    [].forEach.call(root.querySelectorAll('.n1v-play'), function (b) { b.remove(); });
+
+    // 2 · küçük oynat/duraklat (hero'da işaretlemede hazır; bantlarda burada eklenir; mini filmde yok)
+    var tg = isMini ? null : root.querySelector('.m4-film-tg');
+    if (!tg && !isMini) { tg = document.createElement('button'); tg.type = 'button'; tg.className = 'm4-film-tg n1v-tg'; tg.innerHTML = '<span class="m4-tg-i" aria-hidden="true"></span>'; root.appendChild(tg); }
+    function tgSync() {
+      if (!tg) return;
+      var playing = S.state === 'playing';
+      tg.classList.toggle('is-paused', !playing);
+      tg.setAttribute('aria-pressed', S.user ? 'true' : 'false');
+      tg.setAttribute('aria-label', (playing ? 'Videoyu duraklat' : 'Videoyu oynat') + (isHero ? ' (Ronin)' : ''));
+    }
+
+    function emit(t) { if (isHero) { try { root.dispatchEvent(new CustomEvent('m4:time', { detail: { t: t } })); } catch (e) {} } }
+    function assign() { return S.idx >= 0 || next(); }
+    function next() {
+      S.idx++;
+      if (S.idx >= sources.length) { setState('error'); ready(false); return false; }
+      video.preload = 'auto'; video.src = sources[S.idx]; S.loadT = performance.now(); log('src:' + S.idx);
+      try { video.load(); } catch (e) {}
+      if (S.state === 'idle' || S.state === '') setState('loading');
+      return true;
+    }
+    function canAuto() { return S.visible && !document.hidden && !S.user && S.state !== 'poster' && S.state !== 'error' && S.state !== 'done'; }
+    function play(reason) {
+      if (!sources.length || S.pending) return;
+      if (!assign()) return;
+      if (loopStart && video.readyState >= 1 && video.currentTime < loopStart) { try { video.currentTime = loopStart; } catch (e) {} }
+      if (P.big) claim(P);
+      S.pending = true; S.attempts++; log('play:' + reason);
+      var p; try { p = video.play(); } catch (e) { S.pending = false; reject(e); return; }
+      if (p && p.then) p.then(function () { S.pending = false; S.result = 'ok'; log('play-ok'); if (S.state !== 'playing') setState('loading'); })
+        .catch(function (err) { S.pending = false; reject(err); });
+      else S.pending = false;
+    }
+    function reject(err) {
+      var name = (err && err.name) || 'Error'; S.result = name; log('reject:' + name);
+      if (name === 'AbortError') return;                       // load()/kaynak değişimi kesti: olağan
+      if (name === 'NotSupportedError') { if (next()) play('next'); return; }
+      setState('blocked'); ready(false); arm();                // poster kalır; küçük düğme "oynat"; tek gerçek dokunuşta denenir
+    }
+    function attempt(reason) { if (canAuto() && S.state !== 'blocked') play(reason); }
+    function pauseOurs(st) { if (!video.paused) { S.ourPause = true; try { video.pause(); } catch (e) {} } if (st && S.state !== 'user' && S.state !== 'blocked' && S.state !== 'poster') setState(st); }
+
+    // 3 · gerçek ilerleme: yalnızca kare zamanı ilerlerken "playing"; aksi hâlde poster
+    function advance(t) {
+      if (S.loopSeek) return;
+      if (t > S.lastT + 0.001 || (S.lastT > 0 && t < S.lastT - 0.5)) {
+        if (S.lastT >= 0 && t > S.lastT) S.played += Math.min(0.5, t - S.lastT);
+        S.lastT = t; S.lastAdv = performance.now(); S.frames++;
+        if (S.frames >= 2 && !video.paused) { S.everFrames = true; ready(true); if (S.state !== 'playing') setState('playing'); }
+      }
+      if (loopEnd > 0 && t >= loopEnd && !video.paused) loopNow();   // duraklat → atla → seeked → oynat (güvenli döngü)
+      if (maxPlay && S.played >= maxPlay && !video.paused) { S.loopSeek = false; pauseOurs('done'); ready(false); return; }   // mini: hareket süresi sınırlı; poster (aynı kadraj)
+      emit(t);
+    }
+    function loopNow() {
+      if (S.loopSeek) return;
+      S.loopSeek = true; S.ourPause = !video.paused;
+      try { if (!video.paused) video.pause(); video.currentTime = loopStart || 0; } catch (e) { S.loopSeek = false; }
+    }
+    on(video, 'ended', function () { log('ended'); loopNow(); });
+    on(video, 'seeked', function () {
+      if (!S.loopSeek) return; S.loopSeek = false; S.lastT = video.currentTime; S.lastAdv = performance.now();
+      if (canAuto()) play('loop'); else setState('paused');
+    });
+    if (hasRVFC) {
+      var onFrame = function (now, meta) { if (S.dead) return; advance(meta && meta.mediaTime != null ? meta.mediaTime : video.currentTime); video.requestVideoFrameCallback(onFrame); };
+      video.requestVideoFrameCallback(onFrame);
+    }
+    on(video, 'timeupdate', function () { if (!hasRVFC) advance(video.currentTime); });
+    // 4 · bekçi: oynuyor görünüp kare ilerlemiyorsa poster + "oynat" simgesi; ilk kare hiç gelmezse (hero) doğal dosyaya geç
+    var watch = setInterval(function () {
+      if (S.dead) return;
+      if (video.paused || !S.visible || document.hidden || S.loopSeek) return;
+      var now = performance.now(), idle = now - (S.lastAdv || S.loadT || now);
+      if (S.state === 'playing' && idle > 2500) { setState('buffering'); ready(false); }
+      if (S.state === 'buffering' && idle > 3000 && video.readyState >= 2 && now - (S.kickT || 0) > 10000) { S.kickT = now; log('kick'); loopNow(); }   // takılma kurtarma (sınırlı)
+      if (!S.everFrames && (S.state === 'loading' || S.state === 'buffering') && now - S.loadT > 9000 && S.idx < sources.length - 1) { log('slow-src'); if (next()) play('fallback'); }
+    }, 1000);
+    on(video, 'loadedmetadata', function () {
+      log('loadedmetadata');
+      if (loopAuto && isFinite(video.duration) && video.duration > 1) loopEnd = video.duration - 0.1;   // dosya sonuna 0,1 sn kala döngü
+      if (loopStart && video.currentTime < loopStart) { try { video.currentTime = loopStart; } catch (e) {} }
+    });
+    on(video, 'loadeddata', function () { log('loadeddata'); if (video.paused) attempt('loadeddata'); });
+    on(video, 'canplay', function () { log('canplay'); if (video.paused && (S.state === 'loading' || S.state === 'buffering')) attempt('canplay'); });
+    on(video, 'playing', function () { log('playing'); S.sysRetries = 0; disarmIfDone(); });
+    on(video, 'waiting', function () { log('waiting'); });
+    on(video, 'stalled', function () { log('stalled'); });
+    on(video, 'suspend', function () { log('suspend'); });
+    on(video, 'pause', function () {
+      log('pause');
+      if (S.loopSeek) return;
+      if (S.ourPause) { S.ourPause = false; if (S.state === 'user') return;   // kullanıcı duraklattı: kare ekranda kalır
+        if (S.state === 'playing' || S.state === 'buffering' || S.state === 'loading') setState('paused'); ready(false); return; }
+      if (S.user || S.state === 'done') return;
+      // sistemin duraklatması (iOS: görünmezlik, güç, bellek): poster öne; görünür ve açıksa sınırlı yeniden deneme
+      setState('paused'); ready(false);
+      if (canAuto() && S.sysRetries < 2) { S.sysRetries++; setTimeout(function () { if (!S.dead && video.paused) attempt('sys-retry'); }, 450); }
+    });
+    on(video, 'error', function () { var me = video.error; S.error = me ? 'MediaError ' + me.code : 'hata'; log('error:' + S.error); ready(false); if (!S.everFrames && next()) play('error-next'); else setState('error'); });
+    function disarmIfDone() { if (!players.some(function (p) { return p.wantsGesture(); })) disarm(); }
+
+    if (tg) on(tg, 'click', function () {
+      if (S.state === 'playing') { S.user = true; pauseOurs(); setState('user'); return; }
+      S.user = false; S.visible = true; if (S.state === 'poster' || S.state === 'blocked' || S.state === 'done') setState('loading');
+      play('button');                                         // dokunuşun içinde, senkron
+    });
+
+    var P = {
+      big: !isMini, root: root,
+      isPlaying: function () { return !video.paused && !S.loopSeek; },
+      yield: function () { pauseOurs('paused'); },
+      wantsGesture: function () { return S.state === 'blocked' && S.visible; },
+      tryNow: function (r) { S.user = false; setState('loading'); play(r); }
+    };
+    players.push(P);
+
+    if (reduce || saveData || !sources.length) { setState('poster'); root.classList.add('is-poster'); }
+    else setState('idle');
+
+    // 5 · görünürlük: hero hemen; diğerleri bir ekran önce kaynak alır; %15 görünürlükte oynar; tamamen çıkınca durur
+    if (isHero && S.state !== 'poster') { S.near = true; assign(); }
+    if ('IntersectionObserver' in window) {
+      var near = new IntersectionObserver(function (es) {
+        if (S.near) { near.disconnect(); return; }
+        if (!es.some(function (e) { return e.isIntersecting; })) return;
+        S.near = true; near.disconnect(); if (S.state !== 'poster') assign();
+      }, { rootMargin: '100% 0px 100% 0px' });
+      near.observe(root);
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          var vis = e.isIntersecting && e.intersectionRatio >= 0.15;
+          if (!e.isIntersecting) { if (S.visible) { S.visible = false; pauseOurs('paused'); } return; }
+          if (vis && !S.visible) { S.visible = true; S.sysRetries = 0; if (S.state === 'paused' || S.state === 'loading' || S.state === 'idle' || S.state === 'buffering') attempt('visible'); }
+        });
+      }, { threshold: [0, 0.15, 0.5] });
+      io.observe(root);
+      offs.push(function () { near.disconnect(); io.disconnect(); });
+    } else { S.visible = true; S.near = true; if (S.state !== 'poster') { assign(); attempt('no-io'); } }
+
+    on(document, 'visibilitychange', function () { if (document.hidden) pauseOurs(); else if (S.visible && S.state === 'paused') attempt('visibility'); });
+    on(window, 'pagehide', function () { pauseOurs(); });
+    on(window, 'pageshow', function (e) {
+      if (!e.persisted) return;                               // BFCache dönüşü: söz ve sayaçlar sıfırlanır
+      S.pending = false; S.lastAdv = 0; S.frames = 0; S.sysRetries = 0; ready(false);
+      if (S.state !== 'poster' && S.state !== 'error' && S.state !== 'user') { setState('paused'); if (S.visible) attempt('pageshow'); }
+    });
+
+    root.__n1v5 = root.__n1v4 = root.__n1vm = root.__n1sv = {
+      video: video,
+      state: function () { return { state: S.state, src: video.currentSrc, idx: S.idx, t: +video.currentTime.toFixed(3), paused: video.paused, ready: video.readyState,
+        frames: S.frames, visible: S.visible, attempts: S.attempts, result: S.result, error: S.error, user: S.user, played: +S.played.toFixed(2), isReady: root.classList.contains('is-ready'), events: S.events.slice(-16) }; },
+      setVisible: function (v) { v = !!v; if (v === S.visible) return; S.visible = v; if (!v) pauseOurs('paused'); else attempt('visible'); }
+    };
+    offs.push(function () {
+      S.dead = true; clearInterval(watch);
+      try { video.pause(); video.removeAttribute('src'); video.load(); } catch (e) {}
+      if (tg && tg.classList.contains('n1v-tg') && tg.isConnected) tg.remove();
+      root.classList.remove('is-ready', 'is-poster'); root.removeAttribute('data-n1v-state');
+      delete root.__n1v5; delete root.__n1v4; delete root.__n1vm; delete root.__n1sv;
+    });
+  });
+
+  window.__n1v5 = window.__n1v4 = {
+    players: players,
+    destroy: function () { offs.forEach(function (f) { try { f(); } catch (e) {} }); offs = []; players = []; }
+  };
+})();
