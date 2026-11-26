@@ -1,0 +1,24 @@
+chromium mobile PASS home: MENU→Hizmetler kaydırma {"ok":true,"top":76,"hdrBottom":64,"hash":"#hizmetler-ozet","path":"/"}
+chromium mobile PASS iç sayfa: MENU→Hizmetler → /#hizmetler-ozet {"ok":true,"top":76,"hdrBottom":64,"hash":"#hizmetler-ozet","path":"/"}
+chromium mobile PASS geri → hizmet sayfası https://www.reklam1n.com/kreatif-produksiyon
+chromium mobile PASS ileri → /#hizmetler-ozet konumu {"ok":true,"top":76,"hdrBottom":64,"hash":"#hizmetler-ozet","path":"/"}
+chromium mobile PASS yenileme: çapa temizlenir, en üst {"hash":"","y":0}
+chromium mobile PASS doğrudan URL /#hizmetler-ozet {"top":76,"hash":"#hizmetler-ozet"}
+chromium mobile PASS /n1-full-test → / https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test
+chromium mobile FAIL sayfa hatası yok AbortError: Transition was skipped. Navigation aborted
+chromium tablet PASS home: MENU→Hizmetler kaydırma {"ok":true,"top":84,"hdrBottom":72,"hash":"#hizmetler-ozet","path":"/"}
+chromium tablet PASS iç sayfa: MENU→Hizmetler → /#hizmetler-ozet {"ok":true,"top":84,"hdrBottom":72,"hash":"#hizmetler-ozet","path":"/"}
+chromium tablet PASS geri → hizmet sayfası https://www.reklam1n.com/kreatif-produksiyon
+chromium tablet PASS ileri → /#hizmetler-ozet konumu {"ok":true,"top":84,"hdrBottom":72,"hash":"#hizmetler-ozet","path":"/"}
+chromium tablet PASS yenileme: çapa temizlenir, en üst {"hash":"","y":0}
+chromium tablet PASS doğrudan URL /#hizmetler-ozet {"top":84,"hash":"#hizmetler-ozet"}
+chromium tablet PASS /n1-full-test → / https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test
+chromium tablet FAIL sayfa hatası yok AbortError: Transition was skipped. Navigation aborted
+chromium desktop PASS home: MENU→Hizmetler kaydırma {"ok":true,"top":100,"hdrBottom":88,"hash":"#hizmetler-ozet","path":"/"}
+chromium desktop PASS iç sayfa: MENU→Hizmetler → /#hizmetler-ozet {"ok":true,"top":100,"hdrBottom":88,"hash":"#hizmetler-ozet","path":"/"}
+chromium desktop PASS geri → hizmet sayfası https://www.reklam1n.com/kreatif-produksiyon
+chromium desktop PASS ileri → /#hizmetler-ozet konumu {"ok":true,"top":100,"hdrBottom":88,"hash":"#hizmetler-ozet","path":"/"}
+chromium desktop PASS yenileme: çapa temizlenir, en üst {"hash":"","y":0}
+chromium desktop PASS doğrudan URL /#hizmetler-ozet {"top":100,"hash":"#hizmetler-ozet"}
+chromium desktop PASS /n1-full-test → / https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test
+chromium desktop PASS sayfa hatası yok 

@@ -1,0 +1,170 @@
+[
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "home: MENU→Hizmetler kaydırma",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":76,\"hdrBottom\":64,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "iç sayfa: MENU→Hizmetler → /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":76,\"hdrBottom\":64,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "geri → hizmet sayfası",
+  "ok": true,
+  "info": "https://www.reklam1n.com/kreatif-produksiyon"
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "ileri → /#hizmetler-ozet konumu",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":76,\"hdrBottom\":64,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "yenileme: çapa temizlenir, en üst",
+  "ok": true,
+  "info": "{\"hash\":\"\",\"y\":0}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "doğrudan URL /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"top\":76,\"hash\":\"#hizmetler-ozet\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "/n1-full-test → /",
+  "ok": true,
+  "info": "https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test"
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobile",
+  "name": "sayfa hatası yok",
+  "ok": false,
+  "info": "AbortError: Transition was skipped. Navigation aborted"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "home: MENU→Hizmetler kaydırma",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":84,\"hdrBottom\":72,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "iç sayfa: MENU→Hizmetler → /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":84,\"hdrBottom\":72,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "geri → hizmet sayfası",
+  "ok": true,
+  "info": "https://www.reklam1n.com/kreatif-produksiyon"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "ileri → /#hizmetler-ozet konumu",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":84,\"hdrBottom\":72,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "yenileme: çapa temizlenir, en üst",
+  "ok": true,
+  "info": "{\"hash\":\"\",\"y\":0}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "doğrudan URL /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"top\":84,\"hash\":\"#hizmetler-ozet\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "/n1-full-test → /",
+  "ok": true,
+  "info": "https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test"
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "name": "sayfa hatası yok",
+  "ok": false,
+  "info": "AbortError: Transition was skipped. Navigation aborted"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "home: MENU→Hizmetler kaydırma",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":100,\"hdrBottom\":88,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "iç sayfa: MENU→Hizmetler → /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":100,\"hdrBottom\":88,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "geri → hizmet sayfası",
+  "ok": true,
+  "info": "https://www.reklam1n.com/kreatif-produksiyon"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "ileri → /#hizmetler-ozet konumu",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":100,\"hdrBottom\":88,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "yenileme: çapa temizlenir, en üst",
+  "ok": true,
+  "info": "{\"hash\":\"\",\"y\":0}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "doğrudan URL /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"top\":100,\"hash\":\"#hizmetler-ozet\"}"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "/n1-full-test → /",
+  "ok": true,
+  "info": "https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test"
+ },
+ {
+  "BR": "chromium",
+  "dev": "desktop",
+  "name": "sayfa hatası yok",
+  "ok": true,
+  "info": ""
+ }
+]

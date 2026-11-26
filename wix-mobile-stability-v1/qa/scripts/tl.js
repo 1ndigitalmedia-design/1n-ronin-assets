@@ -1,0 +1,13 @@
+const pw=require('playwright');
+const init=`(function(){window.__hdr={};function chk(){var l=document.querySelector('n1-header .n1h-logo');if(l){var r=l.getBoundingClientRect();if(r.width>0&&r.bottom>0&&getComputedStyle(l.closest('n1-header')).display!=='none'){__hdr.logo=Math.round(performance.now());return;}}if(!__hdr.ce&&document.querySelector('n1-site-v1 main,n1-site-v1 > *'))__hdr.render=Math.round(performance.now());if(!__hdr.ce&&document.querySelector('n1-site-v1'))__hdr.ce=Math.round(performance.now());requestAnimationFrame(chk);}requestAnimationFrame(chk);})();`;
+(async()=>{const b=await pw.chromium.launch();const ctx=await b.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+const pg=await ctx.newPage();const cdp=await ctx.newCDPSession(pg);await cdp.send('Network.enable');
+await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:150,downloadThroughput:1.6*1024*1024/8,uploadThroughput:750*1024/8});
+await cdp.send('Emulation.setCPUThrottlingRate',{rate:4});
+await pg.addInitScript(init);
+await pg.goto('https://www.reklam1n.com/',{waitUntil:'commit'}); await pg.waitForTimeout(25000);
+const r=await pg.evaluate(()=>{const nav=performance.getEntriesByType('navigation')[0];const res=performance.getEntriesByType('resource');
+ const ours=res.filter(e=>/1n-ronin-assets|cdnjs/.test(e.name)).map(e=>[Math.round(e.startTime),Math.round(e.responseEnd),e.name.replace(/.*1n-ronin-assets@[0-9a-f]{8}[0-9a-f]*\//,'').replace(/.*libs\//,'')]);
+ const all=res.reduce((s,e)=>s+(e.transferSize||0),0);const before=res.filter(e=>e.responseEnd<(__hdr.logo||1e9)).reduce((s,e)=>s+(e.transferSize||0),0);
+ return {dcl:Math.round(nav.domContentLoadedEventEnd),load:Math.round(nav.loadEventEnd),hdr:__hdr,totalKB:Math.round(all/1024),beforeHeaderKB:Math.round(before/1024),n:res.length,ours:ours.slice(0,40)}});
+console.log(JSON.stringify({dcl:r.dcl,load:r.load,hdr:r.hdr,totalKB:r.totalKB,beforeHeaderKB:r.beforeHeaderKB,n:r.n}));r.ours.forEach(o=>console.log('  ',o.join(' ')));await b.close();})();

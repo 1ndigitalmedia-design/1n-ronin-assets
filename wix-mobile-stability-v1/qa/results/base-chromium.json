@@ -1,0 +1,3251 @@
+{
+ "BR": "chromium",
+ "MODE": "live",
+ "rows": [
+  {
+   "label": "home-initial",
+   "t": 1795729187115,
+   "rssMB": 728,
+   "url": "/",
+   "nav": "navigate",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 96,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 113,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@6276"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 4,
+   "JSEventListeners": 544,
+   "LayoutObjects": 1221,
+   "Nodes": 2717,
+   "JSHeapUsedSize": 22
+  },
+  {
+   "label": "c1-svc/kreatif-produksiyon-top",
+   "t": 1795729193216,
+   "rssMB": 924,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 89,
+   "docListeners": 38,
+   "gsapTweens": 101,
+   "scrollTriggers": 26,
+   "canvases": 0,
+   "nodes": 1074,
+   "events": [
+    "pageshow:false@407"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 499,
+   "LayoutObjects": 1435,
+   "Nodes": 5796,
+   "JSHeapUsedSize": 36
+  },
+  {
+   "label": "c1-svc/kreatif-produksiyon-scrolled",
+   "t": 1795729196441,
+   "rssMB": 1017,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "rafPerSec": 130,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 1,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 89,
+   "docListeners": 38,
+   "gsapTweens": 67,
+   "scrollTriggers": 12,
+   "canvases": 0,
+   "nodes": 1074,
+   "events": [
+    "pageshow:false@407"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 499,
+   "LayoutObjects": 1511,
+   "Nodes": 6193,
+   "JSHeapUsedSize": 43
+  },
+  {
+   "label": "c1-home-after-back",
+   "t": 1795729201647,
+   "rssMB": 986,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@285"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 9,
+   "JSEventListeners": 552,
+   "LayoutObjects": 1216,
+   "Nodes": 8127,
+   "JSHeapUsedSize": 40
+  },
+  {
+   "label": "c2-svc/e-ticaret-yonetimi-top",
+   "t": 1795729207592,
+   "rssMB": 1053,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 124,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 91,
+   "docListeners": 39,
+   "gsapTweens": 81,
+   "scrollTriggers": 60,
+   "canvases": 0,
+   "nodes": 780,
+   "events": [
+    "pageshow:false@292"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 425,
+   "LayoutObjects": 892,
+   "Nodes": 5339,
+   "JSHeapUsedSize": 34
+  },
+  {
+   "label": "c2-svc/e-ticaret-yonetimi-scrolled",
+   "t": 1795729210811,
+   "rssMB": 1233,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 91,
+   "docListeners": 39,
+   "gsapTweens": 30,
+   "scrollTriggers": 25,
+   "canvases": 0,
+   "nodes": 780,
+   "events": [
+    "pageshow:false@292"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 425,
+   "LayoutObjects": 902,
+   "Nodes": 5360,
+   "JSHeapUsedSize": 37
+  },
+  {
+   "label": "c2-home-after-back",
+   "t": 1795729215958,
+   "rssMB": 1151,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@229"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 532,
+   "LayoutObjects": 1136,
+   "Nodes": 5308,
+   "JSHeapUsedSize": 32
+  },
+  {
+   "label": "c3-svc/sosyal-medya-top",
+   "t": 1795729221998,
+   "rssMB": 1160,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 5,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 91,
+   "docListeners": 41,
+   "gsapTweens": 90,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 717,
+   "events": [
+    "pageshow:false@366"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 453,
+   "LayoutObjects": 812,
+   "Nodes": 5426,
+   "JSHeapUsedSize": 35
+  },
+  {
+   "label": "c3-svc/sosyal-medya-scrolled",
+   "t": 1795729225218,
+   "rssMB": 1279,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 91,
+   "docListeners": 41,
+   "gsapTweens": 38,
+   "scrollTriggers": 9,
+   "canvases": 0,
+   "nodes": 717,
+   "events": [
+    "pageshow:false@366"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 455,
+   "LayoutObjects": 820,
+   "Nodes": 5476,
+   "JSHeapUsedSize": 39
+  },
+  {
+   "label": "c3-home-after-back",
+   "t": 1795729230338,
+   "rssMB": 1138,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 9,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 113,
+   "docListeners": 42,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@202"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 541,
+   "LayoutObjects": 1135,
+   "Nodes": 5366,
+   "JSHeapUsedSize": 36
+  },
+  {
+   "label": "c4-svc/reklam-yonetimi-top",
+   "t": 1795729236349,
+   "rssMB": 1116,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 2,
+   "videosPlaying": 1,
+   "videosBuffered": 2,
+   "rafPerSec": 124,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 41,
+   "gsapTweens": 90,
+   "scrollTriggers": 63,
+   "canvases": 0,
+   "nodes": 803,
+   "events": [
+    "pageshow:false@349"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 445,
+   "LayoutObjects": 1003,
+   "Nodes": 5425,
+   "JSHeapUsedSize": 35
+  },
+  {
+   "label": "c4-svc/reklam-yonetimi-scrolled",
+   "t": 1795729239577,
+   "rssMB": 1106,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 1,
+   "videosBuffered": 3,
+   "rafPerSec": 129,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 41,
+   "gsapTweens": 44,
+   "scrollTriggers": 18,
+   "canvases": 0,
+   "nodes": 803,
+   "events": [
+    "pageshow:false@349"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 445,
+   "LayoutObjects": 1061,
+   "Nodes": 5487,
+   "JSHeapUsedSize": 39
+  },
+  {
+   "label": "c4-home-after-back",
+   "t": 1795729245996,
+   "rssMB": 1056,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1500"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 543,
+   "LayoutObjects": 1148,
+   "Nodes": 5376,
+   "JSHeapUsedSize": 38
+  },
+  {
+   "label": "c5-svc/ui-ux-tasarim-top",
+   "t": 1795729252819,
+   "rssMB": 1022,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 3,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 38,
+   "gsapTweens": 54,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 968,
+   "events": [
+    "pageshow:false@1185"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 450,
+   "LayoutObjects": 1117,
+   "Nodes": 5425,
+   "JSHeapUsedSize": 37
+  },
+  {
+   "label": "c5-svc/ui-ux-tasarim-scrolled",
+   "t": 1795729256049,
+   "rssMB": 1038,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 38,
+   "gsapTweens": 19,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 968,
+   "events": [
+    "pageshow:false@1185"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 450,
+   "LayoutObjects": 1119,
+   "Nodes": 5427,
+   "JSHeapUsedSize": 40
+  },
+  {
+   "label": "c5-home-after-back",
+   "t": 1795729261215,
+   "rssMB": 1055,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@250"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 534,
+   "LayoutObjects": 1136,
+   "Nodes": 5366,
+   "JSHeapUsedSize": 39
+  },
+  {
+   "label": "c6-svc/yapay-zeka-top",
+   "t": 1795729267241,
+   "rssMB": 1096,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 124,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 90,
+   "docListeners": 38,
+   "gsapTweens": 103,
+   "scrollTriggers": 66,
+   "canvases": 0,
+   "nodes": 864,
+   "events": [
+    "pageshow:false@377"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 9,
+   "JSEventListeners": 1221,
+   "LayoutObjects": 2289,
+   "Nodes": 8590,
+   "JSHeapUsedSize": 52
+  },
+  {
+   "label": "c6-svc/yapay-zeka-scrolled",
+   "t": 1795729270477,
+   "rssMB": 1168,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 90,
+   "docListeners": 38,
+   "gsapTweens": 31,
+   "scrollTriggers": 23,
+   "canvases": 0,
+   "nodes": 864,
+   "events": [
+    "pageshow:false@377"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 4,
+   "JSEventListeners": 418,
+   "LayoutObjects": 974,
+   "Nodes": 2901,
+   "JSHeapUsedSize": 30
+  },
+  {
+   "label": "c6-home-after-back",
+   "t": 1795729275782,
+   "rssMB": 1018,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@378"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 536,
+   "LayoutObjects": 1136,
+   "Nodes": 5467,
+   "JSHeapUsedSize": 42
+  },
+  {
+   "label": "c7-svc/uygulama-gelistirme-top",
+   "t": 1795729282520,
+   "rssMB": 1094,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 122,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 38,
+   "gsapTweens": 42,
+   "scrollTriggers": 41,
+   "canvases": 0,
+   "nodes": 1166,
+   "events": [
+    "pageshow:false@1137"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 9,
+   "JSEventListeners": 1212,
+   "LayoutObjects": 2477,
+   "Nodes": 9155,
+   "JSHeapUsedSize": 57
+  },
+  {
+   "label": "c7-svc/uygulama-gelistirme-scrolled",
+   "t": 1795729285743,
+   "rssMB": 1147,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 4,
+   "videosPlaying": 0,
+   "videosBuffered": 4,
+   "rafPerSec": 128,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 38,
+   "gsapTweens": 20,
+   "scrollTriggers": 16,
+   "canvases": 0,
+   "nodes": 1166,
+   "events": [
+    "pageshow:false@1137"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 449,
+   "LayoutObjects": 1216,
+   "Nodes": 5898,
+   "JSHeapUsedSize": 39
+  },
+  {
+   "label": "c7-home-after-back",
+   "t": 1795729292053,
+   "rssMB": 1098,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 1,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1394"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 541,
+   "LayoutObjects": 1147,
+   "Nodes": 5995,
+   "JSHeapUsedSize": 50
+  },
+  {
+   "label": "c8-svc/kreatif-produksiyon-top",
+   "t": 1795729297978,
+   "rssMB": 1054,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 91,
+   "docListeners": 38,
+   "gsapTweens": 101,
+   "scrollTriggers": 26,
+   "canvases": 0,
+   "nodes": 1074,
+   "events": [
+    "pageshow:false@283"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 471,
+   "LayoutObjects": 1400,
+   "Nodes": 5741,
+   "JSHeapUsedSize": 50
+  },
+  {
+   "label": "c8-svc/kreatif-produksiyon-scrolled",
+   "t": 1795729301198,
+   "rssMB": 1089,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 1,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 91,
+   "docListeners": 38,
+   "gsapTweens": 67,
+   "scrollTriggers": 12,
+   "canvases": 0,
+   "nodes": 1074,
+   "events": [
+    "pageshow:false@283"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 4,
+   "JSEventListeners": 451,
+   "LayoutObjects": 1223,
+   "Nodes": 3337,
+   "JSHeapUsedSize": 35
+  },
+  {
+   "label": "c8-home-after-back",
+   "t": 1795729307311,
+   "rssMB": 1083,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 63,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1197"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 543,
+   "LayoutObjects": 1148,
+   "Nodes": 5550,
+   "JSHeapUsedSize": 52
+  },
+  {
+   "label": "c9-svc/e-ticaret-yonetimi-top",
+   "t": 1795729313231,
+   "rssMB": 1083,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 39,
+   "gsapTweens": 81,
+   "scrollTriggers": 60,
+   "canvases": 0,
+   "nodes": 780,
+   "events": [
+    "pageshow:false@268"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 433,
+   "LayoutObjects": 919,
+   "Nodes": 5391,
+   "JSHeapUsedSize": 53
+  },
+  {
+   "label": "c9-svc/e-ticaret-yonetimi-scrolled",
+   "t": 1795729316457,
+   "rssMB": 1251,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "rafPerSec": 126,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 39,
+   "gsapTweens": 30,
+   "scrollTriggers": 25,
+   "canvases": 0,
+   "nodes": 780,
+   "events": [
+    "pageshow:false@268"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 4,
+   "JSEventListeners": 413,
+   "LayoutObjects": 829,
+   "Nodes": 2762,
+   "JSHeapUsedSize": 32
+  },
+  {
+   "label": "c9-home-after-back",
+   "t": 1795729322640,
+   "rssMB": 1212,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 65,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1268"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 535,
+   "LayoutObjects": 1148,
+   "Nodes": 5318,
+   "JSHeapUsedSize": 42
+  },
+  {
+   "label": "c10-svc/sosyal-medya-top",
+   "t": 1795729328756,
+   "rssMB": 1173,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 5,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 41,
+   "gsapTweens": 90,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 717,
+   "events": [
+    "pageshow:false@463"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 448,
+   "LayoutObjects": 799,
+   "Nodes": 5390,
+   "JSHeapUsedSize": 41
+  },
+  {
+   "label": "c10-svc/sosyal-medya-scrolled",
+   "t": 1795729331978,
+   "rssMB": 1291,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 41,
+   "gsapTweens": 38,
+   "scrollTriggers": 9,
+   "canvases": 0,
+   "nodes": 717,
+   "events": [
+    "pageshow:false@463"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 4,
+   "JSEventListeners": 436,
+   "LayoutObjects": 728,
+   "Nodes": 2810,
+   "JSHeapUsedSize": 33
+  },
+  {
+   "label": "c10-home-after-back",
+   "t": 1795729337168,
+   "rssMB": 1134,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@274"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 535,
+   "LayoutObjects": 1136,
+   "Nodes": 5380,
+   "JSHeapUsedSize": 42
+  },
+  {
+   "label": "c11-svc/reklam-yonetimi-top",
+   "t": 1795729343129,
+   "rssMB": 1106,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 2,
+   "videosPlaying": 1,
+   "videosBuffered": 2,
+   "rafPerSec": 122,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 41,
+   "gsapTweens": 90,
+   "scrollTriggers": 63,
+   "canvases": 0,
+   "nodes": 803,
+   "events": [
+    "pageshow:false@336"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 458,
+   "LayoutObjects": 1025,
+   "Nodes": 5492,
+   "JSHeapUsedSize": 44
+  },
+  {
+   "label": "c11-svc/reklam-yonetimi-scrolled",
+   "t": 1795729346351,
+   "rssMB": 1204,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 1,
+   "videosBuffered": 3,
+   "rafPerSec": 129,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 41,
+   "gsapTweens": 44,
+   "scrollTriggers": 18,
+   "canvases": 0,
+   "nodes": 803,
+   "events": [
+    "pageshow:false@336"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 458,
+   "LayoutObjects": 1083,
+   "Nodes": 5554,
+   "JSHeapUsedSize": 48
+  },
+  {
+   "label": "c11-home-after-back",
+   "t": 1795729352765,
+   "rssMB": 1153,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1500"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 9,
+   "JSEventListeners": 556,
+   "LayoutObjects": 1269,
+   "Nodes": 8007,
+   "JSHeapUsedSize": 51
+  },
+  {
+   "label": "c12-svc/ui-ux-tasarim-top",
+   "t": 1795729358696,
+   "rssMB": 1000,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 3,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 38,
+   "gsapTweens": 54,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 968,
+   "events": [
+    "pageshow:false@304"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 451,
+   "LayoutObjects": 1124,
+   "Nodes": 5408,
+   "JSHeapUsedSize": 55
+  },
+  {
+   "label": "c12-svc/ui-ux-tasarim-scrolled",
+   "t": 1795729361915,
+   "rssMB": 1022,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 38,
+   "gsapTweens": 19,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 968,
+   "events": [
+    "pageshow:false@304"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 451,
+   "LayoutObjects": 1126,
+   "Nodes": 5411,
+   "JSHeapUsedSize": 58
+  },
+  {
+   "label": "c12-home-after-back",
+   "t": 1795729367086,
+   "rssMB": 1072,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@252"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 539,
+   "LayoutObjects": 1136,
+   "Nodes": 5350,
+   "JSHeapUsedSize": 55
+  },
+  {
+   "label": "c13-svc/yapay-zeka-top",
+   "t": 1795729373919,
+   "rssMB": 1081,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 103,
+   "scrollTriggers": 66,
+   "canvases": 0,
+   "nodes": 864,
+   "events": [
+    "pageshow:false@1193"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 443,
+   "LayoutObjects": 1086,
+   "Nodes": 5544,
+   "JSHeapUsedSize": 55
+  },
+  {
+   "label": "c13-svc/yapay-zeka-scrolled",
+   "t": 1795729377143,
+   "rssMB": 1163,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 31,
+   "scrollTriggers": 23,
+   "canvases": 0,
+   "nodes": 864,
+   "events": [
+    "pageshow:false@1193"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 443,
+   "LayoutObjects": 1110,
+   "Nodes": 5563,
+   "JSHeapUsedSize": 59
+  },
+  {
+   "label": "c13-home-after-back",
+   "t": 1795729383554,
+   "rssMB": 1101,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1489"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 7,
+   "JSEventListeners": 554,
+   "LayoutObjects": 1254,
+   "Nodes": 5614,
+   "JSHeapUsedSize": 57
+  },
+  {
+   "label": "c14-svc/uygulama-gelistirme-top",
+   "t": 1795729390751,
+   "rssMB": 1083,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 42,
+   "scrollTriggers": 41,
+   "canvases": 0,
+   "nodes": 1166,
+   "events": [
+    "pageshow:false@1605"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 467,
+   "LayoutObjects": 1285,
+   "Nodes": 6024,
+   "JSHeapUsedSize": 56
+  },
+  {
+   "label": "c14-svc/uygulama-gelistirme-scrolled",
+   "t": 1795729393977,
+   "rssMB": 1162,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 4,
+   "videosPlaying": 0,
+   "videosBuffered": 4,
+   "rafPerSec": 128,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 20,
+   "scrollTriggers": 16,
+   "canvases": 0,
+   "nodes": 1166,
+   "events": [
+    "pageshow:false@1605"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 467,
+   "LayoutObjects": 1313,
+   "Nodes": 6053,
+   "JSHeapUsedSize": 58
+  },
+  {
+   "label": "c14-home-after-back",
+   "t": 1795729400104,
+   "rssMB": 1111,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 1,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1210"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 8,
+   "JSEventListeners": 546,
+   "LayoutObjects": 1252,
+   "Nodes": 8496,
+   "JSHeapUsedSize": 64
+  },
+  {
+   "label": "c15-svc/kreatif-produksiyon-top",
+   "t": 1795729407070,
+   "rssMB": 1104,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 94,
+   "docListeners": 38,
+   "gsapTweens": 101,
+   "scrollTriggers": 26,
+   "canvases": 0,
+   "nodes": 1074,
+   "events": [
+    "pageshow:false@1314"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 8,
+   "JSEventListeners": 477,
+   "LayoutObjects": 1437,
+   "Nodes": 9093,
+   "JSHeapUsedSize": 62
+  },
+  {
+   "label": "c15-svc/kreatif-produksiyon-scrolled",
+   "t": 1795729410290,
+   "rssMB": 1145,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 1,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 94,
+   "docListeners": 38,
+   "gsapTweens": 67,
+   "scrollTriggers": 12,
+   "canvases": 0,
+   "nodes": 1074,
+   "events": [
+    "pageshow:false@1314"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 8,
+   "JSEventListeners": 477,
+   "LayoutObjects": 1513,
+   "Nodes": 9489,
+   "JSHeapUsedSize": 69
+  },
+  {
+   "label": "c15-home-after-back",
+   "t": 1795729416676,
+   "rssMB": 1128,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1459"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 539,
+   "LayoutObjects": 1148,
+   "Nodes": 5538,
+   "JSHeapUsedSize": 57
+  },
+  {
+   "label": "c16-svc/e-ticaret-yonetimi-top",
+   "t": 1795729423805,
+   "rssMB": 1092,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 96,
+   "docListeners": 39,
+   "gsapTweens": 81,
+   "scrollTriggers": 60,
+   "canvases": 0,
+   "nodes": 780,
+   "events": [
+    "pageshow:false@1482"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 439,
+   "LayoutObjects": 927,
+   "Nodes": 5410,
+   "JSHeapUsedSize": 57
+  },
+  {
+   "label": "c16-svc/e-ticaret-yonetimi-scrolled",
+   "t": 1795729427031,
+   "rssMB": 1267,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 96,
+   "docListeners": 39,
+   "gsapTweens": 30,
+   "scrollTriggers": 25,
+   "canvases": 0,
+   "nodes": 780,
+   "events": [
+    "pageshow:false@1482"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 439,
+   "LayoutObjects": 937,
+   "Nodes": 5431,
+   "JSHeapUsedSize": 61
+  },
+  {
+   "label": "c16-home-after-back",
+   "t": 1795729432218,
+   "rssMB": 1172,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@268"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 556,
+   "LayoutObjects": 1261,
+   "Nodes": 5466,
+   "JSHeapUsedSize": 56
+  },
+  {
+   "label": "c17-svc/sosyal-medya-top",
+   "t": 1795729439191,
+   "rssMB": 1178,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 5,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 96,
+   "docListeners": 41,
+   "gsapTweens": 90,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 717,
+   "events": [
+    "pageshow:false@1336"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 458,
+   "LayoutObjects": 823,
+   "Nodes": 5442,
+   "JSHeapUsedSize": 54
+  },
+  {
+   "label": "c17-svc/sosyal-medya-scrolled",
+   "t": 1795729442414,
+   "rssMB": 1298,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 96,
+   "docListeners": 41,
+   "gsapTweens": 38,
+   "scrollTriggers": 9,
+   "canvases": 0,
+   "nodes": 717,
+   "events": [
+    "pageshow:false@1336"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 460,
+   "LayoutObjects": 831,
+   "Nodes": 5491,
+   "JSHeapUsedSize": 57
+  },
+  {
+   "label": "c17-home-after-back",
+   "t": 1795729448794,
+   "rssMB": 1205,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1464"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 541,
+   "LayoutObjects": 1148,
+   "Nodes": 5378,
+   "JSHeapUsedSize": 54
+  },
+  {
+   "label": "c18-svc/reklam-yonetimi-top",
+   "t": 1795729455719,
+   "rssMB": 1153,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 2,
+   "videosPlaying": 1,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 41,
+   "gsapTweens": 90,
+   "scrollTriggers": 63,
+   "canvases": 0,
+   "nodes": 803,
+   "events": [
+    "pageshow:false@1297"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 451,
+   "LayoutObjects": 1029,
+   "Nodes": 5460,
+   "JSHeapUsedSize": 55
+  },
+  {
+   "label": "c18-svc/reklam-yonetimi-scrolled",
+   "t": 1795729458944,
+   "rssMB": 1249,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 1,
+   "videosBuffered": 3,
+   "rafPerSec": 129,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 41,
+   "gsapTweens": 44,
+   "scrollTriggers": 18,
+   "canvases": 0,
+   "nodes": 803,
+   "events": [
+    "pageshow:false@1297"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 4,
+   "JSEventListeners": 430,
+   "LayoutObjects": 946,
+   "Nodes": 2832,
+   "JSHeapUsedSize": 35
+  },
+  {
+   "label": "c18-home-after-back",
+   "t": 1795729464143,
+   "rssMB": 1156,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@278"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 536,
+   "LayoutObjects": 1135,
+   "Nodes": 5364,
+   "JSHeapUsedSize": 48
+  },
+  {
+   "label": "c19-svc/ui-ux-tasarim-top",
+   "t": 1795729471206,
+   "rssMB": 1147,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 3,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 54,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 968,
+   "events": [
+    "pageshow:false@1419"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 456,
+   "LayoutObjects": 1124,
+   "Nodes": 5403,
+   "JSHeapUsedSize": 55
+  },
+  {
+   "label": "c19-svc/ui-ux-tasarim-scrolled",
+   "t": 1795729474426,
+   "rssMB": 1132,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 19,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 968,
+   "events": [
+    "pageshow:false@1419"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 4,
+   "JSEventListeners": 433,
+   "LayoutObjects": 1027,
+   "Nodes": 2762,
+   "JSHeapUsedSize": 36
+  },
+  {
+   "label": "c19-home-after-back",
+   "t": 1795729479576,
+   "rssMB": 1030,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 112,
+   "docListeners": 42,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@230"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 7,
+   "JSEventListeners": 552,
+   "LayoutObjects": 1260,
+   "Nodes": 5469,
+   "JSHeapUsedSize": 47
+  },
+  {
+   "label": "c20-svc/yapay-zeka-top",
+   "t": 1795729485599,
+   "rssMB": 1048,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 123,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 38,
+   "gsapTweens": 103,
+   "scrollTriggers": 66,
+   "canvases": 0,
+   "nodes": 864,
+   "events": [
+    "pageshow:false@377"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 484,
+   "LayoutObjects": 1128,
+   "Nodes": 5556,
+   "JSHeapUsedSize": 56
+  },
+  {
+   "label": "c20-svc/yapay-zeka-scrolled",
+   "t": 1795729488823,
+   "rssMB": 1130,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "rafPerSec": 127,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 38,
+   "gsapTweens": 31,
+   "scrollTriggers": 23,
+   "canvases": 0,
+   "nodes": 864,
+   "events": [
+    "pageshow:false@377"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 484,
+   "LayoutObjects": 1152,
+   "Nodes": 5576,
+   "JSHeapUsedSize": 59
+  },
+  {
+   "label": "c20-home-after-back",
+   "t": 1795729495051,
+   "rssMB": 1094,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 2,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1307"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 7,
+   "JSEventListeners": 560,
+   "LayoutObjects": 1269,
+   "Nodes": 5648,
+   "JSHeapUsedSize": 57
+  },
+  {
+   "label": "c21-svc/uygulama-gelistirme-top",
+   "t": 1795729502051,
+   "rssMB": 1083,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "rafPerSec": 64,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 42,
+   "scrollTriggers": 41,
+   "canvases": 0,
+   "nodes": 1166,
+   "events": [
+    "pageshow:false@1399"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 481,
+   "LayoutObjects": 1292,
+   "Nodes": 6029,
+   "JSHeapUsedSize": 55
+  },
+  {
+   "label": "c21-svc/uygulama-gelistirme-scrolled",
+   "t": 1795729505276,
+   "rssMB": 1142,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 4,
+   "videosPlaying": 0,
+   "videosBuffered": 4,
+   "rafPerSec": 128,
+   "intervals": 4,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 20,
+   "scrollTriggers": 16,
+   "canvases": 0,
+   "nodes": 1166,
+   "events": [
+    "pageshow:false@1399"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 6,
+   "JSEventListeners": 481,
+   "LayoutObjects": 1320,
+   "Nodes": 6058,
+   "JSHeapUsedSize": 58
+  },
+  {
+   "label": "c21-home-after-back",
+   "t": 1795729511402,
+   "rssMB": 1095,
+   "url": "/",
+   "nav": "back_forward",
+   "videos": 5,
+   "videosWithSrc": 2,
+   "videosPlaying": 1,
+   "videosBuffered": 2,
+   "rafPerSec": 64,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 4,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 115,
+   "docListeners": 42,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 930,
+   "events": [
+    "pageshow:false@1209"
+   ],
+   "errors": [
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined",
+    "undefined @:undefined"
+   ],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible",
+   "Documents": 7,
+   "JSEventListeners": 555,
+   "LayoutObjects": 1268,
+   "Nodes": 6110,
+   "JSHeapUsedSize": 56
+  }
+ ],
+ "cons": [
+  "pageerror TypeError: Failed to fetch"
+ ],
+ "fails": [
+  "https://www.google.com/ccm/collect?rcb=3&frm=0&apvc=1&auid=2005764073.1795729176&dt=1N%20Reklam%20Ajans%C4%B1%20-%20E-Ticaret%20Dan%C4%B1%C5%9Fmanl%C4%B1k%20Aja net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729176007&cv=11&fst=1795729176007&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729176011&cv=11&fst=1795729176011&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795729175781&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dm net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=0&ae=g&auid=2005764073.1795729176&dt=1N%20Reklam%20Ajans%C4%B1%20-%20E-Ticaret%20Dan%C4%B1%C5%9Fmanl%C4%B1k net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/pagead/1p-conversion/10849847643/?random=1795729176007&cv=11&fst=1795729176007&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/pagead/1p-conversion/10849847643/?random=1795729176011&cv=11&fst=1795729176011&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795729175781&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gd net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.facebook.com/tr/?id=1392128447812984&ev=PageView&dl=https%3A%2F%2Fwww.reklam1n.com%2F&rl=&if=false&ts=1795729176405&iw=false&sw=390&sh=844&cud[exter net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/rmkt/collect/10849847643/?random=1795729178381&cv=11&fst=1795729178381&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v87462222 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729178393&cv=11&fst=1795729178393&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/ccm/collect?rcb=3&frm=0&apvc=0&auid=2005764073.1795729176&dt=1N%20Reklam%20Ajans%C4%B1%20-%20E-Ticaret%20Dan%C4%B1%C5%9Fmanl%C4%B1k%20Aja net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/pagead/1p-conversion/10849847643/?random=1795729178393&cv=11&fst=1795729178393&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795729178381&cv=11&fst=1795729178381&bg=ffffff&guid=ON&async=1&en=page_vie net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729178396&cv=11&fst=1795729178396&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795729178381&cv=11&fst=1795729178381&fmt=3&bg=ffffff&guid=ON&async=1&en=pa net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/pagead/1p-conversion/10849847643/?random=1795729178396&cv=11&fst=1795729178396&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/rmkt/collect/10849847643/?random=1795729178381&cv=11&fst=1795729178381&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v87462222 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795729175781&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdi net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795729175781&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzM net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&auid=2005764073.1795729176&dt=%C4%B0zmir%20Kreatif%20Prod%C3%BCksiyon%20Ajans%C4%B1%20-%201N%20Digital%20 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&auid=2005764073.1795729176&dt=%C4%B0zmir%20Kreatif%20Prod%C3%BCksiyon%20Ajans%C4%B1%20-%201N%20Digit net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729188463&cv=11&fst=1795729188463&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.facebook.com/tr/?id=1392128447812984&ev=PageView&dl=https%3A%2F%2Fwww.reklam1n.com%2Fkreatif-produksiyon&rl=https%3A%2F%2Fwww.reklam1n.com%2F&if=fal net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/pagead/1p-conversion/10849847643/?random=1795729188463&cv=11&fst=1795729188463&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/rmkt/collect/10849847643/?random=1795729188821&cv=11&fst=1795729188821&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v87462222 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729188828&cv=11&fst=1795729188828&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=0&auid=2005764073.1795729176&dt=%C4%B0zmir%20Kreatif%20Prod%C3%BCksiyon%20Ajans%C4%B1%20-%201N%20Digital%20 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/pagead/1p-conversion/10849847643/?random=1795729188828&cv=11&fst=1795729188828&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795729188395&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdi net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795729188821&cv=11&fst=1795729188821&bg=ffffff&guid=ON&async=1&en=page_vie net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795729188395&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzM net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/rmkt/collect/10849847643/?random=1795729188821&cv=11&fst=1795729188821&fmt=3&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v87462222 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795729188821&cv=11&fst=1795729188821&fmt=3&bg=ffffff&guid=ON&async=1&en=pa net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&auid=2005764073.1795729176&dt=1N%20Reklam%20Ajans%C4%B1%20-%20E-Ticaret%20Dan%C4%B1%C5%9Fmanl%C4%B1k%20Aja net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729197214&cv=11&fst=1795729197214&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729197217&cv=11&fst=1795729197217&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795729197392&cv=11&fst=1795729197392&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=0&ae=g&auid=2005764073.1795729176&dt=1N%20Reklam%20Ajans%C4%B1%20-%20E-Ticaret%20Dan%C4%B1%C5%9Fmanl%C4%B1k% net::ERR_TUNNEL_CONNECTION_FAILED",
+  "https://www.google.com/rmkt/collect/10849847643/?random=1795729197385&cv=11&fst=1795729197385&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v87462222 net::ERR_TUNNEL_CONNECTION_FAILED"
+ ]
+}

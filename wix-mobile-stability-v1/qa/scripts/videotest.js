@@ -1,0 +1,16 @@
+const pw=require('playwright');const [,,BR='chromium',MODE='patched']=process.argv;
+(async()=>{const b=await pw[BR].launch(BR==='chromium'?{args:['--autoplay-policy=no-user-gesture-required']}:{});const o={viewport:{width:390,height:844},hasTouch:true};if(BR==='chromium')o.isMobile=true;
+const ctx=await b.newContext(o);if(MODE==='patched')await ctx.addInitScript({path:process.env.N1_INJECT});const pg=await ctx.newPage();const res=[];
+const T=(n,ok,i)=>{res.push(ok);console.log(BR,MODE,ok?'PASS':'FAIL',n,i||'')};
+await pg.goto('https://www.reklam1n.com/kreatif-produksiyon',{waitUntil:'domcontentloaded'});await pg.waitForTimeout(10000);
+const hero=()=>pg.evaluate(()=>{const v=document.querySelector('.kp-hero__stage video');return {paused:v.paused,muted:v.muted,inline:v.playsInline,src:!!v.getAttribute('src'),rel:!!v.__n1rel,t:+v.currentTime.toFixed(2),rs:v.readyState}});
+let h=await hero();T('hero görünürken sessiz+inline oynuyor',!h.paused&&h.muted&&h.inline,JSON.stringify(h));
+await pg.evaluate(()=>scrollTo(0,document.querySelector('.kp-hero__stage').getBoundingClientRect().bottom+scrollY+900));await pg.waitForTimeout(1500);
+h=await hero();T('ekran dışına çıkınca duruyor',h.paused,JSON.stringify(h));
+await pg.evaluate(()=>scrollTo(0,0));await pg.waitForTimeout(2500);h=await hero();T('geri gelince devam ediyor',!h.paused,JSON.stringify(h));
+await pg.click('.kp-hero .kp-play, .kp-ctl .kp-play',{timeout:8000}).catch(e=>console.log('click',e.message.slice(0,80)));await pg.waitForTimeout(800);h=await hero();const tUser=h.t;T('kullanıcı duraklattı',h.paused,JSON.stringify(h));
+await pg.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight*0.75));await pg.waitForTimeout(6500);h=await hero();T(MODE==='patched'?'uzakta 4 sn+ → kaynak bırakıldı':'uzakta bekleme (canlı: kaynak tutulur)',MODE==='patched'?h.rel&&!h.src:true,JSON.stringify(h));
+await pg.evaluate(()=>scrollTo(0,0));await pg.waitForTimeout(3500);h=await hero();T('geri dönünce kullanıcı duraklatması korunuyor (oynamıyor)',h.paused,JSON.stringify(h));
+T('kaynak geri yüklendi ve konum korundu',h.src&&Math.abs(h.t-tUser)<0.6,JSON.stringify(h)+' userT='+tUser);
+await pg.click('.kp-hero .kp-play, .kp-ctl .kp-play',{timeout:8000}).catch(()=>{});await pg.waitForTimeout(1500);h=await hero();T('kullanıcı tekrar oynatınca oynuyor',!h.paused,JSON.stringify(h));
+console.log(BR,MODE,'SONUÇ',res.filter(Boolean).length+'/'+res.length);await b.close();})();

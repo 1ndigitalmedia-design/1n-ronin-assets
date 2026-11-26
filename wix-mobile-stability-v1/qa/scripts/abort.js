@@ -1,0 +1,10 @@
+const pw=require('playwright');
+(async()=>{const b=await pw.chromium.launch();const ctx=await b.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+await ctx.addInitScript(`window.addEventListener('unhandledrejection',function(e){var r=e.reason;console.log('UNHANDLED '+(r&&r.name)+': '+(r&&r.message)+' | '+String(r&&r.stack||'').split('\\n').slice(0,6).join(' <- '))});
+var _st=Document.prototype.startViewTransition; if(_st){Document.prototype.startViewTransition=function(){console.log('VT START '+String(new Error().stack).split('\\n').slice(2,5).join(' <- ').slice(0,300));return _st.apply(this,arguments)}}`);
+const pg=await ctx.newPage();pg.on('console',m=>{const t=m.text();if(/UNHANDLED|VT START/.test(t))console.log(t.slice(0,500))});
+await pg.goto('https://www.reklam1n.com/',{waitUntil:'domcontentloaded'});await pg.waitForSelector('n1-header .n1h-menu',{timeout:40000});await pg.waitForTimeout(5000);
+await pg.click('n1-header .n1h-menu');await pg.waitForTimeout(700);await pg.click('.n1h-panel[data-open] a.n1h-item[href*="hizmetler-ozet"]');await pg.waitForTimeout(2500);
+console.log('-- click service');await pg.evaluate(()=>document.querySelector('a[href="/kreatif-produksiyon"]').click());await pg.waitForTimeout(8000);
+console.log('-- menu hizmetler from inner');await pg.click('n1-header .n1h-menu');await pg.waitForTimeout(700);await pg.click('.n1h-panel[data-open] a.n1h-item[href*="hizmetler-ozet"]');await pg.waitForTimeout(8000);
+await b.close();})();

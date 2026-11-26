@@ -1,0 +1,132 @@
+{
+ "/": {
+  "layersPeak": {
+   "n": 49,
+   "mpx": 11.8
+  },
+  "backdrop": 6,
+  "filter": 2,
+  "willChange": 49,
+  "fixed": 5,
+  "imgs": 7,
+  "imgDecodedMpx": 8.3,
+  "docH": 8995
+ },
+ "/kreatif-produksiyon": {
+  "layersPeak": {
+   "n": 37,
+   "mpx": 8.2
+  },
+  "backdrop": 6,
+  "filter": 0,
+  "willChange": 0,
+  "fixed": 5,
+  "imgs": 21,
+  "imgDecodedMpx": 9.6,
+  "docH": 9266
+ },
+ "/e-ticaret-yonetimi": {
+  "layersPeak": {
+   "n": 66,
+   "mpx": 5.9
+  },
+  "backdrop": 9,
+  "filter": 7,
+  "willChange": 35,
+  "fixed": 5,
+  "imgs": 20,
+  "imgDecodedMpx": 30.5,
+  "docH": 10609
+ },
+ "/sosyal-medya": {
+  "layersPeak": {
+   "n": 41,
+   "mpx": 8.3
+  },
+  "backdrop": 9,
+  "filter": 0,
+  "willChange": 12,
+  "fixed": 5,
+  "imgs": 14,
+  "imgDecodedMpx": 5.1,
+  "docH": 10547
+ },
+ "/reklam-yonetimi": {
+  "layersPeak": {
+   "n": 50,
+   "mpx": 10.6
+  },
+  "backdrop": 9,
+  "filter": 4,
+  "willChange": 27,
+  "fixed": 5,
+  "imgs": 10,
+  "imgDecodedMpx": 4.7,
+  "docH": 14781
+ },
+ "/ui-ux-tasarim": {
+  "layersPeak": {
+   "n": 58,
+   "mpx": 7.5
+  },
+  "backdrop": 6,
+  "filter": 1,
+  "willChange": 36,
+  "fixed": 5,
+  "imgs": 18,
+  "imgDecodedMpx": 8.7,
+  "docH": 16549
+ },
+ "/yapay-zeka": {
+  "layersPeak": {
+   "n": 47,
+   "mpx": 16.7
+  },
+  "backdrop": 6,
+  "filter": 4,
+  "willChange": 57,
+  "fixed": 5,
+  "imgs": 14,
+  "imgDecodedMpx": 5.2,
+  "docH": 15536
+ },
+ "/uygulama-gelistirme": {
+  "layersPeak": {
+   "n": 22,
+   "mpx": 17.1
+  },
+  "backdrop": 6,
+  "filter": 0,
+  "willChange": 0,
+  "fixed": 5,
+  "imgs": 8,
+  "imgDecodedMpx": 5.1,
+  "docH": 18613
+ },
+ "/markalar": {
+  "layersPeak": {
+   "n": 18,
+   "mpx": 3.8
+  },
+  "backdrop": 6,
+  "filter": 48,
+  "willChange": 3,
+  "fixed": 5,
+  "imgs": 62,
+  "imgDecodedMpx": 6.4,
+  "docH": 8231
+ },
+ "/kisaca-biz": {
+  "layersPeak": {
+   "n": 16,
+   "mpx": 3.1
+  },
+  "backdrop": 6,
+  "filter": 0,
+  "willChange": 2,
+  "fixed": 5,
+  "imgs": 2,
+  "imgDecodedMpx": 3.9,
+  "docH": 6474
+ }
+}
