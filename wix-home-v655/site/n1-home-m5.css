@@ -318,7 +318,7 @@ n1-site-v1[data-n1-profile="t"] .m4-ai-note{grid-row:1 / span 2;align-self:end}
 /* ═══ SİNEMATİK BANTLAR (M2 #samuray-video, M1 #video-bandi) — kaynak oranı 768:450 ═══ */
 n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video]{height:auto!important;max-height:none!important;aspect-ratio:768 / 450;background-color:var(--m4-bg);background-size:cover;background-position:50% 50%;background-repeat:no-repeat;position:relative}
 n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video] .n1sv-video{max-height:none;object-fit:cover;object-position:50% 50%;transition:opacity .45s var(--m4-ease)}
-n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video]:not(.is-ready) .n1sv-video{opacity:0!important}
+n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video]:not(.is-ready):not(.n1v-native) .n1sv-video{opacity:0!important}
 n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video].is-poster .n1sv-video,n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video][data-n1v-state="error"] .n1sv-video{visibility:hidden}
 n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video] .n1v-tg{position:absolute;right:var(--m4-pad);top:14px;z-index:3;width:40px;height:40px;background:rgba(8,10,9,.42)}
 n1-site-v1:is([data-n1-profile="m"],[data-n1-profile="t"]) .n1sv[data-n1m-video]::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,var(--m4-bg) 0,rgba(8,10,9,0) 14%,rgba(8,10,9,0) 80%,var(--m4-bg) 100%)}

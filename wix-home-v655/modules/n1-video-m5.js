@@ -145,6 +145,7 @@
       if(!visible){yielded=false;stop(userPaused?'user':done?'done':'paused',false);}
       else if(!userPaused&&!done){yielded=false;retries=0;if(reduce||saveData)render('poster',false);else{render('idle',false);play('visible',false);}}
     }
+    render(reduce||saveData?'poster':'idle',false);
     if('IntersectionObserver' in window){
       var io=new IntersectionObserver(function(es){es.forEach(function(e){setVisible(e.isIntersecting&&e.intersectionRatio>=.15);});},{threshold:[0,.15,.5]});
       io.observe(root);offs.push(function(){io.disconnect();});
@@ -152,7 +153,6 @@
     on(document,'visibilitychange',function(){if(document.hidden)stop(userPaused?'user':done?'done':'paused',false);else if(visible&&!userPaused&&!done){yielded=false;render('idle',false);play('visibility',false);}});
     on(window,'pagehide',function(){stop(userPaused?'user':done?'done':'paused',false);});
     on(window,'pageshow',function(e){if(e.persisted&&visible&&!userPaused&&!done){yielded=false;render('idle',false);play('pageshow',false);}});
-    render(reduce||saveData?'poster':'idle',false);
     root.__n1v5=root.__n1v4=root.__n1vm=root.__n1sv={video:video,setVisible:setVisible,state:function(){return {state:state,src:video.currentSrc,t:video.currentTime,paused:video.paused,ready:video.readyState,visible:visible,events:events.slice(),isReady:root.classList.contains('is-ready')};}};
     offs.push(function(){dead=true;clearInterval(watch);stop('idle',false);video.removeAttribute('src');try{video.load();}catch(e){}if(tg)tg.remove();if(!isMini&&poster)poster.remove();root.classList.remove('n1v-native','is-ready','is-poster');root.removeAttribute('data-n1v-state');delete root.__n1v5;delete root.__n1v4;delete root.__n1vm;delete root.__n1sv;});
   }
