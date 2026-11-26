@@ -1,0 +1,513 @@
+/*!
+ * n1-site-wix-v649 — 1N Digital Media ana sayfası · Wix Studio Custom Element · MOBİL + TABLET RESPONSIVE V1
+ * Temel: n1-site-wix-v648.js (main b35d9875). Masaüstü (≥ 901 px) yolu v648 ile birebir aynıdır: aynı modüller, aynı sabit
+ * commit adresleri, aynı Ronin Bd/Bx paketleri, aynı video kaynakları. Bu sürümün eklediği her şey yalnızca cihaz profili
+ * "mobil" ya da "tablet" olduğunda yüklenir.
+ *
+ * Wix Studio → Custom Element
+ *   Tag name: n1-site-v1      Kaynak: bu dosyanın HTTPS adresi (jsDelivr, commit'e sabit)
+ *
+ * Cihaz profili (bağlanırken ve 900 px sınırı geçildiğinde belirlenir):
+ *   d  masaüstü   genişlik ≥ 901 px                      → ronin-hero-v67 + Bd/Bx paketleri (v648 ile aynı)
+ *   t  tablet     768–900 px ve kısa kenar ≥ 600 px      → ronin-hero-mv1 + ronin-tv-v1 (864×1088)
+ *   m  telefon    ≤ 767 px (ya da kısa kenar < 600 px)   → ronin-hero-mv1 + ronin-mv-v1 (648×816)
+ *   Masaüstü ↔ mobil/tablet geçişinde (tablet döndürme, pencere daraltma) bileşen bir kez yeniden kurulur; iki profilin
+ *   medyası aynı anda indirilmez, animasyon motoru iki kez çalışmaz.
+ *
+ * Öznitelikler (hepsi isteğe bağlı; verilmezse aşağıdaki varsayılanlar):
+ *   assets-base        aktarım görselleri klasörü                      (v648 ile aynı; sabit commit)
+ *   ronin-base         MASAÜSTÜ Ronin paketleri klasörü                (v648 ile aynı; sabit commit)
+ *   home-base          bu sürümün kök klasörü (…/wix-home-v649/)       varsayılan: bu dosyanın adresinden bulunur
+ *   ronin-mobile-base  MOBİL/TABLET Ronin paketleri + posterler        varsayılan: home-base + "media/"
+ *   video-mobile-first Ronin'den sonraki ilk sinematik video (#samuray-video) için mobil/tablet MP4 adresi
+ *   video-mobile-last  son sinematik video bandı (#video-bandi) için mobil/tablet MP4 adresi
+ *   scroll-vh-mobile   mobil/tablet Ronin kaydırma izi (svh)           varsayılan 300 (aktif kaydırma = 2 ekran)
+ *   debug, sticky-fix  v648 ile aynı
+ *
+ * Akış v648 ile aynıdır (CSS → iskelet → Header/yüzen kontroller body'ye → Ronin → GSAP → modüller → tek refresh).
+ */
+(function () {
+  'use strict';
+  var TAG = 'n1-site-v1';
+  if (customElements.get(TAG)) return;
+
+  var SELF_SRC = (document.currentScript && document.currentScript.src) ||
+    (function () { var s = [].slice.call(document.scripts).filter(function (x) { return /n1-site-wix-v649\.js(\?|$)/.test(x.src); }); return s.length ? s[s.length - 1].src : ''; })();
+
+  /* ---------- Bağımlılık sırası (v6.47 index.html'den derlendi) ---------- */
+  var ORDER = {
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=Montserrat:wght@700&display=swap",
+    "gsap": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+    ],
+    "css": [
+      "n1-partners-v617.css",
+      "n1-samurai-video-v632.css",
+      "n1-stats-v632.css",
+      "n1-video-band-v633.css",
+      "n1-contact-cta-v634.css",
+      "n1-about-v635.css",
+      "n1-footer-v636.css",
+      "n1-ecosystem-v647.css",
+      "n1-gads-v643.css",
+      "n1-brands-v625.css",
+      "n1-showreel-v628.css",
+      "n1-sectors-v630.css"
+    ],
+    "js": [
+      "ronin-hero-v67.js",
+      "n1-header-v613.js",
+      "ronin-type-v613.js",
+      "n1-links-v646.js",
+      "n1-service-links-v644.js",
+      "js/gsap-vault-mit-v629.js",
+      "n1-partners-v617.js",
+      "n1-samurai-video-v621.js",
+      "n1-stats-v632.js",
+      "n1-contact-cta-v644.js",
+      "n1-about-v644.js",
+      "n1-footer-v646.js",
+      "n1-ecosystem-v647-wix.js",
+      "n1-gads-v643.js",
+      "n1-brands-v625.js",
+      "n1-showreel-v628.js",
+      "n1-sectors-v630.js",
+      "js/onizleme.js",
+      "n1-floating-controls-v632.js"
+    ]
+  };
+
+  /* ---------- Ronin medya manifestosu (Aşama 03 ile aynı dosyalar; adres = ronin-base + ad) ---------- */
+  var RONIN = {
+    Bx: { packs: ['ronin-Bx-v67-a0.bin', 'ronin-Bx-v67-a.bin', 'ronin-Bx-v67-b.bin'], poster: 'ronin-v67-poster-Bx.webp' },
+    Bd: { packs: ['ronin-Bd-v67-a0.bin', 'ronin-Bd-v67-a.bin', 'ronin-Bd-v67-b.bin'], poster: 'ronin-v67-poster-Bd.webp' },
+    m:  { packs: ['ronin-m-v63-a0.bin', 'ronin-m-v63-a.bin', 'ronin-m-v63-b.bin'],   poster: 'ronin-v6-poster-m.webp' }
+  };
+
+  function dirOf(u) { return u ? u.replace(/[?#].*$/, '').replace(/[^/]*$/, '') : ''; }
+  /* Merkezi çapa navigasyonu: DEĞİŞMEDİ (v1.0.1, main b35d9875). Wix global Custom Code aynı adresi yüklüyorsa tarayıcı
+     dosyayı bir kez indirir; modül window.__n1Nav korumasıyla tek örnek çalışır (olaylar iki kez bağlanmaz). */
+  var NAV_SRC = "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@b35d9875ac0e3288c8a8d953428574bdf42a5b61/wix-home-v648/modules/n1-nav-v1.js";
+  /* Bu sürümün kendi dosyaları (mobil/tablet): bu dosyanın klasöründen, yani AYNI commit'ten yüklenir. */
+  var HOME_SELF = SELF_SRC ? dirOf(SELF_SRC) : '';
+  var MOBILE_MQ = '(max-width: 900px)';
+  /* M1/M2 eşleştirmesi İÇERİĞE göre yapıldı (bkz. RESPONSIVE_REPORT.md): masaüstündeki ilk video (eller, katana, dik kabza)
+     = M2; son video bandı (kırmızı fon, yüz + kılıç) = M1. */
+  var VIDEO_M = {
+    first: { src: 'https://video.wixstatic.com/video/6dbf5e_809e8dea872246c7ae68b073341efafb/480p/mp4/file.mp4', poster: 'n1-video-m2-poster.webp', id: 'samuray-video' },
+    last:  { src: 'https://video.wixstatic.com/video/6dbf5e_48741869fc89488392bce24c731dafa4/480p/mp4/file.mp4', poster: 'n1-video-m1-poster.webp', id: 'video-bandi' }
+  };
+  /* V1.1 — yalnızca mobil/tablet: yüzen kontrollerin (n1-floating-controls-v632, DEĞİŞMEDİ) "altında tıklanabilir öğe var mı"
+     denetimi her kaydırma karesinde 10 kez document.elementsFromPoint çağırıyordu; 4× CPU kısıtlı ölçümde 6 sn kaydırmada
+     ≈1,6 sn ana iş parçacığı. Mobilde bu denetim en çok 200 ms'de bir yapılır, kaydırma durunca son durum bir kez daha
+     ölçülür. Masaüstünde bu fonksiyon çağrılmaz. */
+  function tuneFloatingControls(tries) {
+    var fc = document.querySelector('n1-floating-controls');
+    if (!fc || typeof fc._overInteractive !== 'function') { if ((tries || 0) < 20) setTimeout(function () { tuneFloatingControls((tries || 0) + 1); }, 150); return; }
+    if (fc.__n1mTuned) return;
+    var orig = fc._overInteractive, last = -1e9, val = false, trail = 0;
+    fc.__n1mTuned = true;
+    fc._overInteractive = function () {
+      var now = performance.now();
+      if (now - last < 200) {
+        clearTimeout(trail); trail = setTimeout(function () { last = -1e9; if (fc.isConnected && fc._update) fc._update(); }, 220);
+        return val;
+      }
+      last = now; val = orig.call(fc); return val;
+    };
+  }
+  function deviceProfile() {
+    var w = window.innerWidth || document.documentElement.clientWidth || 0, h = window.innerHeight || w;
+    if (w > 900) return 'd';
+    return (w >= 768 && Math.min(w, h) >= 600) ? 't' : 'm';
+  }
+  function slash(u) { u = (u || '').trim(); return u && !/\/$/.test(u) ? u + '/' : u; }
+
+  /* ---------- tek seferlik yükleyiciler ---------- */
+  var loaded = {};
+  function loadScript(src, fresh) {
+    // fresh: bölüm modülleri her bağlanışta yeniden çalışır (IIFE); kütüphaneler bir kez
+    if (!fresh && loaded[src]) return loaded[src];
+    var p = new Promise(function (res, rej) {
+      var s = document.createElement('script'); s.src = src; s.async = false; s.setAttribute('data-n1s', '');
+      s.onload = function () { res(); }; s.onerror = function () { rej(new Error('yüklenemedi: ' + src)); };
+      document.head.appendChild(s);
+    });
+    if (!fresh) loaded[src] = p;
+    return p;
+  }
+  function loadCss(href) {
+    var ex = document.querySelector('link[data-n1s-css="' + href + '"]');
+    if (ex) return Promise.resolve(ex);
+    return new Promise(function (res) {
+      var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; l.setAttribute('data-n1s-css', href);
+      l.onload = l.onerror = function () { res(l); };
+      document.head.appendChild(l);
+    });
+  }
+  function ensureFonts(href) {
+    if (document.querySelector('link[data-n1s-fonts]')) return;
+    ['https://fonts.googleapis.com', 'https://fonts.gstatic.com'].forEach(function (u, i) {
+      var p = document.createElement('link'); p.rel = 'preconnect'; p.href = u; if (i) p.crossOrigin = ''; p.setAttribute('data-n1s-fonts', ''); document.head.appendChild(p);
+    });
+    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; l.setAttribute('data-n1s-fonts', ''); document.head.appendChild(l);
+  }
+  function ensureGsap(urls) {
+    // Sayfada GSAP zaten varsa yeniden yüklenmez; yalnızca eksik eklenti yüklenir.
+    var need = [];
+    if (!window.gsap) need.push(urls[0]);
+    else if (window.gsap.version !== '3.13.0') diagNote('Sayfada farklı bir GSAP sürümü var: ' + window.gsap.version + ' (beklenen 3.13.0)');
+    if (!window.ScrollTrigger) need.push(urls[1]);
+    if (!window.SplitText) need.push(urls[2]);
+    return need.reduce(function (p, u) { return p.then(function () { return loadScript(u); }); }, Promise.resolve())
+      .then(function () { window.gsap.registerPlugin(window.ScrollTrigger, window.SplitText); });
+  }
+  var notes = [];
+  function diagNote(t) { notes.push(t); try { console.warn('[n1-site-v1] ' + t); } catch (e) {} }
+
+  /* ---------- modül olay dinleyicisi kaydı (yalnızca bu paketin dosyalarından gelenler) ----------
+   * window/document/html/body üzerinde, çağrı yığını paket adresini içeren addEventListener kayıtları tutulur;
+   * bileşen kaldırılınca bunlar kaldırılır. Wix'in kendi dinleyicilerine dokunulmaz. */
+  var tracker = null;
+  function startTracker(codeBase) {
+    if (tracker) return tracker;
+    var targets = [window, document, document.documentElement, document.body], recs = [], saved = [];
+    targets.forEach(function (t) {
+      var orig = t.addEventListener;
+      var patched = function __n1sAddListener(type, fn, opts) {
+        try {
+          // Yığının ilk satırları bu ara katmanın kendisidir (paket dosyası) → atlanır; yalnızca ÇAĞIRANA bakılır.
+          var lines = String(new Error().stack || '').split('\n'), i = 0;
+          while (i < lines.length && lines[i].indexOf('__n1sAddListener') < 0) i++;
+          var caller = i < lines.length ? lines.slice(i + 1).join('\n') : '';
+          if (codeBase && caller.indexOf(codeBase) >= 0) recs.push([t, type, fn, opts]);
+        } catch (e) {}
+        return orig.call(this, type, fn, opts);
+      };
+      // Wix Studio may expose addEventListener as read-only on Window or other host objects.
+      // Tracking is best-effort: never abort the entire site when an API cannot be patched.
+      var originalOwnDescriptor = Object.getOwnPropertyDescriptor(t, 'addEventListener');
+      try {
+        t.addEventListener = patched;
+        if (t.addEventListener === patched) saved.push([t, originalOwnDescriptor]);
+        else diagNote('Olay dinleyicisi takip edilemedi (salt okunur API): ' + (t === window ? 'window' : t === document ? 'document' : t.tagName || 'element'));
+      } catch (e) {
+        diagNote('Olay dinleyicisi takip edilemedi (Wix izin vermiyor): ' + (t === window ? 'window' : t === document ? 'document' : t.tagName || 'element'));
+      }
+    });
+    tracker = {
+      recs: recs,
+      stop: function (removeAll) {
+        // Restore the exact previous own-property descriptor; deleting an original
+        // own method would otherwise alter Wix's event handling after unmount.
+        saved.forEach(function (s) {
+          try {
+            if (s[1]) Object.defineProperty(s[0], 'addEventListener', s[1]);
+            else delete s[0].addEventListener;
+          } catch (e) { diagNote('Olay dinleyicisi API geri yüklenemedi.'); }
+        });
+        if (removeAll) recs.forEach(function (r) { try { r[0].removeEventListener(r[1], r[2], r[3]); } catch (e) {} });
+        tracker = null;
+      }
+    };
+    return tracker;
+  }
+
+  /* Header'ın kendi CSS'indeki genel .site-container kuralını yalnızca Header içine daraltır (Aşama 03 ile aynı) */
+  function scopeHeaderCss() {
+    var st = document.getElementById('n1h-style');
+    if (!st || st.getAttribute('data-n1s-scoped') === '1') return;
+    var t = st.textContent, from = '.site-container{', to = 'n1-header[data-n1-owner] .site-container{';
+    var n = t.split(from).length - 1;
+    if (n === 1) { st.textContent = t.replace(from, to); st.setAttribute('data-n1s-scoped', '1'); }
+    else diagNote('.site-container kuralı beklenen biçimde bulunamadı (' + n + '); dokunulmadı');
+  }
+
+  var BODY_OWN = /^(n1|rh6)/;   // modüllerin body'ye eklediği öğeler: .n1h-panel, .n1fc…, .n1b-cursor, .n1sr-cursor
+
+  class N1SiteV1 extends HTMLElement {
+    static get observedAttributes() { return ['assets-base', 'ronin-base', 'debug', 'sticky-fix']; }
+
+
+    connectedCallback() {
+      if (this._on) return;
+      if (document.querySelector(TAG + '[data-n1s-live]')) { diagNote('Sayfada ikinci bir <n1-site-v1> var; yalnızca ilki çalışır.'); return; }
+      this._on = true; this.setAttribute('data-n1s-live', '');
+      this._start();
+    }
+
+    attributeChangedCallback(name, o, v) {
+      if (!this._on || o === v) return;
+      if ((name === 'assets-base' || name === 'ronin-base') && this._waiting) this._start();
+      if (name === 'debug') this._queueDiag();
+    }
+
+    _bases() {
+      var code = "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d24fa373d6d76c0218b3f3b77897a8c2ace04e5e/wix-full-v1/"; // Production codebase is fixed to the approved main release.
+      return { code: code, assets: slash(this.getAttribute('assets-base')) || "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d24fa373d6d76c0218b3f3b77897a8c2ace04e5e/wix-full-v1/aktarim-medya/", ronin: slash(this.getAttribute('ronin-base')) || "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d24fa373d6d76c0218b3f3b77897a8c2ace04e5e/wix-v647/media/", home: slash(this.getAttribute('home-base')) || HOME_SELF, roninM: slash(this.getAttribute('ronin-mobile-base')) || ((slash(this.getAttribute('home-base')) || HOME_SELF) ? (slash(this.getAttribute('home-base')) || HOME_SELF) + 'media/' : '') };
+    }
+
+    _start() {
+      var B = this._bases(), self = this;
+      if (!B.code) { this._note('Paket adresi bulunamadı (code-base).'); return; }
+      if (!B.assets || !B.ronin) {
+        this._waiting = true;
+        this._note('Medya adresleri bekleniyor: ' + (!B.assets ? 'assets-base ' : '') + (!B.ronin ? 'ronin-base' : '') + '. Custom Element öznitelikleri girilince sayfa kurulur.');
+        return;
+      }
+      this._waiting = false; this._clearNote();
+      this._B = B; window.N1_ASSET_BASE = B.assets;
+      // Cihaz profili: mobil/tablet dosyaları bulunamazsa (home-base yok) güvenli biçimde masaüstü yoluna düşülür.
+      var P = this._profile = deviceProfile();
+      if (P !== 'd' && !B.home) { diagNote('Mobil/tablet dosyalarının adresi bulunamadı (home-base); masaüstü yolu kullanılıyor.'); P = this._profile = 'd'; }
+      this.setAttribute('data-n1-profile', P);
+      if (!this._mq) {
+        this._mq = matchMedia(MOBILE_MQ);
+        this._mqFn = function () { clearTimeout(self._mqT); self._mqT = setTimeout(function () { if (self._on && (deviceProfile() === 'd') !== (self._profile === 'd')) self._remount(); }, 350); };
+        if (this._mq.addEventListener) this._mq.addEventListener('change', this._mqFn); else this._mq.addListener(this._mqFn);
+      }
+      if (P !== 'd' && B.roninM && !document.querySelector('link[data-n1s-poster]')) {   // ilk görüntü: poster, CSS/iskelet beklenmeden istenir
+        var pl = document.createElement('link'); pl.rel = 'preload'; pl.as = 'image'; pl.href = B.roninM + (P === 't' ? 'ronin-tv-v1-poster.webp' : 'ronin-mv-v1-poster.webp'); pl.setAttribute('fetchpriority', 'high'); pl.setAttribute('data-n1s-poster', ''); document.head.appendChild(pl);
+      }
+      this._t0 = performance.now();
+      this._stBefore = window.ScrollTrigger ? new Set(window.ScrollTrigger.getAll()) : new Set();
+      this._htmlClasses = [].slice.call(document.documentElement.classList);
+      this._htmlStyle = document.documentElement.getAttribute('style');   // ScrollTrigger html'e scroll-behavior yazar; kaldırılınca geri yüklenir
+      this._tracker = startTracker(B.code);
+      this._owned = [];
+      this._mo = new MutationObserver(function (list) {
+        list.forEach(function (m) { [].forEach.call(m.addedNodes, function (n) {
+          if (n.nodeType === 1 && n.parentNode === document.body && (BODY_OWN.test(n.tagName.toLowerCase()) || BODY_OWN.test(String(n.className || '')))) {
+            if (!n.hasAttribute('data-n1-owner')) n.setAttribute('data-n1-owner', TAG);
+            if (self._owned.indexOf(n) < 0) self._owned.push(n);
+          }
+        }); });
+      });
+      this._mo.observe(document.body, { childList: true });
+
+      ensureFonts(ORDER.fonts);
+      // Çapa navigasyonu (Hizmetler → #hizmetler-ozet): bölüm modüllerinden bağımsız, bir kez yüklenir; yüklenemezse sayfa etkilenmez.
+      if (NAV_SRC) loadScript(NAV_SRC).catch(function (e) { diagNote(String(e && e.message || e)); });
+      else diagNote('Çapa navigasyonu yüklenemedi (dosya adresi bulunamadı); tarayıcının varsayılan çapa davranışı geçerli.');
+      var cssDone = Promise.all([loadCss(B.code + 'site/n1-site-base-v1.css')].concat(ORDER.css.map(function (f) { return loadCss(B.code + 'modules/' + f); })))
+        .then(function () { if (P !== 'd') return loadCss(B.home + 'site/n1-home-responsive-v1.css'); });   // modül CSS'lerinden SONRA (aynı özgüllükte sonraki kazanır)
+      var markupDone = loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d24fa373d6d76c0218b3f3b77897a8c2ace04e5e/wix-home-v648/site/n1-site-markup-v648.js");
+
+      Promise.all([cssDone, markupDone]).then(function () {
+        if (!self._on) return;
+        self._render();
+        return ensureGsap(ORDER.gsap);
+      }).then(function () {
+        // Mobil tarayıcıda adres çubuğunun açılıp kapanması ScrollTrigger'ı yeniden ölçtürmesin (yalnızca mobil/tablet profilinde)
+        if (self._on && P !== 'd' && window.ScrollTrigger && window.ScrollTrigger.config) { try { window.ScrollTrigger.config({ ignoreMobileResize: true }); } catch (e) {} }
+      }).then(function () {
+        if (!self._on) return;
+        // modüller v6.47 sırasıyla; bölüm modülleri (IIFE) her bağlanışta yeniden çalışır
+        return ORDER.js.reduce(function (p, f) {
+          return p.then(function () {
+            if (!self._on) return;
+            if (f === 'ronin-hero-v67.js' && P !== 'd') return loadScript(B.home + 'modules/ronin-hero-mv1.js', true);          // masaüstü motoru mobilde indirilmez
+            if (f === 'n1-header-v613.js') return loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d24fa373d6d76c0218b3f3b77897a8c2ace04e5e/wix-home-v648/modules/n1-header-v648.js", true)
+              .then(function () { if (self._on && P !== 'd') return loadScript(B.home + 'modules/n1-header-mobile-v1.js', true); });
+            if (f === 'n1-samurai-video-v621.js' && P !== 'd') return loadScript(B.home + 'modules/n1-video-mobile-v1.js', true);   // gecikmeli yükleme + poster
+            if (f === 'ronin-type-v613.js' && P !== 'd') return loadScript(B.home + 'modules/ronin-type-mobile-v1.js', true);      // V1.1: mobil sahne tipografisi
+            return loadScript(B.code + 'modules/' + f, true);
+          });
+        }, Promise.resolve());
+      }).then(function () {
+        if (!self._on) return;
+        scopeHeaderCss();
+        self._ready();
+      }).catch(function (e) {
+        diagNote(String(e && e.message || e)); self._queueDiag();
+        // Temel erişim: bir bağımlılık (ör. GSAP CDN) yüklenemese de içerik görünür kalır; Header ve çapa navigasyonu
+        // GSAP gerektirmez → yalnızca bu hata yolunda ayrıca yüklenir (normal akışta bu satırlar hiç çalışmaz).
+        if (!self._on || !self.firstElementChild || (self.querySelector && document.querySelector('n1-header[data-n1-owner] .n1h-bar'))) return;
+        loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d24fa373d6d76c0218b3f3b77897a8c2ace04e5e/wix-home-v648/modules/n1-header-v648.js", true)
+          .then(function () { scopeHeaderCss(); if (self._on && P !== 'd') return loadScript(B.home + 'modules/n1-header-mobile-v1.js', true); })
+          .catch(function () {});
+      });
+    }
+
+    _render() {
+      var B = this._B, self = this;
+      var html = String(window.N1_SITE_MARKUP || '').split('{{ASSETS}}').join(B.assets);
+      // İskelet önce etkisiz bir <template> içinde hazırlanır: tanımlı Custom Element'ler (n1-header vb.) yanlış yerde
+      // bir kez bağlanıp verisini tüketmesin. Header ve yüzen kontroller doğrudan body'de, TEK sefer bağlanır.
+      var tpl = document.createElement('template'); tpl.innerHTML = html;
+      var frag = tpl.content;
+      ['n1-header', 'n1-floating-controls'].forEach(function (t) {
+        document.querySelectorAll(t + '[data-n1-owner]').forEach(function (old) { old.remove(); });
+        var el = frag.querySelector(t); if (!el) return;
+        el.setAttribute('data-n1-owner', TAG);
+        document.body.appendChild(el); self._owned.push(el);     // v6.47'de de body'nin doğrudan çocuğuydu
+      });
+      var el, tier = '', P = this._profile;
+      if (P === 'd') {
+        // Ronin: v6.47 oluşturma betiğiyle aynı öznitelikler; paketler .bin, posterler doğrudan <img>
+        tier = innerWidth * (devicePixelRatio || 1) > 1700 ? 'x' : 'd';
+        var D = tier === 'x' ? RONIN.Bx : RONIN.Bd, M = RONIN.m;
+        el = document.createElement('ronin-hero-v67');
+        var at = { id: 'hero', 'frames-base': B.ronin, 'fade-color': '#080A09', 'scroll-vh': '300', 'stage-weights': '9,33,22,27,9', 'smooth-ms': '30',
+          accent: matchMedia('(max-width: 900px)').matches ? '#A1FF00' : '#93C25A', 'cta-href': '#iletisim', 'edge-top': '#040404', 'edge-mid': '#080808', 'edge-bottom': '#101010',
+          'pack-d': D.packs.join(','), 'poster-d': D.poster, 'pack-m': M.packs.join(','), 'poster-m': M.poster };
+        for (var k in at) el.setAttribute(k, at[k]);
+        el.dataset.fogMid = '0';
+      } else {
+        // Mobil / tablet: dikey M0 kare paketleri (ronin-hero-mv1). Masaüstü paketleri ve motoru bu profilde hiç istenmez.
+        el = document.createElement('ronin-hero-mv1');
+        var am = { id: 'hero', profile: P, 'frames-base': B.roninM, 'fade-color': '#080A09', 'scroll-vh': String(parseFloat(this.getAttribute('scroll-vh-mobile')) || 300),
+          'stage-weights': '12,30,22,22,14', 'smooth-ms': '30', accent: '#A2FF00', 'cta-href': '#iletisim' };   // V1.1: M0'ın gerçek sahneleri
+        for (var km in am) el.setAttribute(km, am[km]);
+        // V1.1 — CLS: motor betiği gelene kadar etiket tanımsızdır ve yüksekliği 0'dır; tanımlanınca 300 svh olur ve altındaki
+        // bölümleri ekran dışına iter (ölçülen kayma ≈1,0). Aynı yükseklik baştan ayrılır; motor bağlanınca bu satır içi
+        // yüksekliği kendisi kaldırır (setVh) ve aynı değeri CSS'ten uygular. Reduced-motion'da motor 1 ekran yüksekliğindedir.
+        var resVh = matchMedia('(prefers-reduced-motion: reduce)').matches ? 100 : (parseFloat(am['scroll-vh']) || 300);
+        el.style.display = 'block'; el.style.height = resVh + 'vh'; el.style.height = resVh + 'svh';
+        // Sinematik videolar: yalnızca mobil/tablet adresi atanır (masaüstü adresi DOM'a hiç girmez → arka planda indirilmez)
+        [['first', 'video-mobile-first'], ['last', 'video-mobile-last']].forEach(function (pair) {
+          var V = VIDEO_M[pair[0]], sec = frag.querySelector('#' + V.id), vid = sec && sec.querySelector('video'); if (!vid) return;
+          vid.setAttribute('data-sources', (self.getAttribute(pair[1]) || V.src).trim());
+          vid.setAttribute('width', '768'); vid.setAttribute('height', '450'); vid.setAttribute('preload', 'none'); vid.removeAttribute('autoplay');
+          sec.setAttribute('data-n1m-video', pair[0]);
+          if (B.roninM) { vid.setAttribute('poster', B.roninM + V.poster); sec.style.backgroundImage = 'url("' + B.roninM + V.poster + '")'; }
+        });
+      }
+      var slot = frag.querySelector('#heroSlot'); if (slot) slot.replaceWith(el);
+      if (P !== 'd') {   // V1.1: masaüstü tipografi etiketi yerine mobil etiket (iki katman aynı sahneye yazmaz)
+        var rt = frag.querySelector('ronin-type');
+        if (rt) { var rtm = document.createElement('ronin-type-m'); rtm.setAttribute('for', rt.getAttribute('for') || 'hero'); rt.replaceWith(rtm); }
+      }
+      window.__tier = tier;
+      this.innerHTML = '';
+      this.appendChild(frag);
+      this.classList.add('has-js');                       // v6.47'de html.has-js idi; yalnızca bileşen kökünde
+      var ust = this.querySelector('#ust'); if (ust) ust.setAttribute('data-n1-owner', TAG);
+    }
+
+    _ready() {
+      var self = this, ST = window.ScrollTrigger;
+      this._readyMs = Math.round(performance.now() - this._t0);
+      // Tek ve kontrollü yenileme: fontlar hazır + (gerekirse) sayfa yüklemesi bitince
+      var refreshOnce = function () { if (!self._on || !ST) return; ST.refresh(); self._lastH = Math.round(self.getBoundingClientRect().height); self._queueDiag(); };
+      var fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+      var loadReady = document.readyState === 'complete' ? Promise.resolve() : new Promise(function (r) { addEventListener('load', r, { once: true }); });
+      Promise.all([fontsReady, loadReady]).then(function () { requestAnimationFrame(refreshOnce); });
+      // Yükseklik gerçekten değişirse (görsel/video yüklendi, Wix yerleşimi oturdu) bir kez daha; sürekli döngü yok
+      this._ro = new ResizeObserver(function () {
+        var h = Math.round(self.getBoundingClientRect().height);
+        if (self._lastH != null && Math.abs(h - self._lastH) > 2) {
+          clearTimeout(self._roT); self._roT = setTimeout(refreshOnce, 250);
+        }
+        self._queueDiag();
+      });
+      this._ro.observe(this); if (this.parentElement) this._ro.observe(this.parentElement);
+      if (this._profile !== 'd') tuneFloatingControls();
+      this._queueDiag();
+    }
+
+    /* Masaüstü ↔ mobil/tablet profil geçişi: mevcut temizlik (disconnectedCallback) + yeniden kurulum; tek sefer, döngü yok */
+    _remount() {
+      if (!this._on || this._remounting) return; this._remounting = true;
+      var y = window.pageYOffset, hgt = Math.max(1, document.documentElement.scrollHeight - window.innerHeight), self = this;
+      this.disconnectedCallback(); this.connectedCallback();
+      setTimeout(function () { self._remounting = false; }, 1200);
+      // kullanıcı sayfanın ortasındaysa yaklaşık aynı oranda kalsın (yerleşim oturunca)
+      if (y > 40) setTimeout(function () { if (self._on) window.scrollTo(0, Math.round((y / hgt) * Math.max(1, document.documentElement.scrollHeight - window.innerHeight))); }, 1400);
+    }
+
+    _note(t) { this._clearNote(); var n = this._noteEl = document.createElement('p'); n.className = 'n1s-note'; n.textContent = t; this.appendChild(n); }
+    _clearNote() { if (this._noteEl) { this._noteEl.remove(); this._noteEl = null; } }
+
+    disconnectedCallback() {
+      if (!this._on) return;
+      this._on = false; this.removeAttribute('data-n1s-live');
+      var ST = window.ScrollTrigger, self = this;
+      if (this._ro) this._ro.disconnect(); clearTimeout(this._roT); cancelAnimationFrame(this._diagRaf);
+      clearTimeout(this._mqT);
+      if (this._mq) { if (this._mq.removeEventListener) this._mq.removeEventListener('change', this._mqFn); else this._mq.removeListener(this._mqFn); this._mq = null; }
+      if (window.__n1HeaderMobile && window.__n1HeaderMobile.destroy) { try { window.__n1HeaderMobile.destroy(); } catch (e) {} window.__n1HeaderMobile = null; }
+      ['n1hm-style', 'rhmv1-style'].forEach(function (id) { var st = document.getElementById(id); if (st) st.remove(); });
+      document.querySelectorAll('link[data-n1s-poster]').forEach(function (l) { l.remove(); });
+      var rcss = document.querySelector('link[data-n1s-css$="n1-home-responsive-v1.css"]'); if (rcss) rcss.remove();
+      if (this._mo) this._mo.disconnect();
+      // Kaldırılan öğeler ayrı (sayfa dışı) bir kapta tutulur; bunlara bağlı tetikleyiciler hemen ve SplitText'in
+      // gecikmeli yeniden bölmeleri için kısa aralıklarla birkaç kez daha temizlenir (sürekli döngü değil, 4 sefer).
+      var grave = document.createElement('div');
+      while (this.firstChild) grave.appendChild(this.firstChild);
+      (this._owned || []).forEach(function (n) { grave.appendChild(n); });
+      var sweep = function () {
+        if (!window.ScrollTrigger) return;
+        window.ScrollTrigger.getAll().forEach(function (t) {
+          var tr = t.trigger, pn = t.pin;
+          if ((tr && grave.contains(tr)) || (pn && grave.contains(pn)) || (!self._stBefore.has(t) && tr && !document.contains(tr))) t.kill(true);
+        });
+        if (window.gsap) { try { window.gsap.killTweensOf(grave.querySelectorAll('*')); } catch (e) {} }
+      };
+      sweep(); [60, 400, 1500, 4000].forEach(function (ms) { setTimeout(sweep, ms); });
+      // Header, yüzen kontroller ve imleçler yukarıda kaba taşındı (Header kendi panelini ve dinleyicilerini temizler)
+      document.querySelectorAll('[data-n1-owner="' + TAG + '"]').forEach(function (n) { if (!self.contains(n)) n.remove(); });
+      if (this._tracker) { this._tracker.stop(true); this._tracker = null; }
+      this._restoreSticky();
+      // modüllerin html'e eklediği sınıflar (has-scroll-highlight) geri alınır
+      var keep = this._htmlClasses || [];
+      [].slice.call(document.documentElement.classList).forEach(function (c) { if (keep.indexOf(c) < 0) document.documentElement.classList.remove(c); });
+      if (this._htmlStyle == null) document.documentElement.removeAttribute('style'); else document.documentElement.setAttribute('style', this._htmlStyle);
+      document.querySelectorAll('script[data-n1s]').forEach(function (s) { s.remove(); });
+      if (this._diagEl) { this._diagEl.remove(); this._diagEl = null; }
+      delete window.__n1SiteDiag;
+    }
+
+    /* ---------- tanılama (yalnızca okur; Wix öğelerini değiştirmez) ---------- */
+    _queueDiag() {
+      if (this._dq) return; this._dq = true; var self = this;
+      this._diagRaf = requestAnimationFrame(function () { self._dq = false; self._diagnose(); });
+    }
+    _diagnose() {
+      if (!this._on) return;
+      var r = this.getBoundingClientRect(), p = this.parentElement, ST = window.ScrollTrigger;
+      var kids = [].slice.call(this.children), sum = 0;
+      kids.forEach(function (k) { var cs = getComputedStyle(k); if (cs.position !== 'fixed' && cs.position !== 'absolute') sum += k.getBoundingClientRect().height; });
+      var out = {
+        selfH: Math.round(r.height), parentH: p ? Math.round(p.getBoundingClientRect().height) : null, childrenH: Math.round(sum),
+        afterRoot: Math.round(document.documentElement.scrollHeight - (r.bottom + scrollY)),
+        pins: ST ? ST.getAll().filter(function (t) { return t.pin; }).map(function (t) { var sp = t.pin.parentElement; return { start: Math.round(t.start), end: Math.round(t.end), spacer: sp && sp.classList.contains('pin-spacer') ? Math.round(sp.getBoundingClientRect().height) : null }; }) : [],
+        triggers: ST ? ST.getAll().length : 0, listeners: this._tracker ? this._tracker.recs.length : 0,
+        bodyOwned: document.querySelectorAll('body > [data-n1-owner="' + TAG + '"]').length,
+        headers: document.querySelectorAll('n1-header').length, floating: document.querySelectorAll('n1-floating-controls').length,
+        sticky: [], clipped: [], readyMs: this._readyMs || null, notes: notes.slice()
+      };
+      for (var a = this.parentElement; a && a !== document.documentElement; a = a.parentElement) {
+        var cs = getComputedStyle(a), nm = a.tagName.toLowerCase() + (a.id ? '#' + a.id : '');
+        if (/(hidden|auto|scroll)/.test(cs.overflowX + ' ' + cs.overflowY)) out.sticky.push(nm + ' overflow:' + cs.overflowX + '/' + cs.overflowY);
+        if (a.getBoundingClientRect().height + 1 < out.selfH && /(hidden|clip)/.test(cs.overflowY)) out.clipped.push(nm);
+      }
+      if (this.hasAttribute('sticky-fix') && !(this._stickyFixed && this._stickyFixed.length)) this._applySticky();
+      this.diag = out; window.__n1SiteDiag = out;
+      if (this.hasAttribute('debug')) {
+        if (!this._diagEl) { this._diagEl = document.createElement('div'); this._diagEl.className = 'n1s-diag'; document.body.appendChild(this._diagEl); }
+        var ok = function (b) { return b ? '✓' : '⚠'; };
+        this._diagEl.textContent = 'n1-site-v1 tanılama\n' +
+          'bileşen: ' + out.selfH + ' px · kapsayıcı: ' + out.parentH + ' px ' + ok(out.parentH == null || Math.abs(out.parentH - out.selfH) <= 2) + '\n' +
+          'bölümler toplamı: ' + out.childrenH + ' px ' + ok(Math.abs(out.childrenH - out.selfH) <= 2) + ' · bileşenden sonra sayfa: ' + out.afterRoot + ' px\n' +
+          'pin: ' + (out.pins.map(function (q) { return q.start + '→' + q.end + ' (spacer ' + q.spacer + ')'; }).join(', ') || 'yok') + '\n' +
+          'ScrollTrigger: ' + out.triggers + ' · dinleyici kaydı: ' + out.listeners + ' · header: ' + out.headers + ' · yüzen: ' + out.floating + '\n' +
+          'sticky\'yi bozabilecek üst öğe: ' + (out.sticky.length ? '\n  ⚠ ' + out.sticky.join('\n  ⚠ ') : 'yok ✓') + '\n' +
+          'kesen üst öğe: ' + (out.clipped.length ? out.clipped.join(', ') + ' ⚠' : 'yok ✓') +
+          (out.readyMs ? '\nmodüller hazır: ' + out.readyMs + ' ms' : '') + (out.notes.length ? '\nnot: ' + out.notes.join(' | ') : '');
+      } else if (this._diagEl) { this._diagEl.remove(); this._diagEl = null; }
+    }
+    _applySticky() {
+      this._stickyFixed = [];
+      for (var a = this.parentElement; a && a !== document.body && a !== document.documentElement; a = a.parentElement) {
+        var cs = getComputedStyle(a);
+        ['overflowX', 'overflowY'].forEach(function (pr) { if (/(hidden|auto|scroll)/.test(cs[pr])) { this._stickyFixed.push([a, pr, a.style[pr]]); a.style[pr] = 'clip'; } }, this);
+      }
+    }
+    _restoreSticky() { (this._stickyFixed || []).forEach(function (r) { r[0].style[r[1]] = r[2]; }); this._stickyFixed = []; }
+  }
+
+  customElements.define(TAG, N1SiteV1);
+})();
