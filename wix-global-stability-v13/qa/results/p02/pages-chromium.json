@@ -1,0 +1,427 @@
+[
+ {
+  "br": "chromium",
+  "page": "/",
+  "top": {
+   "vids": 5,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 1.68,
+   "maxVid": "1120×1504",
+   "srcs": [
+    "wix-home-v656/media/ronin-m5-film-2x.mp4"
+   ],
+   "imgs": 7,
+   "imgMP": 7.3,
+   "st": 13,
+   "tweens": 5,
+   "dom": 950,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 205,
+   "kb": 7702,
+   "maxProcMB": 354,
+   "totMB": 774
+  },
+  "end": {
+   "vids": 5,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 4.1,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "wix-home-v656/media/ronin-m5-film-2x.mp4",
+    "1080p/mp4/file.mp4",
+    "480p/mp4/file.mp4"
+   ],
+   "imgs": 7,
+   "imgMP": 8.3,
+   "st": 13,
+   "tweens": 1,
+   "dom": 950,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 213,
+   "kb": 7782,
+   "maxProcMB": 443,
+   "totMB": 929,
+   "heapMB": 19,
+   "listeners": 504
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ },
+ {
+  "br": "chromium",
+  "page": "/kreatif-produksiyon",
+  "top": {
+   "vids": 2,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 21,
+   "imgMP": 8.1,
+   "st": 26,
+   "tweens": 92,
+   "dom": 1095,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 182,
+   "kb": 2687,
+   "maxProcMB": 337,
+   "totMB": 836
+  },
+  "end": {
+   "vids": 2,
+   "withSrc": 2,
+   "playing": 0,
+   "decodedMP": 1.33,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4",
+    "480p/mp4/file.mp4"
+   ],
+   "imgs": 21,
+   "imgMP": 9.6,
+   "st": 9,
+   "tweens": 47,
+   "dom": 1095,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 187,
+   "kb": 2895,
+   "maxProcMB": 473,
+   "totMB": 975,
+   "heapMB": 21,
+   "listeners": 453
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ },
+ {
+  "br": "chromium",
+  "page": "/e-ticaret-yonetimi",
+  "top": {
+   "vids": 3,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 20,
+   "imgMP": 18.1,
+   "st": 60,
+   "tweens": 78,
+   "dom": 801,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 178,
+   "kb": 18725,
+   "maxProcMB": 330,
+   "totMB": 836
+  },
+  "end": {
+   "vids": 3,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 2.49,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4",
+    "480p/mp4/file.mp4"
+   ],
+   "imgs": 20,
+   "imgMP": 30.5,
+   "st": 15,
+   "tweens": 19,
+   "dom": 801,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 189,
+   "kb": 29362,
+   "maxProcMB": 509,
+   "totMB": 1047,
+   "heapMB": 21,
+   "listeners": 407
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ },
+ {
+  "br": "chromium",
+  "page": "/sosyal-medya",
+  "top": {
+   "vids": 4,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 4.7,
+   "st": 46,
+   "tweens": 80,
+   "dom": 738,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 180,
+   "kb": 1800,
+   "maxProcMB": 319,
+   "totMB": 821
+  },
+  "end": {
+   "vids": 4,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 3.64,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "720p/mp4/file.mp4",
+    "480p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 5.1,
+   "st": 4,
+   "tweens": 6,
+   "dom": 738,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 185,
+   "kb": 2140,
+   "maxProcMB": 469,
+   "totMB": 1009,
+   "heapMB": 20,
+   "listeners": 430
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ },
+ {
+  "br": "chromium",
+  "page": "/reklam-yonetimi",
+  "top": {
+   "vids": 3,
+   "withSrc": 2,
+   "playing": 1,
+   "decodedMP": 2.48,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "480p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 10,
+   "imgMP": 4.2,
+   "st": 63,
+   "tweens": 82,
+   "dom": 824,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 175,
+   "kb": 1670,
+   "maxProcMB": 284,
+   "totMB": 765
+  },
+  "end": {
+   "vids": 3,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 2.89,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "480p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 10,
+   "imgMP": 4.7,
+   "st": 8,
+   "tweens": 10,
+   "dom": 824,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 180,
+   "kb": 1909,
+   "maxProcMB": 413,
+   "totMB": 919,
+   "heapMB": 23,
+   "listeners": 425
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ },
+ {
+  "br": "chromium",
+  "page": "/ui-ux-tasarim",
+  "top": {
+   "vids": 1,
+   "withSrc": 1,
+   "playing": 0,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 18,
+   "imgMP": 5.6,
+   "st": 46,
+   "tweens": 53,
+   "dom": 990,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 173,
+   "kb": 1934,
+   "maxProcMB": 300,
+   "totMB": 774
+  },
+  "end": {
+   "vids": 1,
+   "withSrc": 1,
+   "playing": 0,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 18,
+   "imgMP": 8.7,
+   "st": 4,
+   "tweens": 5,
+   "dom": 990,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 191,
+   "kb": 4341,
+   "maxProcMB": 401,
+   "totMB": 891,
+   "heapMB": 21,
+   "listeners": 428
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ },
+ {
+  "br": "chromium",
+  "page": "/yapay-zeka",
+  "top": {
+   "vids": 3,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 4,
+   "st": 66,
+   "tweens": 93,
+   "dom": 885,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 171,
+   "kb": 1463,
+   "maxProcMB": 308,
+   "totMB": 798
+  },
+  "end": {
+   "vids": 3,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 2.74,
+   "maxVid": "1080×1080",
+   "srcs": [
+    "720p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 5.2,
+   "st": 13,
+   "tweens": 13,
+   "dom": 885,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 179,
+   "kb": 1671,
+   "maxProcMB": 436,
+   "totMB": 960,
+   "heapMB": 20,
+   "listeners": 414
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ },
+ {
+  "br": "chromium",
+  "page": "/uygulama-gelistirme",
+  "top": {
+   "vids": 4,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 8,
+   "imgMP": 3.8,
+   "st": 41,
+   "tweens": 40,
+   "dom": 1187,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 171,
+   "kb": 1330,
+   "maxProcMB": 309,
+   "totMB": 798
+  },
+  "end": {
+   "vids": 4,
+   "withSrc": 4,
+   "playing": 0,
+   "decodedMP": 3.69,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 8,
+   "imgMP": 5.1,
+   "st": 2,
+   "tweens": 2,
+   "dom": 1187,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 185,
+   "kb": 1898,
+   "maxProcMB": 415,
+   "totMB": 920,
+   "heapMB": 21,
+   "listeners": 440
+  },
+  "errs": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ]
+ }
+]

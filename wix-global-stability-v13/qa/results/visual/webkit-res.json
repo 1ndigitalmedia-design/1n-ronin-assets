@@ -1,0 +1,52 @@
+{
+ "a": {
+  "ver": "v23",
+  "hit": 1,
+  "shots": [
+   "vis/webkit-v23-0.png",
+   "vis/webkit-v23-1.png",
+   "vis/webkit-v23-2.png",
+   "vis/webkit-v23-3.png",
+   "vis/webkit-v23-4.png",
+   "vis/webkit-v23-5.png",
+   "vis/webkit-v23-6.png",
+   "vis/webkit-v23-7.png"
+  ],
+  "filters": [
+   "ON:none | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | ON:none | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:none | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:none | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:none | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:none | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:none | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:none"
+  ],
+  "crash": 0
+ },
+ "c": {
+  "ver": "v24",
+  "hit": 1,
+  "shots": [
+   "vis/webkit-v24-0.png",
+   "vis/webkit-v24-1.png",
+   "vis/webkit-v24-2.png",
+   "vis/webkit-v24-3.png",
+   "vis/webkit-v24-4.png",
+   "vis/webkit-v24-5.png",
+   "vis/webkit-v24-6.png",
+   "vis/webkit-v24-7.png"
+  ],
+  "filters": [
+   "ON:grayscale(0) brightness(1) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | ON:grayscale(0) brightness(1) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:grayscale(0) brightness(1) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:grayscale(0) brightness(1) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:grayscale(0) brightness(1) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:grayscale(0) brightness(1) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:grayscale(0) brightness(1) | off:grayscale(1) brightness(0.42)",
+   "off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | off:grayscale(1) brightness(0.42) | ON:grayscale(0) brightness(1)"
+  ],
+  "crash": 0
+ }
+}

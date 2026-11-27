@@ -1,0 +1,8 @@
+<!doctype html><meta name=viewport content="width=device-width"><style>
+body{background:#080a09;color:#eee;margin:0;font:16px sans-serif} .pad{height:900px}
+li{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid #333;list-style:none}
+.th{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;border-radius:3px}
+img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:VAR_F;transform:scale(1.12);transition:transform 1.1s ease,filter .7s ease}
+.on img{filter:none;transform:scale(1)}
+</style><div class=pad></div><ul><li class="r on"><span class="th"><img src="t.png"></span><h3>Satır 0</h3></li><li class="r"><span class="th"><img src="t.png"></span><h3>Satır 1</h3></li><li class="r"><span class="th"><img src="t.png"></span><h3>Satır 2</h3></li><li class="r"><span class="th"><img src="t.png"></span><h3>Satır 3</h3></li><li class="r"><span class="th"><img src="t.png"></span><h3>Satır 4</h3></li><li class="r"><span class="th"><img src="t.png"></span><h3>Satır 5</h3></li><li class="r"><span class="th"><img src="t.png"></span><h3>Satır 6</h3></li><li class="r"><span class="th"><img src="t.png"></span><h3>Satır 7</h3></li></ul><div class=pad></div><div class=pad></div>
+<script>var rows=[...document.querySelectorAll('li')];var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){var k=rows.indexOf(e.target);rows.forEach(function(r,i){r.classList.toggle('on',i===k)})}})},{rootMargin:'-46% 0px -46% 0px'});rows.forEach(function(r){io.observe(r)});</script>

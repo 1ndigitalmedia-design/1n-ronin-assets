@@ -1,0 +1,17 @@
+const pw=require('playwright');const fs=require('fs');const R='/home/user/1n-ronin-assets/';
+const [,,BR='webkit',Q='']=process.argv;
+(async()=>{const b=await pw[BR].launch();const o={viewport:{width:390,height:844},hasTouch:true,deviceScaleFactor:3};if(BR==='chromium')o.isMobile=true;
+const ctx=await b.newContext(o);const hits=[];
+await ctx.route(/cdn\.jsdelivr\.net\/gh\/1ndigitalmedia-design\/1n-ronin-assets@/,async r=>{const u=r.request().url();
+ if(/\.mp4/.test(u))hits.push(u.split('@')[1].slice(0,7)+':'+u.split('/').pop());
+ let f=null;if(/n1-site-wix-v658\.js$/.test(u))f=R+'wix-global-stability-v13/home/n1-site-wix-v658.js';else if(/n1-video-m5-v13\.js$/.test(u))f=R+'wix-global-stability-v13/home/n1-video-m5-v13.js';
+ else if(/ronin-m5-film-1\.5x\.mp4$/.test(u))f=R+'wix-global-stability-v13/test-media/ronin-m5-film-1.5x.mp4';
+ if(f&&!/\.mp4$/.test(f))return r.fulfill({status:200,body:fs.readFileSync(f),headers:{'content-type':'application/javascript','access-control-allow-origin':'*'}});
+ if(f)return r.fulfill({status:200,body:fs.readFileSync(f),headers:{'content-type':'video/mp4','access-control-allow-origin':'*','accept-ranges':'none'}});
+ r.continue();});
+await ctx.addInitScript({path:'inj-switch13.js'});await ctx.addInitScript({path:'inj-loader13.js'});await ctx.addInitScript({path:'inj-menu13.js'});
+const pg=await ctx.newPage();const scripts=[];pg.on('request',q=>{const u=q.url();if(/n1-site-wix|n1-video-m5|n1-stability/.test(u))scripts.push(u.split('/').pop())});
+await pg.goto('https://www.reklam1n.com/'+Q,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(12000);
+const r=await pg.evaluate(()=>({test:window.__n1Test,err:window.__n1tErr,menu:window.__n1MenuClose&&window.__n1MenuClose.version,loader:window.__n1GlobalLoaderInstalled,diag:(document.getElementById('n1t-diag')||{}).textContent,attr:(document.querySelector('n1-site-v1')||{getAttribute(){}}).getAttribute('hero-video')}));
+console.log(BR,Q||'(parametresiz)');console.log(' scripts:',[...new Set(scripts)].join(' '),'| mp4:',hits.join(' '));console.log(" err:",r.err);console.log(" menu:",r.menu,'loader:',r.loader,'test:',JSON.stringify(r.test));console.log(' diag:',(r.diag||'—').replace(/\n/g,' ¦ '));
+await pg.screenshot({path:'p04/switch-'+BR+'-'+(Q.replace(/[^a-z0-9.]/gi,'_')||'none')+'.png'});await b.close();})();

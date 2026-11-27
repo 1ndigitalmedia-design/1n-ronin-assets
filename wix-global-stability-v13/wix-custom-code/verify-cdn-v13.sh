@@ -10,6 +10,7 @@ LIST="
 bb6ebc7723625d137035b1074c6dca14c02fb296 wix-global-stability-v13/n1-menu-close-v13.js
 b9c8fca79bee3d6ab9baca96d19e3888575c9c06 wix-global-stability-v13/home/n1-site-wix-v658.js
 5c1bcf275b2f111b54595db829ab0be654906c6b wix-global-stability-v13/home/n1-video-m5-v13.js
+997f951a4ae76ab2dd95440c4e8e597ffa682499 wix-global-stability-v13/pages/wix-e-ticaret-yonetimi-v24/n1-e-ticaret-yonetimi-v24.js
 be0c8b1454939989d175197be4ff6667f9e29c19 wix-mobile-stability-v1/n1-stability-v1.1.1.js
 756d6f87647bd1c2bfaa3da84f47dcfd31cea37d wix-global-stability-v13/test-media/ronin-m5-film-1.5x.mp4
 f97db8edb37f1e1388f276d840e262fc8452b80a wix-home-v656/media/ronin-m5-film.mp4
