@@ -1,0 +1,380 @@
+[
+ {
+  "page": "/",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 10329,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 0,
+    "y": 72,
+    "w": 820,
+    "h": 732,
+    "vis": true,
+    "fit": "cover",
+    "nat": "560x752"
+   },
+   {
+    "k": "video",
+    "x": 28,
+    "y": 1264,
+    "w": 131,
+    "h": 68,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1080x1080"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 6240,
+    "w": 820,
+    "h": 480,
+    "vis": true,
+    "fit": "cover",
+    "nat": "768x450"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 6938,
+    "w": 820,
+    "h": 461,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 8090,
+    "w": 820,
+    "h": 480,
+    "vis": true,
+    "fit": "cover",
+    "nat": "768x450"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/home-tablet-live-0.jpg",
+   "../screenshots/visual/home-tablet-live-20.jpg",
+   "../screenshots/visual/home-tablet-live-40.jpg",
+   "../screenshots/visual/home-tablet-live-60.jpg",
+   "../screenshots/visual/home-tablet-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 9299,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 41,
+    "y": 536,
+    "w": 738,
+    "h": 415,
+    "vis": true,
+    "fit": "contain",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 41,
+    "y": 4779,
+    "w": 738,
+    "h": 415,
+    "vis": true,
+    "fit": "contain",
+    "nat": "1280x720"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/kreatif-produksiyon-tablet-live-0.jpg",
+   "../screenshots/visual/kreatif-produksiyon-tablet-live-20.jpg",
+   "../screenshots/visual/kreatif-produksiyon-tablet-live-40.jpg",
+   "../screenshots/visual/kreatif-produksiyon-tablet-live-60.jpg",
+   "../screenshots/visual/kreatif-produksiyon-tablet-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 10529,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 482,
+    "y": 443,
+    "w": 297,
+    "h": 528,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 41,
+    "y": 2130,
+    "w": 360,
+    "h": 450,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x900"
+   },
+   {
+    "k": "video",
+    "x": 248,
+    "y": 6678,
+    "w": 324,
+    "h": 576,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/e-ticaret-yonetimi-tablet-live-0.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-tablet-live-20.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-tablet-live-40.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-tablet-live-60.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-tablet-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/sosyal-medya",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 11081,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 410,
+    "y": 153,
+    "w": 246,
+    "h": 437,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 41,
+    "y": 3772,
+    "w": 414,
+    "h": 517,
+    "vis": true,
+    "fit": "cover",
+    "nat": "0x0"
+   },
+   {
+    "k": "video",
+    "x": 41,
+    "y": 4938,
+    "w": 738,
+    "h": 415,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": 545,
+    "y": 9735,
+    "w": 234,
+    "h": 416,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/sosyal-medya-tablet-live-0.jpg",
+   "../screenshots/visual/sosyal-medya-tablet-live-20.jpg",
+   "../screenshots/visual/sosyal-medya-tablet-live-40.jpg",
+   "../screenshots/visual/sosyal-medya-tablet-live-60.jpg",
+   "../screenshots/visual/sosyal-medya-tablet-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 12650,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 167,
+    "y": 402,
+    "w": 653,
+    "h": 367,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 11,
+    "y": 8162,
+    "w": 797,
+    "h": 448,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": -25,
+    "y": 10320,
+    "w": 871,
+    "h": 344,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1280x720"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/reklam-yonetimi-tablet-live-0.jpg",
+   "../screenshots/visual/reklam-yonetimi-tablet-live-20.jpg",
+   "../screenshots/visual/reklam-yonetimi-tablet-live-40.jpg",
+   "../screenshots/visual/reklam-yonetimi-tablet-live-60.jpg",
+   "../screenshots/visual/reklam-yonetimi-tablet-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 15184,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 41,
+    "y": 1793,
+    "w": 297,
+    "h": 371,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/ui-ux-tasarim-tablet-live-0.jpg",
+   "../screenshots/visual/ui-ux-tasarim-tablet-live-20.jpg",
+   "../screenshots/visual/ui-ux-tasarim-tablet-live-40.jpg",
+   "../screenshots/visual/ui-ux-tasarim-tablet-live-60.jpg",
+   "../screenshots/visual/ui-ux-tasarim-tablet-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/yapay-zeka",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 13891,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 287,
+    "y": 148,
+    "w": 246,
+    "h": 437,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 167,
+    "y": 3675,
+    "w": 612,
+    "h": 612,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1080x1080"
+   },
+   {
+    "k": "video",
+    "x": 41,
+    "y": 9174,
+    "w": 360,
+    "h": 639,
+    "vis": true,
+    "fit": "cover",
+    "nat": "608x1080"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/yapay-zeka-tablet-live-0.jpg",
+   "../screenshots/visual/yapay-zeka-tablet-live-20.jpg",
+   "../screenshots/visual/yapay-zeka-tablet-live-40.jpg",
+   "../screenshots/visual/yapay-zeka-tablet-live-60.jpg",
+   "../screenshots/visual/yapay-zeka-tablet-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "mode": "live",
+  "profile": "tablet",
+  "height": 15796,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 0,
+    "y": 88,
+    "w": 820,
+    "h": 754,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 419,
+    "y": 5795,
+    "w": 360,
+    "h": 450,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 41,
+    "y": 11052,
+    "w": 297,
+    "h": 528,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 482,
+    "y": 12353,
+    "w": 297,
+    "h": 528,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/uygulama-gelistirme-tablet-live-0.jpg",
+   "../screenshots/visual/uygulama-gelistirme-tablet-live-20.jpg",
+   "../screenshots/visual/uygulama-gelistirme-tablet-live-40.jpg",
+   "../screenshots/visual/uygulama-gelistirme-tablet-live-60.jpg",
+   "../screenshots/visual/uygulama-gelistirme-tablet-live-80.jpg"
+  ]
+ }
+]

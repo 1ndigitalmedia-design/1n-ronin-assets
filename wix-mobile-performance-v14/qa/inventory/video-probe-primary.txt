@@ -1,0 +1,12 @@
+https://video.wixstatic.com/video/6dbf5e_48741869fc89488392bce24c731dafa4/480p/mp4/file.mp4|354259|
+https://video.wixstatic.com/video/6dbf5e_809e8dea872246c7ae68b073341efafb/480p/mp4/file.mp4|656911|
+https://video.wixstatic.com/video/6dbf5e_ba9aa241bd914b07a97c4c315f153bfa/720p/mp4/file.mp4|3962055|
+https://video.wixstatic.com/video/6dbf5e_8388dde9e33c490594eb19d4bbcf4eee/720p/mp4/file.mp4|12784942|
+https://video.wixstatic.com/video/6dbf5e_3c7918f906c1478f9149099d6d398635/720p/mp4/file.mp4|488367|
+https://video.wixstatic.com/video/6dbf5e_67c5c858b42a4ce3b0e76195a59c8b3e/720p/mp4/file.mp4|13663836|
+https://video.wixstatic.com/video/6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/720p/mp4/file.mp4|760575|
+https://video.wixstatic.com/video/6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/480p/mp4/file.mp4|302588|
+https://video.wixstatic.com/video/6dbf5e_8da46d06b07a4784a27a413446f081f9/720p/mp4/file.mp4|6058886|
+https://video.wixstatic.com/video/6dbf5e_8957dee5671c411da297848f5ee956d0/720p/mp4/file.mp4|2244748|
+https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film-2x.mp4|6321737|
+https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film.mp4|4125701|

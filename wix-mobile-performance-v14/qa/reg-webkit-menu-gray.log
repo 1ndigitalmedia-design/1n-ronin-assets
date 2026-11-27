@@ -1,0 +1,6 @@
+webkit v14 menü mobil açık=true | kapalı=true | gezinme=/e-ticaret-yonetimi | yeni sayfada panel kapalı=true | geri=/ | geride panel kapalı=true | yüzen düğmeler=0 | loader artığı=0 | çökme yok | 1N/JS hata 0 | konsol 0 | kırık medya 1 403 =ot1&expv2[8]=hv1&expv2[9]=rh0&expv2[10]=ah0&expv2[11]=nv0&expv2[12]=oq0&rqm=GET
+webkit v14 menü masaustu açık=true | kapalı=true | gezinme=/e-ticaret-yonetimi | yeni sayfada panel kapalı=true | geri=/ | geride panel kapalı=true | yüzen düğmeler=0 | loader artığı=3 | çökme yok | 1N/JS hata 0 | konsol 0 | kırık medya 0
+webkit v14 gri anahtar masaustu 12 tıklama renkli/grayscale(0) → gri/grayscale(0.999852) → renkli/grayscale(0.003211) | çökme yok | 1N/JS hata 0 | konsol 0 | kırık medya 0
+webkit v14 gri anahtar mobil 12 tıklama renkli/grayscale(0) → gri/grayscale(0.997099) → renkli/grayscale(0.002781) | çökme yok | 1N/JS hata 0 | konsol 0 | kırık medya 0
+webkit v14 FEEL masaustu {"tag":"VIDEO","still":null,"btn":true} | çökme yok | 1N/JS hata 0 | konsol 0 | kırık medya 0
+webkit v14 FEEL mobil {"tag":"IMG","still":"uiux-feel","btn":false} | çökme yok | 1N/JS hata 0 | konsol 0 | kırık medya 1 403 =ot1&expv2[8]=hv1&expv2[9]=rh0&expv2[10]=ah0&expv2[11]=nv1&expv2[12]=oq0&rqm=GET

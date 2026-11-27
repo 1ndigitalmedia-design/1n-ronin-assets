@@ -1,0 +1,113 @@
+23:21:27 otomatik başladı, açılıştan 9 sn sonra · plan 14
+23:21:27 durum 0.1 prep / rev 1
+23:21:30 durum 0.1 home / rev 2
+23:21:40 durum 0.1 nav / rev 3
+23:21:41 durum 0.1 page /kreatif-produksiyon rev 4
+23:22:05 durum 0.1 back /kreatif-produksiyon rev 5
+23:22:07 durum 0.1 returned / rev 6
+23:22:17 durum 1.1 prep / rev 8
+23:22:19 durum 1.1 home / rev 9
+23:22:30 durum 1.1 nav / rev 10
+23:22:31 durum 1.1 returned / rev 11
+23:22:42 durum 2.1 home / rev 14
+23:22:54 durum 2.1 page /e-ticaret-yonetimi rev 16
+23:23:18 durum 2.1 back /e-ticaret-yonetimi rev 17
+23:23:21 durum 2.1 returned / rev 18
+23:23:30 durum 3.1 prep / rev 20
+23:23:31 durum 3.1 home / rev 21
+23:23:43 durum 3.1 returned / rev 24
+23:23:52 durum 4.1 prep / rev 26
+23:23:54 durum 4.1 home / rev 27
+23:24:05 durum 4.1 page /sosyal-medya rev 29
+23:24:28 durum 4.1 back /sosyal-medya rev 30
+23:24:31 durum 4.1 returned / rev 31
+23:24:40 durum 5.1 prep / rev 33
+23:24:42 durum 5.1 home / rev 34
+23:24:53 durum 5.1 returned / rev 37
+23:25:05 durum 6.1 home / rev 40
+23:25:15 durum 6.1 page /reklam-yonetimi rev 42
+23:25:46 durum 6.1 back /reklam-yonetimi rev 43
+23:25:48 durum 6.1 returned / rev 44
+23:26:00 durum 7.1 home / rev 47
+23:26:09 durum 7.1 nav / rev 48
+23:26:10 durum 7.1 nav /reklam-yonetimi rev 48
+23:26:11 durum 7.1 returned / rev 49
+23:26:22 durum 8.1 home / rev 52
+23:26:32 durum 8.1 nav / rev 53
+23:26:34 durum 8.1 page /ui-ux-tasarim rev 54
+23:27:08 durum 8.1 back /ui-ux-tasarim rev 55
+23:27:10 durum 8.1 returned / rev 56
+23:27:22 durum 9.1 home / rev 59
+23:27:34 durum 9.1 returned / rev 61
+23:27:45 durum 10.1 home / rev 64
+23:27:55 durum 10.1 nav / rev 65
+23:27:56 durum 10.1 nav /yapay-zeka rev 65
+23:27:57 durum 10.1 page /yapay-zeka rev 66
+23:28:30 durum 10.1 back /yapay-zeka rev 67
+23:28:32 durum 10.1 returned / rev 68
+23:28:43 durum 11.1 home / rev 71
+23:28:56 durum 11.1 returned / rev 73
+23:29:06 durum 12.1 prep / rev 75
+23:29:08 durum 12.1 home / rev 76
+23:29:18 durum 12.1 nav /uygulama-gelistirme rev 77
+23:29:19 durum 12.1 page /uygulama-gelistirme rev 78
+23:29:55 durum 12.1 back /uygulama-gelistirme rev 79
+23:29:58 durum 12.1 returned / rev 80
+23:30:07 durum 13.1 prep / rev 82
+23:30:09 durum 13.1 home / rev 83
+23:30:19 durum 13.1 nav / rev 84
+23:30:21 durum 13.1 returned / rev 85
+23:30:32 durum 14.1 done / rev 87
+23:30:32 bitti
+<!-- Playwright webkit benzetimi (iPhone değil), 2026-11-27T23:30:33.619Z · bağlantıdan bitişe 9.2 dk · belge 54 · anahtar değişimi 54 · V1.4 yönlendirme {"wix-mobile-performance-v14/acceptance/n1-accept-v14.js":54,"wix-mobile-performance-v14/home/n1-site-wix-v659.js":29,"wix-mobile-performance-v14/site/n1-site-markup-v14.js":29,"wix-mobile-performance-v14/home/n1-video-m5-v14.js":29,"wix-mobile-performance-v14/pages/wix-kreatif-produksiyon-v24/n1-kreatif-produksiyon-v24.js":1,"wix-mobile-performance-v14/media/stills/kreatif-produksiyon/kreatif-monitor-1280.webp":1,"wix-mobile-performance-v14/pages/wix-e-ticaret-yonetimi-v25/n1-e-ticaret-yonetimi-v25.js":1,"wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-store-720.webp":1,"wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-trio-720.webp":1,"wix-mobile-performance-v14/pages/wix-sosyal-medya-v28/n1-sosyal-medya-v28.js":1,"wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-strateji-720.webp":1,"wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-hareket-1280.webp":1,"wix-mobile-performance-v14/pages/wix-reklam-yonetimi-v24/n1-reklam-yonetimi-v24.js":1,"wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-karar-1280.webp":1,"wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-manifesto-1280.webp":1,"wix-mobile-performance-v14/pages/wix-uiux-tasarim-v30/n1-uiux-tasarim-v30.js":1,"wix-mobile-performance-v14/media/stills/ui-ux-tasarim/uiux-feel-720.webp":1,"wix-mobile-performance-v14/pages/wix-yapay-zeka-v3/n1-yapay-zeka-v3.js":1,"wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-gen-1080.webp":1,"wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-story-608.webp":1,"wix-mobile-performance-v14/pages/wix-uygulama-gelistirme-v3/n1-uygulama-gelistirme-v3.js":1,"wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-web-720.webp":1,"wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-motion-720.webp":1,"wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-screens-720.webp":1} · playwright crash 0 -->
+
+# 1N V1.4 kabul testi — sonuç raporu
+Betik 14.0.0 · runId rmwzlv5nrqpxhu · rapor 2026-11-27T23:30:33.559Z
+Cihaz: Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7 Mobile/15E148 Safari/604.1 · ekran 390x844@3
+Seçenekler: {"vars":["P"],"pages":["/kreatif-produksiyon","/e-ticaret-yonetimi","/sosyal-medya","/reklam-yonetimi","/ui-ux-tasarim","/yapay-zeka","/uygulama-gelistirme"],"scen":["n","e1000"],"rep":1} · plan adımı 14 · deneme kaydı 14 (benzersiz attemptId)
+Video ön kontrolü: OTOMATİK OYNATMA ÇALIŞIYOR · ronin-m5-film-2x.mp4 1120x1504 rs4 ns1
+Sınıflar: ÇÖKME ADAYI = test beklemiyorken sayfa yeniden yüklendi (Safari çökme sonrası yeniden yükleme YA DA elle yeniden yükleme; ayırt edilemez). BFCache dönüşü çökme sayılmaz. Wix ATS yeniden yüklemesi ayrı sayılır.
+
+## Varyant özeti (yalnız 1. denemeler; ek denemeler ayrı sütunda)
+| Varyant | Plan adımı | Geçerli 1. deneme | ÇÖKME ADAYI | Belirsiz yeniden yükleme | Test kaynaklı sorun (beklenmeyen/yanlış geçmiş/zaman aşımı) | Ek deneme | Wix ATS yeniden yükleme | Video doğrulandı (ana sayfa) | Ronin (kaynak, çözünürlük) | Hizmet TTFB/DCL/bileşen (medyan ms) | 1N JS hatası |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| P · V1.4 üretim yapılandırması (stabilite kapalı, Ronin 2×, loader açık) | 14 | 14 | 0 | 0 | 0 | 0 | 11 | 14/14 | ronin-m5-film-2x.mp4 1120x1504 playing | – / 1251 / 2716 | 0 |
+
+## Sayfa × senaryo × varyant (1. denemeler: çökme adayı / geçerli)
+| Sayfa | Senaryo | P |
+|---|---|---|
+| /kreatif-produksiyon | normal (sona kadar kaydır + geri) | 0/1 |
+| /kreatif-produksiyon | erken geri 1 sn | 0/1 |
+| /e-ticaret-yonetimi | normal (sona kadar kaydır + geri) | 0/1 |
+| /e-ticaret-yonetimi | erken geri 1 sn | 0/1 |
+| /sosyal-medya | normal (sona kadar kaydır + geri) | 0/1 |
+| /sosyal-medya | erken geri 1 sn | 0/1 |
+| /reklam-yonetimi | normal (sona kadar kaydır + geri) | 0/1 |
+| /reklam-yonetimi | erken geri 1 sn | 0/1 |
+| /ui-ux-tasarim | normal (sona kadar kaydır + geri) | 0/1 |
+| /ui-ux-tasarim | erken geri 1 sn | 0/1 |
+| /yapay-zeka | normal (sona kadar kaydır + geri) | 0/1 |
+| /yapay-zeka | erken geri 1 sn | 0/1 |
+| /uygulama-gelistirme | normal (sona kadar kaydır + geri) | 0/1 |
+| /uygulama-gelistirme | erken geri 1 sn | 0/1 |
+
+## Süre
+Başlangıç 2026-11-27T23:21:26.631Z · son deneme bitişi 2026-11-27T23:30:31.015Z · **gerçek süre 9.1 dk**
+
+## V1.4 yapılandırma doğrulaması (normal senaryo, 1. denemeler)
+| Sayfa | Hafif profil | V1.4 kodu | Kaynaklı video / en çok | Benzersiz mp4 | Kare (yüklenen/toplam, kırık) | Sonuç |
+|---|---|---|---|---|---|---|
+| /kreatif-produksiyon | evet | evet | 1 / 1 | 1 | 1/1, 0 | GEÇTİ |
+| /e-ticaret-yonetimi | evet | evet | 1 / 1 | 1 | 2/2, 0 | GEÇTİ |
+| /sosyal-medya | evet | evet | 1 / 1 | 1 | 2/3, 0 | GEÇTİ |
+| /reklam-yonetimi | evet | evet | 1 / 1 | 1 | 2/2, 0 | GEÇTİ |
+| /ui-ux-tasarim | evet | evet | 0 / 0 | 0 | 1/1, 0 | GEÇTİ |
+| /yapay-zeka | evet | evet | 1 / 1 | 1 | 2/2, 0 | GEÇTİ |
+| /uygulama-gelistirme | evet | evet | 1 / 1 | 1 | 3/3, 0 | GEÇTİ |
+
+Ana sayfa: video modülü v14 yüklü · ana sayfa v659 görülmedi · "Hikâyemizin Devamı" → /kisaca-biz · 14/14 ölçüm GEÇTİ
+
+## Sorunlu denemeler
+Yok.
+
+

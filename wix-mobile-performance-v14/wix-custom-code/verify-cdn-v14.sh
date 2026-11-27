@@ -2,7 +2,7 @@
 # V1.4 — Wix'te Server URL değiştirmeden ÖNCE çalıştırın (depo kökünden):
 #   bash wix-mobile-performance-v14/wix-custom-code/verify-cdn-v14.sh
 # Her V1.4 adresi için: durum kodu (JS: 20 istek, WebP: 3 istek) · Content-Type · CORS (Origin başlığıyla Access-Control-Allow-Origin)
-# · Range isteğine 206 + Content-Range · TAM dosya içeriği o commit'teki depo dosyasıyla SHA-256 karşılaştırması (git show).
+# · Range: WebP için 206 + Content-Range zorunlu; JS için 206 ya da 200 (jsDelivr sıkıştırılmış betikte bazen tam dosya döner; betik Range ile yüklenmez) · TAM dosya içeriği o commit'teki depo dosyasıyla SHA-256 karşılaştırması (git show).
 # jsDelivr: depo 50 MB'ı aştığı için yeni adresler ilk dakikalarda 403 dönebilir → 1-2 dk bekleyip tekrar çalıştırın.
 J=https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets
 cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" || exit 1
@@ -34,9 +34,9 @@ while read -r sha path; do
   git show "$sha:$path" > "$T/repo" 2>/dev/null || { echo "?? $path: $sha depoda yok"; fail=1; continue; }
   curl -s "$u" > "$T/cdn"; a=$(sha256sum < "$T/repo" | cut -c1-16); b=$(sha256sum < "$T/cdn" | cut -c1-16)
   [ "$a" = "$b" ] && m="sha256=AYNI($a, $(wc -c < "$T/repo") B)" || { m="sha256=FARKLI(depo $a / cdn $b)"; fail=1; }
-  [ "$ct" = "$wantct" ] || { ctm=" ⚠tür"; fail=1; }; [ "$co" = "*" ] || { com=" ⚠CORS"; fail=1; }; [ "$rg" = 206 ] || { rgm=" ⚠Range"; fail=1; }
+  [ "$ct" = "$wantct" ] || { ctm=" ⚠tür"; fail=1; }; [ "$co" = "*" ] || { com=" ⚠CORS"; fail=1; }; case "$path" in *.webp) [ "$rg" = 206 ] || { rgm=" ⚠Range"; fail=1; };; *) if [ "$rg" = 200 ]; then rgm=" (tam dosya; betik Range ile yüklenmez)"; elif [ "$rg" != 206 ]; then rgm=" ⚠Range"; fail=1; fi;; esac
   echo "$r ${path#wix-mobile-performance-v14/} @${sha:0:7} | $ct${ctm} | CORS $co${com} | Range $rg ($cr)${rgm} | $m"; ctm=; com=; rgm=
 done <<< "$LIST"
 rm -rf "$T"
 echo "adres: $n"
-[ $fail = 0 ] && echo "TAMAM: tüm adresler 200, doğru MIME, CORS *, Range 206 ve tam içerik eşleşiyor" || echo "BEKLEYİN/KONTROL: bazı adresler başarısız (403 ise 1-2 dk sonra tekrar)"
+[ $fail = 0 ] && echo "TAMAM: tüm adresler 200, doğru MIME, CORS *, Range (WebP 206; JS 206 ya da tam dosya) ve tam içerik eşleşiyor" || echo "BEKLEYİN/KONTROL: bazı adresler başarısız (403 ise 1-2 dk sonra tekrar)"

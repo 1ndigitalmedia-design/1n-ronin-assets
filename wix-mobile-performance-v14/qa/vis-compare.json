@@ -1,0 +1,1455 @@
+[
+ {
+  "page": "/",
+  "profile": "masaustu",
+  "heightLive": 12752,
+  "heightV14": 12752,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@0,4478 1440x600",
+    "v14": "video@0,4478 1440x600 fit=cover doğal=1920x1080",
+    "d": 0
+   },
+   {
+    "live": "video@0,6172 1440x810",
+    "v14": "video@0,6172 1440x810 fit=cover doğal=1920x1080",
+    "d": 0
+   },
+   {
+    "live": "video@0,7683 1440x450",
+    "v14": "video@0,7683 1440x450 fit=cover doğal=1920x600",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "home-masaustu-v14-0.png",
+    "diffPct": 0.21,
+    "bbox": [
+     840,
+     402,
+     1365,
+     578
+    ]
+   },
+   {
+    "shot": "home-masaustu-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-masaustu-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-masaustu-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "profile": "masaustu",
+  "heightLive": 10974,
+  "heightV14": 10974,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@515,193 853x480",
+    "v14": "video@515,193 853x480 fit=contain doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@72,6113 853x480",
+    "v14": "video@72,6113 853x480 fit=contain doğal=1920x1080",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "kreatif-produksiyon-masaustu-v14-0.png",
+    "diffPct": 21.59,
+    "bbox": [
+     515,
+     193,
+     1368,
+     718
+    ]
+   },
+   {
+    "shot": "kreatif-produksiyon-masaustu-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "kreatif-produksiyon-masaustu-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "kreatif-produksiyon-masaustu-v14-60.png",
+    "diffPct": 0.14,
+    "bbox": [
+     234,
+     144,
+     618,
+     669
+    ]
+   },
+   {
+    "shot": "kreatif-produksiyon-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "profile": "masaustu",
+  "heightLive": 11442,
+  "heightV14": 11442,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@996,131 372x662",
+    "v14": "video@996,131 372x662 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@183,2191 411x514",
+    "v14": "video@183,2191 411x514 fit=cover doğal=720x900",
+    "d": 0
+   },
+   {
+    "live": "video@545,7593 350x623",
+    "v14": "video@545,7593 350x623 fit=cover doğal=720x1280",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "e-ticaret-yonetimi-masaustu-v14-0.png",
+    "diffPct": 0.21,
+    "bbox": [
+     77,
+     196,
+     833,
+     586
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-masaustu-v14-20.png",
+    "diffPct": 0.53,
+    "bbox": [
+     216,
+     102,
+     1035,
+     611
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-masaustu-v14-40.png",
+    "diffPct": 0.02,
+    "bbox": [
+     84,
+     112,
+     176,
+     518
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-masaustu-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "e-ticaret-yonetimi-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": [
+     596,
+     506,
+     625,
+     618
+    ]
+   }
+  ]
+ },
+ {
+  "page": "/sosyal-medya",
+  "profile": "masaustu",
+  "heightLive": 11733,
+  "heightV14": 11733,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@642,193 302x538",
+    "v14": "video@642,193 302x538 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@736,3886 345x432",
+    "v14": "video@736,3886 345x432 fit=cover doğal=0x0",
+    "d": 0
+   },
+   {
+    "live": "video@72,5278 1296x567",
+    "v14": "video@72,5278 1296x567 fit=cover doğal=1920x1080",
+    "d": 0
+   },
+   {
+    "live": "video@1068,10485 300x534",
+    "v14": "video@1068,10485 300x534 fit=cover doğal=1920x1080",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "sosyal-medya-masaustu-v14-0.png",
+    "diffPct": 0.18,
+    "bbox": [
+     81,
+     229,
+     772,
+     675
+    ]
+   },
+   {
+    "shot": "sosyal-medya-masaustu-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "sosyal-medya-masaustu-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "sosyal-medya-masaustu-v14-60.png",
+    "diffPct": 0.07,
+    "bbox": [
+     644,
+     523,
+     794,
+     565
+    ]
+   },
+   {
+    "shot": "sosyal-medya-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "profile": "masaustu",
+  "heightLive": 13766,
+  "heightV14": 13766,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@817,171 653x367",
+    "v14": "video@817,171 653x367 fit=cover doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@20,8619 1400x600",
+    "v14": "video@20,8619 1400x600 fit=cover doğal=1920x1080",
+    "d": 0
+   },
+   {
+    "live": "video@-45,11066 1529x601",
+    "v14": "video@-45,11066 1529x601 fit=cover doğal=1280x720",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "reklam-yonetimi-masaustu-v14-0.png",
+    "diffPct": 1.86,
+    "bbox": [
+     76,
+     220,
+     1440,
+     476
+    ]
+   },
+   {
+    "shot": "reklam-yonetimi-masaustu-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-masaustu-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-masaustu-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "profile": "masaustu",
+  "heightLive": 15396,
+  "heightV14": 15396,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@72,2125 522x652",
+    "v14": "video@72,2125 522x652 fit=cover doğal=720x1280",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "ui-ux-tasarim-masaustu-v14-0.png",
+    "diffPct": 0.37,
+    "bbox": [
+     76,
+     222,
+     623,
+     503
+    ]
+   },
+   {
+    "shot": "ui-ux-tasarim-masaustu-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-masaustu-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-masaustu-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/yapay-zeka",
+  "profile": "masaustu",
+  "heightLive": 15039,
+  "heightV14": 15039,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@547,174 346x614",
+    "v14": "video@547,174 346x614 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@736,3525 632x632",
+    "v14": "video@736,3525 632x632 fit=cover doğal=1080x1080",
+    "d": 0
+   },
+   {
+    "live": "video@515,9386 411x730",
+    "v14": "video@515,9386 411x730 fit=cover doğal=608x1080",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "yapay-zeka-masaustu-v14-0.png",
+    "diffPct": 0.01,
+    "bbox": [
+     633,
+     491,
+     872,
+     644
+    ]
+   },
+   {
+    "shot": "yapay-zeka-masaustu-v14-20.png",
+    "diffPct": 0.52,
+    "bbox": [
+     736,
+     697,
+     1368,
+     899
+    ]
+   },
+   {
+    "shot": "yapay-zeka-masaustu-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-masaustu-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "profile": "masaustu",
+  "heightLive": 15052,
+  "heightV14": 15052,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@0,88 1440x810",
+    "v14": "video@0,88 1440x810 fit=cover doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@72,9775 411x730",
+    "v14": "video@72,9775 411x730 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@957,11200 411x730",
+    "v14": "video@957,11200 411x730 fit=cover doğal=720x1280",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "uygulama-gelistirme-masaustu-v14-0.png",
+    "diffPct": 0.51,
+    "bbox": [
+     236,
+     90,
+     1440,
+     794
+    ]
+   },
+   {
+    "shot": "uygulama-gelistirme-masaustu-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-masaustu-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-masaustu-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-masaustu-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/",
+  "profile": "mobil",
+  "heightLive": 8995,
+  "heightV14": 8995,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@0,64 390x505",
+    "v14": "video@0,64 390x505 fit=cover doğal=560x752",
+    "d": 0
+   },
+   {
+    "live": "video@10,906 91x47",
+    "v14": "video@10,906 91x47 fit=cover doğal=1080x1080",
+    "d": 0
+   },
+   {
+    "live": "video@0,5388 390x229",
+    "v14": "video@0,5388 390x229 fit=cover doğal=768x450",
+    "d": 0
+   },
+   {
+    "live": "video@0,6068 390x219",
+    "v14": "video@0,6068 390x219 fit=cover doğal=1920x1080",
+    "d": 0
+   },
+   {
+    "live": "video@0,6956 390x229",
+    "v14": "video@0,6956 390x229 fit=cover doğal=768x450",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "home-mobil-v14-0.png",
+    "diffPct": 5.84,
+    "bbox": [
+     11,
+     252,
+     734,
+     1562
+    ]
+   },
+   {
+    "shot": "home-mobil-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-mobil-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-mobil-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-mobil-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "profile": "mobil",
+  "heightLive": 9266,
+  "heightV14": 9266,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@20,407 350x197",
+    "v14": "video@20,407 350x197 fit=contain doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@20,5494 350x197",
+    "v14": "kare:kreatif-monitor@20,5494 350x197 fit=contain doğal=389x219",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "kreatif-produksiyon-mobil-v14-0.png",
+    "diffPct": 8.02,
+    "bbox": [
+     40,
+     814,
+     740,
+     1291
+    ]
+   },
+   {
+    "shot": "kreatif-produksiyon-mobil-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "kreatif-produksiyon-mobil-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "kreatif-produksiyon-mobil-v14-60.png",
+    "diffPct": 4.11,
+    "bbox": [
+     40,
+     882,
+     740,
+     1688
+    ]
+   },
+   {
+    "shot": "kreatif-produksiyon-mobil-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "profile": "mobil",
+  "heightLive": 10609,
+  "heightV14": 10609,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@160,407 210x373",
+    "v14": "video@160,407 210x373 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@20,2021 198x248",
+    "v14": "kare:eticaret-store@20,2021 198x248 fit=cover doğal=233x292",
+    "d": 0
+   },
+   {
+    "live": "video@97,6661 195x347",
+    "v14": "kare:eticaret-trio@97,6661 195x347 fit=cover doğal=233x415",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "e-ticaret-yonetimi-mobil-v14-0.png",
+    "diffPct": 0.0,
+    "bbox": [
+     372,
+     1530,
+     374,
+     1534
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-mobil-v14-20.png",
+    "diffPct": 1.78,
+    "bbox": [
+     40,
+     141,
+     740,
+     694
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-mobil-v14-40.png",
+    "diffPct": 0.07,
+    "bbox": [
+     49,
+     329,
+     168,
+     793
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-mobil-v14-60.png",
+    "diffPct": 0.31,
+    "bbox": [
+     417,
+     1476,
+     740,
+     1688
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-mobil-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/sosyal-medya",
+  "profile": "mobil",
+  "heightLive": 10547,
+  "heightV14": 10547,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@181,272 189x336",
+    "v14": "video@181,272 189x336 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@20,3155 350x385",
+    "v14": "kare:sosyal-strateji@20,3155 350x385 fit=cover doğal=390x487",
+    "d": 0
+   },
+   {
+    "live": "video@0,4348 390x219",
+    "v14": "kare:sosyal-hareket@0,4348 390x219 fit=cover doğal=389x219",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "sosyal-medya-mobil-v14-0.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "sosyal-medya-mobil-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "sosyal-medya-mobil-v14-40.png",
+    "diffPct": 8.3,
+    "bbox": [
+     0,
+     936,
+     780,
+     1370
+    ]
+   },
+   {
+    "shot": "sosyal-medya-mobil-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "sosyal-medya-mobil-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "profile": "mobil",
+  "heightLive": 14781,
+  "heightV14": 14781,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@20,334 370x208",
+    "v14": "video@20,334 370x208 fit=cover doğal=854x480",
+    "d": 0
+   },
+   {
+    "live": "video@20,9393 350x263",
+    "v14": "kare:reklam-karar@20,9393 350x263 fit=cover doğal=389x219",
+    "d": 0
+   },
+   {
+    "live": "video@-11,12194 413x218",
+    "v14": "kare:reklam-manifesto@-11,12194 413x218 fit=cover doğal=389x219",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "reklam-yonetimi-mobil-v14-0.png",
+    "diffPct": 0.75,
+    "bbox": [
+     82,
+     699,
+     777,
+     1012
+    ]
+   },
+   {
+    "shot": "reklam-yonetimi-mobil-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-mobil-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-mobil-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-mobil-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "profile": "mobil",
+  "heightLive": 16549,
+  "heightV14": 16549,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@20,2022 287x359",
+    "v14": "kare:uiux-feel@20,2022 287x359 fit=cover doğal=390x693",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "ui-ux-tasarim-mobil-v14-0.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-mobil-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-mobil-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-mobil-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-mobil-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/yapay-zeka",
+  "profile": "mobil",
+  "heightLive": 15536,
+  "heightV14": 15536,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@20,370 350x438",
+    "v14": "video@20,370 350x438 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@20,4266 350x350",
+    "v14": "kare:yapay-gen@20,4266 350x350 fit=cover doğal=389x389",
+    "d": 0
+   },
+   {
+    "live": "video@59,9919 273x485",
+    "v14": "kare:yapay-story@59,9919 273x485 fit=cover doğal=390x692",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "yapay-zeka-mobil-v14-0.png",
+    "diffPct": 0.04,
+    "bbox": [
+     193,
+     1199,
+     706,
+     1512
+    ]
+   },
+   {
+    "shot": "yapay-zeka-mobil-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-mobil-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-mobil-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-mobil-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "profile": "mobil",
+  "heightLive": 18613,
+  "heightV14": 18613,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@0,322 390x488",
+    "v14": "video@0,322 390x488 fit=cover doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@20,6499 351x439",
+    "v14": "kare:uygulama-web@20,6499 351x439 fit=cover doğal=390x693",
+    "d": 0
+   },
+   {
+    "live": "video@58,11586 274x487",
+    "v14": "kare:uygulama-motion@58,11586 274x487 fit=cover doğal=390x693",
+    "d": 0
+   },
+   {
+    "live": "video@58,14209 274x487",
+    "v14": "kare:uygulama-screens@58,14209 274x487 fit=cover doğal=390x693",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "uygulama-gelistirme-mobil-v14-0.png",
+    "diffPct": 0.47,
+    "bbox": [
+     0,
+     644,
+     780,
+     1503
+    ]
+   },
+   {
+    "shot": "uygulama-gelistirme-mobil-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-mobil-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-mobil-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-mobil-v14-80.png",
+    "diffPct": 18.69,
+    "bbox": [
+     116,
+     130,
+     664,
+     962
+    ]
+   }
+  ]
+ },
+ {
+  "page": "/",
+  "profile": "tablet",
+  "heightLive": 10329,
+  "heightV14": 10329,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@0,72 820x732",
+    "v14": "video@0,72 820x732 fit=cover doğal=560x752",
+    "d": 0
+   },
+   {
+    "live": "video@28,1264 131x68",
+    "v14": "video@28,1264 131x68 fit=cover doğal=1080x1080",
+    "d": 0
+   },
+   {
+    "live": "video@0,6240 820x480",
+    "v14": "video@0,6240 820x480 fit=cover doğal=768x450",
+    "d": 0
+   },
+   {
+    "live": "video@0,6938 820x461",
+    "v14": "video@0,6938 820x461 fit=cover doğal=1920x1080",
+    "d": 0
+   },
+   {
+    "live": "video@0,8090 820x480",
+    "v14": "video@0,8090 820x480 fit=cover doğal=768x450",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "home-tablet-v14-0.png",
+    "diffPct": 0.03,
+    "bbox": [
+     47,
+     925,
+     204,
+     1033
+    ]
+   },
+   {
+    "shot": "home-tablet-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-tablet-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-tablet-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "home-tablet-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "profile": "tablet",
+  "heightLive": 9299,
+  "heightV14": 9299,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@41,536 738x415",
+    "v14": "video@41,536 738x415 fit=contain doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@41,4779 738x415",
+    "v14": "kare:kreatif-monitor@41,4779 738x415 fit=contain doğal=820x461",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "kreatif-produksiyon-tablet-v14-0.png",
+    "diffPct": 21.75,
+    "bbox": [
+     41,
+     536,
+     779,
+     995
+    ]
+   },
+   {
+    "shot": "kreatif-produksiyon-tablet-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "kreatif-produksiyon-tablet-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "kreatif-produksiyon-tablet-v14-60.png",
+    "diffPct": 2.68,
+    "bbox": [
+     41,
+     73,
+     779,
+     554
+    ]
+   },
+   {
+    "shot": "kreatif-produksiyon-tablet-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "profile": "tablet",
+  "heightLive": 10529,
+  "heightV14": 10529,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@482,443 297x528",
+    "v14": "video@482,443 297x528 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@41,2130 360x450",
+    "v14": "kare:eticaret-store@41,2130 360x450 fit=cover doğal=492x615",
+    "d": 0
+   },
+   {
+    "live": "video@248,6678 324x576",
+    "v14": "kare:eticaret-trio@248,6678 324x576 fit=cover doğal=492x874",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "e-ticaret-yonetimi-tablet-v14-0.png",
+    "diffPct": 0.29,
+    "bbox": [
+     44,
+     148,
+     553,
+     1090
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-tablet-v14-20.png",
+    "diffPct": 2.25,
+    "bbox": [
+     41,
+     245,
+     779,
+     765
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-tablet-v14-40.png",
+    "diffPct": 0.01,
+    "bbox": [
+     47,
+     145,
+     122,
+     627
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-tablet-v14-60.png",
+    "diffPct": 1.23,
+    "bbox": [
+     280,
+     1062,
+     813,
+     1180
+    ]
+   },
+   {
+    "shot": "e-ticaret-yonetimi-tablet-v14-80.png",
+    "diffPct": 0.01,
+    "bbox": [
+     216,
+     515,
+     253,
+     663
+    ]
+   }
+  ]
+ },
+ {
+  "page": "/sosyal-medya",
+  "profile": "tablet",
+  "heightLive": 11081,
+  "heightV14": 11081,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@410,153 246x437",
+    "v14": "video@410,153 246x437 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@41,3772 414x517",
+    "v14": "kare:sosyal-strateji@41,3772 414x517 fit=cover doğal=377x471",
+    "d": 0
+   },
+   {
+    "live": "video@41,4938 738x415",
+    "v14": "kare:sosyal-hareket@41,4938 738x415 fit=cover doğal=820x461",
+    "d": 0
+   },
+   {
+    "live": "video@545,9735 234x416",
+    "v14": "kare:sosyal-final@545,9735 234x416 fit=cover doğal=180x101",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "sosyal-medya-tablet-v14-0.png",
+    "diffPct": 8.14,
+    "bbox": [
+     46,
+     159,
+     656,
+     589
+    ]
+   },
+   {
+    "shot": "sosyal-medya-tablet-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "sosyal-medya-tablet-v14-40.png",
+    "diffPct": 1.92,
+    "bbox": [
+     41,
+     1113,
+     779,
+     1180
+    ]
+   },
+   {
+    "shot": "sosyal-medya-tablet-v14-60.png",
+    "diffPct": 0.14,
+    "bbox": [
+     223,
+     516,
+     427,
+     554
+    ]
+   },
+   {
+    "shot": "sosyal-medya-tablet-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "profile": "tablet",
+  "heightLive": 12650,
+  "heightV14": 12650,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@167,402 653x367",
+    "v14": "video@167,402 653x367 fit=cover doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@11,8162 797x448",
+    "v14": "kare:reklam-karar@11,8162 797x448 fit=cover doğal=492x276",
+    "d": 0
+   },
+   {
+    "live": "video@-25,10320 871x344",
+    "v14": "kare:reklam-manifesto@-25,10320 871x344 fit=cover doğal=820x461",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "reklam-yonetimi-tablet-v14-0.png",
+    "diffPct": 0.77,
+    "bbox": [
+     204,
+     430,
+     818,
+     706
+    ]
+   },
+   {
+    "shot": "reklam-yonetimi-tablet-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-tablet-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-tablet-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "reklam-yonetimi-tablet-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "profile": "tablet",
+  "heightLive": 15184,
+  "heightV14": 15184,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@41,1793 297x371",
+    "v14": "kare:uiux-feel@41,1793 297x371 fit=cover doğal=819x1457",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "ui-ux-tasarim-tablet-v14-0.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-tablet-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-tablet-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-tablet-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "ui-ux-tasarim-tablet-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/yapay-zeka",
+  "profile": "tablet",
+  "heightLive": 13891,
+  "heightV14": 13891,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@287,148 246x437",
+    "v14": "video@287,148 246x437 fit=cover doğal=720x1280",
+    "d": 0
+   },
+   {
+    "live": "video@167,3675 612x612",
+    "v14": "kare:yapay-gen@167,3675 612x612 fit=cover doğal=820x820",
+    "d": 0
+   },
+   {
+    "live": "video@41,9174 360x639",
+    "v14": "kare:yapay-story@41,9174 360x639 fit=cover doğal=820x1456",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "yapay-zeka-tablet-v14-0.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-tablet-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": [
+     398,
+     1140,
+     399,
+     1146
+    ]
+   },
+   {
+    "shot": "yapay-zeka-tablet-v14-40.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-tablet-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "yapay-zeka-tablet-v14-80.png",
+    "diffPct": 0.0,
+    "bbox": null
+   }
+  ]
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "profile": "tablet",
+  "heightLive": 15796,
+  "heightV14": 15796,
+  "overflowV14": false,
+  "maxBoxDelta": 0,
+  "pairs": [
+   {
+    "live": "video@0,88 820x754",
+    "v14": "video@0,88 820x754 fit=cover doğal=1280x720",
+    "d": 0
+   },
+   {
+    "live": "video@419,5795 360x450",
+    "v14": "kare:uygulama-web@419,5795 360x450 fit=cover doğal=819x1457",
+    "d": 0
+   },
+   {
+    "live": "video@41,11052 297x528",
+    "v14": "kare:uygulama-motion@41,11052 297x528 fit=cover doğal=819x1457",
+    "d": 0
+   },
+   {
+    "live": "video@482,12353 297x528",
+    "v14": "kare:uygulama-screens@482,12353 297x528 fit=cover doğal=819x1457",
+    "d": 0
+   }
+  ],
+  "shots": [
+   {
+    "shot": "uygulama-gelistirme-tablet-v14-0.png",
+    "diffPct": 0.33,
+    "bbox": [
+     374,
+     101,
+     820,
+     745
+    ]
+   },
+   {
+    "shot": "uygulama-gelistirme-tablet-v14-20.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-tablet-v14-40.png",
+    "diffPct": 10.09,
+    "bbox": [
+     419,
+     73,
+     779,
+     399
+    ]
+   },
+   {
+    "shot": "uygulama-gelistirme-tablet-v14-60.png",
+    "diffPct": 0.0,
+    "bbox": null
+   },
+   {
+    "shot": "uygulama-gelistirme-tablet-v14-80.png",
+    "diffPct": 9.3,
+    "bbox": [
+     482,
+     660,
+     779,
+     1180
+    ]
+   }
+  ]
+ }
+]

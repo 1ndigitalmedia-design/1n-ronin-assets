@@ -1,0 +1,370 @@
+[
+ {
+  "page": "/",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 8995,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 0,
+    "y": 64,
+    "w": 390,
+    "h": 505,
+    "vis": true,
+    "fit": "cover",
+    "nat": "560x752"
+   },
+   {
+    "k": "video",
+    "x": 10,
+    "y": 906,
+    "w": 91,
+    "h": 47,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1080x1080"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 5388,
+    "w": 390,
+    "h": 229,
+    "vis": true,
+    "fit": "cover",
+    "nat": "768x450"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 6068,
+    "w": 390,
+    "h": 219,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 6956,
+    "w": 390,
+    "h": 229,
+    "vis": true,
+    "fit": "cover",
+    "nat": "768x450"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/home-mobil-live-0.jpg",
+   "../screenshots/visual/home-mobil-live-20.jpg",
+   "../screenshots/visual/home-mobil-live-40.jpg",
+   "../screenshots/visual/home-mobil-live-60.jpg",
+   "../screenshots/visual/home-mobil-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 9266,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 20,
+    "y": 407,
+    "w": 350,
+    "h": 197,
+    "vis": true,
+    "fit": "contain",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 20,
+    "y": 5494,
+    "w": 350,
+    "h": 197,
+    "vis": true,
+    "fit": "contain",
+    "nat": "854x480"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/kreatif-produksiyon-mobil-live-0.jpg",
+   "../screenshots/visual/kreatif-produksiyon-mobil-live-20.jpg",
+   "../screenshots/visual/kreatif-produksiyon-mobil-live-40.jpg",
+   "../screenshots/visual/kreatif-produksiyon-mobil-live-60.jpg",
+   "../screenshots/visual/kreatif-produksiyon-mobil-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 10609,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 160,
+    "y": 407,
+    "w": 210,
+    "h": 373,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 20,
+    "y": 2021,
+    "w": 198,
+    "h": 248,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x900"
+   },
+   {
+    "k": "video",
+    "x": 97,
+    "y": 6661,
+    "w": 195,
+    "h": 347,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/e-ticaret-yonetimi-mobil-live-0.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-mobil-live-20.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-mobil-live-40.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-mobil-live-60.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-mobil-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/sosyal-medya",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 10547,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 181,
+    "y": 272,
+    "w": 189,
+    "h": 336,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 20,
+    "y": 3155,
+    "w": 350,
+    "h": 385,
+    "vis": true,
+    "fit": "cover",
+    "nat": "0x0"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 4348,
+    "w": 390,
+    "h": 219,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/sosyal-medya-mobil-live-0.jpg",
+   "../screenshots/visual/sosyal-medya-mobil-live-20.jpg",
+   "../screenshots/visual/sosyal-medya-mobil-live-40.jpg",
+   "../screenshots/visual/sosyal-medya-mobil-live-60.jpg",
+   "../screenshots/visual/sosyal-medya-mobil-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 14781,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 20,
+    "y": 334,
+    "w": 370,
+    "h": 208,
+    "vis": true,
+    "fit": "cover",
+    "nat": "854x480"
+   },
+   {
+    "k": "video",
+    "x": 20,
+    "y": 9393,
+    "w": 350,
+    "h": 263,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": -11,
+    "y": 12194,
+    "w": 413,
+    "h": 218,
+    "vis": true,
+    "fit": "cover",
+    "nat": "854x480"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/reklam-yonetimi-mobil-live-0.jpg",
+   "../screenshots/visual/reklam-yonetimi-mobil-live-20.jpg",
+   "../screenshots/visual/reklam-yonetimi-mobil-live-40.jpg",
+   "../screenshots/visual/reklam-yonetimi-mobil-live-60.jpg",
+   "../screenshots/visual/reklam-yonetimi-mobil-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 16549,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 20,
+    "y": 2022,
+    "w": 287,
+    "h": 359,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/ui-ux-tasarim-mobil-live-0.jpg",
+   "../screenshots/visual/ui-ux-tasarim-mobil-live-20.jpg",
+   "../screenshots/visual/ui-ux-tasarim-mobil-live-40.jpg",
+   "../screenshots/visual/ui-ux-tasarim-mobil-live-60.jpg",
+   "../screenshots/visual/ui-ux-tasarim-mobil-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/yapay-zeka",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 15536,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 20,
+    "y": 370,
+    "w": 350,
+    "h": 438,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 20,
+    "y": 4266,
+    "w": 350,
+    "h": 350,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1080x1080"
+   },
+   {
+    "k": "video",
+    "x": 59,
+    "y": 9919,
+    "w": 273,
+    "h": 485,
+    "vis": true,
+    "fit": "cover",
+    "nat": "608x1080"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/yapay-zeka-mobil-live-0.jpg",
+   "../screenshots/visual/yapay-zeka-mobil-live-20.jpg",
+   "../screenshots/visual/yapay-zeka-mobil-live-40.jpg",
+   "../screenshots/visual/yapay-zeka-mobil-live-60.jpg",
+   "../screenshots/visual/yapay-zeka-mobil-live-80.jpg"
+  ]
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "mode": "live",
+  "profile": "mobil",
+  "height": 18613,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 0,
+    "y": 322,
+    "w": 390,
+    "h": 488,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 20,
+    "y": 6499,
+    "w": 351,
+    "h": 439,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 58,
+    "y": 11586,
+    "w": 274,
+    "h": 487,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 58,
+    "y": 14209,
+    "w": 274,
+    "h": 487,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/uygulama-gelistirme-mobil-live-0.jpg",
+   "../screenshots/visual/uygulama-gelistirme-mobil-live-20.jpg",
+   "../screenshots/visual/uygulama-gelistirme-mobil-live-40.jpg",
+   "../screenshots/visual/uygulama-gelistirme-mobil-live-60.jpg",
+   "../screenshots/visual/uygulama-gelistirme-mobil-live-80.jpg"
+  ]
+ }
+]

@@ -1,0 +1,17 @@
+live masaustu /studyo-hikayesi                   —
+v14 masaustu /                                  [{"text":"Hikâyemizin Devamı","tag":"A","href":"/kisaca-biz","dataLink":"kisaca-biz","cls":"n1ab-cta","shadow":false,"inTemplate":false,"visible":true}]
+  tıklama → /kisaca-biz
+v14 masaustu /kisaca-biz                        —
+v14 masaustu /kreatif-produksiyon               —
+v14 tablet /                                  [{"text":"Hikâyemizin Devamı","tag":"A","href":"/kisaca-biz","dataLink":"kisaca-biz","cls":"m4-link is-in","shadow":false,"inTemplate":false,"visible":true}]
+  tıklama → /kisaca-biz
+v14 tablet /kisaca-biz                        —
+v14 tablet /kreatif-produksiyon               —
+v14 mobil /                                  [{"text":"Hikâyemizin Devamı","tag":"A","href":"/kisaca-biz","dataLink":"kisaca-biz","cls":"m4-link","shadow":false,"inTemplate":false,"visible":true}]
+  tıklama → /kisaca-biz
+v14 mobil /kisaca-biz                        —
+v14 mobil /kreatif-produksiyon               —
+live tablet /                                  [{"text":"Hikâyemizin Devamı","tag":"A","href":"/studyo-hikayesi","dataLink":"studyo-hikayesi","cls":"m4-link is-in","shadow":false,"inTemplate":false,"visible":true}]
+  tıklama → /studyo-hikayesi
+live mobil /                                  [{"text":"Hikâyemizin Devamı","tag":"A","href":"/studyo-hikayesi","dataLink":"studyo-hikayesi","cls":"m4-link","shadow":false,"inTemplate":false,"visible":true}]
+  tıklama → /studyo-hikayesi

@@ -1,0 +1,193 @@
+[
+ {
+  "page": "/",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 5,
+  "withSrc": 5,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d8",
+   "wix:6dbf5e_ba9aa241bd914b07a97c4c315f153bfa/720p",
+   "wix:6dbf5e_5a010704bcc145c58b64ca6a10a08bef/1080p",
+   "wix:6dbf5e_809e8dea872246c7ae68b073341efafb/480p",
+   "wix:6dbf5e_48741869fc89488392bce24c731dafa4/480p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 3
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 2,
+  "withSrc": 1,
+  "stills": [
+   "kreatif-monitor:708"
+  ],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_8388dde9e33c490594eb19d4bbcf4eee/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 2
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 1,
+  "withSrc": 1,
+  "stills": [
+   "eticaret-store:353",
+   "eticaret-trio:353"
+  ],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_3c7918f906c1478f9149099d6d398635/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 3
+ },
+ {
+  "page": "/sosyal-medya",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 1,
+  "withSrc": 1,
+  "stills": [
+   "sosyal-strateji:353",
+   "sosyal-hareket:1062",
+   "sosyal-final:259"
+  ],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_67c5c858b42a4ce3b0e76195a59c8b3e/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 4
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 1,
+  "withSrc": 1,
+  "stills": [
+   "reklam-karar:708",
+   "reklam-manifesto:1180"
+  ],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 3
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 0,
+  "withSrc": 0,
+  "stills": [
+   "uiux-feel:590"
+  ],
+  "playing": 0,
+  "media": [],
+  "errors": [],
+  "crash": 0,
+  "routed": 2
+ },
+ {
+  "page": "/yapay-zeka",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 1,
+  "withSrc": 1,
+  "stills": [
+   "yapay-gen:708",
+   "yapay-story:708"
+  ],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_8da46d06b07a4784a27a413446f081f9/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 3
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "br": "chromium",
+  "mode": "v14",
+  "profile": "tablet_yatay",
+  "lite": {
+   "anyCoarse": true,
+   "hoverNone": true,
+   "w": 1180
+  },
+  "videos": 1,
+  "withSrc": 1,
+  "stills": [
+   "uygulama-web:707",
+   "uygulama-motion:707",
+   "uygulama-screens:707"
+  ],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_8957dee5671c411da297848f5ee956d0/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 4
+ }
+]

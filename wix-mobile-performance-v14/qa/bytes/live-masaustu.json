@@ -1,0 +1,178 @@
+[
+ {
+  "page": "/",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 3556,
+  "cls": 1.537,
+  "requests": 243,
+  "byType": {
+   "Document": 815253,
+   "Stylesheet": 99546,
+   "Script": 5551216,
+   "Font": 631408,
+   "Ping": 11758,
+   "Other": 40604,
+   "Fetch": 16979457,
+   "XHR": 12587,
+   "Image": 511597,
+   "Media": 17624149
+  },
+  "total": 42277575,
+  "routed": 0
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 3436,
+  "cls": 0.0927,
+  "requests": 209,
+  "byType": {
+   "Document": 814488,
+   "Stylesheet": 37747,
+   "Script": 5431331,
+   "Font": 498048,
+   "Ping": 12608,
+   "Other": 40601,
+   "Fetch": 394697,
+   "XHR": 11463,
+   "Image": 1840615,
+   "Media": 22102753
+  },
+  "total": 31184351,
+  "routed": 0
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 2888,
+  "cls": 0.1628,
+  "requests": 212,
+  "byType": {
+   "Document": 814506,
+   "Stylesheet": 40748,
+   "Script": 5433713,
+   "Font": 498048,
+   "Ping": 12598,
+   "Other": 40540,
+   "Fetch": 335978,
+   "XHR": 12555,
+   "Image": 38240564,
+   "Media": 3372211
+  },
+  "total": 48801461,
+  "routed": 0
+ },
+ {
+  "page": "/sosyal-medya",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 2940,
+  "cls": 0.2033,
+  "requests": 211,
+  "byType": {
+   "Document": 814388,
+   "Stylesheet": 40741,
+   "Script": 5404796,
+   "Font": 573160,
+   "Ping": 12119,
+   "Other": 40559,
+   "Fetch": 168892,
+   "XHR": 12559,
+   "Image": 1245857,
+   "Media": 31575080
+  },
+  "total": 39888151,
+  "routed": 0
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 3252,
+  "cls": 0.1933,
+  "requests": 207,
+  "byType": {
+   "Document": 814333,
+   "Stylesheet": 40353,
+   "Script": 5497430,
+   "Font": 591808,
+   "Ping": 11733,
+   "Other": 40572,
+   "Fetch": 211201,
+   "XHR": 4467,
+   "Image": 1165995,
+   "Media": 4835563
+  },
+  "total": 13213455,
+  "routed": 0
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 2784,
+  "cls": 0.1143,
+  "requests": 210,
+  "byType": {
+   "Document": 814076,
+   "Stylesheet": 40748,
+   "Script": 5499396,
+   "Font": 591808,
+   "Ping": 12638,
+   "Other": 40554,
+   "Fetch": 253577,
+   "XHR": 12566,
+   "Image": 4008517,
+   "Media": 1388830
+  },
+  "total": 12662710,
+  "routed": 0
+ },
+ {
+  "page": "/yapay-zeka",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 3080,
+  "cls": 0.1146,
+  "requests": 207,
+  "byType": {
+   "Document": 814121,
+   "Stylesheet": 40329,
+   "Script": 5508369,
+   "Font": 591808,
+   "Ping": 13473,
+   "Other": 40606,
+   "Fetch": 266276,
+   "XHR": 12594,
+   "Media": 19261831,
+   "Image": 1128339
+  },
+  "total": 27677746,
+  "routed": 0
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "mode": "live",
+  "profile": "masaustu",
+  "lcp": 3064,
+  "cls": 0.0857,
+  "requests": 208,
+  "byType": {
+   "Document": 814418,
+   "Stylesheet": 40373,
+   "Script": 5565873,
+   "Font": 591808,
+   "Ping": 13468,
+   "Other": 40578,
+   "Fetch": 68757,
+   "XHR": 12588,
+   "Media": 7587362,
+   "Image": 968385
+  },
+  "total": 15703610,
+  "routed": 0
+ }
+]

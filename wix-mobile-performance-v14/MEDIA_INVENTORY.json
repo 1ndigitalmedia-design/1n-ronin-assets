@@ -1,0 +1,2611 @@
+{
+ "generated": "2026-11-27",
+ "source": "canlı tarama Chromium CDP (mobil 390×844, tablet_yatay 1180×820, masaüstü 1440×900) + statik analiz",
+ "note": "medya baytları yalnız tamamlanan istekleri sayar (kısmi video indirmeleri eksik sayılır); istek sayıları için qa/net/*.json",
+ "pages": [
+  {
+   "page": "/",
+   "ceTags": [
+    "n1-site-v1"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@b9c8fca79bee3d6ab9baca96d19e3888575c9c06/wix-global-stability-v13/home/n1-site-wix-v658.js",
+   "v14File": "wix-mobile-performance-v14/home/n1-site-wix-v659.js",
+   "modules": [
+    "n1-site-wix-v658.js",
+    "n1-site-markup-v12.js",
+    "n1-m5-build.js",
+    "n1-header-v12.js",
+    "n1-video-m5-v13.js",
+    "n1-links-v646.js",
+    "n1-service-links-v644.js",
+    "gsap-vault-mit-v629.js",
+    "n1-partners-v617.js",
+    "n1-stats-v632.js",
+    "n1-contact-cta-v644.js",
+    "n1-about-v644.js",
+    "n1-footer-v646.js",
+    "n1-ecosystem-v647-wix.js",
+    "n1-gads-v643.js",
+    "n1-brands-v625.js",
+    "n1-showreel-v628.js",
+    "n1-sectors-v630.js",
+    "onizleme.js",
+    "n1-floating-controls-v632.js",
+    "n1-home-m5.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "m4-film-v",
+     "src": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film-2x.mp4",
+     "resolution": "1120x1504",
+     "durationS": 18,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": false,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "m5-mini-v",
+     "src": "https://video.wixstatic.com/video/6dbf5e_ba9aa241bd914b07a97c4c315f153bfa/720p/mp4/file.mp4",
+     "resolution": "1080x1080",
+     "durationS": 15.9,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "n1sv-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_809e8dea872246c7ae68b073341efafb/480p/mp4/file.mp4",
+     "resolution": "768x450",
+     "durationS": 5.1,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "n1sr-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_5a010704bcc145c58b64ca6a10a08bef/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 56.7,
+     "preload": "metadata",
+     "autoplay": false,
+     "loop": false,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "n1sv-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_48741869fc89488392bce24c731dafa4/480p/mp4/file.mp4",
+     "resolution": "768x450",
+     "durationS": 4.4,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "n1sv-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_adf38ad771024db38e421a5a06f7e431/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 5.9,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    },
+    {
+     "class": "n1sv-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_b462b5d736dc445c95fd65fbf22ad494/720p/mp4/file.mp4",
+     "resolution": "1920x600",
+     "durationS": 4.7,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 6,
+    "lazy": 3,
+    "withWH": 4,
+    "oversized": [
+     {
+      "src": "ic.com/media/6dbf5e_ba9aa241bd914b07a97c4c315f153bfaf002.jpg",
+      "natural": "1080x1080",
+      "display": "91x47"
+     }
+    ]
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 13,
+    "masaustu": 12,
+    "tablet_yatay": 13
+   },
+   "domNodes": 950,
+   "heightPx": 8995,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 5,
+     "mediaMB": 10.77,
+     "imageRequests": 27,
+     "imageMB": 0.51,
+     "totalMB": 16.24,
+     "requests": 268
+    },
+    "tablet_yatay": {
+     "mediaRequests": 5,
+     "mediaMB": 10.77,
+     "imageRequests": 27,
+     "imageMB": 0.5,
+     "totalMB": 16.25,
+     "requests": 277
+    },
+    "masaustu": {
+     "mediaRequests": 3,
+     "mediaMB": 4.25,
+     "imageRequests": 19,
+     "imageMB": 0.24,
+     "totalMB": 18.36,
+     "requests": 241
+    }
+   },
+   "static": {
+    "bytes": 57582,
+    "gsap": 0,
+    "scrollTrigger": 0,
+    "addEventListener": 5,
+    "removeEventListener": 5,
+    "n1Listen": 0,
+    "setTimeout": 8,
+    "setInterval": 0,
+    "rAF": 3,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 1,
+    "MutationObserver": 1,
+    "disconnectedCallback": 3,
+    "pagehide": 0,
+    "pageshow": 2,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 0,
+    "backdrop": 0,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)"
+   ]
+  },
+  {
+   "page": "/kisaca-biz",
+   "ceTags": [
+    "n1-kisaca-biz-v1"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-kisaca-biz-v1/n1-kisaca-biz-v1.js",
+   "v14File": null,
+   "modules": [
+    "n1-kisaca-biz-v1.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 1,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 4,
+    "masaustu": 6,
+    "tablet_yatay": 5
+   },
+   "domNodes": 740,
+   "heightPx": 6474,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 18,
+     "imageMB": 0.16,
+     "totalMB": 3.88,
+     "requests": 209
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 17,
+     "imageMB": 0.13,
+     "totalMB": 5.25,
+     "requests": 215
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 13,
+     "imageMB": 0.13,
+     "totalMB": 1.95,
+     "requests": 191
+    }
+   },
+   "static": {
+    "bytes": 61567,
+    "gsap": 12,
+    "scrollTrigger": 11,
+    "addEventListener": 9,
+    "removeEventListener": 6,
+    "n1Listen": 8,
+    "setTimeout": 4,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 1,
+    "MutationObserver": 0,
+    "disconnectedCallback": 2,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 4,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "CSS filter ×4 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/kreatif-produksiyon",
+   "ceTags": [
+    "n1-kreatif-produksiyon-v23"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-kreatif-produksiyon-v23/n1-kreatif-produksiyon-v23.js",
+   "v14File": "wix-mobile-performance-v14/pages/wix-kreatif-produksiyon-v24/n1-kreatif-produksiyon-v24.js",
+   "modules": [
+    "n1-kreatif-produksiyon-v23.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "kp-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_8388dde9e33c490594eb19d4bbcf4eee/720p/mp4/file.mp4",
+     "resolution": "1280x720",
+     "durationS": 34.6,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "kp-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_2821f1bb754740f9bc6deb51f052cf8c/480p/mp4/file.mp4",
+     "resolution": "854x480",
+     "durationS": 30.2,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "kp-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_2821f1bb754740f9bc6deb51f052cf8c/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 30.2,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 20,
+    "lazy": 18,
+    "withWH": 0,
+    "oversized": [
+     {
+      "src": "v1/fit/w_640,h_1920,q_82,enc_auto/1n-kreatif-produksiyon.jpg",
+      "natural": "640x426",
+      "display": "126x84"
+     },
+     {
+      "src": "v1/fit/w_640,h_1920,q_82,enc_auto/1n-kreatif-produksiyon.jpg",
+      "natural": "640x960",
+      "display": "126x84"
+     },
+     {
+      "src": "v1/fit/w_640,h_1920,q_82,enc_auto/1n-kreatif-produksiyon.jpg",
+      "natural": "640x960",
+      "display": "126x84"
+     },
+     {
+      "src": "v1/fit/w_640,h_1920,q_82,enc_auto/1n-kreatif-produksiyon.jpg",
+      "natural": "640x511",
+      "display": "126x84"
+     },
+     {
+      "src": "v1/fit/w_640,h_1920,q_82,enc_auto/1n-kreatif-produksiyon.jpg",
+      "natural": "640x427",
+      "display": "126x84"
+     },
+     {
+      "src": "v1/fit/w_640,h_1920,q_82,enc_auto/1n-kreatif-produksiyon.jpg",
+      "natural": "640x960",
+      "display": "126x84"
+     },
+     {
+      "src": "2.jpg/v1/fill/w_1280,h_720,q_80/kreatif-produksiyon-kare.jpg",
+      "natural": "1280x720",
+      "display": "313x131"
+     }
+    ]
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 9,
+    "masaustu": 11,
+    "tablet_yatay": 11
+   },
+   "domNodes": 1095,
+   "heightPx": 9266,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 35,
+     "imageMB": 1.76,
+     "totalMB": 5.49,
+     "requests": 226
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 34,
+     "imageMB": 1.76,
+     "totalMB": 6.54,
+     "requests": 234
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 28,
+     "imageMB": 1.1,
+     "totalMB": 2.93,
+     "requests": 206
+    }
+   },
+   "static": {
+    "bytes": 105406,
+    "gsap": 29,
+    "scrollTrigger": 16,
+    "addEventListener": 10,
+    "removeEventListener": 6,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 2,
+    "ResizeObserver": 2,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 2,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 6,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)",
+    "CSS filter ×6 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/e-ticaret-yonetimi",
+   "ceTags": [
+    "n1-e-ticaret-yonetimi-v23"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@997f951a4ae76ab2dd95440c4e8e597ffa682499/wix-global-stability-v13/pages/wix-e-ticaret-yonetimi-v24/n1-e-ticaret-yonetimi-v24.js",
+   "v14File": "wix-mobile-performance-v14/pages/wix-e-ticaret-yonetimi-v25/n1-e-ticaret-yonetimi-v25.js",
+   "modules": [
+    "n1-e-ticaret-yonetimi-v24.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "ec-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_3c7918f906c1478f9149099d6d398635/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 3.2,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "ec-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_382aee7841704e1c9e54539673ff9f63/480p/mp4/file.mp4",
+     "resolution": "720x900",
+     "durationS": 5,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "ec-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_efaf0298818c43b19c85c0c37bdb7f4a/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 5.6,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 18,
+    "lazy": 14,
+    "withWH": 0,
+    "oversized": [
+     {
+      "src": "ic.com/media/6dbf5e_736b08d9f4c148e4b78def3e47ecfd39~mv2.png",
+      "natural": "1672x941",
+      "display": "390x371"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_736b08d9f4c148e4b78def3e47ecfd39~mv2.png",
+      "natural": "1672x941",
+      "display": "390x371"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_736b08d9f4c148e4b78def3e47ecfd39~mv2.png",
+      "natural": "1672x941",
+      "display": "390x371"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_8ecaf4f6560a46adb6a404eb53575d3d~mv2.png",
+      "natural": "1254x1254",
+      "display": "138x184"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_135d1b54f3fa47bd96f2385aa7b50ec1~mv2.png",
+      "natural": "1122x1402",
+      "display": "72x90"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_49a60c059443481d8168a520ef283db5~mv2.png",
+      "natural": "1122x1402",
+      "display": "72x90"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_ec518ffa738d4a3889ed913a394eff77~mv2.png",
+      "natural": "1122x1402",
+      "display": "72x90"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_5c3c145608594d98aa7dc6e9cb2432d6~mv2.png",
+      "natural": "1122x1402",
+      "display": "72x90"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_74c7472360b748ee9824285904db863f~mv2.png",
+      "natural": "1122x1402",
+      "display": "72x90"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_5bd6bee681fd4cb18b5d7d26138df471~mv2.png",
+      "natural": "1122x1402",
+      "display": "72x90"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_adbb40898f2f46ceb5a8c2c9eafc7dae~mv2.png",
+      "natural": "1122x1402",
+      "display": "64x80"
+     },
+     {
+      "src": "ic.com/media/6dbf5e_599a31ec526143638ed02477072ab7aa~mv2.png",
+      "natural": "1122x1402",
+      "display": "72x90"
+     }
+    ]
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 15,
+    "masaustu": 22,
+    "tablet_yatay": 20
+   },
+   "domNodes": 801,
+   "heightPx": 10609,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 3,
+     "mediaMB": 2.59,
+     "imageRequests": 33,
+     "imageMB": 27.61,
+     "totalMB": 33.93,
+     "requests": 226
+    },
+    "tablet_yatay": {
+     "mediaRequests": 3,
+     "mediaMB": 2.59,
+     "imageRequests": 33,
+     "imageMB": 28.71,
+     "totalMB": 36.08,
+     "requests": 236
+    },
+    "masaustu": {
+     "mediaRequests": 3,
+     "mediaMB": 2.59,
+     "imageRequests": 29,
+     "imageMB": 28.66,
+     "totalMB": 33.09,
+     "requests": 211
+    }
+   },
+   "static": {
+    "bytes": 94324,
+    "gsap": 40,
+    "scrollTrigger": 29,
+    "addEventListener": 7,
+    "removeEventListener": 4,
+    "n1Listen": 8,
+    "setTimeout": 7,
+    "setInterval": 1,
+    "rAF": 2,
+    "IntersectionObserver": 6,
+    "ResizeObserver": 1,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 3,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 9,
+    "backdrop": 6,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)",
+    "setInterval ×1",
+    "CSS filter ×9 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×6"
+   ]
+  },
+  {
+   "page": "/sosyal-medya",
+   "ceTags": [
+    "n1-sosyal-medya-v27"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-sosyal-medya-v27/n1-sosyal-medya-v27.js",
+   "v14File": "wix-mobile-performance-v14/pages/wix-sosyal-medya-v28/n1-sosyal-medya-v28.js",
+   "modules": [
+    "n1-sosyal-medya-v27.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "sm-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_67c5c858b42a4ce3b0e76195a59c8b3e/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 38.7,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "sm-stg__img sm-stg__video is-on",
+     "src": "",
+     "resolution": null,
+     "durationS": 0,
+     "preload": "none",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": null,
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "sm-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_4892baa5590541faae6c24693b7fb00c/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 29.2,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "sm-video",
+     "src": "",
+     "resolution": null,
+     "durationS": 0,
+     "preload": "none",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": null,
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "sm-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_f14a9f803bc442838bfe159f0aa49e72/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 5,
+     "preload": "metadata",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 12,
+    "lazy": 11,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 4,
+    "masaustu": 13,
+    "tablet_yatay": 11
+   },
+   "domNodes": 738,
+   "heightPx": 10547,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 28,
+     "imageMB": 1.01,
+     "totalMB": 4.77,
+     "requests": 222
+    },
+    "tablet_yatay": {
+     "mediaRequests": 1,
+     "mediaMB": 2.7,
+     "imageRequests": 29,
+     "imageMB": 1.23,
+     "totalMB": 8.91,
+     "requests": 231
+    },
+    "masaustu": {
+     "mediaRequests": 1,
+     "mediaMB": 2.7,
+     "imageRequests": 27,
+     "imageMB": 0.82,
+     "totalMB": 5.39,
+     "requests": 208
+    }
+   },
+   "static": {
+    "bytes": 97418,
+    "gsap": 42,
+    "scrollTrigger": 30,
+    "addEventListener": 8,
+    "removeEventListener": 6,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 3,
+    "IntersectionObserver": 5,
+    "ResizeObserver": 2,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 4,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 6,
+    "backdrop": 6,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)",
+    "CSS filter ×6 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×6"
+   ]
+  },
+  {
+   "page": "/reklam-yonetimi",
+   "ceTags": [
+    "n1-reklam-yonetimi-v23"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-reklam-yonetimi-v23/n1-reklam-yonetimi-v23.js",
+   "v14File": "wix-mobile-performance-v14/pages/wix-reklam-yonetimi-v24/n1-reklam-yonetimi-v24.js",
+   "modules": [
+    "n1-reklam-yonetimi-v23.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "ry-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/480p/mp4/file.mp4",
+     "resolution": "854x480",
+     "durationS": 1.8,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "ry-dec__video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_3855bf1db1384a9c961782c650b3686d/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 5,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "ry-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/480p/mp4/file.mp4",
+     "resolution": "854x480",
+     "durationS": 1.8,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "ry-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/720p/mp4/file.mp4",
+     "resolution": "1280x720",
+     "durationS": 1.8,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    },
+    {
+     "class": "ry-video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/720p/mp4/file.mp4",
+     "resolution": "1280x720",
+     "durationS": 1.8,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 9,
+    "lazy": 8,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 8,
+    "masaustu": 17,
+    "tablet_yatay": 15
+   },
+   "domNodes": 825,
+   "heightPx": 14781,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 2,
+     "mediaMB": 0.63,
+     "imageRequests": 24,
+     "imageMB": 0.77,
+     "totalMB": 5.36,
+     "requests": 222
+    },
+    "tablet_yatay": {
+     "mediaRequests": 2,
+     "mediaMB": 1.11,
+     "imageRequests": 23,
+     "imageMB": 0.96,
+     "totalMB": 6.89,
+     "requests": 229
+    },
+    "masaustu": {
+     "mediaRequests": 2,
+     "mediaMB": 0.83,
+     "imageRequests": 22,
+     "imageMB": 0.72,
+     "totalMB": 3.43,
+     "requests": 204
+    }
+   },
+   "static": {
+    "bytes": 107989,
+    "gsap": 49,
+    "scrollTrigger": 34,
+    "addEventListener": 8,
+    "removeEventListener": 5,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 4,
+    "ResizeObserver": 1,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 4,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 11,
+    "backdrop": 6,
+    "infiniteCSS": 1
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)",
+    "CSS filter ×11 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×6"
+   ]
+  },
+  {
+   "page": "/ui-ux-tasarim",
+   "ceTags": [
+    "n1-uiux-tasarim-v28"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d33a9ffc77cd85f466fcc439518d2b74d639abda/wix-global-stability-v13/pages/wix-uiux-tasarim-v29/n1-uiux-tasarim-v29.js",
+   "v14File": "wix-mobile-performance-v14/pages/wix-uiux-tasarim-v30/n1-uiux-tasarim-v30.js",
+   "modules": [
+    "n1-uiux-tasarim-v29.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "ux-feel__video",
+     "src": "https://video.wixstatic.com/video/6dbf5e_54840d234c7d41c9b1983c73164e3050/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 5.6,
+     "preload": "metadata",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 17,
+    "lazy": 10,
+    "withWH": 0,
+    "oversized": [
+     {
+      "src": "ic.com/media/6dbf5e_8395ead1385a4780a59061b0273629ad~mv2.png",
+      "natural": "1122x1402",
+      "display": "287x359"
+     }
+    ]
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 4,
+    "masaustu": 8,
+    "tablet_yatay": 7
+   },
+   "domNodes": 989,
+   "heightPx": 16549,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 1,
+     "mediaMB": 0.0,
+     "imageRequests": 33,
+     "imageMB": 3.15,
+     "totalMB": 6.92,
+     "requests": 230
+    },
+    "tablet_yatay": {
+     "mediaRequests": 1,
+     "mediaMB": 0.0,
+     "imageRequests": 26,
+     "imageMB": 2.94,
+     "totalMB": 7.76,
+     "requests": 230
+    },
+    "masaustu": {
+     "mediaRequests": 1,
+     "mediaMB": 0.0,
+     "imageRequests": 23,
+     "imageMB": 2.76,
+     "totalMB": 4.64,
+     "requests": 206
+    }
+   },
+   "static": {
+    "bytes": 130896,
+    "gsap": 35,
+    "scrollTrigger": 24,
+    "addEventListener": 6,
+    "removeEventListener": 3,
+    "n1Listen": 8,
+    "setTimeout": 10,
+    "setInterval": 0,
+    "rAF": 4,
+    "IntersectionObserver": 3,
+    "ResizeObserver": 1,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 2,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 7,
+    "backdrop": 4,
+    "infiniteCSS": 1
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)",
+    "CSS filter ×7 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/yapay-zeka",
+   "ceTags": [
+    "n1-yapay-zeka-v2"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yapay-zeka-v2/n1-yapay-zeka-v2.js",
+   "v14File": "wix-mobile-performance-v14/pages/wix-yapay-zeka-v3/n1-yapay-zeka-v3.js",
+   "modules": [
+    "n1-yapay-zeka-v2.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "",
+     "src": "https://video.wixstatic.com/video/6dbf5e_8da46d06b07a4784a27a413446f081f9/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 30,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "",
+     "src": "https://video.wixstatic.com/video/6dbf5e_e177591c89e44710be97a52b3e6284f1/1080p/mp4/file.mp4",
+     "resolution": "1080x1080",
+     "durationS": 15,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "",
+     "src": "https://video.wixstatic.com/video/6dbf5e_6c47eb3e5ef6409fb3285c7623d6054f/1080p/mp4/file.mp4",
+     "resolution": "608x1080",
+     "durationS": 15,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 13,
+    "lazy": 13,
+    "withWH": 12,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 13,
+    "masaustu": 22,
+    "tablet_yatay": 21
+   },
+   "domNodes": 885,
+   "heightPx": 15536,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 2,
+     "mediaMB": 11.46,
+     "imageRequests": 23,
+     "imageMB": 0.54,
+     "totalMB": 15.77,
+     "requests": 218
+    },
+    "tablet_yatay": {
+     "mediaRequests": 2,
+     "mediaMB": 11.46,
+     "imageRequests": 24,
+     "imageMB": 0.96,
+     "totalMB": 17.42,
+     "requests": 229
+    },
+    "masaustu": {
+     "mediaRequests": 2,
+     "mediaMB": 11.46,
+     "imageRequests": 21,
+     "imageMB": 0.66,
+     "totalMB": 14.0,
+     "requests": 206
+    }
+   },
+   "static": {
+    "bytes": 110922,
+    "gsap": 45,
+    "scrollTrigger": 36,
+    "addEventListener": 6,
+    "removeEventListener": 3,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 2,
+    "ResizeObserver": 1,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 2,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 8,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)",
+    "CSS filter ×8 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/uygulama-gelistirme",
+   "ceTags": [
+    "n1-uygulama-gelistirme-v2"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-uygulama-gelistirme-v2/n1-uygulama-gelistirme-v2.js",
+   "v14File": "wix-mobile-performance-v14/pages/wix-uygulama-gelistirme-v3/n1-uygulama-gelistirme-v3.js",
+   "modules": [
+    "n1-uygulama-gelistirme-v2.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "",
+     "src": "https://video.wixstatic.com/video/6dbf5e_8957dee5671c411da297848f5ee956d0/720p/mp4/file.mp4",
+     "resolution": "1280x720",
+     "durationS": 7,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "",
+     "src": "https://video.wixstatic.com/video/6dbf5e_58f4d602044e4af1972b2898b5a5694a/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 6.7,
+     "preload": "auto",
+     "autoplay": false,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "",
+     "src": "https://video.wixstatic.com/video/6dbf5e_23811760080b45b7aa77526f31898777/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 11.4,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    },
+    {
+     "class": "",
+     "src": "https://video.wixstatic.com/video/6dbf5e_cbd02cfab44141d6838302d4f3b915c7/720p/mp4/file.mp4",
+     "resolution": "720x1280",
+     "durationS": 5.7,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 7,
+    "lazy": 7,
+    "withWH": 6,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 2,
+    "masaustu": 4,
+    "tablet_yatay": 4
+   },
+   "domNodes": 1187,
+   "heightPx": 18613,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 4,
+     "mediaMB": 5.7,
+     "imageRequests": 23,
+     "imageMB": 0.75,
+     "totalMB": 10.23,
+     "requests": 224
+    },
+    "tablet_yatay": {
+     "mediaRequests": 4,
+     "mediaMB": 5.7,
+     "imageRequests": 22,
+     "imageMB": 0.73,
+     "totalMB": 11.26,
+     "requests": 230
+    },
+    "masaustu": {
+     "mediaRequests": 4,
+     "mediaMB": 5.7,
+     "imageRequests": 19,
+     "imageMB": 0.59,
+     "totalMB": 8.17,
+     "requests": 205
+    }
+   },
+   "static": {
+    "bytes": 184097,
+    "gsap": 39,
+    "scrollTrigger": 31,
+    "addEventListener": 11,
+    "removeEventListener": 8,
+    "n1Listen": 8,
+    "setTimeout": 10,
+    "setInterval": 0,
+    "rAF": 3,
+    "IntersectionObserver": 2,
+    "ResizeObserver": 2,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 2,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 5,
+    "backdrop": 4,
+    "infiniteCSS": 2
+   },
+   "bfcacheRisks": [
+    "pagehide’da video kaynağı bırakılmıyor (canlı)",
+    "CSS filter ×5 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/markalar",
+   "ceTags": [
+    "n1-markalar-v11"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-markalar-v1/n1-markalar-v11.js",
+   "v14File": null,
+   "modules": [
+    "n1-markalar-v11.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 1,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 2,
+    "masaustu": 3,
+    "tablet_yatay": 3
+   },
+   "domNodes": 1081,
+   "heightPx": 8231,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 38,
+     "imageMB": 0.16,
+     "totalMB": 3.8,
+     "requests": 225
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 36,
+     "imageMB": 0.13,
+     "totalMB": 4.98,
+     "requests": 237
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 33,
+     "imageMB": 0.13,
+     "totalMB": 2.03,
+     "requests": 211
+    }
+   },
+   "static": {
+    "bytes": 237857,
+    "gsap": 13,
+    "scrollTrigger": 3,
+    "addEventListener": 5,
+    "removeEventListener": 2,
+    "n1Listen": 9,
+    "setTimeout": 9,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 2,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 4,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 5,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "CSS filter ×5 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/reklam-ajansi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 20,
+    "lazy": 0,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 904,
+   "heightPx": 5635,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 33,
+     "imageMB": 0.07,
+     "totalMB": 3.57,
+     "requests": 214
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 49,
+     "imageMB": 0.14,
+     "totalMB": 5.07,
+     "requests": 238
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 56,
+     "imageMB": 0.1,
+     "totalMB": 2.08,
+     "requests": 231
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/1n",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 29,
+    "lazy": 20,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 802,
+   "heightPx": 2208,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 51,
+     "imageMB": 0.23,
+     "totalMB": 3.28,
+     "requests": 231
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 119,
+     "imageMB": 0.51,
+     "totalMB": 3.56,
+     "requests": 298
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 116,
+     "imageMB": 0.35,
+     "totalMB": 2.28,
+     "requests": 291
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/iletisim",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 9,
+    "lazy": 0,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 428,
+   "heightPx": 1676,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.04,
+     "totalMB": 2.52,
+     "requests": 219
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.04,
+     "totalMB": 2.53,
+     "requests": 219
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 25,
+     "imageMB": 0.03,
+     "totalMB": 1.94,
+     "requests": 216
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/kvkk-aydinlatma-metni",
+   "ceTags": [
+    "n1-kvkk-aydinlatma-v1"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js",
+   "v14File": null,
+   "modules": [
+    "n1-yasal-sayfalar-v1.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 1,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 714,
+   "heightPx": 12020,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 12,
+     "imageMB": 0.03,
+     "totalMB": 3.61,
+     "requests": 207
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 16,
+     "imageMB": 0.13,
+     "totalMB": 5.1,
+     "requests": 220
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 13,
+     "imageMB": 0.13,
+     "totalMB": 1.98,
+     "requests": 193
+    }
+   },
+   "static": {
+    "bytes": 113919,
+    "gsap": 0,
+    "scrollTrigger": 0,
+    "addEventListener": 5,
+    "removeEventListener": 3,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 0,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 4,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "CSS filter ×4 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/cerez-politikasi",
+   "ceTags": [
+    "n1-cerez-politikasi-v1"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js",
+   "v14File": null,
+   "modules": [
+    "n1-yasal-sayfalar-v1.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 1,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 621,
+   "heightPx": 7900,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 13,
+     "imageMB": 0.03,
+     "totalMB": 3.8,
+     "requests": 208
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 16,
+     "imageMB": 0.13,
+     "totalMB": 5.1,
+     "requests": 221
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 13,
+     "imageMB": 0.13,
+     "totalMB": 1.98,
+     "requests": 194
+    }
+   },
+   "static": {
+    "bytes": 113919,
+    "gsap": 0,
+    "scrollTrigger": 0,
+    "addEventListener": 5,
+    "removeEventListener": 3,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 0,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 4,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "CSS filter ×4 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/kullanim-kosullari",
+   "ceTags": [
+    "n1-kullanim-kosullari-v1"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js",
+   "v14File": null,
+   "modules": [
+    "n1-yasal-sayfalar-v1.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 1,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 663,
+   "heightPx": 8875,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 12,
+     "imageMB": 0.03,
+     "totalMB": 3.62,
+     "requests": 213
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 16,
+     "imageMB": 0.13,
+     "totalMB": 4.93,
+     "requests": 226
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 14,
+     "imageMB": 0.13,
+     "totalMB": 1.98,
+     "requests": 193
+    }
+   },
+   "static": {
+    "bytes": 113919,
+    "gsap": 0,
+    "scrollTrigger": 0,
+    "addEventListener": 5,
+    "removeEventListener": 3,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 0,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 4,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "CSS filter ×4 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/gizlilik",
+   "ceTags": [
+    "n1-gizlilik-politikasi-v1"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js",
+   "v14File": null,
+   "modules": [
+    "n1-yasal-sayfalar-v1.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 1,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 667,
+   "heightPx": 9901,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 12,
+     "imageMB": 0.03,
+     "totalMB": 3.61,
+     "requests": 213
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 17,
+     "imageMB": 0.13,
+     "totalMB": 4.92,
+     "requests": 225
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 14,
+     "imageMB": 0.13,
+     "totalMB": 1.96,
+     "requests": 191
+    }
+   },
+   "static": {
+    "bytes": 113919,
+    "gsap": 0,
+    "scrollTrigger": 0,
+    "addEventListener": 5,
+    "removeEventListener": 3,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 0,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 4,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "CSS filter ×4 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/veri-sahibi-basvuru-formu",
+   "ceTags": [
+    "n1-veri-sahibi-basvuru-v1"
+   ],
+   "wixNative": false,
+   "serverUrlLive": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js",
+   "v14File": null,
+   "modules": [
+    "n1-yasal-sayfalar-v1.js",
+    "n1-site-markup-v12.js",
+    "n1-header-v12.js",
+    "n1-floating-controls-v632.js",
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 1,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 847,
+   "heightPx": 12480,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 14,
+     "imageMB": 0.03,
+     "totalMB": 3.6,
+     "requests": 204
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 17,
+     "imageMB": 0.13,
+     "totalMB": 5.08,
+     "requests": 217
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 15,
+     "imageMB": 0.13,
+     "totalMB": 1.96,
+     "requests": 193
+    }
+   },
+   "static": {
+    "bytes": 113919,
+    "gsap": 0,
+    "scrollTrigger": 0,
+    "addEventListener": 5,
+    "removeEventListener": 3,
+    "n1Listen": 8,
+    "setTimeout": 5,
+    "setInterval": 0,
+    "rAF": 2,
+    "IntersectionObserver": 0,
+    "ResizeObserver": 0,
+    "MutationObserver": 0,
+    "disconnectedCallback": 1,
+    "pagehide": 0,
+    "pageshow": 3,
+    "visibilitychange": 0,
+    "canvas": 0,
+    "fetch": 0,
+    "filterCSS": 4,
+    "backdrop": 4,
+    "infiniteCSS": 0
+   },
+   "bfcacheRisks": [
+    "CSS filter ×4 (WebKit filter→none geçişi V1.3’te düzeltildi; yeni filtre eklenmedi)",
+    "backdrop-filter ×4"
+   ]
+  },
+  {
+   "page": "/dijital-pazarlama",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 11,
+    "lazy": 2,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 423,
+   "heightPx": 1955,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 29,
+     "imageMB": 0.2,
+     "totalMB": 3.43,
+     "requests": 209
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 29,
+     "imageMB": 0.41,
+     "totalMB": 3.83,
+     "requests": 211
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 26,
+     "imageMB": 0.27,
+     "totalMB": 2.19,
+     "requests": 200
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/google-reklam-yonetimi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 11,
+    "lazy": 2,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 477,
+   "heightPx": 3466,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 29,
+     "imageMB": 0.07,
+     "totalMB": 3.08,
+     "requests": 205
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 29,
+     "imageMB": 0.06,
+     "totalMB": 3.27,
+     "requests": 206
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.04,
+     "totalMB": 1.74,
+     "requests": 196
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/facebook-reklam-yonetimi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 11,
+    "lazy": 2,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 496,
+   "heightPx": 3784,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 29,
+     "imageMB": 0.06,
+     "totalMB": 3.25,
+     "requests": 208
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 29,
+     "imageMB": 0.06,
+     "totalMB": 3.26,
+     "requests": 207
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 26,
+     "imageMB": 0.05,
+     "totalMB": 1.75,
+     "requests": 197
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/instagram-reklam-yonetimi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 12,
+    "lazy": 3,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 458,
+   "heightPx": 3553,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 31,
+     "imageMB": 0.11,
+     "totalMB": 3.12,
+     "requests": 207
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 31,
+     "imageMB": 0.11,
+     "totalMB": 3.13,
+     "requests": 207
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 28,
+     "imageMB": 0.08,
+     "totalMB": 1.78,
+     "requests": 199
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/tiktok-reklam-yonetimi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 10,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 392,
+   "heightPx": 1283,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.05,
+     "totalMB": 2.5,
+     "requests": 202
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.06,
+     "totalMB": 2.52,
+     "requests": 201
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 24,
+     "imageMB": 0.04,
+     "totalMB": 1.92,
+     "requests": 194
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/cgi-reklamlar",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "X9nqm0",
+     "src": "https://video.wixstatic.com/video/6dbf5e_cfbfccf1942d432dbca8d1e2055a2977/360p/mp4/file.mp4",
+     "resolution": "640x196",
+     "durationS": 9.4,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "X9nqm0",
+     "src": "https://video.wixstatic.com/video/6dbf5e_cfbfccf1942d432dbca8d1e2055a2977/720p/mp4/file.mp4",
+     "resolution": "1800x550",
+     "durationS": 9.4,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 10,
+    "lazy": 0,
+    "withWH": 1,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 480,
+   "heightPx": 1975,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 1,
+     "mediaMB": 0.65,
+     "imageRequests": 28,
+     "imageMB": 0.05,
+     "totalMB": 3.24,
+     "requests": 209
+    },
+    "tablet_yatay": {
+     "mediaRequests": 1,
+     "mediaMB": 3.47,
+     "imageRequests": 28,
+     "imageMB": 0.08,
+     "totalMB": 6.1,
+     "requests": 208
+    },
+    "masaustu": {
+     "mediaRequests": 1,
+     "mediaMB": 3.47,
+     "imageRequests": 26,
+     "imageMB": 0.08,
+     "totalMB": 5.52,
+     "requests": 205
+    }
+   },
+   "static": null,
+   "bfcacheRisks": [
+    "Wix yerel video (kod kapsamı dışında, Wix Editor’de yönetilir)"
+   ]
+  },
+  {
+   "page": "/marka-danismanligi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "X9nqm0",
+     "src": "https://video.wixstatic.com/video/6dbf5e_2821f1bb754740f9bc6deb51f052cf8c/480p/mp4/file.mp4",
+     "resolution": "854x480",
+     "durationS": 30.2,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "X9nqm0",
+     "src": "https://video.wixstatic.com/video/6dbf5e_2821f1bb754740f9bc6deb51f052cf8c/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 30.2,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 10,
+    "lazy": 0,
+    "withWH": 1,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 465,
+   "heightPx": 1926,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 1,
+     "mediaMB": 3.7,
+     "imageRequests": 27,
+     "imageMB": 0.04,
+     "totalMB": 6.41,
+     "requests": 207
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.04,
+     "totalMB": 2.54,
+     "requests": 205
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 34,
+     "imageMB": 0.03,
+     "totalMB": 1.76,
+     "requests": 209
+    }
+   },
+   "static": null,
+   "bfcacheRisks": [
+    "Wix yerel video (kod kapsamı dışında, Wix Editor’de yönetilir)"
+   ]
+  },
+  {
+   "page": "/online-ticaret-yonetimi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 10,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 452,
+   "heightPx": 2322,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.05,
+     "totalMB": 2.51,
+     "requests": 201
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.08,
+     "totalMB": 2.73,
+     "requests": 201
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 24,
+     "imageMB": 0.05,
+     "totalMB": 1.94,
+     "requests": 198
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/sosyal-medya-yonetimi",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 10,
+    "lazy": 1,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 376,
+   "heightPx": 1387,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.18,
+     "totalMB": 2.61,
+     "requests": 197
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 27,
+     "imageMB": 0.39,
+     "totalMB": 3.02,
+     "requests": 198
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 24,
+     "imageMB": 0.25,
+     "totalMB": 2.11,
+     "requests": 194
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  },
+  {
+   "page": "/web-tasarim-ve-yazilim-programlama",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [
+    {
+     "class": "X9nqm0",
+     "src": "https://video.wixstatic.com/video/6dbf5e_00e86850aa1c432c94388dd5b1622f8d/480p/mp4/file.mp4",
+     "resolution": "854x480",
+     "durationS": 17.8,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": true,
+     "onDesktopLive": false
+    },
+    {
+     "class": "X9nqm0",
+     "src": "https://video.wixstatic.com/video/6dbf5e_00e86850aa1c432c94388dd5b1622f8d/1080p/mp4/file.mp4",
+     "resolution": "1920x1080",
+     "durationS": 17.8,
+     "preload": "auto",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "codec": "H.264 (mp4)",
+     "onMobileLive": false,
+     "onDesktopLive": true
+    }
+   ],
+   "images": {
+    "count": 10,
+    "lazy": 0,
+    "withWH": 1,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 446,
+   "heightPx": 1669,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 1,
+     "mediaMB": 1.39,
+     "imageRequests": 26,
+     "imageMB": 0.05,
+     "totalMB": 4.12,
+     "requests": 206
+    },
+    "tablet_yatay": {
+     "mediaRequests": 1,
+     "mediaMB": 2.34,
+     "imageRequests": 27,
+     "imageMB": 0.14,
+     "totalMB": 4.98,
+     "requests": 204
+    },
+    "masaustu": {
+     "mediaRequests": 1,
+     "mediaMB": 4.15,
+     "imageRequests": 24,
+     "imageMB": 0.14,
+     "totalMB": 6.02,
+     "requests": 199
+    }
+   },
+   "static": null,
+   "bfcacheRisks": [
+    "Wix yerel video (kod kapsamı dışında, Wix Editor’de yönetilir)"
+   ]
+  },
+  {
+   "page": "/ucretsiz-analiz",
+   "ceTags": [],
+   "wixNative": true,
+   "serverUrlLive": null,
+   "v14File": null,
+   "modules": [
+    "n1-menu-close-v13.js"
+   ],
+   "videos": [],
+   "images": {
+    "count": 9,
+    "lazy": 0,
+    "withWH": 0,
+    "oversized": []
+   },
+   "scrollTriggersRuntime": {
+    "mobil": 0,
+    "masaustu": 0,
+    "tablet_yatay": 0
+   },
+   "domNodes": 389,
+   "heightPx": 1501,
+   "netLive": {
+    "mobil": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 25,
+     "imageMB": 0.04,
+     "totalMB": 2.54,
+     "requests": 203
+    },
+    "tablet_yatay": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 25,
+     "imageMB": 0.03,
+     "totalMB": 2.54,
+     "requests": 203
+    },
+    "masaustu": {
+     "mediaRequests": 0,
+     "mediaMB": 0.0,
+     "imageRequests": 22,
+     "imageMB": 0.03,
+     "totalMB": 1.77,
+     "requests": 197
+    }
+   },
+   "static": null,
+   "bfcacheRisks": []
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.waitForTimeout: Target page, context or browser has been closed
+    at /home/user/1n-ronin-assets/wix-mobile-performance-v14/tests/accept14-sim.js:21:10 {
+  log: []
+}
+
+Node.js v22.23.5
+ rev 6
+23:04:58 durum 1.1 prep / rev 8
+23:05:01 durum 1.1 home / rev 9
+23:05:13 durum 1.1 nav / rev 10
+23:05:18 durum 1.1 returned / rev 11
+23:05:28 durum 2.1 prep / rev 13
+23:05:30 durum 2.1 home / rev 14
+23:05:44 durum 2.1 page /e-ticaret-yonetimi rev 16
+23:06:10 durum 2.1 back /e-ticaret-yonetimi rev 17
+23:06:12 durum 2.1 returned / rev 18
+23:06:21 durum 3.1 prep / rev 20
+23:06:24 durum 3.1 home / rev 21
+23:06:34 durum 3.1 nav / rev 22
+23:06:37 durum 3.1 returned / rev 23
+23:06:46 durum 4.1 prep / rev 25
+23:06:49 durum 4.1 home / rev 26
+23:06:58 durum 4.1 nav / rev 27
+23:07:00 durum 4.1 page /sosyal-medya rev 28
+23:07:26 durum 4.1 back /sosyal-medya rev 29
+23:07:28 durum 4.1 returned / rev 30
+23:07:37 durum 5.1 prep / rev 32
+23:07:40 durum 5.1 home / rev 33
+23:07:50 durum 5.1 nav / rev 34
+23:07:54 durum 5.1 returned / rev 35
+23:08:05 durum 6.1 home / rev 38
+23:08:18 durum 6.1 page /reklam-yonetimi rev 40
+23:08:49 durum 6.1 back /reklam-yonetimi rev 41
+23:08:51 durum 6.1 returned / rev 42
+23:09:00 durum 7.1 prep / rev 44
+23:09:03 durum 7.1 home / rev 45
+23:09:18 durum 7.1 returned / rev 47
+23:09:28 durum 8.1 prep / rev 49
+23:09:31 durum 8.1 home / rev 50
+23:09:42 durum 8.1 nav / rev 51
+23:09:45 durum 8.1 page /ui-ux-tasarim rev 52
+23:10:20 durum 8.1 back /ui-ux-tasarim rev 53
+23:10:23 durum 8.1 returned / rev 54
+23:10:33 durum 9.1 prep / rev 56
+23:10:34 durum 9.1 home / rev 57
+23:10:45 durum 9.1 nav / rev 58
+23:10:49 durum 9.1 returned / rev 59
+23:10:58 durum 10.1 prep / rev 61
+23:11:00 durum 10.1 home / rev 62
+23:11:12 durum 10.1 nav / rev 63
+23:11:14 durum 10.1 page /yapay-zeka rev 64
+23:11:49 durum 10.1 back /yapay-zeka rev 65
+23:11:51 durum 10.1 returned / rev 66
+23:12:00 durum 11.1 prep / rev 68
+23:12:03 durum 11.1 home / rev 69
+23:12:16 durum 11.1 returned / rev 71
+23:12:25 durum 12.1 prep / rev 73
+23:12:28 durum 12.1 home / rev 74
+23:12:40 durum 12.1 page /uygulama-gelistirme rev 76
+23:13:18 durum 12.1 back /uygulama-gelistirme rev 77
+23:13:20 durum 12.1 returned / rev 78
+23:13:29 durum 13.1 prep / rev 80
+23:13:32 durum 13.1 home / rev 81
+23:13:46 durum 13.1 nav / rev 82
+23:13:47 durum 13.1 returned / rev 83
+23:13:56 durum 14.1 done / rev 85
+23:13:56 bitti
+<!-- Playwright webkit benzetimi (iPhone değil), 2026-11-27T23:13:57.969Z · bağlantıdan bitişe 9.9 dk · belge 54 · anahtar değişimi 54 · V1.4 yönlendirme {"wix-mobile-performance-v14/acceptance/n1-accept-v14.js":54,"wix-mobile-performance-v14/home/n1-site-wix-v659.js":29,"wix-mobile-performance-v14/site/n1-site-markup-v14.js":29,"wix-mobile-performance-v14/home/n1-video-m5-v14.js":29,"wix-mobile-performance-v14/pages/wix-kreatif-produksiyon-v24/n1-kreatif-produksiyon-v24.js":1,"wix-mobile-performance-v14/media/stills/kreatif-produksiyon/kreatif-monitor-1280.webp":1,"wix-mobile-performance-v14/pages/wix-e-ticaret-yonetimi-v25/n1-e-ticaret-yonetimi-v25.js":1,"wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-store-720.webp":1,"wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-trio-720.webp":1,"wix-mobile-performance-v14/pages/wix-sosyal-medya-v28/n1-sosyal-medya-v28.js":1,"wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-strateji-720.webp":1,"wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-hareket-1280.webp":1,"wix-mobile-performance-v14/pages/wix-reklam-yonetimi-v24/n1-reklam-yonetimi-v24.js":1,"wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-karar-1280.webp":1,"wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-manifesto-1280.webp":1,"wix-mobile-performance-v14/pages/wix-uiux-tasarim-v30/n1-uiux-tasarim-v30.js":1,"wix-mobile-performance-v14/media/stills/ui-ux-tasarim/uiux-feel-720.webp":1,"wix-mobile-performance-v14/pages/wix-yapay-zeka-v3/n1-yapay-zeka-v3.js":1,"wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-gen-1080.webp":1,"wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-story-608.webp":1,"wix-mobile-performance-v14/pages/wix-uygulama-gelistirme-v3/n1-uygulama-gelistirme-v3.js":1,"wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-web-720.webp":1,"wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-motion-720.webp":1,"wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-screens-720.webp":1} · playwright crash 0 -->
+
+# 1N V1.4 kabul testi — sonuç raporu
+Betik 14.0.0 · runId rmwzl8yaw1ws8y · rapor 2026-11-27T23:13:57.955Z
+Cihaz: Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7 Mobile/15E148 Safari/604.1 · ekran 390x844@3
+Seçenekler: {"vars":["P"],"pages":["/kreatif-produksiyon","/e-ticaret-yonetimi","/sosyal-medya","/reklam-yonetimi","/ui-ux-tasarim","/yapay-zeka","/uygulama-gelistirme"],"scen":["n","e1000"],"rep":1} · plan adımı 14 · deneme kaydı 14 (benzersiz attemptId)
+Video ön kontrolü: OTOMATİK OYNATMA ÇALIŞIYOR · ronin-m5-film-2x.mp4 1120x1504 rs4 ns1
+Sınıflar: ÇÖKME ADAYI = test beklemiyorken sayfa yeniden yüklendi (Safari çökme sonrası yeniden yükleme YA DA elle yeniden yükleme; ayırt edilemez). BFCache dönüşü çökme sayılmaz. Wix ATS yeniden yüklemesi ayrı sayılır.
+
+## Varyant özeti (yalnız 1. denemeler; ek denemeler ayrı sütunda)
+| Varyant | Plan adımı | Geçerli 1. deneme | ÇÖKME ADAYI | Belirsiz yeniden yükleme | Test kaynaklı sorun (beklenmeyen/yanlış geçmiş/zaman aşımı) | Ek deneme | Wix ATS yeniden yükleme | Video doğrulandı (ana sayfa) | Ronin (kaynak, çözünürlük) | Hizmet TTFB/DCL/bileşen (medyan ms) | 1N JS hatası |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| P · V1.4 üretim yapılandırması (stabilite kapalı, Ronin 2×, loader açık) | 14 | 14 | 0 | 0 | 0 | 0 | 11 | 13/14 | ronin-m5-film-2x.mp4 1120x1504 playing; ronin-m5-film.mp4 560x752 loading | – / 1755 / 3803 | 0 |
+
+## Sayfa × senaryo × varyant (1. denemeler: çökme adayı / geçerli)
+| Sayfa | Senaryo | P |
+|---|---|---|
+| /kreatif-produksiyon | normal (sona kadar kaydır + geri) | 0/1 |
+| /kreatif-produksiyon | erken geri 1 sn | 0/1 |
+| /e-ticaret-yonetimi | normal (sona kadar kaydır + geri) | 0/1 |
+| /e-ticaret-yonetimi | erken geri 1 sn | 0/1 |
+| /sosyal-medya | normal (sona kadar kaydır + geri) | 0/1 |
+| /sosyal-medya | erken geri 1 sn | 0/1 |
+| /reklam-yonetimi | normal (sona kadar kaydır + geri) | 0/1 |
+| /reklam-yonetimi | erken geri 1 sn | 0/1 |
+| /ui-ux-tasarim | normal (sona kadar kaydır + geri) | 0/1 |
+| /ui-ux-tasarim | erken geri 1 sn | 0/1 |
+| /yapay-zeka | normal (sona kadar kaydır + geri) | 0/1 |
+| /yapay-zeka | erken geri 1 sn | 0/1 |
+| /uygulama-gelistirme | normal (sona kadar kaydır + geri) | 0/1 |
+| /uygulama-gelistirme | erken geri 1 sn | 0/1 |
+
+## Süre
+Başlangıç 2026-11-27T23:04:10.664Z · son deneme bitişi 2026-11-27T23:13:55.924Z · **gerçek süre 9.8 dk**
+
+## V1.4 yapılandırma doğrulaması (normal senaryo, 1. denemeler)
+| Sayfa | Hafif profil | V1.4 kodu | Kaynaklı video / en çok | mp4 isteği | Kare (yüklenen/toplam, kırık) | Sonuç |
+|---|---|---|---|---|---|---|
+| /kreatif-produksiyon | evet | **HAYIR** | 1 / 1 | 2 | 1/1, 0 | **KALDI** |
+| /e-ticaret-yonetimi | evet | **HAYIR** | 1 / 1 | 14 | 2/2, 0 | **KALDI** |
+| /sosyal-medya | evet | **HAYIR** | 1 / 1 | 1 | 2/3, 0 | **KALDI** |
+| /reklam-yonetimi | evet | **HAYIR** | 1 / 1 | 20 | 2/2, 0 | **KALDI** |
+| /ui-ux-tasarim | evet | **HAYIR** | 0 / 0 | 0 | 1/1, 0 | **KALDI** |
+| /yapay-zeka | evet | **HAYIR** | 1 / 1 | 2 | 2/2, 0 | **KALDI** |
+| /uygulama-gelistirme | evet | **HAYIR** | 1 / 1 | 3 | 3/3, 0 | **KALDI** |
+
+Ana sayfa: video modülü v14 yüklü · ana sayfa v659 görülmedi · "Hikâyemizin Devamı" → /kisaca-biz · 14/14 ölçüm GEÇTİ
+
+## Sorunlu denemeler
+Yok.
+
+

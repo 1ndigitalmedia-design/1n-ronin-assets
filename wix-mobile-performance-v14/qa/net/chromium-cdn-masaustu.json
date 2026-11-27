@@ -1,0 +1,184 @@
+[
+ {
+  "page": "/",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 3,
+  "withSrc": 3,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_adf38ad771024db38e421a5a06f7e431/1080p",
+   "wix:6dbf5e_b462b5d736dc445c95fd65fbf22ad494/720p",
+   "wix:6dbf5e_5a010704bcc145c58b64ca6a10a08bef/1080p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 2,
+  "withSrc": 2,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_8388dde9e33c490594eb19d4bbcf4eee/720p",
+   "wix:6dbf5e_2821f1bb754740f9bc6deb51f052cf8c/1080p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 3,
+  "withSrc": 3,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_3c7918f906c1478f9149099d6d398635/720p",
+   "wix:6dbf5e_382aee7841704e1c9e54539673ff9f63/480p",
+   "wix:6dbf5e_efaf0298818c43b19c85c0c37bdb7f4a/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ },
+ {
+  "page": "/sosyal-medya",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 4,
+  "withSrc": 4,
+  "stills": [],
+  "playing": 1,
+  "media": [
+   "wix:6dbf5e_67c5c858b42a4ce3b0e76195a59c8b3e/720p",
+   "wix:6dbf5e_4892baa5590541faae6c24693b7fb00c/1080p",
+   "wix:6dbf5e_044b3674636a4813b20f3f7dd8a402fe/480p",
+   "wix:6dbf5e_f14a9f803bc442838bfe159f0aa49e72/1080p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 3,
+  "withSrc": 3,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_3855bf1db1384a9c961782c650b3686d/1080p",
+   "wix:6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 1,
+  "withSrc": 1,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_54840d234c7d41c9b1983c73164e3050/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ },
+ {
+  "page": "/yapay-zeka",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 3,
+  "withSrc": 3,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_8da46d06b07a4784a27a413446f081f9/720p",
+   "wix:6dbf5e_e177591c89e44710be97a52b3e6284f1/1080p",
+   "wix:6dbf5e_6c47eb3e5ef6409fb3285c7623d6054f/1080p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "br": "chromium",
+  "mode": "cdn",
+  "profile": "masaustu",
+  "lite": {
+   "anyCoarse": false,
+   "hoverNone": false,
+   "w": 1440
+  },
+  "videos": 4,
+  "withSrc": 4,
+  "stills": [],
+  "playing": 0,
+  "media": [
+   "wix:6dbf5e_8957dee5671c411da297848f5ee956d0/720p",
+   "wix:6dbf5e_58f4d602044e4af1972b2898b5a5694a/720p",
+   "wix:6dbf5e_23811760080b45b7aa77526f31898777/720p",
+   "wix:6dbf5e_cbd02cfab44141d6838302d4f3b915c7/720p"
+  ],
+  "errors": [],
+  "crash": 0,
+  "routed": 1
+ }
+]
