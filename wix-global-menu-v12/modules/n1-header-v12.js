@@ -2,7 +2,7 @@
  * n1-header — 1N Digital Media header (v12 · GLOBAL MENU V1.2; v6.48 tabanı)
  * v12: alt menülü başlık (Hizmetler, İnsan Kaynakları) tıklama/dokunma/Enter ile AÇILIR ve aynı başlığa tekrar
  *   basınca KAPANIR (v6.48'de ikinci basış kapatmıyordu). Fareyle üzerine gelince açılma yalnızca fare için; dokunmatik
- *   ekranda pointerenter tıklamayla çakışıp alt menüyü hemen geri kapatmaz. Tasarım, CSS, işaretleme ve diğer davranışlar
+ *   ekranda (hover:none / pointer:coarse) pointerenter hiç kullanılmaz; tıklama/dokunma ile çakışıp alt menüyü kapatmaz. Tasarım, CSS, işaretleme ve diğer davranışlar
  *   v6.48 ile birebir aynıdır.
  * v6.13: hafif cam etkili koyu butonlar; menü başlıklarında kısa ajans tanımları; "1N Digital Media" marka öğesi menünün altında.
  * v6.11'den farklar: küçük ve keskin köşeli logo; koyu, yarı saydam TEKLİF AL / MENU; menüde "1N Digital Media"
@@ -156,6 +156,9 @@ ${TAG} .n1h-btn:focus-visible,${TAG} .n1h-logo:focus-visible{outline:2px solid #
       }
     ]
   };
+  // v12: fareyle üzerine gelince açma yalnızca gerçekten hover yapabilen ince işaretçili cihazlarda (iPhone/iPad: kapalı;
+  // dokunuş sonrası tarayıcının ürettiği uyumluluk 'mouse' olayları alt menüyü kapatıp açmasın)
+  const N1H_CAN_HOVER = () => { try { return matchMedia('(hover: hover) and (pointer: fine)').matches; } catch (e) { return true; } };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
   class N1Header extends HTMLElement {
@@ -200,8 +203,8 @@ ${TAG} .n1h-btn:focus-visible,${TAG} .n1h-logo:focus-visible{outline:2px solid #
         if (e.target.closest('a')) this.close(false);
       });
       // fareyle ana başlık üzerine gelince kısa gecikmeyle alt menü açılır (çaprazdan geçişte titremesin)
-      this.items.forEach((it) => it.addEventListener('pointerenter', (e) => { if (e.pointerType && e.pointerType !== 'mouse') return; clearTimeout(this._ht); this._ht = setTimeout(() => { this._openSub(it.tagName === 'A' ? -1 : +it.dataset.i); if (this.sub >= 0) this._subBy = 'hover'; }, 90); }));
-      p.querySelector('.n1h-brand').addEventListener('pointerenter', (e) => { if (e.pointerType && e.pointerType !== 'mouse') return; clearTimeout(this._ht); this._ht = setTimeout(() => this._openSub(-1), 120); });
+      this.items.forEach((it) => it.addEventListener('pointerenter', (e) => { if ((e.pointerType && e.pointerType !== 'mouse') || !N1H_CAN_HOVER()) return; clearTimeout(this._ht); this._ht = setTimeout(() => { const was = this.sub; this._openSub(it.tagName === 'A' ? -1 : +it.dataset.i); if (this.sub >= 0 && this.sub !== was) this._subBy = 'hover'; }, 90); }));
+      p.querySelector('.n1h-brand').addEventListener('pointerenter', (e) => { if ((e.pointerType && e.pointerType !== 'mouse') || !N1H_CAN_HOVER()) return; clearTimeout(this._ht); this._ht = setTimeout(() => this._openSub(-1), 120); });
       p.addEventListener('keydown', (e) => {
         const it = e.target.closest('.n1h-item');
         if (it && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) {
