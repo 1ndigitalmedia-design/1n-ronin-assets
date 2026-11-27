@@ -16,6 +16,15 @@
 - Raporlar: V1.3_ISSUE_REPORT, ROOT_CAUSE_ANALYSIS, MENU_FIX_REPORT, LOADER_FIX_REPORT, MOBILE_STABILITY_REPORT, MOBILE_MEDIA_BENCHMARK, TEST_REPORT, PERFORMANCE_REPORT, DEPLOYMENT (iPhone/iPad kabul listesi dahil), ROLLBACK.
 - QA: `qa/` (betikler ve ham sonuçlar).
 
+### Eklendi — V1.3.2 · güvenilir mobil stres testi
+- `stress/n1-stress-v2.js` (`fca8623`) — tek denetleyici (sekme kirası), karşılaştır-ve-yaz monoton durum (rev), kuşak koruması (pagehide/pageshow), runId/stepId/attemptId/docId/tabId, idempotent deneme kayıtları, `location.replace` ile geçmiş büyümeden kurtarma, gezinme türüne dayalı sınıflandırma (çökme adayı / belirsiz / Wix ATS / beklenmeyen / yanlış geçmiş / zaman aşımı), video ön kontrolü ve iki örnekli oynatma doğrulaması, odaklı 48 adımlık plan (B, D, Ronin 2×, poster × Reklam, Kreatif × normal, erken geri × 3).
+- `wix-custom-code/TEST-SWITCH-v13.2-head.html` — `?n1t=stress2`; erken geri yalnız taze `navigate` yüklemede.
+- `stress/STRESS_V132_REPORT.md`, `stress/STRESS_TEST_V132.md`, `stress/results-v1.3.1/` (cihaz raporları değiştirilmeden + düzeltilmiş analiz).
+- Doğrulama (Playwright WebKit): zorla yeniden yükleme, yanlış geçmiş, beklenmeyen sayfa, eş zamanlı sekme, sekme kapanıp devam, BFCache, erken geri + ATS, Düşük Güç Modu benzetimi; mükerrer kayıt 0, rev monoton. CDN 11 × 20 = 220/220.
+
+### Bulundu — V1.3.1 stres testi geçersiz
+- Test denetleyicisi kusurları (eski BFCache belgelerinin zamanlayıcıları, durum üzerine yazma, büyüyen geçmiş, gezinme türüne bakmayan çökme etiketi): 151 mükerrer kayıt, 14 plan geriye düşüşü, 60 "OLASI ÇÖKME"nin 30'u gezinme. Ronin hiçbir ölçümde oynamadı (otomatik oynatma engelli) → video karşılaştırması geçersiz. 18 "reload" türü hizmet sayfası yeniden yüklemesi çökme adayı olarak kalır.
+
 ### Eklendi — V1.3.1 (canlı kurulumdan sonra) · mobil stres testi
 - `stress/n1-stress-v1.js` (`3a9eda9`) — fiziksel iPhone/iPad Safari için yarı otomatik stres testi: tek bağlantı (`?n1t=stress`), ana sayfa ↔ 7 hizmet sayfası, kademeli kaydırma, normal ve erken geri, varyantlar B/D/E/Ronin 2×/1,5×/1×/poster; localStorage'da çökme sonrası devam; kopyalanabilir/paylaşılabilir/indirilebilir rapor (MD + CSV). Bellek ölçmez (Safari desteklemez); çökme "olası" olarak çıkarılır.
 - `wix-custom-code/TEST-SWITCH-v13.1-head.html` — v13 ile uyumlu; stres durumunu localStorage'dan geri yükler, erken geri zamanlayıcısı ve 1N hata sayacı; stres modu yalnız ana sayfa + 7 hizmet sayfasında. Normal ziyaretçi: +1 localStorage okuması.

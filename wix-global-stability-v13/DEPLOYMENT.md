@@ -122,3 +122,10 @@ Fiziksel iPhone/iPad'de aralıklı çökmeyi yakalamak için. Ayrıntı: `stress
 3. iPhone'da Otomatik Kilit: Hiçbir Zaman; şarja tak; `https://www.reklam1n.com/?n1t=stress` → panelden varyantları seç → **Başlat**.
 4. Bitince **Rapor → Paylaş / Kopyala / İndir**; raporu bize ilet. Kapatmak için `?n1t=0`.
 Geri dönüş: test anahtarı içeriğini `TEST-SWITCH-v13-head.html` ile değiştir.
+
+## 8. V1.3.2 güvenilir mobil stres testi (V1.3.1 testinin yerine)
+V1.3.1 stres testi (`?n1t=stress`) test denetleyicisinin kusurları nedeniyle geçersiz (stress/STRESS_V132_REPORT.md). Kullanım: stress/STRESS_TEST_V132.md.
+1. `bash wix-global-stability-v13/wix-custom-code/verify-cdn-v13.sh` → `TAMAM` (11 adres).
+2. "1N - V1.3 Test Anahtarı (HEAD)" içeriğini **tamamen** `wix-custom-code/TEST-SWITCH-v13.2-head.html` ile değiştir (Tüm sayfalar · Head · en üstte). Yayınla.
+3. iPhone: Düşük Güç Modu KAPALI · Otomatik Kilit Hiçbir Zaman · şarjda · tek Safari sekmesi → `https://www.reklam1n.com/?n1t=stress2` → **1 · Video kontrolü** → **2 · Başlat** (varsayılan 48 adım).
+4. Rapor → Paylaş / İndir (.md + .csv) → bize ilet. Çıkış: `?n1t=0`.
