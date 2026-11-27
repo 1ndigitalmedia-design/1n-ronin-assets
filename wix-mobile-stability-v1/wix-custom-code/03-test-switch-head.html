@@ -1,0 +1,7 @@
+<!-- 1N - V1.1 Test Anahtarı (HEAD) · Tüm sayfalar · Head · Her yeni sayfada yükle
+     Yalnızca ?n1v11=1 ile açan cihazda (aynı sekme boyunca) V1.1 çalışır. ?n1v11=0 kapatır. Normal ziyaretçi: hiçbir şey değişmez. -->
+<script>
+(function(){try{var m=/[?&]n1v11=([01])\b/.exec(location.search);
+if(m){if(m[1]==='1')sessionStorage.setItem('n1-v11','1');else sessionStorage.removeItem('n1-v11');}
+if(sessionStorage.getItem('n1-v11')==='1'){window.__n1V11=true;window.__n1Nav=window.__n1Nav||{pending:'1.0.3'};}}catch(e){}})();
+</script>

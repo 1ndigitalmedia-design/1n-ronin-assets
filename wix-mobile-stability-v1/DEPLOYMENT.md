@@ -1,67 +1,47 @@
-# DEPLOYMENT — Wix'e uygulama (açık onayınızla, sizin tarafınızdan)
+# DEPLOYMENT — V1.1 Wix uygulama planı (açık onayınızla, sizin tarafınızdan)
 
-**Bu çalışmada Wix'te hiçbir şey değiştirilmedi ve yayınlanmadı.** Aşağıdaki adımlar onay verdiğinizde uygulanacaktır.
+**Bu çalışmada Wix'te hiçbir şey değiştirilmedi ve yayınlanmadı.** Yapıştırılacak kodlar elle yazım hatası olmasın diye dosya olarak hazır: `wix-custom-code/`.
 
-## 1. Değişecek tek yer: Wix özel kod girişi
+Kod commit'i (CDN sabitlemesi): `1bd1f1e31d6e761f10c24a5398f06fe169279c73` — iki dosya da jsDelivr'den 200 ve depo ile bayt düzeyinde aynı doğrulandı.
 
-**Wix Studio → Site Ayarları → Özel Kod (Custom Code) → "1N - Hizmetler Capa Navigasyonu" → Düzenle**
+## Aşama 1 — Gerçek cihaz testi (önerilen; normal ziyaretçiyi etkilemez)
 
-Mevcut içeriği **tamamen** aşağıdakiyle değiştirin:
+Amaç: V1.1'i yalnızca test eden iPhone/iPad'de çalıştırmak. Diğer ziyaretçiler bugünkü canlı davranışı görmeye devam eder.
 
-```html
-<script>
-window.N1_NAV_CONFIG = {
-  home: '/'
-};
-</script>
+| Wix girişi | Konum | Sayfalar | Yükleme | İçerik |
+|---|---|---|---|---|
+| **YENİ** "1N - V1.1 Test Anahtarı (HEAD)" | Head | Tüm sayfalar | Her yeni sayfada | `wix-custom-code/03-test-switch-head.html` |
+| Mevcut "1N - Hizmetler Capa Navigasyonu" | Body - end | Tüm sayfalar | Her yeni sayfada | `wix-custom-code/04-test-switch-body-end.html` |
 
-<script src="https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@102b76a46417417be9c87d5cc71ce210d8e1f791/wix-mobile-stability-v1/n1-nav-v1.0.2.js" defer></script>
-<script src="https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@102b76a46417417be9c87d5cc71ce210d8e1f791/wix-mobile-stability-v1/n1-stability-v1.js" defer></script>
-```
+- Test cihazında **bir kez** `https://www.reklam1n.com/?n1v11=1` açın; aynı sekme boyunca tüm sayfalarda V1.1 çalışır. Tanılama için `?n1v11=1&n1diag=1`.
+- Kapatmak için `?n1v11=0`. Sekmeyi kapatmak da sıfırlar (sessionStorage).
+- Normal ziyaretçide: head'de bayrak okuyan tek satır, body-end'de bugünkü v1.0.1 betiği ve hiçbir şey yüklemeyen bir satır içi kontrol. Playwright doğrulaması TEST_REPORT.md §9'da: normal yolda nav 1.0.1 ve stabilite yok, test yolunda 1.0.3 + 1.1.0.
 
-Ayarlar (mevcut girişle aynı):
+**Alternatif (sıfır canlı değişiklik):** Wix → Site İşlemleri → Siteyi Çoğalt → çoğaltılan sitede Aşama 2 kodları → ücretsiz `wixsite.com` adresinde test. Dezavantajlar: özel alan adı, çerezler ve ATS davranışı birebir aynı olmayabilir; reklam/izleme kodları test sitesinden de tetiklenir (filtrelenmeli); içerik kopyası güncel tutulmalı.
 
-| Ayar | Değer |
-|---|---|
-| Sayfalara ekle | **Tüm sayfalar** |
-| Kod nereye yerleştirilsin | **Body - end** |
-| Yükleme | **Her yeni sayfada yükle** (mevcut `loadOnce:false`) |
-| Kategori | Essential (Temel) |
+## Aşama 2 — Üretim (fiziksel cihaz testi başarılıysa)
 
-Notlar:
-- `N1_NAV_CONFIG` satırı isteğe bağlıdır; tanımlı değilse varsayılan ana sayfa zaten `/`. Ana sayfa adresi `https://www.reklam1n.com/`, Hizmetler hedefi `https://www.reklam1n.com/#hizmetler-ozet`.
-- Ana sayfa (`n1-site-wix-v656.js:468`) kendi içinde eski nav v1.0.1'i de yükler. Özel kod daha önce çalıştığı için v1.0.2 etkin olur, v1.0.1 `window.__n1Nav` korumasıyla çalışmadan çıkar. Testte aktif sürüm her cihazda `1.0.2` olarak doğrulandı. Konsolda `__n1Nav.version` ile kontrol edilebilir.
-- `/n1-full-test` → 301 → `/` (Wix). Gereksiz yönlendirme zinciri yok. Nav içindeki `/n1-full-test` yalnızca eski bağlantılar için tanınan bir ana sayfa adı olarak duruyor ve zararsız.
-- Ayrı bir özel kod girişi açmayın; nav ve stabilite aynı girişte, bu sırayla kalmalı.
+| Wix girişi | Konum | Sayfalar | Yükleme | İçerik |
+|---|---|---|---|---|
+| "1N - Nav Koruma (HEAD)" (Aşama 1'deki test anahtarı girişinin yerine) | Head | Tüm sayfalar | Her yeni sayfada | `wix-custom-code/01-production-head.html` |
+| "1N - Hizmetler Capa Navigasyonu" | Body - end | Tüm sayfalar | Her yeni sayfada | `wix-custom-code/02-production-body-end.html` |
 
-## 2. Custom Element'ler — değişiklik YOK
+Neden head girişi şart (nav yükleme sırası riski): Ana sayfa `n1-site-wix-v656.js:468` eski v1.0.1'i kendisi de yüklüyor. Chromium testinde yeni nav 6 sn geciktiğinde, head koruması olmadan **v1.0.1 etkin oldu** (TEST_REPORT.md §3b-C). Koruma varken tüm sıralamalarda v1.0.3 etkin. Head koruması tek satırlık satır içi bir işarettir; ağ isteği yapmaz.
 
-Sayfa bazında Custom Element etiketleri ve Server URL'leri **aynı kalır** (DEPENDENCY_MAP.md §1). Bu sürüm hiçbir sayfa dosyasını değiştirmez.
+Kapsam: İki modül de kendi içinde yalnızca kurumsal rotalarda çalışır (izin listesi: `/`, 7 hizmet sayfası, `/markalar`, `/kisaca-biz`, yasal sayfalar). Intelligence, admin, giriş, hesap, panel ve müşteri sayfalarında hiçbir dinleyici kurmaz. Ek güvence için Wix'te bu girişlerin "Sayfalara ekle" ayarı **"Seçili sayfalar"** yapılıp yalnızca bu kurumsal sayfalar seçilebilir; bu yapılırsa ana sayfa ve tüm hizmet/yasal sayfaların seçili olduğundan emin olun.
 
-| Sayfa | Tag Name | Server URL |
-|---|---|---|
-| Ana Sayfa `/` | `n1-site-v1` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/n1-site-wix-v656.js` |
-| Kreatif Prodüksiyon | `n1-kreatif-produksiyon-v23` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-kreatif-produksiyon-v23/n1-kreatif-produksiyon-v23.js` |
-| E-Ticaret Yönetimi | `n1-e-ticaret-yonetimi-v23` | `…@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-e-ticaret-yonetimi-v23/n1-e-ticaret-yonetimi-v23.js` |
-| Sosyal Medya | `n1-sosyal-medya-v27` | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-sosyal-medya-v27/n1-sosyal-medya-v27.js` |
-| Reklam Yönetimi | `n1-reklam-yonetimi-v23` | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-reklam-yonetimi-v23/n1-reklam-yonetimi-v23.js` |
-| UI/UX Tasarım | `n1-uiux-tasarim-v28` | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-uiux-tasarim-v28/n1-uiux-tasarim-v28.js` |
-| Yapay Zekâ | `n1-yapay-zeka-v2` | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-yapay-zeka-v2/n1-yapay-zeka-v2.js` |
-| Uygulama Geliştirme | `n1-uygulama-gelistirme-v2` | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-uygulama-gelistirme-v2/n1-uygulama-gelistirme-v2.js` |
-| Markalar | `n1-markalar-v11` | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-markalar-v1/n1-markalar-v11.js` |
-| Kısaca Biz | `n1-kisaca-biz-v1` | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-kisaca-biz-v1/n1-kisaca-biz-v1.js` |
-| KVKK (ve diğer yasal sayfalar) | `n1-kvkk-aydinlatma-v1` (KVKK) | `…@f97db8ed…/wix-sitewide-mobile-fix-2026-11-26/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js` |
+## Custom Element'ler — değişiklik YOK
+Sayfa etiketleri ve Server URL'leri aynı kalır (DEPENDENCY_MAP.md §1). V1.1 hiçbir sayfa dosyasını değiştirmez.
 
-(`…` = `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets`, `f97db8ed…` = `f97db8edb37f1e1388f276d840e262fc8452b80a`.)
+## Yayın sonrası 5 dk kontrol
+1. Telefonda `https://www.reklam1n.com/?n1diag=1` → sol altta `n1-stability 1.1.0 · mobil=true · n1Nav=1.0.3`.
+2. Masaüstü konsol: `__n1Nav.version` → `"1.0.3"`, `__n1NavConflict` → `undefined`, `__n1Stability.report().mobile` → `false`.
+3. `https://www.reklam1n.com/intelligence` (yalnızca konsol kontrolü): `__n1Stability.active` → `false`, `__n1Nav.active` → `false`.
+4. TEST_REPORT.md §8 fiziksel cihaz senaryosu.
 
-## 3. Yayın sonrası kontrol (5 dk)
-1. `https://www.reklam1n.com/?n1diag=1` telefonda açılınca sol altta `n1-stability 1.0.0 · mobil=true` görünmeli.
-2. Masaüstü tarayıcı konsolunda `__n1Nav.version` → `"1.0.2"`, `__n1Stability.report().mobile` → `false`.
-3. Ağ sekmesinde iki yeni dosya 200 dönmeli.
-4. Ardından TEST_REPORT.md §8 fiziksel cihaz testi.
+## Bakım
+- Ana sayfanın Custom Element adresi değişirse `n1-stability-v1.1.js` içindeki `WARM_HOME` listesi güncellenmeli. Liste eski kalırsa işlev bozulmaz, yalnızca ön yükleme boşa gider.
+- Yeni bir kurumsal sayfa eklenirse iki dosyadaki `SCOPE_ALLOW` listesine eklenmeli.
 
-## 4. Bakım
-Bir sayfanın Custom Element adresi değiştiğinde `n1-stability-v1.js` içindeki `WARM_PAGE` listesi güncellenip yeni commit SHA ile tekrar yayınlanmalıdır. Liste eski kalırsa işlev bozulmaz; yalnızca o sayfa için önbellek ısıtma boşa gider.
-
-## 5. Pull Request
-Bu dal için `mobile-stability-clean-base-20261126` dalına yönelik **Draft** PR açıldı. PR birleştirilmedi; birleştirme sizin onayınıza bağlıdır. Wix'in kullandığı adresler commit SHA ile sabit olduğundan birleştirme canlıyı etkilemez.
+## Pull Request
+Draft PR #2 güncellendi; birleştirilmedi. Wix adresleri commit SHA ile sabit olduğu için birleştirme canlıyı etkilemez.

@@ -1,5 +1,37 @@
 # PERFORMANCE_REPORT
 
+## V1.1 — Ön yükleme A/B (madde 1)
+
+Koşul: Chromium, 390×844 mobil, 150 ms RTT / 1,6 Mbps, CPU 4×. Her varyant 3 tur × soğuk/sıcak × 3 sayfa. Metrikler: header ilk görünür kare, aktarılan bayt (CDP `encodedDataLength` toplamı), istek sayısı, 15. saniyede CPU görev ve betik süresi (`Performance.getMetrics`), JS heap. Varyantlar: `live` (canlı), `off` (V1.1, ön yükleme yok), `home` (yalnız ana sayfa listesi — **seçilen**), `page` (sayfanın kendi dosyaları), `full` (V1.0 davranışı: sayfa + ortak). Ham veri: `qa/results/ab-warm/`, özet: `qa/results/ab-warm-summary.txt`.
+
+| Sayfa · önbellek | off header | **home** | page | full | home: KB / istek / görev sn / heap MB (off'a göre) |
+|---|---|---|---|---|---|
+| `/` soğuk | 11 715 | **9 515 (−2 200)** | 9 242 | 9 957 | 2685 vs 2789 KB · 207 vs 180 istek · 3,99 vs 3,55 sn · 14,4 vs 17,8 MB |
+| `/` sıcak | 11 853 | **9 474 (−2 379)** | 9 271 | 9 661 | 2692 vs 2710 · 209 vs 177 · 3,78 vs 3,87 · 14,5 vs 16,7 |
+| kreatif soğuk | 4 410 | 4 422 (+12) | 4 373 | 4 099 | ön yükleme yok (= off) |
+| kreatif sıcak | 4 466 | 4 222 (−244) | 4 326 | 4 531 | = off |
+| sosyal-medya soğuk | 4 253 | 4 478 (+225) | 4 435 | 4 573 | = off |
+| sosyal-medya sıcak | 4 577 | 4 095 (−482) | 3 976 | 4 525 | = off |
+
+Yorum:
+- Ana sayfada `home` ve `page` aynı listeyi kullanır (fark gürültü). Üç turun hepsinde 9,2–9,6 sn; `off`/`live` 11,3–12,1 sn → **güvenilir −2,2…−2,4 sn**.
+- İç sayfalarda `page`/`full` tek tek turlarda ±0,5–1 sn dalgalanıyor, medyan farkları işaret değiştiriyor → **fayda yok**; kaldırıldı.
+- `full` iç sayfada +9–13 istek ve kreatif'te heap +2,6 MB getirdi.
+- Aktarılan bayt artmadı: ön yüklenen dosyalar sonradan HTTP önbelleğinden geliyor. İstek sayısı ana sayfada +27 (önbellek isabetleri de istek olarak sayılır).
+- CPU görev süresi ana sayfada soğukta +0,44 sn, sıcakta −0,09 sn → anlamlı ve tutarlı bir CPU maliyeti görülmedi.
+- Mobil bellek: ön yüklenen yanıtlar ağ sürecinin HTTP önbelleğine gider, sayfa süreci heap'ine değil. Chromium JS heap `home`'da düşük çıktı (14,4 vs 17,8 MB); bunu bir kazanç olarak yorumlamıyorum, ölçüm penceresindeki iş zamanlamasından kaynaklanıyor olabilir.
+- `credentials`: Chromium'da `omit` = `include` önbellek isabeti; V1.1 `omit` kullanıyor.
+
+## V1.1 — Ronin film benchmark özeti (madde 5)
+WebKit süreç belleği postere göre: 1× +71 MB, 1,5× +99 MB, **2× +129 MB** (3/3 tekrar tutarlı). Chromium: +44 / +68 / +95 MB. Ayrıntı: MOBILE_MEDIA_BENCHMARK.md.
+
+## V1.1 — Uzun bekleme süreli 21 döngü (madde 7)
+TEST_REPORT.md §10'da.
+
+---
+
+## V1.0
+
 Tüm ölçümler bu ortamda, Playwright ile yapıldı. Yazılım çizimi ve emülasyon gerçek cihaz performansı değildir. Mutlak değerler değil, aynı koşuldaki **canlı ↔ düzeltmeli farkları** anlamlıdır.
 
 ## 1. Header görünme süresi (Sorun 04)

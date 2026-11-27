@@ -1,4 +1,26 @@
-# CHANGELOG — Mobile Stability & Technical Optimization V1.0
+# CHANGELOG — Mobile Stability & Technical Optimization
+
+## [V1.1] — 27 Kasım 2026 · aynı dal `mobile-stability-v1-audit`, Draft PR #2
+
+### Eklendi
+- `n1-stability-v1.1.js` **v1.1.0** (`4d1b75d`, `1bd1f1e`): kurumsal kapsam (izin + red listesi), yaşam döngüsü temizliği ve tekrarsız BFCache yeniden kurulumu, ayrık video yönetimi, profil geçişi, yalnız ana sayfa ön yüklemesi, `credentials:'omit'`, `?n1diag=1` ile sınırlı ve sekme boyunca kalıcı tanılama, bileşen src koruması.
+- `n1-nav-v1.0.3.js`: head satır içi koruma protokolü (`{pending:'1.0.3'}`), çakışma raporu (`__n1NavConflict`), kurumsal kapsam.
+- `wix-custom-code/01–05`: üretim (head + body-end), test anahtarı (`?n1v11=1`), geri dönüş (canlıyla birebir).
+- `WIX_SUPPORT_REPORT.md`, `MOBILE_MEDIA_BENCHMARK.md`, `proposals/ronin-source-select-proposal.js` (üretimde kullanılmıyor).
+- QA: A/B ön yükleme, nav yükleme sırası, test anahtarı, credentials, medya benchmark, birim testi, uzun bekleme süreli 21 döngü.
+
+### Değişti
+- Ön yükleme 36 URL'den yalnız ana sayfanın 21 URL'sine indi (iç sayfa/ortak listeler fayda göstermedi).
+- Raporlar: ölçüm kapsamının sınırları açıkça yazıldı; V1.0'daki "birikim yok" ifadesi yalnızca ölçülen sayaçlarla sınırlandırıldı.
+
+### Değişmedi
+- Canlıdaki tüm dosyalar, Custom Element etiketleri/adresleri, tasarım, Ronin animasyonu, video kalitesi (2× korunuyor), Header, Footer, SEO, reklam/izleme kodları, Intelligence ve tüm kapsam dışı alanlar. `main`, temiz taban ve kurtarma dalları.
+
+### Bilinen / açık
+- Gerçek iPhone/iPad testi yapılmadı; çökmenin çözüldüğü iddia edilmiyor.
+- Ronin 2× bellek maliyeti (+58 MB, WebKit) — karar bekliyor.
+- Wix ATS çift yüklemesi — Wix desteğe iletilmeli.
+
 
 ## [V1.0] — 26 Kasım 2026 · dal `mobile-stability-v1-audit` (taban `876de80`)
 

@@ -39,6 +39,7 @@
       videosWithSrc: vids.filter(function(v){return v.currentSrc||v.getAttribute('src')||v.querySelector('source[src]')}).length,
       videosPlaying: vids.filter(function(v){return !v.paused && !v.ended && v.readyState>2}).length,
       videosBuffered: vids.filter(function(v){return v.readyState>=2}).length,
+      videosReleased: vids.filter(function(v){return !!v.__n1rel}).length,
       rafPerSec: P.rafPerSec, intervals: P.intervals.size,
       obsCreated: Object.assign({},P.obs), obsLive: Object.assign({},P.obsLive),
       winListeners: P.winL, docListeners: P.docL,

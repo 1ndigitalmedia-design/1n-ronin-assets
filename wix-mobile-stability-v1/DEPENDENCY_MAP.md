@@ -54,11 +54,18 @@ Ana sayfa öğesinin canlı öznitelikleri: `code-base=J 376e9ae1…/wix-full-v1
 - `n1-studyo-v1`, `n1-yaratici-v1` etiketleri yalnızca yükleyici özel kodunda geçiyor; ilgili sayfalar canlı sayfa listesinde bulunamadı.
 - Ortamın engellediği üçüncü taraf hostlar: `browser.sentry-cdn.com`, `graphs.bestfreecdn.com`, `*.wixappcloud.com`, Google Ads/Analytics, Facebook. Bunların davranışı ölçülemedi.
 
-## 5. Bu çalışmanın eklediği yeni bağımlılıklar
+## 5. Bu çalışmanın eklediği yeni bağımlılıklar (V1.1 — yayınlanacak olan)
 
-| Dosya | Commit | Nerede yüklenecek |
-|---|---|---|
-| `wix-mobile-stability-v1/n1-stability-v1.js` | `102b76a46417417be9c87d5cc71ce210d8e1f791` | Wix özel kod (tüm sayfalar, body end) |
-| `wix-mobile-stability-v1/n1-nav-v1.0.2.js` | `102b76a46417417be9c87d5cc71ce210d8e1f791` | Wix özel kod (v1.0.1'in yerine) |
+| Dosya | Commit | Nerede yüklenecek | Kapsam |
+|---|---|---|---|
+| `wix-mobile-stability-v1/n1-nav-v1.0.3.js` | `1bd1f1e31d6e761f10c24a5398f06fe169279c73` | Wix özel kod, body end (v1.0.1'in yerine) | Kurumsal rotalar |
+| `wix-mobile-stability-v1/n1-stability-v1.1.js` | `1bd1f1e31d6e761f10c24a5398f06fe169279c73` | Wix özel kod, body end | Kurumsal rotalar, yalnız mobil/tablet profili |
+| Satır içi head koruması (`wix-custom-code/01-production-head.html`) | — (ağ isteği yok) | Wix özel kod, head | Tüm sayfalar (yalnızca bir işaret yazar) |
 
-Her iki adres jsDelivr'den 200 ve depo dosyasıyla bayt düzeyinde aynı olarak doğrulandı.
+İki dosya da jsDelivr'den 200 ve depo dosyasıyla bayt düzeyinde aynı doğrulandı.
+
+**Kurumsal kapsam (izin listesi, iki dosyada aynı):** `/`, `/n1-full-test`, `/kisaca-biz`, `/markalar`, `/kreatif-produksiyon`, `/e-ticaret-yonetimi`, `/sosyal-medya`, `/reklam-yonetimi`, `/ui-ux-tasarim`, `/yapay-zeka`, `/uygulama-gelistirme`, `/kvkk-aydinlatma-metni`, `/cerez-politikasi`, `/kullanim-kosullari`, `/gizlilik`, `/gizlilik-politikasi`, `/veri-sahibi-basvuru-formu`.
+
+**Açık red listesi (önceliklidir):** yol parçası `intelligence`, `admin`, `dashboard`/`dasboard`, `panel`, `login`, `giris`, `signin`, `account`/`my-account`/`hesabim`, `profile`, `settings`, `notifications`, `my-addresses`, `member(s)`/`uye`, `popup-`, `n1i-` ile başlayan rotalar. Wix sayfa listesindeki Intelligence (`/intelligence`, `/intelligence-admin`, `/intelligencesecurityqa`), Dashboard (`/dashboard`), güvenlik testleri (`/n1i-sonda-test*`), üye sayfaları (`/profile-1`, `/my-account`, `/settings`, `/notifications`, `/my-addresses`) ve müşteri sayfaları (izin listesinde olmadıkları için) kapsam dışıdır. **Bu alanların hiçbir kaynak dosyasına dokunulmadı.**
+
+V1.0 dosyaları (`n1-stability-v1.js`, `n1-nav-v1.0.2.js` @ `102b76a…`) depoda geçmiş olarak duruyor; yayınlanmayacak.

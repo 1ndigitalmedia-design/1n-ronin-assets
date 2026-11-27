@@ -1,4 +1,25 @@
-# AUDIT_REPORT — 1N Digital Media · Mobile Stability & Technical Optimization V1.0
+# AUDIT_REPORT — 1N Digital Media · Mobile Stability & Technical Optimization V1.0 / V1.1
+
+## V1.1 ek denetim (27 Kasım 2026) — bağımsız incelemenin 10 maddesi
+
+| # | Madde | Bulgu | Önem | Kanıt | Durum |
+|---|---|---|---|---|---|
+| B-01 | Ön yükleme (WARM) etkisi | V1.0'da 36 URL. A/B (n=3, yavaş 4G + 4× CPU): yalnız ana sayfa listesi faydalı (−2,2/−2,4 sn header); iç sayfa ve ortak listeler tutarlı fayda göstermedi, `full` +13 istek ve kreatif'te heap +2,6 MB getirdi; aktarılan bayt ve CPU görev süresinde anlamlı fark yok | Orta | `qa/results/ab-warm-summary.txt` | Düzeltildi (F-09) |
+| B-02 | `credentials:'include'` | Gereksiz: Chromium'da `omit` ve `same-origin` aynı önbellek isabetini veriyor; WebKit/WPE'de doğrulanamadı | Düşük (gizlilik) | `qa/scripts/credtest.js` | Düzeltildi (`omit`) |
+| B-03 | Kapsam | V1.0 modülleri Wix "Tüm sayfalar" girişiyle Intelligence, müşteri ve yönetim sayfalarında da yükleniyordu (video yoksa etkisizdi, ancak dinleyici/gözlemci kuruluyordu) | Orta | Kod | Düzeltildi (F-07) |
+| B-04 | Yaşam döngüsü | V1.0: `farTimers` Map'i ayrık videolara güçlü referans tutuyordu; MO pagehide'da açık kalıyordu; BFCache dönüşünde IO yeniden kurulmuyordu (eski IO devam ediyordu); profil değişimi ele alınmıyordu; uzaktayken DOM'dan çıkan videonun zamanlayıcısı kalıyordu (V1.1 ilk test turunda bulundu) | Orta | `qa/results/v11-functional-results.txt` | Düzeltildi (F-08) |
+| B-05 | Nav yükleme sırası | Ana sayfa (`n1-site-wix-v656.js:468`) eski v1.0.1'i kendisi yüklüyor. Chromium'da yeni nav 6 sn geciktiğinde **v1.0.1 etkin oldu**; WebKit'te aynı senaryoda v1.0.3. Risk gerçek ve motora bağlı | Yüksek | `qa/results/navorder-*.json` | Düzeltildi (F-10, head koruması) |
+| B-06 | Yeni nav yüklenemezse | Koruma varken v1.0.3 hiç gelmezse hiçbir nav etkin olmaz (yerel çapa davranışı: Hizmetler bağlantısı yine çalışır, header ofseti olmadan) | Düşük | Senaryo F | Kabul edilen bozulma, rapor |
+| B-07 | Ronin 2× seçimi | Safari'de `deviceMemory` yok → tüm iPhone'lar 2× (WebKit'te 1×'e göre +58 MB) | Yüksek (aday) | MOBILE_MEDIA_BENCHMARK.md | Ölçüldü, üretime uygulanmadı |
+| B-08 | Wix ATS | `handleAccessTokens.inline.473e3296`: `client-session-bind` ve `sec-fetch-unsupported` çerezleri yoksa back_forward → reload (3/60 sn) | Yüksek (Wix) | WIX_SUPPORT_REPORT.md | Destek raporu hazır |
+| B-09 | Döngü testi bekleme süresi | V1.0 testinde kaydırma sonrası 2,8 sn bekleme < 4 sn bırakma eşiği → uzak-bırakma ölçülmemişti | Orta (test) | `qa/scripts/cycle2.js` (6 sn bekleme) | Yeniden ölçüldü (TEST_REPORT §10) |
+| B-10 | Tanılama | V1.0 parametresiz de sessionStorage'a günlük yazıyordu | Düşük | Kod | Düzeltildi (F-11) |
+| B-11 | src çakışması | Bileşen bırakılmış videoya yeni kaynak atarsa V1.0 geri yükleme eski kaynağı yazabilirdi | Düşük | Birim testi | Düzeltildi (F-12) |
+| B-12 | Ölçüm kapsamı | V1.0 raporundaki "belge içi birikim yok" ifadesi yalnızca ölçülen sayaçlar için geçerli | — | TEST_REPORT §11 | Düzeltildi (sınırlar açıkça yazıldı) |
+
+Skill kullanımı (V1.1): **GSAP** (ScrollTrigger yenileme/temizlik ve performans bölümleri: modül GSAP kayıtlarına dokunmuyor; rAF döngüsünün ScrollTrigger'ın kendi `_rafBugFix`'i olduğu doğrulandı, ekran dışı animasyonlar sayfa kodlarında zaten duraklatılıyor). **Webapp Testing** (`with_server.py` ile yerel sunucu yaşam döngüsü: medya benchmark'ı ve birim testi; keşif → eylem yaklaşımı ile seçici doğrulama). Responsive Mobile QA (V1.0). Karpathy Guidelines, Caveman: kurulu değil.
+
+---
 
 Tarih: 26 Kasım 2026 · Dal: `mobile-stability-v1-audit` · Başlangıç: `mobile-stability-clean-base-20261126` @ `876de80af05318e38638d79fe0f3bb128b1d4007`
 

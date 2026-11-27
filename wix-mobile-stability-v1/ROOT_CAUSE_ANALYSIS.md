@@ -1,5 +1,24 @@
 # ROOT_CAUSE_ANALYSIS — Sorun 01: iPhone'da tekrarlı ana sayfa ↔ hizmet sayfası gezinmesinde çökme
 
+## V1.1 güncellemesi (27 Kasım 2026)
+
+**Durum değişmedi: kesin kök neden gerçek cihazda doğrulanamadı; çökmenin çözüldüğü iddia edilmiyor.**
+
+Yeni kanıtlar:
+1. **Wix ATS koşulu netleşti.** `handleAccessTokens.inline.473e3296.bundle.min.js` yalnızca `client-session-bind` ve `sec-fetch-unsupported` çerezlerinin ikisi de yokken ve gezinme tipi `back_forward` ise yeniden yüklüyor; sayaç `sessionStorage["reload"]`'da tutuluyor, 60 sn'de en fazla 3 kez. Aynı betik `client-session-bind` çerezini geçmiş tarihli (1970) bir değerle yeniden yazıyor, yani okuduktan sonra siliyor gibi görünüyor (küçültülmüş koddan çıkarım). Bu, HTTP önbelleğinden geri gelen belgede erişim belirteçlerini yenilemek için tasarlanmış bir davranış gibi görünüyor. Wix'e iletilecek kanıtlı rapor: WIX_SUPPORT_REPORT.md.
+2. **Ronin 2× filmin maliyeti ölçüldü.** WebKit süreç belleği oynatma sırasında postere göre 2× +129 MB, 1× +71 MB (fark +58 MB, 3/3 tekrar). Safari `deviceMemory` sağlamadığı için tüm iPhone'lar 2× alıyor. Ana sayfa, iPhone'da en büyük tekil bellek kalemi olan bu filmle açılıyor ve geri dönüşlerde (ATS nedeniyle) iki kez yükleniyor. Bu, kök neden adayları arasında öne çıkıyor; **kanıtlanmış değil**.
+3. **Uzun bekleme süreli 21 döngü (uzak-bırakma eşiği kapsandı):** TEST_REPORT.md §10 — {{LONG_SUMMARY}}
+
+### Ölçüm kapsamının sınırları
+V1.0'daki "belge içi birikim yok" sonucu yalnızca ölçülen sayaçlar için geçerlidir (window/document dinleyicileri, interval, IO/MO/RO, rAF hızı, GSAP/ScrollTrigger sayısı, video durumları, DOM düğümü, JS heap, süreç RSS). Ölçülmeyenler: öğe düzeyindeki dinleyiciler, setTimeout/Promise zincirleri, kapanışlarda tutulan referanslar, ayrık DOM ağaçları (heap snapshot alınmadı), çözücü/GPU/görsel önbelleği gibi yerel bellek (yalnızca RSS ile dolaylı), BFCache'te bekleyen belgeler (oluşmadı), iOS jetsam/VideoToolbox/Düşük Güç Modu, saatler süren oturumlar, engelli üçüncü taraf betikler. Bu türlerdeki sızıntılar **ne doğrulandı ne de elendi**. Ayrıntı: TEST_REPORT.md §11.
+
+### Sonraki ayırt edici deney (gerçek cihaz)
+Test anahtarıyla (`?n1v11=1&n1diag=1`) aynı iPhone'da 21 döngü: (a) V1.1 kapalı, (b) V1.1 açık. Uyarının çıktığı döngü numarası ve tanılama günlüğündeki `pageshow persisted` / `nav=reload` oranı not edilmeli. Uyarı (b)'de de sürerse sıradaki deney: tasarım onayıyla 1,5× film (MOBILE_MEDIA_BENCHMARK.md §5-C).
+
+---
+
+## V1.0 analizi
+
 ## 0. Sonuç (kısa)
 
 **Kesin kök neden gerçek cihazda doğrulanamadı.** Bu ortamda iPhone yok. Playwright WebKit (Linux/WPE) testlerinde çökme ya da "Bu sayfa pek çok hata ile karşılaştı" uyarısı **yeniden üretilemedi**. Bir koşuda WebContent süreci 1,6 GB'ta asılı kaldı, ancak bu ikinci koşuda tekrar etmedi.

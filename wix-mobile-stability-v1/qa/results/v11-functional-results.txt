@@ -1,0 +1,51 @@
+V1.1 işlevsel test çıktıları (27 Kasım 2026, konsol çıktısından aynen)
+
+== v11func.js (canlı site + enjeksiyon: head koruması + nav v1.0.3 + stability v1.1.0) ==
+chromium PASS kapsam dışı pasif /intelligence {"st":{"version":"1.1.0","active":false,"reason":"scope"},"nav":{"v":"1.0.3","a":false,"r":"scope"}}
+chromium PASS kapsam dışı pasif /intelligence-admin (aynı)
+chromium PASS kapsam dışı pasif /dashboard (aynı)
+chromium PASS kapsam dışı pasif /ella-cikolata (aynı)
+chromium PASS kapsam dışı pasif /iletisim (aynı)
+chromium PASS normal ziyaretçi: sessionStorage yazımı yok, tanılama kutusu yok {"count":0,"keys":[]} nav=1.0.3
+chromium PASS pagehide: gözlemciler kapalı {"io":false,"mo":false}
+chromium PASS pageshow: tek IO yeniden kuruldu {"o":{"io":true,"mo":true},"starts":1,"bf":2}
+chromium PASS BFCache sonrası hero oynuyor {"playing":1,"released":0,"stats":{"released":2,"restored":2,"resumed":2,...,"starts":1,"bfRestores":2}}
+chromium PASS DOM'dan ayrılan video: zamanlayıcı/sarmalayıcı yok, kaynak geri yüklenmedi {"hadTimerBefore":true,"connected":false,"rel":false,"ownPlay":false,"src":null,"timer":false}
+chromium PASS tanılama hizmet sayfasına geçişte açık kalır ve günlük taşınır
+chromium PASS n1diag=0 kapatır {"diag":false,"box":false}
+chromium SONUÇ 12/12
+webkit SONUÇ 12/12 (aynı adımlar)
+(İlk koşuda "DOM'dan ayrılan video" FAIL: uzaktayken çıkarılan videonun zamanlayıcısı kalıyordu → düzeltildi, yeniden test PASS.)
+
+== unit.js (yerel sayfa, with_server.py) ==
+chromium/webkit PASS uzaktaki video 4 sn sonra bırakıldı
+chromium/webkit PASS bileşenin yeni kaynağı korunur (geri yükleme ezmez) {"src":"film-2x.mp4"}
+chromium/webkit PASS b uzakta bırakıldı
+chromium/webkit PASS bırakılmış videoda play() → kaynak geri, oynuyor {"ok":true,"src":"film-1x.mp4","paused":false}
+chromium/webkit PASS sarmalayıcı kaldırıldı
+SONUÇ 5/5 + 5/5
+
+== optin.js (canlı HTML yeniden yazılarak Wix özel kod dosyaları 01–05, gerçek CDN @1bd1f1e3) ==
+PASS test anahtarı, normal ziyaretçi = canlı (nav 1.0.1, stabilite yok)
+PASS ?n1v11=1 → nav 1.0.3 + stabilite 1.1.0
+PASS hizmet sayfasına geçişte açık kalır
+PASS geri dönüşte açık kalır
+PASS ?n1v11=0 → canlı davranışa döner
+PASS üretim yapılandırması (01+02): nav 1.0.3 + stabilite 1.1.0
+PASS üretim: /intelligence kapsam dışı (pasif)
+PASS geri dönüş (05): nav 1.0.1, stabilite yok
+chromium 8/8 · webkit 8/8
+
+== navorder.js — ayrıntı: navorder-chromium.json / navorder-webkit.json ==
+Senaryo                                         Chromium            WebKit
+A koruma, gecikme yok                           1.0.3 çapa OK       1.0.3 çapa OK
+B koruma, YENİ 6 sn gecikmeli (eski önce)       1.0.3 çapa OK       1.0.3 çapa OK
+C koruma YOK, YENİ 6 sn gecikmeli               1.0.1 (ÇAKIŞMA)     1.0.3
+D koruma, ESKİ 6 sn gecikmeli                   1.0.3               1.0.3
+E koruma YOK, gecikme yok                       1.0.3               1.0.3
+F koruma, YENİ yüklenemiyor (404)               hiçbiri (pending)   hiçbiri (pending)
+G koruma, YENİ 3 sn, masaüstü                   1.0.3 çapa OK       1.0.3 çapa OK
+
+== credtest.js (credentials) ==
+Chromium: include / omit / same-origin → sonraki <script> transferSize 0 (önbellek isabeti) — üçü aynı.
+WebKit (WPE): Resource Timing boyutları 0; süreler ~40 ms her durumda → isabet bu ortamda doğrulanamadı.

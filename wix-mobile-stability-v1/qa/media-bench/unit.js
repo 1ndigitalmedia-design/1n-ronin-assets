@@ -1,0 +1,11 @@
+const pw=require('playwright');const PORT=process.env.PORT||8790;
+(async()=>{for(const br of ['chromium','webkit']){const b=await pw[br].launch(br==='chromium'?{args:['--autoplay-policy=no-user-gesture-required']}:{});const o={viewport:{width:390,height:844},hasTouch:true};if(br==='chromium')o.isMobile=true;
+ const pg=await (await b.newContext(o)).newPage();const res=[];const T=(n,ok,i)=>{res.push(ok);console.log(br,ok?'PASS':'FAIL',n,JSON.stringify(i||''))};
+ await pg.goto(`http://localhost:${PORT}/?unit=1`);await pg.waitForTimeout(1500);
+ const g=()=>pg.evaluate(()=>{const f=id=>{const v=document.getElementById(id);return {src:(v.getAttribute('src')||'').split('/').pop(),rel:!!v.__n1rel,own:Object.prototype.hasOwnProperty.call(v,'play'),paused:v.paused}};return {a:f('a'),b:f('b'),rep:__n1Stability.report()}});
+ await pg.evaluate(()=>scrollTo(0,document.body.scrollHeight));await pg.waitForTimeout(5200);let s=await g();T('uzaktaki video 4 sn sonra bırakıldı',s.a.rel&&!s.a.src&&s.a.own,s.a);
+ await pg.evaluate(()=>{document.getElementById('a').src='film-2x.mp4';});await pg.evaluate(()=>scrollTo(0,0));await pg.waitForTimeout(800);s=await g();T('bileşenin yeni kaynağı korunur (geri yükleme ezmez)',s.a.src==='film-2x.mp4'&&!s.a.rel&&!s.a.own,s.a);
+ await pg.evaluate(()=>scrollTo(0,0));await pg.waitForTimeout(5200);s=await g();T('b uzakta bırakıldı',s.b.rel,s.b);
+ const p=await pg.evaluate(async()=>{const v=document.getElementById('b');try{await v.play();return {ok:true,src:v.getAttribute('src').split('/').pop(),paused:v.paused}}catch(e){return {ok:false,e:String(e)}}});T('bırakılmış videoda play() → kaynak geri, oynuyor',p.ok&&p.src==='film-1x.mp4'&&!p.paused,p);
+ s=await g();T('sarmalayıcı kaldırıldı',!s.b.own&&!s.b.rel,s.b);
+ console.log(br,'SONUÇ',res.filter(Boolean).length+'/'+res.length);await b.close();}})();

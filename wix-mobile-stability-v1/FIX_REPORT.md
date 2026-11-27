@@ -1,5 +1,29 @@
 # FIX_REPORT — Uygulanan düzeltmeler
 
+## V1.1 (27 Kasım 2026) — bağımsız inceleme sonrası
+
+Yeni dosyalar: `n1-stability-v1.1.js` (v1.1.0), `n1-nav-v1.0.3.js`, `wix-custom-code/01–05`. V1.0 dosyaları (`n1-stability-v1.js`, `n1-nav-v1.0.2.js`) değiştirilmedi ve **yayınlanmayacak**; V1.1 bunların yerine geçer. Canlıda kullanılan hiçbir dosyaya dokunulmadı.
+
+Kod commit'leri: `4d1b75d` (v1.1 + nav v1.0.3), `1bd1f1e` (src koruması). **Dağıtım SHA'sı: `1bd1f1e31d6e761f10c24a5398f06fe169279c73`.**
+
+| Kod | Değişiklik | Dosya:satır | İnceleme maddesi | Test |
+|---|---|---|---|---|
+| F-07 | **Kapsam:** kurumsal rota izin listesi + açık red listesi (`intelligence`, `admin`, `dashboard`, `panel`, `login`, `giris`, `account`, `profile`, `settings`, `members`, `popup-`, `n1i-` …). Kapsam dışında dinleyici, gözlemci, zamanlayıcı ve ağ isteği yok | `n1-stability-v1.1.js:32-38`, `n1-nav-v1.0.3.js` başlangıç | 2 | /intelligence, /intelligence-admin, /dashboard, /ella-cikolata, /iletisim → iki modül de pasif (Chromium + WebKit) |
+| F-08 | **Yaşam döngüsü:** zamanlayıcı öğe üzerinde (`__n1farT`, modülde Map yok); `pagehide` → zamanlayıcılar temiz, IO/MO kapalı; `pageshow(persisted)` → tek IO yeniden; ayrık video → `forget()` (gözlem bırakılır, kaynak geri yüklenmez, sarmalayıcı kaldırılır); uzaktayken çıkan video zamanlayıcıda temizlenir; masaüstü ↔ mobil profil geçişi | `n1-stability-v1.1.js` `onFar`, `forget`, `connect`, `disconnect`, `onPageHide`, `onPageShow`, `onProfile` | 3 | 12/12 işlevsel (iki motor); 2 sentetik BFCache döngüsünde `starts=1`, gözlemci tekrarı yok |
+| F-09 | **Ön yükleme:** A/B sonrası yalnızca ana sayfa listesi (`WARM_MODE='home'`); iç sayfa ve ortak listeler kaldırıldı; `credentials:'omit'` | `n1-stability-v1.1.js:41-75` | 1 | Ana sayfa header −2,2 / −2,4 sn; iç sayfalarda `page`/`full` fayda göstermedi |
+| F-10 | **Nav yükleme sırası koruması:** head satır içi `window.__n1Nav={pending:'1.0.3'}`; v1.0.3 `pending`'i devralır, gerçek örnek varsa `__n1NavConflict` raporlar | `n1-nav-v1.0.3.js` başlangıç; `wix-custom-code/01` | 4 | Chromium'da koruma yokken gecikmede v1.0.1 kazandı; korumayla 7 senaryonun hepsinde doğru |
+| F-11 | **Tanılama:** yalnızca `?n1diag=1` (sekme boyunca kalıcı, `?n1diag=0` kapatır); normal ziyaretçide sessionStorage yazımı, günlük, interval ve DOM yok | `n1-stability-v1.1.js` tanılama bölümü | 8 | Normal ziyaretçi: n1* sessionStorage yazımı 0; tanılama ana sayfa → hizmet sayfasında açık ve günlük taşındı |
+| F-12 | **src koruması:** bileşen bırakılmış videoya yeni kaynak atadıysa (ör. hero yedek dosyası) geri yükleme onu ezmez | `n1-stability-v1.1.js:139` `restore()` | 3 | Birim testi 5/5 (iki motor) |
+| F-13 | **Test anahtarı:** canlıda yalnızca `?n1v11=1` açan cihazda V1.1; normal ziyaretçi bugünkü davranışı görür | `wix-custom-code/03`, `04` | 9 | 8/8 (iki motor), gerçek CDN adresleriyle |
+
+Kaldırılan / değişen V1.0 davranışları: iç sayfa ve ortak dosya ön yüklemesi (fayda yok); `credentials:'include'` (gereksiz); tanılamanın parametresiz günlük yazması; MutationObserver'ın sayfadan ayrılırken açık kalması.
+
+Uygulanmayanlar (onay gerekir): Ronin 2× → 1× / 1,5× (MOBILE_MEDIA_BENCHMARK.md §5); Wix ATS (WIX_SUPPORT_REPORT.md).
+
+---
+
+## V1.0 (26 Kasım 2026)
+
 Bu dalda yapılan değişikliklerin tamamı **yeni dosyalardır**. Canlıda kullanılan hiçbir dosya değiştirilmedi. Böylece mevcut CDN adresleri birebir korunuyor ve geri dönüş, Wix'te tek satırın eski haline getirilmesinden ibaret.
 
 Kod commit'i (CDN sabitlemesi için): `102b76a46417417be9c87d5cc71ce210d8e1f791`

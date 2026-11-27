@@ -1,5 +1,77 @@
 # TEST_REPORT
 
+**Önemli:** Playwright WebKit 26.6 (Linux/WPE) testleri **gerçek iPhone Safari testi değildir.** V1.1'de de gerçek cihaz testi yapılmadı; kabul senaryosu §8'de, güvenli test yöntemi DEPLOYMENT.md "Aşama 1"de.
+
+## V1.1 özeti (27 Kasım 2026)
+
+| Test | Chromium | WebKit | Not |
+|---|---|---|---|
+| V1.1 işlevsel (kapsam, tanılama, BFCache ×2, ayrık video) | **12/12** | **12/12** | İlk turda 1 FAIL bulundu ve düzeltildi |
+| Birim testi (uzak bırakma, src koruması, play() sarmalayıcı) | **5/5** | **5/5** | Yerel sayfa, `with_server.py` |
+| Wix kod yapılandırmaları (test anahtarı / üretim / geri dönüş), gerçek CDN | **8/8** | **8/8** | Canlı HTML yeniden yazılarak |
+| Nav yükleme sırası (7 senaryo) | korumayla 5/5 doğru; korumasız gecikmede **v1.0.1 kazandı** | korumayla 5/5 doğru | Koruma gerekli |
+| Ön yükleme A/B (5 varyant × 3 tur) | Ana sayfa −2,2/−2,4 sn; iç sayfalarda fayda yok | — | PERFORMANCE_REPORT V1.1 |
+| credentials include/omit | aynı önbellek isabeti | doğrulanamadı (WPE boyut vermiyor) | |
+| Ronin medya benchmark | +44/+68/+95 MB | +71/+99/+129 MB | MOBILE_MEDIA_BENCHMARK |
+| Uzun bekleme süreli 21 döngü | §10 | §10 | |
+
+## 9. V1.1 ayrıntılı test sonuçları
+Ham çıktı: `qa/results/v11-functional-results.txt`, `navorder-*.json`.
+
+### 9a. Kapsam
+`/intelligence`, `/intelligence-admin`, `/dashboard`, `/ella-cikolata` (müşteri), `/iletisim` (izin listesinde değil) sayfalarında `__n1Stability.active=false`, `__n1Nav.active=false` (`reason:'scope'`): dinleyici, gözlemci, zamanlayıcı ve ağ isteği yok. Bu sayfaların kaynak dosyalarına dokunulmadı; yalnızca okuma amaçlı açıldılar.
+
+### 9b. Yaşam döngüsü (sentetik BFCache, iki döngü arka arkaya)
+`pagehide` → IO=yok, MO=yok, uzak zamanlayıcılar temiz. `pageshow(persisted)` → tek IO yeniden kuruldu, `starts=1` (tekrarsız), `bfRestores=2`; hero yeniden oynuyor. Uzaktayken DOM'dan çıkarılan video: 4,8 sn sonra zamanlayıcı yok, gözlem bırakıldı, `play` sarmalayıcısı yok, kaynak geri yüklenmedi.
+
+### 9c. Tanılama
+Normal ziyaretçi: `n1*` sessionStorage yazımı **0**, tanılama kutusu yok. `?n1diag=1` → ana sayfadan hizmet sayfasına geçişte tanılama açık kaldı ve önceki sayfanın `pagehide` günlüğü görünüyor. `?n1diag=0` kapatıyor.
+
+### 9d. Nav yükleme sırası (madde 4)
+
+| Senaryo | Chromium | WebKit |
+|---|---|---|
+| A koruma, gecikme yok | 1.0.3 · çapa OK | 1.0.3 · çapa OK |
+| B koruma, yeni nav +6 sn (eski önce yüklenir) | **1.0.3** · çapa OK | 1.0.3 · çapa OK |
+| C koruma YOK, yeni nav +6 sn | **1.0.1 etkin (çakışma raporlandı)** | 1.0.3 |
+| D koruma, eski nav +6 sn | 1.0.3 | 1.0.3 |
+| E koruma yok, gecikme yok | 1.0.3 | 1.0.3 |
+| F koruma, yeni nav 404 | hiçbiri (yerel çapa) | hiçbiri |
+| G koruma, yeni +3 sn, masaüstü | 1.0.3 · çapa OK | 1.0.3 · çapa OK |
+
+Yöntem: canlı ana sayfa HTML'i test sırasında yeniden yazıldı (head'e koruma, body-end'de v1.0.1 → v1.0.3); ana sayfanın kendi yüklediği eski nav dahil gerçek sıra korundu.
+
+### 9e. Test anahtarı ve yapılandırmalar (madde 9)
+Normal ziyaretçi = canlı (nav 1.0.1, stabilite yok) · `?n1v11=1` → 1.0.3 + 1.1.0 · hizmet sayfasında ve geri dönüşte açık · `?n1v11=0` → canlı · üretim (01+02) → 1.0.3 + 1.1.0, /intelligence pasif · geri dönüş (05) → 1.0.1. İki motorda 8/8.
+
+## 10. Uzun bekleme süreli 21 döngü (madde 7)
+{{LONG_TABLE}}
+
+## 11. Ölçüm kapsamının sınırları (V1.1 düzeltmesi)
+
+V1.0 raporundaki "belge içi birikim yok" ifadesi **yalnızca ölçülen sayaçlar için** geçerlidir; tüm bellek sızıntısı olasılıklarının elendiği anlamına gelmez.
+
+**Ölçülenler (belge başına, yükleme +6 sn ve kaydırma sonrası):** `window`/`document` üzerindeki addEventListener sayısı (sarmalanmış API ile), setInterval sayısı, IntersectionObserver/MutationObserver/ResizeObserver canlı örnek sayısı, rAF çağrı hızı, GSAP global zaman çizelgesi alt öğe sayısı, ScrollTrigger sayısı, video öğesi durumları, DOM düğüm sayısı, Chromium JS heap (CDP), süreç RSS.
+
+**Ölçülmeyenler / ölçülemeyenler:**
+- Öğe düzeyindeki dinleyiciler (`element.addEventListener`) — yalnızca window/document sarmalandı.
+- setTimeout zincirleri, Promise zincirleri, kapanışlar (closure) içinde tutulan referanslar.
+- Ayrık (detached) DOM ağaçları — heap snapshot alınmadı.
+- Yerel (native) bellek: video çözücü yüzeyleri, GPU dokuları, görsel çözme önbelleği, WebKit bellek önbelleği; yalnızca süreç RSS üzerinden dolaylı izlendi.
+- BFCache'te bekleyen belgelerin belleği — Playwright Chromium/WebKit'te BFCache geri yüklemesi oluşmadı; bu yol yalnızca sentetik olaylarla test edildi.
+- iOS'a özgü davranışlar: jetsam eşikleri, VideoToolbox, Safari'nin süreç modeli, Düşük Güç Modu, bellek baskısı uyarıları.
+- 21 döngüden uzun oturumlar, saatler süren açık sekme, sekmeler arası etkileşim.
+- Wix'in kendi çalışma zamanı (thunderbolt) ve üçüncü taraf betikler (ortamda bir kısmı engelli: Sentry, Google Ads, Facebook, wixappcloud) — bunların bellek davranışı gerçek ortamdakinden farklı olabilir.
+- Sayaçlar her gezinmede yeni belgeyle sıfırlandığı için, tam sayfa geçişlerinde belge içi sızıntıyı ancak tek bir belgedeki uzun süreli kullanım ortaya çıkarır; bu test kısa süreli (sayfa başına ~15–20 sn) yapıldı.
+
+**Sonuç:** Ölçüm, belge içi sızıntının *ölçülen sayaçlarda* görülmediğini gösterir; süreç düzeyindeki birikim (WebKit) ölçülmüş ve kısmen açıklanmıştır. Diğer sızıntı türleri ne doğrulanmış ne de elenmiştir.
+
+
+---
+
+# V1.0 TEST_REPORT
+
+
 **Önemli:** Playwright WebKit 26.6 (Linux/WPE) testleri **gerçek iPhone Safari testi değildir.** Gerçek cihazda test yapılmadı; kabul senaryosu §8'de.
 
 "Düzeltmeli" testlerde yeni dosyalar canlı sayfaya `DOMContentLoaded` anında enjekte edildi (Wix bodyEnd `defer` özel kodunun çalıştığı an). Eski nav v1.0.1 bir yer tutucuyla devre dışı bırakıldı (= Wix'te v1.0.1 satırının v1.0.2 ile değiştirilmesi). İlk denemede Playwright `route` kullanılmıştı; bu yöntem HTTP önbelleğini kapattığı için zaman ölçümünü +8,5 sn bozuyordu. Bu sonuçlar **atıldı**, yöntem değiştirildi (`qa/scripts/build-inject.sh`).
@@ -81,7 +153,7 @@ Canlı ↔ düzeltmeli. Header çubuğu, logo, MENU, ilk başlık, font, 40 böl
 
 ## 8. Fiziksel cihaz kabul testi (yapılmadı — sizin tarafınızdan)
 
-Hazırlık: Wix'te DEPLOYMENT.md uygulanıp yayınlandıktan sonra. Her testi önce `https://www.reklam1n.com/?n1diag=1` ile açın; sol altta günlük görünür.
+Hazırlık (V1.1): Wix'te DEPLOYMENT.md **Aşama 1 (test anahtarı)** uygulanıp yayınlandıktan sonra, test cihazında bir kez `https://www.reklam1n.com/?n1v11=1&n1diag=1` açın; aynı sekmede tüm sayfalarda V1.1 ve sol altta günlük açık kalır. Karşılaştırma için aynı testi `?n1v11=0` (V1.1 kapalı) ile de yapın.
 
 **iPhone — Safari ve Chrome (ayrı ayrı):**
 1. Ana sayfa → Hizmetler → bir hizmet sayfası → telefonun geri hareketi → başka hizmet. 7 hizmetin tamamı × 3 tur (21 döngü). Beklenen: "Bu sayfa pek çok hata ile karşılaştı" uyarısı **yok**.
