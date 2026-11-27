@@ -62,11 +62,12 @@
 
   /* ---------- plan ---------- */
   function modesOf(plan) { return plan.modes === 'n' ? ['n'] : plan.modes === 'e' ? ['e'] : ['n', 'e']; }
-  function total(plan) { return plan.vars.length * plan.rep * PAGES.length * modesOf(plan).length; }
+  function pagesOf(plan) { return PAGES.slice(0, plan.np || PAGES.length); }
+  function total(plan) { return plan.vars.length * plan.rep * pagesOf(plan).length * modesOf(plan).length; }
   function stepAt(plan, i) {
-    var M = modesOf(plan), perR = PAGES.length * M.length, perV = plan.rep * perR;
+    var PG = pagesOf(plan), M = modesOf(plan), perR = PG.length * M.length, perV = plan.rep * perR;
     var vi = Math.floor(i / perV), a = i % perV, r = Math.floor(a / perR), b = a % perR, pi = Math.floor(b / M.length), m = M[b % M.length];
-    return { i: i, v: plan.vars[vi], r: r + 1, p: PAGES[pi], m: m, d: m === 'e' ? EARLY[(pi + r) % EARLY.length] : 0 };
+    return { i: i, v: plan.vars[vi], r: r + 1, p: PG[pi], m: m, d: m === 'e' ? EARLY[(pi + r) % EARLY.length] : 0 };
   }
   function applyFlags(v) {
     var f = (VARIANTS[v] || VARIANTS.B).flags;
@@ -144,12 +145,13 @@
     });
     var rep = el('select', 'margin:6px 6px 0 0'); [1, 2, 3].forEach(function (n) { var o = el('option', null, n + ' tekrar'); o.value = n; rep.appendChild(o); });
     var mode = el('select', 'margin:6px 0 0 0'); [['ne', 'normal + erken geri'], ['n', 'yalnız normal'], ['e', 'yalnız erken geri']].forEach(function (m) { var o = el('option', null, m[1]); o.value = m[0]; mode.appendChild(o); });
+    var np = el('select', 'margin:6px 6px 0 0'); [[7, '7 hizmet sayfası (tam)'], [3, '3 sayfa (kısa deneme)']].forEach(function (m) { var o = el('option', null, m[1]); o.value = m[0]; np.appendChild(o); });
     var est = el('div', 'color:#bdbcb5;margin-top:4px');
-    function upd() { var vars = [].slice.call(box.querySelectorAll('input:checked')).map(function (c) { return c.value; }); var p = { vars: vars, rep: +rep.value, modes: mode.value };
-      var t = total(p), mins = Math.round(vars.length * +rep.value * PAGES.length * ((mode.value !== 'e' ? 55 : 0) + (mode.value !== 'n' ? 22 : 0)) / 60);
+    function upd() { var vars = [].slice.call(box.querySelectorAll('input:checked')).map(function (c) { return c.value; }); var p = { vars: vars, rep: +rep.value, modes: mode.value, np: +np.value };
+      var t = total(p), mins = Math.round(vars.length * +rep.value * (+np.value) * ((mode.value !== 'e' ? 55 : 0) + (mode.value !== 'n' ? 22 : 0)) / 60);
       est.textContent = t + ' adım · tahmini ' + mins + ' dk (sayfa ve bağlantı hızına göre değişir)'; return p; }
-    [box, rep, mode].forEach(function (x) { x.addEventListener('change', upd); });
-    ui.l2.appendChild(box); ui.l2.appendChild(rep); ui.l2.appendChild(mode); ui.l2.appendChild(est); upd();
+    [box, rep, mode, np].forEach(function (x) { x.addEventListener('change', upd); });
+    ui.l2.appendChild(box); ui.l2.appendChild(rep); ui.l2.appendChild(mode); ui.l2.appendChild(np); ui.l2.appendChild(est); upd();
     var prev = logAll().length;
     btn('Başlat', function () { var p = upd(); if (!p.vars.length) return; startRun(p); });
     if (prev) { btn('Önceki rapor (' + prev + ')', showReport); btn('Sonuçları sil', function () { if (confirm('Kayıtlı ' + prev + ' sonuç silinsin mi?')) { lsDel(K.log); showSetup(); } }); }
