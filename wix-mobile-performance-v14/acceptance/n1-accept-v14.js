@@ -122,11 +122,12 @@
   function v14res() { try { return performance.getEntriesByType('resource').map(function (e) { return e.name; }); } catch (e) { return []; } }
   function v14page() {
     var vs = [].slice.call(document.querySelectorAll('video')), im = [].slice.call(document.querySelectorAll('img[data-n1-still]')), rs = v14res();
-    var o = { lite: LITE ? 1 : 0, code: rs.some(function (n) { return /wix-mobile-performance-v14\/pages\//.test(n); }) ? 1 : 0, vids: vs.length,
+    // V1.4 kodu: Server URL kalıbı YA DA V1.4'ün hafif profilde eklediği #n1-still-v14 stili (adresten bağımsız kanıt)
+    var o = { lite: LITE ? 1 : 0, code: (rs.some(function (n) { return /wix-mobile-performance-v14\/pages\//.test(n); }) || !!document.getElementById('n1-still-v14')) ? 1 : 0, vids: vs.length,
       vSrc: vs.filter(function (v) { return !!(v.currentSrc || v.getAttribute('src')); }).length, max: MAXSRC[curPath()],
       stills: im.length, stillsOk: im.filter(function (i) { return i.complete && i.naturalWidth > 0; }).length,
       stillsBroken: im.filter(function (i) { return i.complete && i.naturalWidth === 0 && (i.currentSrc || i.getAttribute('src')); }).length,
-      mp4: rs.filter(function (n) { return /\.mp4(\?|$)/.test(n); }).length };
+      mp4: rs.filter(function (n, i, a) { return /\.mp4(\?|$)/.test(n) && a.indexOf(n) === i; }).length };   // benzersiz mp4 adresi (Range istekleri tek sayılır)
     o.ok = (!LITE || (o.code && o.vSrc <= o.max && o.stills > 0 && !o.stillsBroken)) ? 1 : 0; return o;
   }
   function v14home() {
@@ -495,7 +496,7 @@
     out.push('Başlangıç ' + (s0 && s0.startedAt ? new Date(s0.startedAt).toISOString() : '-') + ' · son deneme bitişi ' + (tE ? new Date(tE).toISOString() : '-') + ' · **gerçek süre ' + (s0 && s0.startedAt && tE ? ((tE - s0.startedAt) / 60000).toFixed(1) + ' dk' : '-') + '**');
     out.push('');
     out.push('## V1.4 yapılandırma doğrulaması (normal senaryo, 1. denemeler)');
-    out.push('| Sayfa | Hafif profil | V1.4 kodu | Kaynaklı video / en çok | mp4 isteği | Kare (yüklenen/toplam, kırık) | Sonuç |'); out.push('|---|---|---|---|---|---|---|');
+    out.push('| Sayfa | Hafif profil | V1.4 kodu | Kaynaklı video / en çok | Benzersiz mp4 | Kare (yüklenen/toplam, kırık) | Sonuç |'); out.push('|---|---|---|---|---|---|---|');
     ALL_PAGES.forEach(function (p) { var x = first1.filter(function (y) { return y.p === p && y.v14; })[0]; if (!x) return out.push('| ' + p + ' | – | – | – | – | – | ölçülmedi |'); var q = x.v14;
       out.push('| ' + p + ' | ' + (q.lite ? 'evet' : 'hayır (masaüstü: video beklenir)') + ' | ' + (q.code ? 'evet' : '**HAYIR**') + ' | ' + q.vSrc + ' / ' + q.max + ' | ' + q.mp4 + ' | ' + q.stillsOk + '/' + q.stills + ', ' + q.stillsBroken + ' | ' + (q.ok ? 'GEÇTİ' : '**KALDI**') + ' |'); });
     var hh = A.filter(function (x) { return x.v14h; }), h0 = hh[0] && hh[0].v14h;
