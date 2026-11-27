@@ -31,7 +31,7 @@
   /* ---------- Onaylı kaynaklar (commit'e sabit) ---------- */
   var CDN = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@';
   var C648 = 'd24fa373d6d76c0218b3f3b77897a8c2ace04e5e';
-  var CM12 = '73c26a633831fbd659138d4b070b110e558db0d8';   /* GLOBAL MENU V1.2: Hizmetler alt menülü markup + header v12 */
+  var CM12 = '162599ec580db98d848cf6670bcde7ee30bf97f5';   /* GLOBAL MENU V1.2: Hizmetler alt menülü markup + header v12 */
   var CRESP = '09612df97e85978976d13edbd79dad0adcc1d1f1';
   var PATHS = {
     markup: CM12 + '/wix-global-menu-v12/site/n1-site-markup-v12.js',

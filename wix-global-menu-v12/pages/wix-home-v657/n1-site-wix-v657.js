@@ -469,7 +469,7 @@
       if (NAV_SRC) loadScript(NAV_SRC).catch(function (e) { diagNote(String(e && e.message || e)); });
       var cssDone = Promise.all([loadCss(B.code + 'site/n1-site-base-v1.css')].concat(ORDER.css.map(function (f) { return loadCss(B.code + 'modules/' + f); })))
         .then(function () { if (P !== 'd') return loadCss(B.home + 'site/n1-home-m5.css'); });   // V1.5: mobil/tablet katmanı (V1.4 tasarımı + 6 revizyon)   // modül CSS'lerinden SONRA (aynı özgüllükte sonraki kazanır)
-      var markupDone = loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@73c26a633831fbd659138d4b070b110e558db0d8/wix-global-menu-v12/site/n1-site-markup-v12.js");
+      var markupDone = loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@162599ec580db98d848cf6670bcde7ee30bf97f5/wix-global-menu-v12/site/n1-site-markup-v12.js");
 
       // V1.4: mobil/tablet işaretleme oluşturucu iskeletle paralel istenir (masaüstünde hiç istenmez)
       var buildDone = P !== 'd' ? loadScript(B.home + 'modules/n1-m5-build.js') : Promise.resolve();
@@ -480,7 +480,7 @@
         if(P==='d')return ensureGsap(ORDER.gsap);
         // Mobile essentials do not wait for GSAP. Preserve the desktop module order.
         return Promise.all([
-          loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@73c26a633831fbd659138d4b070b110e558db0d8/wix-global-menu-v12/modules/n1-header-v12.js",true).then(function(){if(alive()){earlyHeader=true;scopeHeaderCss();self._innerHeader(P);}}).catch(function(e){diagNote(String(e));}),
+          loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@162599ec580db98d848cf6670bcde7ee30bf97f5/wix-global-menu-v12/modules/n1-header-v12.js",true).then(function(){if(alive()){earlyHeader=true;scopeHeaderCss();self._innerHeader(P);}}).catch(function(e){diagNote(String(e));}),
           loadScript(B.home+'modules/n1-video-m5.js',true).then(function(){if(alive())earlyVideo=true;}).catch(function(e){diagNote(String(e));})
         ]).then(function(){if(alive())return ensureGsap(ORDER.gsap);});
       }).then(function () {
@@ -494,7 +494,7 @@
             if (!alive()) return;
             if (f === 'ronin-hero-v67.js' && P !== 'd') return;          // V1.4: mobil/tablet hero = native film (n1-video-m4); Ronin kare motorları indirilmez
             if (f === 'n1-header-v613.js' && P !== 'd' && earlyHeader) return;
-            if (f === 'n1-header-v613.js') return loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@73c26a633831fbd659138d4b070b110e558db0d8/wix-global-menu-v12/modules/n1-header-v12.js", true)
+            if (f === 'n1-header-v613.js') return loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@162599ec580db98d848cf6670bcde7ee30bf97f5/wix-global-menu-v12/modules/n1-header-v12.js", true)
               .then(function () { if (alive() && P !== 'd') self._innerHeader(P); });   // V1.3: iç sayfalardaki onaylı Header düzeni (ayrı menü motoru yok)
             if (f === 'n1-samurai-video-v621.js' && P !== 'd' && earlyVideo) return;
             if (f === 'n1-samurai-video-v621.js' && P !== 'd') return loadScript(B.home + 'modules/n1-video-m5.js', true);   // V1.5: hero + M2/M1 + mini film (gerçek iPhone bulgularına göre)
@@ -514,7 +514,7 @@
         // Temel erişim: bir bağımlılık (ör. GSAP CDN) yüklenemese de içerik görünür kalır; Header ve çapa navigasyonu
         // GSAP gerektirmez → yalnızca bu hata yolunda ayrıca yüklenir (normal akışta bu satırlar hiç çalışmaz).
         if (!alive() || !self.firstElementChild || (P==='d' && self.querySelector && document.querySelector('n1-header[data-n1-owner] .n1h-bar:not([data-n1m-ph])'))) return;   // V1.3: yer tutucu çubuk sayılmaz
-        (earlyHeader?Promise.resolve():loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@73c26a633831fbd659138d4b070b110e558db0d8/wix-global-menu-v12/modules/n1-header-v12.js", true))
+        (earlyHeader?Promise.resolve():loadScript("https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@162599ec580db98d848cf6670bcde7ee30bf97f5/wix-global-menu-v12/modules/n1-header-v12.js", true))
           .then(function () { if(!alive())return;scopeHeaderCss(); if (P !== 'd') self._innerHeader(P); })
           // V1.2: Ronin motoru ve sahne yazıları GSAP kullanmaz → GSAP yüklenemese de hero boş kalmaz (mobil/tablet)
           // V1.4: hero filmi ve M1/M2 GSAP kullanmaz → GSAP yüklenemese de oynar (ya da poster + düğme); sahne yazıları statik kalır
