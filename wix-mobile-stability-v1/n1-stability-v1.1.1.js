@@ -54,7 +54,7 @@
   var WARM_SHARED = [C648 + 'wix-home-v648/site/n1-site-markup-v648.js', C648 + 'wix-home-v648/modules/n1-header-v648.js',
     C648M + 'modules/n1-footer-v636.css', C648M + 'modules/n1-footer-v646.js', C648M + 'modules/n1-links-v646.js', C648M + 'modules/n1-floating-controls-v632.js',
     'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js'];
-  var G12 = J + 'dc7bae99ae48146427a02a7d3cda80c690900d36/wix-global-menu-v12/', M12 = J + '73c26a633831fbd659138d4b070b110e558db0d8/wix-global-menu-v12/';
+  var G12 = J + '39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/', M12 = J + '162599ec580db98d848cf6670bcde7ee30bf97f5/wix-global-menu-v12/';
   var WARM_HOME = [G12 + 'pages/wix-home-v657/n1-site-wix-v657.js', F97 + 'wix-home-v656/modules/n1-m5-build.js', F97 + 'wix-home-v656/site/n1-home-m5.css',
     F97 + 'wix-home-v656/modules/n1-video-m5.js', F97 + 'wix-home-v656/modules/n1-home-m5.js', F97 + 'wix-home-v656/media/ronin-m5-poster.webp',
     C648M + 'site/n1-site-base-v1.css', M12 + 'site/n1-site-markup-v12.js', M12 + 'modules/n1-header-v12.js']
