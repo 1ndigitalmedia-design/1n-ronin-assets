@@ -1,0 +1,150 @@
+<!-- 1N - V1.3 Test Anahtarı (HEAD) · sürüm 1.3.2 (güvenilir stres testi ?n1t=stress2; 1.3.0 / 1.3.1 ile geriye uyumlu) · Wix: Tüm sayfalar · Head · Her yeni sayfada yükle · EN ÜSTE (diğer Head girişlerinden önce)
+     Normal ziyaretçi: yalnızca location.search ve sessionStorage okunur; hiçbir dosya yüklenmez, gözlemci/zamanlayıcı kurulmaz.
+     Açma (yalnız o sekme):  https://www.reklam1n.com/?n1t=C,diag:1        Kapatma:  ?n1t=0
+     Ön ayarlar (her biri tek değişiklik; ayrıntı: wix-global-stability-v13/DEPLOYMENT.md §Test):
+       A = menu:off                 (V1.2 menü kapanışı — menü düzeltmesi kapalı)
+       B = (boş)                    (yayındaki V1.3: menü düzeltmesi + loader v13)
+       C = life:658                 (B + ana sayfa v658 yaşam döngüsü/video düzeltmesi, Wix adresi değişmeden)
+       D = life:658,stab:1          (C + stabilite modülü v1.1.1)
+       E = life:658,loader:off      (C, loader kapalı)
+       F = hero:2x | hero:1.5x | hero:1x | hero:poster   (Ronin kaynağı; diğerleriyle birleştirilebilir: ?n1t=C,hero:1x,diag:1)
+     diag:1 = sağ altta tanılama kutusu (gerçekte seçilen Ronin kaynağı, çözünürlük, etkin modüller, olası çökme kaydı).
+     1.3.2 — GÜVENİLİR STRES TESTİ:  https://www.reklam1n.com/?n1t=stress2   (ayrıntı: wix-global-stability-v13/stress/STRESS_TEST_V132.md)
+     1.3.1 — eski stres testi (?n1t=stress) yalnız geriye uyumluluk için korunur; kullanmayın (STRESS_V132_REPORT.md).
+       Stres testi sürerken durum localStorage'dadır (sekme çökse de kalır); bu giriş her sayfada varyant bayraklarını oradan geri yükler.
+       ?n1t=0 stres testini de kapatır (kaydedilmiş sonuçlar silinmez).
+     Normal ziyaretçi: URL + sessionStorage + 1 localStorage okuması; hiçbir dosya yüklenmez, gözlemci/zamanlayıcı kurulmaz. -->
+<script>
+(function () {
+  try {
+    var ss = window.sessionStorage, m = /[?&]n1t=([^&#]*)/.exec(location.search);
+    if (m) {
+      var v = decodeURIComponent(m[1]);
+      Object.keys(ss).forEach(function (k) { if (k === 'n1t' || k.indexOf('n1t-') === 0) ss.removeItem(k); });
+      if (v !== '0' && v !== 'off') {
+        var P = { A: 'menu:off', B: '', C: 'life:658', D: 'life:658,stab:1', E: 'life:658,loader:off' };
+        ss.setItem('n1t', '1');
+        v.split(',').forEach(function (kv) {
+          if (P.hasOwnProperty(kv)) { ss.setItem('n1t-variant', kv); kv = P[kv]; }
+          kv.split(',').forEach(function (x) { if (!x) return; var p = x.split(':'); ss.setItem('n1t-' + p[0], p[1] || '1'); });
+        });
+      }
+    }
+    /* 1.3.1 stres testi: sürüyorsa (sekme çökmüş / yeniden açılmış olsa da) varyant bayraklarını localStorage'dan geri yükle */
+    var ls = null; try { ls = window.localStorage; } catch (e) {}
+    if (ls) {
+      if (m && /^(0|off)$/.test(decodeURIComponent(m[1]))) { ['n1s-active', 'n1s-flags', 'n1s-eb', 'n1s-ebdone', 'n1s-ebat', 'n1s-state', 'n1s2-active', 'n1s2-flags', 'n1s2-eb', 'n1s2-ebdone', 'n1s2-ebat', 'n1s2-lease'].forEach(function (k) { ls.removeItem(k); }); }
+      else if (ls.getItem('n1s2-active') === '1') {
+        var f2 = {}; try { f2 = JSON.parse(ls.getItem('n1s2-flags') || '{}'); } catch (e) {}
+        Object.keys(ss).forEach(function (k) { if (k.indexOf('n1t-') === 0 && k !== 'n1t-log') ss.removeItem(k); });
+        ss.setItem('n1t', '1'); ss.setItem('n1t-stress2', '1'); Object.keys(f2).forEach(function (k) { ss.setItem('n1t-' + k, f2[k]); });
+      }
+      else if (ls.getItem('n1s-active') === '1') {
+        var fl = {}; try { fl = JSON.parse(ls.getItem('n1s-flags') || '{}'); } catch (e) {}
+        Object.keys(ss).forEach(function (k) { if (k.indexOf('n1t-') === 0 && k !== 'n1t-log') ss.removeItem(k); });
+        ss.setItem('n1t', '1'); ss.setItem('n1t-stress', '1'); Object.keys(fl).forEach(function (k) { ss.setItem('n1t-' + k, fl[k]); });
+      }
+    }
+    if (ss.getItem('n1t') !== '1') return;                       /* ← normal ziyaretçi burada çıkar */
+    /* stres testi yalnız ana sayfa + 7 hizmet sayfasında: diğer sayfalarda (müşteri panelleri, Intelligence vb.) bu sekmede hiçbir test bayrağı uygulanmaz */
+    if ((ss.getItem('n1t-stress') === '1' || ss.getItem('n1t-stress2') === '1') && !/^\/(kreatif-produksiyon|e-ticaret-yonetimi|sosyal-medya|reklam-yonetimi|ui-ux-tasarim|yapay-zeka|uygulama-gelistirme)?\/?$/.test(location.pathname)) return;
+
+    var CDN = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@';
+    var URL = {
+      v658: CDN + 'b9c8fca79bee3d6ab9baca96d19e3888575c9c06/wix-global-stability-v13/home/n1-site-wix-v658.js',
+      stab: CDN + 'be0c8b1454939989d175197be4ff6667f9e29c19/wix-mobile-stability-v1/n1-stability-v1.1.1.js',
+      '2x': CDN + 'f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film-2x.mp4',
+      '1x': CDN + 'f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film.mp4',
+      '1.5x': CDN + '756d6f87647bd1c2bfaa3da84f47dcfd31cea37d/wix-global-stability-v13/test-media/ronin-m5-film-1.5x.mp4',
+      poster: 'data:video/mp4,',                                  /* ağ isteği yok → film yüklenmez, poster kalır */
+      stress2: CDN + 'c0e844626264957e78da1f2c18cfae0918db8a7a/wix-global-stability-v13/stress/n1-stress-v2.js',
+      stress: CDN + '3a9eda9040df3133f66727c27091e965646695be/wix-global-stability-v13/stress/n1-stress-v1.js'
+    };
+    var F = function (k) { return ss.getItem('n1t-' + k); };
+    var home = location.pathname === '/' || location.pathname === '';
+    window.__n1Test = { version: '1.3.2', variant: F('variant') || '-', flags: {} };
+    Object.keys(ss).forEach(function (k) { if (k.indexOf('n1t-') === 0) window.__n1Test.flags[k.slice(4)] = ss.getItem(k); });
+
+    /* olası çökme kaydı: önceki sayfa pagehide görmeden kaybolduysa işaretlenir (kanıt değil, ipucu) */
+    var log = []; try { log = JSON.parse(ss.getItem('n1t-log') || '[]'); } catch (e) {}
+    var prev = log[log.length - 1];
+    var me = { p: location.pathname, t: Date.now(), ok: 0, nav: '' };
+    if (prev && !prev.ok) prev.lost = 1;
+    log.push(me); if (log.length > 30) log = log.slice(-30);
+    var save = function () { try { ss.setItem('n1t-log', JSON.stringify(log)); } catch (e) {} };
+    save();
+    addEventListener('pagehide', function () { me.ok = 1; save(); });
+    addEventListener('pageshow', function (e) { if (e.persisted) { me.ok = 0; me.bf = (me.bf || 0) + 1; save(); } });
+
+    /* menü düzeltmesi kapalı: body-end n1-menu-close betiği kendi korumasıyla çalışmaz */
+    if (F('menu') === 'off') window.__n1MenuClose = { version: 'disabled-by-test', stats: {} };
+    /* loader: v13 loader sessionStorage 'n1t-loader'='off' değerini kendisi okur */
+
+    var add = function (src) { var root = document.head || document.documentElement; if (!root) return setTimeout(function () { add(src); }, 0);
+      var s = document.createElement('script'); s.src = src; s.async = false; s.setAttribute('data-n1t', ''); root.appendChild(s); };
+    if (home && F('life') === '658') add(URL.v658);               /* Wix v657'den önce tanımlar; v657 kendi koruması ile çıkar */
+    if (F('stab') === '1') add(URL.stab);
+
+    /* 1.3.1 stres testi: hata sayacı (yalnız 1N dosyaları), yükleme sırasında erken geri, test betiği */
+    if (F('stress') === '1') {
+      var E = window.__n1sErr = [];
+      addEventListener('error', function (e) { var f = e && e.filename || ''; if (e && e.message && /n1-|1n-ronin-assets/.test(f)) { E.push(String(e.message).slice(0, 80) + ' @' + f.split('/').pop() + ':' + e.lineno); if (E.length > 20) E.shift(); } }, true);
+      try {
+        var eb = JSON.parse(ls.getItem('n1s-eb') || 'null'), here = location.pathname.replace(/\/+$/, '') || '/';
+        if (eb && eb.path === here && ls.getItem('n1s-ebdone') !== eb.id) {
+          setTimeout(function () { try { ls.setItem('n1s-ebdone', eb.id); ls.setItem('n1s-ebat', JSON.stringify({ ms: Math.round(performance.now()), rs: document.readyState, vids: document.getElementsByTagName('video').length, loader: !!document.getElementById('n1GlobalLoader') })); } catch (e) {} history.back(); }, Math.max(0, eb.ms - performance.now()));
+        }
+      } catch (e) {}
+      add(URL.stress);
+    }
+
+    /* 1.3.2 güvenilir stres testi: hata sayacı, erken geri (yalnız taze 'navigate' yüklemede; reload / BFCache'te asla), test betiği */
+    if (F('stress2') === '1') {
+      var E2 = window.__n1sErr = [];
+      addEventListener('error', function (e) { var f = e && e.filename || ''; if (e && e.message && /n1-|1n-ronin-assets/.test(f)) { E2.push(String(e.message).slice(0, 80) + ' @' + f.split('/').pop() + ':' + e.lineno); if (E2.length > 20) E2.shift(); } }, true);
+      try {
+        var nv = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0] || {}).type;
+        var eb2 = JSON.parse(ls.getItem('n1s2-eb') || 'null'), here2 = location.pathname.replace(/\/+$/, '') || '/';
+        if (nv === 'navigate' && eb2 && eb2.path === here2 && ls.getItem('n1s2-ebdone') !== eb2.id) {
+          setTimeout(function () { try { ls.setItem('n1s2-ebdone', eb2.id); ls.setItem('n1s2-ebat', JSON.stringify({ ms: Math.round(performance.now()), rs: document.readyState, vids: document.getElementsByTagName('video').length })); } catch (e) {} history.back(); }, Math.max(0, eb2.ms - performance.now()));
+        }
+      } catch (e) {}
+      add(URL.stress2);
+    }
+
+    var hero = F('hero');
+    if (home && hero && URL[hero]) {
+      var setHero = function (el) { if (el && el.getAttribute('hero-video') !== URL[hero]) el.setAttribute('hero-video', URL[hero]); };
+      setHero(document.querySelector('n1-site-v1'));
+      var mo = new MutationObserver(function () { var el = document.querySelector('n1-site-v1'); if (el) { setHero(el); mo.disconnect(); } });
+      (function obs() { if (!document.documentElement) return setTimeout(obs, 0); mo.observe(document.documentElement, { childList: true, subtree: true }); })();
+      setTimeout(function () { mo.disconnect(); }, 30000);
+    }
+
+    if (F('diag') !== '1') return;
+    var box, tick = function () {
+      if (!document.body) return;
+      if (!box) { box = document.createElement('div'); box.id = 'n1t-diag';
+        box.style.cssText = 'position:fixed;right:6px;bottom:6px;z-index:2147483647;max-width:62vw;font:10px/1.35 ui-monospace,Menlo,monospace;color:#e8ffe0;background:rgba(0,0,0,.82);padding:6px 8px;border-radius:6px;pointer-events:none;white-space:pre-wrap;view-transition-name:n1t-diag';
+        document.body.appendChild(box); }
+      var v = document.querySelector('[data-m4-film] video'), r = v && v.closest('[data-m4-film]');
+      var src = v ? (v.currentSrc || v.getAttribute('data-src') || '') : '';
+      var name = src.indexOf('data:') === 0 ? 'poster-only' : (src.split('/').pop() || '-');
+      var nav = performance.getEntriesByType ? (performance.getEntriesByType('navigation')[0] || {}).type : '';
+      var mem = performance.memory ? Math.round(performance.memory.usedJSHeapSize / 1048576) + 'MB' : 'n/a';
+      var lost = log.filter(function (x) { return x.lost; }).length;
+      box.textContent =
+        'N1 TEST ' + window.__n1Test.variant + ' ' + JSON.stringify(window.__n1Test.flags).replace(/"/g, '') + '\n' +
+        'menü: ' + (window.__n1MenuClose ? window.__n1MenuClose.version : 'yok') + '  loader: ' + (window.__n1GlobalLoaderInstalled || 'yok') + '\n' +
+        'ana v658: ' + (document.querySelector('script[src*="n1-video-m5-v13"]') ? 'EVET' : (home ? 'hayır' : '-')) +
+        '  stab: ' + (window.__n1Stability ? (window.__n1Stability.version || 'var') : 'yok') + '  nav: ' + (window.__n1Nav ? (window.__n1Nav.version || 'var') : 'yok') + '\n' +
+        (home ? 'Ronin: ' + name + ' ' + (v ? v.videoWidth + '×' + v.videoHeight : '') + ' ' + (r ? r.getAttribute('data-n1v-state') || '' : '') + ' t=' + (v ? v.currentTime.toFixed(1) : '-') + '\n' : '') +
+        'dpr ' + devicePixelRatio + ' ' + innerWidth + '×' + innerHeight + ' nav=' + nav + ' heap=' + mem + '\n' +
+        'sayfa ' + log.length + '  olası çökme/kayıp: ' + lost + (lost ? ' (son: ' + (log.filter(function (x) { return x.lost; }).pop().p) + ')' : '');
+    };
+    var iv = setInterval(tick, 1000);
+    addEventListener('pagehide', function () { clearInterval(iv); });
+    addEventListener('pageshow', function (e) { if (e.persisted) { clearInterval(iv); iv = setInterval(tick, 1000); } });
+  } catch (e) {}
+})();
+</script>
