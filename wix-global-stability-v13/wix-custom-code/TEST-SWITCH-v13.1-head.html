@@ -51,7 +51,7 @@
       '1x': CDN + 'f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film.mp4',
       '1.5x': CDN + '756d6f87647bd1c2bfaa3da84f47dcfd31cea37d/wix-global-stability-v13/test-media/ronin-m5-film-1.5x.mp4',
       poster: 'data:video/mp4,',                                  /* ağ isteği yok → film yüklenmez, poster kalır */
-      stress: CDN + '2e72294f28a1d77e2f751a4f150392bc127b538f/wix-global-stability-v13/stress/n1-stress-v1.js'
+      stress: CDN + '3a9eda9040df3133f66727c27091e965646695be/wix-global-stability-v13/stress/n1-stress-v1.js'
     };
     var F = function (k) { return ss.getItem('n1t-' + k); };
     var home = location.pathname === '/' || location.pathname === '';
@@ -85,7 +85,7 @@
       try {
         var eb = JSON.parse(ls.getItem('n1s-eb') || 'null'), here = location.pathname.replace(/\/+$/, '') || '/';
         if (eb && eb.path === here && ls.getItem('n1s-ebdone') !== eb.id) {
-          setTimeout(function () { try { ls.setItem('n1s-ebdone', eb.id); ls.setItem('n1s-ebat', String(Math.round(performance.now()))); } catch (e) {} history.back(); }, Math.max(0, eb.ms - performance.now()));
+          setTimeout(function () { try { ls.setItem('n1s-ebdone', eb.id); ls.setItem('n1s-ebat', JSON.stringify({ ms: Math.round(performance.now()), rs: document.readyState, vids: document.getElementsByTagName('video').length, loader: !!document.getElementById('n1GlobalLoader') })); } catch (e) {} history.back(); }, Math.max(0, eb.ms - performance.now()));
         }
       } catch (e) {}
       add(URL.stress);
