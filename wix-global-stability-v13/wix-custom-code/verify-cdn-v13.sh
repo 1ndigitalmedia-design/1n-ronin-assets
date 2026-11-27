@@ -14,6 +14,7 @@ b9c8fca79bee3d6ab9baca96d19e3888575c9c06 wix-global-stability-v13/home/n1-site-w
 d33a9ffc77cd85f466fcc439518d2b74d639abda wix-global-stability-v13/pages/wix-uiux-tasarim-v29/n1-uiux-tasarim-v29.js
 be0c8b1454939989d175197be4ff6667f9e29c19 wix-mobile-stability-v1/n1-stability-v1.1.1.js
 3a9eda9040df3133f66727c27091e965646695be wix-global-stability-v13/stress/n1-stress-v1.js
+fca86234d3d9a2904d17d1ee218c3e3f049f19a4 wix-global-stability-v13/stress/n1-stress-v2.js
 756d6f87647bd1c2bfaa3da84f47dcfd31cea37d wix-global-stability-v13/test-media/ronin-m5-film-1.5x.mp4
 f97db8edb37f1e1388f276d840e262fc8452b80a wix-home-v656/media/ronin-m5-film.mp4
 f97db8edb37f1e1388f276d840e262fc8452b80a wix-home-v656/media/ronin-m5-film-2x.mp4
