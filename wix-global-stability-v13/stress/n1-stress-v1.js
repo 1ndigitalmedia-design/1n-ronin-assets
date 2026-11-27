@@ -268,7 +268,7 @@
   }
   function homeAfterBack(nt, persisted) {
     var cur = st.cur || {}; cur.backNt = nt; cur.tHome = Date.now();
-    var eb = jget(K.eb, null), ebd = lsGet(K.ebdone); if (cur.m === 'e') { cur.ebFired = !!(eb && ebd === eb.id); cur.ebAt = jget('n1s-ebat', null); }
+    var eb = jget(K.eb, null), ebd = lsGet(K.ebdone); if (cur.m === 'e') { cur.ebFired = !!(eb && ebd === eb.id); cur.ebAt = cur.ebFired ? jget('n1s-ebat', null) : null; }
     st.cur = cur; setPhase('settle');
     later(finishStep, 4000);
   }
@@ -320,6 +320,7 @@
     out.push('Betik ' + VERSION + ' · rapor ' + new Date().toISOString());
     out.push('Cihaz: ' + (start.ua || navigator.userAgent) + ' · ekran ' + (start.scr || ''));
     out.push('Plan: ' + (start.plan ? JSON.stringify(start.plan) : '-'));
+    out.push('Erken geri: geri, yeni sayfanın Head kodu çalışır çalışmaz zamanlanır; CSV ebAtMs = gerçek tetiklenme anı (gezinme başlangıcından ms), ebReadyState = o andaki belge durumu.');
     out.push('NOT: "OLASI ÇÖKME" = beklenmeyen belge yeniden yüklemesi (iOS sekmeyi yeniden yükledi ya da kullanıcı yeniden yükledi). Kesin çökme kanıtı değildir. Bellek ölçülmez (Safari desteklemez).');
     out.push('');
     out.push('## Varyant özeti');
@@ -343,7 +344,7 @@
     out.push('## Sayfa × varyant: OLASI ÇÖKME / adım');
     out.push('| Sayfa | ' + ORDER.filter(function (v) { return steps.some(function (x) { return x.v === v; }); }).map(function (v) { return v; }).join(' | ') + ' |');
     out.push('|---|' + ORDER.filter(function (v) { return steps.some(function (x) { return x.v === v; }); }).map(function () { return '---'; }).join('|') + '|');
-    PAGES.forEach(function (p) {
+    PAGES.filter(function (p) { return steps.some(function (x) { return x.p === p; }); }).forEach(function (p) {
       out.push('| ' + p + ' | ' + ORDER.filter(function (v) { return steps.some(function (x) { return x.v === v; }); }).map(function (v) {
         var S = steps.filter(function (x) { return x.v === v && x.p === p; }); return S.filter(function (x) { return x.crash; }).length + '/' + S.length; }).join(' | ') + ' |');
     });
@@ -358,11 +359,11 @@
     return out.join('\n');
   }
   function csv(steps) {
-    var cols = ['t', 'v', 'r', 'p', 'm', 'd', 'try', 'crash', 'anomaly', 'how', 'pageNt', 'backNt', 'backReload', 'ebFired', 'earlyBeforeRunner', 'navStartDelay', 'ttfb', 'dcl', 'load', 'ceReady', 'loaderGone', 'scrollSteps', 'scrollMs', 'pageVideos', 'pagePlaying', 'homeHero', 'homeHeroRes', 'homeHeroState', 'homePlaying', 'homeBackReadyMs', 'errs'];
+    var cols = ['t', 'v', 'r', 'p', 'm', 'd', 'try', 'crash', 'anomaly', 'how', 'pageNt', 'backNt', 'backReload', 'ebFired', 'ebAtMs', 'ebReadyState', 'ebVideos', 'ebLoader', 'earlyBeforeRunner', 'navStartDelay', 'ttfb', 'dcl', 'load', 'ceReady', 'loaderGone', 'scrollSteps', 'scrollMs', 'pageVideos', 'pagePlaying', 'homeHero', 'homeHeroRes', 'homeHeroState', 'homePlaying', 'homeBackReadyMs', 'errs'];
     var rows = [cols.join(',')];
     steps.forEach(function (x) {
       var pt = x.pageT || {}, pr = x.pageReady || {}, pv = x.pageVidEnd || x.pageVid || {}, hv = x.homeVid || {}, hb = x.homeBackReady || {};
-      var r = [new Date(x.t).toISOString(), x.v, x.r, x.p, x.m, x.d, x.try, x.crash, x.anomaly || '', x.how || '', x.pageNt || '', x.backNt || '', x.backReload || 0, x.ebFired ? 1 : 0, x.earlyBeforeRunner ? 1 : 0,
+      var r = [new Date(x.t).toISOString(), x.v, x.r, x.p, x.m, x.d, x.try, x.crash, x.anomaly || '', x.how || '', x.pageNt || '', x.backNt || '', x.backReload || 0, x.ebFired ? 1 : 0, x.ebAt && x.ebAt.ms, x.ebAt && x.ebAt.rs, x.ebAt && x.ebAt.vids, x.ebAt ? (x.ebAt.loader ? 1 : 0) : '', x.earlyBeforeRunner ? 1 : 0,
         x.navStartDelay, pt.ttfb, pt.dcl, pt.load, pr.ce, pr.loader, x.scroll && x.scroll.steps, x.scroll && x.scroll.ms, pv.n, pv.play, hv.hero, hv.heroRes, hv.heroSt, hv.play, hb.waited, (x.errs && x.errs.n) || 0];
       rows.push(r.map(function (c) { c = c == null ? '' : String(c); return /[",\n]/.test(c) ? '"' + c.replace(/"/g, '""') + '"' : c; }).join(','));
     });
