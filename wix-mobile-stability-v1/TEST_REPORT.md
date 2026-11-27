@@ -1,5 +1,79 @@
 # TEST_REPORT
 
+**Önemli:** Playwright WebKit 26.6 (Linux/WPE) **gerçek iPhone Safari değildir.** V1.2'de de gerçek cihaz testi yapılmadı; mobil çökmenin çözüldüğü iddia edilmiyor.
+
+## V1.2 — Global Menü ve Navigasyon Revizyonu (27 Kasım 2026)
+
+Düzenek (`wix-global-menu-v12/qa/scripts/scen.js`): canlı HTML her istekte alınır. **A** canlı (bugünkü özel kodlarla); **B** Wix "Capa Navigasyonu" ve "V1.1 Test Anahtarı" blokları çıkarılmış + 11 sayfa v12 dosyalarıyla; **C** = B + stabilite v1.1.1. A da aynı yönlendirme katmanından geçer.
+
+### 1. Kurulum doğrulaması (`scencheck.js`, Chromium)
+| | A | B | C |
+|---|---|---|---|
+| Etkin nav (`__n1Nav`) | 1.0.1 | **yok** | **yok** |
+| `N1_NAV_CONFIG` | var | yok | yok |
+| Sayfadaki `n1-nav*` betiği (ana sayfa / kreatif) | 3 / 2 | **0 / 0** | **0 / 0** |
+| Stabilite | — | — | 1.1.1 |
+| Menüde Hizmetler | bağlantı (`#hizmetler-ozet`) | buton + 7 alt bağlantı | buton + 7 alt bağlantı |
+| Ana sayfa `#hizmetler-ozet` bölümü / bağlantı | var / 7 | var / 7 | var / 7 |
+| ScrollTrigger (ana sayfa / kreatif) | 13 / 26 | 13 / 26 | 13 / 26 |
+
+### 2. Menü kullanılabilirliği (`menutest.js`, senaryo B) — **Chromium 93/93, WebKit 93/93**
+Görünümler: masaüstü 1440×900, tablet 820×1180, tablet yatay 1180×820, mobil 390×844, küçük mobil 320×568. Dokunmatik profillerde gerçek dokunuş (`tap`).
+Her görünümde: Hizmetler bir **buton** · dokununca/tıklayınca açılır, 7 bağlantı doğru sıra ve adreste · URL değişmez · tekrar basınca kapanır · dokunma alanı başlık ≥45 px, alt bağlantı ≥40 px · son alt bağlantıya ulaşılabilir (küçük mobil, masaüstü ve tablet yatayda panel kaydırılabilir) · İnsan Kaynakları alt menüsü aynen · klavye: Enter menüyü açar, ↓ Hizmetler'e gelir, Enter alt menüyü açar, Escape alt menüyü kapatır ve odak başlığa döner, ikinci Escape menüyü kapatır · masaüstü: fareyle üzerine gelince açılır, tıklama sabitler, ikinci tıklama kapatır · alt bağlantı → `/ui-ux-tasarim` standart gezinme · iç sayfa menüsünden → `/yapay-zeka` · geri/ileri doğru · header/logo/MENU görünür · 1N kaynaklı sayfa hatası 0.
+Test sırasında bulunan ve düzeltilen 2 hata: NAVIGATION_REVISION_REPORT §1.
+Ekran görüntüleri: `wix-global-menu-v12/screenshots/` (12 adet).
+
+Eski adres `/#hizmetler-ozet` (B, bilgi): bölüm mevcut, tarayıcı standart çapa kaydırması yapıyor (ör. mobil y=906, masaüstü y=2781); özel header ofseti yok.
+
+### 3. Çökme senaryosu döngüleri — A / B / C (`cycle3.js`, 21 döngü, 6 sn bekleme, eşleştirilmiş paralel)
+| Motor | Senaryo | Ölçüm | Hatalı döngü / asılı / çökme | Geri dönüşte ATS reload | En büyük süreç ort. / maks. / son 15 ort. (MB) | Hizmet sayfası bekleme sonrası oynayan / tamponlu / toplam video | Header görünür |
+|---|---|---|---|---|---|---|---|
+| WebKit | A | 84 | 0 / 0 / 0 | 21/21 | 1464 / 1932 / 1650 | 0 / 53 / 60 | 84/84 |
+| WebKit | B | 84 | 0 / 0 / 0 | 21/21 | 1446 / 1767 / 1628 | 0 / 52 / 60 | 84/84 |
+| WebKit | C | 84 | 0 / 0 / 0 | 21/21 | 1454 / 1790 / 1682 | 0 / 53 / 60 | 84/84 |
+| Chromium | A | 84 | 0 / 0 / 0 | 0/21 | 513 / 669 / 589 | 0 / 54 / 60 | 84/84 |
+| Chromium | B | 84 | 0 / 0 / 0 | 0/21 | 468 / 603 / 479 | 0 / 54 / 60 | 84/84 |
+| Chromium | C | 84 | 0 / 0 / 0 | 0/21 | 478 / 639 / 468 | 0 / 54 / 60 | 84/84 |
+
+Yorum:
+- Üç senaryoda da çökme, asılı kalma, hatalı döngü yok; header her ölçümde görünür.
+- WebKit süreç belleği A/B/C arasında ±%1–2 (gürültü düzeyinde). **Özel çapa navigasyonunu kaldırmak emülasyonda bellek ya da kararlılık açısından ölçülebilir bir fark yaratmıyor.** Chromium'da B/C, A'dan ~%7–9 düşük.
+- Video: hizmet sayfalarında bekleme sonrası oynayan video 0 (ekran dışında duraklatılıyor); tamponlu video sayısı üç senaryoda aynı (stabilite v1.1.1'de uzak-bırakma varsayılan kapalı).
+- **ATS ölçümü hakkında:** yönlendirilen belgelerde sunucunun `Set-Cookie` başlıkları taşınmadığı için WebKit'te geri dönüşlerin 21/21'inde, Chromium'da 0/21'inde ATS yeniden yüklemesi görüldü. Bu, gerçek oranı temsil etmiyor (yönlendirmesiz önceki ölçümde 10 geri dönüşte 4). Üç senaryoda eşit olduğu için karşılaştırmayı bozmuyor. Wix güvenlik mekanizmasına dokunulmadı.
+
+### 4. Menüden doğrudan gezinme + geri/ileri (`menuhop.js`)
+Ana sayfa → (B/C: MENU → Hizmetler → alt bağlantı; A: aynı adreslere doğrudan gezinme) 7 hizmet sayfası → 7× geri → 7× ileri (22 adım).
+
+| | WebKit | Chromium |
+|---|---|---|
+| A | 1. koşu: geri 7/7, **ileri 1/7** (6 `goForward` zaman aşımı); 2. ve 3. koşu: 22/22 | 22/22 |
+| B | 22/22 (2 koşu) | 22/22 |
+| C | 22/22 | 22/22 |
+
+Tüm başarılı adımlarda yol sırası doğru ve header görünür. A'daki ileri geçmişi kaybı bir kez görüldü, iki tekrarda oluşmadı; nedeni belirlenemedi. Bu testte A'da gezinme yöntemi farklı olduğu için bellek değerleri A ile B/C arasında karşılaştırılmamalı.
+
+### 5. Testlerin sınırları
+- Gerçek iOS Safari/Chrome, gerçek BFCache, Düşük Güç Modu ve jetsam test edilemedi.
+- ATS gerçek davranışı bu düzenekte temsil edilemedi (bkz. §3).
+- Ölçüm kapsamı sınırları: §11 (V1.1) geçerli.
+
+### 6. Fiziksel cihaz testi planı (sizin tarafınızdan, her aşamadan sonra)
+Aynı iPhone, aynı Wi-Fi, Safari ve Chrome ayrı ayrı. DEPLOYMENT.md'deki her aşama yayınlandıktan sonra:
+1. Ana sayfa → hizmet sayfası → geri hareketi → başka hizmet; 7 hizmet × 3 tur.
+2. MENU → Hizmetler → 7 alt bağlantıyla sırayla gezinme, ardından geri ve ileri.
+3. Uyarının çıktığı döngü numarası, iOS sürümü, tarayıcı ve cihaz modeli not edilir.
+
+| Aşama | Ne değişir | Uyarı sürerse anlamı |
+|---|---|---|
+| 0 (A temiz) | hatalı V1.1 girişleri silinir | taban ölçüm |
+| B | yeni menü, özel nav yok | çapa navigasyonu kök neden **değil** |
+| C | + stabilite | stabilite yeterli değil → sıradaki aday: Ronin 2× film (MOBILE_MEDIA_BENCHMARK §5) |
+
+---
+
+# V1.1 TEST_REPORT
+
+
 **Önemli:** Playwright WebKit 26.6 (Linux/WPE) testleri **gerçek iPhone Safari testi değildir.** V1.1'de de gerçek cihaz testi yapılmadı; kabul senaryosu §8'de, güvenli test yöntemi DEPLOYMENT.md "Aşama 1"de.
 
 ## V1.1 özeti (27 Kasım 2026)

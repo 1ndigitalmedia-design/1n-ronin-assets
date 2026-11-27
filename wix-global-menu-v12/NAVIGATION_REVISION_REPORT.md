@@ -74,7 +74,15 @@ Adresler, ayarlar ve adım adım talimat: DEPLOYMENT.md. Geri dönüş: ROLLBACK
 
 ## 6. Test sonuçları (özet; ayrıntı TEST_REPORT.md V1.2)
 
-{{TESTS}}
+| Test | Chromium | WebKit |
+|---|---|---|
+| Kurulum: B/C'de `__n1Nav`/`N1_NAV_CONFIG` yok, `n1-nav*` betiği 0; Hizmetler bölümü ve 7 bağlantı korunuyor | ✓ | — |
+| Menü kullanılabilirliği (5 görünüm: aç/kapa, klavye, dokunma alanı, kaydırma, gezinme, geri/ileri, İK) | **93/93** | **93/93** |
+| 21 döngü A/B/C: çökme / asılı kalma / hata | 0 / 0 / 0 (her senaryo) | 0 / 0 / 0 (her senaryo) |
+| 21 döngü en büyük süreç ortalaması A / B / C (MB) | 513 / 468 / 478 | 1464 / 1446 / 1454 |
+| Menüden gezinme + 7 geri + 7 ileri (22 adım) | A, B, C: 22/22 | B, C: 22/22; A: 1 koşuda ileri 1/7, 2 tekrarda 22/22 |
+
+**Yorum:** Emülasyonda özel çapa navigasyonunu kaldırmak (B) ve stabilite eklemek (C), canlıya (A) göre ölçülebilir bir bellek ya da kararlılık farkı yaratmıyor (WebKit ±%1–2). Bu, çapa navigasyonunun çökmenin kesin nedeni olduğu varsayımını **desteklemiyor**; ancak gerçek iPhone'un yerine geçmez. Ayırt edici kanıt, aşamalı fiziksel cihaz testinden gelecek (TEST_REPORT.md V1.2 §6).
 
 ## 7. Riskler
 - **jsDelivr 403 (yeni adresler):** depo 50 MB'ı aştığı için yeni commit adresleri ilk dakikalarda bazı uç sunuculardan `403 Package size exceeded` dönebiliyor (gözlendi; ~1 dk ısınmadan sonra 20/20 başarılı). Canlı adresler 282/282 başarılı. **Wix'te adres değiştirmeden önce `wix-custom-code/verify-cdn.sh` çalıştırılmalı.**
