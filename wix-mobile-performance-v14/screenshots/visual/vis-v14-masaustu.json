@@ -1,0 +1,360 @@
+[
+ {
+  "page": "/",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 12752,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 0,
+    "y": 4478,
+    "w": 1440,
+    "h": 600,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 6172,
+    "w": 1440,
+    "h": 810,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": 0,
+    "y": 7683,
+    "w": 1440,
+    "h": 450,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x600"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/home-masaustu-v14-0.jpg",
+   "../screenshots/visual/home-masaustu-v14-20.jpg",
+   "../screenshots/visual/home-masaustu-v14-40.jpg",
+   "../screenshots/visual/home-masaustu-v14-60.jpg",
+   "../screenshots/visual/home-masaustu-v14-80.jpg"
+  ]
+ },
+ {
+  "page": "/kreatif-produksiyon",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 10974,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 515,
+    "y": 193,
+    "w": 853,
+    "h": 480,
+    "vis": true,
+    "fit": "contain",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 72,
+    "y": 6113,
+    "w": 853,
+    "h": 480,
+    "vis": true,
+    "fit": "contain",
+    "nat": "1920x1080"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/kreatif-produksiyon-masaustu-v14-0.jpg",
+   "../screenshots/visual/kreatif-produksiyon-masaustu-v14-20.jpg",
+   "../screenshots/visual/kreatif-produksiyon-masaustu-v14-40.jpg",
+   "../screenshots/visual/kreatif-produksiyon-masaustu-v14-60.jpg",
+   "../screenshots/visual/kreatif-produksiyon-masaustu-v14-80.jpg"
+  ]
+ },
+ {
+  "page": "/e-ticaret-yonetimi",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 11442,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 996,
+    "y": 131,
+    "w": 372,
+    "h": 662,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 183,
+    "y": 2191,
+    "w": 411,
+    "h": 514,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x900"
+   },
+   {
+    "k": "video",
+    "x": 545,
+    "y": 7593,
+    "w": 350,
+    "h": 623,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/e-ticaret-yonetimi-masaustu-v14-0.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-masaustu-v14-20.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-masaustu-v14-40.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-masaustu-v14-60.jpg",
+   "../screenshots/visual/e-ticaret-yonetimi-masaustu-v14-80.jpg"
+  ]
+ },
+ {
+  "page": "/sosyal-medya",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 11733,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 642,
+    "y": 193,
+    "w": 302,
+    "h": 538,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 736,
+    "y": 3886,
+    "w": 345,
+    "h": 432,
+    "vis": true,
+    "fit": "cover",
+    "nat": "0x0"
+   },
+   {
+    "k": "video",
+    "x": 72,
+    "y": 5278,
+    "w": 1296,
+    "h": 567,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": 1068,
+    "y": 10485,
+    "w": 300,
+    "h": 534,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/sosyal-medya-masaustu-v14-0.jpg",
+   "../screenshots/visual/sosyal-medya-masaustu-v14-20.jpg",
+   "../screenshots/visual/sosyal-medya-masaustu-v14-40.jpg",
+   "../screenshots/visual/sosyal-medya-masaustu-v14-60.jpg",
+   "../screenshots/visual/sosyal-medya-masaustu-v14-80.jpg"
+  ]
+ },
+ {
+  "page": "/reklam-yonetimi",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 13766,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 817,
+    "y": 171,
+    "w": 653,
+    "h": 367,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 20,
+    "y": 8619,
+    "w": 1400,
+    "h": 600,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1920x1080"
+   },
+   {
+    "k": "video",
+    "x": -45,
+    "y": 11066,
+    "w": 1529,
+    "h": 601,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1280x720"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/reklam-yonetimi-masaustu-v14-0.jpg",
+   "../screenshots/visual/reklam-yonetimi-masaustu-v14-20.jpg",
+   "../screenshots/visual/reklam-yonetimi-masaustu-v14-40.jpg",
+   "../screenshots/visual/reklam-yonetimi-masaustu-v14-60.jpg",
+   "../screenshots/visual/reklam-yonetimi-masaustu-v14-80.jpg"
+  ]
+ },
+ {
+  "page": "/ui-ux-tasarim",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 15396,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 72,
+    "y": 2125,
+    "w": 522,
+    "h": 652,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/ui-ux-tasarim-masaustu-v14-0.jpg",
+   "../screenshots/visual/ui-ux-tasarim-masaustu-v14-20.jpg",
+   "../screenshots/visual/ui-ux-tasarim-masaustu-v14-40.jpg",
+   "../screenshots/visual/ui-ux-tasarim-masaustu-v14-60.jpg",
+   "../screenshots/visual/ui-ux-tasarim-masaustu-v14-80.jpg"
+  ]
+ },
+ {
+  "page": "/yapay-zeka",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 15039,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 547,
+    "y": 174,
+    "w": 346,
+    "h": 614,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 736,
+    "y": 3525,
+    "w": 632,
+    "h": 632,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1080x1080"
+   },
+   {
+    "k": "video",
+    "x": 515,
+    "y": 9386,
+    "w": 411,
+    "h": 730,
+    "vis": true,
+    "fit": "cover",
+    "nat": "608x1080"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/yapay-zeka-masaustu-v14-0.jpg",
+   "../screenshots/visual/yapay-zeka-masaustu-v14-20.jpg",
+   "../screenshots/visual/yapay-zeka-masaustu-v14-40.jpg",
+   "../screenshots/visual/yapay-zeka-masaustu-v14-60.jpg",
+   "../screenshots/visual/yapay-zeka-masaustu-v14-80.jpg"
+  ]
+ },
+ {
+  "page": "/uygulama-gelistirme",
+  "mode": "v14",
+  "profile": "masaustu",
+  "height": 15052,
+  "overflowX": false,
+  "boxes": [
+   {
+    "k": "video",
+    "x": 0,
+    "y": 88,
+    "w": 1440,
+    "h": 810,
+    "vis": true,
+    "fit": "cover",
+    "nat": "1280x720"
+   },
+   {
+    "k": "video",
+    "x": 846,
+    "y": 5943,
+    "w": 522,
+    "h": 702,
+    "vis": false,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 72,
+    "y": 9775,
+    "w": 411,
+    "h": 730,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   },
+   {
+    "k": "video",
+    "x": 957,
+    "y": 11200,
+    "w": 411,
+    "h": 730,
+    "vis": true,
+    "fit": "cover",
+    "nat": "720x1280"
+   }
+  ],
+  "shots": [
+   "../screenshots/visual/uygulama-gelistirme-masaustu-v14-0.jpg",
+   "../screenshots/visual/uygulama-gelistirme-masaustu-v14-20.jpg",
+   "../screenshots/visual/uygulama-gelistirme-masaustu-v14-40.jpg",
+   "../screenshots/visual/uygulama-gelistirme-masaustu-v14-60.jpg",
+   "../screenshots/visual/uygulama-gelistirme-masaustu-v14-80.jpg"
+  ]
+ }
+]

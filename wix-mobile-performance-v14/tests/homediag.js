@@ -1,0 +1,7 @@
+const pw=require('playwright');const [,,MODE='v14']=process.argv;
+(async()=>{const b=await pw.chromium.launch({args:['--autoplay-policy=no-user-gesture-required']});const ctx=await b.newContext({viewport:{width:390,height:844},deviceScaleFactor:3,hasTouch:true,isMobile:true});
+if(MODE==='v14')await require('./route14.js')(ctx);const pg=await ctx.newPage();const errs=[];pg.on('pageerror',e=>errs.push(String(e.message).slice(0,140)));pg.on('console',m=>{if(m.type()==='error'&&/n1|1N/.test(m.text()))errs.push('console '+m.text().slice(0,140));});
+const D=()=>pg.evaluate(()=>({st:window.ScrollTrigger?ScrollTrigger.getAll().length:-1,vids:[...document.querySelectorAll('[data-n1v-state]')].map(e=>e.getAttribute('data-n1v-state')).join(','),site:(document.querySelector('n1-site-v1')||{}).childElementCount,hiz:!!document.querySelector('#hizmetler-ozet'),diag:window.__n1HomeDiag?1:0,scripts:[...document.scripts].map(s=>s.src.split('/').pop()).filter(s=>/n1-/.test(s)).join(' ')}));
+await pg.goto('https://www.reklam1n.com/',{waitUntil:'domcontentloaded'});await pg.waitForTimeout(9000);console.log(MODE,'ilk',JSON.stringify(await D()));
+await pg.goto('https://www.reklam1n.com/markalar',{waitUntil:'domcontentloaded'});await pg.waitForTimeout(4000);await pg.goBack({waitUntil:'commit'});await pg.waitForTimeout(8000);
+console.log(MODE,'geri',JSON.stringify(await D()));console.log('hatalar',errs.filter(e=>!/googleadservices|doubleclick|Cross-origin|Failed to fetch/.test(e)).slice(0,5));await b.close();})();

@@ -1,0 +1,13 @@
+başlangıç p0 rs4 ns1 t0.44 d1.8 loop1 r100%
+#1 300ms p0 rs4 ns1 t0.51 d1.8 loop1 r100%
+#1 1000ms p0 rs4 ns1 t0.93 d1.8 loop1 r100%
+#1 2000ms p0 rs4 ns1 t1.53 d1.8 loop1 r100%
+#1 4000ms p0 rs4 ns1 t0.90 d1.8 loop1 r100%
+#1 6000ms p0 rs4 ns1 t0.26 d1.8 loop1 r100%
+#1 9000ms p0 rs4 ns1 t0.22 d1.8 loop1 r100%
+#2 300ms p0 rs4 ns1 t0.28 d1.8 loop1 r100%
+#2 1000ms p0 rs4 ns1 t0.71 d1.8 loop1 r100%
+#2 2000ms p0 rs4 ns1 t1.31 d1.8 loop1 r100%
+#2 4000ms p0 rs4 ns1 t0.67 d1.8 loop1 r100%
+#2 6000ms p0 rs4 ns1 t0.03 d1.8 loop1 r100%
+#2 9000ms p0 rs4 ns1 t1.83 d1.8 loop1 r100%

@@ -1,0 +1,254 @@
+[
+ {
+  "label": "tur1 ana sayfa",
+  "heapMB": 19.1,
+  "docs": 4,
+  "nodes": 2621,
+  "listeners": 507,
+  "rendererRssMB": 517,
+  "vids": 5
+ },
+ {
+  "label": "tur1 /kreatif-produksiyon",
+  "heapMB": 19.4,
+  "docs": 3,
+  "nodes": 2985,
+  "listeners": 448,
+  "rendererRssMB": 507,
+  "vids": 2
+ },
+ {
+  "label": "tur1 ana sayfa",
+  "heapMB": 18.4,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 596,
+  "vids": 5
+ },
+ {
+  "label": "tur1 /e-ticaret-yonetimi",
+  "heapMB": 18.8,
+  "docs": 3,
+  "nodes": 2467,
+  "listeners": 391,
+  "rendererRssMB": 483,
+  "vids": 1
+ },
+ {
+  "label": "tur1 ana sayfa",
+  "heapMB": 18.3,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 527,
+  "vids": 5
+ },
+ {
+  "label": "tur1 /sosyal-medya",
+  "heapMB": 18.7,
+  "docs": 3,
+  "nodes": 2363,
+  "listeners": 404,
+  "rendererRssMB": 431,
+  "vids": 1
+ },
+ {
+  "label": "tur1 ana sayfa",
+  "heapMB": 18.3,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 543,
+  "vids": 5
+ },
+ {
+  "label": "tur1 /reklam-yonetimi",
+  "heapMB": 18.8,
+  "docs": 3,
+  "nodes": 2534,
+  "listeners": 405,
+  "rendererRssMB": 407,
+  "vids": 1
+ },
+ {
+  "label": "tur1 ana sayfa",
+  "heapMB": 19.1,
+  "docs": 4,
+  "nodes": 2621,
+  "listeners": 507,
+  "rendererRssMB": 522,
+  "vids": 5
+ },
+ {
+  "label": "tur1 /ui-ux-tasarim",
+  "heapMB": 18.8,
+  "docs": 3,
+  "nodes": 2627,
+  "listeners": 416,
+  "rendererRssMB": 460,
+  "vids": 0
+ },
+ {
+  "label": "tur1 ana sayfa",
+  "heapMB": 18.4,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 622,
+  "vids": 5
+ },
+ {
+  "label": "tur1 /yapay-zeka",
+  "heapMB": 18.8,
+  "docs": 3,
+  "nodes": 2607,
+  "listeners": 391,
+  "rendererRssMB": 511,
+  "vids": 1
+ },
+ {
+  "label": "tur1 ana sayfa",
+  "heapMB": 18.3,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 528,
+  "vids": 5
+ },
+ {
+  "label": "tur1 /uygulama-gelistirme",
+  "heapMB": 18.7,
+  "docs": 3,
+  "nodes": 2938,
+  "listeners": 414,
+  "rendererRssMB": 426,
+  "vids": 1
+ },
+ {
+  "label": "tur2 ana sayfa",
+  "heapMB": 18.3,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 566,
+  "vids": 5
+ },
+ {
+  "label": "tur2 /kreatif-produksiyon",
+  "heapMB": 19.3,
+  "docs": 3,
+  "nodes": 2985,
+  "listeners": 448,
+  "rendererRssMB": 536,
+  "vids": 2
+ },
+ {
+  "label": "tur2 ana sayfa",
+  "heapMB": 18.4,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 519,
+  "vids": 5
+ },
+ {
+  "label": "tur2 /e-ticaret-yonetimi",
+  "heapMB": 18.8,
+  "docs": 3,
+  "nodes": 2467,
+  "listeners": 391,
+  "rendererRssMB": 425,
+  "vids": 1
+ },
+ {
+  "label": "tur2 ana sayfa",
+  "heapMB": 19.2,
+  "docs": 4,
+  "nodes": 2621,
+  "listeners": 507,
+  "rendererRssMB": 530,
+  "vids": 5
+ },
+ {
+  "label": "tur2 /sosyal-medya",
+  "heapMB": 19.5,
+  "docs": 3,
+  "nodes": 2364,
+  "listeners": 407,
+  "rendererRssMB": 434,
+  "vids": 1
+ },
+ {
+  "label": "tur2 ana sayfa",
+  "heapMB": 18.4,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 518,
+  "vids": 5
+ },
+ {
+  "label": "tur2 /reklam-yonetimi",
+  "heapMB": 18.8,
+  "docs": 3,
+  "nodes": 2534,
+  "listeners": 405,
+  "rendererRssMB": 404,
+  "vids": 1
+ },
+ {
+  "label": "tur2 ana sayfa",
+  "heapMB": 18.4,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 507,
+  "rendererRssMB": 557,
+  "vids": 5
+ },
+ {
+  "label": "tur2 /ui-ux-tasarim",
+  "heapMB": 18.7,
+  "docs": 3,
+  "nodes": 2627,
+  "listeners": 414,
+  "rendererRssMB": 474,
+  "vids": 0
+ },
+ {
+  "label": "tur2 ana sayfa",
+  "heapMB": 18.4,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 523,
+  "vids": 5
+ },
+ {
+  "label": "tur2 /yapay-zeka",
+  "heapMB": 19.7,
+  "docs": 3,
+  "nodes": 2608,
+  "listeners": 394,
+  "rendererRssMB": 427,
+  "vids": 1
+ },
+ {
+  "label": "tur2 ana sayfa",
+  "heapMB": 18.3,
+  "docs": 4,
+  "nodes": 2620,
+  "listeners": 504,
+  "rendererRssMB": 561,
+  "vids": 5
+ },
+ {
+  "label": "tur2 /uygulama-gelistirme",
+  "heapMB": 19.5,
+  "docs": 3,
+  "nodes": 2939,
+  "listeners": 417,
+  "rendererRssMB": 462,
+  "vids": 1
+ }
+]

@@ -1,0 +1,420 @@
+{
+ "kreatif-monitor": {
+  "page": "kreatif-produksiyon",
+  "wixVideoId": "6dbf5e_2821f1bb754740f9bc6deb51f052cf8c",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_2821f1bb754740f9bc6deb51f052cf8c/1080p/mp4/file.mp4",
+  "sourceQuality": "1080p",
+  "sourceWxH": "1920x1080",
+  "time": 1.21,
+  "reason": "1N_Digital_Media başlık karesi; glitch dili, temiz, marka",
+  "files": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "wix-mobile-performance-v14/media/stills/kreatif-produksiyon/kreatif-monitor-480.webp",
+    "bytes": 14572
+   },
+   {
+    "w": 720,
+    "h": 405,
+    "file": "wix-mobile-performance-v14/media/stills/kreatif-produksiyon/kreatif-monitor-720.webp",
+    "bytes": 25114
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "wix-mobile-performance-v14/media/stills/kreatif-produksiyon/kreatif-monitor-960.webp",
+    "bytes": 34862
+   },
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "wix-mobile-performance-v14/media/stills/kreatif-produksiyon/kreatif-monitor-1280.webp",
+    "bytes": 48010
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "wix-mobile-performance-v14/media/stills/kreatif-produksiyon/kreatif-monitor-1920.webp",
+    "bytes": 68854
+   }
+  ]
+ },
+ "eticaret-store": {
+  "page": "e-ticaret-yonetimi",
+  "wixVideoId": "6dbf5e_382aee7841704e1c9e54539673ff9f63",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_382aee7841704e1c9e54539673ff9f63/480p/mp4/file.mp4",
+  "sourceQuality": "480p",
+  "sourceWxH": "720x900",
+  "time": 0.55,
+  "reason": "menü sayfaları en düz ve okunur hâlde",
+  "files": [
+   {
+    "w": 480,
+    "h": 600,
+    "file": "wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-store-480.webp",
+    "bytes": 19946
+   },
+   {
+    "w": 720,
+    "h": 900,
+    "file": "wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-store-720.webp",
+    "bytes": 33104
+   }
+  ]
+ },
+ "eticaret-trio": {
+  "page": "e-ticaret-yonetimi",
+  "wixVideoId": "6dbf5e_efaf0298818c43b19c85c0c37bdb7f4a",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_efaf0298818c43b19c85c0c37bdb7f4a/720p/mp4/file.mp4",
+  "sourceQuality": "720p",
+  "sourceWxH": "720x1280",
+  "time": 1.69,
+  "reason": "kasklı figür, keskin, koyu zemin",
+  "files": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-trio-480.webp",
+    "bytes": 34938
+   },
+   {
+    "w": 720,
+    "h": 1280,
+    "file": "wix-mobile-performance-v14/media/stills/e-ticaret-yonetimi/eticaret-trio-720.webp",
+    "bytes": 59024
+   }
+  ]
+ },
+ "reklam-manifesto": {
+  "page": "reklam-yonetimi",
+  "wixVideoId": "6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_d0b5ab077fad434aa46a37dca1aa10b8/720p/mp4/file.mp4",
+  "sourceQuality": "720p",
+  "sourceWxH": "1280x720",
+  "time": 0.25,
+  "reason": "bütün panolar dolu, \"AND SOLUTIONS EMERGE\"",
+  "files": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-manifesto-480.webp",
+    "bytes": 17160
+   },
+   {
+    "w": 720,
+    "h": 405,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-manifesto-720.webp",
+    "bytes": 29106
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-manifesto-960.webp",
+    "bytes": 41588
+   },
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-manifesto-1280.webp",
+    "bytes": 55826
+   }
+  ]
+ },
+ "reklam-karar": {
+  "page": "reklam-yonetimi",
+  "wixVideoId": "6dbf5e_3855bf1db1384a9c961782c650b3686d",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_3855bf1db1384a9c961782c650b3686d/1080p/mp4/file.mp4",
+  "sourceQuality": "1080p",
+  "sourceWxH": "1920x1080",
+  "time": 1.5,
+  "reason": "vitrin, en keskin kare",
+  "files": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-karar-480.webp",
+    "bytes": 18742
+   },
+   {
+    "w": 720,
+    "h": 405,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-karar-720.webp",
+    "bytes": 35866
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-karar-960.webp",
+    "bytes": 54806
+   },
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-karar-1280.webp",
+    "bytes": 83878
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "wix-mobile-performance-v14/media/stills/reklam-yonetimi/reklam-karar-1920.webp",
+    "bytes": 151334
+   }
+  ]
+ },
+ "sosyal-hareket": {
+  "page": "sosyal-medya",
+  "wixVideoId": "6dbf5e_4892baa5590541faae6c24693b7fb00c",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_4892baa5590541faae6c24693b7fb00c/1080p/mp4/file.mp4",
+  "sourceQuality": "1080p",
+  "sourceWxH": "1920x1080",
+  "time": 1.17,
+  "reason": "ekranlı oda kompozisyonu (arka plan kullanımına uygun)",
+  "files": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-hareket-480.webp",
+    "bytes": 23030
+   },
+   {
+    "w": 720,
+    "h": 405,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-hareket-720.webp",
+    "bytes": 39740
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-hareket-960.webp",
+    "bytes": 57750
+   },
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-hareket-1280.webp",
+    "bytes": 84468
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-hareket-1920.webp",
+    "bytes": 131794
+   }
+  ]
+ },
+ "sosyal-final": {
+  "page": "sosyal-medya",
+  "wixVideoId": "6dbf5e_f14a9f803bc442838bfe159f0aa49e72",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_f14a9f803bc442838bfe159f0aa49e72/1080p/mp4/file.mp4",
+  "sourceQuality": "1080p",
+  "sourceWxH": "1920x1080",
+  "time": 1.5,
+  "reason": "vitrin, en keskin kare (reklam-karar ile aynı dosya)",
+  "files": [
+   {
+    "w": 480,
+    "h": 270,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-final-480.webp",
+    "bytes": 18742
+   },
+   {
+    "w": 720,
+    "h": 405,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-final-720.webp",
+    "bytes": 35866
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-final-960.webp",
+    "bytes": 54806
+   },
+   {
+    "w": 1280,
+    "h": 720,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-final-1280.webp",
+    "bytes": 83878
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-final-1920.webp",
+    "bytes": 151334
+   }
+  ]
+ },
+ "sosyal-strateji": {
+  "page": "sosyal-medya",
+  "wixVideoId": "6dbf5e_044b3674636a4813b20f3f7dd8a402fe",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_044b3674636a4813b20f3f7dd8a402fe/480p/mp4/file.mp4",
+  "sourceQuality": "480p",
+  "sourceWxH": "720x900",
+  "time": 0.28,
+  "reason": "ERA formu düzgün, deformasyonsuz",
+  "files": [
+   {
+    "w": 480,
+    "h": 600,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-strateji-480.webp",
+    "bytes": 6544
+   },
+   {
+    "w": 720,
+    "h": 900,
+    "file": "wix-mobile-performance-v14/media/stills/sosyal-medya/sosyal-strateji-720.webp",
+    "bytes": 11410
+   }
+  ]
+ },
+ "uiux-feel": {
+  "page": "ui-ux-tasarim",
+  "wixVideoId": "6dbf5e_54840d234c7d41c9b1983c73164e3050",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_54840d234c7d41c9b1983c73164e3050/720p/mp4/file.mp4",
+  "sourceQuality": "720p",
+  "sourceWxH": "720x1280",
+  "time": 5.11,
+  "reason": "sporcu + arayüz, aydınlık, keskin",
+  "files": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "wix-mobile-performance-v14/media/stills/ui-ux-tasarim/uiux-feel-480.webp",
+    "bytes": 22334
+   },
+   {
+    "w": 720,
+    "h": 1280,
+    "file": "wix-mobile-performance-v14/media/stills/ui-ux-tasarim/uiux-feel-720.webp",
+    "bytes": 36506
+   }
+  ]
+ },
+ "yapay-gen": {
+  "page": "yapay-zeka",
+  "wixVideoId": "6dbf5e_e177591c89e44710be97a52b3e6284f1",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_e177591c89e44710be97a52b3e6284f1/1080p/mp4/file.mp4",
+  "sourceQuality": "1080p",
+  "sourceWxH": "1080x1080",
+  "time": 0.0,
+  "reason": "tasarımcının belirlediği ilk kare (first:0); düzenli ızgara",
+  "files": [
+   {
+    "w": 480,
+    "h": 480,
+    "file": "wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-gen-480.webp",
+    "bytes": 59424
+   },
+   {
+    "w": 720,
+    "h": 720,
+    "file": "wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-gen-720.webp",
+    "bytes": 102146
+   },
+   {
+    "w": 960,
+    "h": 960,
+    "file": "wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-gen-960.webp",
+    "bytes": 150782
+   },
+   {
+    "w": 1080,
+    "h": 1080,
+    "file": "wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-gen-1080.webp",
+    "bytes": 181438
+   }
+  ]
+ },
+ "yapay-story": {
+  "page": "yapay-zeka",
+  "wixVideoId": "6dbf5e_6c47eb3e5ef6409fb3285c7623d6054f",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_6c47eb3e5ef6409fb3285c7623d6054f/1080p/mp4/file.mp4",
+  "sourceQuality": "1080p",
+  "sourceWxH": "608x1080",
+  "time": 12.61,
+  "reason": "ağaç ve kutup ışıkları; hikâyenin doruk karesi",
+  "files": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-story-480.webp",
+    "bytes": 37960
+   },
+   {
+    "w": 608,
+    "h": 1080,
+    "file": "wix-mobile-performance-v14/media/stills/yapay-zeka/yapay-story-608.webp",
+    "bytes": 60318
+   }
+  ]
+ },
+ "uygulama-web": {
+  "page": "uygulama-gelistirme",
+  "wixVideoId": "6dbf5e_58f4d602044e4af1972b2898b5a5694a",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_58f4d602044e4af1972b2898b5a5694a/720p/mp4/file.mp4",
+  "sourceQuality": "720p",
+  "sourceWxH": "720x1280",
+  "time": 4.04,
+  "reason": "monitörde pano arayüzü, keskin",
+  "files": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-web-480.webp",
+    "bytes": 31628
+   },
+   {
+    "w": 720,
+    "h": 1280,
+    "file": "wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-web-720.webp",
+    "bytes": 56420
+   }
+  ]
+ },
+ "uygulama-screens": {
+  "page": "uygulama-gelistirme",
+  "wixVideoId": "6dbf5e_cbd02cfab44141d6838302d4f3b915c7",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_cbd02cfab44141d6838302d4f3b915c7/720p/mp4/file.mp4",
+  "sourceQuality": "720p",
+  "sourceWxH": "720x1280",
+  "time": 4.56,
+  "reason": "elde telefon, aydınlık, keskin",
+  "files": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-screens-480.webp",
+    "bytes": 19520
+   },
+   {
+    "w": 720,
+    "h": 1280,
+    "file": "wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-screens-720.webp",
+    "bytes": 34030
+   }
+  ]
+ },
+ "uygulama-motion": {
+  "page": "uygulama-gelistirme",
+  "wixVideoId": "6dbf5e_23811760080b45b7aa77526f31898777",
+  "sourceUrl": "https://video.wixstatic.com/video/6dbf5e_23811760080b45b7aa77526f31898777/720p/mp4/file.mp4",
+  "sourceQuality": "720p",
+  "sourceWxH": "720x1280",
+  "time": 4.47,
+  "reason": "GCT Balance telefon, net arayüz",
+  "files": [
+   {
+    "w": 480,
+    "h": 853,
+    "file": "wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-motion-480.webp",
+    "bytes": 26044
+   },
+   {
+    "w": 720,
+    "h": 1280,
+    "file": "wix-mobile-performance-v14/media/stills/uygulama-gelistirme/uygulama-motion-720.webp",
+    "bytes": 40794
+   }
+  ]
+ }
+}
