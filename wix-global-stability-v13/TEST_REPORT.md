@@ -47,7 +47,37 @@ Tablolar: MOBILE_STABILITY_REPORT §4. Özet: Chromium 6×21 temiz; WebKit A, C 
 | Film 20 sn gecikmede ana sayfa loader kapanışı | — | 9,2 sn W / 9,5 sn C |
 
 ## 6. E-Ticaret v24 ve kademeli kaydırma regresyonu
-(bölüm aşağıda — `grad24.js`, `vis24.js`, `p02bis.js`, `uxgray.js`)
+### 6.1 Çökmenin izolasyonu (canlı v23, WebKit) — ROOT_CAUSE §P02-B
+Kademeli kaydırmada e-ticaret 2/2 + 4/4 + 3/3 çökme (y≈4000–4250); 5 büyük atlamada 0/3; Chromium 0/2. Video/görsel/GSAP engelli, DPR 1, iPhone UA, ana sayfadan gelme, belge yönlendirmesi: hepsinde çöküyor. `#ec-kapsam` gizli 0/2; `.ec-line__img` filtresi/geçişi yok 0/2; ölçek yok 2/2 çökme; küçük görsel 3/3 çökme. Bağımsız sayfa: `grayscale→none` çöküyor (4/4), `grayscale(0)` hedefi 0/4, `brightness`→`none` 0/2.
+
+### 6.2 Görsel eşdeğerlik v23 ↔ v24 (`vis24.js`)
+8 satırın her biri sırayla etkin, geçiş bitince `.ec-lines` ekran görüntüsü (390×844, DPR 2).
+| Motor | Sonuç |
+|---|---|
+| Chromium (geçişler açık) | 8/8 durumda fark yok (en büyük kanal farkı 1/255) |
+| WebKit (geçişler kapalı — v23 geçişle tamamlanamıyor) | Küçük resimler 8/8 aynı; tek fark satır 0'da küçük resim sütunu dışında (x ≥ 132) etkin olmayan başlıklarda GSAP yazı belirme zamanlaması (0,37 %) — filtreyle ilgisiz |
+Hesaplanan filtre: etkin satır v23 `none`, v24 `grayscale(0) brightness(1)`; etkin olmayan satırlar ikisinde de `grayscale(1) brightness(0.42)`.
+
+### 6.3 Kademeli kaydırma regresyonu (`grad24.js`) — 390×844 DPR 3, 300 ms/adım, sayfa sonuna kadar
+| Sayfa | Adım | WebKit | Chromium |
+|---|---|---|---|
+| Ana sayfa | 150 px | 2/2 sona kadar | 2/2 |
+| Kreatif | 150 | 2/2 | 2/2 |
+| **E-Ticaret v24** | **100 / 150 / 250** | **6/6** (aktif filtre `grayscale(0) brightness(1)`) | 6/6 |
+| Sosyal Medya | 150 | 2/2 | 2/2 |
+| Reklam | 150 | 2/2 | 2/2 |
+| UI/UX | 150 | 2/2 | 2/2 |
+| AI | 150 | 2/2 | 2/2 |
+| Uygulama | 150 | 2/2 | 2/2 |
+| **E-Ticaret v23 (kontrol)** | 100 / 250 | **ÇÖKME** @2900 / @4250 (`ec-kapsam` sonu) | 2/2 sona kadar |
+| **E-Ticaret v24 gerçek CDN dosyası** (`cdn24.js`, 94 324 B) | 150 | 2/2 sona kadar | — |
+Toplam: 42 kaydırma koşusu, v24 ile 0 çökme, 0 1N JS hatası; v23 kontrolü WebKit'te 2/2 çöküyor. Ham sonuç: `qa/results/grad24.*`.
+
+### 6.4 Desenin diğer sayfalarda aranması (kaynak kod)
+Canlıda yüklenen 46 dosya (15 sayfa + ortak modüller + CSS) tarandı: `transition` içinde `filter` geçen yalnız 2 kural var.
+- E-Ticaret `:490` → v24 ile giderildi.
+- **UI/UX `:486`** `.ux-screen--acc{transition:filter .4s}` (temel `none`) ↔ `.is-gray{filter:grayscale(1)}` — **aynı desen**, kaydırmayla değil "Gri tonlamalı önizle" anahtarıyla tetikleniyor (`uxgray.js`): 800 ms aralıklı 12 tıklama canlı **3/7 çökme**, `.ux-screen--acc{filter:grayscale(0)}` enjeksiyonuyla **0/6**; 250 ms aralık 0/3. **Onay bekliyor (UI/UX v29).**
+Diğer gri tonlama filtreleri (ana sayfa bant videoları, AI, UI/UX `.ux-spot__img`) durağan; geçiş yok.
 
 ## 7. Test anahtarı ve Ronin varyantları (`tswitch.js`)
 Parametresiz: hiçbir ek dosya/kutu yok. `C,hero:1.5x` → yalnız 1,5× indi, kutu 840×1128 playing · `A,hero:poster` → film yok · `D,hero:1x` → 560×752 + stab 1.1.1 · `E,hero:2x` → 1120×1504, loader 1.3-off. Ayrıntı MOBILE_MEDIA_BENCHMARK §2.
