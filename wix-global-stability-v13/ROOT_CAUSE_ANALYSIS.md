@@ -8,7 +8,7 @@ Tarih: 27 Kasım 2026 · Dal `mobile-stability-v1-audit` · Draft PR #2
 | P01 | Menü geçişte tam kapanmıyor | Kapanış yalnız CSS geçişiyle; tarayıcı geçiş başlamadan önceki kareyi gösteriyor | **Kanıtlandı** (2 motor × 4 görünüm, 8/8 kalıntı → 0/8) | `n1-menu-close-v13.js` |
 | P02-A | Ana sayfa → hizmet geçişinde mobil çökme | Doğrudan neden **bulunamadı**. Bulunan hata: Düşük Güç Modu'nda Hizmetler bağlantısına dokunuş, engellenmiş 2× Ronin filmini başlatıyordu | Hata kanıtlandı; çökmeyle bağı **kanıtlanmadı** | Ana sayfa v658 |
 | P02-B | (Yeni) E-Ticaret sayfasında sekme çökmesi | WebKit'te `filter: grayscale(…)` → `none` geçişi | **Kanıtlandı, yalnız Playwright WebKit'te** (deterministik, 30 satırlık bağımsız sayfa) | E-Ticaret v24 |
-| P02-C | (Yeni) UI/UX sayfası | Aynı desen, yalnız "Gri tonlamalı önizle" anahtarına basınca | Playwright WebKit 3/7 çökme | **Öneri: UI/UX v29, onay bekliyor** |
+| P02-C | (Yeni) UI/UX sayfası | Aynı desen, yalnız "Gri tonlamalı önizle" anahtarına basınca | **Kanıtlandı, yalnız Playwright WebKit'te** (v28 5/11 çökme → v29 0/9) | UI/UX v29 |
 | P03 | Yüklenirken geri basınca çökme | Emülasyonda yeniden üretilemedi (392 döngü, 0 çökme). Güçlü adaylar: hizmet sayfalarında `pagehide`'da video kaynaklarının bırakılmaması; erken geri dönüşte Wix ATS'nin ana sayfayı ikinci kez yüklemesi | Aday mekanizmalar (kanıt değil) | Kontrollü test: varyant D (stabilite) |
 | P04 | Loader flicker | Wix belge arası View Transition'ında sayfa grubunun loader'ın üstüne çizilmesi | Kare analizi (canlı 2/18 → v13 0/17); istatistiksel olarak kesin değil | Loader v13 |
 | P05 | Ana sayfada loader yok | `ROUTES` içinde `/` yok | **Kanıtlandı** (kod + 5/5 ölçüm) | Loader v13 |
@@ -56,10 +56,12 @@ WebKit, `grayscale` içeren bir filtre listesini `none` ile ara değerlerken (in
 - Kanıtlanan: Playwright WebKit (Linux, WebKit 2359 / Safari 26.6 eşdeğeri) bu desende deterministik olarak çöküyor.
 - Bilinmeyen: iOS Safari'nin aynı hatayı verip vermediği. Filtre ara değerleme (WebCore) kodu platformlar arası ortak, ancak çizim (Linux: Skia; iOS: Core Animation/Core Image) farklı. **iPhone çökmesinin nedeni olduğu iddia edilmiyor.** Bu, sitede WebKit'i deterministik olarak çökerten tek desen olduğu için güçlü bir aday; kabul listesine özel senaryo eklendi (DEPLOYMENT §5.2).
 
-## P02-C — UI/UX: aynı desen (yeni bulgu, onay bekliyor)
+## P02-C — UI/UX: aynı desen (düzeltildi: UI/UX v29)
 `wix-global-menu-v12/pages/wix-uiux-tasarim-v28/n1-uiux-tasarim-v28.js:486` `.ux-screen--acc{transition:filter .4s}` (temel durum filtre yok = `none`) ↔ `.ux-screen--acc.is-gray{filter:grayscale(1)}`; `:967` "Gri tonlamalı önizle" anahtarı. Kaydırma tetiklemez; yalnız kullanıcı anahtara basınca.
 - Playwright WebKit, geçiş tamamlanacak aralıklarla (800 ms) 12 tıklama: canlı **3/7 çökme**; test enjeksiyonuyla `.ux-screen--acc{filter:grayscale(0)}`: **0/6**. 250 ms aralıkla (geçiş yarıda kesilir): 0/3.
-- **Öneri:** UI/UX v29 (tek satır, görsel eşdeğer). Kapsam dışı olduğu için **yapılmadı**; onayınızı bekliyor.
+- **Düzeltme (UI/UX v29, `d33a9ff`, onaylandı):** `.ux-screen--acc{margin-top:22px;filter:grayscale(0);transition:filter .4s var(--ease)}` — yalnız başlangıç filtresi eklendi; gri durum `grayscale(1)`, süre `.4s`, easing `var(--ease)` (= `cubic-bezier(0.22,1,0.36,1)`) aynı. Geçiş artık `grayscale(0) ↔ grayscale(1)`. Etiket `n1-uiux-tasarim-v28` değişmedi.
+- Doğrulama: v28 kontrolü WebKit 2/4 çökme (toplam 5/11); v29 0/9 (6 × 800 ms + 3 × 250 ms aralık, 132 geçiş); görsel 0 fark; kademeli kaydırma 8/8 temiz (TEST_REPORT §6.5).
+- **iPhone ile ilişkisi:** P02-B ile aynı — Playwright WebKit'te kanıtlandı; iOS Safari'de doğrulanmadı.
 
 ## P03 — Yüklenirken geri
 Matris (TEST_REPORT §3): 7 sayfa × 7 zaman (0,25–5 sn + tam yükleme) × canlı/v13 × normal/yavaş ağ × 2 motor = **392 döngü, 0 çökme, 0 takılma, 0 1N hatası**. Emülasyonda yeniden üretilemedi.

@@ -6,7 +6,7 @@
 ```bash
 bash wix-global-stability-v13/wix-custom-code/verify-cdn-v13.sh
 ```
-Beklenen son satır: `TAMAM: tüm adresler 20/20 ve içerik eşleşiyor` (27 Kasım'da 8 adres × 20 istek, 160/160 başarılı, E-Ticaret v24 dahil bayt eşleşmesi doğrulandı).
+Beklenen son satır: `TAMAM: tüm adresler 20/20 ve içerik eşleşiyor` (9 adres × 20 istek; E-Ticaret v24 ve UI/UX v29 dahil bayt eşleşmesi — sonuç TEST_REPORT §9).
 
 ## 1. Canlı durum (27 Kasım, canlı HTML'den doğrulandı)
 
@@ -28,23 +28,24 @@ Beklenen son satır: `TAMAM: tüm adresler 20/20 ve içerik eşleşiyor` (27 Kas
 | **3** Loader v13 | "Özel Yükleniyor % Script" içeriğini **tamamen** değiştir (ayarlar aynı: Head · seçili 13 sayfa) | `wix-custom-code/LOADER-v13-ozel-yukleniyor.html` | P04 flicker yok, P05 ana sayfada loader | İçeriği `LOADER-LIVE-BACKUP-ozel-yukleniyor.html` ile değiştir |
 | **4** Ana sayfa v658 | Yalnız **Ana Sayfa** Custom Element Server URL (aşağıda) | — | P02 dokunuşta engellenmiş film başlatılmaz | Eski URL'ye dön |
 | **4b** E-Ticaret v24 | Yalnız **E-Ticaret Yönetimi** Custom Element Server URL (aşağıda) | — | Kademeli kaydırmada WebKit çökmesi yok (Playwright'ta doğrulandı) | Eski URL'ye dön |
+| **4c** UI/UX v29 | Yalnız **UI/UX Tasarım** Custom Element Server URL (aşağıda) | — | "Gri tonlamalı önizle" anahtarında WebKit çökmesi yok (Playwright'ta doğrulandı) | Eski URL'ye dön |
 | **5** (karar) Stabilite | Yalnız iPhone testinde D, C'den iyi çıkarsa: Body-end `<script src="…n1-stability-v1.1.1.js" defer>` | `wix-global-menu-v12/wix-custom-code/C-stability-only-body-end.html` | — | Girişi sil |
 
 Aşama 4'ten **önce** v658 aynı iPhone'da Wix'e dokunmadan denenebilir: `https://www.reklam1n.com/?n1t=C,diag:1` (test anahtarı v658'i Wix'in v657'sinden önce tanımlar; tanılama kutusunda "ana v658: EVET").
 
-### Değişen Custom Element'ler (yalnız 2 sayfa)
+### Değişen Custom Element'ler (yalnız 3 sayfa) — nihai teslim tablosu
 
 | Sayfa | Etiket (değişmez) | Eski Server URL (canlı) | Yeni Server URL |
 |---|---|---|---|
 | Ana Sayfa | `n1-site-v1` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-home-v657/n1-site-wix-v657.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@b9c8fca79bee3d6ab9baca96d19e3888575c9c06/wix-global-stability-v13/home/n1-site-wix-v658.js` |
 | E-Ticaret Yönetimi | `n1-e-ticaret-yonetimi-v23` (**değişmez**; v24 dosyası aynı etiketi tanımlar) | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-e-ticaret-yonetimi-v23/n1-e-ticaret-yonetimi-v23.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@997f951a4ae76ab2dd95440c4e8e597ffa682499/wix-global-stability-v13/pages/wix-e-ticaret-yonetimi-v24/n1-e-ticaret-yonetimi-v24.js` |
+| UI/UX Tasarım | `n1-uiux-tasarim-v28` (**değişmez**; v29 dosyası aynı etiketi tanımlar) | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-uiux-tasarim-v28/n1-uiux-tasarim-v28.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@d33a9ffc77cd85f466fcc439518d2b74d639abda/wix-global-stability-v13/pages/wix-uiux-tasarim-v29/n1-uiux-tasarim-v29.js` |
 
-Diğer 13 sayfanın adresi, etiketleri ve öznitelikleri **değişmez**. Wix'te yalnız "Server URL" alanı değişir; "Tag name" alanına dokunmayın.
+Diğer 12 sayfanın adresi, etiketleri ve öznitelikleri **değişmez**. Wix'te yalnız "Server URL" alanı değişir; "Tag name" alanına dokunmayın.
 - v658 = v657 + yalnızca mobil video denetleyicisi `n1-video-m5-v13.js@5c1bcf2` (ROOT_CAUSE §P02-A).
 - v24 = v23 + yalnızca `:491` filtre hedefi `none` → `grayscale(0) brightness(1)` (ROOT_CAUSE §P02-B). Görsel eşdeğerlik doğrulandı (TEST_REPORT §6).
+- v29 = v28 + yalnızca `.ux-screen--acc` başlangıç filtresi `grayscale(0)` (gri durum `grayscale(1)` aynı; `.4s` ve `var(--ease)` aynı) (ROOT_CAUSE §P02-C). Görsel eşdeğerlik doğrulandı (TEST_REPORT §6.5).
 
-### Onay bekleyen (yapılmadı)
-- **UI/UX v29:** aynı filtre deseni "Gri tonlamalı önizle" anahtarında (Playwright WebKit 3/7 çökme; düzeltme denemesiyle 0/6). Onaylarsanız tek satırlık sürüm hazırlanır; Server URL değişikliği gerekir.
 
 ## 3. Wix ayarı (kod değil, isteğe bağlı)
 - `/gizlilik` loader istiyorsa "Özel Yükleniyor % Script" sayfa seçimine **Gizlilik** sayfasını ekleyin (v13'te rota hazır). `/veri-sahibi-basvuru-formu` eklenmemeli (rota yok).
@@ -72,11 +73,11 @@ Cihaz, iOS sürümü, Safari/Chrome ve Düşük Güç Modu durumunu not edin. He
 3. Yeni sayfada geri → eski sayfada menü kapalı, MENU simgesi normal (≡).
 4. MENU aç/kapa animasyonu eskisi gibi (tasarım değişmemeli). iPad yatay/dikey tekrar.
 
-**§2.2 E-Ticaret kaydırma (Aşama 4b öncesi VE sonrası — en önemli ayırt edici test)**
+**§2.2 E-Ticaret kaydırma ve UI/UX gri önizleme (Aşama 4b/4c öncesi VE sonrası — en önemli ayırt edici testler)**
 1. `/e-ticaret-yonetimi` aç, 10 sn bekle. Parmakla **yavaşça**, ekran ekran sonuna kadar kaydır (özellikle "UÇTAN UCA YÖNETİM." listesi: satırlar sırayla renklenir). Sonra yavaşça başa dön.
 2. Aşama 4b'den **önce** (v23) sekme çöküyor / "Bu web sayfası yeniden yüklendi" görünüyorsa → bulgu iPhone'da da geçerli; **sonra** (v24) aynı test 5 kez temiz olmalı.
 3. iPad dikey ve yatayda tekrar. Düşük Güç Modu açık/kapalı.
-4. UI/UX sayfasında "Gri tonlamalı önizle" anahtarına her seferinde 1 sn bekleyerek 10 kez bas (UI/UX v29 kararı için).
+4. **UI/UX Gri Tonlamalı Önizleme (Aşama 4c öncesi VE sonrası):** `/ui-ux-tasarim` → "Gri tonlamalı önizle" anahtarına **her seferinde ~1 sn bekleyerek 20 kez**, sonra **hızlı art arda 20 kez** bas. Önizleme gri ↔ renkli yumuşak geçişle değişmeli; sekme çökmemeli / yeniden yüklenmemeli. v28'de çökme görülüp v29'da görülmüyorsa bulgu iPhone'da da geçerli. Ardından sayfayı yavaşça sonuna kadar kaydır. iPad dikey/yatay tekrar.
 
 **§2 Geçiş ve erken geri (her aşama sonrası, özellikle Aşama 1 ve 4)**
 1. Ana sayfa → Hizmetler bölümündeki 7 bağlantının her biri → sayfa açılınca geri.
@@ -97,7 +98,7 @@ Header, logo, MENU, footer, WhatsApp, yukarı çık düğmesi, Markalar, GSAP an
 
 ## 6. Adım adım Wix kurulumu (her adımdan sonra Yayınla + §5 kontrolü)
 
-Varsayılan üretim yapılandırması: menü kapanışı + loader v13 + ana sayfa v658 + E-Ticaret v24. **Stabilite modülü kapalı, Ronin 2×.** Stabilite ve alternatif Ronin kaynakları yalnız test anahtarıyla.
+Varsayılan üretim yapılandırması: menü kapanışı + loader v13 + ana sayfa v658 + E-Ticaret v24 + UI/UX v29. **Stabilite modülü kapalı, Ronin 2×.** Stabilite ve alternatif Ronin kaynakları yalnız test anahtarıyla.
 
 0. Depo kökünde `bash wix-global-stability-v13/wix-custom-code/verify-cdn-v13.sh` → `TAMAM`.
 1. **Test anahtarı:** Ayarlar → Özel Kod → + Özel Kod Ekle → `wix-custom-code/TEST-SWITCH-v13-head.html` dosyasının **tamamını** yapıştır → Ad: `1N - V1.3 Test Anahtarı (HEAD)` → Tüm sayfalar · Her yeni sayfada yükle → Konum: **Head** → Kaydet. Head listesinde **en üste** taşı. Yayınla. Kontrol: `https://www.reklam1n.com/?n1t=B,diag:1` → sağ altta kutu.
@@ -108,7 +109,8 @@ Varsayılan üretim yapılandırması: menü kapanışı + loader v13 + ana sayf
    ```
 4. **Loader v13:** "Özel Yükleniyor % Script" → Düzenle → içeriği tamamen sil → `wix-custom-code/LOADER-v13-ozel-yukleniyor.html` dosyasının **tamamını** yapıştır. Sayfa seçimi ve Head konumu **aynı** kalır. ("Sayfa Yükleniyor Script" girişine dokunmayın.) Yayınla. Kontrol: kutuda `loader: 1.3`; §5.3.
 5. **Ana sayfa:** Ana Sayfa → Custom Element `n1-site-v1` → Ayarlar → Server URL = §2 tablosundaki yeni adres. Tag name değişmez. Yayınla. Kontrol: kutuda `ana v658: EVET`, `Ronin: ronin-m5-film-2x.mp4 1120×1504`; §5.2.
-6. **E-Ticaret:** E-Ticaret Yönetimi → Custom Element `n1-e-ticaret-yonetimi-v23` → Server URL = §2 tablosundaki v24 adresi. Tag name **değişmez**. Yayınla. Kontrol: §5.2.2.
-7. (Yalnız iPhone testinde D, C'den açıkça iyi çıkarsa ve sizin kararınızla) stabilite girişi — Aşama 5.
+6. **E-Ticaret:** E-Ticaret Yönetimi → Custom Element `n1-e-ticaret-yonetimi-v23` → Server URL = §2 tablosundaki v24 adresi. Tag name **değişmez**. Yayınla. Kontrol: §5.2.2 madde 1–3.
+7. **UI/UX:** UI/UX Tasarım → Custom Element `n1-uiux-tasarim-v28` → Server URL = §2 tablosundaki v29 adresi. Tag name **değişmez**. Yayınla. Kontrol: §5.2.2 madde 4.
+8. (Yalnız iPhone testinde D, C'den açıkça iyi çıkarsa ve sizin kararınızla) stabilite girişi — Aşama 5.
 
 Her adımda sorun → ROLLBACK.md'deki ilgili satır. Test anahtarı (1) test süresince kalabilir; normal ziyaretçiyi etkilemez. Testler bitince silinebilir.

@@ -71,13 +71,28 @@ Hesaplanan filtre: etkin satır v23 `none`, v24 `grayscale(0) brightness(1)`; et
 | Uygulama | 150 | 2/2 | 2/2 |
 | **E-Ticaret v23 (kontrol)** | 100 / 250 | **ÇÖKME** @2900 / @4250 (`ec-kapsam` sonu) | 2/2 sona kadar |
 | **E-Ticaret v24 gerçek CDN dosyası** (`cdn24.js`, 94 324 B) | 150 | 2/2 sona kadar | — |
-Toplam: 42 kaydırma koşusu, v24 ile 0 çökme, 0 1N JS hatası; v23 kontrolü WebKit'te 2/2 çöküyor. Ham sonuç: `qa/results/grad24.*`.
+Toplam (E-Ticaret odaklı tur): 42 kaydırma koşusu, v24 ile 0 çökme, 0 1N JS hatası; v23 kontrolü WebKit'te 2/2 çöküyor. Ham sonuç: `qa/results/grad24.*`.
 
 ### 6.4 Desenin diğer sayfalarda aranması (kaynak kod)
 Canlıda yüklenen 46 dosya (15 sayfa + ortak modüller + CSS) tarandı: `transition` içinde `filter` geçen yalnız 2 kural var.
 - E-Ticaret `:490` → v24 ile giderildi.
-- **UI/UX `:486`** `.ux-screen--acc{transition:filter .4s}` (temel `none`) ↔ `.is-gray{filter:grayscale(1)}` — **aynı desen**, kaydırmayla değil "Gri tonlamalı önizle" anahtarıyla tetikleniyor (`uxgray.js`): 800 ms aralıklı 12 tıklama canlı **3/7 çökme**, `.ux-screen--acc{filter:grayscale(0)}` enjeksiyonuyla **0/6**; 250 ms aralık 0/3. **Onay bekliyor (UI/UX v29).**
+- UI/UX `:486` `.ux-screen--acc{transition:filter .4s}` (temel `none`) ↔ `.is-gray{filter:grayscale(1)}` — **aynı desen**, "Gri tonlamalı önizle" anahtarıyla tetikleniyor → v29 ile giderildi (§6.5).
 Diğer gri tonlama filtreleri (ana sayfa bant videoları, AI, UI/UX `.ux-spot__img`) durağan; geçiş yok.
+**V1.3 nihai üretim kümesi yeniden tarandı** (v23/v28 yerine v24/v29; 49 dosya + loader ve test anahtarı girişleri): `filter` geçişi yalnız v24 (`grayscale(1) brightness(.42)` ↔ `grayscale(0) brightness(1)`) ve v29 (`grayscale(0)` ↔ `grayscale(1)`) — ikisi de aynı işlev listeleri arasında; **`filter:none` hedefi kalmadı**; loader ve test anahtarında filtre geçişi yok.
+
+### 6.5 UI/UX v29 — hedefli regresyon (`ux29.js`, `vis29.js`, `grad24.js` + `routeUx.js`)
+| Test | WebKit | Chromium |
+|---|---|---|
+| Anahtar 12× aç/kapa, 800 ms (geçiş tamamlanır) — v28 kontrol | **2/4 çökme** (önceki 3/7 ile toplam 5/11) | 1/1 temiz |
+| Aynı — **v29** | **6/6 temiz** | 2/2 temiz |
+| Anahtar 20× hızlı, 250 ms (geçiş yarıda kesilir) — v29 | 3/3 temiz; ara değerler `grayscale(0.988)` / `grayscale(0.009)` → animasyon korunuyor | — |
+| Hesaplanan değerler v29 | gri `grayscale(1)`, renkli `grayscale(0)`; anahtar `aria-checked` true/false doğru | aynı |
+| Geçiş tanımı v28 / v29 | — | ikisi de `filter 0.4s cubic-bezier(0.22, 1, 0.36, 1)` |
+| Geçiş ortası filtre (tıklamadan 100 / 200 / 300 ms sonra) v28 → v29 | — | 0,691 → 0,691 · 0,961 → 0,946 · 0,997 → 0,997 (örnekleme zamanlaması farkı içinde aynı eğri) |
+| Görsel eşdeğerlik: renkli ve gri son durum ekran görüntüsü v28 ↔ v29 | 0 fark (geçiş kapalı) | 0 fark (geçiş açık; en büyük kanal farkı 1/255) |
+| Durumlar ayırt edilebiliyor mu (test duyarlılığı) | ort. doygunluk renkli 5,3 → gri 0,0 (v28 ve v29 aynı) | aynı |
+| Kademeli kaydırma, sayfa sonuna kadar (16 548 px): 150 px ×2, 100 px, 250 px | 4/4 temiz, 0 JS hatası | 4/4 temiz |
+Değişmeyenler (dosya karşılaştırması): v29 = v28 + 1 başlık yorum satırı + CSS dizgisinde tek kural (`filter:grayscale(0);` eklendi). İçerik, görseller, videolar, tipografi, etkileşimli bileşenler, erişilebilirlik öznitelikleri ve GSAP kodu bayt düzeyinde aynı.
 
 ## 7. Test anahtarı ve Ronin varyantları (`tswitch.js`)
 Parametresiz: hiçbir ek dosya/kutu yok. `C,hero:1.5x` → yalnız 1,5× indi, kutu 840×1128 playing · `A,hero:poster` → film yok · `D,hero:1x` → 560×752 + stab 1.1.1 · `E,hero:2x` → 1120×1504, loader 1.3-off. Ayrıntı MOBILE_MEDIA_BENCHMARK §2.
@@ -86,4 +101,5 @@ Parametresiz: hiçbir ek dosya/kutu yok. `C,hero:1.5x` → yalnız 1,5× indi, k
 Düşük Güç Modu benzetimi (kullanıcı etkileşimi yoksa `play()` reddedilir), Hizmetler bağlantısına dokunma: canlı v657 Chromium 1 / WebKit 1 `play()` (`ronin-m5-film.mp4`) → v658 0 / 0.
 
 ## 9. CDN
-`verify-cdn-v13.sh`: 8 adres × 20 → 160/160 (JS 200, mp4 206), bayt eşleşmesi (E-Ticaret v24 94 324 B, v658 57 582 B, menü 5 598 B, video modülü 27 592 B, stabilite 17 076 B; mp4 ilk 64 KB).
+`verify-cdn-v13.sh`: **9 adres × 20 → 180/180** (JS 200, mp4 206), bayt eşleşmesi: UI/UX v29 130 896 B, E-Ticaret v24 94 324 B, v658 57 582 B, menü 5 598 B, video modülü 27 592 B, stabilite 17 076 B; mp4 ilk 64 KB. Yeni v29 adresi ilk dakikalarda ara ara 403 döndü (jsDelivr 50 MB sınırı), ~2 dk sonra 20/20.
+Gerçek CDN dosyasıyla tarayıcı testi: E-Ticaret v24 kademeli kaydırma WebKit 2/2 temiz (`cdn24.js`); UI/UX v29 anahtar 12× aç/kapa WebKit 2/2 temiz (`ux29.js`, `CDNURL`).

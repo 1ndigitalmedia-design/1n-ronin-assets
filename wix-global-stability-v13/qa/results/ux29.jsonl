@@ -1,0 +1,16 @@
+{"br":"webkit","ver":"v29","run":1,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":2,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":3,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":4,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":5,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":6,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v28","run":1,"gap":800,"clicks":3,"crash":true,"route":1}
+{"br":"webkit","ver":"v28","run":2,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v28","run":3,"gap":800,"clicks":1,"crash":true,"route":1}
+{"br":"webkit","ver":"v28","run":4,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":1,"gap":250,"clicks":20,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":2,"gap":250,"clicks":20,"crash":false,"route":1}
+{"br":"webkit","ver":"v29","run":3,"gap":250,"clicks":20,"crash":false,"route":1}
+{"br":"chromium","ver":"v29","run":1,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"chromium","ver":"v29","run":2,"gap":800,"clicks":12,"crash":false,"route":1}
+{"br":"chromium","ver":"v28","run":1,"gap":800,"clicks":12,"crash":false,"route":1}

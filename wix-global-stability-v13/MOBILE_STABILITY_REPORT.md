@@ -6,8 +6,8 @@
 
 | | Playwright WebKit (Linux) | Fiziksel iPhone (bildirilen) |
 |---|---|---|
-| Ne biliyoruz | E-Ticaret sayfasında kademeli kaydırmada **deterministik sekme çökmesi**; neden tek bir CSS filtre geçişi; v24 ile 0 çökme. UI/UX'te aynı desen (anahtara basınca) | Ana sayfa Hizmetler bağlantılarından hizmet sayfasına geçişte ve hizmet sayfası yüklenirken geri basınca çökme |
-| Durum | **Giderildi (e-ticaret, v24 — bu ortamda)**; UI/UX için öneri onay bekliyor | **Doğrulanmadı / açık.** Hangi sayfada ve hangi anda olduğu bilinmiyor |
+| Ne biliyoruz | E-Ticaret sayfasında kademeli kaydırmada ve UI/UX'te "Gri tonlamalı önizle" anahtarında **sekme çökmesi**; neden aynı CSS filtre geçişi deseni (`grayscale` ↔ `none`); v24 ve v29 ile 0 çökme | Ana sayfa Hizmetler bağlantılarından hizmet sayfasına geçişte ve hizmet sayfası yüklenirken geri basınca çökme |
+| Durum | **Giderildi (E-Ticaret v24, UI/UX v29 — yalnız bu ortamda)** | **Doğrulanmadı / açık.** Hangi sayfada ve hangi anda olduğu bilinmiyor |
 | Bağlantı | Aynı motor ailesi (WebKit). Filtre ara değerleme kodu ortak olabilir; çizim altyapısı farklı | Bu hatanın iPhone çökmesinin nedeni olup olmadığı **ancak cihaz testiyle** anlaşılır (DEPLOYMENT §5.2) |
 
 ## 2. P02 — Ana sayfa → hizmet sayfası
@@ -79,7 +79,7 @@ E-Ticaret görselleri: "Uçtan Uca Yönetim" satır küçük resimleri 1122×140
 |---|---|
 | Ana sayfa v658 üretime | Düşük Güç Modu'nda gereksiz 2× film başlatmayı kaldırır; başka fark yok |
 | E-Ticaret v24 üretime (onaylandı) | Playwright WebKit'te deterministik çökmeyi giderir; görsel eşdeğer |
-| UI/UX v29 | **Onay bekliyor** (aynı desen, kullanıcı etkileşimiyle) |
+| UI/UX v29 üretime (onaylandı) | Aynı desen, kullanıcı etkileşimiyle; Playwright WebKit'te v28 5/11 → v29 0/9; görsel eşdeğer |
 | Stabilite modülü | **Üretimde etkin değil.** Yalnız `?n1t=D` test seçeneği. Emülasyonda fayda ölçülmedi; iPhone testinde D, C'den iyiyse karar verilir |
 | Ronin | **2× korunuyor.** 1,5×/1×/poster yalnız test anahtarıyla |
 | Capa nav kaldırma | V1.2 kararının tamamlanması; ölçülebilir zararı yok, karmaşıklığı azaltır |

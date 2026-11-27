@@ -15,6 +15,6 @@ Betikler Playwright ile canlı siteye karşı çalışır (`npm i playwright`, y
 | `p02et.js`, `p02bis.js`, `p02jump.js`, `gradual.js` | E-Ticaret çökmesinin izolasyonu | ROOT_CAUSE §P02-B |
 | `grad24.js`, `grad24.sh`, `routeEt.js` | Kademeli kaydırma regresyonu (v23 ↔ v24) | `results/grad24.*` |
 | `vis24.js` | v23 ↔ v24 görsel eşdeğerlik | `results/visual/` |
-| `uxgray.js` | UI/UX "Gri tonlamalı önizle" anahtarı | ROOT_CAUSE §P02-C |
+| `uxgray.js`, `ux29.js`, `vis29.js`, `routeUx.js` | UI/UX "Gri tonlamalı önizle" anahtarı (v28 ↔ v29), görsel eşdeğerlik | TEST_REPORT §6.5, `results/ux29*` |
 
 `minimal-repro/`: site kodu olmadan WebKit filtre geçişi çökmesi. `index.html` için yanına 192×240 boyutlu herhangi bir `t.png` koyun; `node run.js "grayscale(1) brightness(.42)"` → çökme, `ON="grayscale(0) brightness(1)" node run.js …` → çökme yok.
