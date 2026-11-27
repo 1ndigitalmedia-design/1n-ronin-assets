@@ -16,6 +16,12 @@
 - Raporlar: V1.3_ISSUE_REPORT, ROOT_CAUSE_ANALYSIS, MENU_FIX_REPORT, LOADER_FIX_REPORT, MOBILE_STABILITY_REPORT, MOBILE_MEDIA_BENCHMARK, TEST_REPORT, PERFORMANCE_REPORT, DEPLOYMENT (iPhone/iPad kabul listesi dahil), ROLLBACK.
 - QA: `qa/` (betikler ve ham sonuçlar).
 
+### Eklendi — V1.3.1 (canlı kurulumdan sonra) · mobil stres testi
+- `stress/n1-stress-v1.js` (`3a9eda9`) — fiziksel iPhone/iPad Safari için yarı otomatik stres testi: tek bağlantı (`?n1t=stress`), ana sayfa ↔ 7 hizmet sayfası, kademeli kaydırma, normal ve erken geri, varyantlar B/D/E/Ronin 2×/1,5×/1×/poster; localStorage'da çökme sonrası devam; kopyalanabilir/paylaşılabilir/indirilebilir rapor (MD + CSV). Bellek ölçmez (Safari desteklemez); çökme "olası" olarak çıkarılır.
+- `wix-custom-code/TEST-SWITCH-v13.1-head.html` — v13 ile uyumlu; stres durumunu localStorage'dan geri yükler, erken geri zamanlayıcısı ve 1N hata sayacı; stres modu yalnız ana sayfa + 7 hizmet sayfasında. Normal ziyaretçi: +1 localStorage okuması.
+- `stress/STRESS_TEST.md` — kurulum, kullanım, rapor okuma, iOS sınırları.
+- Doğrulama (Playwright WebKit, işlev denemesi): 12 + 3 adım tamamlandı, benzetilmiş çökme algılandı ve adım tekrarlandı, Ronin kaynağı varyanta göre doğru (2× 1120×1504 / 1× 560×752), normal ziyaretçide test nesnesi ve test dosyası isteği yok. CDN 10 adres × 20 = 200/200.
+
 ### Değişti (yalnız Wix'te uygulanınca)
 - Ana Sayfa, E-Ticaret Yönetimi ve UI/UX Tasarım Custom Element Server URL'leri (etiketler aynı).
 - "Özel Yükleniyor % Script" içeriği.

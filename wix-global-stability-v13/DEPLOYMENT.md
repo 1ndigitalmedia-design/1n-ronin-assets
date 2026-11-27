@@ -114,3 +114,11 @@ Varsayılan üretim yapılandırması: menü kapanışı + loader v13 + ana sayf
 8. (Yalnız iPhone testinde D, C'den açıkça iyi çıkarsa ve sizin kararınızla) stabilite girişi — Aşama 5.
 
 Her adımda sorun → ROLLBACK.md'deki ilgili satır. Test anahtarı (1) test süresince kalabilir; normal ziyaretçiyi etkilemez. Testler bitince silinebilir.
+
+## 7. Mobil stres testi (V1.3.1 — yalnız test, normal ziyaretçiyi etkilemez)
+Fiziksel iPhone/iPad'de aralıklı çökmeyi yakalamak için. Ayrıntı: `stress/STRESS_TEST.md`.
+1. `bash wix-global-stability-v13/wix-custom-code/verify-cdn-v13.sh` → `TAMAM` (stres betiği dahil 10 adres).
+2. "1N - V1.3 Test Anahtarı (HEAD)" girişinin içeriğini **tamamen** `wix-custom-code/TEST-SWITCH-v13.1-head.html` ile değiştir. Ayarlar aynı (Tüm sayfalar · Head · en üstte). Yayınla.
+3. iPhone'da Otomatik Kilit: Hiçbir Zaman; şarja tak; `https://www.reklam1n.com/?n1t=stress` → panelden varyantları seç → **Başlat**.
+4. Bitince **Rapor → Paylaş / Kopyala / İndir**; raporu bize ilet. Kapatmak için `?n1t=0`.
+Geri dönüş: test anahtarı içeriğini `TEST-SWITCH-v13-head.html` ile değiştir.

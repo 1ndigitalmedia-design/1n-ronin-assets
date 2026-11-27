@@ -12,6 +12,7 @@ Her aşama bağımsız geri alınır (DEPLOYMENT §2). Wix Studio → Site Ayarl
 | 4b E-Ticaret v24 | E-Ticaret Yönetimi Custom Element Server URL → `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-e-ticaret-yonetimi-v23/n1-e-ticaret-yonetimi-v23.js` (etiket `n1-e-ticaret-yonetimi-v23` aynı) | V1.2 E-Ticaret |
 | 4c UI/UX v29 | UI/UX Tasarım Custom Element Server URL → `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-uiux-tasarim-v28/n1-uiux-tasarim-v28.js` (etiket `n1-uiux-tasarim-v28` aynı) | V1.2 UI/UX |
 | 5 Stabilite | Body-end stabilite girişini sil | C |
+| Stres testi (v13.1) | Test anahtarı içeriğini `wix-custom-code/TEST-SWITCH-v13-head.html` ile değiştir; cihazda `?n1t=0` | Test anahtarı v13 |
 
 Test sırasında anlık geri dönüş (yalnız o sekme): `?n1t=A` (menü düzeltmesi kapalı), `?n1t=0` (test anahtarı kapalı).
 
