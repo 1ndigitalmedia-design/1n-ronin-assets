@@ -1,0 +1,81 @@
+V1.3.1 FİZİKSEL iPHONE STRES TESTİ — DÜZELTİLMİŞ VERİ ANALİZİ (ham kayıtlar değiştirilmedi)
+Kaynak: n1-stres-1795813501641.csv (299 kayıt), n1-stres-1795813479512.md · 2026-11-27T19:32:08.246Z → 2026-11-27T21:02:47.957Z
+
+1) HAM SAYIMLAR (raporda göründüğü gibi)
+  toplam 299 · tamam 129 · OLASI ÇÖKME 60 · diğer 110
+  B   kayıt 100 · tamam  34 · OLASI ÇÖKME 22 · diğer 44
+  D   kayıt  79 · tamam  42 · OLASI ÇÖKME 12 · diğer 25
+  E   kayıt  45 · tamam  12 · OLASI ÇÖKME  9 · diğer 24
+  R2  kayıt  16 · tamam  13 · OLASI ÇÖKME  3 · diğer  0
+  R15 kayıt  23 · tamam   7 · OLASI ÇÖKME  8 · diğer  8
+  R1  kayıt  20 · tamam   9 · OLASI ÇÖKME  6 · diğer  5
+  RP  kayıt  16 · tamam  12 · OLASI ÇÖKME  0 · diğer  4
+
+2) VERİ BÜTÜNLÜĞÜ
+  plan: 7 varyant × 7 sayfa × 2 senaryo × 1 tekrar = 98 benzersiz adım
+  aynı (varyant, tekrar, sayfa, senaryo, deneme) birleşiminde fazladan kayıt: 151
+  plan sırasında geriye düşüş (bir önceki kayıttan küçük adım): 14 kez
+    kayıt  31 19:41:35: adım 19 →  4 (D → B)
+    kayıt  38 19:44:54: adım  9 →  4 (B → B)
+    kayıt  48 19:48:56: adım 17 →  5 (D → B)
+    kayıt  55 19:50:56: adım  8 →  5 (B → B)
+    kayıt  65 19:54:53: adım  9 →  6 (B → B)
+    kayıt  68 19:55:22: adım 15 →  7 (D → B)
+    kayıt  84 19:59:13: adım 17 →  7 (D → B)
+    kayıt  92 20:01:40: adım 22 →  8 (D → B)
+    kayıt 111 20:07:23: adım 20 →  8 (D → B)
+    kayıt 130 20:14:31: adım 20 →  9 (D → B)
+    kayıt 136 20:16:02: adım 28 → 10 (E → B)
+    kayıt 149 20:22:51: adım 19 → 10 (D → B)
+    kayıt 174 20:27:03: adım 37 → 11 (E → B)
+    kayıt 177 20:27:49: adım 39 → 12 (E → B)
+  en az bir "tamam" kaydı olan benzersiz adım: 77/98
+  eksik adımlar: B e-ticaret-y erken, E sosyal-medy normal, E sosyal-medy erken, E reklam-yone normal, E reklam-yone erken, E ui-ux-tasar normal, R2 kreatif-pro normal, R15 kreatif-pro normal, R15 reklam-yone normal, R15 reklam-yone erken, R15 ui-ux-tasar normal, R15 yapay-zeka normal, R15 uygulama-ge normal, R15 uygulama-ge erken, R1 kreatif-pro normal, R1 sosyal-medy normal, R1 sosyal-medy erken, R1 reklam-yone normal, R1 yapay-zeka normal, RP e-ticaret-y normal, RP yapay-zeka normal
+
+3) YENİDEN SINIFLANDIRMA (kayıt metnindeki gezinme türüne göre; belirsizler silinmedi)
+  129  tamam
+   63  test denetleyicisi: beklenmeyen sayfa
+   41  test denetleyicisi: geri ana sayfaya ulaşmadı
+   15  yanlış sınıflandırılmış gezinme (navigate) — çökme değil
+   13  yanlış sınıflandırılmış gezinme (back_forward) — çökme değil
+   13  çökme adayı: hizmet sayfası etkinken yeniden yüklendi
+   12  belirsiz: ana sayfa yeniden yüklendi (Wix ATS / çökme / elle)
+    6  test denetleyicisi: eski zamanlayıcı zaman aşımı
+    5  çökme adayı: geri dönerken hizmet sayfası yeniden yüklendi
+    2  yanlış sınıflandırılmış gezinme (bfcache) — çökme değil
+  Not: Safari çökme sonrası yeniden yüklemesi gezinme türünü "reload" yapar. "navigate", "back_forward", "bfcache" türündeki 30 "OLASI ÇÖKME" kaydı çökme olamaz;
+       bunlar test denetleyicisinin eski belge zamanlayıcıları ve büyüyen geçmiş nedeniyle oluşan gezinmelerdir (STRESS_V132_REPORT.md §2).
+
+4) FİLTRELENMİŞ: benzersiz plan adımı bazında (her adım için kayıtlar birleştirildi)
+  varyant | adım | ≥1 tamam | çökme adayı olan adım (hizmet sayfası reload) | belirsiz ana sayfa reload olan adım | test denetleyicisi sorunu olan adım
+  B   | 14 | 13 |  6 |  3 | 11
+  D   | 14 | 14 |  2 |  2 |  8
+  E   | 14 |  9 |  1 |  3 | 11
+  R2  | 14 | 13 |  2 |  0 |  1
+  R15 | 14 |  7 |  3 |  1 |  7
+  R1  | 14 |  9 |  3 |  1 |  6
+  RP  | 14 | 12 |  0 |  0 |  2
+
+5) ÇÖKME ADAYI KAYITLARI — sayfa dağılımı (yalnız "reload" türü hizmet sayfası kayıtları; ham sayıyla birlikte)
+  /kreatif-produksiyon   ham OLASI ÇÖKME 12 · çökme adayı (reload)  3
+  /e-ticaret-yonetimi    ham OLASI ÇÖKME  5 · çökme adayı (reload)  2
+  /sosyal-medya          ham OLASI ÇÖKME  9 · çökme adayı (reload)  4
+  /reklam-yonetimi       ham OLASI ÇÖKME 15 · çökme adayı (reload)  5
+  /ui-ux-tasarim         ham OLASI ÇÖKME  7 · çökme adayı (reload)  2
+  /yapay-zeka            ham OLASI ÇÖKME  8 · çökme adayı (reload)  1
+  /uygulama-gelistirme   ham OLASI ÇÖKME  4 · çökme adayı (reload)  1
+
+6) VİDEO ÖLÇÜMÜNÜN GEÇERLİLİĞİ
+  160  ana sayfa Ronin: ronin-m5-film.mp4 0x0 blocked
+   17  ana sayfa Ronin: ronin-m5-film-1.5x.mp4 0x0 blocked
+   16  ana sayfa Ronin: ronin-m5-film-2x.mp4 0x0 blocked
+   14  ana sayfa Ronin: poster-only 0x0 blocked
+    8  ana sayfa Ronin: ronin-m5-film.mp4 0x0 loading
+    1  ana sayfa Ronin: ronin-m5-film.mp4 0x0 paused
+  çözünürlüğü 0x0 olmayan kayıt: 0 · ana sayfada oynayan video >0: 0 · hizmet sayfasında oynayan video >0: 0
+  SONUÇ: Ronin hiçbir ölçümde oynamadı (otomatik oynatma "blocked"). Ronin varyantları (2×/1,5×/1×/poster) arasında oynatma yükü karşılaştırması GEÇERSİZ.
+  B varyantında kayıtlı dosya 1× (ronin-m5-film.mp4): bu iPhone'da (440×956@3) 2× seçilir; olası neden — 2× 9 sn içinde kare üretmeyince video modülü 1×'e geçer (n1-video-m5-v13.js:284); oynatma engelliyken doğrulanamadı.
+
+7) GEÇERLİ ÖRNEKLEM
+  Varyant karşılaştırması için geçerli örneklem: YOK. Kayıt sayıları eşit değil (16–100), sıra karışık, video oynamadı, çökme sınıflandırması yarı yarıya yanlış.
+  Kullanılabilecek tek sinyal: "reload" türü hizmet sayfası yeniden yüklemeleri (çökme adayı) gerçekleşiyor — iPhone çökmesinin sürdüğünü destekler, nedenini göstermez.
