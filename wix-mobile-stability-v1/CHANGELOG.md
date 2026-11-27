@@ -1,5 +1,30 @@
 # CHANGELOG — Mobile Stability & Technical Optimization
 
+## [V1.2] — 27 Kasım 2026 · Global Menu & Navigation Revision · dal `mobile-stability-v1-audit`, Draft PR #2
+
+### Eklendi
+- `wix-global-menu-v12/site/n1-site-markup-v12.js` — Header menüsünde "Hizmetler" 7 hizmet sayfasına standart bağlantılı alt menü; sayfa HTML'i v648 ile birebir aynı, `#hizmetler-ozet` bölümü ve kimliği korunuyor.
+- `wix-global-menu-v12/modules/n1-header-v12.js` — alt menü başlığı tıklama/dokunma/Enter ile aç-kapa; fareyle açma yalnız `(hover:hover) and (pointer:fine)`; tasarım/CSS aynı.
+- `wix-global-menu-v12/pages/` — ana sayfa **v657** (özel çapa navigasyonu `n1-nav-v1.js` yüklenmez) ve 10 iç sayfa (header/markup v12). Custom Element etiketleri değişmedi.
+- `wix-mobile-stability-v1/n1-stability-v1.1.1.js` — yalnız ön yükleme listesi v657/v12 adreslerine güncellendi.
+- `wix-global-menu-v12/wix-custom-code/` — Aşama C girişi, A geri dönüş girişi, `verify-cdn.sh` (yayın öncesi CDN doğrulaması).
+- `wix-global-menu-v12/NAVIGATION_REVISION_REPORT.md`, `screenshots/` (masaüstü, tablet, tablet yatay, mobil, küçük mobil; Chromium + WebKit).
+- QA: `scen.js` (A/B/C senaryo düzeneği), `menutest.js`, `menuhop.js`, `cycle3.js`.
+
+### Değişti
+- Özel çapa navigasyonu kaldırılacak (Wix girişleri + ana sayfa iç yüklemesi); "Hizmetler" artık ana sayfaya kaydırmıyor.
+
+### Bulundu
+- Canlıdaki V1.1 test yapılandırması hatalı: `?n1v11=1` ile V1.1 hiç yüklenmiyor ve hiçbir nav etkin değil (NAVIGATION_REVISION_REPORT §0).
+- jsDelivr: yeni adresler 50 MB depo sınırı nedeniyle ilk dakikalarda ara ara 403 → yayın öncesi doğrulama zorunlu.
+
+### Değişmedi
+- Ana sayfa Hizmetler bölümü, Ronin, videolar, GSAP, tasarım, Header/Footer görünümü, SEO, reklam kodları; Intelligence ve kapsam dışı alanlar; `main`, temiz taban ve kurtarma dalları.
+
+### Açık
+- Gerçek iPhone/iPad testi yapılmadı; çökmenin çözüldüğü iddia edilmiyor.
+
+
 ## [V1.1] — 27 Kasım 2026 · aynı dal `mobile-stability-v1-audit`, Draft PR #2
 
 ### Eklendi

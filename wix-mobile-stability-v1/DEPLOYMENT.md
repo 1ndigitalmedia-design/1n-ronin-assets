@@ -1,4 +1,63 @@
-# DEPLOYMENT — V1.1 Wix uygulama planı (açık onayınızla, sizin tarafınızdan)
+# DEPLOYMENT
+
+## V1.2 — Global Menü ve Navigasyon Revizyonu (27 Kasım 2026)
+
+**Wix'te hiçbir şey değiştirilmedi.** Aşağıdaki adımlar onayınla, sırayla ve **her aşamada tek değişiklik** olacak şekilde uygulanır. Her aşamadan sonra fiziksel iPhone/iPad testi yapılır (TEST_REPORT.md V1.2 §6). Ayrıntılı gerekçe: `wix-global-menu-v12/NAVIGATION_REVISION_REPORT.md`.
+
+Commit'ler: header/markup v12 **`162599ec580db98d848cf6670bcde7ee30bf97f5`** · sayfa dosyaları **`39f762f63a2af58a470e9712d8ca0895d6f73f9f`** · stabilite v1.1.1 **`be0c8b1454939989d175197be4ff6667f9e29c19`**.
+
+### Ön kontrol (her aşamadan önce, zorunlu)
+```bash
+bash wix-global-menu-v12/wix-custom-code/verify-cdn.sh
+```
+Tüm adresler 20/20 olmalı. jsDelivr, 50 MB'ı aşan bu depoda yeni adresleri ilk dakikalarda bazı uç sunuculardan 403 ile döndürebiliyor; gözlenen ısınma süresi ~1 dk.
+
+### Aşama 0 — Temizlik (canlıyı planlanan "A" durumuna döndürür)
+Canlıda şu an hatalı V1.1 test girişleri var (NAVIGATION_REVISION_REPORT §0). Wix Studio → Site Ayarları → Özel Kod:
+1. **Sil:** Konumu **Head** olan "1N - Hizmetler Capa Navigasyonu" girişi.
+2. **Sil:** "1N - V1.1 Test Anahtarı (HEAD)" girişi.
+3. **Bırak:** Konumu **Body - end** olan "1N - Hizmetler Capa Navigasyonu" girişi; içeriği `wix-mobile-stability-v1/wix-custom-code/05-rollback-body-end.html` ile birebir aynı olmalı.
+4. Yayınla. → Senaryo A (mevcut canlı navigasyon). İsteğe bağlı: bu durumda bir cihaz tabanı ölçümü.
+
+### Aşama B — Yeni menü, özel nav yok, stabilite yok
+1. Aşağıdaki 11 Custom Element'in **Server URL**'lerini "YENİ" sütunuyla değiştir; **Tag Name'ler değişmez**.
+2. **Sil:** Body-end "1N - Hizmetler Capa Navigasyonu" girişi. Artık hiçbir 1N navigasyon özel kodu kalmaz.
+3. "Sayfa Yükleniyor Script" ve "Özel Yükleniyor % Script" girişlerine dokunulmaz.
+4. Yayınla.
+
+| Sayfa | Tag Name (değişmez) | YENİ Server URL (Aşama B/C) | Eski Server URL (geri dönüş) |
+|---|---|---|---|
+| Ana Sayfa `/` | `n1-site-v1` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-home-v657/n1-site-wix-v657.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/n1-site-wix-v656.js` |
+| Kreatif Prodüksiyon | `n1-kreatif-produksiyon-v23` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-kreatif-produksiyon-v23/n1-kreatif-produksiyon-v23.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-kreatif-produksiyon-v23/n1-kreatif-produksiyon-v23.js` |
+| E-Ticaret Yönetimi | `n1-e-ticaret-yonetimi-v23` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-e-ticaret-yonetimi-v23/n1-e-ticaret-yonetimi-v23.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-e-ticaret-yonetimi-v23/n1-e-ticaret-yonetimi-v23.js` |
+| Sosyal Medya | `n1-sosyal-medya-v27` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-sosyal-medya-v27/n1-sosyal-medya-v27.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-sosyal-medya-v27/n1-sosyal-medya-v27.js` |
+| Reklam Yönetimi | `n1-reklam-yonetimi-v23` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-reklam-yonetimi-v23/n1-reklam-yonetimi-v23.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-reklam-yonetimi-v23/n1-reklam-yonetimi-v23.js` |
+| UI/UX Tasarım | `n1-uiux-tasarim-v28` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-uiux-tasarim-v28/n1-uiux-tasarim-v28.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-uiux-tasarim-v28/n1-uiux-tasarim-v28.js` |
+| AI (Yapay Zekâ) | `n1-yapay-zeka-v2` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yapay-zeka-v2/n1-yapay-zeka-v2.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-yapay-zeka-v2/n1-yapay-zeka-v2.js` |
+| Uygulama Geliştirme | `n1-uygulama-gelistirme-v2` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-uygulama-gelistirme-v2/n1-uygulama-gelistirme-v2.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-uygulama-gelistirme-v2/n1-uygulama-gelistirme-v2.js` |
+| Markalar | `n1-markalar-v11` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-markalar-v1/n1-markalar-v11.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-markalar-v1/n1-markalar-v11.js` |
+| Kısaca Biz | `n1-kisaca-biz-v1` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-kisaca-biz-v1/n1-kisaca-biz-v1.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-kisaca-biz-v1/n1-kisaca-biz-v1.js` |
+| Yasal sayfalar (KVKK, Çerez, Kullanım Koşulları, Gizlilik, Veri Sahibi Başvuru) | her sayfanın mevcut etiketi (ör. `n1-kvkk-aydinlatma-v1`) — değişmez | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@39f762f63a2af58a470e9712d8ca0895d6f73f9f/wix-global-menu-v12/pages/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js` | `https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-sitewide-mobile-fix-2026-11-26/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js` |
+
+Ana sayfa öğesinin `code-base`, `assets-base`, `ronin-base` öznitelikleri değişmez. v657 mobil dosyaları ve Ronin medyasını canlı v6.56 adresinden okur (aynı dosyalar).
+
+### Aşama C — B + yalnız stabilite modülü
+1. Yeni özel kod girişi: ad "1N - Stabilite", **Body - end**, Tüm sayfalar (ya da yalnız kurumsal sayfalar), "Her yeni sayfada yükle", içerik `wix-global-menu-v12/wix-custom-code/C-stability-only-body-end.html`:
+```html
+<script src="https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@be0c8b1454939989d175197be4ff6667f9e29c19/wix-mobile-stability-v1/n1-stability-v1.1.1.js" defer></script>
+```
+2. Yayınla. (Nav koruma satırı, `N1_NAV_CONFIG` ve test anahtarı **eklenmez**.)
+
+### Yayın sonrası 5 dk kontrol (B ve C)
+- Konsol: `typeof __n1Nav` → `"undefined"`, `typeof N1_NAV_CONFIG` → `"undefined"`; C'de `__n1Stability.version` → `"1.1.1"`, B'de `undefined`.
+- Ağ sekmesinde `n1-nav` içeren istek **0**.
+- MENU → Hizmetler: 7 alt bağlantı; tekrar basınca kapanır; bağlantılar hizmet sayfalarını açar.
+- Ana sayfadaki Hizmetler bölümü ve 7 bağlantısı yerinde.
+
+---
+
+## V1.1 (yayınlanmadı / canlıda hatalı yapılandırıldı — V1.2 ile geçersiz)
+
 
 **Bu çalışmada Wix'te hiçbir şey değiştirilmedi ve yayınlanmadı.** Yapıştırılacak kodlar elle yazım hatası olmasın diye dosya olarak hazır: `wix-custom-code/`.
 

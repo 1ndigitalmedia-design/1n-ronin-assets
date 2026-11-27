@@ -1,0 +1,8 @@
+const pw=require('playwright');const [,,BR='chromium']=process.argv;
+(async()=>{for(const SC of ['A','B','C']){const b=await pw[BR].launch();const o={viewport:{width:390,height:844},hasTouch:true};if(BR==='chromium')o.isMobile=true;const ctx=await b.newContext(o);await require('./scen.js')(ctx,SC);const pg=await ctx.newPage();
+ for(const p of ['/','/kreatif-produksiyon']){await pg.goto('https://www.reklam1n.com'+p,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(11000);
+  const r=await pg.evaluate(()=>{const h=document.querySelector('n1-header');let menu=null;try{menu=JSON.parse(h.querySelector('script[type="application/json"]')?.textContent||'null')}catch(e){}
+   const items=[...document.querySelectorAll('.n1h-panel .n1h-item')].map(i=>i.tagName+':'+i.textContent.trim().split(/\s{2,}|\n/)[0].slice(0,18));
+   return {nav:window.__n1Nav?(window.__n1Nav.version||'pending'):'-',navCfg:!!window.N1_NAV_CONFIG,navScripts:[...document.scripts].filter(s=>/n1-nav/.test(s.src)).length,stab:window.__n1Stability?window.__n1Stability.version:'-',hizBtn:[...document.querySelectorAll('.n1h-panel .n1h-item')].some(i=>i.tagName==='BUTTON'&&/Hizmetler/.test(i.textContent)),subLinks:[...document.querySelectorAll('.n1h-panel .n1h-sub a')].map(a=>a.getAttribute('href')).filter(h=>!/ekibimize|acik-poz/.test(h)),svcSection:!!document.getElementById('hizmetler-ozet'),svcLinks:document.getElementById('hizmetler-ozet')?document.querySelectorAll('#hizmetler-ozet a').length:null,ST:window.ScrollTrigger?ScrollTrigger.getAll().length:null}});
+  console.log(BR,SC,p,JSON.stringify(r));}
+ console.log(BR,SC,'düzenek:',JSON.stringify(ctx.__scen));await b.close();}})();

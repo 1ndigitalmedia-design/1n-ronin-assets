@@ -1,4 +1,20 @@
-# ROLLBACK — Geri dönüş (V1.1)
+# ROLLBACK
+
+## V1.2 geri dönüş
+
+| Durum | Yapılacak (Wix Studio → Site Ayarları → Özel Kod / sayfa Custom Element ayarı) | Sonuç |
+|---|---|---|
+| **C → B** (stabilite sorunlu) | "1N - Stabilite" girişini sil, yayınla | B |
+| **B → A** (yeni menü sorunlu) | 11 Custom Element Server URL'sini DEPLOYMENT.md V1.2 tablosundaki **"Eski Server URL"** sütununa döndür; Body-end "1N - Hizmetler Capa Navigasyonu" girişini `wix-global-menu-v12/wix-custom-code/A-rollback-original-nav-body-end.html` içeriğiyle yeniden ekle (Tüm sayfalar · Body - end · Her yeni sayfada yükle); yayınla | Temiz canlı (Aşama 0 sonrası) |
+| **Aşama 0 → 26 Kasım öncesi tam canlı** | Gerekli değil: silinen Head girişleri hatalı test girişleriydi (V1.1 hiç yüklenmiyordu). İstenirse içerikleri `wix-mobile-stability-v1/wix-custom-code/03` ve `04` dosyalarındadır | — |
+
+- Eski Server URL'lerin hepsi canlıda bugün kullanılan ve 282/282 istekte erişilebilir doğrulanan `f97db8ed` adresleridir.
+- `A-rollback-original-nav-body-end.html` (yorum satırı hariç) 26 Kasım canlı özel koduyla birebir aynıdır (V1.0'da doğrulandı).
+- Git: force push yok, geçmiş değiştirilmedi, dal silinmedi. `main` `99866f2`, `mobile-stability-clean-base-20261126` `876de80`, `sitewide-mobile-fix-20261126` `f97db8e` değişmedi.
+
+---
+
+## V1.1 geri dönüş (geçmiş)
 
 V1.1 yalnızca Wix özel kod girişlerini değiştirir: mevcut body-end girişi ve yeni bir head girişi. Sayfa Custom Element'leri değişmediği için onlarda geri dönüş gerekmez.
 

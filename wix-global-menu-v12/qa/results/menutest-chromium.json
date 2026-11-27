@@ -1,0 +1,560 @@
+[
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "Hizmetler bir buton (bağlantı değil), kapalı",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "tıklayınca açılır, 7 bağlantı doğru sıra",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "url değişmedi (yönlendirme yok)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "dokunma alanları ≥40 px (başlık / alt bağlantı)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "son alt bağlantı ekranda erişilebilir (panel kaydırılabilir)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "tekrar tıklayınca kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "İnsan Kaynakları alt menüsü korunuyor",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "Escape ×2: alt menü sonra menü kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "klavye: Enter menüyü açar, ↓ Hizmetler'e gelir",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "klavye: Enter alt menüyü açar",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "klavye: Escape alt menüyü kapatır, odak başlıkta",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "masaüstü: fareyle üzerine gelince açılır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "masaüstü: üzerine gelinmiş menüye tıklama sabitler (açık kalır)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "masaüstü: ikinci tıklama kapatır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "alt bağlantı → /ui-ux-tasarim (standart gezinme)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "iç sayfa menüsünden → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "geri → /ui-ux-tasarim",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "ileri → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "header/logo/MENU görünür",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "eski /#hizmetler-ozet adresi açılıyor (standart tarayıcı davranışı, bilgi)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "masaustu",
+  "n": "1N kaynaklı sayfa hatası yok",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "Hizmetler bir buton (bağlantı değil), kapalı",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "tıklayınca açılır, 7 bağlantı doğru sıra",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "url değişmedi (yönlendirme yok)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "dokunma alanları ≥40 px (başlık / alt bağlantı)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "son alt bağlantı ekranda erişilebilir",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "tekrar tıklayınca kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "İnsan Kaynakları alt menüsü korunuyor",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "Escape ×2: alt menü sonra menü kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "klavye: Enter menüyü açar, ↓ Hizmetler'e gelir",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "klavye: Enter alt menüyü açar",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "klavye: Escape alt menüyü kapatır, odak başlıkta",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "alt bağlantı → /ui-ux-tasarim (standart gezinme)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "iç sayfa menüsünden → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "geri → /ui-ux-tasarim",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "ileri → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "header/logo/MENU görünür",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "eski /#hizmetler-ozet adresi açılıyor (standart tarayıcı davranışı, bilgi)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet",
+  "n": "1N kaynaklı sayfa hatası yok",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "Hizmetler bir buton (bağlantı değil), kapalı",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "tıklayınca açılır, 7 bağlantı doğru sıra",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "url değişmedi (yönlendirme yok)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "dokunma alanları ≥40 px (başlık / alt bağlantı)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "son alt bağlantı ekranda erişilebilir (panel kaydırılabilir)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "tekrar tıklayınca kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "İnsan Kaynakları alt menüsü korunuyor",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "Escape ×2: alt menü sonra menü kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "klavye: Enter menüyü açar, ↓ Hizmetler'e gelir",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "klavye: Enter alt menüyü açar",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "klavye: Escape alt menüyü kapatır, odak başlıkta",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "alt bağlantı → /ui-ux-tasarim (standart gezinme)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "iç sayfa menüsünden → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "geri → /ui-ux-tasarim",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "ileri → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "header/logo/MENU görünür",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "eski /#hizmetler-ozet adresi açılıyor (standart tarayıcı davranışı, bilgi)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "tablet-yatay",
+  "n": "1N kaynaklı sayfa hatası yok",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "Hizmetler bir buton (bağlantı değil), kapalı",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "tıklayınca açılır, 7 bağlantı doğru sıra",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "url değişmedi (yönlendirme yok)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "dokunma alanları ≥40 px (başlık / alt bağlantı)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "son alt bağlantı ekranda erişilebilir",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "tekrar tıklayınca kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "İnsan Kaynakları alt menüsü korunuyor",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "Escape ×2: alt menü sonra menü kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "klavye: Enter menüyü açar, ↓ Hizmetler'e gelir",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "klavye: Enter alt menüyü açar",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "klavye: Escape alt menüyü kapatır, odak başlıkta",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "alt bağlantı → /ui-ux-tasarim (standart gezinme)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "iç sayfa menüsünden → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "geri → /ui-ux-tasarim",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "ileri → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "header/logo/MENU görünür",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "eski /#hizmetler-ozet adresi açılıyor (standart tarayıcı davranışı, bilgi)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "mobil",
+  "n": "1N kaynaklı sayfa hatası yok",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "Hizmetler bir buton (bağlantı değil), kapalı",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "tıklayınca açılır, 7 bağlantı doğru sıra",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "url değişmedi (yönlendirme yok)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "dokunma alanları ≥40 px (başlık / alt bağlantı)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "son alt bağlantı ekranda erişilebilir (panel kaydırılabilir)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "tekrar tıklayınca kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "İnsan Kaynakları alt menüsü korunuyor",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "Escape ×2: alt menü sonra menü kapanır",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "klavye: Enter menüyü açar, ↓ Hizmetler'e gelir",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "klavye: Enter alt menüyü açar",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "klavye: Escape alt menüyü kapatır, odak başlıkta",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "alt bağlantı → /ui-ux-tasarim (standart gezinme)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "iç sayfa menüsünden → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "geri → /ui-ux-tasarim",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "ileri → /yapay-zeka",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "header/logo/MENU görünür",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "eski /#hizmetler-ozet adresi açılıyor (standart tarayıcı davranışı, bilgi)",
+  "ok": true
+ },
+ {
+  "BR": "chromium",
+  "dev": "kucuk-mobil",
+  "n": "1N kaynaklı sayfa hatası yok",
+  "ok": true
+ }
+]
