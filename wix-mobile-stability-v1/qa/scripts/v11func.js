@@ -12,6 +12,8 @@ for(const p of ['/intelligence','/intelligence-admin','/dashboard','/ella-cikola
 let pg=await ctx.newPage();await pg.goto(B+'/kreatif-produksiyon',{waitUntil:'domcontentloaded'});await pg.waitForTimeout(9000);
 let r=await pg.evaluate(()=>({ssw:__ssw(),box:!!document.querySelector('pre[aria-hidden]'),rep:__n1Stability.report(),nav:__n1Nav.version}));
 T('normal ziyaretçi: sessionStorage yazımı yok, tanılama kutusu yok',r.ssw.count===0&&!r.box&&r.rep.diag===false,JSON.stringify(r.ssw)+' nav='+r.nav);
+T('varsayılan: uzak-bırakma kapalı, IO/MO kurulmadı',r.rep.farRelease===false&&!r.rep.observers.io&&!r.rep.observers.mo,JSON.stringify({far:r.rep.farRelease,o:r.rep.observers}));
+await pg.goto(B+'/kreatif-produksiyon?n1far=1',{waitUntil:'domcontentloaded'});await pg.waitForTimeout(9000);
 // 3 BFCache synthetic x2: no duplicate observers, restores once
 const cyc=async()=>{await pg.evaluate(()=>window.dispatchEvent(new PageTransitionEvent('pagehide',{persisted:true})));await pg.waitForTimeout(300);const a=await pg.evaluate(()=>__n1Stability.report());await pg.evaluate(()=>window.dispatchEvent(new PageTransitionEvent('pageshow',{persisted:true})));await pg.waitForTimeout(2500);return [a,await pg.evaluate(()=>__n1Stability.report())]};
 let [h1,s1]=await cyc();let [h2,s2]=await cyc();

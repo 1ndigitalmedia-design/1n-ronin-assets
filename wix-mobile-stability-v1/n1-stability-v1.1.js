@@ -14,8 +14,12 @@
  *  - TANILAMA: yalnızca ?n1diag=1 ile açılır ve aynı sekmede sayfalar arasında açık kalır (?n1diag=0 kapatır).
  *    Normal ziyaretçide sessionStorage yazımı, günlük dizisi, interval ve DOM işlemi yoktur.
  *
+ *  - UZAK-BIRAKMA VARSAYILAN KAPALI: 21 döngü × 2 WebKit koşusunda kaynakları serbest bıraktığı halde süreç
+ *    belleğini düşürmedi (TEST_REPORT.md §10). Yalnızca gerçek cihaz karşılaştırması için ?n1far=1 ile (sekme
+ *    boyunca) açılır, ?n1far=0 kapatır. Kapalıyken IntersectionObserver/MutationObserver hiç kurulmaz.
+ *
  * Değişmeyen davranış (v1.0.0): pagehide'da 1N videolarının kaynağını bırakma, BFCache dönüşünde geri yükleme,
- * ≈1,5 ekran uzakta ≥4 sn duraklatılmış videoyu bırakma, bırakılmış videoda play() → önce kaynağı geri yükleme.
+ * bırakılmış videoda play() → önce kaynağı geri yükleme.
  * Tasarım, metin, bağlantı, video kalitesi, GSAP/ScrollTrigger, Header/Footer, reklam/izleme kodları değişmez.
  */
 (function () {
@@ -26,7 +30,8 @@
   var MOBILE_MQ = '(max-width: 1024px), (hover: none) and (pointer: coarse)';
   var FAR_MARGIN = '150% 0px 150% 0px';
   var FAR_DELAY = 4000;
-  var DIAG_KEY = 'n1-diag', LOG_KEY = 'n1-stability-log';
+  var DIAG_KEY = 'n1-diag', LOG_KEY = 'n1-stability-log', FAR_KEY = 'n1-far';
+  var FAR_RELEASE_DEFAULT = false;
 
   /* ---------- kapsam ---------- */
   var SCOPE_ALLOW = ['/', '/n1-full-test', '/kisaca-biz', '/markalar',
@@ -86,6 +91,12 @@
     else if (q && q[1] === '0') { sessionStorage.removeItem(DIAG_KEY); sessionStorage.removeItem(LOG_KEY); }
     diagOn = sessionStorage.getItem(DIAG_KEY) === '1';
   } catch (e) {}
+  var farOn = FAR_RELEASE_DEFAULT;                        // gerçek cihaz karşılaştırması: ?n1far=1 / ?n1far=0
+  try {
+    var qf = /[?&]n1far=([01])\b/.exec(location.search);
+    if (qf && qf[1] === '1') sessionStorage.setItem(FAR_KEY, '1'); else if (qf && qf[1] === '0') sessionStorage.removeItem(FAR_KEY);
+    if (qf || sessionStorage.getItem(FAR_KEY)) farOn = sessionStorage.getItem(FAR_KEY) === '1';
+  } catch (e) {}
   var stats = { released: 0, restored: 0, resumed: 0, farReleased: 0, playIntercepts: 0, warmed: 0, starts: 0, bfRestores: 0 };
   var box = null;
   function now() { return Math.round(performance.now()); }
@@ -107,7 +118,7 @@
     }
     var all = []; try { all = JSON.parse(sessionStorage.getItem(LOG_KEY) || '[]'); } catch (e) {}
     var v = ourVideos(), nav = (performance.getEntriesByType('navigation')[0] || {}).type;
-    box.textContent = 'n1-stability ' + VERSION + ' · mobil=' + active + ' · nav=' + nav + ' · n1Nav=' + ((window.__n1Nav && window.__n1Nav.version) || '-') + '\n' +
+    box.textContent = 'n1-stability ' + VERSION + ' · mobil=' + active + ' · uzak=' + (farOn ? 'açık' : 'kapalı') + ' · nav=' + nav + ' · n1Nav=' + ((window.__n1Nav && window.__n1Nav.version) || '-') + '\n' +
       'video=' + v.length + ' src=' + v.filter(function (x) { return x.getAttribute('src'); }).length + ' oynayan=' + v.filter(function (x) { return !x.paused; }).length +
       ' bırakılan=' + v.filter(function (x) { return x.__n1rel; }).length + '\n' + JSON.stringify(stats) + '\n' + all.slice(-16).join('\n');
   }
@@ -174,7 +185,7 @@
   function watch(v) { if (!io || watched.has(v) || !owned(v)) return; watched.add(v); io.observe(v); }
   function scan() { [].forEach.call(document.getElementsByTagName('video'), watch); }
   function connect() {
-    if (io || !('IntersectionObserver' in window)) return;
+    if (!farOn || io || !('IntersectionObserver' in window)) return;
     io = new IntersectionObserver(onFar, { rootMargin: FAR_MARGIN, threshold: 0 });
     watched = new WeakSet(); scan();
     if (!mo && 'MutationObserver' in window) {
@@ -246,7 +257,7 @@
     version: VERSION, active: true, stats: stats,
     report: function () {
       var v = ourVideos();
-      return { version: VERSION, mobile: active, scope: path(), warmMode: WARM_MODE, diag: diagOn, stats: Object.assign({}, stats),
+      return { version: VERSION, mobile: active, scope: path(), warmMode: WARM_MODE, farRelease: farOn, diag: diagOn, stats: Object.assign({}, stats),
         observers: { io: !!io, mo: !!mo }, videos: v.length, withSrc: v.filter(function (x) { return x.getAttribute('src'); }).length,
         released: v.filter(function (x) { return x.__n1rel; }).length, playing: v.filter(function (x) { return !x.paused; }).length };
     }
