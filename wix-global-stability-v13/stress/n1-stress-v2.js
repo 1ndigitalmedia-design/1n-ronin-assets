@@ -293,6 +293,9 @@
       if (path === s.p && nt === 'navigate') return pageArrived();
       if (path === s.p && nt === 'reload') return issue('crash', 'hizmet sayfası yüklenirken yeniden yüklendi', info);
       if (path === HOME && SCEN[s.sc].early && (nt === 'bfcache' || nt === 'back_forward')) { putResult(A, { earlyBeforeRunner: 1 }); return returned(nt); }
+      if (path === HOME && nt === 'reload' && SCEN[s.sc].early) {   // anahtar erken geriyi verdiyse: geri + Wix ATS yeniden yüklemesi (çökme değil)
+        var e1 = jget(K.eb, null); if (e1 && lsGet(K.ebdone) === e1.id) { putResult(A, { earlyBeforeRunner: 1 }); return returned('reload'); }
+      }
       if (path === HOME && nt === 'reload') return issue('ambiguous', 'geçiş sırasında ana sayfa yeniden yüklendi (çökme ya da Wix ATS; ayırt edilemez)', info);
       return issue('unexpected', 'bağlantı sonrası beklenmeyen sayfa (' + path + ', ' + nt + ')', info);
     }

@@ -1,0 +1,74 @@
+21:26:24 ön kontrol: Video kontrolü: OTOMATİK OYNATMA ÇALIŞIYOR · ronin-m5-film-2x.mp4 1120x1504 rs4 ns1
+21:26:25 durum 0.1 prep / rev 1
+21:26:27 durum 0.1 home / rev 2
+21:26:36 durum 0.1 nav / rev 3
+21:26:37 durum 0.1 nav /reklam-yonetimi rev 3
+21:26:38 durum 0.1 page /reklam-yonetimi rev 4
+21:26:41 >>> A: hizmet sayfası etkinken reload
+21:26:42 durum 0.1 recover /reklam-yonetimi rev 5
+21:26:47 durum 1.1 home / rev 8
+21:26:57 durum 1.1 page /reklam-yonetimi rev 10
+21:26:57 >>> B: history.back yanlış sayfaya yönlendirilecek
+21:27:27 durum 1.1 back /reklam-yonetimi rev 11
+21:27:30 durum 1.1 recover /sosyal-medya rev 12
+21:27:34 durum 1.2 prep / rev 14
+21:27:35 durum 1.2 home / rev 15
+21:27:44 durum 1.2 nav / rev 16
+21:27:45 durum 1.2 page /reklam-yonetimi rev 17
+21:28:16 durum 1.2 back /reklam-yonetimi rev 18
+21:28:18 durum 1.2 back / rev 18
+21:28:19 durum 1.2 returned / rev 19
+21:28:28 durum 2.1 prep / rev 21
+21:28:30 durum 2.1 home / rev 22
+21:28:30 >>> C: ana sayfa etkinken başka sayfaya gidiliyor
+21:28:32 durum 2.1 recover /yapay-zeka rev 23
+21:28:37 durum 2.2 prep / rev 25
+21:28:38 durum 2.2 home / rev 26
+21:28:46 durum 2.2 nav / rev 27
+21:28:47 durum 2.2 back /reklam-yonetimi rev 28
+21:28:48 durum 2.2 returned / rev 29
+21:29:00 durum 3.1 home / rev 32
+21:29:03 >>> D: 2. sekme paneli: N1 STRES 2.0.0 · PASİF ¦ Test başka bir sekmede etkin (son işaret 1 sn önce). Bu sekme pasif.
+21:29:09 durum 3.1 nav / rev 33
+21:29:11 durum 3.1 recover / rev 34
+21:29:15 durum 4.1 done / rev 36
+21:29:15 bitti
+
+=== DOĞRULAMA
+plan adımı 4 deneme kaydı (benzersiz attemptId) 6 bitti done
+  0.1 B /reklam-yonetimi n → crash hizmet sayfası etkinken yeniden yüklendi | home navigate back  ats 0 video 1 ronin-m5-film-2x.mp4 1120x1504 adv1
+  1.1 RP /reklam-yonetimi n → wronghist geri, ana sayfa yerine /sosyal-medya (navigate) | home navigate back  ats 0 video 1 poster-only 0x0 adv0
+  1.2 RP /reklam-yonetimi n → ok  | home navigate back reload ats 1 video 1 poster-only 0x0 adv0
+  2.1 RP /reklam-yonetimi e1000 → unexpected ana sayfa etkinken beklenmeyen gezinme (navigate → /yapay-zeka) | home navigate back  ats 0 video undefined 
+  2.2 RP /reklam-yonetimi e1000 → ok  | home navigate back reload ats 1 video 1 poster-only 0x0 adv0
+  3.1 B /reklam-yonetimi e1000 → ambiguous geçiş sırasında ana sayfa yeniden yüklendi (çökme ya da Wix ATS; ayırt | home navigate back  ats 0 video 1 ronin-m5-film-2x.mp4 1120x1504 adv1
+rev monoton (örneklenen 150 ): true
+2. sekme belgesi dmwzhukck6t1gq olayları [] durumu yazdı mı: false
+kapanıştan sonra devralma: [] playwright crash 0 belge 26 anahtar değişimi 26
+# 1N V1.3.2 mobil stres testi — sonuç raporu
+Betik 2.0.0 · runId rmwzhr7x9fgblv · rapor 2026-11-27T21:29:17.464Z
+Cihaz: Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7 Mobile/15E148 Safari/604.1 · ekran 440x956@3
+Seçenekler: {"vars":["B","RP"],"pages":["/reklam-yonetimi"],"scen":["n","e1000"],"rep":1} · plan adımı 4 · deneme kaydı 6 (benzersiz attemptId)
+Video ön kontrolü: OTOMATİK OYNATMA ÇALIŞIYOR · ronin-m5-film-2x.mp4 1120x1504 rs4 ns1
+Sınıflar: ÇÖKME ADAYI = test beklemiyorken sayfa yeniden yüklendi (Safari çökme sonrası yeniden yükleme YA DA elle yeniden yükleme; ayırt edilemez). BFCache dönüşü çökme sayılmaz. Wix ATS yeniden yüklemesi ayrı sayılır.
+
+## Varyant özeti (yalnız 1. denemeler; ek denemeler ayrı sütunda)
+| Varyant | Plan adımı | Geçerli 1. deneme | ÇÖKME ADAYI | Belirsiz yeniden yükleme | Test kaynaklı sorun (beklenmeyen/yanlış geçmiş/zaman aşımı) | Ek deneme | Wix ATS yeniden yükleme | Video doğrulandı (ana sayfa) | Ronin (kaynak, çözünürlük) | Hizmet TTFB/DCL/bileşen (medyan ms) | 1N JS hatası |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| B · yayındaki V1.3 | 2 | 2 | 1 | 1 | 0 | 0 | 0 | 2/2 | ronin-m5-film-2x.mp4 1120x1504 playing | – / – / – | 0 |
+| Ronin yalnız poster | 2 | 0 | 0 | 0 | 2 | 2 | 2 | beklenmiyor | poster-only 0x0 error | – / – / – | 0 |
+
+## Sayfa × senaryo × varyant (1. denemeler: çökme adayı / geçerli)
+| Sayfa | Senaryo | B | RP |
+|---|---|---|---|
+| /reklam-yonetimi | normal (sona kadar kaydır + geri) | 1/1 | 0/0 |
+| /reklam-yonetimi | erken geri 1 sn | 0/1 | 0/0 |
+
+## Sorunlu denemeler
+- 0.1 · B · yayındaki V1.3 · /reklam-yonetimi · normal (sona kadar kaydır + geri) · ÇÖKME ADAYI (beklenmeyen yeniden yükleme) · hizmet sayfası etkinken yeniden yüklendi · {"nt":"reload","path":"/reklam-yonetimi","phase":"page","exp":"link","gapMs":3976}
+- 1.1 · Ronin yalnız poster · /reklam-yonetimi · normal (sona kadar kaydır + geri) · yanlış geçmiş girdisi · geri, ana sayfa yerine /sosyal-medya (navigate) · {"nt":"navigate","path":"/sosyal-medya","phase":"back","exp":"back","gapMs":2972}
+- 2.1 · Ronin yalnız poster · /reklam-yonetimi · erken geri 1 sn · beklenmeyen gezinme · ana sayfa etkinken beklenmeyen gezinme (navigate → /yapay-zeka) · {"nt":"navigate","path":"/yapay-zeka","phase":"home","exp":"fresh-home","gapMs":2545}
+- 3.1 · B · yayındaki V1.3 · /reklam-yonetimi · erken geri 1 sn · belirsiz yeniden yükleme · geçiş sırasında ana sayfa yeniden yüklendi (çökme ya da Wix ATS; ayırt edilemez) · {"nt":"reload","path":"/","phase":"nav","exp":"link","gapMs":2313}
+
+
+EXIT 0
