@@ -1,0 +1,473 @@
+/* 1N | Inner Pages responsive v2. Main homepage unaffected. */
+@media (max-width:1024px){
+n1-studyo-v1 .st-wrap{width:90%}
+n1-studyo-v1 .st-hero{padding-top:128px}
+n1-studyo-v1 .st-hero__grid{display:block;position:relative}
+n1-studyo-v1 .st-hero__copy{position:relative;z-index:2;padding-bottom:32px}
+n1-studyo-v1 .st-hero__title{font-size:clamp(86px,13vw,150px)}
+n1-studyo-v1 .st-mark{position:absolute;z-index:0;top:-30px;right:0;width:43%;opacity:.7;pointer-events:none}
+n1-studyo-v1 .st-hero__lede{max-width:32ch}
+n1-studyo-v1 .st-story,n1-studyo-v1 .st-way{padding-top:80px;padding-bottom:80px}
+n1-studyo-v1 .st-statement{font-size:clamp(40px,5vw,58px)}
+n1-studyo-v1 .st-h2{font-size:clamp(60px,7vw,85px)}
+n1-studyo-v1 .st-cta__title{font-size:clamp(68px,8vw,100px)}
+n1-studyo-v1 .st-cta__actions{order:0}
+}
+@media(max-width:900px){
+n1-studyo-v1 n1-header{display:block!important}
+n1-studyo-v1 n1-header .n1h-bar{height:70px;width:90%;display:grid;grid-template-columns:1fr auto}
+n1-studyo-v1 n1-header .n1h-tag{display:none}
+n1-studyo-v1 n1-header .n1h-right{justify-self:end}
+n1-studyo-v1 n1-header .n1h-menu{height:39px;min-width:104px;padding:0 12px}
+n1-studyo-v1 n1-header .n1h-cta{display:none}
+.n1h-panel.n1-inner-panel{display:grid!important;left:5%!important;right:5%!important;top:74px!important;width:90%!important;max-height:calc(100dvh - 90px);overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain;gap:7px}
+.n1h-panel.n1-inner-panel .n1h-nav{padding:8px}
+.n1h-panel.n1-inner-panel .n1h-item{min-height:45px;font-size:25px}
+.n1h-panel.n1-inner-panel .n1h-main{overflow:visible!important;order:1}
+.n1h-panel.n1-inner-panel .n1h-sub{display:none;position:static;width:100%;right:auto;top:auto;padding:9px;margin:0;transform:none;order:2}
+.n1h-panel.n1-inner-panel .n1h-sub[data-open]{display:block;opacity:1;visibility:visible;pointer-events:auto}
+.n1h-panel.n1-inner-panel .n1h-sub a,.n1h-panel.n1-inner-panel .n1h-sub span.n1h-soon{min-height:40px;font-size:15px}
+.n1h-panel.n1-inner-panel .n1h-brandcard{order:3}
+}
+@media(max-width:767px){
+n1-studyo-v1{font-size:16px}
+n1-studyo-v1 .st-wrap{width:calc(100% - 40px)}
+n1-studyo-v1 .st-hero{padding-top:108px}
+n1-studyo-v1 .st-hero__copy{padding-bottom:20px}
+n1-studyo-v1 .st-hero__title{font-size:clamp(69px,15.6vw,112px);margin-top:28px!important}
+n1-studyo-v1 .st-ln>span{white-space:normal}
+n1-studyo-v1 .st-mark{top:10px;right:-4px;width:52%;opacity:.38}
+n1-studyo-v1 .st-tag{font-size:10px;gap:10px}
+n1-studyo-v1 .st-tag i{width:22px}
+n1-studyo-v1 .st-hero__lede{font-size:17px;line-height:1.45;margin-top:27px!important}
+n1-studyo-v1 .st-index{display:block;margin-top:38px}
+n1-studyo-v1 .st-index a{min-height:52px;padding:15px 0!important;border-left:0!important;font-size:14px}
+n1-studyo-v1 .st-index a+a{border-top:1px solid var(--line)}
+n1-studyo-v1 .st-index a::after{margin-right:6px}
+n1-studyo-v1 .st-story,n1-studyo-v1 .st-way{padding-top:65px;padding-bottom:66px}
+n1-studyo-v1 .st-grid{display:flex;flex-direction:column;gap:27px}
+n1-studyo-v1 .st-label{font-size:13px;padding:0}
+n1-studyo-v1 .st-statement{font-size:clamp(35px,8.5vw,57px);line-height:1.08;text-wrap:pretty}
+n1-studyo-v1 .st-story__cols{grid-template-columns:1fr;gap:17px;margin-top:30px}
+n1-studyo-v1 .st-story__cols p{font-size:16px}
+n1-studyo-v1 .st-h2{font-size:clamp(53px,11vw,77px)}
+n1-studyo-v1 .st .st-habits{grid-template-columns:1fr;gap:26px;margin-top:38px}
+n1-studyo-v1 .st-habit{padding-top:20px}
+n1-studyo-v1 .st-habit h3{font-size:38px}
+n1-studyo-v1 .st-habit p{margin-top:11px!important;font-size:15px}
+n1-studyo-v1 .st-disc{grid-template-columns:1fr;gap:15px;margin-top:43px}
+n1-studyo-v1 .st-disc__k,n1-studyo-v1 .st-disc ul{grid-column:1}
+n1-studyo-v1 .st-disc li{font-size:19px}
+n1-studyo-v1 .st-cta{padding:79px 0 92px}
+n1-studyo-v1 .st-cta__title{font-size:clamp(53px,11.4vw,84px);line-height:.97}
+n1-studyo-v1 .st-cta__mark{width:90%;right:-43%;bottom:-10%}
+n1-studyo-v1 .st-cta__row{flex-direction:column;align-items:stretch;gap:24px;margin-top:28px}
+n1-studyo-v1 .st-cta__row p{max-width:36ch;font-size:16px}
+n1-studyo-v1 .st-cta__actions{flex-direction:column;gap:11px;width:100%}
+n1-studyo-v1 .st-btn{height:54px;width:100%;padding:0 18px;justify-content:space-between;font-size:12px}
+n1-studyo-v1 .st-btn--primary{padding-right:7px}
+n1-studyo-v1 .st-btn__ico{width:40px;height:40px}
+n1-studyo-v1 .n1ft{padding-top:57px;padding-bottom:26px}
+n1-studyo-v1 .n1ft-inner{width:calc(100% - 40px)}
+n1-studyo-v1 .n1ft-top{grid-template-columns:1fr!important;gap:32px;padding:39px 0 36px}
+n1-studyo-v1 .n1ft-col--brand{grid-column:auto}
+n1-studyo-v1 .n1ft-brand{font-size:45px}
+n1-studyo-v1 .n1ft-socials{margin-top:22px}
+n1-studyo-v1 .n1ft-label{margin-bottom:14px}
+n1-studyo-v1 .n1ft-contact{margin-top:14px}
+n1-studyo-v1 .n1ft-partners{flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:20px 18px;padding:28px 64px 27px 0}
+n1-studyo-v1 .n1ft-partner{flex:0 1 calc(50% - 9px);max-width:calc(50% - 9px)}
+n1-studyo-v1 .n1ft-logo{max-height:37px}
+n1-studyo-v1 .n1ft-logo--badge{max-height:48px}
+n1-studyo-v1 .n1ft-bottom{font-size:12px}
+}
+@media(max-width:360px){
+n1-studyo-v1 .st-wrap,n1-studyo-v1 .n1ft-inner{width:calc(100% - 32px)}
+n1-studyo-v1 .st-hero__title{font-size:15.3vw}
+n1-studyo-v1 .st-cta__title{font-size:11vw}
+n1-studyo-v1 .n1ft-partners{padding-right:54px}
+}
+
+/* v3: Mobile/tablet header is a centered compact Wix-level fixed bar.
+   The original v2 .n1h-bar had width 90% but no auto margins. */
+@media(max-width:1024px){
+  n1-studyo-v1 n1-header{
+    display:block!important;
+    position:fixed!important;
+    top:0!important;left:0!important;right:0!important;
+    width:100%!important;
+    min-height:0!important;
+    height:auto!important;
+    z-index:900!important;
+    background:rgba(8,10,9,.95);
+    -webkit-backdrop-filter:blur(12px);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(228,227,221,.07);
+  }
+  n1-studyo-v1 n1-header .n1h-bar.site-container{
+    display:grid!important;
+    grid-template-columns:1fr auto!important;
+    align-items:center!important;
+    width:calc(100% - 48px)!important;
+    margin-inline:auto!important;
+    padding-inline:0!important;
+    height:72px!important;
+    max-width:100%!important;
+  }
+  n1-studyo-v1 n1-header .n1h-logo{
+    justify-self:start!important;
+    margin:0!important;
+    flex:none;
+  }
+  n1-studyo-v1 n1-header .n1h-logo img{
+    width:32px!important;height:32px!important;
+    max-width:none!important;
+  }
+  n1-studyo-v1 n1-header .n1h-tag{
+    display:none!important;
+  }
+  n1-studyo-v1 n1-header .n1h-right{
+    justify-self:end!important;
+    align-items:center!important;
+    min-width:0!important;
+  }
+  n1-studyo-v1 n1-header .n1h-menu{
+    display:inline-flex!important;
+    align-items:center!important;
+    min-width:108px!important;
+    height:40px!important;
+    padding-inline:14px!important;
+    margin:0!important;
+  }
+  n1-studyo-v1 n1-header .n1h-cta{
+    display:none!important;
+  }
+  .n1h-panel.n1-inner-panel{
+    top:80px!important;
+  }
+
+  /* Footer partner lockup: five equal columns, one row at ALL narrow sizes.
+     GSAP footer reveal must not keep logos invisible on tablet. */
+  n1-studyo-v1 footer.n1ft .n1ft-partners{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    align-items:center!important;
+    justify-items:center!important;
+    gap:clamp(5px,1.2vw,14px)!important;
+    margin:0!important;
+    padding:24px 0!important;
+    width:100%!important;
+    overflow:visible!important;
+  }
+  n1-studyo-v1 footer.n1ft .n1ft-partner{
+    display:flex!important;
+    flex:none!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-width:0!important;
+    max-width:100%!important;
+    width:100%!important;
+    opacity:1!important;
+    visibility:visible!important;
+    transform:none!important;
+  }
+  n1-studyo-v1 footer.n1ft .n1ft-logo{
+    display:block!important;
+    box-sizing:border-box;
+    width:100%!important;
+    height:auto!important;
+    max-width:100%!important;
+    aspect-ratio:var(--ar)!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+  n1-studyo-v1 footer.n1ft .n1ft-logo--badge{
+    width:clamp(20px,3.6vw,35px)!important;
+    max-width:100%!important;
+  }
+}
+@media(max-width:767px){
+  n1-studyo-v1 n1-header .n1h-bar.site-container{
+    width:calc(100% - 40px)!important;
+    height:64px!important;
+  }
+  n1-studyo-v1 n1-header .n1h-logo img{
+    width:30px!important;height:30px!important;
+  }
+  n1-studyo-v1 n1-header .n1h-menu{
+    min-width:102px!important;
+    height:38px!important;
+    padding-inline:12px!important;
+  }
+  .n1h-panel.n1-inner-panel{
+    top:70px!important;
+    max-height:calc(100dvh - 80px)!important;
+  }
+  n1-studyo-v1 footer.n1ft .n1ft-partners{
+    gap:clamp(4px,1.5vw,9px)!important;
+    padding:20px 0!important;
+  }
+  n1-studyo-v1 footer.n1ft .n1ft-logo--badge{
+    width:clamp(19px,5vw,26px)!important;
+  }
+}
+@media(max-width:360px){
+  n1-studyo-v1 n1-header .n1h-bar.site-container{
+    width:calc(100% - 32px)!important;
+  }
+}
+
+/* === V4 | shared 1N inner-page breakpoint refinements ===
+   Use class n1-inner-page on every subsequent subpage root.
+   Desktop is preserved, no home-page selectors. */
+
+.n1-inner-page .n1ft-partner-art{display:none}
+.n1-inner-page .n1ft-partner-art img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;object-position:center;vertical-align:middle}
+
+@media (min-width:768px) and (max-width:1024px){
+  /* True three-column header: logo / small agency title / MENU */
+  .n1-inner-page n1-header .n1h-bar.site-container{
+    grid-template-columns:auto minmax(0,1fr) auto!important;
+    column-gap:clamp(12px,3vw,26px)!important;
+  }
+  .n1-inner-page n1-header .n1h-tag{
+    display:block!important;
+    justify-self:center!important;
+    min-width:0!important;
+    max-width:100%!important;
+    margin:0!important;
+    font-family:Barlow,Arial,sans-serif!important;
+    font-size:10px!important;
+    font-weight:500!important;
+    letter-spacing:.12em!important;
+    line-height:1.2!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+    color:#CECFCA!important;
+  }
+  /* Tablet layout: separate large visual from title and paragraph */
+  .n1-inner-page .st-hero__grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)!important;
+    column-gap:clamp(18px,4vw,46px)!important;
+    align-items:center!important;
+  }
+  .n1-inner-page .st-hero__copy{
+    grid-column:1!important;
+    padding-bottom:0!important;
+  }
+  .n1-inner-page .st-mark{
+    grid-column:2!important;
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    max-width:340px!important;
+    margin:0!important;
+    opacity:.62!important;
+    transform:none!important;
+  }
+  .n1-inner-page .st-hero__title{
+    font-size:clamp(79px,9.5vw,116px)!important;
+  }
+  .n1-inner-page .st-hero__lede{
+    margin-top:clamp(32px,4.2vw,52px)!important;
+    font-size:clamp(17px,2vw,20px)!important;
+    line-height:1.5!important;
+    max-width:32ch!important;
+  }
+  .n1-inner-page .n1ft-top{
+    row-gap:32px!important;
+  }
+}
+@media(max-width:767px){
+  .n1-inner-page n1-header .n1h-bar.site-container{
+    grid-template-columns:auto minmax(0,1fr) auto!important;
+    column-gap:clamp(9px,2vw,16px)!important;
+  }
+  .n1-inner-page n1-header .n1h-tag{
+    display:block!important;
+    justify-self:center!important;
+    align-self:center!important;
+    min-width:0!important;
+    max-width:100%!important;
+    margin:0!important;
+    font-family:Barlow,Arial,sans-serif!important;
+    font-size:clamp(7.2px,1.9vw,8.7px)!important;
+    font-weight:500!important;
+    letter-spacing:.055em!important;
+    line-height:1.2!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+    color:#C6C8C3!important;
+  }
+  /* Logo is a decorative overlay; reserve space before readable copy. */
+  .n1-inner-page .st-hero__copy{padding-bottom:0!important}
+  .n1-inner-page .st-mark{
+    top:4px!important;
+    right:-4px!important;
+    width:clamp(150px,48%,215px)!important;
+    opacity:.42!important;
+  }
+  .n1-inner-page .st-hero__lede{
+    margin-top:clamp(69px,19vw,92px)!important;
+    max-width:33ch!important;
+    font-size:clamp(16px,4vw,18px)!important;
+    line-height:1.55!important;
+    letter-spacing:0!important;
+    text-wrap:pretty;
+  }
+  .n1-inner-page .st-index{
+    margin-top:clamp(42px,12vw,58px)!important;
+  }
+  .n1-inner-page .st-story,
+  .n1-inner-page .st-way{padding-block:clamp(62px,9vw,77px)!important}
+  .n1-inner-page .st-story__cols{gap:20px!important;margin-top:34px!important}
+  .n1-inner-page .st-story__cols p{line-height:1.68!important}
+  .n1-inner-page .n1ft-top{
+    row-gap:28px!important;
+    padding-block:38px 30px!important;
+  }
+  .n1-inner-page .n1ft-addr p{line-height:1.55!important}
+  .n1-inner-page .n1ft-legal li+li{margin-top:8px!important}
+}
+
+/* Responsive footer artwork: site-owned approved PNGs, no cropping. */
+@media(max-width:1024px){
+  .n1-inner-page footer.n1ft .n1ft-partners{display:none!important}
+  .n1-inner-page footer.n1ft .n1ft-partner-art{
+    display:block!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    margin:0!important;
+    padding:clamp(23px,3vw,34px) 0!important;
+    border-top:1px solid rgba(228,227,221,.12);
+  }
+  .n1-inner-page footer.n1ft .n1ft-partner-art img{
+    display:block!important;
+    max-height:110px!important;
+    object-fit:contain!important;
+  }
+  /* Image failure fallback: never leave a missing-logo section. */
+  .n1-inner-page footer.n1ft .n1ft-partner-art.n1-art-failed{display:none!important}
+  .n1-inner-page footer.n1ft .n1ft-partner-art.n1-art-failed + .n1ft-partners{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    gap:10px!important;
+    padding-block:24px!important;
+  }
+}
+@media(max-width:767px){
+  .n1-inner-page footer.n1ft .n1ft-partner-art{
+    padding:22px 0 20px!important;
+  }
+  .n1-inner-page footer.n1ft .n1ft-partner-art img{max-height:85px!important}
+}
+@media(max-width:360px){
+  .n1-inner-page n1-header .n1h-tag{font-size:6.9px!important;letter-spacing:.035em!important}
+  .n1-inner-page .st-hero__lede{margin-top:70px!important}
+}
+
+
+/* v5 — Inner pages only: icon-only navigation and geometrically centered tagline
+   Scope: <=1024 px, preserves desktop Header and keyboard/screen reader label.
+   Equal flexible side columns ensure the tagline is centered independent
+   of whether the logo or the MENU button is wider. */
+@media(max-width:1024px){
+  .n1-inner-page n1-header .n1h-bar.site-container{
+    grid-template-columns:minmax(42px,1fr) max-content minmax(42px,1fr)!important;
+    column-gap:0!important;
+    justify-content:normal!important;
+  }
+  .n1-inner-page n1-header .n1h-logo{
+    grid-column:1!important;
+    justify-self:start!important;
+  }
+  .n1-inner-page n1-header .n1h-tag{
+    grid-column:2!important;
+    justify-self:center!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+    margin:0!important;
+    max-width:none!important;
+    min-width:0!important;
+  }
+  .n1-inner-page n1-header .n1h-right{
+    grid-column:3!important;
+    justify-self:end!important;
+    min-width:0!important;
+  }
+  .n1-inner-page n1-header .n1h-menu{
+    width:42px!important;
+    min-width:42px!important;
+    max-width:42px!important;
+    padding:0!important;
+    gap:0!important;
+    justify-content:center!important;
+    align-items:center!important;
+  }
+  .n1-inner-page n1-header .n1h-menu .n1h-lbl{
+    display:none!important;
+  }
+  .n1-inner-page n1-header .n1h-menu .n1h-ico{
+    width:16px!important;
+    height:16px!important;
+    flex:none!important;
+    margin:0!important;
+  }
+  .n1-inner-page n1-header .n1h-menu .n1h-sr{
+    /* Keep accessible label for screen readers. */
+    position:absolute!important;
+    width:1px!important;
+    height:1px!important;
+    overflow:hidden!important;
+  }
+}
+@media(max-width:767px){
+  .n1-inner-page n1-header .n1h-menu{
+    width:40px!important;
+    min-width:40px!important;
+    max-width:40px!important;
+    height:40px!important;
+  }
+}
+
+
+/* v6 - Floating WhatsApp / Scroll-to-top on INNER PAGES only.
+ * The shared desktop module hides its .n1fc at <=900px. Since that layer
+ * is portaled to document.body, an n1-studyo-v1 descendant selector
+ * will not match: scope with a page-owned body class instead.
+ * For future inner pages, add body.n1-inner-fc-enabled while mounted.
+ */
+@media (max-width:1024px){
+  body.n1-inner-fc-enabled .n1fc{
+    display:flex!important;
+    z-index:880!important;
+    right:calc(18px + env(safe-area-inset-right, 0px))!important;
+    bottom:calc(18px + env(safe-area-inset-bottom, 0px))!important;
+    --n1fc-s:46px;
+    gap:9px;
+    align-items:flex-end;
+  }
+  body.n1-inner-fc-enabled .n1fc-btn{
+    border-radius:10px;
+    touch-action:manipulation;
+  }
+  body.n1-inner-fc-enabled .n1fc-wa svg{
+    width:21px;height:21px;
+  }
+}
+@media (max-width:767px){
+  body.n1-inner-fc-enabled .n1fc{
+    right:calc(14px + env(safe-area-inset-right, 0px))!important;
+    bottom:calc(16px + env(safe-area-inset-bottom, 0px))!important;
+    --n1fc-s:42px;
+    gap:8px;
+  }
+  body.n1-inner-fc-enabled .n1fc-wa svg{
+    width:20px;height:20px;
+  }
+}
+@media (hover:none) and (max-width:1024px){
+  body.n1-inner-fc-enabled .n1fc-label{display:none!important}
+}

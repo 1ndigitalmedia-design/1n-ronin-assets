@@ -1,0 +1,1894 @@
+[
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/kreatif-produksiyon",
+  "delay": "250",
+  "commitMs": 376,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 260,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 3.17,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 4.2,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 16581
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/kreatif-produksiyon",
+  "delay": "500",
+  "commitMs": 538,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 503,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 463,
+   "hero": "playing",
+   "heroT": 2.06,
+   "vids": 5,
+   "err": 0,
+   "st": 0
+  },
+  "heroT2": 3.06,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12863
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/kreatif-produksiyon",
+  "delay": "1000",
+  "commitMs": 374,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 213,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 463,
+   "hero": "playing",
+   "heroT": 2.31,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.33,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12988
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/kreatif-produksiyon",
+  "delay": "2000",
+  "commitMs": 201,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 252,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.67,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.67,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 14270
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/kreatif-produksiyon",
+  "delay": "3000",
+  "commitMs": 670,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 411,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 463,
+   "hero": "playing",
+   "heroT": 2.48,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.52,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15242
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/kreatif-produksiyon",
+  "delay": "5000",
+  "commitMs": 377,
+  "atBack": {
+   "rs": "interactive",
+   "ld": false,
+   "ce": 3,
+   "vids": 2
+  },
+  "backMs": 322,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.78,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.79,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 17267
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/kreatif-produksiyon",
+  "delay": "full",
+  "commitMs": 363,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 2
+  },
+  "backMs": 545,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 463,
+   "hero": "playing",
+   "heroT": 2.57,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.59,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 23329
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/e-ticaret-yonetimi",
+  "delay": "250",
+  "commitMs": 263,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 352,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.9,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.91,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15361
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/e-ticaret-yonetimi",
+  "delay": "500",
+  "commitMs": 319,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 298,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.66,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.68,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12629
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/e-ticaret-yonetimi",
+  "delay": "1000",
+  "commitMs": 490,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 230,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 463,
+   "hero": "playing",
+   "heroT": 2.32,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.32,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13048
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/e-ticaret-yonetimi",
+  "delay": "2000",
+  "commitMs": 345,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 204,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.53,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.55,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13998
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/e-ticaret-yonetimi",
+  "delay": "3000",
+  "commitMs": 378,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 414,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 3,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 4,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15231
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/e-ticaret-yonetimi",
+  "delay": "5000",
+  "commitMs": 353,
+  "atBack": {
+   "rs": "interactive",
+   "ld": false,
+   "ce": 3,
+   "vids": 3
+  },
+  "backMs": 287,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.93,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.93,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 17222
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/e-ticaret-yonetimi",
+  "delay": "full",
+  "commitMs": 360,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 3
+  },
+  "backMs": 255,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.77,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.77,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 23315
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/sosyal-medya",
+  "delay": "250",
+  "commitMs": 442,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 275,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.13,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.13,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15910
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/sosyal-medya",
+  "delay": "500",
+  "commitMs": 553,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 262,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.67,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.67,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12611
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/sosyal-medya",
+  "delay": "1000",
+  "commitMs": 463,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 367,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.82,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.83,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13162
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/sosyal-medya",
+  "delay": "2000",
+  "commitMs": 509,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 210,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.39,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.4,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 14005
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/sosyal-medya",
+  "delay": "3000",
+  "commitMs": 450,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 233,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.43,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.44,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15068
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/sosyal-medya",
+  "delay": "5000",
+  "commitMs": 509,
+  "atBack": {
+   "rs": "interactive",
+   "ld": false,
+   "ce": 3,
+   "vids": 4
+  },
+  "backMs": 476,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.23,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.23,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 17217
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/sosyal-medya",
+  "delay": "full",
+  "commitMs": 397,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 4
+  },
+  "backMs": 259,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.75,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.75,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 23183
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/reklam-yonetimi",
+  "delay": "250",
+  "commitMs": 287,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 391,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.35,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.36,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15598
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/reklam-yonetimi",
+  "delay": "500",
+  "commitMs": 369,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 231,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.49,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.49,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12528
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/reklam-yonetimi",
+  "delay": "1000",
+  "commitMs": 198,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 210,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 4.18,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 5.2,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13031
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/reklam-yonetimi",
+  "delay": "2000",
+  "commitMs": 380,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 235,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.5,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.5,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 14007
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/reklam-yonetimi",
+  "delay": "3000",
+  "commitMs": 349,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 365,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.23,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.23,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15134
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/reklam-yonetimi",
+  "delay": "5000",
+  "commitMs": 666,
+  "atBack": {
+   "rs": "interactive",
+   "ld": false,
+   "ce": 3,
+   "vids": 3
+  },
+  "backMs": 248,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 2.97,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 3.98,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 17061
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/reklam-yonetimi",
+  "delay": "full",
+  "commitMs": 340,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 3
+  },
+  "backMs": 465,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 2.67,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 3.67,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 22737
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/ui-ux-tasarim",
+  "delay": "250",
+  "commitMs": 391,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 287,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.22,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.23,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 14893
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/ui-ux-tasarim",
+  "delay": "500",
+  "commitMs": 380,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 236,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.86,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.87,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12501
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/ui-ux-tasarim",
+  "delay": "1000",
+  "commitMs": 365,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 232,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.47,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.47,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13003
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/ui-ux-tasarim",
+  "delay": "2000",
+  "commitMs": 436,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 211,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 2.8,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 3.81,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13972
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/ui-ux-tasarim",
+  "delay": "3000",
+  "commitMs": 384,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 1
+  },
+  "backMs": 559,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.21,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.21,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15505
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/ui-ux-tasarim",
+  "delay": "5000",
+  "commitMs": 412,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 1
+  },
+  "backMs": 252,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.58,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.58,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 17020
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/ui-ux-tasarim",
+  "delay": "full",
+  "commitMs": 333,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 1
+  },
+  "backMs": 305,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.12,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.12,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 22739
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/yapay-zeka",
+  "delay": "250",
+  "commitMs": 370,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 271,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.77,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.78,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 14856
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/yapay-zeka",
+  "delay": "500",
+  "commitMs": 325,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 309,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.84,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.85,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12589
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/yapay-zeka",
+  "delay": "1000",
+  "commitMs": 447,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 363,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.32,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.33,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13217
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/yapay-zeka",
+  "delay": "2000",
+  "commitMs": 240,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 202,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.37,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.39,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13991
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/yapay-zeka",
+  "delay": "3000",
+  "commitMs": 382,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 260,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.37,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.38,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15018
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/yapay-zeka",
+  "delay": "5000",
+  "commitMs": 649,
+  "atBack": {
+   "rs": "interactive",
+   "ld": false,
+   "ce": 3,
+   "vids": 3
+  },
+  "backMs": 378,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.61,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.62,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 17167
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/yapay-zeka",
+  "delay": "full",
+  "commitMs": 343,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 3
+  },
+  "backMs": 429,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "playing",
+   "heroT": 3.27,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 4.28,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 23550
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/uygulama-gelistirme",
+  "delay": "250",
+  "commitMs": 385,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 137,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "paused",
+   "heroT": 2.53,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 2.53,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15454
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/uygulama-gelistirme",
+  "delay": "500",
+  "commitMs": 322,
+  "atBack": {
+   "rs": "loading",
+   "ld": true,
+   "ce": 0,
+   "vids": 0
+  },
+  "backMs": 313,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "paused",
+   "heroT": 3.11,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 3.11,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 12586
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/uygulama-gelistirme",
+  "delay": "1000",
+  "commitMs": 491,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 270,
+  "after": {
+   "url": "/",
+   "rs": "interactive",
+   "nav": "back_forward",
+   "ps": "",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 468,
+   "hero": "playing",
+   "heroT": 2.9,
+   "vids": 5,
+   "err": 0,
+   "st": 1
+  },
+  "heroT2": 3.18,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13068
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/uygulama-gelistirme",
+  "delay": "2000",
+  "commitMs": 156,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 0
+  },
+  "backMs": 178,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "paused",
+   "heroT": 3.23,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 3.23,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 13966
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/uygulama-gelistirme",
+  "delay": "3000",
+  "commitMs": 364,
+  "atBack": {
+   "rs": "interactive",
+   "ld": true,
+   "ce": 1,
+   "vids": 4
+  },
+  "backMs": 349,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "paused",
+   "heroT": 2.51,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 2.51,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 15288
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/uygulama-gelistirme",
+  "delay": "5000",
+  "commitMs": 167,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 4
+  },
+  "backMs": 264,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "paused",
+   "heroT": 2.7,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 2.7,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 17038
+ },
+ {
+  "br": "chromium",
+  "mode": "v13",
+  "cond": "normal",
+  "page": "/uygulama-gelistirme",
+  "delay": "full",
+  "commitMs": 171,
+  "atBack": {
+   "rs": "complete",
+   "ld": false,
+   "ce": 3,
+   "vids": 4
+  },
+  "backMs": 257,
+  "after": {
+   "url": "/",
+   "rs": "complete",
+   "nav": "back_forward",
+   "ps": "N",
+   "loader": "none",
+   "menuOpen": false,
+   "hdr": true,
+   "site": true,
+   "siteKids": 576,
+   "hero": "paused",
+   "heroT": 2.79,
+   "vids": 5,
+   "err": 0,
+   "st": 13
+  },
+  "heroT2": 2.79,
+  "crash": 0,
+  "pageerrors": [
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch",
+   "Failed to fetch"
+  ],
+  "ms": 23199
+ }
+]

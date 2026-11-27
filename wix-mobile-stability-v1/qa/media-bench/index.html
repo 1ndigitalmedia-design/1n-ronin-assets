@@ -1,0 +1,11 @@
+<!doctype html><meta name=viewport content="width=device-width,initial-scale=1"><style>body{margin:0;background:#080A09}video,img{display:block;width:367px;height:475px;object-fit:cover;margin:60px auto 0}</style>
+<div id=slot></div>
+<script>
+var q=new URLSearchParams(location.search),f=q.get('f');window.R={};
+if(f==='none'){document.getElementById('slot').innerHTML='<img src="poster.webp">';}
+else{var v=document.createElement('video');v.muted=true;v.playsInline=true;v.loop=true;v.preload='auto';v.poster='poster.webp';v.src='film-'+f+'.mp4';document.getElementById('slot').appendChild(v);
+ v.play().then(function(){R.played=1},function(e){R.err=String(e)});window.V=v;}
+async function caps(){var out={};if(!navigator.mediaCapabilities)return {unsupported:true};
+ for(const [k,w,h,br,cs] of [['1x',560,752,1830000,'avc1.64001F'],['1.5x',840,1128,2300000,'avc1.640028'],['2x',1120,1504,2800000,'avc1.64002A']]){try{const r=await navigator.mediaCapabilities.decodingInfo({type:'file',video:{contentType:'video/mp4; codecs="'+cs+'"',width:w,height:h,bitrate:br,framerate:24}});out[k]={supported:r.supported,smooth:r.smooth,powerEfficient:r.powerEfficient};}catch(e){out[k]={err:String(e)}}}return out;}
+window.caps=caps;
+</script>

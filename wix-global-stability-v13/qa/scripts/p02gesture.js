@@ -1,0 +1,21 @@
+// Düşük Güç Modu benzetimi: kullanıcı etkileşimi yokken play() NotAllowedError ile reddedilir. Hizmetler bağlantısına dokunulunca play() sayılır.
+const pw=require('playwright');const [,,BR='webkit',INJ]=process.argv;
+const LP=`(function(){var orig=HTMLMediaElement.prototype.play;window.__plays=[];window.__lp=true;
+HTMLMediaElement.prototype.play=function(){var ua=navigator.userActivation?navigator.userActivation.isActive:!!window.__tapActive;var src=(this.currentSrc||this.getAttribute('src')||this.getAttribute('data-src')||'').split('/').pop();
+ window.__plays.push({t:Math.round(performance.now()),src:src,activated:ua,phase:window.__phase||'load'});
+ if(!ua&&window.__lp){return Promise.reject(new DOMException('Low power (test)','NotAllowedError'));}return orig.apply(this,arguments);};
+document.addEventListener('touchstart',function(){window.__tapActive=true;setTimeout(function(){window.__tapActive=false},1000)},true);
+window.addEventListener('pagehide',function(){try{sessionStorage.setItem('__plays',JSON.stringify(window.__plays))}catch(e){}});})();`;
+(async()=>{const b=await pw[BR].launch();const o={viewport:{width:390,height:844},hasTouch:true};if(BR==='chromium')o.isMobile=true;const ctx=await b.newContext(o);
+await ctx.addInitScript(LP);if(process.env.ROUTE658)await require('./route658.js')(ctx);if(INJ)await ctx.addInitScript({path:INJ});const pg=await ctx.newPage();
+await pg.goto('https://www.reklam1n.com/',{waitUntil:'domcontentloaded'});await pg.waitForTimeout(10000);
+const st=await pg.evaluate(()=>[...document.querySelectorAll('[data-m4-film],[data-n1-samurai-video],[data-m5-mini]')].map(r=>(r.hasAttribute('data-m4-film')?'hero':r.hasAttribute('data-m5-mini')?'mini':'band')+':'+r.getAttribute('data-n1v-state')));
+const sel='a.n1m-svc-link[href="/kreatif-produksiyon"], a.m4-svc-a[href="/kreatif-produksiyon"], #hizmetler-ozet a[href="/kreatif-produksiyon"]';
+await pg.evaluate(s=>{document.querySelector(s).scrollIntoView({block:'center'});window.__phase='scroll'},sel);await pg.waitForTimeout(2500);
+const before=await pg.evaluate(()=>window.__plays.length);
+await pg.evaluate(()=>{window.__phase='tap'});
+await Promise.all([pg.waitForURL('**/kreatif-produksiyon',{waitUntil:'commit',timeout:30000}),pg.tap(sel)]);await pg.waitForTimeout(1500);
+const vmod=0;const plays=await pg.evaluate(()=>JSON.parse(sessionStorage.getItem('__plays')||'[]'));
+const tapPlays=plays.filter(p=>p.phase==='tap');
+const vm=await pg.evaluate(()=>[...document.scripts].map(s=>s.src).filter(s=>/n1-video-m5/.test(s)).map(s=>s.split('/').pop()).join(','));
+console.log(BR,process.env.ROUTE658?'v658':'CANLI v657','modül:',vm,'| ana sayfa video durumları:',st.join(' '),'| dokunuşta play():',tapPlays.length,JSON.stringify(tapPlays.map(p=>p.src+(p.activated?'':'(red)'))));await b.close();})();

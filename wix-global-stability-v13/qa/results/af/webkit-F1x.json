@@ -1,0 +1,3399 @@
+{
+ "BR": "webkit",
+ "MODE": "F1x",
+ "SCEN13": "V",
+ "QS": "?n1t=C,hero:1x",
+ "scen": {
+  "docs": 64,
+  "nav": 64,
+  "loader": 64,
+  "ce": 117
+ },
+ "cfg": {
+  "url": "/",
+  "t": {
+   "version": "1.3.0",
+   "variant": "C",
+   "flags": {
+    "variant": "C",
+    "hero": "1x",
+    "life": "658"
+   }
+  },
+  "menu": "1.3.0",
+  "menuStats": {
+   "instantCloses": 0,
+   "hideCloses": 0,
+   "showFixes": 0
+  },
+  "loader": "1.3",
+  "nav": null,
+  "stab": null,
+  "m5v13": true,
+  "hero": "ronin-m5-film.mp4"
+ },
+ "rows": [
+  {
+   "label": "home-initial",
+   "t": 1795784957022,
+   "rssMB": 948,
+   "maxProcMB": 738,
+   "url": "/",
+   "nav": "navigate",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 43,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 118,
+   "docListeners": 39,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 949,
+   "events": [
+    "pageshow:false@5590"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c1-svc/kreatif-produksiyon-top",
+   "t": 1795784965907,
+   "rssMB": 1661,
+   "maxProcMB": 1442,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 48,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 92,
+   "docListeners": 35,
+   "gsapTweens": 101,
+   "scrollTriggers": 26,
+   "canvases": 0,
+   "nodes": 1095,
+   "events": [
+    "pageshow:false@1624"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c1-svc/kreatif-produksiyon-scrolled",
+   "t": 1795784975886,
+   "rssMB": 1625,
+   "maxProcMB": 1409,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 1,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 92,
+   "docListeners": 35,
+   "gsapTweens": 49,
+   "scrollTriggers": 10,
+   "canvases": 0,
+   "nodes": 1095,
+   "events": [
+    "pageshow:false@1624"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c1-home-after-back",
+   "t": 1795784984071,
+   "rssMB": 1457,
+   "maxProcMB": 1235,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 43,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4519"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c1-home-dwelled",
+   "t": 1795784994152,
+   "rssMB": 1512,
+   "maxProcMB": 1290,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4519"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c2-svc/e-ticaret-yonetimi-top",
+   "t": 1795785002678,
+   "rssMB": 1898,
+   "maxProcMB": 1668,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 94,
+   "docListeners": 36,
+   "gsapTweens": 81,
+   "scrollTriggers": 60,
+   "canvases": 0,
+   "nodes": 801,
+   "events": [
+    "pageshow:false@1475"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c2-svc/e-ticaret-yonetimi-scrolled",
+   "t": 1795785012848,
+   "rssMB": 1636,
+   "maxProcMB": 1408,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 94,
+   "docListeners": 36,
+   "gsapTweens": 20,
+   "scrollTriggers": 15,
+   "canvases": 0,
+   "nodes": 801,
+   "events": [
+    "pageshow:false@1475"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c2-home-after-back",
+   "t": 1795785021477,
+   "rssMB": 1590,
+   "maxProcMB": 1356,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 44,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 113,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1122"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c2-home-dwelled",
+   "t": 1795785031575,
+   "rssMB": 1671,
+   "maxProcMB": 1438,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 122,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1122"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c3-svc/sosyal-medya-top",
+   "t": 1795785040078,
+   "rssMB": 1650,
+   "maxProcMB": 1400,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 69,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 5,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 92,
+   "docListeners": 38,
+   "gsapTweens": 90,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 738,
+   "events": [
+    "pageshow:false@1596"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c3-svc/sosyal-medya-scrolled",
+   "t": 1795785050055,
+   "rssMB": 1817,
+   "maxProcMB": 1578,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 92,
+   "docListeners": 38,
+   "gsapTweens": 8,
+   "scrollTriggers": 4,
+   "canvases": 0,
+   "nodes": 738,
+   "events": [
+    "pageshow:false@1596"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c3-home-after-back",
+   "t": 1795785058222,
+   "rssMB": 1632,
+   "maxProcMB": 1383,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 42,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@5111"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c3-home-dwelled",
+   "t": 1795785068359,
+   "rssMB": 1368,
+   "maxProcMB": 1120,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@5111"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c4-svc/reklam-yonetimi-top",
+   "t": 1795785076965,
+   "rssMB": 1977,
+   "maxProcMB": 1722,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 60,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 38,
+   "gsapTweens": 103,
+   "scrollTriggers": 63,
+   "canvases": 0,
+   "nodes": 824,
+   "events": [
+    "pageshow:false@1126"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c4-svc/reklam-yonetimi-scrolled",
+   "t": 1795785086926,
+   "rssMB": 2035,
+   "maxProcMB": 1780,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 62,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 38,
+   "gsapTweens": 13,
+   "scrollTriggers": 8,
+   "canvases": 0,
+   "nodes": 824,
+   "events": [
+    "pageshow:false@1126"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c4-home-after-back",
+   "t": 1795785094823,
+   "rssMB": 2136,
+   "maxProcMB": 1875,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 50,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@3927"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c4-home-dwelled",
+   "t": 1795785105291,
+   "rssMB": 1546,
+   "maxProcMB": 1286,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@3927"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c5-svc/ui-ux-tasarim-top",
+   "t": 1795785114250,
+   "rssMB": 2100,
+   "maxProcMB": 1832,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 46,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 3,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 54,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 989,
+   "events": [
+    "pageshow:false@1517"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c5-svc/ui-ux-tasarim-scrolled",
+   "t": 1795785124234,
+   "rssMB": 2280,
+   "maxProcMB": 2012,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 4,
+   "scrollTriggers": 4,
+   "canvases": 0,
+   "nodes": 989,
+   "events": [
+    "pageshow:false@1517"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c5-home-after-back",
+   "t": 1795785132264,
+   "rssMB": 1759,
+   "maxProcMB": 1481,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 26,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@5130"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c5-home-dwelled",
+   "t": 1795785142458,
+   "rssMB": 1843,
+   "maxProcMB": 1567,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@5130"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c6-svc/yapay-zeka-top",
+   "t": 1795785150725,
+   "rssMB": 2263,
+   "maxProcMB": 1972,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 16,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 35,
+   "gsapTweens": 103,
+   "scrollTriggers": 66,
+   "canvases": 0,
+   "nodes": 885,
+   "events": [
+    "pageshow:false@1362"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c6-svc/yapay-zeka-scrolled",
+   "t": 1795785160709,
+   "rssMB": 2066,
+   "maxProcMB": 1785,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 67,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 92,
+   "docListeners": 35,
+   "gsapTweens": 13,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 885,
+   "events": [
+    "pageshow:false@1362"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c6-home-after-back",
+   "t": 1795785168930,
+   "rssMB": 1877,
+   "maxProcMB": 1590,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 128,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 113,
+   "docListeners": 39,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 952,
+   "events": [
+    "pageshow:false@1141"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c6-home-dwelled",
+   "t": 1795785179068,
+   "rssMB": 1957,
+   "maxProcMB": 1670,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 122,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1141"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c7-svc/uygulama-gelistirme-top",
+   "t": 1795785187542,
+   "rssMB": 2007,
+   "maxProcMB": 1712,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 30,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 95,
+   "docListeners": 35,
+   "gsapTweens": 42,
+   "scrollTriggers": 41,
+   "canvases": 0,
+   "nodes": 1187,
+   "events": [
+    "pageshow:false@1622"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c7-svc/uygulama-gelistirme-scrolled",
+   "t": 1795785197505,
+   "rssMB": 2261,
+   "maxProcMB": 1966,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 4,
+   "videosPlaying": 0,
+   "videosBuffered": 4,
+   "videosReleased": 0,
+   "rafPerSec": 67,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 2,
+   "scrollTriggers": 2,
+   "canvases": 0,
+   "nodes": 1187,
+   "events": [
+    "pageshow:false@1622"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c7-home-after-back",
+   "t": 1795785205601,
+   "rssMB": 2051,
+   "maxProcMB": 1750,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 36,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 113,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1066"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c7-home-dwelled",
+   "t": 1795785215815,
+   "rssMB": 1750,
+   "maxProcMB": 1449,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 122,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1066"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c8-svc/kreatif-produksiyon-top",
+   "t": 1795785224355,
+   "rssMB": 2320,
+   "maxProcMB": 2013,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 31,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 109,
+   "scrollTriggers": 26,
+   "canvases": 0,
+   "nodes": 1099,
+   "events": [
+    "pageshow:false@1576"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c8-svc/kreatif-produksiyon-scrolled",
+   "t": 1795785234332,
+   "rssMB": 2476,
+   "maxProcMB": 2168,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 1,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 49,
+   "scrollTriggers": 9,
+   "canvases": 0,
+   "nodes": 1095,
+   "events": [
+    "pageshow:false@1576"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c8-home-after-back",
+   "t": 1795785242382,
+   "rssMB": 2241,
+   "maxProcMB": 1926,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 113,
+   "intervals": 8,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 952,
+   "events": [
+    "pageshow:false@4319"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c8-home-dwelled",
+   "t": 1795785252471,
+   "rssMB": 1948,
+   "maxProcMB": 1633,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 67,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4319"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c9-svc/e-ticaret-yonetimi-top",
+   "t": 1795785261100,
+   "rssMB": 2427,
+   "maxProcMB": 2106,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 36,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 36,
+   "gsapTweens": 81,
+   "scrollTriggers": 60,
+   "canvases": 0,
+   "nodes": 801,
+   "events": [
+    "pageshow:false@1342"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c9-svc/e-ticaret-yonetimi-scrolled",
+   "t": 1795785271073,
+   "rssMB": 2625,
+   "maxProcMB": 2303,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 67,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 36,
+   "gsapTweens": 20,
+   "scrollTriggers": 15,
+   "canvases": 0,
+   "nodes": 801,
+   "events": [
+    "pageshow:false@1342"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c9-home-after-back",
+   "t": 1795785279012,
+   "rssMB": 1911,
+   "maxProcMB": 1583,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 25,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 952,
+   "events": [
+    "pageshow:false@4883"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c9-home-dwelled",
+   "t": 1795785289206,
+   "rssMB": 2037,
+   "maxProcMB": 1711,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4883"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c10-svc/sosyal-medya-top",
+   "t": 1795785298140,
+   "rssMB": 2602,
+   "maxProcMB": 2266,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 43,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 5,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 96,
+   "docListeners": 38,
+   "gsapTweens": 90,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 739,
+   "events": [
+    "pageshow:false@2056"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c10-svc/sosyal-medya-scrolled",
+   "t": 1795785308148,
+   "rssMB": 2399,
+   "maxProcMB": 2065,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 65,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 94,
+   "docListeners": 38,
+   "gsapTweens": 8,
+   "scrollTriggers": 4,
+   "canvases": 0,
+   "nodes": 739,
+   "events": [
+    "pageshow:false@2056"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c10-home-after-back",
+   "t": 1795785316514,
+   "rssMB": 2194,
+   "maxProcMB": 1849,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 37,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4876"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c10-home-dwelled",
+   "t": 1795785326666,
+   "rssMB": 2257,
+   "maxProcMB": 1914,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4876"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c11-svc/reklam-yonetimi-top",
+   "t": 1795785335134,
+   "rssMB": 2704,
+   "maxProcMB": 2352,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 60,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 96,
+   "docListeners": 38,
+   "gsapTweens": 90,
+   "scrollTriggers": 63,
+   "canvases": 0,
+   "nodes": 824,
+   "events": [
+    "pageshow:false@1526"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c11-svc/reklam-yonetimi-scrolled",
+   "t": 1795785345157,
+   "rssMB": 2494,
+   "maxProcMB": 2143,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 61,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 94,
+   "docListeners": 38,
+   "gsapTweens": 13,
+   "scrollTriggers": 8,
+   "canvases": 0,
+   "nodes": 824,
+   "events": [
+    "pageshow:false@1526"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c11-home-after-back",
+   "t": 1795785353135,
+   "rssMB": 2338,
+   "maxProcMB": 1982,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 39,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4497"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c11-home-dwelled",
+   "t": 1795785363261,
+   "rssMB": 2383,
+   "maxProcMB": 2027,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 67,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4497"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c12-svc/ui-ux-tasarim-top",
+   "t": 1795785371726,
+   "rssMB": 2555,
+   "maxProcMB": 2194,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 124,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 3,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 54,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 989,
+   "events": [
+    "pageshow:false@1571"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c12-svc/ui-ux-tasarim-scrolled",
+   "t": 1795785381679,
+   "rssMB": 2770,
+   "maxProcMB": 2408,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 4,
+   "scrollTriggers": 4,
+   "canvases": 0,
+   "nodes": 989,
+   "events": [
+    "pageshow:false@1571"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c12-home-after-back",
+   "t": 1795785389577,
+   "rssMB": 2634,
+   "maxProcMB": 2268,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 42,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4326"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c12-home-dwelled",
+   "t": 1795785399683,
+   "rssMB": 2106,
+   "maxProcMB": 1740,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4326"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c13-svc/yapay-zeka-top",
+   "t": 1795785408421,
+   "rssMB": 2625,
+   "maxProcMB": 2250,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 48,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 35,
+   "gsapTweens": 109,
+   "scrollTriggers": 66,
+   "canvases": 0,
+   "nodes": 885,
+   "events": [
+    "pageshow:false@1879"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c13-svc/yapay-zeka-scrolled",
+   "t": 1795785418376,
+   "rssMB": 2816,
+   "maxProcMB": 2442,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 13,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 885,
+   "events": [
+    "pageshow:false@1879"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c13-home-after-back",
+   "t": 1795785426045,
+   "rssMB": 2168,
+   "maxProcMB": 1789,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 56,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@3860"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c13-home-dwelled",
+   "t": 1795785436151,
+   "rssMB": 2308,
+   "maxProcMB": 1929,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@3860"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c14-svc/uygulama-gelistirme-top",
+   "t": 1795785444497,
+   "rssMB": 2692,
+   "maxProcMB": 2306,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 70,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 92,
+   "docListeners": 35,
+   "gsapTweens": 42,
+   "scrollTriggers": 41,
+   "canvases": 0,
+   "nodes": 1187,
+   "events": [
+    "pageshow:false@1471"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c14-svc/uygulama-gelistirme-scrolled",
+   "t": 1795785454462,
+   "rssMB": 2836,
+   "maxProcMB": 2450,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 4,
+   "videosPlaying": 0,
+   "videosBuffered": 4,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 92,
+   "docListeners": 35,
+   "gsapTweens": 2,
+   "scrollTriggers": 2,
+   "canvases": 0,
+   "nodes": 1187,
+   "events": [
+    "pageshow:false@1471"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c14-home-after-back",
+   "t": 1795785462572,
+   "rssMB": 2343,
+   "maxProcMB": 1952,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 47,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 113,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1079"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c14-home-dwelled",
+   "t": 1795785472637,
+   "rssMB": 2420,
+   "maxProcMB": 2029,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 122,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1079"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c15-svc/kreatif-produksiyon-top",
+   "t": 1795785480992,
+   "rssMB": 2900,
+   "maxProcMB": 2503,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 93,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 101,
+   "scrollTriggers": 26,
+   "canvases": 0,
+   "nodes": 1095,
+   "events": [
+    "pageshow:false@1074"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c15-svc/kreatif-produksiyon-scrolled",
+   "t": 1795785490997,
+   "rssMB": 2558,
+   "maxProcMB": 2162,
+   "url": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "videos": 2,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 1,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 49,
+   "scrollTriggers": 9,
+   "canvases": 0,
+   "nodes": 1095,
+   "events": [
+    "pageshow:false@1074"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c15-home-after-back",
+   "t": 1795785499356,
+   "rssMB": 2548,
+   "maxProcMB": 2146,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 56,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 113,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1313"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c15-home-dwelled",
+   "t": 1795785509484,
+   "rssMB": 2615,
+   "maxProcMB": 2213,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 122,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@1313"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c16-svc/e-ticaret-yonetimi-top",
+   "t": 1795785517927,
+   "rssMB": 2565,
+   "maxProcMB": 2157,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 57,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 96,
+   "docListeners": 36,
+   "gsapTweens": 81,
+   "scrollTriggers": 60,
+   "canvases": 0,
+   "nodes": 801,
+   "events": [
+    "pageshow:false@1437"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c16-svc/e-ticaret-yonetimi-scrolled",
+   "t": 1795785527932,
+   "rssMB": 2849,
+   "maxProcMB": 2441,
+   "url": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 12,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 6,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 94,
+   "docListeners": 36,
+   "gsapTweens": 20,
+   "scrollTriggers": 15,
+   "canvases": 0,
+   "nodes": 801,
+   "events": [
+    "pageshow:false@1437"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c16-home-after-back",
+   "t": 1795785535727,
+   "rssMB": 3002,
+   "maxProcMB": 2589,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 52,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4255"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c16-home-dwelled",
+   "t": 1795785545872,
+   "rssMB": 2444,
+   "maxProcMB": 2031,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4255"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c17-svc/sosyal-medya-top",
+   "t": 1795785554402,
+   "rssMB": 2867,
+   "maxProcMB": 2450,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 43,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 5,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 94,
+   "docListeners": 38,
+   "gsapTweens": 90,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 738,
+   "events": [
+    "pageshow:false@1175"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c17-svc/sosyal-medya-scrolled",
+   "t": 1795785564445,
+   "rssMB": 3019,
+   "maxProcMB": 2604,
+   "url": "/sosyal-medya",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 11,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 92,
+   "docListeners": 38,
+   "gsapTweens": 8,
+   "scrollTriggers": 4,
+   "canvases": 0,
+   "nodes": 738,
+   "events": [
+    "pageshow:false@1175"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c17-home-after-back",
+   "t": 1795785572356,
+   "rssMB": 2764,
+   "maxProcMB": 2342,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 44,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 118,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 949,
+   "events": [
+    "pageshow:false@4210"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c17-home-dwelled",
+   "t": 1795785582580,
+   "rssMB": 2390,
+   "maxProcMB": 1968,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 67,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 127,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 949,
+   "events": [
+    "pageshow:false@4210"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c18-svc/reklam-yonetimi-top",
+   "t": 1795785590967,
+   "rssMB": 2991,
+   "maxProcMB": 2561,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 2,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 50,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 4,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 96,
+   "docListeners": 38,
+   "gsapTweens": 103,
+   "scrollTriggers": 63,
+   "canvases": 0,
+   "nodes": 824,
+   "events": [
+    "pageshow:false@1594"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c18-svc/reklam-yonetimi-scrolled",
+   "t": 1795785600957,
+   "rssMB": 3081,
+   "maxProcMB": 2646,
+   "url": "/reklam-yonetimi",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 63,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 10,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 94,
+   "docListeners": 38,
+   "gsapTweens": 13,
+   "scrollTriggers": 8,
+   "canvases": 0,
+   "nodes": 824,
+   "events": [
+    "pageshow:false@1594"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c18-home-after-back",
+   "t": 1795785608874,
+   "rssMB": 2469,
+   "maxProcMB": 2030,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 17,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4503"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c18-home-dwelled",
+   "t": 1795785619020,
+   "rssMB": 2599,
+   "maxProcMB": 2160,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 67,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4503"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c19-svc/ui-ux-tasarim-top",
+   "t": 1795785627641,
+   "rssMB": 3144,
+   "maxProcMB": 2697,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 36,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 3,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 54,
+   "scrollTriggers": 46,
+   "canvases": 0,
+   "nodes": 989,
+   "events": [
+    "pageshow:false@1220"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c19-svc/ui-ux-tasarim-scrolled",
+   "t": 1795785637621,
+   "rssMB": 2822,
+   "maxProcMB": 2374,
+   "url": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "videos": 1,
+   "videosWithSrc": 1,
+   "videosPlaying": 0,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 9,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 4,
+   "scrollTriggers": 4,
+   "canvases": 0,
+   "nodes": 989,
+   "events": [
+    "pageshow:false@1220"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c19-home-after-back",
+   "t": 1795785645905,
+   "rssMB": 2849,
+   "maxProcMB": 2395,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 19,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 6,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4174"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c19-home-dwelled",
+   "t": 1795785656037,
+   "rssMB": 2874,
+   "maxProcMB": 2421,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 125,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4174"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c20-svc/yapay-zeka-top",
+   "t": 1795785664299,
+   "rssMB": 3272,
+   "maxProcMB": 2815,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 74,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 95,
+   "docListeners": 35,
+   "gsapTweens": 103,
+   "scrollTriggers": 66,
+   "canvases": 0,
+   "nodes": 885,
+   "events": [
+    "pageshow:false@1416"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c20-svc/yapay-zeka-scrolled",
+   "t": 1795785674509,
+   "rssMB": 3114,
+   "maxProcMB": 2657,
+   "url": "/yapay-zeka",
+   "nav": "navigate",
+   "videos": 3,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 3,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 1
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 13,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 885,
+   "events": [
+    "pageshow:false@1416"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c20-home-after-back",
+   "t": 1795785682624,
+   "rssMB": 2857,
+   "maxProcMB": 2390,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 25,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 118,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 949,
+   "events": [
+    "pageshow:false@4907"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c20-home-dwelled",
+   "t": 1795785692787,
+   "rssMB": 2913,
+   "maxProcMB": 2447,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 3,
+   "videosPlaying": 0,
+   "videosBuffered": 2,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 6,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 7,
+    "MO": 5,
+    "RO": 1
+   },
+   "winListeners": 127,
+   "docListeners": 39,
+   "gsapTweens": 1,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 949,
+   "events": [
+    "pageshow:false@4907"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c21-svc/uygulama-gelistirme-top",
+   "t": 1795785701055,
+   "rssMB": 2974,
+   "maxProcMB": 2503,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 28,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 42,
+   "scrollTriggers": 41,
+   "canvases": 0,
+   "nodes": 1187,
+   "events": [
+    "pageshow:false@1391"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c21-svc/uygulama-gelistirme-scrolled",
+   "t": 1795785711029,
+   "rssMB": 3166,
+   "maxProcMB": 2695,
+   "url": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "videos": 4,
+   "videosWithSrc": 4,
+   "videosPlaying": 0,
+   "videosBuffered": 4,
+   "videosReleased": 0,
+   "rafPerSec": 66,
+   "intervals": 3,
+   "obsCreated": {
+    "IO": 8,
+    "MO": 3,
+    "RO": 5
+   },
+   "obsLive": {
+    "IO": 2,
+    "MO": 3,
+    "RO": 2
+   },
+   "winListeners": 93,
+   "docListeners": 35,
+   "gsapTweens": 2,
+   "scrollTriggers": 2,
+   "canvases": 0,
+   "nodes": 1187,
+   "events": [
+    "pageshow:false@1391"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  },
+  {
+   "label": "c21-home-after-back",
+   "t": 1795785719034,
+   "rssMB": 3016,
+   "maxProcMB": 2538,
+   "url": "/",
+   "nav": "reload",
+   "videos": 5,
+   "videosWithSrc": 1,
+   "videosPlaying": 1,
+   "videosBuffered": 1,
+   "videosReleased": 0,
+   "rafPerSec": 34,
+   "intervals": 7,
+   "obsCreated": {
+    "IO": 15,
+    "MO": 5,
+    "RO": 4
+   },
+   "obsLive": {
+    "IO": 8,
+    "MO": 4,
+    "RO": 1
+   },
+   "winListeners": 116,
+   "docListeners": 39,
+   "gsapTweens": 11,
+   "scrollTriggers": 13,
+   "canvases": 0,
+   "nodes": 948,
+   "events": [
+    "pageshow:false@4217"
+   ],
+   "errors": [],
+   "rejections": [],
+   "headerVisible": "visible",
+   "logoVisible": "visible",
+   "menuBtn": "visible"
+  }
+ ],
+ "hangs": [],
+ "crashes": 0,
+ "cons": [
+  "console Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "pageerror Cross-origin script load denied by Cross-Origin Resource Sharing policy.",
+  "console Beacon API cannot load https://panorama.wixapps.net/api/v1/bulklog. Reached maximum amount of queued data of 64Kb for keepalive requests",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784950361&cv=11&fst=1795784950361&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "console Fetch API cannot load https://bundler-velo.parastorage.com/v3_metaSiteId_68eed891-1403-4fc9-8313-82bd30dae05e/gridAppId_c4487fd4-9738-4be6-8a99-3e66f387575f/filePath_public_delimiter_pages_delimiter_m",
+  "console TypeError: Load failed",
+  "console Fetch API cannot load https://bundler-velo.parastorage.com/v3_metaSiteId_68eed891-1403-4fc9-8313-82bd30dae05e/gridAppId_c4487fd4-9738-4be6-8a99-3e66f387575f/filePath_public_delimiter_pages_delimiter_j",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784952542&cv=11&fst=1795784952542&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "console Unable to post message to https://www.google.com. Recipient has origin https://www.reklam1n.com.\n",
+  "console Unable to post message to https://www.youtube.com. Recipient has origin https://www.reklam1n.com.\n",
+  "console Unable to post message to https://m.youtube.com. Recipient has origin https://www.reklam1n.com.\n",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784960449&cv=11&fst=1795784960449&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "console Fetch API cannot load https://bundler-velo.parastorage.com/v3_metaSiteId_68eed891-1403-4fc9-8313-82bd30dae05e/gridAppId_c4487fd4-9738-4be6-8a99-3e66f387575f/filePath_public_delimiter_pages_delimiter_p",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784963994&cv=11&fst=1795784963994&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784979802&cv=11&fst=1795784979802&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784982635&cv=11&fst=1795784982635&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784997269&cv=11&fst=1795784997269&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "console Fetch API cannot load https://bundler-velo.parastorage.com/v3_metaSiteId_68eed891-1403-4fc9-8313-82bd30dae05e/gridAppId_c4487fd4-9738-4be6-8a99-3e66f387575f/filePath_public_delimiter_pages_delimiter_w",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795784999947&cv=11&fst=1795784999947&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785017620&cv=11&fst=1795785017620&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785020166&cv=11&fst=1795785020166&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785034725&cv=11&fst=1795785034725&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "console Fetch API cannot load https://bundler-velo.parastorage.com/v3_metaSiteId_68eed891-1403-4fc9-8313-82bd30dae05e/gridAppId_c4487fd4-9738-4be6-8a99-3e66f387575f/filePath_public_delimiter_pages_delimiter_x",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785037967&cv=11&fst=1795785037967&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785054456&cv=11&fst=1795785054456&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785057015&cv=11&fst=1795785057015&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785072236&cv=11&fst=1795785072236&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "console Fetch API cannot load https://bundler-velo.parastorage.com/v3_metaSiteId_68eed891-1403-4fc9-8313-82bd30dae05e/gridAppId_c4487fd4-9738-4be6-8a99-3e66f387575f/filePath_public_delimiter_pages_delimiter_y",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785074348&cv=11&fst=1795785074348&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785090334&cv=11&fst=1795785090334&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785092621&cv=11&fst=1795785092621&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785109186&cv=11&fst=1795785109186&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "console Fetch API cannot load https://bundler-velo.parastorage.com/v3_metaSiteId_68eed891-1403-4fc9-8313-82bd30dae05e/gridAppId_c4487fd4-9738-4be6-8a99-3e66f387575f/filePath_public_delimiter_pages_delimiter_l",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785111924&cv=11&fst=1795785111924&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785128518&cv=11&fst=1795785128518&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1h1v874622225",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785130859&cv=11&fst=1795785130859&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1h1v874622225",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785145478&cv=11&fst=1795785145478&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785148615&cv=11&fst=1795785148615&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785164771&cv=11&fst=1795785164771&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za",
+  "pageerror Fetch API cannot load https: /www.googleadservices.com/pagead/conversion/10849847643/?random=1795785167050&cv=11&fst=1795785167050&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45je6bh1v874622225za"
+ ],
+ "fails": [
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784950361&cv=11&fst=1795784950361&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784952542&cv=11&fst=1795784952542&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795784952531&cv=11&fst=1795784952531&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zb811948327zd811948327xf1&_p=1795784949575&gcs=G111&gcd=13t3t3t3t5l1&npa= Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784960449&cv=11&fst=1795784960449&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795784963977&cv=11&fst=1795784963977&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784963994&cv=11&fst=1795784963994&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://video.wixstatic.com/video/6dbf5e_2821f1bb754740f9bc6deb51f052cf8c/480p/mp4/file.mp4 Load request cancelled",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795784960374&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdi Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784979802&cv=11&fst=1795784979802&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795784982621&cv=11&fst=1795784982621&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784982635&cv=11&fst=1795784982635&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://video.wixstatic.com/video/6dbf5e_809e8dea872246c7ae68b073341efafb/480p/mp4/file.mp4 Load request cancelled",
+  "https://video.wixstatic.com/video/6dbf5e_5a010704bcc145c58b64ca6a10a08bef/1080p/mp4/file.mp4 Load request cancelled",
+  "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film.mp4 Load request cancelled",
+  "https://video.wixstatic.com/video/6dbf5e_ba9aa241bd914b07a97c4c315f153bfa/720p/mp4/file.mp4 Load request cancelled",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795784979549&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdi Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784997269&cv=11&fst=1795784997269&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795784999947&cv=11&fst=1795784999947&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795784999928&cv=11&fst=1795784999928&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled",
+  "https://video.wixstatic.com/video/6dbf5e_3c7918f906c1478f9149099d6d398635/720p/mp4/file.mp4 Load request cancelled",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795784996953&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dm Load request cancelled",
+  "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@bb6ebc7723625d137035b1074c6dca14c02fb296/wix-global-stability-v13/n1-menu-close-v13.js Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785017620&cv=11&fst=1795785017620&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785020166&cv=11&fst=1795785020166&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795785020156&cv=11&fst=1795785020156&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795785017312&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdi Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785034725&cv=11&fst=1795785034725&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://video.wixstatic.com/video/6dbf5e_67c5c858b42a4ce3b0e76195a59c8b3e/720p/mp4/file.mp4 Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785037967&cv=11&fst=1795785037967&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795785037940&cv=11&fst=1795785037940&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled",
+  "https://video.wixstatic.com/video/6dbf5e_4892baa5590541faae6c24693b7fb00c/1080p/mp4/file.mp4 Load request cancelled",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795785034396&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdi Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785054456&cv=11&fst=1795785054456&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785057015&cv=11&fst=1795785057015&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795785057001&cv=11&fst=1795785057001&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled",
+  "https://analytics.google.com/g/collect?v=2&tid=G-098KW9WJJ8&gtm=45je6bh1v874622225za200zd874622225xf1&_p=1795785054122&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdi Load request cancelled",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785072236&cv=11&fst=1795785072236&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://www.googleadservices.com/pagead/conversion/10849847643/?random=1795785074348&cv=11&fst=1795785074348&fmt=7&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45 Origin https://www.reklam1n.com is not allowed by Access-Control-Allow-Origin. Status code: 403",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10849847643/?random=1795785074340&cv=11&fst=1795785074340&bg=ffffff&guid=ON&async=1&en=page_vie Load request cancelled"
+ ]
+}

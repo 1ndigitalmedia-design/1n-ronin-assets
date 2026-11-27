@@ -1,0 +1,204 @@
+{
+ "BR": "chromium",
+ "SC": "A",
+ "rows": [
+  {
+   "step": "home",
+   "mp": 305,
+   "path": "/",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 5,
+   "playing": 1
+  },
+  {
+   "step": "menü→/kreatif-produksiyon",
+   "mp": 421,
+   "path": "/kreatif-produksiyon",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 2,
+   "playing": 0
+  },
+  {
+   "step": "menü→/e-ticaret-yonetimi",
+   "mp": 453,
+   "path": "/e-ticaret-yonetimi",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 3,
+   "playing": 0
+  },
+  {
+   "step": "menü→/sosyal-medya",
+   "mp": 507,
+   "path": "/sosyal-medya",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 4,
+   "playing": 0
+  },
+  {
+   "step": "menü→/reklam-yonetimi",
+   "mp": 480,
+   "path": "/reklam-yonetimi",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 3,
+   "playing": 0
+  },
+  {
+   "step": "menü→/ui-ux-tasarim",
+   "mp": 569,
+   "path": "/ui-ux-tasarim",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 1,
+   "playing": 0
+  },
+  {
+   "step": "menü→/yapay-zeka",
+   "mp": 540,
+   "path": "/yapay-zeka",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 3,
+   "playing": 0
+  },
+  {
+   "step": "menü→/uygulama-gelistirme",
+   "mp": 514,
+   "path": "/uygulama-gelistirme",
+   "nav": "navigate",
+   "hdr": true,
+   "vids": 4,
+   "playing": 0
+  },
+  {
+   "step": "geri1",
+   "mp": 499,
+   "path": "/yapay-zeka",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 3,
+   "playing": 0
+  },
+  {
+   "step": "geri2",
+   "mp": 493,
+   "path": "/ui-ux-tasarim",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 1,
+   "playing": 0
+  },
+  {
+   "step": "geri3",
+   "mp": 515,
+   "path": "/reklam-yonetimi",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 3,
+   "playing": 0
+  },
+  {
+   "step": "geri4",
+   "mp": 562,
+   "path": "/sosyal-medya",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 4,
+   "playing": 0
+  },
+  {
+   "step": "geri5",
+   "mp": 586,
+   "path": "/e-ticaret-yonetimi",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 3,
+   "playing": 1
+  },
+  {
+   "step": "geri6",
+   "mp": 567,
+   "path": "/kreatif-produksiyon",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 2,
+   "playing": 0
+  },
+  {
+   "step": "geri7",
+   "mp": 552,
+   "path": "/",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 5,
+   "playing": 1
+  },
+  {
+   "step": "ileri1",
+   "mp": 570,
+   "path": "/kreatif-produksiyon",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 2,
+   "playing": 0
+  },
+  {
+   "step": "ileri2",
+   "mp": 592,
+   "path": "/e-ticaret-yonetimi",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 3,
+   "playing": 1
+  },
+  {
+   "step": "ileri3",
+   "mp": 552,
+   "path": "/sosyal-medya",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 4,
+   "playing": 0
+  },
+  {
+   "step": "ileri4",
+   "mp": 513,
+   "path": "/reklam-yonetimi",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 3,
+   "playing": 0
+  },
+  {
+   "step": "ileri5",
+   "mp": 509,
+   "path": "/ui-ux-tasarim",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 1,
+   "playing": 0
+  },
+  {
+   "step": "ileri6",
+   "mp": 526,
+   "path": "/yapay-zeka",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 3,
+   "playing": 0
+  },
+  {
+   "step": "ileri7",
+   "mp": 526,
+   "path": "/uygulama-gelistirme",
+   "nav": "back_forward",
+   "hdr": true,
+   "vids": 4,
+   "playing": 0
+  }
+ ]
+}

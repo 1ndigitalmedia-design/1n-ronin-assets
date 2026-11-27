@@ -1,0 +1,6 @@
+const pw=require('playwright');const {execSync}=require('child_process');
+function maxProc(){const rows=execSync('ps -eo pid=,ppid=,rss=').toString().trim().split('\n').map(l=>l.trim().split(/\s+/).map(Number));const kids=new Map();rows.forEach(([p,pp,r])=>{if(!kids.has(pp))kids.set(pp,[]);kids.get(pp).push([p,r])});let mx=0;const st=[process.pid];while(st.length){const p=st.pop();(kids.get(p)||[]).forEach(([c,r])=>{mx=Math.max(mx,r);st.push(c)})}return Math.round(mx/1024);}
+(async()=>{for(const [name,a,b2] of [['wix-only (iletisim↔kvkk)','/iletisim','/kullanim-kosullari'],['1N videosuz (kisaca-biz↔markalar)','/kisaca-biz','/markalar'],['1N videolu (uygulama↔yapay-zeka)','/uygulama-gelistirme','/yapay-zeka']]){
+ const b=await pw.webkit.launch();const ctx=await b.newContext({viewport:{width:390,height:844},hasTouch:true});const pg=await ctx.newPage();const s=[];
+ for(let i=0;i<20;i++){await pg.goto('https://www.reklam1n.com'+(i%2?b2:a),{waitUntil:'domcontentloaded',timeout:60000}).catch(()=>{});await pg.waitForTimeout(5000);await pg.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight/2)).catch(()=>{});await pg.waitForTimeout(1500);if(i%4===3)s.push(maxProc());}
+ console.log(name.padEnd(36),'WebProcess MB @4,8,12,16,20:',s.join(' → '));await b.close();}})();

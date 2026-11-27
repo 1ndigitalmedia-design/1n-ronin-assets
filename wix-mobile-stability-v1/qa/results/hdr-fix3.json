@@ -1,0 +1,102 @@
+{
+ "/": {
+  "cold": {
+   "logo": 9451,
+   "menu": 9451
+  },
+  "warm": {
+   "logo": 9543,
+   "menu": 9543
+  }
+ },
+ "/kreatif-produksiyon": {
+  "cold": {
+   "logo": 3856,
+   "menu": 3856
+  },
+  "warm": {
+   "logo": 3044,
+   "menu": 3045
+  }
+ },
+ "/e-ticaret-yonetimi": {
+  "cold": {
+   "logo": 4194,
+   "menu": 4194
+  },
+  "warm": {
+   "logo": 4708,
+   "menu": 4708
+  }
+ },
+ "/sosyal-medya": {
+  "cold": {
+   "logo": 5135,
+   "menu": 5135
+  },
+  "warm": {
+   "logo": 2989,
+   "menu": 2989
+  }
+ },
+ "/reklam-yonetimi": {
+  "cold": {
+   "logo": 4870,
+   "menu": 4870
+  },
+  "warm": {
+   "logo": 4596,
+   "menu": 4596
+  }
+ },
+ "/ui-ux-tasarim": {
+  "cold": {
+   "logo": 3548,
+   "menu": 3548
+  },
+  "warm": {
+   "logo": 3278,
+   "menu": 3278
+  }
+ },
+ "/yapay-zeka": {
+  "cold": {
+   "logo": 4669,
+   "menu": 4669
+  },
+  "warm": {
+   "logo": 3261,
+   "menu": 3261
+  }
+ },
+ "/uygulama-gelistirme": {
+  "cold": {
+   "logo": 4986,
+   "menu": 4986
+  },
+  "warm": {
+   "logo": 5217,
+   "menu": 5217
+  }
+ },
+ "/markalar": {
+  "cold": {
+   "logo": 3642,
+   "menu": 3642
+  },
+  "warm": {
+   "logo": 2908,
+   "menu": 2909
+  }
+ },
+ "/kisaca-biz": {
+  "cold": {
+   "logo": 3683,
+   "menu": 3684
+  },
+  "warm": {
+   "logo": 2222,
+   "menu": 2222
+  }
+ }
+}

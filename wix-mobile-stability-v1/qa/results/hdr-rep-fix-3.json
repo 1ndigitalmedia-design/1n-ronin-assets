@@ -1,0 +1,52 @@
+{
+ "/": {
+  "cold": {
+   "logo": 9675,
+   "menu": 9675
+  },
+  "warm": {
+   "logo": 9227,
+   "menu": 9227
+  }
+ },
+ "/kreatif-produksiyon": {
+  "cold": {
+   "logo": 3954,
+   "menu": 3954
+  },
+  "warm": {
+   "logo": 3470,
+   "menu": 3470
+  }
+ },
+ "/e-ticaret-yonetimi": {
+  "cold": {
+   "logo": 4154,
+   "menu": 4154
+  },
+  "warm": {
+   "logo": 3374,
+   "menu": 3374
+  }
+ },
+ "/sosyal-medya": {
+  "cold": {
+   "logo": 2845,
+   "menu": 2845
+  },
+  "warm": {
+   "logo": 3684,
+   "menu": 3684
+  }
+ },
+ "/markalar": {
+  "cold": {
+   "logo": 3626,
+   "menu": 3626
+  },
+  "warm": {
+   "logo": 3600,
+   "menu": 3600
+  }
+ }
+}

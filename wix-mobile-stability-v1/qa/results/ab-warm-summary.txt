@@ -1,0 +1,68 @@
+sayfa                önbellek varyant  n header ms   Δ off     KB istek 1N istek görev sn betik sn heap MB
+/                    soğuk   live    3     11696     -19   2771   180       29     3.69     0.88    16.6
+/                    soğuk   off     3     11715      +0   2789   180       29     3.55     0.82    17.8
+/                    soğuk   home    3      9515   -2200   2685   207       54     3.99     0.79    14.4
+/                    soğuk   page    3      9242   -2473   2687   209       54     3.65     0.71    14.4
+/                    soğuk   full    3      9957   -1758   2686   220       67     3.87     0.71    14.5
+
+/                    sıcak   live    3     11374    -479   2790   181       30     3.53     0.83    16.5
+/                    sıcak   off     3     11853      +0   2710   177       29     3.87     0.85    16.7
+/                    sıcak   home    3      9474   -2379   2692   209       55     3.78     0.67    14.5
+/                    sıcak   page    3      9271   -2582   2692   208       55     3.98     0.73    14.3
+/                    sıcak   full    3      9661   -2192   2721   221       67     4.16     0.82    14.7
+
+/kreatif-produksiyon soğuk   live    3      4256    -154    851   178       16     5.82     1.59    20.6
+/kreatif-produksiyon soğuk   off     3      4410      +0    851   177       16     6.31     1.72    20.8
+/kreatif-produksiyon soğuk   home    3      4422     +12    825   178       16     5.91     1.74    23.2
+/kreatif-produksiyon soğuk   page    3      4373     -37    861   179       17     6.10     1.78    20.6
+/kreatif-produksiyon soğuk   full    3      4099    -311    781   186       26     6.26     1.85    23.4
+
+/kreatif-produksiyon sıcak   live    3      4539     +73    851   177       16     6.45     1.80    20.6
+/kreatif-produksiyon sıcak   off     3      4466      +0    851   179       16     7.26     1.78    20.6
+/kreatif-produksiyon sıcak   home    3      4222    -244    826   178       16     6.00     1.67    20.8
+/kreatif-produksiyon sıcak   page    3      4326    -140    826   179       17     6.04     1.66    20.7
+/kreatif-produksiyon sıcak   full    3      4531     +65    782   187       26     6.51     1.76    23.4
+
+/sosyal-medya        soğuk   live    3      4445    +192    556   184       16     5.13     1.55    18.9
+/sosyal-medya        soğuk   off     3      4253      +0    557   184       16     5.51     1.64    19.0
+/sosyal-medya        soğuk   home    3      4478    +225    556   184       16     5.30     1.69    19.0
+/sosyal-medya        soğuk   page    3      4435    +182    555   185       17     5.32     1.63    19.1
+/sosyal-medya        soğuk   full    3      4573    +320    590   195       26     5.58     1.76    19.1
+
+/sosyal-medya        sıcak   live    3      4198    -379    557   186       16     5.40     1.61    19.1
+/sosyal-medya        sıcak   off     3      4577      +0    555   183       16     5.75     1.72    19.2
+/sosyal-medya        sıcak   home    3      4095    -482    555   184       16     5.42     1.71    19.2
+/sosyal-medya        sıcak   page    3      3976    -601    555   185       17     5.11     1.52    19.1
+/sosyal-medya        sıcak   full    3      4525     -52    591   194       26     5.31     1.58    19.1
+
+ham header (ms):
+  ('/', False, 'full') [9803, 10048, 9957]
+  ('/', False, 'home') [9515, 9612, 9375]
+  ('/', False, 'live') [11696, 11683, 11804]
+  ('/', False, 'off') [11628, 12124, 11715]
+  ('/', False, 'page') [9150, 9242, 9393]
+  ('/', True, 'full') [9870, 9583, 9661]
+  ('/', True, 'home') [9351, 9474, 9485]
+  ('/', True, 'live') [11374, 11345, 11630]
+  ('/', True, 'off') [11853, 12046, 11488]
+  ('/', True, 'page') [9443, 9271, 9222]
+  ('/kreatif-produksiyon', False, 'full') [4497, 4099, 3983]
+  ('/kreatif-produksiyon', False, 'home') [4057, 4653, 4422]
+  ('/kreatif-produksiyon', False, 'live') [4256, 3922, 4365]
+  ('/kreatif-produksiyon', False, 'off') [4410, 3915, 4412]
+  ('/kreatif-produksiyon', False, 'page') [5037, 3706, 4373]
+  ('/kreatif-produksiyon', True, 'full') [4693, 4295, 4531]
+  ('/kreatif-produksiyon', True, 'home') [4214, 4326, 4222]
+  ('/kreatif-produksiyon', True, 'live') [4347, 4593, 4539]
+  ('/kreatif-produksiyon', True, 'off') [4584, 4418, 4466]
+  ('/kreatif-produksiyon', True, 'page') [4326, 4366, 4165]
+  ('/sosyal-medya', False, 'full') [4768, 3197, 4573]
+  ('/sosyal-medya', False, 'home') [4478, 5220, 3430]
+  ('/sosyal-medya', False, 'live') [4086, 4490, 4445]
+  ('/sosyal-medya', False, 'off') [4420, 3924, 4253]
+  ('/sosyal-medya', False, 'page') [4656, 4198, 4435]
+  ('/sosyal-medya', True, 'full') [4525, 4167, 4899]
+  ('/sosyal-medya', True, 'home') [3924, 4625, 4095]
+  ('/sosyal-medya', True, 'live') [4198, 4527, 4090]
+  ('/sosyal-medya', True, 'off') [4577, 4694, 3912]
+  ('/sosyal-medya', True, 'page') [3976, 4584, 3172]

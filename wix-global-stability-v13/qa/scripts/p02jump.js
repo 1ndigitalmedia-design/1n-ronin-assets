@@ -1,0 +1,4 @@
+const pw=require('playwright');const [,,STEPS='5',WAIT='700',DW='6000']=process.argv;(async()=>{const b=await pw.webkit.launch();const ctx=await b.newContext({viewport:{width:390,height:844},deviceScaleFactor:3,hasTouch:true});const pg=await ctx.newPage();let crashed=false;pg.on('crash',()=>crashed=true);
+await pg.goto('https://www.reklam1n.com/e-ticaret-yonetimi',{waitUntil:'domcontentloaded'});await pg.waitForTimeout(+DW);const H=await pg.evaluate(()=>document.documentElement.scrollHeight);const log=[];
+for(let i=1;i<=+STEPS&&!crashed;i++){const y=Math.round(H*i/+STEPS);try{await pg.evaluate(y=>scrollTo(0,y),y);await pg.waitForTimeout(+WAIT);log.push(y);}catch(e){break;}}
+await pg.waitForTimeout(2000);console.log('adım',STEPS,'bekle',WAIT,'crash',crashed,'konumlar',log.join(','));await b.close().catch(()=>{});})();

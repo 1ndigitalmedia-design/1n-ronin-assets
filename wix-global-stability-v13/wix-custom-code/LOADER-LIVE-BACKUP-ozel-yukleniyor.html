@@ -1,0 +1,313 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+/* 1N DIGITAL MEDIA — GLOBAL LOADER V1 */
+
+#n1GlobalLoader {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background: #080A09 !important;
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity .5s ease;
+}
+
+#n1GlobalLoader,
+#n1GlobalLoader * {
+  box-sizing: border-box;
+}
+
+#n1GlobalLoader .n1-loader-counter {
+  display: flex !important;
+  align-items: baseline !important;
+  justify-content: center !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 210px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: -.09em !important;
+  white-space: nowrap !important;
+  font-variant-numeric: tabular-nums !important;
+  font-feature-settings: "tnum" 1 !important;
+  font-synthesis: none !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+#n1GlobalLoader .n1-loader-percent {
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: -.045em;
+  color: #A1FF00 !important;
+}
+
+#n1GlobalLoader .n1-loader-digits {
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  width: 2ch !important;
+  color: #EEEDE8 !important;
+  text-align: left !important;
+  font-family: inherit !important;
+  font-weight: 900 !important;
+  letter-spacing: -.12em !important;
+  font-variant-numeric: tabular-nums !important;
+  font-feature-settings: "tnum" 1 !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #n1GlobalLoader .n1-loader-counter {
+    font-size: 145px !important;
+  }
+}
+
+/* MOBİL */
+@media (min-width: 361px) and (max-width: 767px) {
+  #n1GlobalLoader .n1-loader-counter {
+    font-size: 93px !important;
+  }
+}
+
+/* KÜÇÜK MOBİL */
+@media (max-width: 360px) {
+  #n1GlobalLoader .n1-loader-counter {
+    font-size: 82px !important;
+  }
+}
+
+/* KAPANIŞ */
+#n1GlobalLoader.n1-loader-close {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #n1GlobalLoader {
+    transition: none !important;
+  }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  if (window.__n1GlobalLoaderInstalled) return;
+  window.__n1GlobalLoaderInstalled = true;
+
+  /* YÜKLEME EKRANI GÖSTERİLECEK SAYFALAR */
+  const ROUTES = new Set([
+    '/studyo-hikayesi',
+    '/yaratici-bakisimiz',
+    '/calisma-ritmimiz',
+
+    '/kreatif-studyo',
+    '/marka-deneyimi',
+    '/dijital-performans',
+    '/sosyal-medya-icerik',
+    '/web-e-ticaret',
+    '/yapay-zeka-inovasyon',
+
+    '/secili-isler',
+    '/marka-hikayeleri',
+    '/creative-showcase',
+
+    '/reklam-ajansi',
+    '/workshops',
+    '/icgoruler',
+
+    '/iletisim',
+    '/teklif-al',
+
+    '/ekibimize-katil',
+    '/acik-pozisyonlar',
+
+    '/kreatif-produksiyon',
+    '/e-ticaret-yonetimi',
+    '/sosyal-medya',
+    '/reklam-yonetimi',
+    '/ui-ux-tasarim',
+    '/yapay-zeka',
+    '/uygulama-gelistirme',
+
+    '/gizlilik-politikasi',
+    '/kvkk-aydinlatma-metni',
+    '/cerez-politikasi',
+    '/kullanim-kosullari',
+    '/veri-sahibi-basvuru-formu'
+  ]);
+
+  const normalizePath = () =>
+    (window.location.pathname.replace(/\/+$/, '') || '/')
+      .toLowerCase();
+
+  function pageReady(path) {
+    if (document.readyState === 'loading') {
+      return false;
+    }
+
+    /* STÜDYO HİKÂYESİ */
+    if (path === '/studyo-hikayesi') {
+      const page = document.querySelector('n1-studyo-v1');
+
+      return !!(
+        page &&
+        page.querySelector('main.st') &&
+        page.querySelector('footer.n1ft') &&
+        page.querySelector('n1-header .n1h-logo') &&
+        page.querySelector('n1-floating-controls') &&
+        customElements.get('n1-floating-controls')
+      );
+    }
+
+    /* YARATICI BAKIŞIMIZ */
+    if (path === '/yaratici-bakisimiz') {
+      const page = document.querySelector('n1-yaratici-v1');
+      const narrow = window.matchMedia(
+        '(max-width:1024px)'
+      ).matches;
+
+      return !!(
+        page &&
+        page.querySelector('main.n1v#n1v-main') &&
+        page.querySelector('footer.n1ft') &&
+        page.querySelector('n1-header .n1h-logo') &&
+        page.querySelector('n1-floating-controls') &&
+        customElements.get('n1-floating-controls') &&
+        (
+          !narrow ||
+          document.getElementById('n1v-mobile-controls')
+        )
+      );
+    }
+
+    /* DİĞER WIX SAYFALARI */
+    return !!(
+      document.body &&
+      document.querySelector(
+        '#SITE_CONTAINER, main, [role="main"]'
+      )
+    );
+  }
+
+  let active = null;
+  let lastPath = null;
+
+  function createLoader(path) {
+    const loader = document.createElement('div');
+
+    loader.id = 'n1GlobalLoader';
+    loader.setAttribute('role', 'status');
+    loader.setAttribute('aria-label', 'Sayfa yükleniyor');
+
+    loader.innerHTML = `
+      <div class="n1-loader-counter" aria-hidden="true">
+        <span class="n1-loader-percent">%</span>
+        <span class="n1-loader-digits">01</span>
+      </div>
+    `;
+
+    (document.body || document.documentElement)
+      .appendChild(loader);
+
+    const digits = loader.querySelector(
+      '.n1-loader-digits'
+    );
+
+    let progress = 1;
+    let done = false;
+    let forced = false;
+    let fadeTimer = 0;
+    let removeTimer = 0;
+
+    function finish() {
+      if (done) return;
+
+      done = true;
+      clearInterval(timer);
+      clearTimeout(safety);
+
+      digits.textContent = '99';
+
+      fadeTimer = setTimeout(function () {
+        loader.classList.add('n1-loader-close');
+      }, 120);
+
+      removeTimer = setTimeout(function () {
+        loader.remove();
+      }, 700);
+    }
+
+    const timer = setInterval(function () {
+      if (done) return;
+
+      if (
+        progress < 94 ||
+        forced ||
+        pageReady(path)
+      ) {
+        progress = Math.min(progress + 1, 99);
+      }
+
+      digits.textContent = String(progress)
+        .padStart(2, '0');
+
+      if (progress === 99) {
+        finish();
+      }
+    }, 24);
+
+    /* 12 SANİYELİK GÜVENLİK SINIRI */
+    const safety = setTimeout(function () {
+      forced = true;
+    }, 12000);
+
+    return {
+      destroy() {
+        done = true;
+        clearInterval(timer);
+        clearTimeout(safety);
+        clearTimeout(fadeTimer);
+        clearTimeout(removeTimer);
+        loader.remove();
+      }
+    };
+  }
+
+  function checkRoute() {
+    const path = normalizePath();
+
+    if (path === lastPath) return;
+
+    if (active) {
+      active.destroy();
+      active = null;
+    }
+
+    lastPath = path;
+
+    if (ROUTES.has(path)) {
+      active = createLoader(path);
+    }
+  }
+
+  /* İLK AÇILIŞ */
+  checkRoute();
+
+  /* TARAYICI GERİ / İLERİ */
+  window.addEventListener('popstate', checkRoute);
+
+  /* WIX SAYFA GEÇİŞLERİ */
+  setInterval(checkRoute, 500);
+})();
+</script>

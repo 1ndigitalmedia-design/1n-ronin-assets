@@ -1,0 +1,366 @@
+[
+ {
+  "br": "webkit",
+  "page": "/",
+  "top": {
+   "vids": 5,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 1.68,
+   "maxVid": "1120×1504",
+   "srcs": [
+    "wix-home-v656/media/ronin-m5-film-2x.mp4"
+   ],
+   "imgs": 7,
+   "imgMP": 7.3,
+   "st": 13,
+   "tweens": 5,
+   "dom": 950,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 182,
+   "kb": 212,
+   "maxProcMB": 760,
+   "totMB": 971
+  },
+  "end": {
+   "vids": 5,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 4.1,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "wix-home-v656/media/ronin-m5-film-2x.mp4",
+    "1080p/mp4/file.mp4",
+    "480p/mp4/file.mp4"
+   ],
+   "imgs": 7,
+   "imgMP": 8.3,
+   "st": 13,
+   "tweens": 1,
+   "dom": 950,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 186,
+   "kb": 212,
+   "maxProcMB": 982,
+   "totMB": 1192
+  },
+  "errs": []
+ },
+ {
+  "br": "webkit",
+  "page": "/kreatif-produksiyon",
+  "top": {
+   "vids": 2,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 21,
+   "imgMP": 9,
+   "st": 26,
+   "tweens": 92,
+   "dom": 1095,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 166,
+   "kb": 212,
+   "maxProcMB": 858,
+   "totMB": 1068
+  },
+  "end": {
+   "vids": 2,
+   "withSrc": 2,
+   "playing": 0,
+   "decodedMP": 1.33,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4",
+    "480p/mp4/file.mp4"
+   ],
+   "imgs": 21,
+   "imgMP": 9.6,
+   "st": 9,
+   "tweens": 47,
+   "dom": 1095,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 172,
+   "kb": 212,
+   "maxProcMB": 1088,
+   "totMB": 1299
+  },
+  "errs": []
+ },
+ {
+  "br": "webkit",
+  "page": "/e-ticaret-yonetimi",
+  "top": {
+   "vids": 3,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 20,
+   "imgMP": 8.5,
+   "st": 60,
+   "tweens": 78,
+   "dom": 801,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 158,
+   "kb": 213,
+   "maxProcMB": 770,
+   "totMB": 981
+  },
+  "fail": "page.evaluate: Target page, context or browser has been closed",
+  "errs": []
+ },
+ {
+  "br": "webkit",
+  "page": "/sosyal-medya",
+  "top": {
+   "vids": 4,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 4,
+   "st": 46,
+   "tweens": 80,
+   "dom": 738,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 155,
+   "kb": 212,
+   "maxProcMB": 823,
+   "totMB": 1033
+  },
+  "end": {
+   "vids": 4,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 3.64,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "720p/mp4/file.mp4",
+    "480p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 5.1,
+   "st": 4,
+   "tweens": 8,
+   "dom": 738,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 166,
+   "kb": 212,
+   "maxProcMB": 1093,
+   "totMB": 1304
+  },
+  "errs": []
+ },
+ {
+  "br": "webkit",
+  "page": "/reklam-yonetimi",
+  "top": {
+   "vids": 3,
+   "withSrc": 2,
+   "playing": 0,
+   "decodedMP": 2.48,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "480p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 10,
+   "imgMP": 4.1,
+   "st": 63,
+   "tweens": 82,
+   "dom": 824,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 191,
+   "kb": 212,
+   "maxProcMB": 847,
+   "totMB": 1061
+  },
+  "end": {
+   "vids": 3,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 2.89,
+   "maxVid": "1920×1080",
+   "srcs": [
+    "480p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 10,
+   "imgMP": 4.7,
+   "st": 9,
+   "tweens": 10,
+   "dom": 824,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 244,
+   "kb": 212,
+   "maxProcMB": 1078,
+   "totMB": 1295
+  },
+  "errs": []
+ },
+ {
+  "br": "webkit",
+  "page": "/ui-ux-tasarim",
+  "top": {
+   "vids": 1,
+   "withSrc": 1,
+   "playing": 0,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 18,
+   "imgMP": 5.6,
+   "st": 46,
+   "tweens": 53,
+   "dom": 989,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 152,
+   "kb": 213,
+   "maxProcMB": 862,
+   "totMB": 1073
+  },
+  "end": {
+   "vids": 1,
+   "withSrc": 1,
+   "playing": 0,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 18,
+   "imgMP": 8.7,
+   "st": 5,
+   "tweens": 4,
+   "dom": 989,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 168,
+   "kb": 213,
+   "maxProcMB": 1154,
+   "totMB": 1365
+  },
+  "errs": []
+ },
+ {
+  "br": "webkit",
+  "page": "/yapay-zeka",
+  "top": {
+   "vids": 3,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "720×1280",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 3.7,
+   "st": 66,
+   "tweens": 93,
+   "dom": 885,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 152,
+   "kb": 213,
+   "maxProcMB": 726,
+   "totMB": 936
+  },
+  "end": {
+   "vids": 3,
+   "withSrc": 3,
+   "playing": 0,
+   "decodedMP": 2.74,
+   "maxVid": "1080×1080",
+   "srcs": [
+    "720p/mp4/file.mp4",
+    "1080p/mp4/file.mp4"
+   ],
+   "imgs": 14,
+   "imgMP": 5.2,
+   "st": 13,
+   "tweens": 13,
+   "dom": 885,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 161,
+   "kb": 213,
+   "maxProcMB": 1022,
+   "totMB": 1232
+  },
+  "errs": []
+ },
+ {
+  "br": "webkit",
+  "page": "/uygulama-gelistirme",
+  "top": {
+   "vids": 4,
+   "withSrc": 1,
+   "playing": 1,
+   "decodedMP": 0.92,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 8,
+   "imgMP": 3.7,
+   "st": 41,
+   "tweens": 40,
+   "dom": 1187,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 155,
+   "kb": 212,
+   "maxProcMB": 730,
+   "totMB": 941
+  },
+  "end": {
+   "vids": 4,
+   "withSrc": 4,
+   "playing": 0,
+   "decodedMP": 3.69,
+   "maxVid": "1280×720",
+   "srcs": [
+    "720p/mp4/file.mp4"
+   ],
+   "imgs": 8,
+   "imgMP": 5.1,
+   "st": 2,
+   "tweens": 2,
+   "dom": 1187,
+   "canvas": 0,
+   "iframes": 0,
+   "res": 168,
+   "kb": 212,
+   "maxProcMB": 1090,
+   "totMB": 1300
+  },
+  "errs": []
+ }
+]

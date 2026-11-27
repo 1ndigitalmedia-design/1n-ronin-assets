@@ -1,0 +1,9 @@
+const pw=require('playwright');const fs=require('fs');
+const pages=['/','/kreatif-produksiyon','/e-ticaret-yonetimi','/sosyal-medya','/reklam-yonetimi','/ui-ux-tasarim','/yapay-zeka','/uygulama-gelistirme','/markalar','/kisaca-biz','/kvkk-aydinlatma-metni','/cerez-politikasi','/kullanim-kosullari','/gizlilik','/veri-sahibi-basvuru-formu'];
+(async()=>{const b=await pw.chromium.launch();const ctx=await b.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const out={};
+for(const p of pages){const pg=await ctx.newPage();const req=[];pg.on('request',r=>{const u=r.url();if(/1n-ronin-assets@/.test(u)&&/\.js$/.test(u))req.push(u.replace(/.*1n-ronin-assets@/,''))});
+ const resp=await pg.goto('https://www.reklam1n.com'+p,{waitUntil:'domcontentloaded',timeout:60000}).catch(e=>null);await pg.waitForTimeout(9000);
+ const r=await pg.evaluate(()=>({ce:[...new Set([...document.querySelectorAll('*')].map(e=>e.tagName.toLowerCase()).filter(t=>t.startsWith('n1-')&&!['n1-header','n1-floating-controls'].includes(t)&&customElements.get(t)))],nav:window.__n1Nav?(window.__n1Nav.version||'?'):null,navCfg:!!window.N1_NAV_CONFIG,stab:window.__n1Stability?window.__n1Stability.version:null,loader:!!window.__n1GlobalLoaderInstalled,hiz:[...document.querySelectorAll('.n1h-panel .n1h-item')].some(i=>i.tagName==='BUTTON'&&/Hizmetler/.test(i.textContent))})).catch(e=>({err:e.message}));
+ const main=req.filter(u=>/wix-global-menu-v12\/pages|wix-sitewide|n1-site-wix-v65/.test(u));const navReq=req.filter(u=>/n1-nav/.test(u));const hdr=req.filter(u=>/n1-header|n1-site-markup/.test(u));
+ out[p]={status:resp&&resp.status(),...r,main:[...new Set(main)],navReq,hdr:[...new Set(hdr)]};console.log(p,JSON.stringify(out[p]));await pg.close();}
+fs.writeFileSync('live13.json',JSON.stringify(out,null,1));await b.close();})();

@@ -1,0 +1,23 @@
+{
+    "programs": [
+
+    ],
+    "streams": [
+        {
+            "codec_name": "h264",
+            "profile": "High",
+            "width": 840,
+            "height": 1128,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 40,
+            "avg_frame_rate": "24/1",
+            "bit_rate": "2263026",
+            "nb_frames": "433"
+        }
+    ],
+    "format": {
+        "duration": "18.041667",
+        "size": "5109675"
+    }
+}

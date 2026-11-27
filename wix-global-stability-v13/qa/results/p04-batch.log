@@ -1,0 +1,30 @@
+live h2k 1: FLICKER (loader→içerik→loader): hayır
+v13  h2k 1: FLICKER (loader→içerik→loader): hayır | İÇERİK@-255ms(x14) → LOADER@478ms(x118) → İÇERİK@3061ms(x304)
+live s2k 1: FLICKER (loader→içerik→loader): hayır
+v13  s2k 1: FLICKER (loader→içerik→loader): hayır | İÇERİK@-287ms(x17) → LOADER@598ms(x116) → İÇERİK@3281ms(x295)
+live k2h 1: FLICKER (loader→içerik→loader): hayır
+v13  k2h 1: FLICKER (loader→içerik→loader): hayır | İÇERİK@-300ms(x19) → LOADER@312ms(x158) → İÇERİK@3661ms(x256)
+live h2k 2: FLICKER (loader→içerik→loader): hayır
+v13  h2k 2: FLICKER (loader→içerik→loader): hayır | İÇERİK@-301ms(x13) → LOADER@505ms(x101) → İÇERİK@2922ms(x345)
+live s2k 2: FLICKER (loader→içerik→loader): hayır
+v13  s2k 2: FLICKER (loader→içerik→loader): hayır | İÇERİK@-293ms(x18) → LOADER@586ms(x120) → İÇERİK@3186ms(x299)
+live k2h 2: FLICKER (loader→içerik→loader): hayır
+v13  k2h 2: FLICKER (loader→içerik→loader): hayır | İÇERİK@-300ms(x25) → LOADER@500ms(x161) → İÇERİK@3867ms(x254)
+live h2k 3: FLICKER (loader→içerik→loader): hayır
+v13  h2k 3: FLICKER (loader→içerik→loader): hayır | İÇERİK@-300ms(x13) → LOADER@483ms(x114) → İÇERİK@3017ms(x307)
+live s2k 3: FLICKER (loader→içerik→loader): hayır
+v13  s2k 3: FLICKER (loader→içerik→loader): hayır | İÇERİK@-300ms(x18) → LOADER@652ms(x115) → İÇERİK@3269ms(x293)
+live k2h 3: FLICKER (loader→içerik→loader): hayır
+v13  k2h 3: FLICKER (loader→içerik→loader): hayır | İÇERİK@-297ms(x24) → LOADER@431ms(x163) → İÇERİK@3914ms(x241)
+live h2k 4: FLICKER (loader→içerik→loader): hayır
+v13  h2k 4: FLICKER (loader→içerik→loader): hayır | İÇERİK@-300ms(x12) → LOADER@521ms(x107) → İÇERİK@2987ms(x293)
+live s2k 4: FLICKER (loader→içerik→loader): hayır
+v13  s2k 4: FLICKER (loader→içerik→loader): hayır | İÇERİK@-304ms(x16) → LOADER@600ms(x111) → İÇERİK@3117ms(x337)
+live k2h 4: FLICKER (loader→içerik→loader): hayır
+v13  k2h 4: FLICKER (loader→içerik→loader): hayır | İÇERİK@-300ms(x24) → LOADER@528ms(x156) → İÇERİK@3728ms(x252)
+live h2k 5: FLICKER (loader→içerik→loader): hayır
+v13  h2k 5: FLICKER (loader→içerik→loader): hayır | İÇERİK@-266ms(x13) → LOADER@567ms(x98) → İÇERİK@2817ms(x329)
+live s2k 5: FLICKER (loader→içerik→loader): hayır
+v13  s2k 5: FLICKER (loader→içerik→loader): hayır | İÇERİK@-302ms(x17) → LOADER@619ms(x102) → İÇERİK@3036ms(x323)
+live k2h 5: FLICKER (loader→içerik→loader): hayır
+v13  k2h 5: FLICKER (loader→içerik→loader): hayır | İÇERİK@-300ms(x24) → LOADER@409ms(x154) → İÇERİK@3842ms(x231)

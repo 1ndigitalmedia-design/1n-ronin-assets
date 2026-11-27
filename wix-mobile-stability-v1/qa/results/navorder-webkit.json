@@ -1,0 +1,65 @@
+[
+ {
+  "BR": "webkit",
+  "name": "A guard, gecikme yok",
+  "expect": "1.0.3",
+  "active": "1.0.3",
+  "conflict": null,
+  "func": "çapa OK top=76",
+  "order": "new-req>new-served>old-req>old-served"
+ },
+ {
+  "BR": "webkit",
+  "name": "B guard, YENİ nav 6 sn gecikmeli (eski önce gelir)",
+  "expect": "1.0.3",
+  "active": "1.0.3",
+  "conflict": null,
+  "func": "çapa OK top=76",
+  "order": "new-req>new-served>old-req>old-served"
+ },
+ {
+  "BR": "webkit",
+  "name": "C guard YOK, YENİ nav 6 sn gecikmeli",
+  "expect": "?",
+  "active": "1.0.3",
+  "conflict": null,
+  "func": "çapa OK top=76",
+  "order": "new-req>new-served>old-req>old-served"
+ },
+ {
+  "BR": "webkit",
+  "name": "D guard, ESKİ nav 6 sn gecikmeli",
+  "expect": "1.0.3",
+  "active": "1.0.3",
+  "conflict": null,
+  "func": "çapa OK top=76",
+  "order": "new-req>new-served>old-req>old-served"
+ },
+ {
+  "BR": "webkit",
+  "name": "E guard YOK, gecikme yok",
+  "expect": "?",
+  "active": "1.0.3",
+  "conflict": null,
+  "func": "çapa OK top=76",
+  "order": "new-req>new-served>old-req>old-served"
+ },
+ {
+  "BR": "webkit",
+  "name": "F guard, YENİ nav yüklenemiyor (404)",
+  "expect": "none",
+  "active": "pending",
+  "conflict": null,
+  "func": "-",
+  "order": "new-req>old-req>old-served"
+ },
+ {
+  "BR": "webkit",
+  "name": "G guard, YENİ 3 sn + ESKİ 0 sn, masaüstü",
+  "expect": "1.0.3",
+  "active": "1.0.3",
+  "conflict": null,
+  "func": "çapa OK top=100",
+  "order": "new-req>new-served>old-req>old-served"
+ }
+]

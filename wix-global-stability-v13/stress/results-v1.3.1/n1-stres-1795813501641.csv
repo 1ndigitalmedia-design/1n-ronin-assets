@@ -1,0 +1,300 @@
+t,v,r,p,m,d,try,crash,anomaly,how,pageNt,backNt,backReload,ebFired,ebAtMs,ebReadyState,ebVideos,ebLoader,earlyBeforeRunner,navStartDelay,ttfb,dcl,load,ceReady,loaderGone,scrollSteps,scrollMs,pageVideos,pagePlaying,homeHero,homeHeroRes,homeHeroState,homePlaying,homeBackReadyMs,errs
+2026-11-27T19:32:08.246Z,B,1,/kreatif-produksiyon,n,0,1,0,,bağlantı,back_forward,back_forward,1,0,,,,,0,2237,55,1514,1661,2054,5067,44,13380,2,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T19:32:15.540Z,B,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,,bfcache,0,1,1591,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:32:43.602Z,B,1,/e-ticaret-yonetimi,n,0,1,0,,bağlantı,navigate,bfcache,0,0,,,,,0,36,63,1504,1784,2263,5276,50,15207,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:33:58.429Z,B,1,/e-ticaret-yonetimi,e,1000,1,0,"geri dönüş ana sayfaya ulaşmadı (/e-ticaret-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,65434,60,1619,4183,2372,5156,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:33:59.722Z,B,1,/e-ticaret-yonetimi,e,1000,2,0,beklenmeyen sayfa (/e-ticaret-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:34:07.176Z,B,1,/sosyal-medya,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:34:13.627Z,B,1,/sosyal-medya,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,42,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:34:14.939Z,B,1,/sosyal-medya,n,0,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:34:34.624Z,B,1,/sosyal-medya,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, navigate)",bağlantı,navigate,,0,0,,,,,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:34:49.387Z,B,1,/sosyal-medya,e,2000,2,1,OLASI ÇÖKME: geri dönüşte hizmet sayfası yeniden yüklendi,bağlantı,navigate,,0,0,,,,,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:34:51.240Z,B,1,/reklam-yonetimi,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:35:48.138Z,B,1,/reklam-yonetimi,n,0,2,0,"geri dönüş ana sayfaya ulaşmadı (/reklam-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,15916,63,1497,1702,2277,5043,72,21892,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:35:49.753Z,B,1,/reklam-yonetimi,e,3000,1,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:36:04.774Z,B,1,/reklam-yonetimi,e,3000,2,1,OLASI ÇÖKME: geri dönüşte hizmet sayfası yeniden yüklendi,bağlantı,navigate,,0,0,,,,,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:36:07.654Z,B,1,/ui-ux-tasarim,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:36:55.945Z,B,1,/ui-ux-tasarim,n,0,2,0,"geri dönüş ana sayfaya ulaşmadı (/ui-ux-tasarim, back_forward)",bağlantı,navigate,,0,0,,,,,0,4279,58,1389,1572,2153,4919,82,24928,1,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:36:57.607Z,B,1,/ui-ux-tasarim,e,500,1,0,beklenmeyen sayfa (/ui-ux-tasarim),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:37:11.583Z,B,1,/ui-ux-tasarim,e,500,2,0,"geri dönüş ana sayfaya ulaşmadı (/ui-ux-tasarim, back_forward)",bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:37:13.215Z,B,1,/yapay-zeka,n,0,1,0,beklenmeyen sayfa (/ui-ux-tasarim),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:37:50.229Z,B,1,/yapay-zeka,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,42,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:38:08.743Z,B,1,/yapay-zeka,e,1000,1,0,,bağlantı,,bfcache,2,1,1392,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T19:38:52.272Z,B,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,43,62,1936,2299,2437,5451,93,28275,4,0,ronin-m5-film.mp4,0x0,blocked,0,1,0
+2026-11-27T19:39:04.570Z,B,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2008,interactive,4,1,0,39,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,752,0
+2026-11-27T19:39:39.769Z,D,1,/kreatif-produksiyon,n,0,1,0,,bağlantı,back_forward,back_forward,1,0,,,,,0,1830,53,1627,1823,2129,5146,44,13384,2,0,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T19:39:47.049Z,D,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1364,loading,0,1,0,42,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:40:14.720Z,D,1,/e-ticaret-yonetimi,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/e-ticaret-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,3919,59,1490,1676,1992,5002,50,15214,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:40:16.166Z,D,1,/e-ticaret-yonetimi,n,0,2,0,beklenmeyen sayfa (/e-ticaret-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:40:33.563Z,D,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,,bfcache,0,1,1406,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:40:38.172Z,D,1,/sosyal-medya,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,36,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:41:21.312Z,D,1,/sosyal-medya,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:41:34.339Z,D,1,/sosyal-medya,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, back_forward)",bağlantı,navigate,,0,0,,,,,0,47,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:41:35.891Z,B,1,/sosyal-medya,n,0,2,1,OLASI ÇÖKME: geri dönüşte hizmet sayfası yeniden yüklendi,bağlantı,navigate,,0,0,,,,,0,1182,65,1844,2103,,,0,1,0,0,ronin-m5-film.mp4,0x0,loading,0,,0
+2026-11-27T19:41:41.477Z,B,1,/sosyal-medya,n,0,2,0,,bağlantı,navigate,back_forward,1,0,,,,,0,1182,65,1844,2103,,,0,1,0,0,ronin-m5-film.mp4,0x0,loading,0,502,0
+2026-11-27T19:41:52.535Z,B,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2000,interactive,4,1,0,38,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,503,0
+2026-11-27T19:42:29.023Z,B,1,/reklam-yonetimi,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,40,57,1440,1806,1945,4961,72,21899,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:43:07.712Z,B,1,/reklam-yonetimi,e,3000,1,0,,bağlantı,navigate,navigate,0,1,3000,complete,3,1,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:43:47.164Z,B,1,/ui-ux-tasarim,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,42,61,1609,2317,2129,5394,82,24936,1,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T19:43:54.522Z,B,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,,bfcache,0,1,1307,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:44:54.256Z,B,1,/sosyal-medya,n,0,2,0,,bağlantı,navigate,back_forward,2,0,,,,,0,1182,65,1844,2103,,,0,1,0,0,ronin-m5-film.mp4,0x0,loading,0,192835,0
+2026-11-27T19:44:57.319Z,B,1,/yapay-zeka,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,36,44,1259,1910,1775,4791,76,23116,3,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T19:45:04.665Z,B,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1296,loading,0,1,0,42,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:45:48.006Z,B,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,back_forward,back_forward,1,0,,,,,0,1899,53,1255,1449,1756,4768,93,28278,4,0,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T19:45:56.781Z,B,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,back_forward,1,1,2021,interactive,4,1,0,39,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,503,0
+2026-11-27T19:47:29.272Z,D,1,/kreatif-produksiyon,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/kreatif-produksiyon, back_forward)",bağlantı,navigate,,0,0,,,,,0,64436,60,1328,4168,2079,4874,44,13407,2,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:47:30.847Z,D,1,/kreatif-produksiyon,n,0,2,0,beklenmeyen sayfa (/kreatif-produksiyon),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:47:48.015Z,D,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,,bfcache,0,1,1416,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:48:17.613Z,D,1,/e-ticaret-yonetimi,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,38,57,1296,2004,1828,5095,50,15220,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:48:24.822Z,D,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1396,loading,0,1,0,33,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:48:56.892Z,B,1,/sosyal-medya,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, back_forward)",bağlantı,navigate,,0,0,,,,,0,-2,,,,,,,,,,ronin-m5-film.mp4,0x0,loading,0,,0
+2026-11-27T19:48:58.712Z,B,1,/sosyal-medya,e,2000,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:49:28.350Z,B,1,/reklam-yonetimi,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,44,,,,1811,5078,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:50:31.064Z,B,1,/reklam-yonetimi,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:50:44.295Z,B,1,/reklam-yonetimi,e,3000,1,0,"geri dönüş ana sayfaya ulaşmadı (/reklam-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,47,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:50:45.628Z,B,1,/reklam-yonetimi,e,3000,2,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:50:48.728Z,B,1,/ui-ux-tasarim,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:50:56.111Z,B,1,/sosyal-medya,e,2000,1,0,gezinme 25 sn içinde başlamadı,bağlantı,,,0,0,,,,,0,,,,,,,,,,,ronin-m5-film.mp4,0x0,loading,0,,0
+2026-11-27T19:50:57.966Z,B,1,/sosyal-medya,e,2000,2,0,beklenmeyen sayfa (/sosyal-medya) · 123 sn ara (ekran kilidi/arka plan olabilir),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:51:14.671Z,B,1,/reklam-yonetimi,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (navigate),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:51:28.620Z,B,1,/reklam-yonetimi,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (back_forward),,,,0,0,,,,,0,,,,,,,,,,,ronin-m5-film.mp4,0x0,loading,0,,0
+2026-11-27T19:51:29.984Z,B,1,/reklam-yonetimi,n,0,2,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:52:16.130Z,B,1,/reklam-yonetimi,e,3000,1,0,"geri dönüş ana sayfaya ulaşmadı (/reklam-yonetimi, navigate)",bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:52:17.643Z,B,1,/reklam-yonetimi,e,3000,2,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:52:19.647Z,B,1,/ui-ux-tasarim,n,0,1,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:52:34.305Z,B,1,/ui-ux-tasarim,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:53:01.206Z,B,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,,bfcache,1,1,1285,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T19:54:53.964Z,B,1,/reklam-yonetimi,n,0,1,0,gezinme 25 sn içinde başlamadı,bağlantı,,,0,0,,,,,0,,,,,,,,,,,ronin-m5-film.mp4,0x0,loading,0,,0
+2026-11-27T19:54:55.433Z,B,1,/reklam-yonetimi,n,0,2,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:54:58.494Z,D,1,/kreatif-produksiyon,e,500,2,0,,bağlantı,navigate,bfcache,0,1,1367,loading,0,1,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:55:22.174Z,B,1,/reklam-yonetimi,e,3000,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (navigate),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:55:35.772Z,B,1,/reklam-yonetimi,e,3000,2,0,"geri dönüş ana sayfaya ulaşmadı (/reklam-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,46,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:55:37.585Z,B,1,/ui-ux-tasarim,n,0,1,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:55:40.641Z,B,1,/ui-ux-tasarim,n,0,2,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:56:19.657Z,B,1,/ui-ux-tasarim,e,500,1,0,"geri dönüş ana sayfaya ulaşmadı (/ui-ux-tasarim, navigate)",bağlantı,navigate,,0,0,,,,,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:56:36.954Z,B,1,/ui-ux-tasarim,e,500,2,0,,bağlantı,,bfcache,0,1,1333,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:56:40.941Z,B,1,/yapay-zeka,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,37,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:56:42.387Z,B,1,/yapay-zeka,n,0,2,0,beklenmeyen sayfa (/yapay-zeka),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:57:07.299Z,B,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,1,1,1525,loading,0,1,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T19:57:50.335Z,B,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,back_forward,1,0,,,,,0,43,56,1526,2334,2048,5321,93,28273,4,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T19:57:58.044Z,B,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,0,1,2004,interactive,0,1,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:58:36.007Z,D,1,/kreatif-produksiyon,n,0,1,0,,bağlantı,navigate,back_forward,1,0,,,,,0,45,55,1303,2092,1743,5006,44,13380,2,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T19:58:43.321Z,D,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1410,loading,0,1,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:58:51.596Z,D,1,/e-ticaret-yonetimi,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,35,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:59:05.631Z,D,1,/e-ticaret-yonetimi,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,46,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T19:59:07.014Z,D,1,/e-ticaret-yonetimi,e,1000,1,0,beklenmeyen sayfa (/e-ticaret-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:59:13.344Z,B,1,/reklam-yonetimi,e,3000,1,0,gezinme 25 sn içinde başlamadı,bağlantı,,,0,0,,,,,0,,,,,,,,,,,,,,0,,0
+2026-11-27T19:59:14.793Z,B,1,/reklam-yonetimi,e,3000,2,0,beklenmeyen sayfa (/reklam-yonetimi) · 123 sn ara (ekran kilidi/arka plan olabilir),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T19:59:24.134Z,D,1,/e-ticaret-yonetimi,e,1000,2,0,,bağlantı,navigate,bfcache,0,1,1443,loading,0,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T19:59:56.954Z,D,1,/sosyal-medya,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,35,60,1286,1961,1802,5078,51,15504,4,0,ronin-m5-film.mp4,0x0,blocked,0,1,0
+2026-11-27T20:00:05.914Z,D,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,reload,0,1,2001,interactive,4,1,0,34,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:00:47.603Z,D,1,/reklam-yonetimi,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,39,58,1403,2511,1936,4955,72,21888,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:00:57.108Z,D,1,/reklam-yonetimi,e,3000,1,0,,bağlantı,navigate,back_forward,1,1,3001,complete,3,1,0,42,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T20:01:36.370Z,D,1,/ui-ux-tasarim,n,0,1,0,,bağlantı,navigate,bfcache,2,0,,,,,0,40,58,1556,2277,2071,5089,82,24940,1,0,ronin-m5-film.mp4,0x0,blocked,0,500,0
+2026-11-27T20:01:40.021Z,B,1,/ui-ux-tasarim,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (bfcache) · 138 sn ara (ekran kilidi/arka plan olabilir),,,,0,0,,,,,0,,,,,,,,,,,,,,0,,0
+2026-11-27T20:02:41.496Z,B,1,/ui-ux-tasarim,n,0,2,0,,bağlantı,navigate,bfcache,2,0,,,,,0,46,57,1405,2361,1909,5177,82,24932,1,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T20:02:48.762Z,B,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1213,loading,0,1,0,42,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:03:24.760Z,B,1,/yapay-zeka,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/yapay-zeka, back_forward)",bağlantı,navigate,,0,0,,,,,0,3986,56,1843,2043,2350,5367,76,23116,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:03:26.013Z,B,1,/yapay-zeka,n,0,2,0,beklenmeyen sayfa (/yapay-zeka),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:03:44.437Z,B,1,/yapay-zeka,e,1000,1,0,,bağlantı,,back_forward,1,1,1417,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T20:04:27.527Z,B,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,40,64,1695,2395,2198,5214,93,28287,4,0,ronin-m5-film.mp4,0x0,blocked,0,1,0
+2026-11-27T20:04:43.956Z,B,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2003,interactive,4,1,0,39,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T20:04:54.759Z,D,1,/kreatif-produksiyon,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,back_forward,,0,0,,,,,0,1832,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:05:22.028Z,D,1,/kreatif-produksiyon,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,45,,,,1768,5034,,,2,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:05:39.622Z,D,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1464,loading,0,1,0,46,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:06:04.979Z,D,1,/e-ticaret-yonetimi,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/e-ticaret-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,1825,53,1476,1689,2033,4801,50,15199,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:06:06.661Z,D,1,/e-ticaret-yonetimi,n,0,2,0,beklenmeyen sayfa (/e-ticaret-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:06:24.780Z,D,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1614,loading,0,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:06:52.816Z,D,1,/sosyal-medya,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, back_forward)",bağlantı,navigate,,0,0,,,,,0,3721,57,1646,1863,2146,5181,51,15503,4,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:06:54.211Z,D,1,/sosyal-medya,n,0,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:07:07.249Z,D,1,/sosyal-medya,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, back_forward)",bağlantı,navigate,,0,0,,,,,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:07:08.754Z,D,1,/sosyal-medya,e,2000,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:07:10.877Z,D,1,/reklam-yonetimi,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:07:23.537Z,B,1,/ui-ux-tasarim,n,0,1,0,gezinme 25 sn içinde başlamadı,bağlantı,,,0,0,,,,,0,,,,,,,,,,,,,,0,,0
+2026-11-27T20:07:24.928Z,B,1,/ui-ux-tasarim,n,0,2,0,beklenmeyen sayfa (/ui-ux-tasarim) · 104 sn ara (ekran kilidi/arka plan olabilir),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:07:31.837Z,B,1,/ui-ux-tasarim,e,500,1,0,beklenmeyen sayfa (/reklam-yonetimi) · 111 sn ara (ekran kilidi/arka plan olabilir),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:07:51.199Z,B,1,/ui-ux-tasarim,e,500,2,0,,bağlantı,navigate,reload,0,1,1691,interactive,0,1,0,46,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:08:31.139Z,B,1,/yapay-zeka,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,41,58,1227,1960,1738,5007,76,23120,3,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T20:08:38.454Z,B,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1263,loading,0,1,0,43,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:08:42.865Z,B,1,/uygulama-gelistirme,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,back_forward,,0,0,,,,,0,1940,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:09:02.935Z,B,1,/uygulama-gelistirme,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:09:16.494Z,B,1,/uygulama-gelistirme,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/uygulama-gelistirme, back_forward)",bağlantı,navigate,,0,0,,,,,0,43,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:09:17.934Z,B,1,/uygulama-gelistirme,e,2000,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:09:19.869Z,D,1,/kreatif-produksiyon,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:10:03.572Z,D,1,/kreatif-produksiyon,n,0,2,0,"geri dönüş ana sayfaya ulaşmadı (/kreatif-produksiyon, back_forward)",bağlantı,navigate,,0,0,,,,,0,11288,57,1388,1676,2180,4940,44,13392,2,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:10:05.074Z,D,1,/kreatif-produksiyon,e,500,1,0,beklenmeyen sayfa (/kreatif-produksiyon),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:10:22.697Z,D,1,/kreatif-produksiyon,e,500,2,0,,bağlantı,,bfcache,0,1,1736,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:10:52.492Z,D,1,/e-ticaret-yonetimi,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,36,59,1393,2044,1910,5189,50,15210,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:10:59.515Z,D,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,,bfcache,0,1,1334,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:11:31.694Z,D,1,/sosyal-medya,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,38,60,1774,2463,2282,5549,51,15508,4,0,ronin-m5-film.mp4,0x0,blocked,0,1,0
+2026-11-27T20:11:41.308Z,D,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,navigate,0,1,2000,interactive,4,1,0,43,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:12:36.830Z,D,1,/reklam-yonetimi,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,41,61,1356,2124,1609,4878,72,21888,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:14:31.074Z,B,1,/ui-ux-tasarim,e,500,1,0,gezinme 25 sn içinde başlamadı,bağlantı,,,0,0,,,,,0,,,,,,,,,,,ronin-m5-film.mp4,0x0,loading,0,,0
+2026-11-27T20:14:32.395Z,B,1,/ui-ux-tasarim,e,500,2,0,beklenmeyen sayfa (/ui-ux-tasarim) · 113 sn ara (ekran kilidi/arka plan olabilir),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:14:33.154Z,D,1,/yapay-zeka,e,1000,2,0,,bağlantı,navigate,bfcache,1,1,1290,loading,0,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T20:15:17.381Z,D,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,45,57,1275,2381,2112,5380,93,28272,4,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:15:29.503Z,D,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2000,complete,4,1,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,503,0
+2026-11-27T20:15:59.107Z,E,1,/kreatif-produksiyon,n,0,1,0,,bağlantı,back_forward,back_forward,1,0,,,,,0,2446,53,1651,1821,2185,1651,44,13375,2,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:16:02.066Z,B,1,/yapay-zeka,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (bfcache),,,,0,0,,,,,0,,,,,,,,,,,,,,0,,0
+2026-11-27T20:16:48.829Z,B,1,/yapay-zeka,n,0,2,0,"geri dönüş ana sayfaya ulaşmadı (/yapay-zeka, back_forward)",bağlantı,navigate,,0,0,,,,,0,3885,63,1919,2263,2682,5464,76,23120,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:16:50.471Z,B,1,/yapay-zeka,e,1000,1,0,beklenmeyen sayfa (/yapay-zeka),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:17:08.900Z,B,1,/yapay-zeka,e,1000,2,0,,bağlantı,navigate,bfcache,2,1,1431,loading,0,1,0,46,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T20:17:52.203Z,B,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,34,56,1326,2029,1597,4885,93,28284,4,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:18:07.484Z,B,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2001,interactive,4,1,0,39,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T20:18:18.338Z,D,1,/kreatif-produksiyon,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,back_forward,,0,0,,,,,0,1984,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:18:43.080Z,D,1,/kreatif-produksiyon,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,44,,,,1741,5018,,,2,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:19:00.133Z,D,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,,bfcache,0,1,1354,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:19:30.115Z,D,1,/e-ticaret-yonetimi,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,32,58,1506,2262,2023,5287,50,15205,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:19:37.075Z,D,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,,bfcache,0,1,1249,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:20:17.368Z,D,1,/sosyal-medya,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,31,60,1347,2123,1605,4870,51,15508,4,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:20:25.802Z,D,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2000,interactive,4,1,0,43,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,500,0
+2026-11-27T20:22:51.377Z,B,1,/yapay-zeka,n,0,1,0,gezinme 25 sn içinde başlamadı,bağlantı,,,0,0,,,,,0,,,,,,,,,,,,,,0,,0
+2026-11-27T20:22:52.797Z,B,1,/yapay-zeka,n,0,2,0,beklenmeyen sayfa (/yapay-zeka) · 142 sn ara (ekran kilidi/arka plan olabilir),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:23:02.302Z,D,1,/yapay-zeka,e,1000,2,0,,bağlantı,navigate,bfcache,0,1,1259,loading,0,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:23:44.994Z,D,1,/uygulama-gelistirme,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/uygulama-gelistirme, back_forward)",bağlantı,navigate,,0,0,,,,,0,5793,57,1512,1727,2325,5088,93,28279,4,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:23:46.380Z,D,1,/uygulama-gelistirme,n,0,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:23:59.552Z,D,1,/uygulama-gelistirme,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/uygulama-gelistirme, back_forward)",bağlantı,navigate,,0,0,,,,,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:24:01.070Z,D,1,/uygulama-gelistirme,e,2000,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:24:03.137Z,E,1,/kreatif-produksiyon,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:24:33.719Z,E,1,/kreatif-produksiyon,n,0,2,0,"geri dönüş ana sayfaya ulaşmadı (/kreatif-produksiyon, back_forward)",bağlantı,navigate,,0,0,,,,,0,4116,57,1404,1654,2160,1404,44,13376,2,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:24:35.288Z,E,1,/kreatif-produksiyon,e,500,1,0,beklenmeyen sayfa (/kreatif-produksiyon),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:24:50.264Z,E,1,/kreatif-produksiyon,e,500,2,0,,bağlantı,navigate,bfcache,1,1,1426,loading,0,0,0,42,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:25:14.838Z,E,1,/e-ticaret-yonetimi,n,0,1,0,,bağlantı,navigate,bfcache,0,0,,,,,0,40,56,1301,2068,1563,1301,50,15184,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:25:31.443Z,E,1,/e-ticaret-yonetimi,e,1000,1,0,"geri dönüş ana sayfaya ulaşmadı (/e-ticaret-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,7309,62,1523,1853,2055,1523,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:25:33.025Z,E,1,/e-ticaret-yonetimi,e,1000,2,0,beklenmeyen sayfa (/e-ticaret-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:25:43.172Z,E,1,/sosyal-medya,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,39,,,,1535,1279,,,4,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:25:44.439Z,E,1,/sosyal-medya,n,0,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:26:08.255Z,E,1,/sosyal-medya,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, navigate)",bağlantı,navigate,,0,0,,,,,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:26:08.853Z,E,1,/sosyal-medya,e,2000,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:26:11.100Z,E,1,/reklam-yonetimi,n,0,1,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:26:21.657Z,E,1,/reklam-yonetimi,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,42,,,,1848,1347,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:26:23.195Z,E,1,/reklam-yonetimi,e,3000,1,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:26:41.421Z,E,1,/reklam-yonetimi,e,3000,2,0,"geri dönüş ana sayfaya ulaşmadı (/reklam-yonetimi, navigate)",bağlantı,navigate,,0,0,,,,,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:26:42.749Z,E,1,/ui-ux-tasarim,n,0,1,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:26:44.581Z,E,1,/ui-ux-tasarim,n,0,2,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:27:00.121Z,E,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,navigate,reload,0,1,1296,interactive,0,0,0,39,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:27:03.823Z,B,1,/yapay-zeka,e,1000,1,0,,bağlantı,,bfcache,0,1,1675,loading,0,0,1,,,,,,,,,,,,,,0,0,0
+2026-11-27T20:27:38.973Z,E,1,/yapay-zeka,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,41,153,1540,2339,1791,1539,76,23096,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:27:46.351Z,E,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1330,loading,0,0,0,43,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:27:49.129Z,B,1,/uygulama-gelistirme,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,266,,,,,1826,,,0,0,ronin-m5-film.mp4,0x0,paused,0,,0
+2026-11-27T20:27:50.463Z,B,1,/uygulama-gelistirme,n,0,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:28:11.101Z,B,1,/uygulama-gelistirme,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/uygulama-gelistirme, navigate)",bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:28:11.401Z,B,1,/uygulama-gelistirme,e,2000,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:28:12.820Z,D,1,/kreatif-produksiyon,n,0,1,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:28:25.821Z,D,1,/kreatif-produksiyon,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:28:27.225Z,D,1,/kreatif-produksiyon,e,500,1,0,beklenmeyen sayfa (/kreatif-produksiyon),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:28:44.826Z,D,1,/kreatif-produksiyon,e,500,2,0,,bağlantı,navigate,bfcache,0,1,1432,loading,0,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:29:19.032Z,D,1,/e-ticaret-yonetimi,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/e-ticaret-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,10235,66,1693,2033,2452,5220,50,15215,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:29:20.591Z,D,1,/e-ticaret-yonetimi,n,0,2,0,beklenmeyen sayfa (/e-ticaret-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:29:37.947Z,D,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1379,loading,0,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:30:08.569Z,D,1,/sosyal-medya,n,0,1,0,,bağlantı,navigate,back_forward,1,0,,,,,0,1932,54,1196,1376,1697,4711,51,15511,4,0,ronin-m5-film.mp4,0x0,blocked,0,503,0
+2026-11-27T20:30:19.504Z,D,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,navigate,0,1,2001,interactive,4,1,0,35,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:30:56.327Z,D,1,/reklam-yonetimi,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,42,58,1422,2139,1943,5205,72,21896,3,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:31:22.698Z,D,1,/reklam-yonetimi,e,3000,1,0,,bağlantı,navigate,navigate,0,1,3001,complete,3,1,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:32:01.999Z,D,1,/ui-ux-tasarim,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,41,59,1255,2130,1772,5042,82,24928,1,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T20:32:09.369Z,D,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1395,loading,0,1,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:32:57.520Z,D,1,/yapay-zeka,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,38,59,1492,2124,1996,5016,76,23111,3,0,ronin-m5-film.mp4,0x0,blocked,0,753,0
+2026-11-27T20:33:04.967Z,D,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1396,loading,0,1,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:33:07.684Z,D,1,/uygulama-gelistirme,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,32,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:33:09.171Z,D,1,/uygulama-gelistirme,n,0,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:33:27.755Z,D,1,/uygulama-gelistirme,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/uygulama-gelistirme, navigate)",bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:33:28.156Z,D,1,/uygulama-gelistirme,e,2000,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:33:29.760Z,E,1,/kreatif-produksiyon,n,0,1,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:33:40.172Z,E,1,/kreatif-produksiyon,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,43,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:33:41.996Z,E,1,/kreatif-produksiyon,e,500,1,0,beklenmeyen sayfa (/kreatif-produksiyon),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:33:55.497Z,E,1,/kreatif-produksiyon,e,500,2,0,,bağlantı,,bfcache,0,1,1326,loading,0,0,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:34:12.591Z,E,1,/e-ticaret-yonetimi,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,37,,,,1914,1404,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:34:24.772Z,E,1,/e-ticaret-yonetimi,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,44,,,,1924,1409,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:34:38.943Z,E,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1268,loading,0,0,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:35:07.117Z,E,1,/sosyal-medya,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, back_forward)",bağlantı,navigate,,0,0,,,,,0,7097,60,1548,1777,2057,1548,51,15490,4,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:35:08.907Z,E,1,/sosyal-medya,n,0,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:35:19.529Z,E,1,/sosyal-medya,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, back_forward)",bağlantı,navigate,,0,0,,,,,0,41,60,1389,,1905,1388,,,4,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:35:21.246Z,E,1,/sosyal-medya,e,2000,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:35:23.274Z,E,1,/reklam-yonetimi,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:36:05.354Z,E,1,/reklam-yonetimi,n,0,2,0,"geri dönüş ana sayfaya ulaşmadı (/reklam-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,7032,60,1534,1774,2059,1545,72,21882,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:36:06.644Z,E,1,/reklam-yonetimi,e,3000,1,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:36:17.504Z,E,1,/reklam-yonetimi,e,3000,2,0,"geri dönüş ana sayfaya ulaşmadı (/reklam-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:36:18.911Z,E,1,/ui-ux-tasarim,n,0,1,0,beklenmeyen sayfa (/reklam-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:36:22.055Z,E,1,/ui-ux-tasarim,n,0,2,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:36:43.299Z,E,1,/ui-ux-tasarim,e,500,1,0,"geri dönüş ana sayfaya ulaşmadı (/ui-ux-tasarim, navigate)",bağlantı,navigate,,0,0,,,,,0,43,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:36:57.471Z,E,1,/ui-ux-tasarim,e,500,2,0,,bağlantı,,bfcache,0,1,1138,loading,0,0,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:37:00.532Z,E,1,/yapay-zeka,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,32,,,,2013,1506,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:37:02.014Z,E,1,/yapay-zeka,n,0,2,0,beklenmeyen sayfa (/yapay-zeka),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:37:27.711Z,E,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,1,1,1256,loading,0,0,0,39,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,1,0
+2026-11-27T20:38:07.197Z,E,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,43,57,1350,2105,1609,1349,93,28257,4,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:38:18.075Z,E,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2000,interactive,4,0,0,39,80,1382,,1645,1382,,,4,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:38:28.396Z,R2,1,/kreatif-produksiyon,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,back_forward,,0,0,,,,,0,1746,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,,0
+2026-11-27T20:39:00.308Z,R2,1,/kreatif-produksiyon,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,45,,,,1798,4814,,,2,0,ronin-m5-film-2x.mp4,0x0,blocked,0,,0
+2026-11-27T20:39:18.030Z,R2,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1717,loading,0,1,0,46,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,1,0
+2026-11-27T20:39:22.365Z,R2,1,/e-ticaret-yonetimi,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,back_forward,,0,0,,,,,0,1757,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,,0
+2026-11-27T20:40:05.053Z,R2,1,/e-ticaret-yonetimi,n,0,2,0,,bağlantı,navigate,navigate,0,0,,,,,0,45,58,1221,2023,1736,4999,50,15207,3,0,ronin-m5-film-2x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:40:12.297Z,R2,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1459,interactive,0,1,0,45,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:40:43.018Z,R2,1,/sosyal-medya,n,0,1,0,,bağlantı,back_forward,back_forward,1,0,,,,,0,1709,54,1520,1699,2069,5084,51,15508,4,0,ronin-m5-film-2x.mp4,0x0,blocked,0,502,0
+2026-11-27T20:41:02.547Z,R2,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,navigate,0,1,2001,complete,4,1,0,41,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:41:39.257Z,R2,1,/reklam-yonetimi,n,0,1,0,,bağlantı,navigate,back_forward,1,0,,,,,0,42,57,1545,2270,1798,5343,72,21903,3,0,ronin-m5-film-2x.mp4,0x0,blocked,0,501,0
+2026-11-27T20:41:54.474Z,R2,1,/reklam-yonetimi,e,3000,1,0,,bağlantı,navigate,navigate,0,1,3002,complete,3,1,0,41,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:42:34.152Z,R2,1,/ui-ux-tasarim,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,44,57,1383,2086,1646,5195,82,24931,1,0,ronin-m5-film-2x.mp4,0x0,blocked,0,501,0
+2026-11-27T20:42:41.727Z,R2,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,,bfcache,0,1,1436,loading,0,1,1,,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:43:21.510Z,R2,1,/yapay-zeka,n,0,1,0,,bağlantı,navigate,bfcache,1,0,,,,,0,36,62,1276,2017,1780,5074,76,23116,3,0,ronin-m5-film-2x.mp4,0x0,blocked,0,502,0
+2026-11-27T20:43:29.067Z,R2,1,/yapay-zeka,e,1000,1,0,,bağlantı,,bfcache,0,1,1594,loading,0,0,1,,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:44:11.745Z,R2,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,back_forward,1,0,,,,,0,30,60,1594,2234,1864,5402,93,28287,4,0,ronin-m5-film-2x.mp4,0x0,blocked,0,501,0
+2026-11-27T20:44:24.138Z,R2,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2006,interactive,4,1,0,39,,,,,,,,,,ronin-m5-film-2x.mp4,0x0,blocked,0,501,0
+2026-11-27T20:44:33.352Z,R15,1,/kreatif-produksiyon,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:44:34.965Z,R15,1,/kreatif-produksiyon,n,0,2,0,beklenmeyen sayfa (/kreatif-produksiyon),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:44:51.641Z,R15,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,,bfcache,0,1,1401,loading,0,1,1,,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:45:23.061Z,R15,1,/e-ticaret-yonetimi,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,36,60,1358,2036,1872,5132,50,15200,3,0,ronin-m5-film-1.5x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:45:30.198Z,R15,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1420,loading,0,1,0,42,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:46:00.221Z,R15,1,/sosyal-medya,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,28,61,1498,2141,1754,5294,51,15504,4,0,ronin-m5-film-1.5x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:46:17.063Z,R15,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2015,interactive,4,1,0,41,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,502,0
+2026-11-27T20:46:37.484Z,R15,1,/reklam-yonetimi,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,42,,,,1920,5189,,,3,0,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:46:55.978Z,R15,1,/reklam-yonetimi,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,45,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:47:11.950Z,R15,1,/reklam-yonetimi,e,3000,1,1,OLASI ÇÖKME: geri dönüşte hizmet sayfası yeniden yüklendi,bağlantı,navigate,,0,0,,,,,0,46,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:47:14.051Z,R15,1,/reklam-yonetimi,e,3000,2,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:48:03.376Z,R15,1,/ui-ux-tasarim,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/ui-ux-tasarim, back_forward)",bağlantı,navigate,,0,0,,,,,0,4846,58,1584,1769,2122,5134,82,24927,1,0,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:48:04.821Z,R15,1,/ui-ux-tasarim,n,0,2,0,beklenmeyen sayfa (/ui-ux-tasarim),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:48:19.830Z,R15,1,/ui-ux-tasarim,e,500,1,1,OLASI ÇÖKME: geri dönüşte hizmet sayfası yeniden yüklendi,bağlantı,navigate,,0,0,,,,,0,45,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:48:37.341Z,R15,1,/ui-ux-tasarim,e,500,2,0,,bağlantı,navigate,bfcache,0,1,1522,loading,0,1,0,44,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:49:05.090Z,R15,1,/yapay-zeka,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,36,,,,2023,5289,,,3,0,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:49:18.958Z,R15,1,/yapay-zeka,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (back_forward),bağlantı,navigate,,0,0,,,,,0,46,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:49:20.338Z,R15,1,/yapay-zeka,e,1000,1,0,beklenmeyen sayfa (/yapay-zeka),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:49:38.025Z,R15,1,/yapay-zeka,e,1000,2,0,,bağlantı,navigate,bfcache,0,1,1384,loading,0,1,0,44,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,0,0
+2026-11-27T20:50:27.318Z,R15,1,/uygulama-gelistirme,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/uygulama-gelistirme, back_forward)",bağlantı,navigate,,0,0,,,,,0,12504,58,1419,1667,1945,4975,93,28284,4,0,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:50:29.117Z,R15,1,/uygulama-gelistirme,n,0,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:50:42.524Z,R15,1,/uygulama-gelistirme,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/uygulama-gelistirme, back_forward)",bağlantı,navigate,,0,0,,,,,0,44,,,,,,,,,,ronin-m5-film-1.5x.mp4,0x0,blocked,0,,0
+2026-11-27T20:50:43.953Z,R15,1,/uygulama-gelistirme,e,2000,2,0,beklenmeyen sayfa (/uygulama-gelistirme),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:50:46.196Z,R1,1,/kreatif-produksiyon,n,0,1,1,OLASI ÇÖKME: ana sayfada (bekleme/kaydırma) yeniden yüklendi (reload),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:51:29.216Z,R1,1,/kreatif-produksiyon,n,0,2,0,"geri dönüş ana sayfaya ulaşmadı (/kreatif-produksiyon, back_forward)",bağlantı,navigate,,0,0,,,,,0,10692,61,1549,1827,2059,5084,44,13396,2,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:51:30.890Z,R1,1,/kreatif-produksiyon,e,500,1,0,beklenmeyen sayfa (/kreatif-produksiyon),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:51:48.348Z,R1,1,/kreatif-produksiyon,e,500,2,0,,bağlantı,,bfcache,0,1,1865,loading,0,1,1,,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:52:17.357Z,R1,1,/e-ticaret-yonetimi,n,0,1,0,,bağlantı,navigate,back_forward,1,0,,,,,0,37,61,1431,2148,1944,5210,50,15212,3,0,ronin-m5-film.mp4,0x0,blocked,0,501,0
+2026-11-27T20:52:24.734Z,R1,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,navigate,bfcache,0,1,1500,loading,0,1,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:52:30.621Z,R1,1,/sosyal-medya,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,39,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:52:45.552Z,R1,1,/sosyal-medya,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,46,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:53:10.205Z,R1,1,/sosyal-medya,e,2000,1,0,"geri dönüş ana sayfaya ulaşmadı (/sosyal-medya, navigate)",bağlantı,navigate,,0,0,,,,,0,41,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:53:10.807Z,R1,1,/sosyal-medya,e,2000,2,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:53:12.217Z,R1,1,/reklam-yonetimi,n,0,1,0,beklenmeyen sayfa (/sosyal-medya),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:53:41.039Z,R1,1,/reklam-yonetimi,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,45,,,,1894,4918,,,3,0,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:54:05.963Z,R1,1,/reklam-yonetimi,e,3000,1,0,,bağlantı,navigate,navigate,0,1,3001,complete,3,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:54:45.373Z,R1,1,/ui-ux-tasarim,n,0,1,0,,bağlantı,navigate,bfcache,2,0,,,,,0,43,60,1405,2154,1920,5197,82,24936,1,0,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T20:54:53.015Z,R1,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1505,loading,0,1,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:55:05.564Z,R1,1,/yapay-zeka,n,0,1,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (navigate),bağlantı,navigate,,0,0,,,,,0,37,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:55:21.160Z,R1,1,/yapay-zeka,n,0,2,1,OLASI ÇÖKME: hizmet sayfası üzerindeyken yeniden yüklendi (reload),bağlantı,navigate,,0,0,,,,,0,46,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,,0
+2026-11-27T20:55:47.525Z,R1,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,1,1,1265,loading,0,1,0,45,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,502,0
+2026-11-27T20:56:30.556Z,R1,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,41,57,1370,2295,1885,5149,93,28276,4,0,ronin-m5-film.mp4,0x0,blocked,0,0,0
+2026-11-27T20:56:44.882Z,R1,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2001,interactive,4,1,0,40,,,,,,,,,,ronin-m5-film.mp4,0x0,blocked,0,500,0
+2026-11-27T20:57:20.469Z,RP,1,/kreatif-produksiyon,n,0,1,0,,bağlantı,back_forward,back_forward,1,0,,,,,0,1854,54,1879,2087,2379,5400,44,13396,2,0,poster-only,0x0,blocked,0,501,0
+2026-11-27T20:57:27.546Z,RP,1,/kreatif-produksiyon,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1360,loading,0,1,0,38,,,,,,,,,,poster-only,0x0,blocked,0,0,0
+2026-11-27T20:57:57.297Z,RP,1,/e-ticaret-yonetimi,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/e-ticaret-yonetimi, back_forward)",bağlantı,navigate,,0,0,,,,,0,5774,58,1712,1907,2213,5230,50,15210,3,0,poster-only,0x0,blocked,0,,0
+2026-11-27T20:57:58.950Z,RP,1,/e-ticaret-yonetimi,n,0,2,0,beklenmeyen sayfa (/e-ticaret-yonetimi),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T20:58:17.567Z,RP,1,/e-ticaret-yonetimi,e,1000,1,0,,bağlantı,,bfcache,2,1,1263,loading,0,1,1,,,,,,,,,,,poster-only,0x0,blocked,0,752,0
+2026-11-27T20:58:51.837Z,RP,1,/sosyal-medya,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,40,56,1755,2409,2010,5283,51,15540,4,0,poster-only,0x0,blocked,0,0,0
+2026-11-27T20:59:00.884Z,RP,1,/sosyal-medya,e,2000,1,0,,bağlantı,navigate,reload,0,1,2000,complete,4,1,0,37,,,,,,,,,,poster-only,0x0,blocked,0,0,0
+2026-11-27T20:59:43.599Z,RP,1,/reklam-yonetimi,n,0,1,0,,bağlantı,navigate,navigate,0,0,,,,,0,41,58,1247,2140,1770,5036,72,21888,3,0,poster-only,0x0,blocked,0,0,0
+2026-11-27T20:59:53.705Z,RP,1,/reklam-yonetimi,e,3000,1,0,,bağlantı,navigate,reload,0,1,3000,complete,3,1,0,42,,,,,,,,,,poster-only,0x0,blocked,0,0,0
+2026-11-27T21:00:32.986Z,RP,1,/ui-ux-tasarim,n,0,1,0,,bağlantı,navigate,bfcache,2,0,,,,,0,43,57,1288,2023,1811,5075,82,24942,1,0,poster-only,0x0,blocked,0,501,0
+2026-11-27T21:00:40.426Z,RP,1,/ui-ux-tasarim,e,500,1,0,,bağlantı,navigate,bfcache,0,1,1492,loading,0,1,0,42,,,,,,,,,,poster-only,0x0,blocked,0,0,0
+2026-11-27T21:01:25.421Z,RP,1,/yapay-zeka,n,0,1,0,"geri dönüş ana sayfaya ulaşmadı (/yapay-zeka, back_forward)",bağlantı,navigate,,0,0,,,,,0,13199,63,1589,1805,2138,5152,76,23108,3,0,poster-only,0x0,blocked,0,,0
+2026-11-27T21:01:27.379Z,RP,1,/yapay-zeka,n,0,2,0,beklenmeyen sayfa (/yapay-zeka),,,,0,0,,,,,0,,,,,,,,,,,,,,,,0
+2026-11-27T21:01:46.448Z,RP,1,/yapay-zeka,e,1000,1,0,,bağlantı,navigate,bfcache,2,1,1551,loading,0,1,0,44,,,,,,,,,,poster-only,0x0,blocked,0,751,0
+2026-11-27T21:02:29.436Z,RP,1,/uygulama-gelistirme,n,0,1,0,,bağlantı,navigate,reload,0,0,,,,,0,27,55,1293,2003,1818,4834,93,28279,4,0,poster-only,0x0,blocked,0,0,0
+2026-11-27T21:02:47.957Z,RP,1,/uygulama-gelistirme,e,2000,1,0,,bağlantı,navigate,bfcache,1,1,2001,interactive,4,1,0,40,,,,,,,,,,poster-only,0x0,blocked,0,502,0

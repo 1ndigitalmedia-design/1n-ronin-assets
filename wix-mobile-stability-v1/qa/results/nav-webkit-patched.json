@@ -1,0 +1,191 @@
+[
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "home: MENU→Hizmetler kaydırma",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":76,\"hdrBottom\":64,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "iç sayfa: MENU→Hizmetler → /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":76,\"hdrBottom\":64,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "geri → hizmet sayfası",
+  "ok": true,
+  "info": "https://www.reklam1n.com/kreatif-produksiyon"
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "ileri → /#hizmetler-ozet konumu",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":76,\"hdrBottom\":64,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "yenileme: çapa temizlenir, en üst",
+  "ok": true,
+  "info": "{\"hash\":\"\",\"y\":0}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "doğrudan URL /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"top\":76,\"hash\":\"#hizmetler-ozet\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "/n1-full-test → /",
+  "ok": true,
+  "info": "https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test"
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "1N kaynaklı sayfa hatası yok",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "BR": "webkit",
+  "dev": "mobile",
+  "name": "aktif nav sürümü",
+  "ok": true,
+  "info": "1.0.2"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "home: MENU→Hizmetler kaydırma",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":84,\"hdrBottom\":72,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "iç sayfa: MENU→Hizmetler → /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":84,\"hdrBottom\":72,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "geri → hizmet sayfası",
+  "ok": true,
+  "info": "https://www.reklam1n.com/kreatif-produksiyon"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "ileri → /#hizmetler-ozet konumu",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":84,\"hdrBottom\":72,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "yenileme: çapa temizlenir, en üst",
+  "ok": true,
+  "info": "{\"hash\":\"\",\"y\":0}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "doğrudan URL /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"top\":84,\"hash\":\"#hizmetler-ozet\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "/n1-full-test → /",
+  "ok": true,
+  "info": "https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test"
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "1N kaynaklı sayfa hatası yok",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "BR": "webkit",
+  "dev": "tablet",
+  "name": "aktif nav sürümü",
+  "ok": true,
+  "info": "1.0.2"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "home: MENU→Hizmetler kaydırma",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":100,\"hdrBottom\":88,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "iç sayfa: MENU→Hizmetler → /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":100,\"hdrBottom\":88,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "geri → hizmet sayfası",
+  "ok": true,
+  "info": "https://www.reklam1n.com/kreatif-produksiyon"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "ileri → /#hizmetler-ozet konumu",
+  "ok": true,
+  "info": "{\"ok\":true,\"top\":100,\"hdrBottom\":88,\"hash\":\"#hizmetler-ozet\",\"path\":\"/\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "yenileme: çapa temizlenir, en üst",
+  "ok": true,
+  "info": "{\"hash\":\"\",\"y\":0}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "doğrudan URL /#hizmetler-ozet",
+  "ok": true,
+  "info": "{\"top\":100,\"hash\":\"#hizmetler-ozet\"}"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "/n1-full-test → /",
+  "ok": true,
+  "info": "https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test"
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "1N kaynaklı sayfa hatası yok",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "BR": "webkit",
+  "dev": "desktop",
+  "name": "aktif nav sürümü",
+  "ok": true,
+  "info": "1.0.2"
+ }
+]

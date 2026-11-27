@@ -1,0 +1,27 @@
+webkit mobile PASS home: MENU→Hizmetler kaydırma {"ok":true,"top":76,"hdrBottom":64,"hash":"#hizmetler-ozet","path":"/"}
+webkit mobile PASS iç sayfa: MENU→Hizmetler → /#hizmetler-ozet {"ok":true,"top":76,"hdrBottom":64,"hash":"#hizmetler-ozet","path":"/"}
+webkit mobile PASS geri → hizmet sayfası https://www.reklam1n.com/kreatif-produksiyon
+webkit mobile PASS ileri → /#hizmetler-ozet konumu {"ok":true,"top":76,"hdrBottom":64,"hash":"#hizmetler-ozet","path":"/"}
+webkit mobile PASS yenileme: çapa temizlenir, en üst {"hash":"","y":0}
+webkit mobile PASS doğrudan URL /#hizmetler-ozet {"top":76,"hash":"#hizmetler-ozet"}
+webkit mobile PASS /n1-full-test → / https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test
+webkit mobile PASS 1N kaynaklı sayfa hatası yok 
+webkit mobile PASS aktif nav sürümü 1.0.2
+webkit tablet PASS home: MENU→Hizmetler kaydırma {"ok":true,"top":84,"hdrBottom":72,"hash":"#hizmetler-ozet","path":"/"}
+webkit tablet PASS iç sayfa: MENU→Hizmetler → /#hizmetler-ozet {"ok":true,"top":84,"hdrBottom":72,"hash":"#hizmetler-ozet","path":"/"}
+webkit tablet PASS geri → hizmet sayfası https://www.reklam1n.com/kreatif-produksiyon
+webkit tablet PASS ileri → /#hizmetler-ozet konumu {"ok":true,"top":84,"hdrBottom":72,"hash":"#hizmetler-ozet","path":"/"}
+webkit tablet PASS yenileme: çapa temizlenir, en üst {"hash":"","y":0}
+webkit tablet PASS doğrudan URL /#hizmetler-ozet {"top":84,"hash":"#hizmetler-ozet"}
+webkit tablet PASS /n1-full-test → / https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test
+webkit tablet PASS 1N kaynaklı sayfa hatası yok 
+webkit tablet PASS aktif nav sürümü 1.0.2
+webkit desktop PASS home: MENU→Hizmetler kaydırma {"ok":true,"top":100,"hdrBottom":88,"hash":"#hizmetler-ozet","path":"/"}
+webkit desktop PASS iç sayfa: MENU→Hizmetler → /#hizmetler-ozet {"ok":true,"top":100,"hdrBottom":88,"hash":"#hizmetler-ozet","path":"/"}
+webkit desktop PASS geri → hizmet sayfası https://www.reklam1n.com/kreatif-produksiyon
+webkit desktop PASS ileri → /#hizmetler-ozet konumu {"ok":true,"top":100,"hdrBottom":88,"hash":"#hizmetler-ozet","path":"/"}
+webkit desktop PASS yenileme: çapa temizlenir, en üst {"hash":"","y":0}
+webkit desktop PASS doğrudan URL /#hizmetler-ozet {"top":100,"hash":"#hizmetler-ozet"}
+webkit desktop PASS /n1-full-test → / https://www.reklam1n.com/ chain:https://www.reklam1n.com/n1-full-test
+webkit desktop PASS 1N kaynaklı sayfa hatası yok 
+webkit desktop PASS aktif nav sürümü 1.0.2
