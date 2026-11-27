@@ -10,6 +10,7 @@
 - QA: A/B ön yükleme, nav yükleme sırası, test anahtarı, credentials, medya benchmark, birim testi, uzun bekleme süreli 21 döngü.
 
 ### Değişti
+- Uzak-bırakma (ekran dışı video kaynağını bırakma) **varsayılan kapalı** (`bdd12eb`): 2 eşleştirilmiş WebKit koşusunda süreç belleğini düşürmedi; yalnızca `?n1far=1` ile test cihazında açılır.
 - Ön yükleme 36 URL'den yalnız ana sayfanın 21 URL'sine indi (iç sayfa/ortak listeler fayda göstermedi).
 - Raporlar: ölçüm kapsamının sınırları açıkça yazıldı; V1.0'daki "birikim yok" ifadesi yalnızca ölçülen sayaçlarla sınırlandırıldı.
 

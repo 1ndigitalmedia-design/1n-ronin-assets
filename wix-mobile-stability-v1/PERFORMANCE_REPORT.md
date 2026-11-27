@@ -26,7 +26,7 @@ Yorum:
 WebKit süreç belleği postere göre: 1× +71 MB, 1,5× +99 MB, **2× +129 MB** (3/3 tekrar tutarlı). Chromium: +44 / +68 / +95 MB. Ayrıntı: MOBILE_MEDIA_BENCHMARK.md.
 
 ## V1.1 — Uzun bekleme süreli 21 döngü (madde 7)
-TEST_REPORT.md §10'da.
+Eşleştirilmiş koşular, 6 sn bekleme. WebKit en büyük süreç ortalaması: canlı 1433 / 1524 MB (iki koşu), V1.1 uzak-bırakma açık 1556 / 1499 MB, uzak-bırakma kapalı 1432 MB (tek koşu). Chromium: canlı 448, V1.1 446 MB. Bırakma çalışıyor (tamponlu video 46/51 → 0/53) ama süreç belleği düşmüyor → uzak-bırakma varsayılan kapalı. Tablolar: TEST_REPORT.md §10, `qa/results/long-summary.md`.
 
 ---
 

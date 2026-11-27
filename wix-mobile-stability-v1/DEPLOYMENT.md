@@ -2,7 +2,7 @@
 
 **Bu çalışmada Wix'te hiçbir şey değiştirilmedi ve yayınlanmadı.** Yapıştırılacak kodlar elle yazım hatası olmasın diye dosya olarak hazır: `wix-custom-code/`.
 
-Kod commit'i (CDN sabitlemesi): `1bd1f1e31d6e761f10c24a5398f06fe169279c73` — iki dosya da jsDelivr'den 200 ve depo ile bayt düzeyinde aynı doğrulandı.
+Kod commit'i (CDN sabitlemesi): `bdd12eb7eeb1abdd3c0fada821f5ff3d19d206a2` — iki dosya da jsDelivr'den 200 ve depo ile bayt düzeyinde aynı doğrulandı.
 
 ## Aşama 1 — Gerçek cihaz testi (önerilen; normal ziyaretçiyi etkilemez)
 
@@ -14,6 +14,7 @@ Amaç: V1.1'i yalnızca test eden iPhone/iPad'de çalıştırmak. Diğer ziyaret
 | Mevcut "1N - Hizmetler Capa Navigasyonu" | Body - end | Tüm sayfalar | Her yeni sayfada | `wix-custom-code/04-test-switch-body-end.html` |
 
 - Test cihazında **bir kez** `https://www.reklam1n.com/?n1v11=1` açın; aynı sekme boyunca tüm sayfalarda V1.1 çalışır. Tanılama için `?n1v11=1&n1diag=1`.
+- Uzak-bırakmanın gerçek cihazdaki etkisini ayrıca karşılaştırmak için aynı sekmede `?n1far=1` (açık) / `?n1far=0` (kapalı, varsayılan).
 - Kapatmak için `?n1v11=0`. Sekmeyi kapatmak da sıfırlar (sessionStorage).
 - Normal ziyaretçide: head'de bayrak okuyan tek satır, body-end'de bugünkü v1.0.1 betiği ve hiçbir şey yüklemeyen bir satır içi kontrol. Playwright doğrulaması TEST_REPORT.md §9'da: normal yolda nav 1.0.1 ve stabilite yok, test yolunda 1.0.3 + 1.1.0.
 

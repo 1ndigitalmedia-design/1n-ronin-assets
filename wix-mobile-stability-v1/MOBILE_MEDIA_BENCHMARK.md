@@ -57,7 +57,7 @@ Gerçek çözücüler (iOS VideoToolbox dahil) havuz boyutunu kendi belirler. Bu
 
 | Seçenek | Bellek (WebKit, ölçülen) | Görsel kalite | Risk / not |
 |---|---|---|---|
-| **A. Mevcut 2× + V1.1 medya bırakma** (önerilen ilk adım) | 2× oynarken +129 MB; sayfadan ayrılınca / uzaktayken bırakılıyor | Değişmez | Kalite korunur. Etki, fiziksel cihaz testiyle doğrulanmalı |
+| **A. Mevcut 2× + V1.1 medya bırakma** (önerilen ilk adım) | 2× oynarken +129 MB; sayfadan ayrılınca (pagehide) bırakılıyor; uzak-bırakma ölçülebilir fayda göstermediği için varsayılan kapalı | Değişmez | Kalite korunur. Etki, fiziksel cihaz testiyle doğrulanmalı |
 | B. `mediaCapabilities` kapısı (`proposals/ronin-source-select-proposal.js`) | Cihaza bağlı | Yetenekli cihazda değişmez | iPhone'da ayırt edici olmayabilir (§4); önce gerçek cihazda `decodingInfo` sonucu okunmalı |
 | C. Mobilde tek 1,5× varlık (ana kaynaktan yeni kodlama) | +99 MB (2×'e göre −30 MB, −%23) | Hafif düşüş (≈1,3× büyütme) | Tasarım onayı + yeni varlık üretimi gerekir |
 | D. 1× zorlama | +71 MB (−58 MB, −%45) | Belirgin düşüş (≈2× büyütme) | Ronin kalitesini düşürür, önerilmez |

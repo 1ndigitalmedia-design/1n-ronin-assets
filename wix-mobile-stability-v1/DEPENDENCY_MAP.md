@@ -58,8 +58,8 @@ Ana sayfa öğesinin canlı öznitelikleri: `code-base=J 376e9ae1…/wix-full-v1
 
 | Dosya | Commit | Nerede yüklenecek | Kapsam |
 |---|---|---|---|
-| `wix-mobile-stability-v1/n1-nav-v1.0.3.js` | `1bd1f1e31d6e761f10c24a5398f06fe169279c73` | Wix özel kod, body end (v1.0.1'in yerine) | Kurumsal rotalar |
-| `wix-mobile-stability-v1/n1-stability-v1.1.js` | `1bd1f1e31d6e761f10c24a5398f06fe169279c73` | Wix özel kod, body end | Kurumsal rotalar, yalnız mobil/tablet profili |
+| `wix-mobile-stability-v1/n1-nav-v1.0.3.js` | `bdd12eb7eeb1abdd3c0fada821f5ff3d19d206a2` | Wix özel kod, body end (v1.0.1'in yerine) | Kurumsal rotalar |
+| `wix-mobile-stability-v1/n1-stability-v1.1.js` | `bdd12eb7eeb1abdd3c0fada821f5ff3d19d206a2` | Wix özel kod, body end | Kurumsal rotalar, yalnız mobil/tablet profili |
 | Satır içi head koruması (`wix-custom-code/01-production-head.html`) | — (ağ isteği yok) | Wix özel kod, head | Tüm sayfalar (yalnızca bir işaret yazar) |
 
 İki dosya da jsDelivr'den 200 ve depo dosyasıyla bayt düzeyinde aynı doğrulandı.

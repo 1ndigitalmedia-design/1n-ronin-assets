@@ -6,14 +6,15 @@
 
 | Test | Chromium | WebKit | Not |
 |---|---|---|---|
-| V1.1 işlevsel (kapsam, tanılama, BFCache ×2, ayrık video) | **12/12** | **12/12** | İlk turda 1 FAIL bulundu ve düzeltildi |
+| V1.1 işlevsel (kapsam, tanılama, varsayılan gözlemcisiz, BFCache ×2, ayrık video) | **13/13** | **13/13** | İlk turda 1 FAIL bulundu ve düzeltildi |
+| Video davranışı (varsayılan ve `?n1far=1`) | **8/8 + 8/8** | **8/8 + 8/8** | Kullanıcı duraklatması korunuyor |
 | Birim testi (uzak bırakma, src koruması, play() sarmalayıcı) | **5/5** | **5/5** | Yerel sayfa, `with_server.py` |
 | Wix kod yapılandırmaları (test anahtarı / üretim / geri dönüş), gerçek CDN | **8/8** | **8/8** | Canlı HTML yeniden yazılarak |
 | Nav yükleme sırası (7 senaryo) | korumayla 5/5 doğru; korumasız gecikmede **v1.0.1 kazandı** | korumayla 5/5 doğru | Koruma gerekli |
 | Ön yükleme A/B (5 varyant × 3 tur) | Ana sayfa −2,2/−2,4 sn; iç sayfalarda fayda yok | — | PERFORMANCE_REPORT V1.1 |
 | credentials include/omit | aynı önbellek isabeti | doğrulanamadı (WPE boyut vermiyor) | |
 | Ronin medya benchmark | +44/+68/+95 MB | +71/+99/+129 MB | MOBILE_MEDIA_BENCHMARK |
-| Uzun bekleme süreli 21 döngü | §10 | §10 | |
+| Uzun bekleme süreli 21 döngü (eşleştirilmiş) | bırakma çalışıyor; bellek farkı yok | bırakma çalışıyor; bellek düşmüyor (2 koşu) | Uzak-bırakma varsayılan kapalı |
 
 ## 9. V1.1 ayrıntılı test sonuçları
 Ham çıktı: `qa/results/v11-functional-results.txt`, `navorder-*.json`.
@@ -45,7 +46,28 @@ Yöntem: canlı ana sayfa HTML'i test sırasında yeniden yazıldı (head'e koru
 Normal ziyaretçi = canlı (nav 1.0.1, stabilite yok) · `?n1v11=1` → 1.0.3 + 1.1.0 · hizmet sayfasında ve geri dönüşte açık · `?n1v11=0` → canlı · üretim (01+02) → 1.0.3 + 1.1.0, /intelligence pasif · geri dönüş (05) → 1.0.1. İki motorda 8/8.
 
 ## 10. Uzun bekleme süreli 21 döngü (madde 7)
-{{LONG_TABLE}}
+Yöntem (`qa/scripts/cycle2.js`): ana sayfa → hizmet i → 5 adımda en alta kaydırma + **6 sn bekleme** (4 sn bırakma eşiği + IO gecikmesi kapsanır) → ölçüm → geri → ana sayfada en alta kaydırma + 6 sn bekleme → ölçüm. Varyantlar **aynı anda, eşleştirilmiş** koşuldu (aynı CPU yükü); her koşu kendi tarayıcı süreç ağacını ölçer. Uzak-bırakmanın gerçekten tetiklendiği bu testte V1.0 testindeki 2,8 sn / 4 sn uyumsuzluğu giderildi.
+
+| Koşu | Varyant | Hizmet sayfası bekleme sonrası tamponlu / toplam video | Bırakılan | En büyük süreç ort. / maks. / son 15 ort. (MB) | Hatalı döngü / asılı kalma / çökme |
+|---|---|---|---|---|---|
+| WebKit koşu 1 | canlı | 46 / 51 | 0 | 1433 / 1768 / 1642 | 3 / 1 / 0 |
+| WebKit koşu 1 | V1.1 | 0 / 53 | 47 | 1556 / 2087 / 1890 | 3 / 0 / 0 |
+| WebKit koşu 2 | canlı | 47 / 53 | 0 | 1524 / 1910 / 1760 | 3 / 0 / 0 |
+| WebKit koşu 2 | V1.1 | 1 / 43 | 38 | 1499 / 1984 / 1763 | 5 / 0 / 0 |
+| WebKit koşu 2 | V1.1 uzak-bırakma kapalı | 54 / 60 | 0 | 1432 / 1741 / 1614 | 0 / 0 / 0 |
+| Chromium | canlı | 54 / 60 | 0 | 448 / 635 / 446 | 0 / 0 / 0 |
+| Chromium | V1.1 | 0 / 60 | 54 | 446 / 634 / 423 | 0 / 0 / 0 |
+
+Tek sayfa çalkantı deneyi (WebKit, `/uygulama-gelistirme`, 12 × en alt/en üst, 6,5 sn bekleme, 2 tekrar, `qa/results/churn/`): canlı 634–646 MB, V1.1 640–661 MB, uzak-bırakma kapalı 643–654 MB → bırakma/geri yükleme çalkantısı bellek sızdırmıyor.
+
+**Sonuç ve karar:**
+- Uzak-bırakma kaynakları gerçekten serbest bırakıyor (WebKit hizmet sayfalarında tamponlu video 46/51 → 0/53; Chromium 54/60 → 0/60).
+- Buna rağmen WebKit süreç belleğinde ölçülebilir bir düşüş yok: iki koşuda V1.1 ortalaması canlının −%2 ile +%9 aralığında; canlının kendi koşular arası farkı %6 (1433 ↔ 1524 MB). Uzak-bırakma kapalı varyant kendi koşusunda en düşük (1432 MB), ancak tek örnek.
+- Karar: **uzak-bırakma varsayılan KAPALI** (`?n1far=1` ile yalnızca test cihazında açılır). `pagehide`/BFCache bırakma ve geri yükleme korunur; hedeflediği BFCache yolu bu ortamda oluşmadığı için ölçülemedi ve fiziksel cihazda test edilmelidir.
+- Asılı kalma: yalnızca canlı varyantta 1 kez (koşu 1, 17. döngü, kaydırma >30 sn). V1.0'daki ilk WebKit canlı koşusunda da 15. döngüde görülmüştü. Düzeltmeli varyantlarda 5 koşuda 0. Örneklem küçük; bu bir kanıt değil, gözlem.
+- Hatalı döngülerin tamamı `domcontentloaded` 30 sn zaman aşımı (ortamda engelli üçüncü taraf hostlar); varyantlar arasında sistematik değil (0–5).
+- Varsayılan yapılandırma (uzak kapalı) son kez doğrulandı: işlevsel 13/13, video 8/8 (iki motor, `?n1far=1` ile de 8/8), birim 5/5, yapılandırma 8/8.
+
 
 ## 11. Ölçüm kapsamının sınırları (V1.1 düzeltmesi)
 
@@ -170,5 +192,7 @@ Hazırlık (V1.1): Wix'te DEPLOYMENT.md **Aşama 1 (test anahtarı)** uygulanıp
 **M — Markalar:** iPhone ve iPad'de "Öne çıkan markalar" bölümünde 3 satırın da kaydığını, siyah boşluk olmadığını kontrol edin. Ekranı döndürüp tekrar bakın.
 
 **Windows masaüstü:** Ana sayfa ve 2 hizmet sayfasında görünümün değişmediğini kontrol edin (modül masaüstünde pasif).
+
+**V1.1 karşılaştırma planı (aynı cihaz, aynı Wi-Fi):** (1) `?n1v11=0` ile 21 döngü (bugünkü canlı), (2) `?n1v11=1` ile 21 döngü, (3) `?n1v11=1&n1far=1` ile 21 döngü. Her biri için uyarının çıktığı döngü numarası ve tanılama günlüğündeki `pageshow persisted=true` / `nav=reload` sayısı not edilir.
 
 Sonuçları (cihaz modeli, iOS sürümü, tarayıcı, döngü sayısı, uyarı çıktı mı, günlük ekran görüntüsü) bildirin.

@@ -12,7 +12,7 @@
 | B-06 | Yeni nav yüklenemezse | Koruma varken v1.0.3 hiç gelmezse hiçbir nav etkin olmaz (yerel çapa davranışı: Hizmetler bağlantısı yine çalışır, header ofseti olmadan) | Düşük | Senaryo F | Kabul edilen bozulma, rapor |
 | B-07 | Ronin 2× seçimi | Safari'de `deviceMemory` yok → tüm iPhone'lar 2× (WebKit'te 1×'e göre +58 MB) | Yüksek (aday) | MOBILE_MEDIA_BENCHMARK.md | Ölçüldü, üretime uygulanmadı |
 | B-08 | Wix ATS | `handleAccessTokens.inline.473e3296`: `client-session-bind` ve `sec-fetch-unsupported` çerezleri yoksa back_forward → reload (3/60 sn) | Yüksek (Wix) | WIX_SUPPORT_REPORT.md | Destek raporu hazır |
-| B-09 | Döngü testi bekleme süresi | V1.0 testinde kaydırma sonrası 2,8 sn bekleme < 4 sn bırakma eşiği → uzak-bırakma ölçülmemişti | Orta (test) | `qa/scripts/cycle2.js` (6 sn bekleme) | Yeniden ölçüldü (TEST_REPORT §10) |
+| B-09 | Döngü testi bekleme süresi | V1.0 testinde kaydırma sonrası 2,8 sn bekleme < 4 sn bırakma eşiği → uzak-bırakma ölçülmemişti | Orta (test) | `qa/scripts/cycle2.js` (6 sn bekleme) | Yeniden ölçüldü: bırakma çalışıyor, WebKit süreç belleği düşmüyor → uzak-bırakma varsayılan kapalı (F-14) |
 | B-10 | Tanılama | V1.0 parametresiz de sessionStorage'a günlük yazıyordu | Düşük | Kod | Düzeltildi (F-11) |
 | B-11 | src çakışması | Bileşen bırakılmış videoya yeni kaynak atarsa V1.0 geri yükleme eski kaynağı yazabilirdi | Düşük | Birim testi | Düzeltildi (F-12) |
 | B-12 | Ölçüm kapsamı | V1.0 raporundaki "belge içi birikim yok" ifadesi yalnızca ölçülen sayaçlar için geçerli | — | TEST_REPORT §11 | Düzeltildi (sınırlar açıkça yazıldı) |
