@@ -140,6 +140,7 @@
     var st = v.__n1rel; if (!st) return null;
     v.__n1rel = null; unwrap(v);
     if (!v.isConnected) return null;                       // ayrık öğe: kaynak geri yüklenmez
+    if (v.getAttribute('src')) return st;                  // bileşen bu arada yeni kaynak atadı (ör. yedek dosya): onun seçimi korunur
     if (st.t > 0.05) {
       var seek = function () { v.removeEventListener('loadedmetadata', seek); try { if (v.currentTime < 0.05 && isFinite(v.duration) && st.t < v.duration) v.currentTime = st.t; } catch (e) {} };
       v.addEventListener('loadedmetadata', seek);
