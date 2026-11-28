@@ -1,0 +1,125 @@
+[
+ {
+  "n": "320 px /insan-kaynaklari: yatay taşma yok, başlık satırları ekran içinde, gizli blok yok",
+  "ok": true,
+  "i": {
+   "overflowX": false,
+   "bad": [],
+   "maxLine": 235,
+   "vw": 320,
+   "hidden": 0
+  }
+ },
+ {
+  "n": "320 px /acik-pozisyonlar: yatay taşma yok, başlık satırları ekran içinde, gizli blok yok",
+  "ok": true,
+  "i": {
+   "overflowX": false,
+   "bad": [],
+   "maxLine": 243,
+   "vw": 320,
+   "hidden": 0
+  }
+ },
+ {
+  "n": "320 px /staj-programlari: yatay taşma yok, başlık satırları ekran içinde, gizli blok yok",
+  "ok": true,
+  "i": {
+   "overflowX": false,
+   "bad": [],
+   "maxLine": 252,
+   "vw": 320,
+   "hidden": 0
+  }
+ },
+ {
+  "n": "375 px /insan-kaynaklari: yatay taşma yok, başlık satırları ekran içinde, gizli blok yok",
+  "ok": true,
+  "i": {
+   "overflowX": false,
+   "bad": [],
+   "maxLine": 269,
+   "vw": 375,
+   "hidden": 0
+  }
+ },
+ {
+  "n": "375 px /acik-pozisyonlar: yatay taşma yok, başlık satırları ekran içinde, gizli blok yok",
+  "ok": true,
+  "i": {
+   "overflowX": false,
+   "bad": [],
+   "maxLine": 287,
+   "vw": 375,
+   "hidden": 0
+  }
+ },
+ {
+  "n": "375 px /staj-programlari: yatay taşma yok, başlık satırları ekran içinde, gizli blok yok",
+  "ok": true,
+  "i": {
+   "overflowX": false,
+   "bad": [],
+   "maxLine": 296,
+   "vw": 375,
+   "hidden": 0
+  }
+ },
+ {
+  "n": "hareket azaltma (1440 px): içerik hemen tam görünür, GSAP tween yok",
+  "ok": true,
+  "i": {
+   "op": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "tf": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "tweens": 0,
+   "rm": true
+  }
+ },
+ {
+  "n": "hareket azaltma (390 px): içerik hemen tam görünür, GSAP tween yok",
+  "ok": true,
+  "i": {
+   "op": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "tf": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "tweens": 0,
+   "rm": true
+  }
+ },
+ {
+  "n": "klavye: \"İnsan Kaynaklarına Dön\" odaklanabilir, görünür ve odak çerçevesi var",
+  "ok": true,
+  "i": {
+   "outline": "solid 2px rgb(162, 255, 0)",
+   "op": "1",
+   "inView": true
+  }
+ },
+ {
+  "n": "klavye: Enter ile /insan-kaynaklari",
+  "ok": true
+ }
+]
