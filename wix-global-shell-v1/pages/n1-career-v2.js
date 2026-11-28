@@ -26,7 +26,7 @@
   /* ---------- Onaylı kaynaklar (commit'e sabit) ---------- */
   var CDN = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@';
   var C648 = 'd24fa373d6d76c0218b3f3b77897a8c2ace04e5e';
-  var CCR = 'cce282464fb3eac460bb13b4d03286b250d65712';   /* KARİYER V1: header v13 (hibrit İK satırı) + site işaretlemesi v15 (kariyer menüsü) */
+  var CCR = '9bbcefd65becbc196baebea26600060b01af406c';   /* KARİYER V1: header v13 (hibrit İK satırı) + site işaretlemesi v15 (kariyer menüsü) */
   var CRESP = '09612df97e85978976d13edbd79dad0adcc1d1f1';
   var PATHS = {
     markup: CCR + '/wix-global-shell-v1/site/n1-site-markup-v16.js',
