@@ -6,7 +6,7 @@ const MOBILE = WIDTH <= 1024, H = WIDTH >= 1440 ? 900 : WIDTH >= 1024 ? 768 : WI
 const IOS = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7 Mobile/15E148 Safari/604.1';
 const CTX = MOBILE ? { viewport: { width: WIDTH, height: H }, deviceScaleFactor: 2, hasTouch: true, isMobile: BR === 'chromium', userAgent: WIDTH < 768 ? IOS : undefined } : { viewport: { width: WIDTH, height: H }, deviceScaleFactor: 1 };
 if (!CTX.userAgent) delete CTX.userAgent;
-const SH = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@' + (process.env.SHELL_SHA || '0000000000000000000000000000000000000000') + '/wix-global-shell-v1/' + (process.env.SHELL_FILE || 'n1-global-shell-v1-1.js');
+const SH = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@' + (process.env.SHELL_SHA || '0000000000000000000000000000000000000000') + '/wix-global-shell-v1/' + (process.env.SHELL_FILE || 'n1-global-shell-v1-2.js');
 const B = 'https://www.reklam1n.com';
 const EXP_ITEMS = [['Kısaca Biz', '/kisaca-biz'], ['Hizmetler', null], ['Markalar', '/markalar'], ['Akademi', '/reklam-ajansi'], ['İnsan Kaynakları', '/insan-kaynaklari'], ['İletişim', '/iletisim']];
 const EXP_PLAT = [['ZEYP', 'https://www.zeyp.com.tr/', '01-zeyp'], ['Market — Canlı Piyasalar', 'https://www.carsialtin.com/faprika/canli-piyasalar/', '02-market'], ['Hemen Tıkla', 'https://www.hementik.la/', '03-hemen-tikla'], ['1N Intelligence', 'https://www.reklam1n.com/intelligence', '04-intelligence']];

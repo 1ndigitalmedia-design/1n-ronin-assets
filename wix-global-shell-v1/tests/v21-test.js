@@ -3,7 +3,7 @@ const pw = require('playwright'); const fs = require('fs');
 const [, , BR = 'chromium', WS = '1440', OUT] = process.argv; const WIDTH = +WS; const TOUCH = WIDTH <= 1024;
 const IOS = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7 Mobile/15E148 Safari/604.1';
 const CTX = TOUCH ? Object.assign({ viewport: { width: WIDTH, height: WIDTH < 400 ? (WIDTH < 340 ? 568 : 844) : 1366 }, deviceScaleFactor: 2, hasTouch: true }, BR === 'chromium' ? { isMobile: true } : {}, WIDTH < 768 ? { userAgent: IOS } : {}) : { viewport: { width: WIDTH, height: 900 } };
-const B = 'https://www.reklam1n.com'; const SH = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@' + (process.env.SHELL_SHA || '0000000000000000000000000000000000000000') + '/wix-global-shell-v1/' + (process.env.SHELL_FILE || 'n1-global-shell-v1-1.js');
+const B = 'https://www.reklam1n.com'; const SH = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@' + (process.env.SHELL_SHA || '0000000000000000000000000000000000000000') + '/wix-global-shell-v1/' + (process.env.SHELL_FILE || 'n1-global-shell-v1-2.js');
 const BOX = WIDTH > 1024 ? 56 : WIDTH > 767 ? 52 : 48, ICO = WIDTH > 1024 ? 32 : WIDTH > 767 ? 30 : 28, GAP = WIDTH > 767 ? 10 : 8;
 const LINKS = [['https://www.zeyp.com.tr/', 1], ['https://www.carsialtin.com/faprika/canli-piyasalar/', 1], ['https://www.hementik.la/', 1], ['https://www.reklam1n.com/intelligence', 0]];
 const IGN = /googleadservices|doubleclick|Cross-origin script|Failed to fetch|Load failed|ChunkLoad|SiteAssets|notifyEventToEditorApp|Fetch API|Transition/;

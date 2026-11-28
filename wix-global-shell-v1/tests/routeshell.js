@@ -43,10 +43,17 @@ const MAP=[
 // V2.1 (varsayılan): bütün hedefler V2.1 sürümlerine çevrilir; N1_VER=20 eski V2 hedeflerini kullanır
 const V21={'home/n1-site-wix-v661.js':'home/n1-site-wix-v662.js','pages/n1-career-v2.js':'pages/n1-career-v3.js'};
 [['kreatif-produksiyon',26],['e-ticaret-yonetimi',27],['sosyal-medya',30],['reklam-yonetimi',26],['uiux-tasarim',32],['yapay-zeka',5],['uygulama-gelistirme',5],['kisaca-biz',3],['markalar',13],['yasal-sayfalar',3]].forEach(([n,v])=>{V21[`pages/wix-${n}-v${v}/n1-${n}-v${v}.js`]=`pages/wix-${n}-v${v+1}/n1-${n}-v${v+1}.js`;});
-if(process.env.N1_VER!=='20')MAP.forEach(m=>{for(const k in V21)if(m[1].endsWith(k))m[1]=m[1].slice(0,-k.length)+V21[k];});
+// canlı V2.1 (@f661795) adresleri — 28 Kasım 2026 itibarıyla Wix'te yayında
+[['home/n1-site-wix-v662.js'],['pages/n1-career-v3.js']].concat([['kreatif-produksiyon',27],['e-ticaret-yonetimi',28],['sosyal-medya',31],['reklam-yonetimi',27],['uiux-tasarim',33],['yapay-zeka',6],['uygulama-gelistirme',6],['kisaca-biz',4],['markalar',14],['yasal-sayfalar',4]].map(([n,v])=>[`pages/wix-${n}-v${v}/n1-${n}-v${v}.js`])).forEach(([k])=>{const f=(k.startsWith('pages/n1-career')?'wix-global-shell-v1/':S)+k;MAP.push([new RegExp('/wix-global-shell-v1/'+(k.startsWith('pages/n1-career')?'':'sites/')+k.replace(/[.]/g,'\\.')+'$'),f]);});
+// V2.2 (varsayılan): V2 → V2.1 → V2.2; N1_VER=21 V2.1 hedeflerinde, N1_VER=20 V2 hedeflerinde durur
+const V22={'home/n1-site-wix-v662.js':'home/n1-site-wix-v663.js','pages/n1-career-v3.js':'pages/n1-career-v4.js'};
+[['kreatif-produksiyon',27],['e-ticaret-yonetimi',28],['sosyal-medya',31],['reklam-yonetimi',27],['uiux-tasarim',33],['yapay-zeka',6],['uygulama-gelistirme',6],['kisaca-biz',4],['markalar',14],['yasal-sayfalar',4]].forEach(([n,v])=>{V22[`pages/wix-${n}-v${v}/n1-${n}-v${v}.js`]=`pages/wix-${n}-v${v+1}/n1-${n}-v${v+1}.js`;});
+const VER=process.env.N1_VER||'22';
+if(VER!=='20')MAP.forEach(m=>{for(const k in V21)if(m[1].endsWith(k)){m[1]=m[1].slice(0,-k.length)+V21[k];break;}});
+if(VER==='22')MAP.forEach(m=>{for(const k in V22)if(m[1].endsWith(k)){m[1]=m[1].slice(0,-k.length)+V22[k];break;}});
 const CAREER={'/insan-kaynaklari':'n1-insan-kaynaklari-v1','/acik-pozisyonlar':'n1-acik-pozisyonlar-v1','/staj-programlari':'n1-staj-programlari-v1'};
 const CT={'.js':'application/javascript; charset=utf-8','.webp':'image/webp','.css':'text/css','.png':'image/png','.html':'text/html; charset=utf-8'};
-function careerShim(tag){return fs.readFileSync(R+'wix-global-shell-v1/pages/'+(process.env.N1_VER==='20'?'n1-career-v2.js':'n1-career-v3.js'),'utf8')+
+function careerShim(tag){return fs.readFileSync(R+'wix-global-shell-v1/pages/'+({'20':'n1-career-v2.js','21':'n1-career-v3.js'}[process.env.N1_VER]||'n1-career-v4.js'),'utf8')+
  `\n;/* TEST SARMALAYICISI (yalnız Playwright): Kısaca Biz kabuğundaki öğe kariyer öğesini taşır */(function(){var T=${JSON.stringify(tag)};var st=document.createElement('style');st.textContent='n1-kisaca-biz-v1{display:block}';document.head.appendChild(st);
  if(!customElements.get('n1-kisaca-biz-v1'))customElements.define('n1-kisaca-biz-v1',class extends HTMLElement{connectedCallback(){if(!this.querySelector(T))this.appendChild(document.createElement(T));}});})();`;}
 const CDNP='https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@2aa9a9b483e53be78aebcd67f5af54e5ba485f90/';

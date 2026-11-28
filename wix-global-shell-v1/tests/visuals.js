@@ -1,7 +1,7 @@
 // Teslim görselleri + görsel karşılaştırma ölçümleri (Chromium). Çıktı: wix-global-shell-v1/screenshots/
 const pw = require('playwright'); const fs = require('fs'); const { execFileSync } = require('child_process');
 const OUT = __dirname + '/../screenshots/'; const B = 'https://www.reklam1n.com';
-const SH = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@' + (process.env.SHELL_SHA || '0000000000000000000000000000000000000000') + '/wix-global-shell-v1/' + (process.env.SHELL_FILE || 'n1-global-shell-v1-1.js');
+const SH = 'https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@' + (process.env.SHELL_SHA || '0000000000000000000000000000000000000000') + '/wix-global-shell-v1/' + (process.env.SHELL_FILE || 'n1-global-shell-v1-2.js');
 const PROF = { masaustu: { viewport: { width: 1440, height: 900 } }, tablet: { viewport: { width: 820, height: 1180 }, deviceScaleFactor: 2, hasTouch: true, isMobile: true }, mobil: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, hasTouch: true, isMobile: true } };
 const report = {};
 (async () => {
