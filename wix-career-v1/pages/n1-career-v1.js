@@ -416,11 +416,13 @@ R + ' .n1ft-brand{font-size:45px}',
                 if (!e.isIntersecting) return; io.unobserve(e.target);
                 G.to(e.target, { autoAlpha: 1, y: 0, duration: 0.85, ease: 'power3.out', delay: 0.05, clearProps: 'transform,opacity,visibility' });
               });
-            }, { rootMargin: '0px 0px -8% 0px' });
+            }, { rootMargin: '0px', threshold: 0 });   // tek piksel görünür olunca: sayfa sonundaki öğe asla gizli kalmaz
             rise.forEach(function (el) { io.observe(el); });
             var reveal = function () { io.disconnect(); G.set(rise, { clearProps: 'transform,opacity,visibility' }); };   // klavye odağı gizli öğeye düşmesin
             root.addEventListener('focusin', reveal, { once: true });
-            return function () { io.disconnect(); root.removeEventListener('focusin', reveal); };
+            // güvence: görünür alandaki bir öğe herhangi bir nedenle (yükseklik değişimi, kesilen gözlemci) tetiklenmediyse 3 sn sonra açılır
+            var guard = setTimeout(function () { rise.forEach(function (el) { var r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0 && +getComputedStyle(el).opacity < 1) { io.unobserve(el); G.to(el, { autoAlpha: 1, y: 0, duration: 0.6, ease: 'power2.out', clearProps: 'transform,opacity,visibility' }); } }); }, 3000);
+            return function () { io.disconnect(); clearTimeout(guard); root.removeEventListener('focusin', reveal); };
           });
         }, this);
       }
