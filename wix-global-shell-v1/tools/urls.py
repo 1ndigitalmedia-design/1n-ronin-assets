@@ -38,3 +38,16 @@ def v21(u): k=u[len(S):]; return S21+_BUMP[k]
 # EX21: (ad, adres, etiket, V2.1 yeni, V2 şu anki = geri dönüş, V1.4/V1.2 önceki canlı, öznitelikler)
 EX21=[(n,u,t,v21(new),new,old,keep) for n,u,t,new,old,keep in EX]
 LEG21=v21(LEGNEW); LEG2=LEGNEW
+# ---- GLOBAL MENÜ V2.2 (Uygulama ve Platformlar kaldırıldı; 1N Intelligence kartı) ----
+R22='2a124f910dd62638eaa85c8456b8435b17c28d2a'  # paket v1.2, kariyer v4, 11 sayfa (V2.2 yayın commit'i)
+C22='f7b29c2aa1005f836a6495fa3279ccc59255af6d'  # header v16 + menü verisi v17
+SHELL22=J+R22+'/wix-global-shell-v1/n1-global-shell-v1-2.js'
+CAREER22=J+R22+'/wix-global-shell-v1/pages/n1-career-v4.js'
+S22=J+R22+'/wix-global-shell-v1/sites/'
+_B2={'home/n1-site-wix-v662.js':'home/n1-site-wix-v663.js'}
+for _n,_v in [('kreatif-produksiyon',27),('e-ticaret-yonetimi',28),('sosyal-medya',31),('reklam-yonetimi',27),('uiux-tasarim',33),('yapay-zeka',6),('uygulama-gelistirme',6),('kisaca-biz',4),('markalar',14),('yasal-sayfalar',4)]:
+    _B2['pages/wix-%s-v%d/n1-%s-v%d.js'%(_n,_v,_n,_v)]='pages/wix-%s-v%d/n1-%s-v%d.js'%(_n,_v+1,_n,_v+1)
+def v22(u): return S22+_B2[u[len(S21):]]
+# EX22: (ad, adres, etiket, V2.2 yeni, V2.1 şu anki canlı = geri dönüş, öznitelikler)
+EX22=[(n,u,t,v22(new21),new21,keep) for n,u,t,new21,cur,old,keep in EX21]
+LEG22=v22(LEG21)

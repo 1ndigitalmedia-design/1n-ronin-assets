@@ -1,0 +1,544 @@
+{
+ "br": "chromium",
+ "width": 375,
+ "pass": 30,
+ "fail": 0,
+ "meas": {
+  "kurumsal": {
+   "cards": [
+    "n1h-brandcard",
+    "n1h-a7card",
+    "n1h-a7card n1h-intelcard"
+   ],
+   "order": [
+    363,
+    454,
+    543
+   ],
+   "plat": 0,
+   "platText": false,
+   "a7": {
+    "box": {
+     "x": 19,
+     "y": 454,
+     "w": 337.5,
+     "h": 82
+    },
+    "a": {
+     "x": 27,
+     "y": 462,
+     "w": 321.5,
+     "h": 66
+    },
+    "cardSt": "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)",
+    "aSt": "13px|16px|9px|rgb(236, 235, 230)|0.3s, 0.3s|flex|space-between",
+    "bSt": "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px",
+    "smSt": "Barlow, Arial, sans-serif|12px|1.68px|uppercase|rgba(228, 227, 221, 0.45)",
+    "ext": {
+     "x": 298,
+     "y": 478,
+     "w": 34,
+     "h": 34
+    },
+    "extSt": "1px|rgba(228, 227, 221, 0.16)|9px|rgba(228, 227, 221, 0.7)",
+    "arrow": "<svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 11L11 5M6 5h5v5\"></path></svg>",
+    "text": "A7 Prodüksiyon",
+    "note": "a7-1n.com",
+    "href": "https://www.a7-1n.com/a7-produksiyon",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "aFillsCard": true
+   },
+   "intel": {
+    "box": {
+     "x": 19,
+     "y": 543,
+     "w": 337.5,
+     "h": 82
+    },
+    "a": {
+     "x": 27,
+     "y": 551,
+     "w": 321.5,
+     "h": 66
+    },
+    "cardSt": "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)",
+    "aSt": "13px|16px|9px|rgb(236, 235, 230)|0.3s, 0.3s|flex|space-between",
+    "bSt": "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px",
+    "smSt": "Barlow, Arial, sans-serif|12px|1.68px|uppercase|rgba(228, 227, 221, 0.45)",
+    "ext": {
+     "x": 298,
+     "y": 567,
+     "w": 34,
+     "h": 34
+    },
+    "extSt": "1px|rgba(228, 227, 221, 0.16)|9px|rgba(228, 227, 221, 0.7)",
+    "arrow": "<svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 11L11 5M6 5h5v5\"></path></svg>",
+    "text": "1N Intelligence",
+    "note": "DİJİTAL ZEKA PLATFORMU",
+    "href": "https://www.reklam1n.com/intelligence",
+    "target": null,
+    "rel": null,
+    "aFillsCard": true
+   },
+   "panel": {
+    "x": 19,
+    "y": 70,
+    "w": 337.5,
+    "h": 555
+   },
+   "vw": 375,
+   "vh": 844,
+   "sh": 555,
+   "ch": 555,
+   "ox": false,
+   "webp": 0
+  },
+  "bağımsız": {
+   "cards": [
+    "n1h-brandcard",
+    "n1h-a7card",
+    "n1h-a7card n1h-intelcard"
+   ],
+   "order": [
+    363,
+    454,
+    543
+   ],
+   "plat": 0,
+   "platText": false,
+   "a7": {
+    "box": {
+     "x": 19,
+     "y": 454,
+     "w": 337.5,
+     "h": 82
+    },
+    "a": {
+     "x": 27,
+     "y": 462,
+     "w": 321.5,
+     "h": 66
+    },
+    "cardSt": "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)",
+    "aSt": "13px|16px|9px|rgb(236, 235, 230)|0.3s, 0.3s|flex|space-between",
+    "bSt": "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px",
+    "smSt": "Barlow, Arial, sans-serif|12px|1.68px|uppercase|rgba(228, 227, 221, 0.45)",
+    "ext": {
+     "x": 298,
+     "y": 478,
+     "w": 34,
+     "h": 34
+    },
+    "extSt": "1px|rgba(228, 227, 221, 0.16)|9px|rgba(228, 227, 221, 0.7)",
+    "arrow": "<svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 11L11 5M6 5h5v5\"></path></svg>",
+    "text": "A7 Prodüksiyon",
+    "note": "a7-1n.com",
+    "href": "https://www.a7-1n.com/a7-produksiyon",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "aFillsCard": true
+   },
+   "intel": {
+    "box": {
+     "x": 19,
+     "y": 543,
+     "w": 337.5,
+     "h": 82
+    },
+    "a": {
+     "x": 27,
+     "y": 551,
+     "w": 321.5,
+     "h": 66
+    },
+    "cardSt": "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)",
+    "aSt": "13px|16px|9px|rgb(236, 235, 230)|0.3s, 0.3s|flex|space-between",
+    "bSt": "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px",
+    "smSt": "Barlow, Arial, sans-serif|12px|1.68px|uppercase|rgba(228, 227, 221, 0.45)",
+    "ext": {
+     "x": 298,
+     "y": 567,
+     "w": 34,
+     "h": 34
+    },
+    "extSt": "1px|rgba(228, 227, 221, 0.16)|9px|rgba(228, 227, 221, 0.7)",
+    "arrow": "<svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 11L11 5M6 5h5v5\"></path></svg>",
+    "text": "1N Intelligence",
+    "note": "DİJİTAL ZEKA PLATFORMU",
+    "href": "https://www.reklam1n.com/intelligence",
+    "target": null,
+    "rel": null,
+    "aFillsCard": true
+   },
+   "panel": {
+    "x": 19,
+    "y": 70,
+    "w": 337.5,
+    "h": 555
+   },
+   "vw": 375,
+   "vh": 844,
+   "sh": 555,
+   "ch": 555,
+   "ox": false,
+   "webp": 0
+  }
+ },
+ "results": [
+  {
+   "g": "kurumsal",
+   "n": "header v16 + menü verisi v17 yüklendi (eski sürüm yok)",
+   "ok": true,
+   "info": [
+    "n1-site-markup-v17.js",
+    "n1-header-v16.js"
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "alt kartlar yalnız: Başlangıca Dön · A7 Prodüksiyon · 1N Intelligence (sıra)",
+   "ok": true,
+   "info": {
+    "cards": [
+     "n1h-brandcard",
+     "n1h-a7card",
+     "n1h-a7card n1h-intelcard"
+    ],
+    "order": [
+     363,
+     454,
+     543
+    ]
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "Uygulama ve Platformlar kartı, logolar ve bağlantı kutuları yok; logo dosyası indirilmedi",
+   "ok": true,
+   "info": {
+    "plat": 0,
+    "txt": false,
+    "webp": 0
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "Intelligence: başlık, alt açıklama, adres",
+   "ok": true,
+   "info": [
+    "1N Intelligence",
+    "DİJİTAL ZEKA PLATFORMU",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "Intelligence: aynı sekme (target/rel yok), kartın tamamı bağlantı",
+   "ok": true,
+   "info": {
+    "t": null,
+    "r": null,
+    "fill": true
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "A7 değişmedi (adres, yeni sekme, noopener noreferrer)",
+   "ok": true,
+   "info": [
+    "https://www.a7-1n.com/a7-produksiyon",
+    "_blank",
+    "noopener noreferrer"
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "ölçü eşliği: kart genişliği, yüksekliği ve x konumu A7 ile aynı",
+   "ok": true,
+   "info": {
+    "a7": {
+     "x": 19,
+     "y": 454,
+     "w": 337.5,
+     "h": 82
+    },
+    "intel": {
+     "x": 19,
+     "y": 543,
+     "w": 337.5,
+     "h": 82
+    }
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "stil eşliği: iç boşluk, köşe, zemin, tipografi, ok düğmesi",
+   "ok": true,
+   "info": {
+    "card": [
+     "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)",
+     "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)"
+    ],
+    "b": [
+     "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px",
+     "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px"
+    ]
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "kart aralığı tutarlı (Başlangıca Dön→A7 ≈ A7→Intelligence, A7 ile Intelligence aynı yükseklikte)",
+   "ok": true,
+   "info": {
+    "order": [
+     363,
+     454,
+     543
+    ],
+    "a7h": 82
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "panel": {
+     "x": 19,
+     "y": 70,
+     "w": 337.5,
+     "h": 555
+    },
+    "vw": 375,
+    "vh": 844,
+    "ox": false
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "klavye: A7 → Tab → 1N Intelligence",
+   "ok": true,
+   "info": "n1h-a7 n1h-intel"
+  },
+  {
+   "g": "kurumsal",
+   "n": "normal kapanış: kart kalmıyor",
+   "ok": true,
+   "info": {
+    "open": 0,
+    "vis": 0
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "Intelligence tıklaması aynı sekmede /intelligence; menü kapalı",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/intelligence",
+    "pages": 1,
+    "open": 0
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "bağımsız",
+   "n": "paket v1.2.0; Teklif Al yok; header yüksekliği aynı",
+   "ok": true,
+   "info": {
+    "ver": "1.2.0",
+    "cta": false,
+    "hH": 64,
+    "fH": 865,
+    "legal": 5,
+    "partners": 5,
+    "fc": 1
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "footer değişmedi (V2.1 ölçümüyle aynı yükseklik, 5 yasal, 5 partner) ve WhatsApp tek katman",
+   "ok": true,
+   "info": {
+    "fH": 865,
+    "beklenen": 865,
+    "fc": 1
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "alt kartlar yalnız: Başlangıca Dön · A7 Prodüksiyon · 1N Intelligence (sıra)",
+   "ok": true,
+   "info": {
+    "cards": [
+     "n1h-brandcard",
+     "n1h-a7card",
+     "n1h-a7card n1h-intelcard"
+    ],
+    "order": [
+     363,
+     454,
+     543
+    ]
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "Uygulama ve Platformlar kartı, logolar ve bağlantı kutuları yok; logo dosyası indirilmedi",
+   "ok": true,
+   "info": {
+    "plat": 0,
+    "txt": false,
+    "webp": 0
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "Intelligence: başlık, alt açıklama, adres",
+   "ok": true,
+   "info": [
+    "1N Intelligence",
+    "DİJİTAL ZEKA PLATFORMU",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "bağımsız",
+   "n": "Intelligence: aynı sekme (target/rel yok), kartın tamamı bağlantı",
+   "ok": true,
+   "info": {
+    "t": null,
+    "r": null,
+    "fill": true
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "A7 değişmedi (adres, yeni sekme, noopener noreferrer)",
+   "ok": true,
+   "info": [
+    "https://www.a7-1n.com/a7-produksiyon",
+    "_blank",
+    "noopener noreferrer"
+   ]
+  },
+  {
+   "g": "bağımsız",
+   "n": "ölçü eşliği: kart genişliği, yüksekliği ve x konumu A7 ile aynı",
+   "ok": true,
+   "info": {
+    "a7": {
+     "x": 19,
+     "y": 454,
+     "w": 337.5,
+     "h": 82
+    },
+    "intel": {
+     "x": 19,
+     "y": 543,
+     "w": 337.5,
+     "h": 82
+    }
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "stil eşliği: iç boşluk, köşe, zemin, tipografi, ok düğmesi",
+   "ok": true,
+   "info": {
+    "card": [
+     "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)",
+     "8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)"
+    ],
+    "b": [
+     "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px",
+     "\"Barlow Condensed\", Barlow, Arial, sans-serif|22px|600|22px|0.22px"
+    ]
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "kart aralığı tutarlı (Başlangıca Dön→A7 ≈ A7→Intelligence, A7 ile Intelligence aynı yükseklikte)",
+   "ok": true,
+   "info": {
+    "order": [
+     363,
+     454,
+     543
+    ],
+    "a7h": 82
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "panel": {
+     "x": 19,
+     "y": 70,
+     "w": 337.5,
+     "h": 555
+    },
+    "vw": 375,
+    "vh": 844,
+    "ox": false
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "klavye: A7 → Tab → 1N Intelligence",
+   "ok": true,
+   "info": "n1h-a7 n1h-intel"
+  },
+  {
+   "g": "bağımsız",
+   "n": "normal kapanış: kart kalmıyor",
+   "ok": true,
+   "info": {
+    "open": 0,
+    "vis": 0
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "Intelligence tıklaması aynı sekmede /intelligence; menü kapalı",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/intelligence",
+    "pages": 1,
+    "open": 0
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "tutarlılık",
+   "n": "kurumsal ve bağımsız menüde Intelligence kartı aynı ölçü ve stilde",
+   "ok": true,
+   "info": {
+    "c": {
+     "x": 19,
+     "y": 543,
+     "w": 337.5,
+     "h": 82
+    },
+    "s": {
+     "x": 19,
+     "y": 543,
+     "w": 337.5,
+     "h": 82
+    }
+   }
+  }
+ ]
+}

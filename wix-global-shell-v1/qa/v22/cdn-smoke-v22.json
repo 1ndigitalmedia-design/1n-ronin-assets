@@ -1,0 +1,120 @@
+[
+ {
+  "br": "chromium",
+  "w": 1440,
+  "ok": true,
+  "r": {
+   "ver": "1.2.0",
+   "cards": [
+    "n1h-brandcard",
+    "n1h-a7card",
+    "n1h-a7card n1h-intelcard"
+   ],
+   "intel": "https://www.reklam1n.com/intelligence",
+   "plat": 0,
+   "footer": 578,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "2a124f9 wix-global-shell-v1/n1-global-shell-v1-2.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "f7b29c2 wix-global-shell-v1/site/n1-site-markup-v17.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "f7b29c2 wix-global-shell-v1/modules/n1-header-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/tiktok-marketing-partner.webp",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/meta-business-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/google-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-partners.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-velo-certified.png"
+  ]
+ },
+ {
+  "br": "chromium",
+  "w": 390,
+  "ok": true,
+  "r": {
+   "ver": "1.2.0",
+   "cards": [
+    "n1h-brandcard",
+    "n1h-a7card",
+    "n1h-a7card n1h-intelcard"
+   ],
+   "intel": "https://www.reklam1n.com/intelligence",
+   "plat": 0,
+   "footer": 867,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "2a124f9 wix-global-shell-v1/n1-global-shell-v1-2.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "f7b29c2 wix-global-shell-v1/site/n1-site-markup-v17.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "f7b29c2 wix-global-shell-v1/modules/n1-header-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js"
+  ]
+ },
+ {
+  "br": "webkit",
+  "w": 1440,
+  "ok": true,
+  "r": {
+   "ver": "1.2.0",
+   "cards": [
+    "n1h-brandcard",
+    "n1h-a7card",
+    "n1h-a7card n1h-intelcard"
+   ],
+   "intel": "https://www.reklam1n.com/intelligence",
+   "plat": 0,
+   "footer": 578,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "2a124f9 wix-global-shell-v1/n1-global-shell-v1-2.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "f7b29c2 wix-global-shell-v1/site/n1-site-markup-v17.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "f7b29c2 wix-global-shell-v1/modules/n1-header-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/tiktok-marketing-partner.webp",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/meta-business-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/google-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-partners.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-velo-certified.png"
+  ]
+ },
+ {
+  "br": "webkit",
+  "w": 390,
+  "ok": true,
+  "r": {
+   "ver": "1.2.0",
+   "cards": [
+    "n1h-brandcard",
+    "n1h-a7card",
+    "n1h-a7card n1h-intelcard"
+   ],
+   "intel": "https://www.reklam1n.com/intelligence",
+   "plat": 0,
+   "footer": 802,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "2a124f9 wix-global-shell-v1/n1-global-shell-v1-2.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "f7b29c2 wix-global-shell-v1/site/n1-site-markup-v17.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "f7b29c2 wix-global-shell-v1/modules/n1-header-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js"
+  ]
+ }
+]
