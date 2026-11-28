@@ -1,5 +1,12 @@
 # PLATFORM_LOGOS — "Uygulama ve Platformlar"
 
+> **V2.1 (güncel):** logolar artık **tek renkli gömülü SVG** sembolleri. Özgün PNG'lerden arka plan temizlenerek vektöre çevrildi (`assets/platforms/mono/`, üretim aracı `tools/build_platform_mono.py`).
+> - Ortak koyu kutu #1A1C1B, logo #BDBFB9, hover ve odakta #A2FF00.
+> - Kutu ölçüsü: masaüstü 56, tablet 52, mobil 48 px.
+> - Ayrıntı: **PLATFORM_REVISION_V21.md**.
+>
+> Aşağıdaki renkli WebP dosyaları V2'nin dosyalarıdır. Silinmedi; V2 geri dönüşü bunları kullanır.
+
 ## Sıra ve hedefler
 | # | Logo | Hedef | Açılış |
 |---|---|---|---|

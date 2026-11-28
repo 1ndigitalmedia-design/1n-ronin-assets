@@ -1,0 +1,180 @@
+[
+ {
+  "br": "chromium",
+  "w": 1440,
+  "ok": true,
+  "r": {
+   "ver": "1.1.0",
+   "tiles": [
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ]
+   ],
+   "footer": 578,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "f661795 wix-global-shell-v1/n1-global-shell-v1-1.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "9bbcefd wix-global-shell-v1/site/n1-site-markup-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "6df38aa wix-global-shell-v1/modules/n1-header-v15.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/tiktok-marketing-partner.webp",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/meta-business-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/google-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-partners.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-velo-certified.png"
+  ]
+ },
+ {
+  "br": "chromium",
+  "w": 390,
+  "ok": true,
+  "r": {
+   "ver": "1.1.0",
+   "tiles": [
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ]
+   ],
+   "footer": 867,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "f661795 wix-global-shell-v1/n1-global-shell-v1-1.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "9bbcefd wix-global-shell-v1/site/n1-site-markup-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "6df38aa wix-global-shell-v1/modules/n1-header-v15.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js"
+  ]
+ },
+ {
+  "br": "webkit",
+  "w": 1440,
+  "ok": true,
+  "r": {
+   "ver": "1.1.0",
+   "tiles": [
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     56,
+     true,
+     "rgb(189, 191, 185)"
+    ]
+   ],
+   "footer": 578,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "f661795 wix-global-shell-v1/n1-global-shell-v1-1.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "9bbcefd wix-global-shell-v1/site/n1-site-markup-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "6df38aa wix-global-shell-v1/modules/n1-header-v15.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/tiktok-marketing-partner.webp",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/meta-business-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/google-partner.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-partners.png",
+   "d24fa37 wix-full-v1/aktarim-medya/img/partners/wix-velo-certified.png"
+  ]
+ },
+ {
+  "br": "webkit",
+  "w": 390,
+  "ok": true,
+  "r": {
+   "ver": "1.1.0",
+   "tiles": [
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ],
+    [
+     48,
+     true,
+     "rgb(189, 191, 185)"
+    ]
+   ],
+   "footer": 802,
+   "fc": 1,
+   "cta": false
+  },
+  "req": [
+   "f661795 wix-global-shell-v1/n1-global-shell-v1-1.js",
+   "09612df wix-studyo-v1/site/n1-inner-responsive-v6.css",
+   "9bbcefd wix-global-shell-v1/site/n1-site-markup-v16.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v636.css",
+   "6df38aa wix-global-shell-v1/modules/n1-header-v15.js",
+   "d24fa37 wix-full-v1/modules/n1-floating-controls-v632.js",
+   "d24fa37 wix-full-v1/modules/n1-footer-v646.js"
+  ]
+ }
+]

@@ -41,8 +41,8 @@ async function checks(pg, g, menuSel) {
   }
   // klavye odağı: odağı ilk platform bağlantısından önceki öğeye koy, Tab
   await pg.evaluate(() => { const a = document.querySelector('.n1h-panel[data-open] .n1h-a7') || document.querySelector('.n1h-panel[data-open] .n1h-brand'); a.focus(); });
-  await pg.keyboard.press('Tab'); await pg.waitForTimeout(300);
-  const fv = await pg.evaluate(() => { const a = document.activeElement; return { cls: a && a.className, fv: a && a.matches(':focus-visible'), shadow: a && getComputedStyle(a).boxShadow, color: a && getComputedStyle(a).color }; });
+  await pg.keyboard.press('Tab'); let fv = {};
+  for (let i = 0; i < 15; i++) { await pg.waitForTimeout(100); fv = await pg.evaluate(() => { const a = document.activeElement; return { cls: a && a.className, fv: a && a.matches(':focus-visible'), shadow: a && getComputedStyle(a).boxShadow, color: a && getComputedStyle(a).color }; }); if (/rgb\(162, 255, 0\) 0px 0px 0px 4px/.test(fv.shadow)) break; }   // geçiş 0,2 s; yoğun sayfada WebKit geç başlatabilir
   T(g, 'klavye focus-visible: #A2FF00 halka', /n1h-plat/.test(fv.cls) && fv.fv && /rgb\(162, 255, 0\) 0px 0px 0px 4px/.test(fv.shadow) && fv.color === 'rgb(162, 255, 0)', fv);
   // kapanış
   if (TOUCH) await tap(pg.locator(menuSel).first()); else await pg.keyboard.press('Escape');
@@ -72,14 +72,14 @@ async function checks(pg, g, menuSel) {
       footer: (() => { const f = document.querySelector('n1-global-footer-v1'); return { h: Math.round(f.getBoundingClientRect().height), legal: f.querySelectorAll('.n1ft-legal a').length, soc: f.querySelectorAll('.n1ft-socials svg, .n1ft-social svg').length, partners: f.querySelectorAll('.n1ft-partner').length }; })(), fc: document.querySelectorAll('.n1fc').length }; });
     T('bağımsız', 'paket v1.1.0, Teklif Al yok', hdr.shell.ver === '1.1.0' && !hdr.shell.cta, { ver: hdr.shell.ver, cta: hdr.shell.cta });
     shell = await checks(pg, 'bağımsız', 'n1-global-header-v1 .n1h-menu');
-    const f = hdr.shell.footer, EXPF = { 1920: 611, 1440: 578, 1024: 718, 820: 784, 390: 867, 375: 844, 320: 856 }[WIDTH];
-    T('bağımsız', 'footer değişmedi (yükseklik V2 ölçümüyle aynı, 5 yasal, 4 sosyal SVG, 5 partner)', Math.abs(f.h - EXPF) <= 8 && f.legal === 5 && f.soc === 4 && f.partners === 5, { f, EXPF });
+    const f = hdr.shell.footer;
+    T('bağımsız', 'footer içeriği yerinde (5 yasal, 4 sosyal SVG, 5 partner); yükseklik V2 ↔ V2.1 karşılaştırması: footer-ab.js', f.legal === 5 && f.soc === 4 && f.partners === 5, f);
     T('bağımsız', 'WhatsApp/Yukarı Çık tek katman', hdr.shell.fc <= 1, hdr.shell.fc);
     T('bağımsız', 'JS hatası yok', !errs.length, errs); await ctx.close(); }
   // 3) tutarlılık
   if (corp && shell) {
     T('tutarlılık', 'kurumsal ve bağımsız menüde platform kutuları aynı (boyut, sembol, renk)', corp.tiles.every((x, i) => x.w === shell.tiles[i].w && x.sw === shell.tiles[i].sw && x.bg === shell.tiles[i].bg && x.color === shell.tiles[i].color), { c: corp.tiles.map((x) => [x.w, x.sw]), s: shell.tiles.map((x) => [x.w, x.sw]) });
-    const sameTop = JSON.stringify(hdr.corp.logo) === JSON.stringify(hdr.shell.logo) && hdr.corp.tag[3] === hdr.shell.tag[3];
+    const sameTop = hdr.corp.logo.every((v, i) => Math.abs(v - hdr.shell.logo[i]) <= 1) && hdr.corp.tag[3] === hdr.shell.tag[3];   // ±1 px: %90 genişliğin yuvarlanması (V2'de de aynı)
     T('tutarlılık', 'header üst bölümü: logo ve slogan kurumsal ile tutarlı', WIDTH <= 1024 && WIDTH > 767 ? hdr.corp.tag[3] === hdr.shell.tag[3] : sameTop, { corp: hdr.corp, shell: { logo: hdr.shell.logo, tag: hdr.shell.tag } });
   }
   console.log(BR, WIDTH, 'TOPLAM', pass, 'geçti', fail, 'kaldı');

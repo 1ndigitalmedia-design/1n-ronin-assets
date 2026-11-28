@@ -24,3 +24,17 @@ EX=[('Ana Sayfa','/','n1-site-v1',S+'home/n1-site-wix-v661.js',J+V14+'/wix-mobil
 LEG=[('Gizlilik Politikası','n1-gizlilik-politikasi-v1'),('KVKK Aydınlatma Metni','n1-kvkk-aydinlatma-v1'),('Çerez Politikası','n1-cerez-politikasi-v1'),('Kullanım Koşulları','n1-kullanim-kosullari-v1'),('Veri Sahibi Başvuru Formu','n1-veri-sahibi-basvuru-v1')]
 LEGNEW=S+'pages/wix-yasal-sayfalar-v3/n1-yasal-sayfalar-v3.js'; LEGOLD=J+V12+'/wix-global-menu-v12/pages/wix-yasal-sayfalar-v1/n1-yasal-sayfalar-v1.js'
 DEFKEEP='`deps-base`, `cta-href` ve tanımlı diğerleri (aynen)'
+# ---- GLOBAL MENÜ V2.1 (tek renkli kompakt platform logoları) ----
+F='f661795b75a011f8e882930df64a20f60a863cba'   # paket v1.1, kariyer v3, 11 sayfa (V2.1 yayın commit'i)
+H15='6df38aa58398670c8e2617632ef88b9895bfd4e9' # header v15 + tek renkli SVG logolar
+SHELL2=SHELL; CAREER2=CAREER                   # V2 (Wix'te uygulanmış) = V2.1 geri dönüşü
+SHELL21=J+F+'/wix-global-shell-v1/n1-global-shell-v1-1.js'
+CAREER21=J+F+'/wix-global-shell-v1/pages/n1-career-v3.js'
+S21=J+F+'/wix-global-shell-v1/sites/'
+_BUMP={'home/n1-site-wix-v661.js':'home/n1-site-wix-v662.js'}
+for _n,_v in [('kreatif-produksiyon',26),('e-ticaret-yonetimi',27),('sosyal-medya',30),('reklam-yonetimi',26),('uiux-tasarim',32),('yapay-zeka',5),('uygulama-gelistirme',5),('kisaca-biz',3),('markalar',13),('yasal-sayfalar',3)]:
+    _BUMP['pages/wix-%s-v%d/n1-%s-v%d.js'%(_n,_v,_n,_v)]='pages/wix-%s-v%d/n1-%s-v%d.js'%(_n,_v+1,_n,_v+1)
+def v21(u): k=u[len(S):]; return S21+_BUMP[k]
+# EX21: (ad, adres, etiket, V2.1 yeni, V2 şu anki = geri dönüş, V1.4/V1.2 önceki canlı, öznitelikler)
+EX21=[(n,u,t,v21(new),new,old,keep) for n,u,t,new,old,keep in EX]
+LEG21=v21(LEGNEW); LEG2=LEGNEW
