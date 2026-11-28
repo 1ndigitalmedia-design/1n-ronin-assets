@@ -56,9 +56,9 @@ function T(g, n, ok, info) { results.push({ g, n, ok: !!ok, info }); ok ? pass++
     const ctx = await b.newContext(CTX); await require('./routeshell.js')(ctx, {}); const pg = await ctx.newPage();
     await pg.goto(B + '/', { waitUntil: 'domcontentloaded' }); await pg.waitForTimeout(9000);
     const h = await pg.evaluate(() => ({ cta: [...document.querySelectorAll('a')].filter((a) => /Hikâyemizin Devamı/.test(a.textContent)).map((a) => a.getAttribute('href')), m5: performance.getEntriesByType('resource').some((e) => /n1-video-m5-v14\.js/.test(e.name)),
-      v661: performance.getEntriesByType('resource').some((e) => /n1-site-wix-v659\.js/.test(e.name)), ronin: [...document.querySelectorAll('video')].map((v) => (v.currentSrc || v.getAttribute('src') || '').split('/').pop()).filter((x) => /ronin/.test(x)) }));
+      v661: performance.getEntriesByType('resource').some((e) => /n1-site-wix-v659\.js/.test(e.name)), dpr: devicePixelRatio, film: Math.min(innerWidth, innerWidth > innerHeight ? innerHeight * 0.745 : innerWidth), ronin: [...document.querySelectorAll('video')].map((v) => (v.currentSrc || v.getAttribute('src') || '').split('/').pop()).filter((x) => /ronin/.test(x)) }));
     T('V1.4 ana sayfa', '"Hikâyemizin Devamı" → /kisaca-biz', h.cta.length && h.cta.every((x) => x === '/kisaca-biz'), h.cta);
-    if (MOBILE) { T('V1.4 ana sayfa', 'mobil video modülü v14', h.m5, h); T('V1.4 ana sayfa', 'Ronin 2× kaynağı', h.ronin.some((x) => /ronin-m5-film-2x\.mp4/.test(x)), h.ronin); }
+    if (MOBILE) { T('V1.4 ana sayfa', 'mobil video modülü v14', h.m5, h); { const want2x = h.film * h.dpr > 840; T('V1.4 ana sayfa', 'Ronin kademesi V1.4 kuralına uygun (film px × DPR > 840 → 2×, değilse doğal)', h.ronin.some((x) => want2x ? /ronin-m5-film-2x\.mp4/.test(x) : /ronin-m5-film\.mp4/.test(x)), { ronin: h.ronin, film: h.film, dpr: h.dpr, want2x }); } }
     await ctx.close();
     if (MOBILE) { const c2 = await b.newContext(CTX); await require('./routeshell.js')(c2, {}); const p2 = await c2.newPage(); await p2.goto(B + '/e-ticaret-yonetimi', { waitUntil: 'domcontentloaded' }); await p2.waitForTimeout(9000);
       const e = await p2.evaluate(() => ({ stills: document.querySelectorAll('img[data-n1-still]').length, vSrc: [...document.querySelectorAll('video')].filter((v) => v.currentSrc || v.getAttribute('src')).length }));

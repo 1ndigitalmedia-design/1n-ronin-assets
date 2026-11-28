@@ -1,7 +1,7 @@
 # Tek kaynak: Global Shell V1 yayın adresleri (SERVER_URLS / DEPLOYMENT / ROLLBACK üreticileri bunu içe aktarır)
 J='https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@'
-P='a80045ca8ebbb3d5d59b16069910f00d24dd95aa'   # bileşen paketi, kariyer v2, 11 sayfa
-M='cce282464fb3eac460bb13b4d03286b250d65712'   # header v14 + markup v16
+P='144d964a795e515e3b79f0e39c0eeee244a786f8'   # bileşen paketi, kariyer v2, 11 sayfa
+M='9bbcefd65becbc196baebea26600060b01af406c'   # header v14 + markup v16
 A='9a8e261f72975ccc5d94d33dfe9e6313b4e8f5dd'   # platform logoları
 V14='36a24d3d5af5be5e5493598af4375f070a26b002'; V12='39f762f63a2af58a470e9712d8ca0895d6f73f9f'
 SHELL=J+P+'/wix-global-shell-v1/n1-global-shell-v1.js'

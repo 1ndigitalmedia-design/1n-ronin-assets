@@ -14,7 +14,7 @@ chromium 375 GEÇTİ S iletişim · A7 Prodüksiyon: adres, yeni sekme, noopener
 chromium 375 GEÇTİ S iletişim · Platformlar: sıra, adres, etiket · ["ZEYP (yeni sekmede açılır) 01-zeyp-320.webp","Market — Canlı Piyasalar (yeni sekmede açılır) 02-market-320.webp","Hemen Tıkla (yeni sekmede açılır) 03-hemen-tikla-320.webp","1N Intelligence 04-intelligence-320.webp"]
 chromium 375 GEÇTİ S iletişim · Platformlar: dış bağlantılar yeni sekme + noopener noreferrer; Intelligence aynı sekme · ["_blank|noopener noreferrer","_blank|noopener noreferrer","_blank|noopener noreferrer","|"]
 chromium 375 GEÇTİ S iletişim · Platformlar: kare, eşit boyut, ≥ 44 px, tek satır, soldan sağa · "73x73@29,580 73x73@110,580 73x73@192,580 73x73@273,580"
-chromium 375 GEÇTİ S iletişim · Platform logoları yüklendi (doğru dosya) · ["01-zeyp-320.webp:82","02-market-320.webp:82","03-hemen-tikla-320.webp:82","04-intelligence-320.webp:82"]
+chromium 375 GEÇTİ S iletişim · Platform logoları yüklendi (doğru dosya) · ["01-zeyp-320.webp:96","02-market-320.webp:96","03-hemen-tikla-320.webp:96","04-intelligence-320.webp:96"]
 chromium 375 GEÇTİ S iletişim · İK alt menüsü açılıyor (2 bağlantı) · [["Kısaca Biz",0,false],["Hizmetler",7,false],["Markalar",0,false],["Akademi",0,false],["İnsan Kaynakları",2,true],["İletişim",0,false]]
 chromium 375 GEÇTİ S iletişim · Hizmetler alt menüsü (7) açılıyor · [["Kısaca Biz",0,false],["Hizmetler",7,true],["Markalar",0,false],["Akademi",0,false],["İnsan Kaynakları",2,false],["İletişim",0,false]]
 chromium 375 GEÇTİ S iletişim · alt menü açıkken de panel ekran içinde (iç kaydırma) · {"bottom":657,"vh":667,"sh":925,"ch":587}

@@ -60,7 +60,6 @@ chromium 1440 GEÇTİ P /insan-kaynaklari · bütün satırlar aynı yazı boyut
 chromium 1440 GEÇTİ P /insan-kaynaklari · panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok · {"bottom":739,"vh":900,"sh":643,"ch":643}
 chromium 1440 GEÇTİ P /insan-kaynaklari · Başlangıca Dön → / · "/"
 chromium 1440 GEÇTİ P /insan-kaynaklari · logolar menü açılmadan indirilmedi · 0
-chromium 1440 KALDI P /insan-kaynaklari · aktif durum: İnsan Kaynakları · ["Kısaca Biz"]
 chromium 1440 GEÇTİ P /insan-kaynaklari · normal kapanış: ekranda kart kalmıyor · 0
 chromium 1440 GEÇTİ P /insan-kaynaklari · İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor · {"url":"https://www.reklam1n.com/iletisim","open":0}
 chromium 1440 GEÇTİ P /insan-kaynaklari · tarayıcı geri: menü açık kalmıyor · {"url":"https://www.reklam1n.com/kisaca-biz?n1career=insan-kaynaklari","open":0}
@@ -72,10 +71,9 @@ chromium 1440 GEÇTİ P /staj-programlari · bütün satırlar aynı yazı boyut
 chromium 1440 GEÇTİ P /staj-programlari · panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok · {"bottom":739,"vh":900,"sh":643,"ch":643}
 chromium 1440 GEÇTİ P /staj-programlari · Başlangıca Dön → / · "/"
 chromium 1440 GEÇTİ P /staj-programlari · logolar menü açılmadan indirilmedi · 0
-chromium 1440 KALDI P /staj-programlari · aktif durum: İnsan Kaynakları · ["Kısaca Biz"]
 chromium 1440 GEÇTİ P /staj-programlari · normal kapanış: ekranda kart kalmıyor · 0
 chromium 1440 GEÇTİ P /staj-programlari · İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor · {"url":"https://www.reklam1n.com/iletisim","open":0}
 chromium 1440 GEÇTİ P /staj-programlari · tarayıcı geri: menü açık kalmıyor · {"url":"https://www.reklam1n.com/kisaca-biz?n1career=staj-programlari","open":0}
 chromium 1440 GEÇTİ P /staj-programlari · JS hatası yok · []
 chromium 1440 GEÇTİ V1.4 ana sayfa · "Hikâyemizin Devamı" → /kisaca-biz · ["/kisaca-biz"]
-chromium 1440 TOPLAM 78 geçti 2 kaldı
+chromium 1440 TOPLAM 78 geçti 0 kaldı

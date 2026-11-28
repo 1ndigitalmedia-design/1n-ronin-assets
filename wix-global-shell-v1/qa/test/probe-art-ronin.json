@@ -1,0 +1,62 @@
+[
+ {
+  "br": "webkit",
+  "w": 320,
+  "before": 0,
+  "after": {
+   "nw": 1080,
+   "src": "6dbf5e_32b849155e954320a1f6479f27fd6ad2~",
+   "w": 288,
+   "h": 53,
+   "vis": "block"
+  }
+ },
+ {
+  "br": "webkit",
+  "w": 390,
+  "before": 0,
+  "after": {
+   "nw": 1080,
+   "src": "6dbf5e_32b849155e954320a1f6479f27fd6ad2~",
+   "w": 351,
+   "h": 65,
+   "vis": "block"
+  }
+ },
+ {
+  "br": "chromium",
+  "w": 320,
+  "before": 1080,
+  "after": {
+   "nw": 1080,
+   "src": "6dbf5e_32b849155e954320a1f6479f27fd6ad2~",
+   "w": 288,
+   "h": 53,
+   "vis": "block"
+  }
+ },
+ {
+  "br": "chromium",
+  "w": 390,
+  "before": 0,
+  "after": {
+   "nw": 1080,
+   "src": "6dbf5e_32b849155e954320a1f6479f27fd6ad2~",
+   "w": 351,
+   "h": 65,
+   "vis": "block"
+  }
+ },
+ {
+  "ronin": "webkit 390 dpr2",
+  "v": [
+   "ronin-m5-film.mp4"
+  ]
+ },
+ {
+  "ronin": "webkit 390 dpr3",
+  "v": [
+   "ronin-m5-film-2x.mp4"
+  ]
+ }
+]

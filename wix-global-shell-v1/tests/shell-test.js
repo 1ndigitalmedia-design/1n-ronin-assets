@@ -115,7 +115,8 @@ t.removeEventListener=function(ty,fn,o){var c=typeof o==='boolean'?o:!!(o&&o.cap
       for (let i = 0; i < 3; i++) { await pg.evaluate(() => { const h = document.querySelector('n1-global-header-v1'), f = document.querySelector('n1-global-footer-v1'); const hp = h.parentNode, fp = f.parentNode; hp.removeChild(h); fp.removeChild(f); hp.appendChild(h); fp.appendChild(f); }); await pg.waitForTimeout(1800); }
       const lc1 = await pg.evaluate(() => Object.assign({}, window.__lc, { panels: document.querySelectorAll('.n1h-panel').length, headers: document.querySelectorAll('n1-header').length, footers: document.querySelectorAll('footer.n1ft').length, fc: document.querySelectorAll('.n1fc').length }));
       T(g, 'yeniden bağlama ×3: tek header/panel/footer, dinleyici artışı yok', lc1.panels === 1 && lc1.headers === 1 && lc1.footers === 1 && lc1.win - lc0.win <= 0 && lc1.doc - lc0.doc <= 0, { lc0, lc1 });
-      // footer
+      // footer (partner görseli loading=lazy: kullanıcı gibi footer'a kaydırılır)
+      await pg.evaluate(() => document.querySelector('n1-global-footer-v1').scrollIntoView()); await pg.waitForTimeout(3000);
       const f = await pg.evaluate(() => { const host = document.querySelector('n1-global-footer-v1'), inner = host.querySelector('.n1ft-inner'), r = host.getBoundingClientRect();
         const soc = [...host.querySelectorAll('.n1ft-socials a, .n1ft-social a, a[aria-label*="acebook"], a[aria-label*="nstagram"], a[aria-label*="ouTube"], a[aria-label*="inked"]')].map((a) => a.href).filter((v, i, a) => a.indexOf(v) === i);
         const legal = [...host.querySelectorAll('.n1ft-legal a')].map((a) => [a.textContent.trim(), a.getAttribute('href')]);

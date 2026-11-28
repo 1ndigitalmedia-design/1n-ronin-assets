@@ -1,0 +1,504 @@
+{
+ "br": "chromium",
+ "width": 375,
+ "pass": 40,
+ "fail": 0,
+ "meas": {
+  "headerH": 64,
+  "panel": {
+   "top": 70,
+   "bottom": 657,
+   "sh": 595,
+   "ch": 587,
+   "scroll": true
+  },
+  "plat": 73,
+  "platSrc": "01-zeyp-320.webp",
+  "footerH": 844
+ },
+ "results": [
+  {
+   "g": "S iletişim",
+   "n": "Header: Teklif Al yok",
+   "ok": true,
+   "info": {
+    "hostH": 64,
+    "hostW": 375,
+    "barW": 338,
+    "barL": 19,
+    "vw": 375,
+    "cta": false,
+    "logoFill": "#a2ff00",
+    "logoW": 30,
+    "tag": "DIGITAL ADVERTISING AGENCY.",
+    "tagFont": "Barlow",
+    "btnVis": true,
+    "headers": 1,
+    "panels": 1,
+    "preLogo": 0
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Header: orijinal SVG logo kare zemini #A2FF00",
+   "ok": true,
+   "info": "#a2ff00"
+  },
+  {
+   "g": "S iletişim",
+   "n": "Header: dış genişlik %100, içerik %90 (±1 px), sol/sağ %5",
+   "ok": true,
+   "info": {
+    "barW": 338,
+    "vw": 375,
+    "left": 19
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Header: yükseklik kurumsal ölçü (88/72/64)",
+   "ok": true,
+   "info": 64
+  },
+  {
+   "g": "S iletişim",
+   "n": "Header: DIGITAL ADVERTISING AGENCY. + Barlow + MENU düğmesi",
+   "ok": true,
+   "info": {
+    "hostH": 64,
+    "hostW": 375,
+    "barW": 338,
+    "barL": 19,
+    "vw": 375,
+    "cta": false,
+    "logoFill": "#a2ff00",
+    "logoW": 30,
+    "tag": "DIGITAL ADVERTISING AGENCY.",
+    "tagFont": "Barlow",
+    "btnVis": true,
+    "headers": 1,
+    "panels": 1,
+    "preLogo": 0
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Tek header, tek panel",
+   "ok": true,
+   "info": {
+    "hostH": 64,
+    "hostW": 375,
+    "barW": 338,
+    "barL": 19,
+    "vw": 375,
+    "cta": false,
+    "logoFill": "#a2ff00",
+    "logoW": 30,
+    "tag": "DIGITAL ADVERTISING AGENCY.",
+    "tagFont": "Barlow",
+    "btnVis": true,
+    "headers": 1,
+    "panels": 1,
+    "preLogo": 0
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Platform logoları menü açılmadan indirilmiyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "S iletişim",
+   "n": "MENU açıyor",
+   "ok": true,
+   "info": true
+  },
+  {
+   "g": "S iletişim",
+   "n": "ana menü sırası ve adresleri (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "S iletişim",
+   "n": "panel ekran içinde (gerekirse kendi içinde kayar), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "top": 70,
+    "bottom": 657,
+    "vh": 667,
+    "sh": 595,
+    "ch": 587,
+    "oy": "auto",
+    "l": 19,
+    "r": 356
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "/"
+  },
+  {
+   "g": "S iletişim",
+   "n": "A7 Prodüksiyon: adres, yeni sekme, noopener noreferrer",
+   "ok": true,
+   "info": {
+    "href": "https://www.a7-1n.com/a7-produksiyon",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "text": "A7 Prodüksiyon",
+    "vis": true,
+    "h": 66
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Platformlar: sıra, adres, etiket",
+   "ok": true,
+   "info": [
+    "ZEYP (yeni sekmede açılır) 01-zeyp-320.webp",
+    "Market — Canlı Piyasalar (yeni sekmede açılır) 02-market-320.webp",
+    "Hemen Tıkla (yeni sekmede açılır) 03-hemen-tikla-320.webp",
+    "1N Intelligence 04-intelligence-320.webp"
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "Platformlar: dış bağlantılar yeni sekme + noopener noreferrer; Intelligence aynı sekme",
+   "ok": true,
+   "info": [
+    "_blank|noopener noreferrer",
+    "_blank|noopener noreferrer",
+    "_blank|noopener noreferrer",
+    "|"
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "Platformlar: kare, eşit boyut, ≥ 44 px, tek satır, soldan sağa",
+   "ok": true,
+   "info": "73x73@29,580 73x73@110,580 73x73@192,580 73x73@273,580"
+  },
+  {
+   "g": "S iletişim",
+   "n": "Platform logoları yüklendi (doğru dosya)",
+   "ok": true,
+   "info": [
+    "01-zeyp-320.webp:82",
+    "02-market-320.webp:82",
+    "03-hemen-tikla-320.webp:82",
+    "04-intelligence-320.webp:82"
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "İK alt menüsü açılıyor (2 bağlantı)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     0,
+     false
+    ],
+    [
+     "Hizmetler",
+     7,
+     false
+    ],
+    [
+     "Markalar",
+     0,
+     false
+    ],
+    [
+     "Akademi",
+     0,
+     false
+    ],
+    [
+     "İnsan Kaynakları",
+     2,
+     true
+    ],
+    [
+     "İletişim",
+     0,
+     false
+    ]
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "Hizmetler alt menüsü (7) açılıyor",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     0,
+     false
+    ],
+    [
+     "Hizmetler",
+     7,
+     true
+    ],
+    [
+     "Markalar",
+     0,
+     false
+    ],
+    [
+     "Akademi",
+     0,
+     false
+    ],
+    [
+     "İnsan Kaynakları",
+     2,
+     false
+    ],
+    [
+     "İletişim",
+     0,
+     false
+    ]
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "alt menü açıkken de panel ekran içinde (iç kaydırma)",
+   "ok": true,
+   "info": {
+    "bottom": 657,
+    "vh": 667,
+    "sh": 925,
+    "ch": 587
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "CLOSE menüyü kapatıyor, kart kalmıyor",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "S iletişim",
+   "n": "kapanınca ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "S iletişim",
+   "n": "A7 tıklaması yeni sekme açıyor ve menü kapanıyor",
+   "ok": true,
+   "info": {
+    "pop": "chrome-error://chromewebdata/",
+    "open": false
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "BFCache dönüşünde menü kapalı",
+   "ok": true,
+   "info": false
+  },
+  {
+   "g": "S iletişim",
+   "n": "BFCache sonrası menü yeniden açılıyor",
+   "ok": true
+  },
+  {
+   "g": "S iletişim",
+   "n": "yeniden bağlama ×3: tek header/panel/footer, dinleyici artışı yok",
+   "ok": true,
+   "info": {
+    "lc0": {
+     "win": 24,
+     "doc": 2
+    },
+    "lc1": {
+     "win": 24,
+     "doc": 2,
+     "panels": 1,
+     "headers": 1,
+     "footers": 1,
+     "fc": 1
+    }
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Footer: dış genişlik %100, içerik %90 (±1 px)",
+   "ok": true,
+   "info": {
+    "innerW": 338,
+    "vw": 375,
+    "l": 19
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Footer: başlık, adres, telefon, e-posta (onaylı kaynak)",
+   "ok": true,
+   "info": {
+    "brand": "1N Digital Media",
+    "tel": [
+     "tel:+902324002094"
+    ],
+    "mail": [
+     "mailto:pro.media@reklam1n.com"
+    ]
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Footer: 4 sosyal bağlantı SVG ikonlu (Facebook, Instagram, YouTube, LinkedIn)",
+   "ok": true,
+   "info": [
+    "https://www.facebook.com/1nreklam/",
+    "https://www.instagram.com/reklam1n/",
+    "https://www.youtube.com/@1nakademi",
+    "https://www.linkedin.com/in/1n-reklam-ajans%C4%B1"
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "Footer: 5 yasal bağlantı",
+   "ok": true,
+   "info": [
+    [
+     "Gizlilik Politikası",
+     "/gizlilik-politikasi"
+    ],
+    [
+     "KVKK Aydınlatma Metni",
+     "/kvkk-aydinlatma-metni"
+    ],
+    [
+     "Çerez Politikası",
+     "/cerez-politikasi"
+    ],
+    [
+     "Kullanım Koşulları",
+     "/kullanim-kosullari"
+    ],
+    [
+     "Veri Sahibi Başvuru Formu",
+     "/veri-sahibi-basvuru-formu"
+    ]
+   ]
+  },
+  {
+   "g": "S iletişim",
+   "n": "Footer (≤1024): onaylı partner görseli yüklendi (5 logo, TikTok dahil)",
+   "ok": true,
+   "info": {
+    "artVis": true,
+    "nw": 1080
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "Footer: copyright",
+   "ok": true,
+   "info": "© 2026 by 1N. Proudly created with 1N_Digital_Media"
+  },
+  {
+   "g": "S iletişim",
+   "n": "Footer altında boşluk yok, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "gap": 0,
+    "ox": false
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "WhatsApp / Yukarı Çık: tek katman (isteğe bağlı bileşen)",
+   "ok": true,
+   "info": {
+    "n": 1,
+    "wa": true
+   }
+  },
+  {
+   "g": "S iletişim",
+   "n": "video yok; platform logoları 160/320 WebP",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "S iletişim",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "S akademi",
+   "n": "menüde aktif durum: Akademi",
+   "ok": true,
+   "info": {
+    "cur": [
+     "Akademi"
+    ],
+    "aria": [
+     "Akademi1N Academy"
+    ]
+   }
+  },
+  {
+   "g": "S akademi",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "S 404",
+   "n": "aktif öğe yok",
+   "ok": true,
+   "info": {
+    "cur": [],
+    "aria": []
+   }
+  },
+  {
+   "g": "S 404",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  }
+ ]
+}

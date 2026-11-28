@@ -11,10 +11,10 @@ chromium 320 GEÇTİ S iletişim · Ekibimize Katıl yok
 chromium 320 GEÇTİ S iletişim · panel ekran içinde (gerekirse kendi içinde kayar), yatay taşma yok · {"top":70,"bottom":558,"vh":568,"sh":588,"ch":488,"oy":"auto","l":16,"r":304}
 chromium 320 GEÇTİ S iletişim · Başlangıca Dön → / · "/"
 chromium 320 GEÇTİ S iletişim · A7 Prodüksiyon: adres, yeni sekme, noopener noreferrer · {"href":"https://www.a7-1n.com/a7-produksiyon","target":"_blank","rel":"noopener noreferrer","text":"A7 Prodüksiyon","vis":true,"h":66}
-chromium 320 GEÇTİ S iletişim · Platformlar: sıra, adres, etiket · ["ZEYP (yeni sekmede açılır) 01-zeyp-160.webp","Market — Canlı Piyasalar (yeni sekmede açılır) 02-market-160.webp","Hemen Tıkla (yeni sekmede açılır) 03-hemen-tikla-160.webp","1N Intelligence 04-intelligence-160.webp"]
+chromium 320 GEÇTİ S iletişim · Platformlar: sıra, adres, etiket · ["ZEYP (yeni sekmede açılır) 01-zeyp-320.webp","Market — Canlı Piyasalar (yeni sekmede açılır) 02-market-320.webp","Hemen Tıkla (yeni sekmede açılır) 03-hemen-tikla-320.webp","1N Intelligence 04-intelligence-320.webp"]
 chromium 320 GEÇTİ S iletişim · Platformlar: dış bağlantılar yeni sekme + noopener noreferrer; Intelligence aynı sekme · ["_blank|noopener noreferrer","_blank|noopener noreferrer","_blank|noopener noreferrer","|"]
 chromium 320 GEÇTİ S iletişim · Platformlar: kare, eşit boyut, ≥ 44 px, tek satır, soldan sağa · "61x61@26,585 61x61@95,585 61x61@164,585 61x61@233,585"
-chromium 320 GEÇTİ S iletişim · Platform logoları yüklendi (doğru dosya) · ["01-zeyp-160.webp:70","02-market-160.webp:70","03-hemen-tikla-160.webp:70","04-intelligence-160.webp:70"]
+chromium 320 GEÇTİ S iletişim · Platform logoları yüklendi (doğru dosya) · ["01-zeyp-320.webp:96","02-market-320.webp:96","03-hemen-tikla-320.webp:96","04-intelligence-320.webp:96"]
 chromium 320 GEÇTİ S iletişim · İK alt menüsü açılıyor (2 bağlantı) · [["Kısaca Biz",0,false],["Hizmetler",7,false],["Markalar",0,false],["Akademi",0,false],["İnsan Kaynakları",2,true],["İletişim",0,false]]
 chromium 320 GEÇTİ S iletişim · Hizmetler alt menüsü (7) açılıyor · [["Kısaca Biz",0,false],["Hizmetler",7,true],["Markalar",0,false],["Akademi",0,false],["İnsan Kaynakları",2,false],["İletişim",0,false]]
 chromium 320 GEÇTİ S iletişim · alt menü açıkken de panel ekran içinde (iç kaydırma) · {"bottom":558,"vh":568,"sh":918,"ch":488}
@@ -38,5 +38,5 @@ chromium 320 GEÇTİ S akademi · menüde aktif durum: Akademi · {"cur":["Akade
 chromium 320 GEÇTİ S akademi · JS hatası yok · []
 chromium 320 GEÇTİ S 404 · aktif öğe yok · {"cur":[],"aria":[]}
 chromium 320 GEÇTİ S 404 · JS hatası yok · []
-chromium 320 ÖLÇÜ {"headerH":64,"panel":{"top":70,"bottom":558,"sh":588,"ch":488,"scroll":true},"plat":61,"platSrc":"01-zeyp-160.webp","footerH":856}
+chromium 320 ÖLÇÜ {"headerH":64,"panel":{"top":70,"bottom":558,"sh":588,"ch":488,"scroll":true},"plat":61,"platSrc":"01-zeyp-320.webp","footerH":856}
 chromium 320 TOPLAM 40 geçti 0 kaldı

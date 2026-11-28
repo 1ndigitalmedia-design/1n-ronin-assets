@@ -13,7 +13,7 @@
    "scroll": true
   },
   "plat": 61,
-  "platSrc": "01-zeyp-160.webp",
+  "platSrc": "01-zeyp-320.webp",
   "footerH": 856
  },
  "results": [
@@ -189,10 +189,10 @@
    "n": "Platformlar: sıra, adres, etiket",
    "ok": true,
    "info": [
-    "ZEYP (yeni sekmede açılır) 01-zeyp-160.webp",
-    "Market — Canlı Piyasalar (yeni sekmede açılır) 02-market-160.webp",
-    "Hemen Tıkla (yeni sekmede açılır) 03-hemen-tikla-160.webp",
-    "1N Intelligence 04-intelligence-160.webp"
+    "ZEYP (yeni sekmede açılır) 01-zeyp-320.webp",
+    "Market — Canlı Piyasalar (yeni sekmede açılır) 02-market-320.webp",
+    "Hemen Tıkla (yeni sekmede açılır) 03-hemen-tikla-320.webp",
+    "1N Intelligence 04-intelligence-320.webp"
    ]
   },
   {
@@ -217,10 +217,10 @@
    "n": "Platform logoları yüklendi (doğru dosya)",
    "ok": true,
    "info": [
-    "01-zeyp-160.webp:70",
-    "02-market-160.webp:70",
-    "03-hemen-tikla-160.webp:70",
-    "04-intelligence-160.webp:70"
+    "01-zeyp-320.webp:96",
+    "02-market-320.webp:96",
+    "03-hemen-tikla-320.webp:96",
+    "04-intelligence-320.webp:96"
    ]
   },
   {

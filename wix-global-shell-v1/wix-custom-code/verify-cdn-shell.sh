@@ -6,7 +6,7 @@
 # jsDelivr: yeni commit'in dosyaları ilk dakikalarda 403 dönebilir → 1-2 dk bekleyip tekrar çalıştırın.
 J=https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets
 cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" || exit 1
-A=9a8e261f72975ccc5d94d33dfe9e6313b4e8f5dd; M=cce282464fb3eac460bb13b4d03286b250d65712; P=a80045ca8ebbb3d5d59b16069910f00d24dd95aa
+A=9a8e261f72975ccc5d94d33dfe9e6313b4e8f5dd; M=9bbcefd65becbc196baebea26600060b01af406c; P=144d964a795e515e3b79f0e39c0eeee244a786f8
 C648=d24fa373d6d76c0218b3f3b77897a8c2ace04e5e; CR=09612df97e85978976d13edbd79dad0adcc1d1f1
 LIST="
 $P wix-global-shell-v1/n1-global-shell-v1.js

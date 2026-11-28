@@ -9,6 +9,7 @@ const report = {};
   async function page(prof, path, opt) { const ctx = await b.newContext(PROF[prof]); const rs = require('./routeshell.js'); await rs(ctx, {}, opt && opt.live ? { mode: 'live' } : {}); await rs.shellPages(ctx, SH);
     const pg = await ctx.newPage(); await pg.goto(B + path, { waitUntil: 'domcontentloaded', timeout: 60000 }); await pg.waitForTimeout(opt && opt.wait || 9000); return { ctx, pg }; }
   const tap = (prof, l) => prof === 'masaustu' ? l.click() : l.tap();
+  const ONLY = process.env.VIS_ONLY; if (ONLY !== 'birlesik') {
   // 1) yeni global menü (mevcut sayfada, yeni sürüm) — masaüstü ve mobil; İK alt menüsü açık
   for (const prof of ['masaustu', 'mobil']) {
     const { ctx, pg } = await page(prof, '/reklam-yonetimi');
@@ -16,8 +17,12 @@ const report = {};
     await pg.screenshot({ path: OUT + `global-menu-${prof}.png` });
     await tap(prof, pg.locator('.n1h-panel[data-open] .n1h-subtog')); await pg.waitForTimeout(900);
     await pg.screenshot({ path: OUT + `global-menu-ik-alt-menu-${prof}.png` });
-    const cards = await pg.evaluate(() => { const a = document.querySelector('.n1h-panel[data-open] .n1h-a7card'), p = document.querySelector('.n1h-panel[data-open] .n1h-platcard'); const ra = a.getBoundingClientRect(), rp = p.getBoundingClientRect(); return { x: Math.floor(Math.min(ra.left, rp.left)) - 8, y: Math.floor(ra.top) - 8, w: Math.ceil(Math.max(ra.right, rp.right) - Math.min(ra.left, rp.left)) + 16, h: Math.ceil(rp.bottom - ra.top) + 16 }; });
-    if (prof === 'masaustu') await pg.evaluate(() => document.querySelector('.n1h-panel[data-open]').scrollTop = 0);
+    await tap(prof, pg.locator('.n1h-panel[data-open] .n1h-subtog')); await pg.waitForTimeout(700);
+    await pg.locator('.n1h-panel[data-open] .n1h-a7card').scrollIntoViewIfNeeded(); await pg.locator('.n1h-panel[data-open] .n1h-platcard').scrollIntoViewIfNeeded(); await pg.waitForTimeout(500);
+    const ba = await pg.locator('.n1h-panel[data-open] .n1h-a7card').boundingBox(), bp = await pg.locator('.n1h-panel[data-open] .n1h-platcard').boundingBox();
+    const x0 = Math.max(0, Math.min(ba.x, bp.x) - 8), y0 = Math.max(0, Math.min(ba.y, bp.y) - 8);
+    const cards = { x: x0, y: y0, width: Math.min(PROF[prof].viewport.width - x0, Math.max(ba.x + ba.width, bp.x + bp.width) - x0 + 8), height: Math.min(PROF[prof].viewport.height - y0, Math.max(ba.y + ba.height, bp.y + bp.height) - y0 + 8) };
+    report['cards_' + prof] = { a7: ba, plat: bp };
     await pg.screenshot({ path: OUT + `a7-ve-platformlar-${prof}.png`, clip: cards });
     await ctx.close();
   }
@@ -58,12 +63,13 @@ const report = {};
     await c.ctx.close();
     report['footer_' + prof] = { bagimsiz: fs1, kurumsal: fs2 };
   }
+  }
   // 4) birleşik sayfalar (İletişim: header + HTML V4 içerik + Wix Forms alanı + footer), Akademi, 404
   for (const prof of ['masaustu', 'tablet', 'mobil']) for (const [path, n] of [['/iletisim?n1shell=iletisim', 'iletisim'], ['/reklam-ajansi?n1shell=akademi', 'akademi'], ['/bu-sayfa-yok-xyz?n1shell=404', '404']]) {
     if (n !== 'iletisim' && prof === 'tablet') continue;
     const { ctx, pg } = await page(prof, path, { wait: 7000 }); await pg.waitForTimeout(1500);
     await pg.screenshot({ path: OUT + `birlesik-${n}-${prof}.png`, fullPage: true }); await ctx.close();
   }
-  fs.writeFileSync(__dirname + '/../qa/visual-compare.json', JSON.stringify(report, null, 1)); console.log(JSON.stringify(report).slice(0, 3000));
+  if (!ONLY) fs.writeFileSync(__dirname + '/../qa/visual-compare.json', JSON.stringify(report, null, 1)); console.log(JSON.stringify(report).slice(0, 3000));
   await b.close();
 })();

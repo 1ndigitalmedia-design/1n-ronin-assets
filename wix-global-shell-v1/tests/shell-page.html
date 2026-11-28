@@ -23,7 +23,7 @@ html,body{margin:0;padding:0;background:#080A09}
 </div>
 <script>
 (function(){var p='{{PAGE}}',m=document.getElementById('wx-main');
- if(p==='iletisim'){m.innerHTML='<section class="wx-section"><iframe class="wx-embed" title="İletişim HTML V4 (HTML Embed benzetimi)" src="/__shell/iletisim-embed.html" style="height:640px"></iframe></section><section class="wx-section wx-form" aria-label="Wix Forms">Wix Forms bölümü (sizin oluşturacağınız form)</section>';}
+ if(p==='iletisim'){m.innerHTML='<section class="wx-section"><iframe class="wx-embed" title="İletişim HTML V4 (HTML Embed benzetimi)" src="/__shell/iletisim-embed.html" style="height:640px" onload="var f=this,fit=function(){try{f.style.height=f.contentDocument.documentElement.scrollHeight+\'px\'}catch(e){}};fit();setTimeout(fit,800);setTimeout(fit,2500)"></iframe></section><section class="wx-section wx-form" aria-label="Wix Forms">Wix Forms bölümü (sizin oluşturacağınız form)</section>';}
  else if(p==='akademi'){m.innerHTML='<section class="wx-section wx-content wx-tall"><h1 style="font:600 40px Barlow Condensed,Arial">Akademi (mevcut Wix içeriği burada kalır)</h1><p>Yer tutucu: blog yazıları, görseller ve Wix bileşenleri değişmez.</p></section>';}
  else {m.innerHTML='<section class="wx-section wx-content" style="min-height:420px"><h1 style="font:300 56px Barlow,Arial;text-align:center">404 - Sayfa Bulunamadı!</h1><p style="text-align:center">Mevcut 404 içerik tasarımı (değişmez).</p></section>';}
 })();

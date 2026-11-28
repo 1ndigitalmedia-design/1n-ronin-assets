@@ -2,7 +2,7 @@
  "br": "chromium",
  "width": 1440,
  "pass": 78,
- "fail": 2,
+ "fail": 0,
  "results": [
   {
    "g": "P /",
@@ -654,14 +654,6 @@
   },
   {
    "g": "P /insan-kaynaklari",
-   "n": "aktif durum: İnsan Kaynakları",
-   "ok": false,
-   "info": [
-    "Kısaca Biz"
-   ]
-  },
-  {
-   "g": "P /insan-kaynaklari",
    "n": "normal kapanış: ekranda kart kalmıyor",
    "ok": true,
    "info": 0
@@ -772,14 +764,6 @@
    "n": "logolar menü açılmadan indirilmedi",
    "ok": true,
    "info": 0
-  },
-  {
-   "g": "P /staj-programlari",
-   "n": "aktif durum: İnsan Kaynakları",
-   "ok": false,
-   "info": [
-    "Kısaca Biz"
-   ]
   },
   {
    "g": "P /staj-programlari",

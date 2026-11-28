@@ -7,12 +7,12 @@
   "headerH": 72,
   "panel": {
    "top": 80,
-   "bottom": 776,
-   "sh": 696,
-   "ch": 696,
+   "bottom": 698,
+   "sh": 618,
+   "ch": 618,
    "scroll": false
   },
-  "plat": 174,
+  "plat": 96,
   "platSrc": "01-zeyp-320.webp",
   "footerH": 784
  },
@@ -156,10 +156,10 @@
    "ok": true,
    "info": {
     "top": 80,
-    "bottom": 776,
+    "bottom": 698,
     "vh": 1180,
-    "sh": 696,
-    "ch": 696,
+    "sh": 618,
+    "ch": 618,
     "oy": "auto",
     "l": 41,
     "r": 779
@@ -210,17 +210,17 @@
    "g": "S iletişim",
    "n": "Platformlar: kare, eşit boyut, ≥ 44 px, tek satır, soldan sağa",
    "ok": true,
-   "info": "174x174@51,590 174x174@233,590 174x174@414,590 174x174@596,590"
+   "info": "96x96@51,590 96x96@155,590 96x96@259,590 96x96@363,590"
   },
   {
    "g": "S iletişim",
    "n": "Platform logoları yüklendi (doğru dosya)",
    "ok": true,
    "info": [
-    "01-zeyp-320.webp:84",
-    "02-market-320.webp:84",
-    "03-hemen-tikla-320.webp:84",
-    "04-intelligence-320.webp:84"
+    "01-zeyp-320.webp:96",
+    "02-market-320.webp:96",
+    "03-hemen-tikla-320.webp:96",
+    "04-intelligence-320.webp:96"
    ]
   },
   {
@@ -302,10 +302,10 @@
    "n": "alt menü açıkken de panel ekran içinde (iç kaydırma)",
    "ok": true,
    "info": {
-    "bottom": 1106,
+    "bottom": 1028,
     "vh": 1180,
-    "sh": 1026,
-    "ch": 1026
+    "sh": 948,
+    "ch": 948
    }
   },
   {

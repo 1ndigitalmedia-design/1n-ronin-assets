@@ -1,0 +1,42 @@
+chromium 375 GEÇTİ S iletişim · Header: Teklif Al yok · {"hostH":64,"hostW":375,"barW":338,"barL":19,"vw":375,"cta":false,"logoFill":"#a2ff00","logoW":30,"tag":"DIGITAL ADVERTISING AGENCY.","tagFont":"Barlow","btnVis":true,"headers":1,"panels":1,"preLogo":0}
+chromium 375 GEÇTİ S iletişim · Header: orijinal SVG logo kare zemini #A2FF00 · "#a2ff00"
+chromium 375 GEÇTİ S iletişim · Header: dış genişlik %100, içerik %90 (±1 px), sol/sağ %5 · {"barW":338,"vw":375,"left":19}
+chromium 375 GEÇTİ S iletişim · Header: yükseklik kurumsal ölçü (88/72/64) · 64
+chromium 375 GEÇTİ S iletişim · Header: DIGITAL ADVERTISING AGENCY. + Barlow + MENU düğmesi · {"hostH":64,"hostW":375,"barW":338,"barL":19,"vw":375,"cta":false,"logoFill":"#a2ff00","logoW":30,"tag":"DIGITAL ADVERTISING AGENCY.","tagFont":"Barlow","btnVis":true,"headers":1,"panels":1,"preLogo":0}
+chromium 375 GEÇTİ S iletişim · Tek header, tek panel · {"hostH":64,"hostW":375,"barW":338,"barL":19,"vw":375,"cta":false,"logoFill":"#a2ff00","logoW":30,"tag":"DIGITAL ADVERTISING AGENCY.","tagFont":"Barlow","btnVis":true,"headers":1,"panels":1,"preLogo":0}
+chromium 375 GEÇTİ S iletişim · Platform logoları menü açılmadan indirilmiyor · 0
+chromium 375 GEÇTİ S iletişim · MENU açıyor · true
+chromium 375 GEÇTİ S iletişim · ana menü sırası ve adresleri (İletişim dahil) · [["Kısaca Biz","/kisaca-biz"],["Hizmetler",null],["Markalar","/markalar"],["Akademi","/reklam-ajansi"],["İnsan Kaynakları","/insan-kaynaklari"],["İletişim","/iletisim"]]
+chromium 375 GEÇTİ S iletişim · Ekibimize Katıl yok 
+chromium 375 GEÇTİ S iletişim · panel ekran içinde (gerekirse kendi içinde kayar), yatay taşma yok · {"top":70,"bottom":657,"vh":667,"sh":595,"ch":587,"oy":"auto","l":19,"r":356}
+chromium 375 GEÇTİ S iletişim · Başlangıca Dön → / · "/"
+chromium 375 GEÇTİ S iletişim · A7 Prodüksiyon: adres, yeni sekme, noopener noreferrer · {"href":"https://www.a7-1n.com/a7-produksiyon","target":"_blank","rel":"noopener noreferrer","text":"A7 Prodüksiyon","vis":true,"h":66}
+chromium 375 GEÇTİ S iletişim · Platformlar: sıra, adres, etiket · ["ZEYP (yeni sekmede açılır) 01-zeyp-320.webp","Market — Canlı Piyasalar (yeni sekmede açılır) 02-market-320.webp","Hemen Tıkla (yeni sekmede açılır) 03-hemen-tikla-320.webp","1N Intelligence 04-intelligence-320.webp"]
+chromium 375 GEÇTİ S iletişim · Platformlar: dış bağlantılar yeni sekme + noopener noreferrer; Intelligence aynı sekme · ["_blank|noopener noreferrer","_blank|noopener noreferrer","_blank|noopener noreferrer","|"]
+chromium 375 GEÇTİ S iletişim · Platformlar: kare, eşit boyut, ≥ 44 px, tek satır, soldan sağa · "73x73@29,580 73x73@110,580 73x73@192,580 73x73@273,580"
+chromium 375 GEÇTİ S iletişim · Platform logoları yüklendi (doğru dosya) · ["01-zeyp-320.webp:82","02-market-320.webp:82","03-hemen-tikla-320.webp:82","04-intelligence-320.webp:82"]
+chromium 375 GEÇTİ S iletişim · İK alt menüsü açılıyor (2 bağlantı) · [["Kısaca Biz",0,false],["Hizmetler",7,false],["Markalar",0,false],["Akademi",0,false],["İnsan Kaynakları",2,true],["İletişim",0,false]]
+chromium 375 GEÇTİ S iletişim · Hizmetler alt menüsü (7) açılıyor · [["Kısaca Biz",0,false],["Hizmetler",7,true],["Markalar",0,false],["Akademi",0,false],["İnsan Kaynakları",2,false],["İletişim",0,false]]
+chromium 375 GEÇTİ S iletişim · alt menü açıkken de panel ekran içinde (iç kaydırma) · {"bottom":657,"vh":667,"sh":925,"ch":587}
+chromium 375 GEÇTİ S iletişim · CLOSE menüyü kapatıyor, kart kalmıyor · []
+chromium 375 GEÇTİ S iletişim · kapanınca ekranda kart kalmıyor · 0
+chromium 375 GEÇTİ S iletişim · A7 tıklaması yeni sekme açıyor ve menü kapanıyor · {"pop":"chrome-error://chromewebdata/","open":false}
+chromium 375 GEÇTİ S iletişim · BFCache dönüşünde menü kapalı · false
+chromium 375 GEÇTİ S iletişim · BFCache sonrası menü yeniden açılıyor 
+chromium 375 GEÇTİ S iletişim · yeniden bağlama ×3: tek header/panel/footer, dinleyici artışı yok · {"lc0":{"win":24,"doc":2},"lc1":{"win":24,"doc":2,"panels":1,"headers":1,"footers":1,"fc":1}}
+chromium 375 GEÇTİ S iletişim · Footer: dış genişlik %100, içerik %90 (±1 px) · {"innerW":338,"vw":375,"l":19}
+chromium 375 GEÇTİ S iletişim · Footer: başlık, adres, telefon, e-posta (onaylı kaynak) · {"brand":"1N Digital Media","tel":["tel:+902324002094"],"mail":["mailto:pro.media@reklam1n.com"]}
+chromium 375 GEÇTİ S iletişim · Footer: 4 sosyal bağlantı SVG ikonlu (Facebook, Instagram, YouTube, LinkedIn) · ["https://www.facebook.com/1nreklam/","https://www.instagram.com/reklam1n/","https://www.youtube.com/@1nakademi","https://www.linkedin.com/in/1n-reklam-ajans%C4%B1"]
+chromium 375 GEÇTİ S iletişim · Footer: 5 yasal bağlantı · [["Gizlilik Politikası","/gizlilik-politikasi"],["KVKK Aydınlatma Metni","/kvkk-aydinlatma-metni"],["Çerez Politikası","/cerez-politikasi"],["Kullanım Koşulları","/kullanim-kosullari"],["Veri Sahibi Başvuru Formu","/veri-sahibi-ba
+chromium 375 GEÇTİ S iletişim · Footer (≤1024): onaylı partner görseli yüklendi (5 logo, TikTok dahil) · {"artVis":true,"nw":1080}
+chromium 375 GEÇTİ S iletişim · Footer: copyright · "© 2026 by 1N. Proudly created with 1N_Digital_Media"
+chromium 375 GEÇTİ S iletişim · Footer altında boşluk yok, yatay taşma yok · {"gap":0,"ox":false}
+chromium 375 GEÇTİ S iletişim · WhatsApp / Yukarı Çık: tek katman (isteğe bağlı bileşen) · {"n":1,"wa":true}
+chromium 375 GEÇTİ S iletişim · video yok; platform logoları 160/320 WebP · []
+chromium 375 GEÇTİ S iletişim · JS hatası yok · []
+chromium 375 GEÇTİ S akademi · menüde aktif durum: Akademi · {"cur":["Akademi"],"aria":["Akademi1N Academy"]}
+chromium 375 GEÇTİ S akademi · JS hatası yok · []
+chromium 375 GEÇTİ S 404 · aktif öğe yok · {"cur":[],"aria":[]}
+chromium 375 GEÇTİ S 404 · JS hatası yok · []
+chromium 375 ÖLÇÜ {"headerH":64,"panel":{"top":70,"bottom":657,"sh":595,"ch":587,"scroll":true},"plat":73,"platSrc":"01-zeyp-320.webp","footerH":844}
+chromium 375 TOPLAM 40 geçti 0 kaldı
