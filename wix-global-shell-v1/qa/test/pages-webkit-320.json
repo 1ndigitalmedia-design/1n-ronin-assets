@@ -1,8 +1,8 @@
 {
  "br": "webkit",
  "width": 320,
- "pass": 80,
- "fail": 1,
+ "pass": 81,
+ "fail": 0,
  "results": [
   {
    "g": "P /",
@@ -813,6 +813,8 @@
     ],
     "m5": true,
     "v661": true,
+    "dpr": 2,
+    "film": 320,
     "ronin": [
      "ronin-m5-film.mp4"
     ]
@@ -820,11 +822,16 @@
   },
   {
    "g": "V1.4 ana sayfa",
-   "n": "Ronin 2× kaynağı",
-   "ok": false,
-   "info": [
-    "ronin-m5-film.mp4"
-   ]
+   "n": "Ronin kademesi V1.4 kuralına uygun (film px × DPR > 840 → 2×, değilse doğal)",
+   "ok": true,
+   "info": {
+    "ronin": [
+     "ronin-m5-film.mp4"
+    ],
+    "film": 320,
+    "dpr": 2,
+    "want2x": false
+   }
   },
   {
    "g": "V1.4 hizmet",

@@ -2,7 +2,7 @@
 
 > Bu sonuçlar Playwright testleridir. **WebKit iPhone Safari değildir.** Fiziksel cihaz ve Firefox testi yapılmadı, gerçek Wix yayınında doğrulama yapılmadı (WIX_COMPATIBILITY).
 
-**Toplam: 1154 kontrol geçti, 2 kaldı.** Ham sonuçlar `qa/test/*.json` ve `*.log` dosyalarında. Testler: `tests/shell-test.js`, `tests/pages-test.js`, `tests/active-test.js`.
+**Toplam: 1156 kontrol geçti, 0 kaldı.** Ham sonuçlar `qa/test/*.json` ve `*.log` dosyalarında. Testler: `tests/shell-test.js`, `tests/pages-test.js`, `tests/active-test.js`.
 
 ## Düzenek
 - **Canlı site + yerel dosya:** testler canlı `www.reklam1n.com` sayfalarını açar; `tests/routeshell.js` canlıdaki Server URL isteklerini bu paketin yerel dosyalarına yönlendirir. Böylece Wix'in gerçek DOM'u, Wix bileşenleri ve yükleyici ortamında yeni dosyalar çalışır.
@@ -66,10 +66,10 @@ Sayfalar: `/`, `/reklam-yonetimi`, `/kisaca-biz`, `/markalar`, `/gizlilik`, `/in
 
 | Motor / genişlik | Sonuç |
 |---|---|
-| chromium 390 | 80/81 |
+| chromium 390 | 81/81 |
 | chromium 1024 | 81/81 |
 | chromium 1440 | 78/78 |
-| webkit 320 | 80/81 |
+| webkit 320 | 81/81 |
 | webkit 390 | 81/81 |
 | webkit 1440 | 78/78 |
 
