@@ -1,0 +1,6 @@
+<   var VERSION = '1.1.0';   /* V2.1: header v15 (tek renkli kompakt platform logoları) */
+>   var VERSION = '1.2.0';   /* V2.2: header v16 + menü verisi v17 (Uygulama ve Platformlar yerine 1N Intelligence kartı) */
+<     markup: CGS + '/wix-global-shell-v1/site/n1-site-markup-v16.js',
+<     header: '6df38aa58398670c8e2617632ef88b9895bfd4e9/wix-global-shell-v1/modules/n1-header-v15.js',
+>     markup: 'f7b29c2aa1005f836a6495fa3279ccc59255af6d/wix-global-shell-v1/site/n1-site-markup-v17.js',
+>     header: 'f7b29c2aa1005f836a6495fa3279ccc59255af6d/wix-global-shell-v1/modules/n1-header-v16.js',

@@ -1,0 +1,104 @@
+[
+ {
+  "page": "/insan-kaynaklari",
+  "br": "webkit",
+  "profile": "mobil",
+  "h1": 1,
+  "h1text": "İNSAN KAYNAKLARI.",
+  "overflowX": false,
+  "overEls": [],
+  "header": true,
+  "footer": true,
+  "fc": true,
+  "gapBelowFooter": 0,
+  "height": 1902,
+  "videos": 0,
+  "canvas": 0,
+  "imgs": 0,
+  "doors": [
+   "/acik-pozisyonlar",
+   "/staj-programlari"
+  ],
+  "back": null,
+  "gsap": true,
+  "st": false,
+  "errors": [],
+  "media": [],
+  "big": [],
+  "routed": {
+   "doc:/insan-kaynaklari": 1,
+   "navs": [
+    "/insan-kaynaklari"
+   ],
+   "career:/insan-kaynaklari": 1,
+   "wix-career-v1/site/n1-site-markup-v15.js": 1,
+   "wix-career-v1/modules/n1-header-v13.js": 1
+  }
+ },
+ {
+  "page": "/acik-pozisyonlar",
+  "br": "webkit",
+  "profile": "mobil",
+  "h1": 1,
+  "h1text": "AÇIK POZİSYONLAR.",
+  "overflowX": false,
+  "overEls": [],
+  "header": true,
+  "footer": true,
+  "fc": true,
+  "gapBelowFooter": 0,
+  "height": 1766,
+  "videos": 0,
+  "canvas": 0,
+  "imgs": 0,
+  "doors": [],
+  "back": "https://www.reklam1n.com/insan-kaynaklari",
+  "gsap": true,
+  "st": false,
+  "errors": [],
+  "media": [],
+  "big": [],
+  "routed": {
+   "doc:/acik-pozisyonlar": 1,
+   "navs": [
+    "/acik-pozisyonlar"
+   ],
+   "career:/acik-pozisyonlar": 1,
+   "wix-career-v1/site/n1-site-markup-v15.js": 1,
+   "wix-career-v1/modules/n1-header-v13.js": 1
+  }
+ },
+ {
+  "page": "/staj-programlari",
+  "br": "webkit",
+  "profile": "mobil",
+  "h1": 1,
+  "h1text": "STAJ PROGRAMLARI.",
+  "overflowX": false,
+  "overEls": [],
+  "header": true,
+  "footer": true,
+  "fc": true,
+  "gapBelowFooter": 0,
+  "height": 1766,
+  "videos": 0,
+  "canvas": 0,
+  "imgs": 0,
+  "doors": [],
+  "back": "https://www.reklam1n.com/insan-kaynaklari",
+  "gsap": true,
+  "st": false,
+  "errors": [],
+  "media": [],
+  "big": [],
+  "routed": {
+   "doc:/staj-programlari": 1,
+   "navs": [
+    "/staj-programlari"
+   ],
+   "career:/staj-programlari": 1,
+   "wix-career-v1/site/n1-site-markup-v15.js": 1,
+   "wix-career-v1/modules/n1-header-v13.js": 1
+  }
+ }
+]

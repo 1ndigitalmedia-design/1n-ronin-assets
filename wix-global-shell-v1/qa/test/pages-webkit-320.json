@@ -1,0 +1,846 @@
+{
+ "br": "webkit",
+ "width": 320,
+ "pass": 81,
+ "fail": 0,
+ "results": [
+  {
+   "g": "P /",
+   "n": "menü: 6 başlık, sıra ve adresler (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "P /",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "P /",
+   "n": "A7 + 4 platform bağlantısı",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "P /",
+   "n": "bütün satırlar aynı yazı boyutu (İletişim dahil)",
+   "ok": true,
+   "info": [
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px"
+   ]
+  },
+  {
+   "g": "P /",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "bottom": 558,
+    "vh": 568,
+    "sh": 588,
+    "ch": 488
+   }
+  },
+  {
+   "g": "P /",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "#ust"
+  },
+  {
+   "g": "P /",
+   "n": "logolar menü açılmadan indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /",
+   "n": "normal kapanış: ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /",
+   "n": "İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/iletisim",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /",
+   "n": "tarayıcı geri: menü açık kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "menü: 6 başlık, sıra ve adresler (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "A7 + 4 platform bağlantısı",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "bütün satırlar aynı yazı boyutu (İletişim dahil)",
+   "ok": true,
+   "info": [
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px"
+   ]
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "bottom": 558,
+    "vh": 568,
+    "sh": 588,
+    "ch": 488
+   }
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "/"
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "logolar menü açılmadan indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "normal kapanış: ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/iletisim",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "tarayıcı geri: menü açık kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/reklam-yonetimi",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /reklam-yonetimi",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "menü: 6 başlık, sıra ve adresler (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "A7 + 4 platform bağlantısı",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "bütün satırlar aynı yazı boyutu (İletişim dahil)",
+   "ok": true,
+   "info": [
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px"
+   ]
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "bottom": 558,
+    "vh": 568,
+    "sh": 588,
+    "ch": 488
+   }
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "/"
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "logolar menü açılmadan indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "normal kapanış: ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/iletisim",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "tarayıcı geri: menü açık kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/kisaca-biz",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /kisaca-biz",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "P /markalar",
+   "n": "menü: 6 başlık, sıra ve adresler (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "P /markalar",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "P /markalar",
+   "n": "A7 + 4 platform bağlantısı",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "P /markalar",
+   "n": "bütün satırlar aynı yazı boyutu (İletişim dahil)",
+   "ok": true,
+   "info": [
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px"
+   ]
+  },
+  {
+   "g": "P /markalar",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "bottom": 558,
+    "vh": 568,
+    "sh": 588,
+    "ch": 488
+   }
+  },
+  {
+   "g": "P /markalar",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "/"
+  },
+  {
+   "g": "P /markalar",
+   "n": "logolar menü açılmadan indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /markalar",
+   "n": "normal kapanış: ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /markalar",
+   "n": "İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/iletisim",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /markalar",
+   "n": "tarayıcı geri: menü açık kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/markalar",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /markalar",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "menü: 6 başlık, sıra ve adresler (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "A7 + 4 platform bağlantısı",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "bütün satırlar aynı yazı boyutu (İletişim dahil)",
+   "ok": true,
+   "info": [
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px"
+   ]
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "bottom": 558,
+    "vh": 568,
+    "sh": 588,
+    "ch": 488
+   }
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "/"
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "logolar menü açılmadan indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "normal kapanış: ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/iletisim",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "tarayıcı geri: menü açık kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/gizlilik",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /gizlilik",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "menü: 6 başlık, sıra ve adresler (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "A7 + 4 platform bağlantısı",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "bütün satırlar aynı yazı boyutu (İletişim dahil)",
+   "ok": true,
+   "info": [
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px"
+   ]
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "bottom": 558,
+    "vh": 568,
+    "sh": 588,
+    "ch": 488
+   }
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "/"
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "logolar menü açılmadan indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "normal kapanış: ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/iletisim",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "tarayıcı geri: menü açık kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/kisaca-biz?n1career=insan-kaynaklari",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /insan-kaynaklari",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "menü: 6 başlık, sıra ve adresler (İletişim dahil)",
+   "ok": true,
+   "info": [
+    [
+     "Kısaca Biz",
+     "/kisaca-biz"
+    ],
+    [
+     "Hizmetler",
+     null
+    ],
+    [
+     "Markalar",
+     "/markalar"
+    ],
+    [
+     "Akademi",
+     "/reklam-ajansi"
+    ],
+    [
+     "İnsan Kaynakları",
+     "/insan-kaynaklari"
+    ],
+    [
+     "İletişim",
+     "/iletisim"
+    ]
+   ]
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "Ekibimize Katıl yok",
+   "ok": true
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "A7 + 4 platform bağlantısı",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "bütün satırlar aynı yazı boyutu (İletişim dahil)",
+   "ok": true,
+   "info": [
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px",
+    "25px"
+   ]
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok",
+   "ok": true,
+   "info": {
+    "bottom": 558,
+    "vh": 568,
+    "sh": 588,
+    "ch": 488
+   }
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "Başlangıca Dön → /",
+   "ok": true,
+   "info": "/"
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "logolar menü açılmadan indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "normal kapanış: ekranda kart kalmıyor",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "İletişim bağlantısı /iletisim; menü kapalı, katman kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/iletisim",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "tarayıcı geri: menü açık kalmıyor",
+   "ok": true,
+   "info": {
+    "url": "https://www.reklam1n.com/kisaca-biz?n1career=staj-programlari",
+    "open": 0
+   }
+  },
+  {
+   "g": "P /staj-programlari",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "V1.4 ana sayfa",
+   "n": "\"Hikâyemizin Devamı\" → /kisaca-biz",
+   "ok": true,
+   "info": [
+    "/kisaca-biz"
+   ]
+  },
+  {
+   "g": "V1.4 ana sayfa",
+   "n": "mobil video modülü v14",
+   "ok": true,
+   "info": {
+    "cta": [
+     "/kisaca-biz"
+    ],
+    "m5": true,
+    "v661": true,
+    "dpr": 2,
+    "film": 320,
+    "ronin": [
+     "ronin-m5-film.mp4"
+    ]
+   }
+  },
+  {
+   "g": "V1.4 ana sayfa",
+   "n": "Ronin kademesi V1.4 kuralına uygun (film px × DPR > 840 → 2×, değilse doğal)",
+   "ok": true,
+   "info": {
+    "ronin": [
+     "ronin-m5-film.mp4"
+    ],
+    "film": 320,
+    "dpr": 2,
+    "want2x": false
+   }
+  },
+  {
+   "g": "V1.4 hizmet",
+   "n": "E-Ticaret: WebP kare 2, kaynaklı video ≤ 1",
+   "ok": true,
+   "info": {
+    "stills": 2,
+    "vSrc": 1
+   }
+  }
+ ]
+}

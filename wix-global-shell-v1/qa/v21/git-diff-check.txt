@@ -1,0 +1,30 @@
+## V1.4 ana sayfa v659 (@36a24d3, canlı V1.4) ↔ V2.1 v662: değişen satırlar
+> /* GLOBAL MENÜ V2.1 (wix-global-shell … n1-site-wix-v661
+> /* KARİYER V1 (wix-career-v1/sites) � … n1-site-wix-v659
+<     (function () { var s = [].slice.ca … n1-site-wix-v659
+>     (function () { var s = [].slice.ca … n1-site-wix-v662
+<       var markupDone = loadScript("htt … n1-site-markup-v14.js
+>       var markupDone = loadScript("htt … n1-site-markup-v16.js
+<           loadScript("https://cdn.jsde … n1-header-v12.js
+>           loadScript("https://cdn.jsde … n1-header-v15.js
+<             if (f === 'n1-header-v613. … n1-header-v12.js
+>             if (f === 'n1-header-v613. … n1-header-v15.js
+<         (earlyHeader?Promise.resolve() … n1-header-v12.js
+>         (earlyHeader?Promise.resolve() … n1-header-v15.js
+
+## Ronin / V1.4 medya ve modül klasörleri (144d964..HEAD)
+değişen dosya: 0
+
+## V2 → V2.1 sayfa dosyaları: değişen satır sayısı (ilk not satırı hariç)
+pages/n1-career-v2.js → pages/n1-career-v3.js : 2 satır
+sites/home/n1-site-wix-v661.js → sites/home/n1-site-wix-v662.js : 4 satır
+sites/pages/wix-e-ticaret-yonetimi-v27/n1-e-ticaret-yonetimi-v27.js → sites/pages/wix-e-ticaret-yonetimi-v28/n1-e-ticaret-yonetimi-v28.js : 2 satır
+sites/pages/wix-kisaca-biz-v3/n1-kisaca-biz-v3.js → sites/pages/wix-kisaca-biz-v4/n1-kisaca-biz-v4.js : 2 satır
+sites/pages/wix-kreatif-produksiyon-v26/n1-kreatif-produksiyon-v26.js → sites/pages/wix-kreatif-produksiyon-v27/n1-kreatif-produksiyon-v27.js : 2 satır
+sites/pages/wix-markalar-v13/n1-markalar-v13.js → sites/pages/wix-markalar-v14/n1-markalar-v14.js : 2 satır
+sites/pages/wix-reklam-yonetimi-v26/n1-reklam-yonetimi-v26.js → sites/pages/wix-reklam-yonetimi-v27/n1-reklam-yonetimi-v27.js : 2 satır
+sites/pages/wix-sosyal-medya-v30/n1-sosyal-medya-v30.js → sites/pages/wix-sosyal-medya-v31/n1-sosyal-medya-v31.js : 2 satır
+sites/pages/wix-uiux-tasarim-v32/n1-uiux-tasarim-v32.js → sites/pages/wix-uiux-tasarim-v33/n1-uiux-tasarim-v33.js : 2 satır
+sites/pages/wix-uygulama-gelistirme-v5/n1-uygulama-gelistirme-v5.js → sites/pages/wix-uygulama-gelistirme-v6/n1-uygulama-gelistirme-v6.js : 2 satır
+sites/pages/wix-yapay-zeka-v5/n1-yapay-zeka-v5.js → sites/pages/wix-yapay-zeka-v6/n1-yapay-zeka-v6.js : 2 satır
+sites/pages/wix-yasal-sayfalar-v3/n1-yasal-sayfalar-v3.js → sites/pages/wix-yasal-sayfalar-v4/n1-yasal-sayfalar-v4.js : 2 satır

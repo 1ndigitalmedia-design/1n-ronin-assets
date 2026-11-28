@@ -1,0 +1,785 @@
+{
+ "br": "chromium",
+ "width": 390,
+ "pass": 36,
+ "fail": 0,
+ "meas": {
+  "kurumsal": {
+   "tiles": [
+    {
+     "href": "https://www.zeyp.com.tr/",
+     "target": "_blank",
+     "rel": "noopener noreferrer",
+     "label": "ZEYP (yeni sekmede açılır)",
+     "x": 36,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 2,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    },
+    {
+     "href": "https://www.carsialtin.com/faprika/canli-piyasalar/",
+     "target": "_blank",
+     "rel": "noopener noreferrer",
+     "label": "Market — Canlı Piyasalar (yeni sekmede açılır)",
+     "x": 92,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 1,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    },
+    {
+     "href": "https://www.hementik.la/",
+     "target": "_blank",
+     "rel": "noopener noreferrer",
+     "label": "Hemen Tıkla (yeni sekmede açılır)",
+     "x": 148,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 1,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    },
+    {
+     "href": "https://www.reklam1n.com/intelligence",
+     "target": null,
+     "rel": null,
+     "label": "1N Intelligence",
+     "x": 204,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 1,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    }
+   ],
+   "h3x": 36,
+   "h3b": 568,
+   "cardH": 100,
+   "cardW": 351,
+   "panelW": 351,
+   "panelR": 371,
+   "panelB": 643,
+   "vw": 390,
+   "vh": 844,
+   "ox": false,
+   "webp": 0
+  },
+  "bağımsız": {
+   "tiles": [
+    {
+     "href": "https://www.zeyp.com.tr/",
+     "target": "_blank",
+     "rel": "noopener noreferrer",
+     "label": "ZEYP (yeni sekmede açılır)",
+     "x": 36,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 2,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    },
+    {
+     "href": "https://www.carsialtin.com/faprika/canli-piyasalar/",
+     "target": "_blank",
+     "rel": "noopener noreferrer",
+     "label": "Market — Canlı Piyasalar (yeni sekmede açılır)",
+     "x": 92,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 1,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    },
+    {
+     "href": "https://www.hementik.la/",
+     "target": "_blank",
+     "rel": "noopener noreferrer",
+     "label": "Hemen Tıkla (yeni sekmede açılır)",
+     "x": 148,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 1,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    },
+    {
+     "href": "https://www.reklam1n.com/intelligence",
+     "target": null,
+     "rel": null,
+     "label": "1N Intelligence",
+     "x": 204,
+     "y": 579,
+     "w": 48,
+     "h": 48,
+     "svg": true,
+     "img": false,
+     "sw": 28,
+     "sh": 28,
+     "paths": 1,
+     "fill": "rgb(189, 191, 185)",
+     "color": "rgb(189, 191, 185)",
+     "bg": "rgb(26, 28, 27)",
+     "rad": "8px",
+     "shadow": "rgba(189, 191, 185, 0.14) 0px 0px 0px 1px inset",
+     "trans": "0.2s, 0.2s",
+     "transform": "none"
+    }
+   ],
+   "h3x": 36,
+   "h3b": 568,
+   "cardH": 100,
+   "cardW": 351,
+   "panelW": 351,
+   "panelR": 371,
+   "panelB": 643,
+   "vw": 390,
+   "vh": 844,
+   "ox": false,
+   "webp": 0
+  }
+ },
+ "hdr": {
+  "corp": {
+   "logo": [
+    20,
+    17,
+    30,
+    30
+   ],
+   "tag": [
+    139,
+    28,
+    113,
+    9
+   ],
+   "menu": [
+    330,
+    12,
+    40,
+    40
+   ],
+   "cta": false
+  },
+  "shell": {
+   "logo": [
+    20,
+    17,
+    30,
+    30
+   ],
+   "tag": [
+    139,
+    28,
+    113,
+    9
+   ],
+   "menu": [
+    331,
+    12,
+    40,
+    40
+   ],
+   "cta": false,
+   "ver": "1.1.0",
+   "hH": 64,
+   "footer": {
+    "h": 867,
+    "legal": 5,
+    "soc": 4,
+    "partners": 5
+   },
+   "fc": 1
+  }
+ },
+ "results": [
+  {
+   "g": "kurumsal",
+   "n": "header v15 yüklendi (v14 yok)",
+   "ok": true,
+   "info": [
+    "n1-header-v15.js"
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "sıra ve bağlantılar değişmedi (4 platform)",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "yeni sekme + noopener noreferrer (dış), Intelligence aynı sekme; erişilebilir etiket",
+   "ok": true,
+   "info": [
+    [
+     "_blank",
+     "noopener noreferrer",
+     "ZEYP (yeni sekmede açılır)"
+    ],
+    [
+     "_blank",
+     "noopener noreferrer",
+     "Market — Canlı Piyasalar (yeni sekmede açılır)"
+    ],
+    [
+     "_blank",
+     "noopener noreferrer",
+     "Hemen Tıkla (yeni sekmede açılır)"
+    ],
+    [
+     null,
+     null,
+     "1N Intelligence"
+    ]
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "kutu 48×48 px (aşmıyor), ≥ 44 px dokunma hedefi",
+   "ok": true,
+   "info": [
+    [
+     48,
+     48
+    ],
+    [
+     48,
+     48
+    ],
+    [
+     48,
+     48
+    ],
+    [
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "sembol 28 px (tek renkli SVG, görsel değil)",
+   "ok": true,
+   "info": [
+    [
+     28,
+     2,
+     false
+    ],
+    [
+     28,
+     1,
+     false
+    ],
+    [
+     28,
+     1,
+     false
+    ],
+    [
+     28,
+     1,
+     false
+    ]
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "tek satır, aralık 8 px, sola hizalı (başlıkla aynı x)",
+   "ok": true,
+   "info": {
+    "xs": [
+     36,
+     92,
+     148,
+     204
+    ],
+    "h3x": 36
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "başlık–logo satırı aralığı 10–12 px",
+   "ok": true,
+   "info": 11
+  },
+  {
+   "g": "kurumsal",
+   "n": "normal görünüm: zemin #1A1C1B, logo #BDBFB9, köşe 8 px, ince çerçeve",
+   "ok": true,
+   "info": [
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ],
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ],
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ],
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ]
+   ]
+  },
+  {
+   "g": "kurumsal",
+   "n": "renkli WebP logolar indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "kurumsal",
+   "n": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "ox": false,
+    "r": 371,
+    "vw": 390,
+    "b": 643,
+    "vh": 844
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "kart kompakt (yükseklik ≤ 110 px)",
+   "ok": true,
+   "info": 100
+  },
+  {
+   "g": "kurumsal",
+   "n": "dokunmatikte hover kuralı devre dışı (işlev hover'a bağlı değil)",
+   "ok": true,
+   "info": false
+  },
+  {
+   "g": "kurumsal",
+   "n": "klavye focus-visible: #A2FF00 halka",
+   "ok": true,
+   "info": {
+    "cls": "n1h-plat",
+    "fv": true,
+    "shadow": "rgba(162, 255, 0, 0.32) 0px 0px 0px 1px inset, rgb(17, 19, 18) 0px 0px 0px 2px, rgb(162, 255, 0) 0px 0px 0px 4px",
+    "color": "rgb(162, 255, 0)"
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "menü kapanıyor, kart kalmıyor",
+   "ok": true,
+   "info": {
+    "open": 0,
+    "vis": 0
+   }
+  },
+  {
+   "g": "kurumsal",
+   "n": "yeniden açılış: logolar yerinde",
+   "ok": true,
+   "info": 4
+  },
+  {
+   "g": "kurumsal",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "bağımsız",
+   "n": "paket v1.1.0, Teklif Al yok",
+   "ok": true,
+   "info": {
+    "ver": "1.1.0",
+    "cta": false
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "sıra ve bağlantılar değişmedi (4 platform)",
+   "ok": true,
+   "info": [
+    "https://www.zeyp.com.tr/",
+    "https://www.carsialtin.com/faprika/canli-piyasalar/",
+    "https://www.hementik.la/",
+    "https://www.reklam1n.com/intelligence"
+   ]
+  },
+  {
+   "g": "bağımsız",
+   "n": "yeni sekme + noopener noreferrer (dış), Intelligence aynı sekme; erişilebilir etiket",
+   "ok": true,
+   "info": [
+    [
+     "_blank",
+     "noopener noreferrer",
+     "ZEYP (yeni sekmede açılır)"
+    ],
+    [
+     "_blank",
+     "noopener noreferrer",
+     "Market — Canlı Piyasalar (yeni sekmede açılır)"
+    ],
+    [
+     "_blank",
+     "noopener noreferrer",
+     "Hemen Tıkla (yeni sekmede açılır)"
+    ],
+    [
+     null,
+     null,
+     "1N Intelligence"
+    ]
+   ]
+  },
+  {
+   "g": "bağımsız",
+   "n": "kutu 48×48 px (aşmıyor), ≥ 44 px dokunma hedefi",
+   "ok": true,
+   "info": [
+    [
+     48,
+     48
+    ],
+    [
+     48,
+     48
+    ],
+    [
+     48,
+     48
+    ],
+    [
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "g": "bağımsız",
+   "n": "sembol 28 px (tek renkli SVG, görsel değil)",
+   "ok": true,
+   "info": [
+    [
+     28,
+     2,
+     false
+    ],
+    [
+     28,
+     1,
+     false
+    ],
+    [
+     28,
+     1,
+     false
+    ],
+    [
+     28,
+     1,
+     false
+    ]
+   ]
+  },
+  {
+   "g": "bağımsız",
+   "n": "tek satır, aralık 8 px, sola hizalı (başlıkla aynı x)",
+   "ok": true,
+   "info": {
+    "xs": [
+     36,
+     92,
+     148,
+     204
+    ],
+    "h3x": 36
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "başlık–logo satırı aralığı 10–12 px",
+   "ok": true,
+   "info": 11
+  },
+  {
+   "g": "bağımsız",
+   "n": "normal görünüm: zemin #1A1C1B, logo #BDBFB9, köşe 8 px, ince çerçeve",
+   "ok": true,
+   "info": [
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ],
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ],
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ],
+    [
+     "rgb(26, 28, 27)",
+     "rgb(189, 191, 185)",
+     "8px"
+    ]
+   ]
+  },
+  {
+   "g": "bağımsız",
+   "n": "renkli WebP logolar indirilmedi",
+   "ok": true,
+   "info": 0
+  },
+  {
+   "g": "bağımsız",
+   "n": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "ox": false,
+    "r": 371,
+    "vw": 390,
+    "b": 643,
+    "vh": 844
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "kart kompakt (yükseklik ≤ 110 px)",
+   "ok": true,
+   "info": 100
+  },
+  {
+   "g": "bağımsız",
+   "n": "dokunmatikte hover kuralı devre dışı (işlev hover'a bağlı değil)",
+   "ok": true,
+   "info": false
+  },
+  {
+   "g": "bağımsız",
+   "n": "klavye focus-visible: #A2FF00 halka",
+   "ok": true,
+   "info": {
+    "cls": "n1h-plat",
+    "fv": true,
+    "shadow": "rgba(162, 255, 0, 0.32) 0px 0px 0px 1px inset, rgb(17, 19, 18) 0px 0px 0px 2px, rgb(162, 255, 0) 0px 0px 0px 4px",
+    "color": "rgb(162, 255, 0)"
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "menü kapanıyor, kart kalmıyor",
+   "ok": true,
+   "info": {
+    "open": 0,
+    "vis": 0
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "yeniden açılış: logolar yerinde",
+   "ok": true,
+   "info": 4
+  },
+  {
+   "g": "bağımsız",
+   "n": "footer değişmedi (yükseklik V2 ölçümüyle aynı, 5 yasal, 4 sosyal SVG, 5 partner)",
+   "ok": true,
+   "info": {
+    "f": {
+     "h": 867,
+     "legal": 5,
+     "soc": 4,
+     "partners": 5
+    },
+    "EXPF": 867
+   }
+  },
+  {
+   "g": "bağımsız",
+   "n": "WhatsApp/Yukarı Çık tek katman",
+   "ok": true,
+   "info": 1
+  },
+  {
+   "g": "bağımsız",
+   "n": "JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "g": "tutarlılık",
+   "n": "kurumsal ve bağımsız menüde platform kutuları aynı (boyut, sembol, renk)",
+   "ok": true,
+   "info": {
+    "c": [
+     [
+      48,
+      28
+     ],
+     [
+      48,
+      28
+     ],
+     [
+      48,
+      28
+     ],
+     [
+      48,
+      28
+     ]
+    ],
+    "s": [
+     [
+      48,
+      28
+     ],
+     [
+      48,
+      28
+     ],
+     [
+      48,
+      28
+     ],
+     [
+      48,
+      28
+     ]
+    ]
+   }
+  },
+  {
+   "g": "tutarlılık",
+   "n": "header üst bölümü: logo ve slogan kurumsal ile tutarlı",
+   "ok": true,
+   "info": {
+    "corp": {
+     "logo": [
+      20,
+      17,
+      30,
+      30
+     ],
+     "tag": [
+      139,
+      28,
+      113,
+      9
+     ],
+     "menu": [
+      330,
+      12,
+      40,
+      40
+     ],
+     "cta": false
+    },
+    "shell": {
+     "logo": [
+      20,
+      17,
+      30,
+      30
+     ],
+     "tag": [
+      139,
+      28,
+      113,
+      9
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+webkit 390 GEÇTİ kurumsal · header v16 + menü verisi v17 yüklendi (eski sürüm yok) · ["n1-site-markup-v17.js","n1-header-v16.js"]
+webkit 390 GEÇTİ kurumsal · alt kartlar yalnız: Başlangıca Dön · A7 Prodüksiyon · 1N Intelligence (sıra) · {"cards":["n1h-brandcard","n1h-a7card","n1h-a7card n1h-intelcard"],"order":[363,454,543]}
+webkit 390 GEÇTİ kurumsal · Uygulama ve Platformlar kartı, logolar ve bağlantı kutuları yok; logo dosyası indirilmedi · {"plat":0,"txt":false,"webp":0}
+webkit 390 GEÇTİ kurumsal · Intelligence: başlık, alt açıklama, adres · ["1N Intelligence","DİJİTAL ZEKA PLATFORMU","https://www.reklam1n.com/intelligence"]
+webkit 390 GEÇTİ kurumsal · Intelligence: aynı sekme (target/rel yok), kartın tamamı bağlantı · {"t":null,"r":null,"fill":true}
+webkit 390 GEÇTİ kurumsal · A7 değişmedi (adres, yeni sekme, noopener noreferrer) · ["https://www.a7-1n.com/a7-produksiyon","_blank","noopener noreferrer"]
+webkit 390 GEÇTİ kurumsal · ölçü eşliği: kart genişliği, yüksekliği ve x konumu A7 ile aynı · {"a7":{"x":20,"y":454,"w":351,"h":82},"intel":{"x":20,"y":543,"w":351,"h":82}}
+webkit 390 GEÇTİ kurumsal · stil eşliği: iç boşluk, köşe, zemin, tipografi, ok düğmesi · {"card":["8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)","8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)"],"b":["Barlow Condensed, Barlow, Arial, sans-serif|22px|600|22px|0.22px","Barlow Condensed, Barlow, Arial, sans-serif|22px|600|22px|0.22px"]}
+webkit 390 GEÇTİ kurumsal · kart aralığı tutarlı (Başlangıca Dön→A7 ≈ A7→Intelligence, A7 ile Intelligence aynı yükseklikte) · {"order":[363,454,543],"a7h":82}
+webkit 390 GEÇTİ kurumsal · panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok · {"panel":{"x":20,"y":70,"w":351,"h":555},"vw":390,"vh":844,"ox":false}
+webkit 390 GEÇTİ kurumsal · klavye: A7 → Tab → 1N Intelligence · "n1h-a7 n1h-intel"
+webkit 390 GEÇTİ kurumsal · normal kapanış: kart kalmıyor · {"open":0,"vis":0}
+webkit 390 GEÇTİ kurumsal · Intelligence tıklaması aynı sekmede /intelligence; menü kapalı · {"url":"https://www.reklam1n.com/intelligence","pages":1,"open":0}
+webkit 390 GEÇTİ kurumsal · JS hatası yok · []
+webkit 390 GEÇTİ bağımsız · paket v1.2.0; Teklif Al yok; header yüksekliği aynı · {"ver":"1.2.0","cta":false,"hH":64,"fH":867,"legal":5,"partners":5,"fc":1}
+webkit 390 GEÇTİ bağımsız · footer değişmedi (V2.1 ölçümüyle aynı yükseklik, 5 yasal, 5 partner) ve WhatsApp tek katman · {"fH":867,"beklenen":867,"fc":1}
+webkit 390 GEÇTİ bağımsız · alt kartlar yalnız: Başlangıca Dön · A7 Prodüksiyon · 1N Intelligence (sıra) · {"cards":["n1h-brandcard","n1h-a7card","n1h-a7card n1h-intelcard"],"order":[363,454,543]}
+webkit 390 GEÇTİ bağımsız · Uygulama ve Platformlar kartı, logolar ve bağlantı kutuları yok; logo dosyası indirilmedi · {"plat":0,"txt":false,"webp":0}
+webkit 390 GEÇTİ bağımsız · Intelligence: başlık, alt açıklama, adres · ["1N Intelligence","DİJİTAL ZEKA PLATFORMU","https://www.reklam1n.com/intelligence"]
+webkit 390 GEÇTİ bağımsız · Intelligence: aynı sekme (target/rel yok), kartın tamamı bağlantı · {"t":null,"r":null,"fill":true}
+webkit 390 GEÇTİ bağımsız · A7 değişmedi (adres, yeni sekme, noopener noreferrer) · ["https://www.a7-1n.com/a7-produksiyon","_blank","noopener noreferrer"]
+webkit 390 GEÇTİ bağımsız · ölçü eşliği: kart genişliği, yüksekliği ve x konumu A7 ile aynı · {"a7":{"x":20,"y":454,"w":351,"h":82},"intel":{"x":20,"y":543,"w":351,"h":82}}
+webkit 390 GEÇTİ bağımsız · stil eşliği: iç boşluk, köşe, zemin, tipografi, ok düğmesi · {"card":["8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)","8px|8px|14px|rgb(17, 19, 18)|0px|rgb(236, 235, 230)"],"b":["Barlow Condensed, Barlow, Arial, sans-serif|22px|600|22px|0.22px","Barlow Condensed, Barlow, Arial, sans-serif|22px|600|22px|0.22px"]}
+webkit 390 GEÇTİ bağımsız · kart aralığı tutarlı (Başlangıca Dön→A7 ≈ A7→Intelligence, A7 ile Intelligence aynı yükseklikte) · {"order":[363,454,543],"a7h":82}
+webkit 390 GEÇTİ bağımsız · panel ekran içinde (gerekirse iç kaydırma), yatay taşma yok · {"panel":{"x":20,"y":70,"w":351,"h":555},"vw":390,"vh":844,"ox":false}
+webkit 390 GEÇTİ bağımsız · klavye: A7 → Tab → 1N Intelligence · "n1h-a7 n1h-intel"
+webkit 390 GEÇTİ bağımsız · normal kapanış: kart kalmıyor · {"open":0,"vis":0}
+webkit 390 GEÇTİ bağımsız · Intelligence tıklaması aynı sekmede /intelligence; menü kapalı · {"url":"https://www.reklam1n.com/intelligence","pages":1,"open":0}
+webkit 390 GEÇTİ bağımsız · JS hatası yok · []
+webkit 390 GEÇTİ tutarlılık · kurumsal ve bağımsız menüde Intelligence kartı aynı ölçü ve stilde · {"c":{"x":20,"y":543,"w":351,"h":82},"s":{"x":20,"y":543,"w":351,"h":82}}
+webkit 390 TOPLAM 30 geçti 0 kaldı

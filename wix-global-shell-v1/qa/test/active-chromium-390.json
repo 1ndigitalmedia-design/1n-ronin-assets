@@ -1,0 +1,98 @@
+{
+ "pass": 8,
+ "fail": 0,
+ "out": [
+  {
+   "path": "/insan-kaynaklari",
+   "ok": true,
+   "c": {
+    "cur": [
+     "İnsan Kaynakları"
+    ],
+    "aria": [
+     "İnsan Kaynakları"
+    ]
+   }
+  },
+  {
+   "path": "/acik-pozisyonlar",
+   "ok": true,
+   "c": {
+    "cur": [
+     "İnsan Kaynakları"
+    ],
+    "aria": [
+     "Açık Pozisyonlar"
+    ]
+   }
+  },
+  {
+   "path": "/staj-programlari",
+   "ok": true,
+   "c": {
+    "cur": [
+     "İnsan Kaynakları"
+    ],
+    "aria": [
+     "Staj Programları"
+    ]
+   }
+  },
+  {
+   "path": "/reklam-ajansi",
+   "ok": true,
+   "c": {
+    "cur": [
+     "Akademi"
+    ],
+    "aria": [
+     "Akademi1N Academy"
+    ]
+   }
+  },
+  {
+   "path": "/iletisim",
+   "ok": true,
+   "c": {
+    "cur": [
+     "İletişim"
+    ],
+    "aria": [
+     "İletişimBize ulaşın"
+    ]
+   }
+  },
+  {
+   "path": "/kisaca-biz",
+   "ok": true,
+   "c": {
+    "cur": [
+     "Kısaca Biz"
+    ],
+    "aria": [
+     "Kısaca BizStüdyo"
+    ]
+   }
+  },
+  {
+   "path": "/e-ticaret-yonetimi",
+   "ok": true,
+   "c": {
+    "cur": [
+     "Hizmetler"
+    ],
+    "aria": [
+     "E-Ticaret Yönetimi"
+    ]
+   }
+  },
+  {
+   "path": "/bu-sayfa-yok-xyz",
+   "ok": true,
+   "c": {
+    "cur": [],
+    "aria": []
+   }
+  }
+ ]
+}

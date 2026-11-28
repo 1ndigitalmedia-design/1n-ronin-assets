@@ -1,0 +1,1051 @@
+{
+ "br": "webkit",
+ "profile": "tablet",
+ "pass": 121,
+ "fail": 0,
+ "results": [
+  {
+   "group": "M /",
+   "name": "menü açılıyor",
+   "ok": true
+  },
+  {
+   "group": "M /",
+   "name": "İnsan Kaynakları bağlantı → /insan-kaynaklari",
+   "ok": true,
+   "info": {
+    "tag": "A",
+    "txt": "İnsan Kaynakları",
+    "href": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /",
+   "name": "Ekibimize Katıl yok (panel + sayfa)",
+   "ok": true
+  },
+  {
+   "group": "M /",
+   "name": "alt menü düğmesi ayrı, dokunma hedefi ≥ 44 px",
+   "ok": true,
+   "info": {
+    "exp": "false",
+    "label": "İnsan Kaynakları alt menüsü",
+    "vis": true,
+    "h": 45,
+    "w": 98
+   }
+  },
+  {
+   "group": "M /",
+   "name": "diğer başlıklar değişmedi",
+   "ok": true,
+   "info": "Kısaca Biz:A:/kisaca-biz | Hizmetler:BUTTON:null | Markalar:A:/markalar | Akademi:A:/reklam-ajansi | İnsan Kaynakları:A:/insan-kaynaklari"
+  },
+  {
+   "group": "M /",
+   "name": "düğme alt menüyü açıyor; sayfa değişmiyor",
+   "ok": true,
+   "info": {
+    "t": "İnsan Kaynakları",
+    "open": true,
+    "links": [
+     [
+      "Açık Pozisyonlar",
+      "/acik-pozisyonlar"
+     ],
+     [
+      "Staj Programları",
+      "/staj-programlari"
+     ]
+    ]
+   }
+  },
+  {
+   "group": "M /",
+   "name": "alt menü: Açık Pozisyonlar + Staj Programları",
+   "ok": true,
+   "info": [
+    [
+     "Açık Pozisyonlar",
+     "/acik-pozisyonlar"
+    ],
+    [
+     "Staj Programları",
+     "/staj-programlari"
+    ]
+   ]
+  },
+  {
+   "group": "M /",
+   "name": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "right": 779,
+    "vw": 820
+   }
+  },
+  {
+   "group": "M /",
+   "name": "aynı düğme alt menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /",
+   "name": "Hizmetler alt menüsü (7 bağlantı) çalışıyor",
+   "ok": true,
+   "info": "/kreatif-produksiyon,/e-ticaret-yonetimi,/sosyal-medya,/reklam-yonetimi,/ui-ux-tasarim,/yapay-zeka,/uygulama-gelistirme"
+  },
+  {
+   "group": "M /",
+   "name": "MENU düğmesi menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /",
+   "name": "İK başlığı /insan-kaynaklari sayfasına gidiyor; yeni sayfada menü kapalı",
+   "ok": true,
+   "info": {
+    "navs": [
+     "/insan-kaynaklari",
+     "/acik-pozisyonlar",
+     "/staj-programlari"
+    ],
+    "url": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /",
+   "name": "Açık Pozisyonlar alt menüsü → /acik-pozisyonlar; menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /",
+   "name": "Staj Programları alt menüsü → /staj-programlari; menü kapalı",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /",
+   "name": "tarayıcı geri: önceki sayfa, menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /",
+   "name": "tarayıcı ileri",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "menü açılıyor",
+   "ok": true
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "İnsan Kaynakları bağlantı → /insan-kaynaklari",
+   "ok": true,
+   "info": {
+    "tag": "A",
+    "txt": "İnsan Kaynakları",
+    "href": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "Ekibimize Katıl yok (panel + sayfa)",
+   "ok": true
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "alt menü düğmesi ayrı, dokunma hedefi ≥ 44 px",
+   "ok": true,
+   "info": {
+    "exp": "false",
+    "label": "İnsan Kaynakları alt menüsü",
+    "vis": true,
+    "h": 46,
+    "w": 98
+   }
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "diğer başlıklar değişmedi",
+   "ok": true,
+   "info": "Kısaca Biz:A:/kisaca-biz | Hizmetler:BUTTON:null | Markalar:A:/markalar | Akademi:A:/reklam-ajansi | İnsan Kaynakları:A:/insan-kaynaklari"
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "düğme alt menüyü açıyor; sayfa değişmiyor",
+   "ok": true,
+   "info": {
+    "t": "İnsan Kaynakları",
+    "open": true,
+    "links": [
+     [
+      "Açık Pozisyonlar",
+      "/acik-pozisyonlar"
+     ],
+     [
+      "Staj Programları",
+      "/staj-programlari"
+     ]
+    ]
+   }
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "alt menü: Açık Pozisyonlar + Staj Programları",
+   "ok": true,
+   "info": [
+    [
+     "Açık Pozisyonlar",
+     "/acik-pozisyonlar"
+    ],
+    [
+     "Staj Programları",
+     "/staj-programlari"
+    ]
+   ]
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "right": 779,
+    "vw": 820
+   }
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "aynı düğme alt menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "Hizmetler alt menüsü (7 bağlantı) çalışıyor",
+   "ok": true,
+   "info": "/kreatif-produksiyon,/e-ticaret-yonetimi,/sosyal-medya,/reklam-yonetimi,/ui-ux-tasarim,/yapay-zeka,/uygulama-gelistirme"
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "MENU düğmesi menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "İK başlığı /insan-kaynaklari sayfasına gidiyor; yeni sayfada menü kapalı",
+   "ok": true,
+   "info": {
+    "navs": [
+     "/insan-kaynaklari",
+     "/acik-pozisyonlar",
+     "/staj-programlari"
+    ],
+    "url": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "Açık Pozisyonlar alt menüsü → /acik-pozisyonlar; menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "Staj Programları alt menüsü → /staj-programlari; menü kapalı",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "tarayıcı geri: önceki sayfa, menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "tarayıcı ileri",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /reklam-yonetimi",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "menü açılıyor",
+   "ok": true
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "İnsan Kaynakları bağlantı → /insan-kaynaklari",
+   "ok": true,
+   "info": {
+    "tag": "A",
+    "txt": "İnsan Kaynakları",
+    "href": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "Ekibimize Katıl yok (panel + sayfa)",
+   "ok": true
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "alt menü düğmesi ayrı, dokunma hedefi ≥ 44 px",
+   "ok": true,
+   "info": {
+    "exp": "false",
+    "label": "İnsan Kaynakları alt menüsü",
+    "vis": true,
+    "h": 46,
+    "w": 98
+   }
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "diğer başlıklar değişmedi",
+   "ok": true,
+   "info": "Kısaca Biz:A:/kisaca-biz | Hizmetler:BUTTON:null | Markalar:A:/markalar | Akademi:A:/reklam-ajansi | İnsan Kaynakları:A:/insan-kaynaklari"
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "düğme alt menüyü açıyor; sayfa değişmiyor",
+   "ok": true,
+   "info": {
+    "t": "İnsan Kaynakları",
+    "open": true,
+    "links": [
+     [
+      "Açık Pozisyonlar",
+      "/acik-pozisyonlar"
+     ],
+     [
+      "Staj Programları",
+      "/staj-programlari"
+     ]
+    ]
+   }
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "alt menü: Açık Pozisyonlar + Staj Programları",
+   "ok": true,
+   "info": [
+    [
+     "Açık Pozisyonlar",
+     "/acik-pozisyonlar"
+    ],
+    [
+     "Staj Programları",
+     "/staj-programlari"
+    ]
+   ]
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "right": 779,
+    "vw": 820
+   }
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "aynı düğme alt menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "Hizmetler alt menüsü (7 bağlantı) çalışıyor",
+   "ok": true,
+   "info": "/kreatif-produksiyon,/e-ticaret-yonetimi,/sosyal-medya,/reklam-yonetimi,/ui-ux-tasarim,/yapay-zeka,/uygulama-gelistirme"
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "MENU düğmesi menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "İK başlığı /insan-kaynaklari sayfasına gidiyor; yeni sayfada menü kapalı",
+   "ok": true,
+   "info": {
+    "navs": [
+     "/insan-kaynaklari",
+     "/acik-pozisyonlar",
+     "/staj-programlari"
+    ],
+    "url": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "Açık Pozisyonlar alt menüsü → /acik-pozisyonlar; menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "Staj Programları alt menüsü → /staj-programlari; menü kapalı",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "tarayıcı geri: önceki sayfa, menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "tarayıcı ileri",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /kisaca-biz",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "M /markalar",
+   "name": "menü açılıyor",
+   "ok": true
+  },
+  {
+   "group": "M /markalar",
+   "name": "İnsan Kaynakları bağlantı → /insan-kaynaklari",
+   "ok": true,
+   "info": {
+    "tag": "A",
+    "txt": "İnsan Kaynakları",
+    "href": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /markalar",
+   "name": "Ekibimize Katıl yok (panel + sayfa)",
+   "ok": true
+  },
+  {
+   "group": "M /markalar",
+   "name": "alt menü düğmesi ayrı, dokunma hedefi ≥ 44 px",
+   "ok": true,
+   "info": {
+    "exp": "false",
+    "label": "İnsan Kaynakları alt menüsü",
+    "vis": true,
+    "h": 46,
+    "w": 98
+   }
+  },
+  {
+   "group": "M /markalar",
+   "name": "diğer başlıklar değişmedi",
+   "ok": true,
+   "info": "Kısaca Biz:A:/kisaca-biz | Hizmetler:BUTTON:null | Markalar:A:/markalar | Akademi:A:/reklam-ajansi | İnsan Kaynakları:A:/insan-kaynaklari"
+  },
+  {
+   "group": "M /markalar",
+   "name": "düğme alt menüyü açıyor; sayfa değişmiyor",
+   "ok": true,
+   "info": {
+    "t": "İnsan Kaynakları",
+    "open": true,
+    "links": [
+     [
+      "Açık Pozisyonlar",
+      "/acik-pozisyonlar"
+     ],
+     [
+      "Staj Programları",
+      "/staj-programlari"
+     ]
+    ]
+   }
+  },
+  {
+   "group": "M /markalar",
+   "name": "alt menü: Açık Pozisyonlar + Staj Programları",
+   "ok": true,
+   "info": [
+    [
+     "Açık Pozisyonlar",
+     "/acik-pozisyonlar"
+    ],
+    [
+     "Staj Programları",
+     "/staj-programlari"
+    ]
+   ]
+  },
+  {
+   "group": "M /markalar",
+   "name": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "right": 779,
+    "vw": 820
+   }
+  },
+  {
+   "group": "M /markalar",
+   "name": "aynı düğme alt menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /markalar",
+   "name": "Hizmetler alt menüsü (7 bağlantı) çalışıyor",
+   "ok": true,
+   "info": "/kreatif-produksiyon,/e-ticaret-yonetimi,/sosyal-medya,/reklam-yonetimi,/ui-ux-tasarim,/yapay-zeka,/uygulama-gelistirme"
+  },
+  {
+   "group": "M /markalar",
+   "name": "MENU düğmesi menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /markalar",
+   "name": "İK başlığı /insan-kaynaklari sayfasına gidiyor; yeni sayfada menü kapalı",
+   "ok": true,
+   "info": {
+    "navs": [
+     "/insan-kaynaklari",
+     "/acik-pozisyonlar",
+     "/staj-programlari"
+    ],
+    "url": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /markalar",
+   "name": "Açık Pozisyonlar alt menüsü → /acik-pozisyonlar; menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /markalar",
+   "name": "Staj Programları alt menüsü → /staj-programlari; menü kapalı",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /markalar",
+   "name": "tarayıcı geri: önceki sayfa, menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /markalar",
+   "name": "tarayıcı ileri",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /markalar",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "menü açılıyor",
+   "ok": true
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "İnsan Kaynakları bağlantı → /insan-kaynaklari",
+   "ok": true,
+   "info": {
+    "tag": "A",
+    "txt": "İnsan Kaynakları",
+    "href": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "Ekibimize Katıl yok (panel + sayfa)",
+   "ok": true
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "alt menü düğmesi ayrı, dokunma hedefi ≥ 44 px",
+   "ok": true,
+   "info": {
+    "exp": "false",
+    "label": "İnsan Kaynakları alt menüsü",
+    "vis": true,
+    "h": 46,
+    "w": 98
+   }
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "diğer başlıklar değişmedi",
+   "ok": true,
+   "info": "Kısaca Biz:A:/kisaca-biz | Hizmetler:BUTTON:null | Markalar:A:/markalar | Akademi:A:/reklam-ajansi | İnsan Kaynakları:A:/insan-kaynaklari"
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "düğme alt menüyü açıyor; sayfa değişmiyor",
+   "ok": true,
+   "info": {
+    "t": "İnsan Kaynakları",
+    "open": true,
+    "links": [
+     [
+      "Açık Pozisyonlar",
+      "/acik-pozisyonlar"
+     ],
+     [
+      "Staj Programları",
+      "/staj-programlari"
+     ]
+    ]
+   }
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "alt menü: Açık Pozisyonlar + Staj Programları",
+   "ok": true,
+   "info": [
+    [
+     "Açık Pozisyonlar",
+     "/acik-pozisyonlar"
+    ],
+    [
+     "Staj Programları",
+     "/staj-programlari"
+    ]
+   ]
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "right": 779,
+    "vw": 820
+   }
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "aynı düğme alt menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "Hizmetler alt menüsü (7 bağlantı) çalışıyor",
+   "ok": true,
+   "info": "/kreatif-produksiyon,/e-ticaret-yonetimi,/sosyal-medya,/reklam-yonetimi,/ui-ux-tasarim,/yapay-zeka,/uygulama-gelistirme"
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "MENU düğmesi menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "İK başlığı /insan-kaynaklari sayfasına gidiyor; yeni sayfada menü kapalı",
+   "ok": true,
+   "info": {
+    "navs": [
+     "/insan-kaynaklari",
+     "/acik-pozisyonlar",
+     "/staj-programlari"
+    ],
+    "url": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "Açık Pozisyonlar alt menüsü → /acik-pozisyonlar; menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "Staj Programları alt menüsü → /staj-programlari; menü kapalı",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "tarayıcı geri: önceki sayfa, menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "tarayıcı ileri",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /gizlilik",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "menü açılıyor",
+   "ok": true
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "İnsan Kaynakları bağlantı → /insan-kaynaklari",
+   "ok": true,
+   "info": {
+    "tag": "A",
+    "txt": "İnsan Kaynakları",
+    "href": "/insan-kaynaklari"
+   }
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "Ekibimize Katıl yok (panel + sayfa)",
+   "ok": true
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "alt menü düğmesi ayrı, dokunma hedefi ≥ 44 px",
+   "ok": true,
+   "info": {
+    "exp": "false",
+    "label": "İnsan Kaynakları alt menüsü",
+    "vis": true,
+    "h": 46,
+    "w": 98
+   }
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "diğer başlıklar değişmedi",
+   "ok": true,
+   "info": "Kısaca Biz:A:/kisaca-biz | Hizmetler:BUTTON:null | Markalar:A:/markalar | Akademi:A:/reklam-ajansi | İnsan Kaynakları:A:/insan-kaynaklari"
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "düğme alt menüyü açıyor; sayfa değişmiyor",
+   "ok": true,
+   "info": {
+    "t": "İnsan Kaynakları",
+    "open": true,
+    "links": [
+     [
+      "Açık Pozisyonlar",
+      "/acik-pozisyonlar"
+     ],
+     [
+      "Staj Programları",
+      "/staj-programlari"
+     ]
+    ]
+   }
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "alt menü: Açık Pozisyonlar + Staj Programları",
+   "ok": true,
+   "info": [
+    [
+     "Açık Pozisyonlar",
+     "/acik-pozisyonlar"
+    ],
+    [
+     "Staj Programları",
+     "/staj-programlari"
+    ]
+   ]
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "panel ekran içinde, yatay taşma yok",
+   "ok": true,
+   "info": {
+    "right": 779,
+    "vw": 820
+   }
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "aynı düğme alt menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "Hizmetler alt menüsü (7 bağlantı) çalışıyor",
+   "ok": true,
+   "info": "/kreatif-produksiyon,/e-ticaret-yonetimi,/sosyal-medya,/reklam-yonetimi,/ui-ux-tasarim,/yapay-zeka,/uygulama-gelistirme"
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "MENU düğmesi menüyü kapatıyor",
+   "ok": true
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "Açık Pozisyonlar alt menüsü → /acik-pozisyonlar; menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "Staj Programları alt menüsü → /staj-programlari; menü kapalı",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "tarayıcı geri: önceki sayfa, menü kapalı",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "tarayıcı ileri",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "M /insan-kaynaklari",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "K hub",
+   "name": "içerik birebir",
+   "ok": true,
+   "info": {
+    "doors": [
+     {
+      "href": "/acik-pozisyonlar",
+      "x": 41,
+      "y": 567,
+      "w": 361,
+      "h": 320,
+      "bg": "rgb(162, 255, 0)"
+     },
+     {
+      "href": "/staj-programlari",
+      "x": 418,
+      "y": 567,
+      "w": 361,
+      "h": 320,
+      "bg": "rgb(13, 15, 14)"
+     }
+    ],
+    "h1": [
+     "İNSAN KAYNAKLARI."
+    ],
+    "h2": [
+     "AÇIK POZİSYONLAR.",
+     "STAJ PROGRAMLARI."
+    ],
+    "kicker": "01/KARİYER",
+    "accent": "Geleceği birlikte tasarlıyoruz.",
+    "desc": "Yaratıcılığı, teknolojiyi ve farklı bakış açılarını bir araya getiren ekibimizde kariyer fırsatlarını keşfet.",
+    "vids": 0,
+    "cv": 0
+   }
+  },
+  {
+   "group": "K hub",
+   "name": "tek H1",
+   "ok": true,
+   "info": [
+    "İNSAN KAYNAKLARI."
+   ]
+  },
+  {
+   "group": "K hub",
+   "name": "kartlar: hedef + sıra + renk",
+   "ok": true,
+   "info": [
+    {
+     "href": "/acik-pozisyonlar",
+     "x": 41,
+     "y": 567,
+     "w": 361,
+     "h": 320,
+     "bg": "rgb(162, 255, 0)"
+    },
+    {
+     "href": "/staj-programlari",
+     "x": 418,
+     "y": 567,
+     "w": 361,
+     "h": 320,
+     "bg": "rgb(13, 15, 14)"
+    }
+   ]
+  },
+  {
+   "group": "K hub",
+   "name": "kartlar yan yana, eşit boyut",
+   "ok": true,
+   "info": "361x320@41,567 361x320@418,567"
+  },
+  {
+   "group": "K hub",
+   "name": "video / canvas / medya isteği yok",
+   "ok": true,
+   "info": {
+    "vids": 0,
+    "media": []
+   }
+  },
+  {
+   "group": "K hub",
+   "name": "Staj kartı (boş alan) → /staj-programlari",
+   "ok": true,
+   "info": "/staj-programlari"
+  },
+  {
+   "group": "K hub",
+   "name": "Staj: \"İnsan Kaynaklarına Dön\" → /insan-kaynaklari",
+   "ok": true,
+   "info": "/insan-kaynaklari"
+  },
+  {
+   "group": "K hub",
+   "name": "Açık Pozisyonlar kartı → /acik-pozisyonlar",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "K açık",
+   "name": "içerik + durum + geri bağlantısı",
+   "ok": true,
+   "info": {
+    "h1": [
+     "AÇIK POZİSYONLAR."
+    ],
+    "kicker": "01/CAREER",
+    "accent": "Yeni fırsatlarda görüşmek üzere.",
+    "status": "Şu anda açık pozisyon bulunmuyor.",
+    "count": "0",
+    "back": "/insan-kaynaklari",
+    "backT": "İnsan Kaynaklarına Dön",
+    "forms": 0,
+    "ld": 0
+   }
+  },
+  {
+   "group": "K açık",
+   "name": "form / başvuru / JobPosting yok",
+   "ok": true,
+   "info": {
+    "h1": [
+     "AÇIK POZİSYONLAR."
+    ],
+    "kicker": "01/CAREER",
+    "accent": "Yeni fırsatlarda görüşmek üzere.",
+    "status": "Şu anda açık pozisyon bulunmuyor.",
+    "count": "0",
+    "back": "/insan-kaynaklari",
+    "backT": "İnsan Kaynaklarına Dön",
+    "forms": 0,
+    "ld": 0
+   }
+  },
+  {
+   "group": "K açık",
+   "name": "\"İnsan Kaynaklarına Dön\" → /insan-kaynaklari",
+   "ok": true,
+   "info": "/insan-kaynaklari"
+  },
+  {
+   "group": "K geçmiş",
+   "name": "geri → /acik-pozisyonlar ve içerik yeniden kuruluyor",
+   "ok": true,
+   "info": "/acik-pozisyonlar"
+  },
+  {
+   "group": "K geçmiş",
+   "name": "ileri → /insan-kaynaklari",
+   "ok": true,
+   "info": "/insan-kaynaklari"
+  },
+  {
+   "group": "K BFCache",
+   "name": "benzetilmiş dönüş ×3: tek Header/panel, içerik görünür",
+   "ok": true,
+   "info": {
+    "panels": 1,
+    "n0": 1,
+    "headers": 1,
+    "doors": 2,
+    "vis": "1"
+   }
+  },
+  {
+   "group": "K hub",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "P ana sayfa",
+   "name": "\"Hikâyemizin Devamı\" → /kisaca-biz",
+   "ok": true,
+   "info": [
+    "/kisaca-biz"
+   ]
+  },
+  {
+   "group": "P ana sayfa",
+   "name": "mobil video modülü v14 yükleniyor (V1.4)",
+   "ok": true,
+   "info": {
+    "cta": [
+     "/kisaca-biz"
+    ],
+    "m5": true,
+    "v660": false,
+    "vids": 5,
+    "ronin": "https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@f97db8edb37f1e1388f276d840e262fc8452b80a/wix-home-v656/media/ronin-m5-film-2x.mp4"
+   }
+  },
+  {
+   "group": "P ana sayfa",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  },
+  {
+   "group": "P hizmet",
+   "name": "E-Ticaret: V1.4 hafif profil (kare 2, kaynaklı video ≤ 1)",
+   "ok": true,
+   "info": {
+    "stills": 2,
+    "vSrc": 1
+   }
+  },
+  {
+   "group": "P hizmet",
+   "name": "1N JS hatası yok",
+   "ok": true,
+   "info": []
+  }
+ ]
+}

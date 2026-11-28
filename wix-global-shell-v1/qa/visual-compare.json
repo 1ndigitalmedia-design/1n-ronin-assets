@@ -1,0 +1,534 @@
+{
+ "cards_masaustu": {
+  "a7": {
+   "x": 988,
+   "y": 516,
+   "width": 380,
+   "height": 82
+  },
+  "plat": {
+   "x": 988,
+   "y": 606,
+   "width": 380,
+   "height": 133
+  }
+ },
+ "cards_mobil": {
+  "a7": {
+   "x": 19.5,
+   "y": 454,
+   "width": 351,
+   "height": 82
+  },
+  "plat": {
+   "x": 19.5,
+   "y": 543,
+   "width": 351,
+   "height": 125.75
+  }
+ },
+ "header_masaustu": {
+  "bagimsiz": {
+   "h": 88,
+   "logo": [
+    72,
+    28,
+    32,
+    32
+   ],
+   "logoSrc": 2698,
+   "tag": [
+    607,
+    38,
+    225,
+    12
+   ],
+   "tagFont": "11.5px / 11.5px Barlow, \"Helvetica Neue\", Arial, sans-serif",
+   "menu": [
+    1256,
+    22,
+    112,
+    44
+   ],
+   "menuFont": "500 12.5px / 12.5px Barlow, Arial, sans-serif",
+   "bar": [
+    72,
+    0,
+    1296,
+    88
+   ],
+   "cta": false
+  },
+  "kurumsal": {
+   "h": 88,
+   "logo": [
+    72,
+    28,
+    32,
+    32
+   ],
+   "logoSrc": 2698,
+   "tag": [
+    607,
+    38,
+    225,
+    12
+   ],
+   "tagFont": "11.5px / 11.5px Barlow, \"Helvetica Neue\", Arial, sans-serif",
+   "menu": [
+    1256,
+    22,
+    112,
+    44
+   ],
+   "menuFont": "500 12.5px / 12.5px Barlow, Arial, sans-serif",
+   "bar": [
+    72,
+    0,
+    1296,
+    88
+   ],
+   "cta": true
+  }
+ },
+ "header_tablet": {
+  "bagimsiz": {
+   "h": 72,
+   "logo": [
+    41,
+    20,
+    32,
+    32
+   ],
+   "logoSrc": 2698,
+   "tag": [
+    325,
+    30,
+    170,
+    12
+   ],
+   "tagFont": "500 10px / 12px Barlow, Arial, sans-serif",
+   "menu": [
+    737,
+    14,
+    42,
+    44
+   ],
+   "menuFont": "500 12.5px / 12.5px Barlow, Arial, sans-serif",
+   "bar": [
+    41,
+    0,
+    738,
+    72
+   ],
+   "cta": false
+  },
+  "kurumsal": {
+   "h": 72,
+   "logo": [
+    24,
+    20,
+    32,
+    32
+   ],
+   "logoSrc": 2698,
+   "tag": [
+    325,
+    30,
+    170,
+    12
+   ],
+   "tagFont": "500 10px / 12px Barlow, Arial, sans-serif",
+   "menu": [
+    754,
+    16,
+    42,
+    40
+   ],
+   "menuFont": "500 12.5px / 12.5px Barlow, Arial, sans-serif",
+   "bar": [
+    24,
+    0,
+    772,
+    72
+   ],
+   "cta": false
+  }
+ },
+ "header_mobil": {
+  "bagimsiz": {
+   "h": 64,
+   "logo": [
+    20,
+    17,
+    30,
+    30
+   ],
+   "logoSrc": 2698,
+   "tag": [
+    139,
+    28,
+    113,
+    9
+   ],
+   "tagFont": "500 7.41px / 8.892px Barlow, Arial, sans-serif",
+   "menu": [
+    331,
+    12,
+    40,
+    40
+   ],
+   "menuFont": "500 12.5px / 12.5px Barlow, Arial, sans-serif",
+   "bar": [
+    20,
+    0,
+    351,
+    64
+   ],
+   "cta": false
+  },
+  "kurumsal": {
+   "h": 64,
+   "logo": [
+    20,
+    17,
+    30,
+    30
+   ],
+   "logoSrc": 2698,
+   "tag": [
+    139,
+    28,
+    113,
+    9
+   ],
+   "tagFont": "500 7.41px / 8.892px Barlow, Arial, sans-serif",
+   "menu": [
+    330,
+    12,
+    40,
+    40
+   ],
+   "menuFont": "500 12.5px / 12.5px Barlow, Arial, sans-serif",
+   "bar": [
+    20,
+    0,
+    350,
+    64
+   ],
+   "cta": false
+  }
+ },
+ "footer_masaustu": {
+  "bagimsiz": {
+   "h": 578,
+   "brand": [
+    72,
+    136,
+    472,
+    48,
+    "51.84px",
+    "\"Barlow Condensed\""
+   ],
+   "top": [
+    72,
+    82,
+    1296,
+    282,
+    "15px",
+    "Barlow"
+   ],
+   "legal": [
+    1066,
+    166,
+    302,
+    138,
+    "14.5px",
+    "Barlow"
+   ],
+   "partners": [
+    72,
+    364,
+    1296,
+    138,
+    "15px",
+    "Barlow"
+   ],
+   "art": [
+    0,
+    -322,
+    0,
+    0,
+    "15px",
+    "Barlow"
+   ],
+   "copy": [
+    72,
+    526,
+    309,
+    22,
+    "13.5px",
+    "Barlow"
+   ]
+  },
+  "kurumsal": {
+   "h": 578,
+   "brand": [
+    72,
+    136,
+    472,
+    48,
+    "51.84px",
+    "\"Barlow Condensed\""
+   ],
+   "top": [
+    72,
+    82,
+    1296,
+    282,
+    "15px",
+    "Barlow"
+   ],
+   "legal": [
+    1066,
+    166,
+    302,
+    138,
+    "14.5px",
+    "Barlow"
+   ],
+   "partners": [
+    72,
+    364,
+    1296,
+    138,
+    "15px",
+    "Barlow"
+   ],
+   "art": [
+    0,
+    -322,
+    0,
+    0,
+    "15px",
+    "Barlow"
+   ],
+   "copy": [
+    72,
+    526,
+    309,
+    22,
+    "13.5px",
+    "Barlow"
+   ]
+  }
+ },
+ "footer_tablet": {
+  "bagimsiz": {
+   "h": 784,
+   "brand": [
+    41,
+    178,
+    738,
+    37,
+    "40px",
+    "\"Barlow Condensed\""
+   ],
+   "top": [
+    41,
+    107,
+    738,
+    450,
+    "15px",
+    "Barlow"
+   ],
+   "legal": [
+    431,
+    349,
+    349,
+    138,
+    "14.5px",
+    "Barlow"
+   ],
+   "partners": [
+    0,
+    -396,
+    0,
+    0,
+    "15px",
+    "Barlow"
+   ],
+   "art": [
+    41,
+    557,
+    738,
+    142,
+    "15px",
+    "Barlow"
+   ],
+   "copy": [
+    41,
+    726,
+    309,
+    22,
+    "13.5px",
+    "Barlow"
+   ]
+  },
+  "kurumsal": {
+   "h": 784,
+   "brand": [
+    41,
+    178,
+    738,
+    37,
+    "40px",
+    "\"Barlow Condensed\""
+   ],
+   "top": [
+    41,
+    107,
+    738,
+    450,
+    "15px",
+    "Barlow"
+   ],
+   "legal": [
+    431,
+    349,
+    349,
+    138,
+    "14.5px",
+    "Barlow"
+   ],
+   "partners": [
+    0,
+    -488,
+    0,
+    0,
+    "15px",
+    "Barlow"
+   ],
+   "art": [
+    41,
+    557,
+    738,
+    142,
+    "15px",
+    "Barlow"
+   ],
+   "copy": [
+    41,
+    726,
+    309,
+    22,
+    "13.5px",
+    "Barlow"
+   ]
+  }
+ },
+ "footer_mobil": {
+  "bagimsiz": {
+   "h": 867,
+   "brand": [
+    20,
+    115,
+    351,
+    41,
+    "45px",
+    "\"Barlow Condensed\""
+   ],
+   "top": [
+    20,
+    77,
+    351,
+    609,
+    "15px",
+    "Barlow"
+   ],
+   "legal": [
+    20,
+    486,
+    351,
+    170,
+    "14.5px",
+    "Barlow"
+   ],
+   "partners": [
+    0,
+    0,
+    0,
+    0,
+    "15px",
+    "Barlow"
+   ],
+   "art": [
+    20,
+    686,
+    351,
+    108,
+    "15px",
+    "Barlow"
+   ],
+   "copy": [
+    20,
+    817,
+    309,
+    22,
+    "13.5px",
+    "Barlow"
+   ]
+  },
+  "kurumsal": {
+   "h": 867,
+   "brand": [
+    20,
+    115,
+    350,
+    41,
+    "45px",
+    "\"Barlow Condensed\""
+   ],
+   "top": [
+    20,
+    77,
+    350,
+    609,
+    "15px",
+    "Barlow"
+   ],
+   "legal": [
+    20,
+    486,
+    350,
+    170,
+    "14.5px",
+    "Barlow"
+   ],
+   "partners": [
+    0,
+    -42,
+    0,
+    0,
+    "15px",
+    "Barlow"
+   ],
+   "art": [
+    20,
+    686,
+    350,
+    108,
+    "15px",
+    "Barlow"
+   ],
+   "copy": [
+    20,
+    817,
+    309,
+    22,
+    "13.5px",
+    "Barlow"
+   ]
+  }
+ }
+}
