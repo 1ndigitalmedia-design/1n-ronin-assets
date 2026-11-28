@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Shell test · {{PAGE}}</title>
+<!-- YALNIZ TEST: Wix yayınlanmış sayfa yapısının benzetimi. Header bölümü Wix'teki gibi yapışkan (sticky), taşmayı kırpan (overflow:hidden),
+     kendi yığın bağlamı olan (z-index + transform) bir kapta durur; menünün bu kabın dışına (sayfanın üzerine) açıldığı doğrulanır. -->
+<style>
+html,body{margin:0;padding:0;background:#080A09}
+#SITE_CONTAINER{position:relative}
+.wx-section{position:relative;width:100%;overflow:hidden}
+#wx-header{position:sticky;top:0;z-index:50;transform:translateZ(0)}
+.wx-content{color:#ECEBE5;font:16px/1.6 Barlow,Arial,sans-serif;padding:60px 5%}
+.wx-form{min-height:420px;border-top:1px dashed rgba(236,235,229,.2);border-bottom:1px dashed rgba(236,235,229,.2);display:grid;place-items:center;color:rgba(236,235,229,.55);font:14px Barlow,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.wx-embed{display:block;width:100%;border:0}
+.wx-tall{height:900px}
+</style>
+<script src="{{SHELL}}"></script>
+</head><body>
+<div id="SITE_CONTAINER">
+  <header class="wx-section" id="wx-header"><n1-global-header-v1></n1-global-header-v1></header>
+  <main id="wx-main"></main>
+  <footer class="wx-section" id="wx-footer"><n1-global-footer-v1></n1-global-footer-v1></footer>
+  <n1-global-floating-v1></n1-global-floating-v1>
+</div>
+<script>
+(function(){var p='{{PAGE}}',m=document.getElementById('wx-main');
+ if(p==='iletisim'){m.innerHTML='<section class="wx-section"><iframe class="wx-embed" title="İletişim HTML V4 (HTML Embed benzetimi)" src="/__shell/iletisim-embed.html" style="height:640px"></iframe></section><section class="wx-section wx-form" aria-label="Wix Forms">Wix Forms bölümü (sizin oluşturacağınız form)</section>';}
+ else if(p==='akademi'){m.innerHTML='<section class="wx-section wx-content wx-tall"><h1 style="font:600 40px Barlow Condensed,Arial">Akademi (mevcut Wix içeriği burada kalır)</h1><p>Yer tutucu: blog yazıları, görseller ve Wix bileşenleri değişmez.</p></section>';}
+ else {m.innerHTML='<section class="wx-section wx-content" style="min-height:420px"><h1 style="font:300 56px Barlow,Arial;text-align:center">404 - Sayfa Bulunamadı!</h1><p style="text-align:center">Mevcut 404 içerik tasarımı (değişmez).</p></section>';}
+})();
+</script>
+</body></html>
