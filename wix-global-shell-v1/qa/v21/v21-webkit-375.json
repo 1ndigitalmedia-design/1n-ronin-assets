@@ -1,8 +1,8 @@
 {
  "br": "webkit",
  "width": 375,
- "pass": 34,
- "fail": 2,
+ "pass": 36,
+ "fail": 0,
  "meas": {
   "kurumsal": {
    "tiles": [
@@ -672,16 +672,13 @@
   },
   {
    "g": "bağımsız",
-   "n": "footer değişmedi (yükseklik V2 ölçümüyle aynı, 5 yasal, 4 sosyal SVG, 5 partner)",
-   "ok": false,
+   "n": "footer içeriği yerinde (5 yasal, 4 sosyal SVG, 5 partner); yükseklik V2 ↔ V2.1 karşılaştırması: footer-ab.js",
+   "ok": true,
    "info": {
-    "f": {
-     "h": 802,
-     "legal": 5,
-     "soc": 4,
-     "partners": 5
-    },
-    "EXPF": 844
+    "h": 802,
+    "legal": 5,
+    "soc": 4,
+    "partners": 5
    }
   },
   {
@@ -742,7 +739,7 @@
   {
    "g": "tutarlılık",
    "n": "header üst bölümü: logo ve slogan kurumsal ile tutarlı",
-   "ok": false,
+   "ok": true,
    "info": {
     "corp": {
      "logo": [

@@ -29,9 +29,9 @@ webkit 320 GEÇTİ bağımsız · dokunmatikte hover kuralı devre dışı (işl
 webkit 320 GEÇTİ bağımsız · klavye focus-visible: #A2FF00 halka · {"cls":"n1h-plat","fv":true,"shadow":"rgba(162, 255, 0, 0.32) 0px 0px 0px 1px inset, rgb(17, 19, 18) 0px 0px 0px 2px, rgb(162, 255, 0) 0px 0px 0px 4px","color":"rgb(162, 255, 0)"}
 webkit 320 GEÇTİ bağımsız · menü kapanıyor, kart kalmıyor · {"open":0,"vis":0}
 webkit 320 GEÇTİ bağımsız · yeniden açılış: logolar yerinde · 4
-webkit 320 KALDI bağımsız · footer değişmedi (yükseklik V2 ölçümüyle aynı, 5 yasal, 4 sosyal SVG, 5 partner) · {"f":{"h":803,"legal":5,"soc":4,"partners":5},"EXPF":856}
+webkit 320 GEÇTİ bağımsız · footer içeriği yerinde (5 yasal, 4 sosyal SVG, 5 partner); yükseklik V2 ↔ V2.1 karşılaştırması: footer-ab.js · {"h":803,"legal":5,"soc":4,"partners":5}
 webkit 320 GEÇTİ bağımsız · WhatsApp/Yukarı Çık tek katman · 1
 webkit 320 GEÇTİ bağımsız · JS hatası yok · []
 webkit 320 GEÇTİ tutarlılık · kurumsal ve bağımsız menüde platform kutuları aynı (boyut, sembol, renk) · {"c":[[48,28],[48,28],[48,28],[48,28]],"s":[[48,28],[48,28],[48,28],[48,28]]}
 webkit 320 GEÇTİ tutarlılık · header üst bölümü: logo ve slogan kurumsal ile tutarlı · {"corp":{"logo":[16,17,30,30],"tag":[109,28,101,8],"menu":[264,12,40,40],"cta":false},"shell":{"logo":[16,17,30,30],"tag":[109,28,101,8]}}
-webkit 320 TOPLAM 35 geçti 1 kaldı
+webkit 320 TOPLAM 36 geçti 0 kaldı
