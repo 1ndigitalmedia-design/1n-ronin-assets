@@ -1,0 +1,66 @@
+{
+ "01-zeyp-160.webp": {
+  "bytes": 4390,
+  "size": [
+   160,
+   160
+  ],
+  "sha256": "c33ea79d77297e26"
+ },
+ "01-zeyp-320.webp": {
+  "bytes": 10716,
+  "size": [
+   320,
+   320
+  ],
+  "sha256": "8c79856b031d679b"
+ },
+ "02-market-160.webp": {
+  "bytes": 5838,
+  "size": [
+   160,
+   160
+  ],
+  "sha256": "a9ed58c38420a7cb"
+ },
+ "02-market-320.webp": {
+  "bytes": 12172,
+  "size": [
+   320,
+   320
+  ],
+  "sha256": "ee28b014d4a1604b"
+ },
+ "03-hemen-tikla-160.webp": {
+  "bytes": 1104,
+  "size": [
+   160,
+   160
+  ],
+  "sha256": "acea8c1674d3e94a"
+ },
+ "03-hemen-tikla-320.webp": {
+  "bytes": 2390,
+  "size": [
+   320,
+   320
+  ],
+  "sha256": "052b4fae5f489220"
+ },
+ "04-intelligence-160.webp": {
+  "bytes": 3926,
+  "size": [
+   160,
+   160
+  ],
+  "sha256": "bdf9e8b6d72dde3d"
+ },
+ "04-intelligence-320.webp": {
+  "bytes": 8836,
+  "size": [
+   320,
+   320
+  ],
+  "sha256": "57babf47030de6dc"
+ }
+}
