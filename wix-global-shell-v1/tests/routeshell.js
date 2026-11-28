@@ -26,10 +26,27 @@ const MAP=[
  [/\/wix-markalar-v1\/n1-markalar-v11\.js$/,S+'pages/wix-markalar-v13/n1-markalar-v13.js'],
  [/\/wix-yasal-sayfalar-v1\/n1-yasal-sayfalar-v1\.js$/,S+'pages/wix-yasal-sayfalar-v3/n1-yasal-sayfalar-v3.js'],
  [/\/wix-career-v1\/pages\/n1-career-v1\.js$/,'wix-global-shell-v1/pages/n1-career-v2.js'],
+ // canlı Global Shell V2 (@144d964) adresleri — Wix'te uygulanmış olabilir
+ [/\/wix-global-shell-v1\/sites\/home\/n1-site-wix-v661\.js$/,S+'home/n1-site-wix-v661.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-kreatif-produksiyon-v26\/n1-kreatif-produksiyon-v26\.js$/,S+'pages/wix-kreatif-produksiyon-v26/n1-kreatif-produksiyon-v26.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-e-ticaret-yonetimi-v27\/n1-e-ticaret-yonetimi-v27\.js$/,S+'pages/wix-e-ticaret-yonetimi-v27/n1-e-ticaret-yonetimi-v27.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-sosyal-medya-v30\/n1-sosyal-medya-v30\.js$/,S+'pages/wix-sosyal-medya-v30/n1-sosyal-medya-v30.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-reklam-yonetimi-v26\/n1-reklam-yonetimi-v26\.js$/,S+'pages/wix-reklam-yonetimi-v26/n1-reklam-yonetimi-v26.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-uiux-tasarim-v32\/n1-uiux-tasarim-v32\.js$/,S+'pages/wix-uiux-tasarim-v32/n1-uiux-tasarim-v32.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-yapay-zeka-v5\/n1-yapay-zeka-v5\.js$/,S+'pages/wix-yapay-zeka-v5/n1-yapay-zeka-v5.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-uygulama-gelistirme-v5\/n1-uygulama-gelistirme-v5\.js$/,S+'pages/wix-uygulama-gelistirme-v5/n1-uygulama-gelistirme-v5.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-kisaca-biz-v3\/n1-kisaca-biz-v3\.js$/,S+'pages/wix-kisaca-biz-v3/n1-kisaca-biz-v3.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-markalar-v13\/n1-markalar-v13\.js$/,S+'pages/wix-markalar-v13/n1-markalar-v13.js'],
+ [/\/wix-global-shell-v1\/sites\/pages\/wix-yasal-sayfalar-v3\/n1-yasal-sayfalar-v3\.js$/,S+'pages/wix-yasal-sayfalar-v3/n1-yasal-sayfalar-v3.js'],
+ [/\/wix-global-shell-v1\/pages\/n1-career-v2\.js$/,'wix-global-shell-v1/pages/n1-career-v2.js'],
 ];
+// V2.1 (varsayılan): bütün hedefler V2.1 sürümlerine çevrilir; N1_VER=20 eski V2 hedeflerini kullanır
+const V21={'home/n1-site-wix-v661.js':'home/n1-site-wix-v662.js','pages/n1-career-v2.js':'pages/n1-career-v3.js'};
+[['kreatif-produksiyon',26],['e-ticaret-yonetimi',27],['sosyal-medya',30],['reklam-yonetimi',26],['uiux-tasarim',32],['yapay-zeka',5],['uygulama-gelistirme',5],['kisaca-biz',3],['markalar',13],['yasal-sayfalar',3]].forEach(([n,v])=>{V21[`pages/wix-${n}-v${v}/n1-${n}-v${v}.js`]=`pages/wix-${n}-v${v+1}/n1-${n}-v${v+1}.js`;});
+if(process.env.N1_VER!=='20')MAP.forEach(m=>{for(const k in V21)if(m[1].endsWith(k))m[1]=m[1].slice(0,-k.length)+V21[k];});
 const CAREER={'/insan-kaynaklari':'n1-insan-kaynaklari-v1','/acik-pozisyonlar':'n1-acik-pozisyonlar-v1','/staj-programlari':'n1-staj-programlari-v1'};
 const CT={'.js':'application/javascript; charset=utf-8','.webp':'image/webp','.css':'text/css','.png':'image/png','.html':'text/html; charset=utf-8'};
-function careerShim(tag){return fs.readFileSync(R+'wix-global-shell-v1/pages/n1-career-v2.js','utf8')+
+function careerShim(tag){return fs.readFileSync(R+'wix-global-shell-v1/pages/'+(process.env.N1_VER==='20'?'n1-career-v2.js':'n1-career-v3.js'),'utf8')+
  `\n;/* TEST SARMALAYICISI (yalnız Playwright): Kısaca Biz kabuğundaki öğe kariyer öğesini taşır */(function(){var T=${JSON.stringify(tag)};var st=document.createElement('style');st.textContent='n1-kisaca-biz-v1{display:block}';document.head.appendChild(st);
  if(!customElements.get('n1-kisaca-biz-v1'))customElements.define('n1-kisaca-biz-v1',class extends HTMLElement{connectedCallback(){if(!this.querySelector(T))this.appendChild(document.createElement(T));}});})();`;}
 const CDNP='https://cdn.jsdelivr.net/gh/1ndigitalmedia-design/1n-ronin-assets@2aa9a9b483e53be78aebcd67f5af54e5ba485f90/';
